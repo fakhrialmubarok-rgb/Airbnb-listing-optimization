@@ -338,28 +338,41 @@ def parse_listing(raw: dict) -> dict:
     booked_days   = sum(1 for d in calendar if not d.get("available"))
     occupancy_pct = round(booked_days / len(calendar) * 100, 1) if calendar else None
 
-    # Nightly rate — Apify returns it in several possible shapes; try all of them.
-    # Never fall back to a default or let Claude infer it — if we can't get a real
-    # number the revenue_at_stake calculation must be left as None so downstream
-    # code knows the figure is unverified.
-    _price_raw = (
-        raw.get("price")
-        or raw.get("pricing")
-        or raw.get("priceRate")
-        or {}
-    )
-    if isinstance(_price_raw, (int, float)):
-        nightly_rate = float(_price_raw)
-    elif isinstance(_price_raw, dict):
-        nightly_rate = float(
-            _price_raw.get("amount")
-            or _price_raw.get("rate")
-            or _price_raw.get("price")
-            or _price_raw.get("nightly")
-            or 0
-        ) or None
-    else:
-        nightly_rate = None
+    # Nightly rate — extract from automation-lab/airbnb-listing output.
+    # The actor returns price as a dict with string values (e.g. "£1,209.20").
+    # Primary source: price.breakDown.basePrice.description = "N nights x £X.XX"
+    # Fallback: calendar daily prices (when available).
+    # Never fall back to a default — leave as None if unverifiable.
+    nightly_rate = None
+    _price_dict = raw.get("price") or {}
+    if isinstance(_price_dict, (int, float)):
+        nightly_rate = float(_price_dict)
+    elif isinstance(_price_dict, dict):
+        # Try "N nights x £X.XX" description first (most reliable)
+        _bp_desc = ((_price_dict.get("breakDown") or {})
+                    .get("basePrice") or {}).get("description", "")
+        _per_night_match = re.search(r"x\s*[£$€]?([\d,]+(?:\.\d+)?)", _bp_desc)
+        if _per_night_match:
+            nightly_rate = float(_per_night_match.group(1).replace(",", ""))
+        else:
+            # Try calendar daily prices (null when no checkin/checkout given)
+            _cal_prices = [
+                float(re.sub(r"[^\d.]", "", str(d["price"])))
+                for d in (raw.get("calendar") or [])
+                if d.get("price") and d.get("available")
+            ]
+            if _cal_prices:
+                nightly_rate = round(sum(_cal_prices) / len(_cal_prices), 2)
+            else:
+                # Last resort: strip currency symbol from price.price string
+                _price_str = _price_dict.get("price") or ""
+                _nights_match = re.search(r"for\s+(\d+)\s+night", _price_str, re.I)
+                _amt_match = re.search(r"[£$€]?([\d,]+(?:\.\d+)?)", _price_str)
+                if _amt_match and _nights_match:
+                    nightly_rate = round(
+                        float(_amt_match.group(1).replace(",", "")) /
+                        int(_nights_match.group(1)), 2
+                    )
 
     listing = {
         # Identity
@@ -415,6 +428,7 @@ def parse_listing(raw: dict) -> dict:
 
         # Images
         "images_by_room":     images_by_room,
+        "image_urls":         [img.get("imageUrl", "") for img in images if img.get("imageUrl")],
         "image_total_count":  len(images),
         "thumbnail":          raw.get("thumbnail", ""),
 
@@ -458,7 +472,8 @@ def parse_listing(raw: dict) -> dict:
 # Public API
 # ---------------------------------------------------------------------------
 
-def scrape_url(url: str, calendar_months: int = 3) -> dict:
+def scrape_url(url: str, calendar_months: int = 3,
+               currency: str = "GBP", locale: str = "en-GB") -> dict:
     """Scrape a single Airbnb listing URL. Returns parsed listing dict."""
     print(f"[scraper] Scraping: {url}")
     items = _run_actor({
@@ -466,8 +481,8 @@ def scrape_url(url: str, calendar_months: int = 3) -> dict:
         "skipDetailPages": False,
         "calendarMonths": calendar_months,
         "maxListings": 1,
-        "locale": "en-US",
-        "currency": "USD"
+        "locale": locale,
+        "currency": currency,
     })
     if not items:
         raise ValueError(f"No data returned for {url}")
@@ -479,7 +494,8 @@ def scrape_url(url: str, calendar_months: int = 3) -> dict:
 
 
 def scrape_location(location: str, max_listings: int = 50,
-                    calendar_months: int = 1) -> list[dict]:
+                    calendar_months: int = 1,
+                    currency: str = "GBP", locale: str = "en-GB") -> list[dict]:
     """Scrape all listings for a market/location. Returns list of parsed listings."""
     print(f"[scraper] Market scan: {location} (max {max_listings})")
     items = _run_actor({
@@ -487,8 +503,8 @@ def scrape_location(location: str, max_listings: int = 50,
         "skipDetailPages": False,
         "calendarMonths": calendar_months,
         "maxListings": max_listings,
-        "locale": "en-US",
-        "currency": "USD"
+        "locale": locale,
+        "currency": currency,
     })
     listings = [parse_listing(item) for item in items]
     for listing in listings:
