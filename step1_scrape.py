@@ -28,6 +28,11 @@ from scraper import scrape_location
 
 MIN_STAKE_GBP  = 2000
 MIN_REVIEWS    = 5
+MAX_REVIEWS    = 500          # above this = professional operator, not a $29 buyer
+PRO_KEYWORDS   = ("ltd", "limited", "stays", "homes", "properties", "property",
+                  "apartments", "aparthotel", "hotel", "suites", "serviced",
+                  "group", "living", "lettings", "locke", "hosts", "management",
+                  "collection", "residences", "accommodation")
 CAL_MONTHS     = 3            # 90-day calendar so open_nights_90d is honest
 TRACKER_CSV    = Path(__file__).parent / "work" / "leads_tracker.csv"
 
@@ -43,8 +48,15 @@ def qualify(l: dict) -> tuple[bool, str]:
     stake = (l.get("nightly_rate") or 0) * (l.get("open_nights_90d") or 0)
     if "entire" not in (l.get("room_type") or "").lower():
         return False, "not entire home"
-    if (l.get("host_review_count") or 0) < MIN_REVIEWS:
+    reviews = l.get("host_review_count") or 0
+    if reviews < MIN_REVIEWS:
         return False, f"reviews < {MIN_REVIEWS}"
+    if reviews > MAX_REVIEWS:
+        return False, f"pro operator ({reviews} host reviews)"
+    host = (l.get("host_name") or "").lower()
+    hits = [k for k in PRO_KEYWORDS if k in host.split() or k in host]
+    if hits:
+        return False, f"pro operator (name: {hits[0]!r})"
     if stake < MIN_STAKE_GBP:
         return False, f"stake £{stake:,.0f} < £{MIN_STAKE_GBP:,}"
     return True, f"stake £{stake:,.0f}"
