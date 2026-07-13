@@ -104,10 +104,14 @@ Description: {description}
 Property type: {property_type}
 Location: {location}
 Rating: {rating_overall} ({review_count} reviews)
-Nightly rate: ${nightly_rate}
+Nightly rate: £{nightly_rate}
 Capacity: {person_capacity} guests
 Superhost: {is_superhost}
 Occupancy (next 90 days): {occupancy_pct}% booked ({open_nights} open nights)
+Photo count: {photo_count}
+
+MARKET CONTEXT (scraped same-city cohort, real data — you may cite these):
+{market_context}
 
 AMENITIES AVAILABLE: {amenities_available}
 AMENITIES MISSING: {amenities_missing}
@@ -145,17 +149,56 @@ Return ONLY this JSON (no markdown, no explanation):
     "<specific fix #3>"
   ],
   "outreach_angle": "<one of: occupancy | amenity_gap | title_seo | image_order>",
-  "outreach_hook": "<one sentence that leads outreach email - uses their own numbers, no fabricated stats>"
-}}"""
+  "outreach_hook": "<one sentence that leads outreach email - uses their own numbers, no fabricated stats>",
+  "weakest_element": "<one of: title | description | photos | amenities — the single lowest-scoring element, used in outreach copy>"
+}}
+
+Additional rules for sharpness:
+- Every key_diagnosis item must include a NUMBER from the listing's own data or the market context (their rate vs cohort median, their occupancy vs cohort, photo count, review count).
+- If their nightly rate is above the cohort median while their occupancy is below it, say so explicitly — that is the strongest possible diagnosis.
+- All currency is GBP (£). Never use $."""
 
 
 def _strip_json(raw: str) -> dict:
+    """Robust JSON extraction — survives thinking tags, markdown fences,
+    preamble text, and raw control characters inside strings."""
+    import re
     raw = raw.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    return json.loads(raw.strip())
+    # Drop <think>...</think> reasoning blocks (qwen3 etc.)
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
+    # Drop markdown fences
+    if "```" in raw:
+        m = re.search(r"```(?:json)?\s*(.*?)```", raw, flags=re.DOTALL)
+        if m:
+            raw = m.group(1).strip()
+    # Extract the outermost {...} block (ignores preamble/postamble text)
+    start = raw.find("{")
+    if start == -1:
+        raise ValueError(f"No JSON object in response: {raw[:120]!r}")
+    depth = 0
+    end = None
+    in_str = False
+    esc = False
+    for i, ch in enumerate(raw[start:], start):
+        if esc:
+            esc = False; continue
+        if ch == "\\":
+            esc = True; continue
+        if ch == '"':
+            in_str = not in_str; continue
+        if in_str:
+            continue
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                end = i + 1
+                break
+    if end is None:
+        raise ValueError("Truncated JSON (unbalanced braces)")
+    # strict=False allows raw newlines/tabs inside strings (llama-3.1-8b habit)
+    return json.loads(raw[start:end], strict=False)
 
 
 def _call_claude(prompt: str) -> dict:
@@ -181,52 +224,122 @@ def _call_openai(prompt: str) -> dict:
     return _strip_json(resp.choices[0].message.content)
 
 
-def _call_groq(prompt: str) -> dict:
-    import requests as _req
+def _call_groq(prompt: str, model: str = "llama-3.3-70b-versatile") -> dict:
+    # Groq rate limits are PER MODEL — each model in the chain is an
+    # independent free quota on the same key.
+    import requests as _req, time as _time
     key = os.getenv("GROQ_API_KEY", "")
     if not key:
         raise ValueError("GROQ_API_KEY not set")
+    payload = {"model": model, "max_tokens": 4000,
+               "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+                             {"role": "user", "content": prompt}]}
+    for attempt in range(2):
+        resp = _req.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json=payload, timeout=30,
+        )
+        if resp.status_code == 429:
+            wait = min(int(resp.headers.get("retry-after", 10)), 10)
+            print(f"  [teardown] Groq {model} rate-limited, waiting {wait}s...")
+            _time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        return _strip_json(resp.json()["choices"][0]["message"]["content"])
+    raise RuntimeError(f"Groq {model}: still rate-limited")
+
+
+def _call_gemini(prompt: str) -> dict:
+    """Google Gemini Flash — generous free tier. Needs GEMINI_API_KEY in .env."""
+    import requests as _req
+    key = os.getenv("GEMINI_API_KEY", "")
+    if not key:
+        raise ValueError("GEMINI_API_KEY not set")
     resp = _req.post(
-        "https://api.groq.com/openai/v1/chat/completions",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        params={"key": key},
+        json={"systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
+              "contents": [{"parts": [{"text": prompt}]}],
+              "generationConfig": {"maxOutputTokens": 2000, "responseMimeType": "application/json"}},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    return _strip_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
+
+
+def _call_together(prompt: str) -> dict:
+    """Together.ai — free $25 credit on signup, Llama-3.3-70B."""
+    import requests as _req
+    key = os.getenv("TOGETHER_API_KEY", "")
+    if not key:
+        raise ValueError("TOGETHER_API_KEY not set")
+    resp = _req.post(
+        "https://api.together.xyz/v1/chat/completions",
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        json={"model": "llama-3.3-70b-versatile", "max_tokens": 2000,
+        json={"model": "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+              "max_tokens": 2000,
               "messages": [{"role": "system", "content": SYSTEM_PROMPT},
                            {"role": "user", "content": prompt}]},
-        timeout=30,
+        timeout=60,
     )
     resp.raise_for_status()
     return _strip_json(resp.json()["choices"][0]["message"]["content"])
 
 
-def _call_hf(prompt: str) -> dict:
-    """HuggingFace Inference API — free tier, Llama-3 70B."""
+def _call_siliconflow(prompt: str) -> dict:
+    """SiliconFlow — generous free tier, Qwen/DeepSeek models."""
     import requests as _req
-    key = os.getenv("HF_TOKEN", "")
+    key = os.getenv("SILICONFLOW_API_KEY", "")
     if not key:
-        raise ValueError("HF_TOKEN not set")
+        raise ValueError("SILICONFLOW_API_KEY not set")
     resp = _req.post(
-        "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-70B-Instruct",
+        "https://api.siliconflow.cn/v1/chat/completions",
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        json={"inputs": f"<|system|>\n{SYSTEM_PROMPT}\n<|user|>\n{prompt}\n<|assistant|>",
-              "parameters": {"max_new_tokens": 2000, "return_full_text": False}},
+        json={"model": "Qwen/Qwen2.5-72B-Instruct",
+              "max_tokens": 2000,
+              "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+                           {"role": "user", "content": prompt}]},
         timeout=60,
     )
     resp.raise_for_status()
-    raw = resp.json()
-    text = raw[0]["generated_text"] if isinstance(raw, list) else raw.get("generated_text", "")
-    return _strip_json(text)
+    return _strip_json(resp.json()["choices"][0]["message"]["content"])
 
 
-# Ordered fallback chain — cheapest/fastest first
+# Ordered fallback chain — FREE tiers first (Groq limits are per-model, so
+# each Groq entry is an independent quota), then optional free keys, then paid.
 _LLM_CHAIN = [
-    ("Groq llama-3.3-70b (free)",      _call_groq),
-    ("Claude Haiku (credits)",          _call_claude),
-    ("OpenAI gpt-4o-mini (quota)",      _call_openai),
-    ("HuggingFace Llama-3 (free)",      _call_hf),
+    ("Groq llama-3.3-70b (free)",        lambda p: _call_groq(p, "llama-3.3-70b-versatile")),
+    ("Groq gpt-oss-120b (free)",         lambda p: _call_groq(p, "openai/gpt-oss-120b")),
+    ("Groq kimi-k2 (free)",              lambda p: _call_groq(p, "moonshotai/kimi-k2-instruct")),
+    ("Groq qwen3-32b (free)",            lambda p: _call_groq(p, "qwen/qwen3-32b")),
+    ("Groq llama-3.1-8b (free)",         lambda p: _call_groq(p, "llama-3.1-8b-instant")),
+    ("Gemini 2.0 Flash (free)",          _call_gemini),
+    ("Together.ai Llama-3.3-70B (free)", _call_together),
+    ("SiliconFlow Qwen2.5-72B (free)",   _call_siliconflow),
+    ("Claude Haiku (paid credits)",      _call_claude),
+    ("OpenAI gpt-4o-mini (paid quota)",  _call_openai),
 ]
 
 
-def _analyze(listing: dict) -> dict:
+def build_market_context(cohort: list[dict]) -> str:
+    """Median rate/occupancy from a same-city scrape batch → honest benchmark lines."""
+    import statistics as _st
+    rates = [l["nightly_rate"] for l in cohort if l.get("nightly_rate")]
+    occs  = [l["occupancy_pct"] for l in cohort if l.get("occupancy_pct") is not None]
+    photos = [len(l.get("image_urls") or []) for l in cohort if l.get("image_urls")]
+    if not rates:
+        return "No cohort data available — do not invent benchmarks."
+    lines = [f"Cohort size: {len(cohort)} listings scraped in the same market."]
+    lines.append(f"Median nightly rate: £{_st.median(rates):.2f}")
+    if occs:
+        lines.append(f"Median 90-day occupancy: {_st.median(occs):.1f}%")
+    if photos:
+        lines.append(f"Median photo count: {int(_st.median(photos))}")
+    return "\n".join(lines)
+
+
+def _analyze(listing: dict, market_context: str = "No cohort data available — do not invent benchmarks.") -> dict:
     preferred_title_length = ls.get_strategy("generator", "preferred_title_length", default=50)
     high_value_amenity_categories = ls.get_strategy(
         "generator", "high_value_amenity_categories",
@@ -235,8 +348,9 @@ def _analyze(listing: dict) -> dict:
 
     occupancy_pct = listing.get("occupancy_pct") or 0
     nightly_rate  = listing.get("nightly_rate") or listing.get("price_per_night") or 0
-    calendar_days = listing.get("calendar_days") or 90
-    open_nights   = round(calendar_days * (1 - occupancy_pct / 100)) if occupancy_pct else None
+    open_nights = listing.get("open_nights_90d")
+    if open_nights is None and occupancy_pct:
+        open_nights = round(90 * (1 - occupancy_pct / 100))
 
     amenities_available = listing.get("amenities_available") or []
     amenities_missing   = listing.get("amenities_missing") or []
@@ -260,6 +374,8 @@ def _analyze(listing: dict) -> dict:
         is_superhost=listing.get("host_is_superhost", False),
         occupancy_pct=round(occupancy_pct, 1),
         open_nights=open_nights or "unknown",
+        photo_count=len(listing.get("image_urls") or []) or "unknown",
+        market_context=market_context,
         amenities_available=", ".join(avail_names) or "none listed",
         amenities_missing=", ".join(miss_names) or "none listed",
         image_rooms=", ".join(image_rooms) or "unknown",
@@ -270,10 +386,15 @@ def _analyze(listing: dict) -> dict:
         high_value_amenity_categories=", ".join(high_value_amenity_categories),
     )
 
+    REQUIRED_KEYS = {"score_title", "score_desc", "title_variants",
+                     "rewritten_desc", "key_diagnosis", "outreach_hook"}
     last_err = None
     for label, fn in _LLM_CHAIN:
         try:
             result = fn(prompt)
+            missing = REQUIRED_KEYS - set(result)
+            if missing:
+                raise ValueError(f"incomplete analysis, missing {sorted(missing)}")
             print(f"  [teardown] LLM: {label}")
             return result
         except Exception as e:
