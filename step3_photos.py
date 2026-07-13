@@ -30,41 +30,39 @@ HERE = Path(__file__).parent
 load_dotenv(HERE / ".env", override=True)
 import os
 
+from perspective_fix import straighten
+
 TRACKER_CSV  = HERE / "work" / "leads_tracker.csv"
 QUALIFIED    = HERE / "work" / "step1_qualified.json"
 PHOTOS_DIR   = HERE / "work" / "photos"
 MAX_PHOTOS   = 10          # selective mode: recreate only the photos that matter
 ROOM_PRIORITY = ("living", "bedroom", "kitchen", "bathroom", "dining", "garden", "exterior")
 
-# LOCKED PROMPT TEMPLATE — numbered checklist; every item is mandatory
+# LOCKED PROMPT TEMPLATE (final — validated on Dorcas test 2026-07-14)
+# The "freedom + pinned objects" fusion: magazine relight/staging language with
+# hard object-conservation rules. Input is ALWAYS the OpenCV-straightened image.
 PROMPT_TEMPLATE = (
-    "Recreate this photo as a flawless professional real-estate photograph of the SAME room. "
-    "Apply EVERY numbered requirement — each one must be clearly visible in the result:\n"
-    "1. BRIGHTNESS: the whole room including the ceiling and corners is DRAMATICALLY brighter "
-    "than the original — professional HDR real-estate exposure, no dark or murky areas anywhere.\n"
-    "2. LIGHTS ON: every ceiling light, chandelier and lamp visible in the room is switched ON "
-    "and clearly GLOWING warm light. Not one fixture stays off.\n"
-    "3. WINDOWS: windows are correctly exposed — the view outside is visible and natural, "
-    "NEVER a blown-out white overexposed rectangle.\n"
-    "4. CABLES: every visible cable, wire, cord and plug is completely removed. Zero cables "
-    "in the final image.\n"
-    "5. NEATNESS: curtains hang in smooth tidy folds, sofa cushions are plumped and perfectly "
-    "arranged, throws folded neatly, all fabrics smooth. The room looks hotel-housekeeping neat.\n"
-    "6. FRAMING (MANDATORY — re-shoot, do not copy the original camera): the original photo "
-    "was taken carelessly with a tilted handheld phone. You are RE-SHOOTING the room from a "
-    "proper tripod: camera perfectly level at chest height, every wall edge and door frame "
-    "exactly vertical, floor line level. The perspective MUST visibly differ from the "
-    "original's tilt — a clean, balanced, wide professional real-estate composition.\n"
+    "Transform this into a bright, airy luxury interior-design magazine photograph: "
+    "abundant soft natural daylight, crisp white balance, light and spacious feel, rich "
+    "fresh color grading, deep clean contrast. Professionally presented: cushions plumped, "
+    "fabrics smooth, no cables or clutter anywhere. "
+    "ALL curtains and blinds are fully OPEN and neatly tied back at the window sides, "
+    "letting maximum daylight in — strict requirement for every photo. "
+    "Every lamp and ceiling light in the room is switched ON with a warm welcoming glow. "
+    "Windows correctly exposed, never blown out — and windows stay WINDOWS (never turn a "
+    "window into a door or balcony). "
     "{tv_rule}"
-    "7. ABSOLUTE CONTENT RULE: do NOT add any new furniture or objects that are not in the "
-    "original. Do NOT remove, move, resize or recolor any furniture, plants, textiles, "
-    "curtains, cushions, wall art or decor. Same items, same colors, same positions, same "
-    "sizes. Only lighting, tidiness, cable removal{tv_clause} and camera geometry change.\n"
-    "Ultra-photorealistic. Magazine-grade editorial interior photography."
+    "ABSOLUTE RULE — the room contains EXACTLY the objects in the original photo, no more, "
+    "no less: do NOT add any throw, blanket, cushion, plant, tray or decor of any kind. "
+    "Do not move, remove, resize or relocate anything. Same furniture, same wall art, same "
+    "positions. Only lighting, curtain position, tidiness and camera geometry improve. "
+    "Perfectly level camera, dead straight verticals, no tilt. "
+    "Ultra-photorealistic editorial real-estate photography."
 )
 
-TV_RULE = ("8. TV SCREEN: the television that exists in this photo displays a beautiful, "
-           "photorealistic scenic image of {attraction} — like a premium tourism advert.\n")
+TV_RULE = ("If a television exists in the photo it stays EXACTLY where it is — same wall, "
+           "same stand, same size — and displays a beautiful scenic photo of {attraction} "
+           "with no text or writing on the screen. Never add a TV where none exists. ")
 
 TV_DETECT_PROMPT = ("Is there a television/TV screen clearly visible in this photo? "
                     "Return ONLY JSON: {\"tv_visible\": true|false}")
@@ -84,10 +82,8 @@ def build_prompt(listing: dict, tv_visible: bool) -> str:
     attraction = next((a for c, a in CITY_ATTRACTIONS.items() if c in city),
                       "a famous local tourist attraction near the property")
     if tv_visible:
-        return PROMPT_TEMPLATE.format(
-            tv_rule=TV_RULE.format(attraction=attraction),
-            tv_clause=", the TV screen content")
-    return PROMPT_TEMPLATE.format(tv_rule="", tv_clause="")
+        return PROMPT_TEMPLATE.format(tv_rule=TV_RULE.format(attraction=attraction))
+    return PROMPT_TEMPLATE.format(tv_rule="")
 
 
 def detect_tv(image_bytes: bytes) -> bool:
@@ -109,22 +105,23 @@ def detect_tv(image_bytes: bytes) -> bool:
 
 QC_PROMPT = (
     "You are a merciless photo QC inspector. Photo 1 is the original; photo 2 is an "
-    "AI-recreated version that must show the SAME room with IDENTICAL furniture. "
-    "EXPECTED and ALLOWED differences in photo 2 (do NOT fail for these): much brighter "
-    "lighting, lamps turned on, clutter and cables removed, tidier fabrics, different "
-    "content shown on an EXISTING TV screen, straightened camera geometry. "
+    "AI-recreated version that must show the SAME room with the SAME objects. "
+    "ALLOWED differences in photo 2 (do NOT fail for these): much brighter lighting, lamps "
+    "turned on, curtains OPENED and tied back, clutter and cables removed, tidier fabrics, "
+    "scenic content shown on an EXISTING TV screen, straightened camera geometry. "
     "Return ONLY JSON: {"
-    "\"no_added_objects\": bool,        # NOTHING new — no TVs, furniture or decor that photo 1 lacks\n"
-    "\"same_furniture_and_colors\": bool,\n"
-    "\"no_ai_artifacts\": bool,\n"
+    "\"no_added_objects\": bool,        # NO new throws, blankets, decor, TVs, doors — nothing photo 1 lacks\n"
+    "\"nothing_removed_or_moved\": bool, # every furniture item still present in its original spot; windows still windows\n"
+    "\"no_ai_artifacts\": bool,          # no warped shapes, no gibberish text anywhere incl. TV screens\n"
     "\"straight_verticals\": bool,\n"
-    "\"dramatically_brighter\": bool,   # whole room incl. ceiling clearly brighter, no murky areas\n"
-    "\"lights_on\": bool,               # fixtures/lamps present in the room are visibly glowing\n"
+    "\"dramatically_brighter\": bool,\n"
+    "\"lights_on\": bool,\n"
+    "\"curtains_open\": bool,           # curtains/blinds open and tied back, not covering the window\n"
     "\"no_visible_cables\": bool,\n"
-    "\"window_not_blown_out\": bool,    # windows show detail, not pure white\n"
-    "\"fabrics_neat\": bool,            # curtains/sofa/throws look tidy\n"
+    "\"window_not_blown_out\": bool,\n"
     "\"verdict\": \"pass\"|\"fail\", \"reason\": \"<short, name every failed check>\"}. "
-    "Verdict is pass ONLY if every single check is true. Be strict."
+    "Verdict is pass ONLY if every single check is true. Be strict — added objects, moved "
+    "furniture, or a window turned into a door are instant fails."
 )
 
 
@@ -260,7 +257,11 @@ def process_lead(listing: dict, cap=None) -> dict:
             continue
         (out_dir / "originals" / f"{n:02d}.jpg").write_bytes(orig)
 
-        tv = detect_tv(orig)
+        # Deterministic geometry pre-pass: straighten verticals with OpenCV
+        # BEFORE the AI pass. AI generation and QC both use the straightened base.
+        base, geo_applied = straighten(orig)
+
+        tv = detect_tv(base)
         prompt = build_prompt(listing, tv_visible=tv)
         status, backend, verdict = "recreated", "", {}
 
@@ -272,8 +273,8 @@ def process_lead(listing: dict, cap=None) -> dict:
             candidates = []
             for c in (1, 2):
                 try:
-                    cand, cb = recreate(orig, url, prompt)
-                    cv = qc_check(orig, cand)
+                    cand, cb = recreate(base, url, prompt)
+                    cv = qc_check(base, cand)
                     candidates.append((cand, cb, cv))
                     print(f"  {n}.{c}: QC {cv.get('verdict','?')} (score {qc_score(cv)}) "
                           f"{('- ' + cv.get('reason','')[:70]) if cv.get('verdict')=='fail' else ''}")
@@ -287,18 +288,18 @@ def process_lead(listing: dict, cap=None) -> dict:
             # One corrective retry if even the best candidate fails
             if verdict.get("verdict") == "fail":
                 print(f"  {n}: best candidate still fails — corrective retry")
-                rec2, backend2 = recreate(orig, url, prompt +
+                rec2, backend2 = recreate(base, url, prompt +
                     f" CORRECTION: the previous attempt failed review because: "
                     f"{verdict.get('reason','')}. You MUST fix exactly that while following all other rules.")
-                verdict2 = qc_check(orig, rec2)
+                verdict2 = qc_check(base, rec2)
                 if (verdict2.get("verdict") == "pass") or qc_score(verdict2) > qc_score(verdict):
                     rec, backend, verdict = rec2, backend2, verdict2
             if verdict.get("verdict") == "fail":
-                print(f"  {n}: QC FAIL after best-of-2 + retry — shipping original")
-                rec, status = orig, "original_kept"
+                print(f"  {n}: QC FAIL after best-of-2 + retry — shipping straightened original")
+                rec, status = base, "original_kept"
         except Exception as e:
             print(f"  {n}: recreation failed ({str(e)[:80]}) — shipping original")
-            rec, status = orig, "original_kept"
+            rec, status = base, "original_kept"
 
         (out_dir / "recreated" / f"{n:02d}.jpg").write_bytes(rec)
         manifest.append({"n": n, "url": url, "status": status,
