@@ -337,6 +337,9 @@ def parse_listing(raw: dict) -> dict:
     calendar = raw.get("calendar") or []
     booked_days   = sum(1 for d in calendar if not d.get("available"))
     occupancy_pct = round(booked_days / len(calendar) * 100, 1) if calendar else None
+    # Extrapolate open nights over the next 90 days from the scraped calendar window.
+    # Honest only with calendar_months>=3 (90d window); with 1 month it's a projection.
+    open_nights_90d = round((1 - occupancy_pct / 100) * 90) if occupancy_pct is not None else None
 
     # Nightly rate — extract from automation-lab/airbnb-listing output.
     # The actor returns price as a dict with string values (e.g. "£1,209.20").
@@ -434,6 +437,7 @@ def parse_listing(raw: dict) -> dict:
 
         # Availability / occupancy
         "occupancy_pct":      occupancy_pct,
+        "open_nights_90d":    open_nights_90d,
         "nightly_rate":       nightly_rate,   # None if Apify didn't return a price
         "calendar_days":      len(calendar),
         "check_in_time":      raw.get("checkIn"),
