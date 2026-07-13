@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+*.pyc
+*.db
+oauth_client*.json
+personalized_outreach.csv
+personalized_outreach.json
+learning.db
+uploads/

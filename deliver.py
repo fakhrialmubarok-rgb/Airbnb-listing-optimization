@@ -1,0 +1,530 @@
+"""
+ListingBoost Delivery Script
+=============================
+Packages the teardown PDF + upgraded photos into a ZIP and emails it
+directly to the host (or a test address).
+
+Usage:
+    python3 deliver.py \
+        --listing-dir /tmp/listingboost_photos/20669368_Tanya \
+        --results-dir /tmp/regen_results/20669368_Tanya \
+        --host-email "tanya@example.com" \
+        --host-name "Tanya" \
+        --listing-title "Cozy Cabin with Hot Tub and Patio" \
+        --listing-url "https://airbnb.com/rooms/20669368" \
+        [--test]   # sends to OWNER_EMAIL instead of host
+
+Flow:
+    1. Generate teardown_report.pdf (if not already there)
+    2. Zip FINAL_EXPORT/ photos + PDF -> delivery.zip
+    3. Send email with ZIP attached via Gmail API
+"""
+
+from __future__ import annotations
+import argparse, base64, io, json, os, sys, zipfile
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email import encoders
+from pathlib import Path
+
+import requests
+from dotenv import load_dotenv
+load_dotenv(override=True)
+
+ROOT = Path(__file__).resolve().parent
+
+_TOKEN_URL  = "https://oauth2.googleapis.com/token"
+_GMAIL_SEND = "https://gmail.googleapis.com/gmail/v1/users/me/messages/send"
+
+
+# ── Auth ──────────────────────────────────────────────────────────────────────
+def _access_token() -> str:
+    resp = requests.post(_TOKEN_URL, data={
+        "client_id":     os.environ["GMAIL_CLIENT_ID"],
+        "client_secret": os.environ["GMAIL_CLIENT_SECRET"],
+        "refresh_token": os.environ["GMAIL_REFRESH_TOKEN"],
+        "grant_type":    "refresh_token",
+    }, timeout=15)
+    resp.raise_for_status()
+    return resp.json()["access_token"]
+
+
+# ── Email body ─────────────────────────────────────────────────────────────────
+def _build_body(host_name: str, listing_title: str, photo_count: int) -> tuple[str, str]:
+    """Return (plain, html) email bodies."""
+    plain = f"""Hi {host_name},
+
+Your ListingBoost package is ready. Attached is a ZIP file containing:
+
+  - teardown_report.pdf  -- your full listing teardown with photo scores,
+                            priority action checklist, and AI upgrade analysis
+  - {photo_count} upgraded photos (01.jpg ... {str(photo_count).zfill(2)}.jpg)
+                            -- ready to upload to Airbnb in order
+
+Quick-start:
+  1. Open teardown_report.pdf and read the Executive Summary (p.2)
+  2. Upload the photos in the ZIP to your Airbnb listing (replace all)
+  3. Set photo 01 as your cover -- it was selected for highest CTR
+  4. Follow the Priority Action Checklist on the last pages
+
+Your listing: {listing_title}
+
+Questions? Just reply to this email.
+
+AL
+hello@scalr-us.com
+"""
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<style>
+  body {{ font-family: -apple-system, Arial, sans-serif; color: #1a1a1a;
+          max-width: 580px; margin: 0 auto; padding: 24px 16px; }}
+  .logo {{ font-size: 20px; font-weight: 700; color: #1a1a1a; }}
+  .logo span {{ color: #ff5a3c; }}
+  h2 {{ font-size: 18px; font-weight: 600; margin: 24px 0 8px; }}
+  .box {{ background: #f5f5f3; border-radius: 8px; padding: 16px 20px; margin: 16px 0; }}
+  .box ul {{ margin: 8px 0; padding-left: 18px; }}
+  .box li {{ margin: 6px 0; font-size: 14px; line-height: 1.5; }}
+  .steps {{ counter-reset: step; }}
+  .step {{ display: flex; gap: 12px; margin: 12px 0; align-items: flex-start; }}
+  .step-n {{ background: #ff5a3c; color: #fff; border-radius: 50%;
+              width: 22px; height: 22px; display: flex; align-items: center;
+              justify-content: center; font-weight: 700; font-size: 12px;
+              flex-shrink: 0; margin-top: 1px; }}
+  .step-text {{ font-size: 14px; line-height: 1.5; }}
+  .footer {{ margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0e0e0;
+              font-size: 12px; color: #888; }}
+  a {{ color: #ff5a3c; }}
+</style>
+</head>
+<body>
+<div class="logo">Listing<span>Boost</span></div>
+<p style="color:#888;font-size:13px;margin:4px 0 0;">by Scalr</p>
+
+<h2>Your listing upgrade is ready, {host_name}.</h2>
+
+<p style="font-size:14px;color:#555;">
+  Your ZIP file is attached. It contains your full teardown report and
+  {photo_count} upgraded photos ready to upload.
+</p>
+
+<div class="box">
+  <strong style="font-size:13px;">What's in the ZIP:</strong>
+  <ul>
+    <li><strong>teardown_report.pdf</strong> &mdash; photo scores, AI upgrade analysis,
+        priority action checklist</li>
+    <li><strong>{photo_count} upgraded photos</strong> (01 &ndash; {str(photo_count).zfill(2)})
+        &mdash; pre-ordered, cover-first, ready to upload</li>
+  </ul>
+</div>
+
+<h2>Quick-start (5 minutes)</h2>
+<div class="steps">
+  <div class="step">
+    <div class="step-n">1</div>
+    <div class="step-text">Open <strong>teardown_report.pdf</strong> and read the
+      Executive Summary &mdash; 3 highest-impact fixes are listed there.</div>
+  </div>
+  <div class="step">
+    <div class="step-n">2</div>
+    <div class="step-text">Upload all photos from the ZIP to your Airbnb listing,
+      replacing the current set in order.</div>
+  </div>
+  <div class="step">
+    <div class="step-n">3</div>
+    <div class="step-text">Set <strong>photo 01</strong> as your cover &mdash;
+      it was selected for highest click-through rate.</div>
+  </div>
+  <div class="step">
+    <div class="step-n">4</div>
+    <div class="step-text">Complete the Priority Action Checklist in the PDF
+      to maximise the upgrade.</div>
+  </div>
+</div>
+
+<p style="font-size:14px;margin-top:20px;">
+  Your listing: <a href="#">{listing_title}</a>
+</p>
+
+<div class="footer">
+  AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
+  ListingBoost by Scalr &bull; Questions? Just reply to this email.
+</div>
+</body>
+</html>"""
+
+    return plain, html
+
+
+# ── ZIP builder ───────────────────────────────────────────────────────────────
+def build_zip(export_dir: Path, pdf_path: Path) -> bytes:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.write(pdf_path, arcname="teardown_report.pdf")
+        photos = sorted(export_dir.glob("*"))
+        for p in photos:
+            if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp"):
+                zf.write(p, arcname=f"photos/{p.name}")
+    buf.seek(0)
+    return buf.read()
+
+
+# ── Gmail send with attachment ─────────────────────────────────────────────────
+def send_with_attachment(
+    to: str,
+    subject: str,
+    plain: str,
+    html: str,
+    zip_bytes: bytes,
+    zip_filename: str,
+    from_addr: str = "hello@scalr-us.com",
+    from_name: str = "AL",
+) -> None:
+    token = _access_token()
+
+    msg = MIMEMultipart("mixed")
+    msg["To"]      = to
+    msg["From"]    = f"{from_name} <{from_addr}>"
+    msg["Subject"] = subject
+
+    alt = MIMEMultipart("alternative")
+    alt.attach(MIMEText(plain, "plain"))
+    alt.attach(MIMEText(html,  "html"))
+    msg.attach(alt)
+
+    part = MIMEBase("application", "zip")
+    part.set_payload(zip_bytes)
+    encoders.encode_base64(part)
+    part.add_header("Content-Disposition", f'attachment; filename="{zip_filename}"')
+    msg.attach(part)
+
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    resp = requests.post(
+        _GMAIL_SEND,
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        json={"raw": raw},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    print(f"  [gmail] Sent to {to}  (msg id: {resp.json().get('id', '?')})")
+
+
+# ── Offer email ───────────────────────────────────────────────────────────────
+def send_offer_email(
+    host_name: str,
+    host_email: str,
+    listing_title: str,
+    checkout_url: str,
+    outreach_hook: str,
+    revenue_at_stake: float,
+    open_nights: int,
+    recipient: str,
+) -> None:
+    """Send the payment-gated offer email (no PDF attached)."""
+    subject = f"Your Airbnb listing — {open_nights} open nights in the next 90 days"
+
+    plain = f"""Hi {host_name},
+
+{outreach_hook}
+
+I ran a quick analysis on your listing and found 3 specific fixes. Together they could \
+recover around ${revenue_at_stake:,.0f} in the next 90 days.
+
+Here's what you get:
+
+  - Full teardown PDF — photo scores, title fix, amenity gaps, priority checklist
+  - AI-enhanced photos — ready to upload to Airbnb, cover photo selected for highest CTR
+  - Delivered to your inbox as a ZIP file within 48 hours
+
+Normal price: $197
+Today: $29
+
+  {checkout_url}
+
+If it doesn't help you get more bookings, reply and I'll refund it — no questions.
+
+AL
+ListingBoost
+hello@scalr-us.com
+"""
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<style>
+  body {{ font-family: -apple-system, Arial, sans-serif; color: #1a1a1a;
+          max-width: 560px; margin: 0 auto; padding: 24px 16px; }}
+  .logo {{ font-size: 18px; font-weight: 700; }}
+  .logo span {{ color: #ff5a3c; }}
+  .hook {{ font-size: 15px; line-height: 1.6; margin: 20px 0; }}
+  .revenue {{ background: #f5f5f3; border-radius: 8px; padding: 16px 20px;
+              margin: 20px 0; font-size: 14px; line-height: 1.6; }}
+  .revenue strong {{ font-size: 22px; color: #ff5a3c; display: block; margin-bottom: 4px; }}
+  .what-you-get {{ border: 1px solid #e0e0e0; border-radius: 8px;
+                   padding: 16px 20px; margin: 20px 0; }}
+  .what-you-get h3 {{ font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+                      color: #888; font-weight: 600; margin: 0 0 12px; }}
+  .item {{ display: flex; gap: 10px; margin: 8px 0; font-size: 14px; line-height: 1.5; }}
+  .item-icon {{ flex-shrink: 0; width: 20px; height: 20px; background: #fff3f0;
+                border-radius: 50%; display: flex; align-items: center;
+                justify-content: center; font-size: 11px; color: #ff5a3c;
+                font-weight: 700; margin-top: 1px; }}
+  .pricing {{ display: flex; align-items: center; gap: 12px; margin: 20px 0; }}
+  .price-old {{ font-size: 18px; color: #bbb; text-decoration: line-through; }}
+  .price-new {{ font-size: 32px; font-weight: 800; color: #1a1a1a; }}
+  .price-badge {{ background: #fff3f0; border: 1px solid #ffd5cc; color: #ff5a3c;
+                  border-radius: 20px; padding: 3px 10px; font-size: 12px;
+                  font-weight: 700; }}
+  .cta {{ display: block; background: #ff5a3c; color: #fff; text-decoration: none;
+          text-align: center; padding: 16px 24px; border-radius: 8px;
+          font-weight: 700; font-size: 17px; margin: 20px 0; }}
+  .guarantee {{ font-size: 12px; color: #888; text-align: center; margin-top: -10px; }}
+  .footer {{ margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0e0e0;
+              font-size: 12px; color: #888; }}
+  a {{ color: #ff5a3c; }}
+</style>
+</head>
+<body>
+<div class="logo">Listing<span>Boost</span></div>
+
+<p class="hook">Hi {host_name},<br><br>{outreach_hook}</p>
+
+<p style="font-size:14px;color:#555;">I ran a quick analysis on your listing and found
+3 specific fixes. Together they could recover:</p>
+
+<div class="revenue">
+  <strong>${revenue_at_stake:,.0f}</strong>
+  in the next 90 days &mdash; based on your {open_nights} open nights at your current nightly rate.
+</div>
+
+<div class="what-you-get">
+  <h3>What you get</h3>
+  <div class="item">
+    <div class="item-icon">✓</div>
+    <div><strong>Teardown PDF</strong> &mdash; photo scores, title fix, amenity gap checklist,
+    priority action plan</div>
+  </div>
+  <div class="item">
+    <div class="item-icon">✓</div>
+    <div><strong>AI-enhanced photos</strong> &mdash; your existing photos upgraded and
+    re-ordered, cover photo selected for highest click-through rate, ready to upload</div>
+  </div>
+  <div class="item">
+    <div class="item-icon">✓</div>
+    <div><strong>ZIP delivered to your inbox</strong> &mdash; within 48 hours, nothing to
+    install</div>
+  </div>
+</div>
+
+<div class="pricing">
+  <span class="price-old">$197</span>
+  <span class="price-new">$29</span>
+  <span class="price-badge">85% off — today only</span>
+</div>
+
+<a href="{checkout_url}" class="cta">Get My ListingBoost Package &mdash; $29</a>
+<p class="guarantee">If it doesn't help you get more bookings, reply for a full refund.</p>
+
+<div class="footer">
+  AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
+  ListingBoost &bull; Airbnb listing optimization
+</div>
+</body>
+</html>"""
+
+    token = _access_token()
+    msg = MIMEMultipart("alternative")
+    msg["To"]      = recipient
+    msg["From"]    = "AL <hello@scalr-us.com>"
+    msg["Subject"] = subject
+    msg.attach(MIMEText(plain, "plain"))
+    msg.attach(MIMEText(html,  "html"))
+
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    resp = requests.post(
+        _GMAIL_SEND,
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        json={"raw": raw},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    print(f"  [gmail] Offer sent to {recipient}  (msg id: {resp.json().get('id', '?')})")
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+def main() -> None:
+    parser = argparse.ArgumentParser(description="ListingBoost delivery")
+    parser.add_argument("--listing-dir",   required=True)
+    parser.add_argument("--results-dir",   required=True)
+    parser.add_argument("--host-email",    required=True)
+    parser.add_argument("--host-name",     default="Host")
+    parser.add_argument("--listing-title", default="Your Airbnb Listing")
+    parser.add_argument("--listing-url",   default="")
+    parser.add_argument("--test",          action="store_true",
+                        help="Send to OWNER_EMAIL instead of host")
+    parser.add_argument("--payment-first", action="store_true",
+                        help="Generate Creem checkout link and print it (no email)")
+    parser.add_argument("--send-offer",    action="store_true",
+                        help="Email the host the payment link (no PDF). Reads teardown JSON for hook.")
+    parser.add_argument("--creem-product-id",
+                        default=os.environ.get("CREEM_PRODUCT_ID", ""),
+                        help="Creem product ID (override CREEM_PRODUCT_ID env)")
+    args = parser.parse_args()
+
+    listing_dir = Path(args.listing_dir)
+    results_dir = Path(args.results_dir)
+    export_dir  = results_dir / "FINAL_EXPORT"
+    pdf_path    = results_dir / "teardown_report.pdf"
+
+    # Step 0a: send-offer mode — email the host a payment link, no PDF
+    if args.send_offer:
+        if not args.creem_product_id:
+            print("[deliver] ERROR: --creem-product-id or CREEM_PRODUCT_ID required for --send-offer")
+            sys.exit(1)
+
+        listing_id = listing_dir.name
+        teardown_json = Path(f"/tmp/listingboost_teardowns/teardown_{listing_id}.json")
+        if not teardown_json.exists():
+            print(f"[deliver] ERROR: teardown JSON not found at {teardown_json}")
+            print("  Run:  python3 teardown.py <url>  first to generate it.")
+            sys.exit(1)
+
+        with open(teardown_json) as f:
+            td = json.load(f)
+
+        outreach_hook    = td.get("outreach_hook", "")
+        revenue_at_stake = td.get("revenue_at_stake_90d") or 0
+        open_nights      = td.get("open_nights_90d") or 0
+        nightly_rate     = td.get("nightly_rate") or 0
+
+        # Hard stop — never send revenue numbers we can't verify from real data
+        if not outreach_hook:
+            print("[deliver] ERROR: outreach_hook missing in teardown JSON. Re-run teardown.py.")
+            sys.exit(1)
+        if not nightly_rate or nightly_rate == 0:
+            print("[deliver] ERROR: nightly_rate is missing or zero in teardown JSON.")
+            print("  The scraper didn't capture a real price for this listing.")
+            print("  Check the listing manually and add 'nightly_rate' to the JSON before sending.")
+            sys.exit(1)
+        if not revenue_at_stake or revenue_at_stake == 0:
+            print("[deliver] ERROR: revenue_at_stake_90d is zero — calculation is based on missing data.")
+            print("  Set 'nightly_rate' in the teardown JSON and re-run teardown.py.")
+            sys.exit(1)
+
+        revenue_at_stake = float(revenue_at_stake)
+        open_nights      = int(open_nights)
+
+        from creem_payment import create_checkout_link
+        discount_code = os.environ.get("CREEM_DISCOUNT_CODE", "FAST29")
+        checkout_url = create_checkout_link(
+            product_id=args.creem_product_id,
+            customer_email=args.host_email,
+            metadata={"listing_id": listing_id, "host_name": args.host_name},
+            discount_code=discount_code,
+        )
+
+        recipient = os.environ.get("OWNER_EMAIL", "fakhrialmubarok@gmail.com") if args.test else args.host_email
+        if args.test:
+            print(f"[deliver] TEST MODE -- sending offer to {recipient} (not host)")
+
+        print(f"[deliver] Sending offer to {recipient}...")
+        print(f"  Hook: {outreach_hook[:80]}...")
+        print(f"  Revenue at stake: ${revenue_at_stake:,.0f}  |  Open nights: {open_nights}")
+        print(f"  Checkout: {checkout_url}")
+
+        send_offer_email(
+            host_name=args.host_name,
+            host_email=args.host_email,
+            listing_title=args.listing_title,
+            checkout_url=checkout_url,
+            outreach_hook=outreach_hook,
+            revenue_at_stake=revenue_at_stake,
+            open_nights=open_nights,
+            recipient=recipient,
+        )
+        print("\n[deliver] Offer sent. Run without --send-offer once payment is confirmed.")
+        return
+
+    # Step 0b: payment-first mode — generate checkout link and stop
+    if args.payment_first:
+        if not args.creem_product_id:
+            print("[deliver] ERROR: --creem-product-id or CREEM_PRODUCT_ID required for --payment-first")
+            print("  1. Create 'ListingBoost' product in Creem dashboard at https://www.creem.io")
+            print("  2. Copy the product ID and set CREEM_PRODUCT_ID=prod_xxx in .env")
+            sys.exit(1)
+        from creem_payment import create_checkout_link
+        listing_id = listing_dir.name
+        discount_code = os.environ.get("CREEM_DISCOUNT_CODE", "FAST29")
+        url = create_checkout_link(
+            product_id=args.creem_product_id,
+            customer_email=args.host_email,
+            metadata={"listing_id": listing_id, "host_name": args.host_name},
+            discount_code=discount_code,
+        )
+        print(f"\n[deliver] Payment link for {args.host_name} ({args.host_email}):")
+        print(f"  {url}\n")
+        print(f"  Anchor: $197  →  Offer: $29  (discount code: {discount_code})")
+        print("Send this link to the host. Once paid, run deliver.py again without --payment-first.")
+        return
+
+    # Step 1: generate PDF if missing
+    if not pdf_path.exists():
+        print("[deliver] Generating teardown PDF...")
+        sys.path.insert(0, str(ROOT))
+        from generate_teardown_pdf import generate_teardown
+        generate_teardown(
+            listing_dir, results_dir,
+            args.host_name, args.listing_title, args.listing_url,
+            pdf_path,
+        )
+    else:
+        size_kb = pdf_path.stat().st_size // 1024
+        print(f"[deliver] Using existing PDF ({size_kb} KB)")
+
+    # Step 2: build ZIP
+    if not export_dir.exists():
+        print(f"[deliver] ERROR: FINAL_EXPORT not found at {export_dir}")
+        print("  Run:  python3 photo_regen_free.py --export --listing-dir ... --results-dir ...")
+        sys.exit(1)
+
+    photos = sorted(p for p in export_dir.glob("*")
+                    if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp"))
+    photo_count = len(photos)
+    print(f"[deliver] Building ZIP: {photo_count} photos + PDF...")
+    zip_bytes = build_zip(export_dir, pdf_path)
+    zip_kb = len(zip_bytes) // 1024
+    print(f"[deliver] ZIP ready: {zip_kb} KB")
+
+    # Step 3: send
+    recipient = os.environ.get("OWNER_EMAIL", "fakhrialmubarok@gmail.com") if args.test else args.host_email
+    if args.test:
+        print(f"[deliver] TEST MODE -- sending to {recipient} (not host)")
+
+    listing_id = listing_dir.name
+    zip_name   = f"ListingBoost_{listing_id}.zip"
+    subject    = f"Your ListingBoost package is ready -- {args.listing_title}"
+
+    plain, html = _build_body(args.host_name, args.listing_title, photo_count)
+
+    print(f"[deliver] Sending to {recipient}...")
+    send_with_attachment(
+        to=recipient,
+        subject=subject,
+        plain=plain,
+        html=html,
+        zip_bytes=zip_bytes,
+        zip_filename=zip_name,
+    )
+
+    print(f"\n[deliver] Done.")
+    print(f"  PDF:    {pdf_path.name}  ({pdf_path.stat().st_size // 1024} KB)")
+    print(f"  Photos: {photo_count}")
+    print(f"  ZIP:    {zip_name}  ({zip_kb} KB)")
+    print(f"  Sent:   {recipient}")
+
+
+if __name__ == "__main__":
+    main()
