@@ -149,40 +149,81 @@ Return ONLY this JSON (no markdown, no explanation):
 }}"""
 
 
-def _call_claude(prompt: str) -> dict:
-    from anthropic import Anthropic
-    client = Anthropic(api_key=ANTHROPIC_API_KEY)
-    msg = client.messages.create(
-        model="claude-sonnet-4-5",
-        max_tokens=2000,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": prompt}]
-    )
-    raw = msg.content[0].text.strip()
+def _strip_json(raw: str) -> dict:
+    raw = raw.strip()
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
     return json.loads(raw.strip())
+
+
+def _call_claude(prompt: str) -> dict:
+    from anthropic import Anthropic
+    client = Anthropic(api_key=ANTHROPIC_API_KEY)
+    msg = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=2000,
+        system=SYSTEM_PROMPT,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return _strip_json(msg.content[0].text)
 
 
 def _call_openai(prompt: str) -> dict:
     from openai import OpenAI
     client = OpenAI(api_key=OPENAI_API_KEY)
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
-        max_tokens=2000,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": prompt}
-        ]
+        model="gpt-4o-mini", max_tokens=2000,
+        messages=[{"role": "system", "content": SYSTEM_PROMPT},
+                  {"role": "user", "content": prompt}]
     )
-    raw = resp.choices[0].message.content.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    return json.loads(raw.strip())
+    return _strip_json(resp.choices[0].message.content)
+
+
+def _call_groq(prompt: str) -> dict:
+    import requests as _req
+    key = os.getenv("GROQ_API_KEY", "")
+    if not key:
+        raise ValueError("GROQ_API_KEY not set")
+    resp = _req.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={"model": "llama-3.3-70b-versatile", "max_tokens": 2000,
+              "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+                           {"role": "user", "content": prompt}]},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    return _strip_json(resp.json()["choices"][0]["message"]["content"])
+
+
+def _call_hf(prompt: str) -> dict:
+    """HuggingFace Inference API — free tier, Llama-3 70B."""
+    import requests as _req
+    key = os.getenv("HF_TOKEN", "")
+    if not key:
+        raise ValueError("HF_TOKEN not set")
+    resp = _req.post(
+        "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-70B-Instruct",
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={"inputs": f"<|system|>\n{SYSTEM_PROMPT}\n<|user|>\n{prompt}\n<|assistant|>",
+              "parameters": {"max_new_tokens": 2000, "return_full_text": False}},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    raw = resp.json()
+    text = raw[0]["generated_text"] if isinstance(raw, list) else raw.get("generated_text", "")
+    return _strip_json(text)
+
+
+# Ordered fallback chain — cheapest/fastest first
+_LLM_CHAIN = [
+    ("Groq llama-3.3-70b (free)",      _call_groq),
+    ("Claude Haiku (credits)",          _call_claude),
+    ("OpenAI gpt-4o-mini (quota)",      _call_openai),
+    ("HuggingFace Llama-3 (free)",      _call_hf),
+]
 
 
 def _analyze(listing: dict) -> dict:
@@ -229,11 +270,16 @@ def _analyze(listing: dict) -> dict:
         high_value_amenity_categories=", ".join(high_value_amenity_categories),
     )
 
-    try:
-        return _call_claude(prompt)
-    except Exception as e:
-        print(f"  [teardown] Claude failed ({e}), trying OpenAI fallback...")
-        return _call_openai(prompt)
+    last_err = None
+    for label, fn in _LLM_CHAIN:
+        try:
+            result = fn(prompt)
+            print(f"  [teardown] LLM: {label}")
+            return result
+        except Exception as e:
+            print(f"  [teardown] {label} failed: {e}")
+            last_err = e
+    raise RuntimeError(f"All LLM backends failed. Last error: {last_err}")
 
 
 def _render_pdf(listing: dict, result: TeardownResult, image_result=None) -> str:
