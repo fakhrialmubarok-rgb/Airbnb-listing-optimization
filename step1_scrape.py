@@ -120,6 +120,12 @@ def main():
     with open(out_json, "w") as f:
         json.dump([l for l, _ in qualified], f, indent=2)
 
+    # Full cohort (qualified + rejected + dupes) — the market benchmark pool
+    # for Step 2. Rejected listings are still real market data points.
+    cohort_json = Path(__file__).parent / "work" / "step1_cohort.json"
+    with open(cohort_json, "w") as f:
+        json.dump(listings, f, indent=2)
+
     print(f"\n[step1] RESULTS: {len(qualified)} qualified, {len(rejected)} rejected, {len(dupes)} dupes")
     for l, why in qualified:
         ch = "email:" + l.get("host_email", "") if l.get("host_email") else "airbnb_dm"

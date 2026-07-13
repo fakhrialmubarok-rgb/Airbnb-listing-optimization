@@ -113,6 +113,8 @@ Photo count: {photo_count}
 MARKET CONTEXT (scraped same-city cohort, real data — you may cite these):
 {market_context}
 
+HOOK ANGLE RULE (mandatory): {hook_angle_rule}
+
 AMENITIES AVAILABLE: {amenities_available}
 AMENITIES MISSING: {amenities_missing}
 
@@ -320,6 +322,7 @@ _LLM_CHAIN = [
     ("Claude Haiku (paid credits)",      _call_claude),
     ("OpenAI gpt-4o-mini (paid quota)",  _call_openai),
 ]
+_CHAIN_START = 0  # index of last-successful backend (sticky within a batch)
 
 
 def build_market_context(cohort: list[dict]) -> str:
@@ -339,7 +342,24 @@ def build_market_context(cohort: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def _analyze(listing: dict, market_context: str = "No cohort data available — do not invent benchmarks.") -> dict:
+def _hook_angle_rule(listing: dict, cohort_median_rate: float | None) -> str:
+    """Deterministic guard: the price-gap angle is only allowed when the gap
+    is >= 10% — a £1 gap is not a diagnosis. Otherwise force a stronger angle."""
+    rate = listing.get("nightly_rate") or 0
+    if not cohort_median_rate or not rate:
+        return ("Do NOT use price-vs-market as the outreach_hook angle (no reliable benchmark). "
+                "Lead with open nights x nightly rate (revenue at stake), photos, or title instead.")
+    gap_pct = (rate - cohort_median_rate) / cohort_median_rate * 100
+    if abs(gap_pct) >= 10:
+        return (f"Their rate is {gap_pct:+.0f}% vs the cohort median — a significant gap. "
+                "You MAY use the price-vs-occupancy angle as the outreach_hook.")
+    return (f"Their rate is only {gap_pct:+.0f}% vs the cohort median — NOT significant. "
+            "Do NOT mention price-vs-market in the outreach_hook. Lead with open nights x "
+            "nightly rate (revenue at stake), the photo gap, or the title instead.")
+
+
+def _analyze(listing: dict, market_context: str = "No cohort data available — do not invent benchmarks.",
+             cohort_median_rate: float | None = None) -> dict:
     preferred_title_length = ls.get_strategy("generator", "preferred_title_length", default=50)
     high_value_amenity_categories = ls.get_strategy(
         "generator", "high_value_amenity_categories",
@@ -376,6 +396,7 @@ def _analyze(listing: dict, market_context: str = "No cohort data available — 
         open_nights=open_nights or "unknown",
         photo_count=len(listing.get("image_urls") or []) or "unknown",
         market_context=market_context,
+        hook_angle_rule=_hook_angle_rule(listing, cohort_median_rate),
         amenities_available=", ".join(avail_names) or "none listed",
         amenities_missing=", ".join(miss_names) or "none listed",
         image_rooms=", ".join(image_rooms) or "unknown",
@@ -388,14 +409,19 @@ def _analyze(listing: dict, market_context: str = "No cohort data available — 
 
     REQUIRED_KEYS = {"score_title", "score_desc", "title_variants",
                      "rewritten_desc", "key_diagnosis", "outreach_hook"}
+    # Sticky model: start from whichever backend last succeeded this process,
+    # so a batch doesn't waste retries on a known-rate-limited model per lead.
+    global _CHAIN_START
     last_err = None
-    for label, fn in _LLM_CHAIN:
+    order = _LLM_CHAIN[_CHAIN_START:] + _LLM_CHAIN[:_CHAIN_START]
+    for label, fn in order:
         try:
             result = fn(prompt)
             missing = REQUIRED_KEYS - set(result)
             if missing:
                 raise ValueError(f"incomplete analysis, missing {sorted(missing)}")
             print(f"  [teardown] LLM: {label}")
+            _CHAIN_START = next(i for i, (l, _) in enumerate(_LLM_CHAIN) if l == label)
             return result
         except Exception as e:
             print(f"  [teardown] {label} failed: {e}")

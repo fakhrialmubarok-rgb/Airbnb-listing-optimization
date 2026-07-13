@@ -24,6 +24,8 @@ sys.path.insert(0, str(HERE))
 from teardown import _analyze, build_market_context
 
 QUALIFIED_JSON = HERE / "work" / "step1_qualified.json"
+COHORT_JSON    = HERE / "work" / "step1_cohort.json"
+MIN_COHORT     = 15   # below this, the benchmark is too thin to put in a paid PDF
 TRACKER_CSV    = HERE / "work" / "leads_tracker.csv"
 TEARDOWN_DIR   = HERE / "work" / "teardowns"
 TEARDOWN_DIR.mkdir(parents=True, exist_ok=True)
@@ -31,7 +33,19 @@ TEARDOWN_DIR.mkdir(parents=True, exist_ok=True)
 
 def main():
     only_id = sys.argv[1] if len(sys.argv) > 1 else None
-    cohort = json.loads(QUALIFIED_JSON.read_text())
+    leads = json.loads(QUALIFIED_JSON.read_text())
+    # Benchmark pool = the FULL scrape cohort (rejected listings are still
+    # real market data), not just the qualified leads.
+    cohort = json.loads(COHORT_JSON.read_text()) if COHORT_JSON.exists() else leads
+    if len(cohort) < MIN_COHORT:
+        print(f"[step2] WARNING: cohort has only {len(cohort)} listings (< {MIN_COHORT}). "
+              f"Benchmark is thin — scrape a bigger batch (step1 count >= 20) before "
+              f"putting these medians in a customer PDF.")
+
+    import statistics as st
+    rates = [l["nightly_rate"] for l in cohort if l.get("nightly_rate")]
+    median_rate = st.median(rates) if rates else None
+
     market_context = build_market_context(cohort)
     print(f"[step2] Market context:\n{market_context}\n")
 
@@ -45,7 +59,7 @@ def main():
 
     by_id = {r["listing_id"]: r for r in rows}
     done = 0
-    for l in cohort:
+    for l in leads:
         lid = l.get("listing_id")
         if only_id and lid != only_id:
             continue
@@ -54,7 +68,7 @@ def main():
             continue
 
         print(f"[step2] Analyzing {lid} ({l.get('host_name')})...")
-        analysis = _analyze(l, market_context=market_context)
+        analysis = _analyze(l, market_context=market_context, cohort_median_rate=median_rate)
 
         out = TEARDOWN_DIR / f"teardown_{lid}.json"
         out.write_text(json.dumps({
