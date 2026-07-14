@@ -461,20 +461,16 @@ def process_lead(listing: dict, cap=None) -> dict:
         photos = photos[:cap]
     print(f"[step3] {lid}: {len(photos)} photos selected (of {len(listing.get('image_urls') or [])})")
 
-    # Creem moderation gate — skip if API unreachable (network down / DNS fail).
-    # Airbnb listing photos are not NSFW; fail-open on connectivity errors only.
+    # Creem moderation gate — FAIL CLOSED per Creem ToS.
+    # Must pass before any image generation. Retries 3x on transient network errors.
     if os.environ.get("CREEM_API_KEY"):
         try:
             from creem_payment import assert_prompt_allowed
             sample_prompt = build_prompt(listing, tv_visible=False)[:500]
             assert_prompt_allowed(sample_prompt, external_id=f"listing_{lid}")
         except RuntimeError as e:
-            err_str = str(e)
-            if "NameResolutionError" in err_str or "ConnectionError" in err_str or "Max retries" in err_str:
-                print(f"[step3] {lid}: moderation API unreachable (network) — proceeding anyway")
-            else:
-                print(f"[step3] {lid}: BLOCKED by Creem moderation — {e}")
-                return {"photos": len(photos), "recreated": 0, "dir": str(out_dir)}
+            print(f"[step3] {lid}: moderation gate blocked — {e}")
+            return {"photos": len(photos), "recreated": 0, "dir": str(out_dir)}
 
     manifest = []
     for n, url in enumerate(photos, 1):

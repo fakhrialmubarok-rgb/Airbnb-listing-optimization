@@ -38,29 +38,46 @@ _HEADERS = {
 
 # ── Moderation (required by Creem ToS for AI generation products) ─────────────
 
-def moderate_prompt(prompt: str, external_id: str | None = None) -> str:
+def moderate_prompt(prompt: str, external_id: str | None = None,
+                    _retries: int = 3, _backoff: float = 2.0) -> str:
     """
     Screen a prompt against Creem's content policy BEFORE any generation.
     Returns the decision: 'allow', 'flag', or 'deny'.
 
-    Fails CLOSED — if the API is unreachable, raises RuntimeError so the
-    caller blocks generation rather than slipping unsafe prompts through.
-    Treat 'flag' same as 'deny' per Creem recommendation.
+    Fails CLOSED — if the API is unreachable after retries, raises RuntimeError
+    so the caller blocks generation. Treat 'flag' same as 'deny'.
+    Retries 3x on transient network/5xx errors with exponential backoff.
     """
     payload: dict = {"prompt": prompt}
     if external_id:
         payload["external_id"] = external_id
-    try:
-        resp = requests.post(
-            f"{_BASE}/moderation/prompt",
-            headers=_HEADERS,
-            json=payload,
-            timeout=5,
-        )
-        resp.raise_for_status()
-        return resp.json().get("decision", "deny")
-    except Exception as e:
-        raise RuntimeError(f"Creem moderation unavailable — blocking generation: {e}") from e
+    last_err: Exception | None = None
+    for attempt in range(_retries):
+        try:
+            resp = requests.post(
+                f"{_BASE}/moderation/prompt",
+                headers=_HEADERS,
+                json=payload,
+                timeout=8,
+            )
+            # 4xx (403/401) = auth/account issue, no point retrying
+            if resp.status_code in (401, 403):
+                raise RuntimeError(
+                    f"Creem moderation auth error ({resp.status_code}) — "
+                    "check CREEM_API_KEY and account status. Blocking generation."
+                )
+            resp.raise_for_status()
+            return resp.json().get("decision", "deny")
+        except RuntimeError:
+            raise
+        except Exception as e:
+            last_err = e
+            if attempt < _retries - 1:
+                time.sleep(_backoff ** attempt)
+    raise RuntimeError(
+        f"Creem moderation unreachable after {_retries} attempts — "
+        f"blocking generation: {last_err}"
+    )
 
 
 def assert_prompt_allowed(prompt: str, external_id: str | None = None) -> None:

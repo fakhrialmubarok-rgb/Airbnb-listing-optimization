@@ -22,11 +22,19 @@ CREEM_API_KEY = os.environ.get("CREEM_API_KEY", "")
 
 
 def _creem_get(path: str) -> dict:
-    import urllib.request
+    import urllib.request, urllib.error
     url = f"https://api.creem.io/v1{path}"
     req = urllib.request.Request(url, headers={"x-api-key": CREEM_API_KEY})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        return json.loads(r.read())
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        if e.code == 403:
+            raise RuntimeError(
+                "Creem API 403 — payout account rejected or API key missing Orders permission.\n"
+                "ACTION: Creem Dashboard → Balance → Payout Account → fix rejection → Request re-review."
+            ) from e
+        raise
 
 
 def _read_tracker() -> list[dict]:
