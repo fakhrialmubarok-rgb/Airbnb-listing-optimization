@@ -202,11 +202,11 @@ def page_scorecard(c, a, nums, page_no):
         c.drawString(M, y, label)
         c.setFillColor(HexColor("#eee8dd"))
         c.roundRect(bar_x, y - 1, bar_w, 4.2*mm, 2.1*mm, fill=1, stroke=0)
-        if s > 0:
+        if s and s > 0:
             c.setFillColor(CORAL if s <= 4 else (HexColor("#f0a03c") if s <= 6 else HexColor("#3fae6a")))
             c.roundRect(bar_x, y - 1, bar_w * min(s,10)/10, 4.2*mm, 2.1*mm, fill=1, stroke=0)
         c.setFont("Helvetica-Bold", 10); c.setFillColor(INK)
-        c.drawRightString(W - M, y, f"{s}/10")
+        c.drawRightString(W - M, y, f"{s}/10" if s is not None else "—/10")
 
     # methodology — the credibility box the report was missing
     y -= 12*mm
