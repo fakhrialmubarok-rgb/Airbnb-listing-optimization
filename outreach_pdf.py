@@ -233,9 +233,6 @@ def page_glimpse(c, pdir: Path, td):
 
         # Left: blurred / "before" hint
         c.drawImage(_blurred_crop(o_path, ratio, radius=22), M, y-ph, pw, ph)
-        c.setFillColor(HexColor("#191919cc" if False else INK))
-        # subtle dark overlay on blurred side
-        c.setFillAlpha(0.35); c.rect(M, y-ph, pw, ph, fill=1, stroke=0); c.setFillAlpha(1)
         c.setFont("Helvetica-Bold", 9); c.setFillColor(WHITE)
         c.drawCentredString(M + pw/2, y - ph/2, "before")
 
