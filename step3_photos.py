@@ -140,8 +140,11 @@ def watermark_staged(jpeg_bytes: bytes) -> bytes:
         font = ImageFont.load_default()
     text = "VIRTUAL STAGING CONCEPT"
     pad = int(w * 0.015)
-    draw.text((pad + 1, h - size - pad + 1), text, font=font, fill=(0, 0, 0, 90))
-    draw.text((pad, h - size - pad), text, font=font, fill=(255, 255, 255, 200))
+    tw = draw.textlength(text, font=font)
+    # dark backing strip so the disclosure is legible on any background
+    draw.rectangle([pad - 6, h - size - pad - 6, pad + tw + 6, h - pad + 4],
+                   fill=(20, 28, 43, 175))
+    draw.text((pad, h - size - pad), text, font=font, fill=(255, 255, 255, 235))
     im = PILImage.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=92)
@@ -450,9 +453,11 @@ def process_lead(listing: dict, cap=None) -> dict:
         try:
             (out_dir / "staged").mkdir(exist_ok=True)
             s_cands = []
+            from photo_grade import highkey_grade as _grade
             for _ in (1, 2):
                 try:
                     s_img, _b = recreate(base, url, STAGING_PROMPT)
+                    s_img = _grade(s_img)          # grade BEFORE QC — judge the shipping image
                     s_v = qc_check_staged(base, s_img)
                     s_cands.append((s_img, s_v))
                 except Exception as e:
@@ -461,9 +466,8 @@ def process_lead(listing: dict, cap=None) -> dict:
                                         sum(1 for x in t[1].values() if x is True)),
                          reverse=True)
             if s_cands and s_cands[0][1].get("verdict") == "pass":
-                from photo_grade import highkey_grade
                 (out_dir / "staged" / f"{n:02d}.jpg").write_bytes(
-                    watermark_staged(highkey_grade(s_cands[0][0])))
+                    watermark_staged(s_cands[0][0]))
                 staged_status = "staged"
             else:
                 staged_status = "qc_fail"
@@ -472,7 +476,7 @@ def process_lead(listing: dict, cap=None) -> dict:
 
         manifest.append({"n": n, "url": url, "status": status,
                          "backend": backend, "qc": verdict,
-                         "staged": staged_status})
+                         "staged": staged_status, "tv": tv})
         print(f"  {n}: {status} via {backend or '-'} | QC: {verdict.get('verdict','-')} | staged: {staged_status}")
 
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))

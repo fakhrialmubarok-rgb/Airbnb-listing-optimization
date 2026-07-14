@@ -107,7 +107,20 @@ def page_cover(c, td, nums, hero: Path | None):
     # full-bleed hero, top 58%
     img_h = H * 0.58
     if hero and hero.exists():
-        c.drawImage(_cover_crop(hero, W / img_h), 0, H - img_h, W, img_h)
+        # strip the bottom 8% (any baked/PIL watermark text) then crop to fill;
+        # the cover gets its own clean corner tag instead
+        im = PILImage.open(hero).convert("RGB")
+        w0, h0 = im.size
+        im = im.crop((0, 0, w0, int(h0 * 0.92)))
+        buf = io.BytesIO(); im.save(buf, "JPEG", quality=90); buf.seek(0)
+        tmp = PDF_DIR / "_cover_tmp.jpg"; tmp.write_bytes(buf.getvalue())
+        c.drawImage(_cover_crop(tmp, W / img_h), 0, H - img_h, W, img_h)
+        tmp.unlink(missing_ok=True)
+        if "staged" in str(hero):
+            c.setFillColor(HexColor("#141c2b"))
+            c.rect(W - 62*mm, H - 9*mm, 62*mm, 9*mm, fill=1, stroke=0)
+            c.setFont("Helvetica-Bold", 7); c.setFillColor(WHITE)
+            c.drawString(W - 58*mm, H - 6.2*mm, "VIRTUAL STAGING CONCEPT")
     # navy band
     band_h = H - img_h
     c.setFillColor(NAVY); c.rect(0, 0, W, band_h, fill=1, stroke=0)
@@ -127,16 +140,18 @@ def page_cover(c, td, nums, hero: Path | None):
     if stake:
         y -= 19*mm
         c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
-        c.drawString(M, y, f"£{stake:,.0f}")
+        c.drawString(M, y, f"{nums.get('open_nights_90d','?')} open nights")
         c.setFont("Helvetica", 11.5); c.setFillColor(WHITE)
-        c.drawString(M + c.stringWidth(f"£{stake:,.0f}", "Helvetica-Bold", 30) + 4*mm,
-                     y + 1, "of bookings are open in your next 90 days.")
+        c.drawString(M + c.stringWidth(f"{nums.get('open_nights_90d','?')} open nights",
+                                       "Helvetica-Bold", 30) + 4*mm,
+                     y + 1, "on your calendar in the next 90 days.")
         y -= 8*mm
         c.setFont("Helvetica", 10); c.setFillColor(HexColor("#aab4c8"))
-        c.drawString(M, y, f"{nums.get('open_nights_90d','?')} unbooked nights at "
-                           f"£{nums.get('nightly_rate_gbp',0):,.0f}/night "
-                           f"({nums.get('occupancy_pct','?')}% occupancy). "
-                           "This report shows exactly why — and how to fix it.")
+        c.drawString(M, y, f"At your £{nums.get('nightly_rate_gbp',0):,.0f}/night rate, "
+                           f"filling even a third of those nights is worth ~£{stake/3:,.0f}.")
+        y -= 5.5*mm
+        c.drawString(M, y, "This report shows what's holding the listing back — and gives "
+                           "you the fixes ready to paste in.")
     c.showPage()
 
 
@@ -162,7 +177,7 @@ def page_scorecard(c, a, nums, page_no):
         (f"£{nums.get('nightly_rate_gbp',0):,.0f}", "your nightly rate"),
         (f"{nums.get('occupancy_pct','?')}%",       "occupancy next 90d"),
         (f"{nums.get('open_nights_90d','?')}",      "open nights"),
-        (f"£{nums.get('revenue_at_stake_gbp',0):,.0f}", "revenue at stake"),
+        (f"~£{nums.get('revenue_at_stake_gbp',0)/3:,.0f}", "realistic 90d upside*"),
     ]
     cw = (W - 2*M - 3*4.5*mm) / 4
     for i, (v, l) in enumerate(cards):
@@ -186,8 +201,23 @@ def page_scorecard(c, a, nums, page_no):
         c.setFont("Helvetica-Bold", 10); c.setFillColor(INK)
         c.drawRightString(W - M, y, f"{s}/10")
 
+    # methodology — the credibility box the report was missing
+    y -= 12*mm
+    c.setFont("Helvetica", 8); c.setFillColor(MUTED)
+    y = _wrap_text(c,
+        "*Realistic upside assumes filling one third of your open nights at your current "
+        "rate — a conservative scenario, not a promise. "
+        "How we scored: everything above comes from your live public listing — the "
+        "3-month availability calendar, photo set, title, description and review "
+        "signals, captured on the date on the cover. Scores weight what guests see "
+        "first when deciding to click: title and cover photo, then photos, then copy. "
+        "No third-party estimates are used. Where the diagnosis cites your review "
+        "count, that's the listing's own public review total at capture (a new "
+        "listing starts at zero even when the host profile has reviews).",
+        M, y, W - 2*M, size=8, color=MUTED, leading=11)
+
     # diagnosis
-    y -= 17*mm
+    y -= 8*mm
     _eyebrow(c, M, y, "What's holding you back")
     y -= 8*mm
     for i, d in enumerate(a.get("key_diagnosis", [])[:3], 1):
@@ -225,7 +255,24 @@ def page_copy(c, a, page_no):
     c.drawString(M, y, "Your description, rewritten")
     y -= 7*mm
     desc = clean(a.get("rewritten_desc", ""))
-    lines = simpleSplit(desc, "Helvetica", 9.5, W - 2*M - 10*mm)
+    # Break the wall of text: split into short paragraphs on sentence boundaries
+    # (Airbnb truncates long paragraphs on mobile; hosts scan, not read)
+    if "\n" not in desc:
+        sents = [s.strip() for s in desc.replace("! ", "!|").replace("? ", "?|")
+                 .replace(". ", ".|").split("|") if s.strip()]
+        paras, cur = [], []
+        for s in sents:
+            cur.append(s)
+            if len(cur) >= 3:
+                paras.append(" ".join(cur)); cur = []
+        if cur:
+            paras.append(" ".join(cur))
+        desc = "\n\n".join(paras)
+    lines = []
+    for para in desc.split("\n\n"):
+        lines += simpleSplit(para, "Helvetica", 9.5, W - 2*M - 10*mm) + [""]
+    while lines and lines[-1] == "":
+        lines.pop()
     box_h = len(lines) * 13.5 + 16
     c.setFillColor(WHITE)
     c.roundRect(M, y - box_h, W - 2*M, box_h, 2.5*mm, fill=1, stroke=0)
@@ -254,23 +301,39 @@ def page_copy(c, a, page_no):
     c.showPage()
 
 
+def _pair_delta(o: Path, r: Path) -> float:
+    """Mean absolute pixel difference — how visibly different the pair is."""
+    import numpy as np
+    a = PILImage.open(o).convert("L").resize((128, 96))
+    b = PILImage.open(r).convert("L").resize((128, 96))
+    return float(np.mean(np.abs(np.asarray(a, float) - np.asarray(b, float))))
+
+
 def pages_photos(c, pdir: Path, manifest: list, page_no: int) -> int:
-    pairs = [m["n"] for m in manifest
-             if (pdir/"originals"/f"{m['n']:02d}.jpg").exists()
-             and (pdir/"recreated"/f"{m['n']:02d}.jpg").exists()]
+    cand = [m["n"] for m in manifest
+            if (pdir/"originals"/f"{m['n']:02d}.jpg").exists()
+            and (pdir/"recreated"/f"{m['n']:02d}.jpg").exists()
+            and m.get("status") == "recreated"       # never show original-kept as "after"
+            and not m.get("tv")]                     # TV-content frames contradict "same
+                                                     # contents" — deliver, don't showcase
+    # A near-identical pair is an anti-sell: rank by visual delta, show top 4
+    scored = sorted(cand, key=lambda n: -_pair_delta(
+        pdir/"originals"/f"{n:02d}.jpg", pdir/"recreated"/f"{n:02d}.jpg"))
+    pairs = sorted([n for n in scored[:4] if _pair_delta(
+        pdir/"originals"/f"{n:02d}.jpg", pdir/"recreated"/f"{n:02d}.jpg") >= 10.0])
     first = True
     per_page = 2
     for idx in range(0, len(pairs), per_page):
         c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
         y = H - M - 6*mm
         if first:
-            _eyebrow(c, M, y, "03 — Your Photos, Re-shot")
+            _eyebrow(c, M, y, "03 — Your Photos, Professionally Re-edited")
             y -= 11*mm
             _h1(c, M, y, "Before & after")
             y -= 7*mm
             c.setFont("Helvetica", 9.5); c.setFillColor(MUTED)
-            c.drawString(M, y, "Same rooms, same furniture — re-lit, straightened and staged. "
-                               "Full-resolution files come with this report.")
+            c.drawString(M, y, "Same rooms, same contents — re-lit, straightened and colour-"
+                               "graded. Full-resolution files for all photos come with this report.")
             y -= 8*mm
             first = False
         half = (W - 2*M - 6*mm) / 2
@@ -310,15 +373,21 @@ def pages_staged(c, pdir: Path, page_no: int) -> int:
             c.setFont("Helvetica", 9.5); c.setFillColor(MUTED)
             y = _wrap_text(c, "Virtual staging concepts — same rooms, same furniture, "
                               "plus the styling a design studio would add. Use them as "
-                              "your shopping list: every added item is affordable and "
-                              "shown in your actual space.",
+                              "a styling direction for your actual space; these images "
+                              "are inspiration, never for your Airbnb gallery.",
                            M, y, W - 2*M, size=9.5, color=MUTED) - 3*mm
             first = False
-        slot_h = (y - 18*mm) / per_page
-        for p in staged[idx:idx + per_page]:
-            img_h = slot_h - 8*mm
-            ratio = (W - 2*M) / img_h
-            c.drawImage(_cover_crop(p, ratio), M, y - img_h - 3*mm, W - 2*M, img_h)
+        batch = staged[idx:idx + per_page]
+        slot_h = (y - 18*mm) / (per_page if len(batch) > 1 else 1)
+        for p in batch:
+            img_h = slot_h - 13*mm
+            # NO cropping — the disclosure watermark must stay fully visible
+            iw, ih = _fit(p, W - 2*M, img_h)
+            x = M + (W - 2*M - iw) / 2
+            c.drawImage(str(p), x, y - ih - 3*mm, iw, ih)
+            _wrap_text(c, "Virtual staging concept — added items are styling suggestions, "
+                          "not present in the property. Never upload to Airbnb.",
+                       M, y - ih - 8*mm, W - 2*M, size=8, color=MUTED, leading=10.5)
             y -= slot_h
         _footer(c, page_no); page_no += 1
         c.showPage()
@@ -342,13 +411,44 @@ def page_close(c, page_no):
     y -= 8*mm
     c.setFont("Helvetica-Bold", 12); c.setFillColor(WHITE)
     c.drawString(M, y, "— AL, ListingBoost")
+
+    # trust block — guarantee + contact + honesty notes
+    y -= 22*mm
+    c.setStrokeColor(HexColor("#2c3a55")); c.setLineWidth(0.8)
+    c.line(M, y + 8*mm, W - M, y + 8*mm)
+    c.setFont("Helvetica-Bold", 10); c.setFillColor(CORAL)
+    c.drawString(M, y, "7-day guarantee")
+    c.setFont("Helvetica", 9.5); c.setFillColor(HexColor("#aab4c8"))
+    y -= 5.5*mm
+    c.drawString(M, y, "Not useful? Reply within 7 days and you get a full refund — and keep every file.")
+    y -= 9*mm
+    c.setFont("Helvetica-Bold", 10); c.setFillColor(WHITE)
+    c.drawString(M, y, "The honest print")
+    c.setFont("Helvetica", 8.5); c.setFillColor(HexColor("#8fa0bd"))
+    for ln in ["Enhanced photos: your own photos, professionally re-lit and straightened — same rooms, same contents.",
+               "Staging concepts: clearly watermarked design mock-ups. Don't upload them to Airbnb; use them as a styling guide.",
+               "All numbers come from your live public listing (calendar, photos, copy) on the date shown on the cover."]:
+        y -= 5*mm
+        c.drawString(M, y, ln)
+    y -= 9*mm
+    c.setFont("Helvetica", 9); c.setFillColor(HexColor("#aab4c8"))
+    c.drawString(M, y, "ListingBoost  ·  hello@scalr-us.com  ·  reply anytime, a human answers")
     c.showPage()
 
 
 # ---------------------------------------------------------------- build ----
 
 def build_pdf(lid: str) -> Path:
-    td = json.loads(clean((TEARDOWNS / f"teardown_{lid}.json").read_text()))
+    td = json.loads((TEARDOWNS / f"teardown_{lid}.json").read_text())
+    # clean AFTER parsing — the file stores \uXXXX escapes, so cleaning raw text misses them
+    td = json.loads(clean(json.dumps(td, ensure_ascii=False)))
+    # Consistency guard: LLM body copy may quote the raw stake figure; the report's
+    # own framing is the conservative one-third scenario. Rewrite any stray mentions.
+    stake_raw = td.get("listing_numbers", {}).get("revenue_at_stake_gbp") or 0
+    if stake_raw:
+        for fmt in (f"£{stake_raw:,.0f} potential revenue", f"£{stake_raw:,.0f}"):
+            td = json.loads(json.dumps(td, ensure_ascii=False).replace(
+                fmt, f"~£{stake_raw/3:,.0f} realistic upside"))
     a, nums = td["analysis"], td.get("listing_numbers", {})
     pdir = PHOTOS_DIR / lid
     manifest = json.loads((pdir / "manifest.json").read_text()) if (pdir/"manifest.json").exists() else []
@@ -358,7 +458,11 @@ def build_pdf(lid: str) -> Path:
     c = Canvas(str(out), pagesize=A4)
     c.setTitle(f"ListingBoost Teardown — {td.get('host_name','')}")
 
-    page_cover(c, td, nums, pdir / "recreated" / "01.jpg")
+    # Panel consensus (2026-07-15): the cover must be a REAL re-edited photo —
+    # leading an honest report with the staging mock-up undercuts the honest-print
+    # promise. Staging concepts live inside, captioned.
+    cover = pdir / "recreated" / "01.jpg"
+    page_cover(c, td, nums, cover)
     page_scorecard(c, a, nums, 2)
     page_copy(c, a, 3)
     next_no = pages_photos(c, pdir, manifest, 4)
