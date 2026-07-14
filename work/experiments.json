@@ -1,0 +1,64 @@
+{
+  "arms": {
+    "price": [
+      {
+        "id": "p39",
+        "value": 39,
+        "creem": "prod_7iXHDBgS74UY3quKrlI6JZ"
+      },
+      {
+        "id": "p99",
+        "value": 99,
+        "creem": "prod_gvsm2Kzvn941AQxAZai2c"
+      },
+      {
+        "id": "p197",
+        "value": 197,
+        "creem": "prod_3pOdnn3pMt31VT1tssFkOs"
+      }
+    ],
+    "subject": [
+      {
+        "id": "s_nights",
+        "value": "{open_nights} nights are sitting empty on your {city} calendar"
+      },
+      {
+        "id": "s_photo",
+        "value": "your cover photo is costing you bookings \u2014 proof inside"
+      },
+      {
+        "id": "s_direct",
+        "value": "I rebuilt your Airbnb listing (before/after inside)"
+      }
+    ],
+    "hook": [
+      {
+        "id": "h_occupancy",
+        "value": "occupancy math"
+      },
+      {
+        "id": "h_photos",
+        "value": "photo transformation"
+      },
+      {
+        "id": "h_title",
+        "value": "title rewrite tease"
+      }
+    ]
+  },
+  "assignments": {
+    "1705151487784656461": {
+      "price": "p99",
+      "subject": "s_direct",
+      "hook": "h_occupancy"
+    }
+  },
+  "outcomes": {
+    "1705151487784656461": {
+      "sent": false,
+      "opened": false,
+      "replied": false,
+      "paid": false
+    }
+  }
+}

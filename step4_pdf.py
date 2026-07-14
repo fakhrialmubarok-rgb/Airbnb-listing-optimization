@@ -29,14 +29,22 @@ PDF_DIR     = HERE / "work" / "pdfs"
 W, H = A4
 M = 16 * mm                     # page margin
 
-NAVY   = HexColor("#141c2b")
-NAVY2  = HexColor("#1e2a40")
-CORAL  = HexColor("#ff6b52")
-CREAM  = HexColor("#faf7f2")
-INK    = HexColor("#20293a")
-MUTED  = HexColor("#8a93a5")
-LINE   = HexColor("#e3ddd2")
+# Reference aesthetic (Fakhri 2026-07-15): warm cream ground, huge lowercase
+# red-orange display type, black ink body, hairlines, red circle motif.
+NAVY   = HexColor("#191919")   # legacy name — now ink-black panels
+NAVY2  = HexColor("#e4e0d7")   # legacy name — now soft card tone on cream
+CORAL  = HexColor("#e8391d")   # the reference red-orange
+CREAM  = HexColor("#edeae2")   # warm greige paper
+INK    = HexColor("#191919")
+MUTED  = HexColor("#8a877c")
+LINE   = HexColor("#c9c5ba")
 WHITE  = HexColor("#ffffff")
+
+def _dot(c, x, y, r=5.5):
+    """Red circle motif from the reference deck."""
+    from reportlab.lib.units import mm as _mm
+    c.setFillColor(CORAL)
+    c.circle(x, y, r * _mm / 2 if r > 20 else r, fill=1, stroke=0)
 
 _CHAR_MAP = {"‑": "-", "‐": "-", "–": "-", " ": " ", "‘": "'", "’": "'",
              "“": '"', "”": '"', "…": "...", "•": "-"}
@@ -91,85 +99,84 @@ def _footer(c: Canvas, page_no: int):
 
 
 def _eyebrow(c, x, y, text):
-    c.setFont("Helvetica-Bold", 8.5); c.setFillColor(CORAL)
-    c.drawString(x, y, text.upper())
-
-
-def _h1(c, x, y, text, color=INK, size=24):
-    c.setFont("Helvetica-Bold", size); c.setFillColor(color)
+    c.setFont("Helvetica", 7.5); c.setFillColor(INK)
     c.drawString(x, y, text)
+
+
+def _h1(c, x, y, text, color=CORAL, size=30):
+    c.setFont("Helvetica-Bold", size); c.setFillColor(color)
+    c.drawString(x, y, text.lower())
 
 
 # ---------------------------------------------------------------- pages ----
 
 def page_cover(c, td, nums, hero: Path | None):
     c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
-    # full-bleed hero, top 58%
-    img_h = H * 0.58
+    # metadata corners (reference: tiny ink text top-left/right)
+    c.setFont("Helvetica", 7.5); c.setFillColor(INK)
+    c.drawString(M, H - 12*mm, f"prepared for {td.get('host_name','')}")
+    c.drawRightString(W - M, H - 12*mm, td.get('analyzed_at',''))
+    c.drawString(M, H - 16.5*mm, "listingboost")
+
+    # framed hero photo, centered-right like the reference plate
     if hero and hero.exists():
-        # strip the bottom 8% (any baked/PIL watermark text) then crop to fill;
-        # the cover gets its own clean corner tag instead
         im = PILImage.open(hero).convert("RGB")
         w0, h0 = im.size
-        im = im.crop((0, 0, w0, int(h0 * 0.92)))
+        im = im.crop((0, 0, w0, int(h0 * 0.92)))   # strip any watermark strip
         buf = io.BytesIO(); im.save(buf, "JPEG", quality=90); buf.seek(0)
         tmp = PDF_DIR / "_cover_tmp.jpg"; tmp.write_bytes(buf.getvalue())
-        c.drawImage(_cover_crop(tmp, W / img_h), 0, H - img_h, W, img_h)
+        fw, fh = 120*mm, 84*mm
+        fx, fy = W - M - fw, H - 34*mm - fh
+        c.drawImage(_cover_crop(tmp, fw / fh), fx, fy, fw, fh)
         tmp.unlink(missing_ok=True)
-        if "staged" in str(hero):
-            c.setFillColor(HexColor("#141c2b"))
-            c.rect(W - 62*mm, H - 9*mm, 62*mm, 9*mm, fill=1, stroke=0)
-            c.setFont("Helvetica-Bold", 7); c.setFillColor(WHITE)
-            c.drawString(W - 58*mm, H - 6.2*mm, "VIRTUAL STAGING CONCEPT")
-    # navy band
-    band_h = H - img_h
-    c.setFillColor(NAVY); c.rect(0, 0, W, band_h, fill=1, stroke=0)
-    # coral rule across the seam
-    c.setFillColor(CORAL); c.rect(0, band_h - 1.2*mm, W, 1.2*mm, fill=1, stroke=0)
+    # red dot motif overlapping the frame corner
+    _dot(c, W - M - 124*mm, H - 32*mm, 6*mm)
 
-    y = band_h - 16*mm
-    _eyebrow(c, M, y, "ListingBoost  ·  Professional Airbnb Teardown")
-    y -= 13*mm
-    c.setFont("Helvetica-Bold", 34); c.setFillColor(WHITE)
-    c.drawString(M, y, "Your listing, rebuilt.")
-    y -= 8.5*mm
-    c.setFont("Helvetica", 11.5); c.setFillColor(HexColor("#aab4c8"))
-    c.drawString(M, y, f"Prepared for {td.get('host_name','')}  ·  {td.get('analyzed_at','')}")
+    # huge lowercase red display title, bottom-left
+    y = 92*mm
+    c.setFont("Helvetica-Bold", 46); c.setFillColor(CORAL)
+    c.drawString(M, y, "your listing,")
+    c.drawString(M, y - 15*mm, "rebuilt.")
 
     stake = nums.get("revenue_at_stake_gbp")
+    y -= 33*mm
+    c.setFont("Helvetica-Bold", 13); c.setFillColor(INK)
+    c.drawString(M, y, f"{nums.get('open_nights_90d','?')} open nights on your "
+                       f"calendar in the next 90 days.")
     if stake:
-        y -= 19*mm
-        c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
-        c.drawString(M, y, f"{nums.get('open_nights_90d','?')} open nights")
-        c.setFont("Helvetica", 11.5); c.setFillColor(WHITE)
-        c.drawString(M + c.stringWidth(f"{nums.get('open_nights_90d','?')} open nights",
-                                       "Helvetica-Bold", 30) + 4*mm,
-                     y + 1, "on your calendar in the next 90 days.")
-        y -= 8*mm
-        c.setFont("Helvetica", 10); c.setFillColor(HexColor("#aab4c8"))
+        y -= 7*mm
+        c.setFont("Helvetica", 9.5); c.setFillColor(INK)
         c.drawString(M, y, f"At your £{nums.get('nightly_rate_gbp',0):,.0f}/night rate, "
                            f"filling even a third of those nights is worth ~£{stake/3:,.0f}.")
         y -= 5.5*mm
-        c.drawString(M, y, "This report shows what's holding the listing back — and gives "
-                           "you the fixes ready to paste in.")
+        c.drawString(M, y, "This report shows what's holding the listing back — with the "
+                           "fixes ready to paste in.")
+    # hairline base rule
+    c.setStrokeColor(LINE); c.setLineWidth(0.7)
+    c.line(M, 20*mm, W - M, 20*mm)
+    c.setFont("Helvetica", 7.5); c.setFillColor(MUTED)
+    c.drawString(M, 15*mm, "professional airbnb teardown")
+    c.drawRightString(W - M, 15*mm, "hello@scalr-us.com")
     c.showPage()
 
 
 def _stat_card(c, x, y, w, h, value, label):
-    c.setFillColor(NAVY2)
-    c.roundRect(x, y, w, h, 2.5*mm, fill=1, stroke=0)
-    c.setFont("Helvetica-Bold", 17); c.setFillColor(WHITE)
-    c.drawString(x + 5*mm, y + h - 11*mm, value)
-    c.setFont("Helvetica", 8); c.setFillColor(HexColor("#8fa0bd"))
-    c.drawString(x + 5*mm, y + 5*mm, label.upper())
+    c.setStrokeColor(LINE); c.setLineWidth(0.7)
+    c.line(x, y + h, x + w, y + h)                 # hairline top rule
+    c.setFont("Helvetica-Bold", 19); c.setFillColor(CORAL)
+    c.drawString(x, y + h - 11*mm, value)
+    c.setFont("Helvetica", 7.5); c.setFillColor(INK)
+    c.drawString(x, y + 4*mm, label.lower())
 
 
 def page_scorecard(c, a, nums, page_no):
     c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
     y = H - M - 6*mm
-    _eyebrow(c, M, y, "01 — Diagnosis")
+    _eyebrow(c, M, y, "listingboost — teardown")
+    c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
+    c.drawRightString(W - M, y - 9*mm, "1.")
     y -= 11*mm
-    _h1(c, M, y, "Where the listing stands")
+    _h1(c, M, y, "where the listing stands")
 
     # stat cards (navy strip)
     y -= 34*mm
@@ -242,9 +249,11 @@ def page_scorecard(c, a, nums, page_no):
 def page_copy(c, a, page_no):
     c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
     y = H - M - 6*mm
-    _eyebrow(c, M, y, "02 — The Fixes")
+    _eyebrow(c, M, y, "listingboost — teardown")
+    c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
+    c.drawRightString(W - M, y - 9*mm, "2.")
     y -= 11*mm
-    _h1(c, M, y, "Copy that sells the place")
+    _h1(c, M, y, "copy that sells the place")
 
     y -= 12*mm
     c.setFont("Helvetica-Bold", 11.5); c.setFillColor(INK)
@@ -336,9 +345,11 @@ def pages_photos(c, pdir: Path, manifest: list, page_no: int) -> int:
         c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
         y = H - M - 6*mm
         if first:
-            _eyebrow(c, M, y, "03 — Your Photos, Professionally Re-edited")
+            _eyebrow(c, M, y, "your photos, professionally re-edited")
+            c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
+            c.drawRightString(W - M, y - 9*mm, "3.")
             y -= 11*mm
-            _h1(c, M, y, "Before & after")
+            _h1(c, M, y, "before & after")
             y -= 7*mm
             c.setFont("Helvetica", 9.5); c.setFillColor(MUTED)
             c.drawString(M, y, "Same rooms, same contents — re-lit, straightened and colour-"
@@ -352,10 +363,10 @@ def pages_photos(c, pdir: Path, manifest: list, page_no: int) -> int:
             img_h = slot_h - 12*mm
             ratio = half / img_h
             top = y - 5*mm
-            c.setFont("Helvetica-Bold", 8); c.setFillColor(MUTED)
-            c.drawString(M, top, "BEFORE")
+            c.setFont("Helvetica-Bold", 8); c.setFillColor(INK)
+            c.drawString(M, top, "before")
             c.setFillColor(CORAL)
-            c.drawString(M + half + 6*mm, top, "AFTER")
+            c.drawString(M + half + 6*mm, top, "after")
             c.drawImage(_cover_crop(o, ratio), M, top - 3*mm - img_h, half, img_h)
             c.drawImage(_cover_crop(r, ratio), M + half + 6*mm, top - 3*mm - img_h, half, img_h)
             y -= slot_h
@@ -375,9 +386,11 @@ def pages_staged(c, pdir: Path, page_no: int) -> int:
         c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
         y = H - M - 6*mm
         if first:
-            _eyebrow(c, M, y, "04 — The Vision")
+            _eyebrow(c, M, y, "virtual staging concepts")
+            c.setFont("Helvetica-Bold", 30); c.setFillColor(CORAL)
+            c.drawRightString(W - M, y - 9*mm, "4.")
             y -= 11*mm
-            _h1(c, M, y, "What this place could look like")
+            _h1(c, M, y, "what this place could look like")
             y -= 7*mm
             c.setFont("Helvetica", 9.5); c.setFillColor(MUTED)
             y = _wrap_text(c, "Virtual staging concepts — same rooms, same furniture, "
@@ -417,44 +430,43 @@ def pages_staged(c, pdir: Path, page_no: int) -> int:
 
 
 def page_close(c, page_no):
-    c.setFillColor(NAVY); c.rect(0, 0, W, H, fill=1, stroke=0)
-    c.setFillColor(CORAL); c.rect(0, H - 1.2*mm, W, 1.2*mm, fill=1, stroke=0)
-    y = H * 0.62
-    _eyebrow(c, M, y, "Next step")
-    y -= 12*mm
-    c.setFont("Helvetica-Bold", 26); c.setFillColor(WHITE)
-    c.drawString(M, y, "Paste it in. Watch what happens.")
-    y -= 12*mm
-    c.setFont("Helvetica", 11); c.setFillColor(HexColor("#aab4c8"))
+    c.setFillColor(CREAM); c.rect(0, 0, W, H, fill=1, stroke=0)
+    c.setFont("Helvetica", 7.5); c.setFillColor(INK)
+    c.drawString(M, H - 12*mm, "listingboost")
+    c.drawRightString(W - M, H - 12*mm, "next step")
+
+    y = H * 0.60
+    c.setFont("Helvetica-Bold", 46); c.setFillColor(CORAL)
+    c.drawString(M, y, "thank you.")
+    _dot(c, M + c.stringWidth("thank you.", "Helvetica-Bold", 46) + 9*mm, y + 4*mm, 5.5*mm)
+    y -= 14*mm
+    c.setFont("Helvetica", 10.5); c.setFillColor(INK)
     for ln in ["Everything in this report is ready to use today: titles, description,",
                "photo files and the exact order to arrange them in.",
-               "", "Questions? Just reply to the email this came with."]:
-        c.drawString(M, y, ln); y -= 6.5*mm
-    y -= 8*mm
-    c.setFont("Helvetica-Bold", 12); c.setFillColor(WHITE)
-    c.drawString(M, y, "— AL, ListingBoost")
+               "", "Questions? Just reply to the email this came with.  — AL, ListingBoost"]:
+        c.drawString(M, y, ln); y -= 6*mm
 
-    # trust block — guarantee + contact + honesty notes
-    y -= 22*mm
-    c.setStrokeColor(HexColor("#2c3a55")); c.setLineWidth(0.8)
-    c.line(M, y + 8*mm, W - M, y + 8*mm)
-    c.setFont("Helvetica-Bold", 10); c.setFillColor(CORAL)
-    c.drawString(M, y, "7-day guarantee")
-    c.setFont("Helvetica", 9.5); c.setFillColor(HexColor("#aab4c8"))
+    y -= 10*mm
+    c.setStrokeColor(LINE); c.setLineWidth(0.7)
+    c.line(M, y, W - M, y)
+    y -= 8*mm
+    c.setFont("Helvetica-Bold", 9.5); c.setFillColor(CORAL)
+    c.drawString(M, y, "48-hour guarantee")
+    c.setFont("Helvetica", 9); c.setFillColor(INK)
     y -= 5.5*mm
     c.drawString(M, y, "Not satisfied? Reply within 48 hours of delivery for a full, no-questions refund.")
     y -= 9*mm
-    c.setFont("Helvetica-Bold", 10); c.setFillColor(WHITE)
-    c.drawString(M, y, "The honest print")
-    c.setFont("Helvetica", 8.5); c.setFillColor(HexColor("#8fa0bd"))
+    c.setFont("Helvetica-Bold", 9.5); c.setFillColor(INK)
+    c.drawString(M, y, "the honest print")
+    c.setFont("Helvetica", 8); c.setFillColor(MUTED)
     for ln in ["Enhanced photos: your own photos, professionally re-lit and straightened — same rooms, same contents.",
                "Staging concepts: clearly watermarked design mock-ups. Don't upload them to Airbnb; use them as a styling guide.",
                "All numbers come from your live public listing (calendar, photos, copy) on the date shown on the cover."]:
-        y -= 5*mm
+        y -= 4.8*mm
         c.drawString(M, y, ln)
-    y -= 9*mm
-    c.setFont("Helvetica", 9); c.setFillColor(HexColor("#aab4c8"))
-    c.drawString(M, y, "ListingBoost  ·  hello@scalr-us.com  ·  reply anytime, a human answers")
+    y -= 8*mm
+    c.setFont("Helvetica", 8.5); c.setFillColor(INK)
+    c.drawString(M, y, "listingboost  ·  hello@scalr-us.com  ·  reply anytime, a human answers")
     c.showPage()
 
 

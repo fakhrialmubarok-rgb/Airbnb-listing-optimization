@@ -37,6 +37,14 @@ LESSONS_FILE = HERE / "work" / "photo_lessons.json"
 QUALIFIED    = HERE / "work" / "step1_qualified.json"
 PHOTOS_DIR   = HERE / "work" / "photos"
 MAX_PHOTOS   = 10          # selective mode: recreate only the photos that matter
+# COST MODE (stress-test economics): pre-sale we produce a TEASER, not the full
+# set. Full production runs only after purchase (~$1.66/SALE, not per lead).
+#   TEASER_MODE=1  -> only the top-priority photos, single candidate first
+#   BEST_OF=1      -> generate 1 candidate; second candidate ONLY if QC fails
+#   (quality is protected by the QC gate + corrective retry, not by redundancy)
+TEASER_MODE   = os.getenv("TEASER_MODE") == "1"
+TEASER_PHOTOS = 2
+BEST_OF       = int(os.getenv("BEST_OF", "1"))
 ROOM_PRIORITY = ("living", "bedroom", "kitchen", "bathroom", "dining", "garden", "exterior")
 
 # LOCKED PROMPT TEMPLATE (final — validated on Dorcas test 2026-07-14)
@@ -389,6 +397,8 @@ def process_lead(listing: dict, cap=None) -> dict:
     (out_dir / "recreated").mkdir(parents=True, exist_ok=True)
 
     photos = select_photos(listing)
+    if TEASER_MODE:
+        photos = photos[:TEASER_PHOTOS]
     if cap:
         photos = photos[:cap]
     print(f"[step3] {lid}: {len(photos)} photos selected (of {len(listing.get('image_urls') or [])})")
@@ -416,9 +426,9 @@ def process_lead(listing: dict, cap=None) -> dict:
             return sum(1 for x in v.values() if x is True)
 
         try:
-            # BEST-OF-2: generate two candidates, QC both, keep the better one
+            # Adaptive best-of-N: 1 candidate normally; a 2nd only when QC fails
             candidates = []
-            for c in (1, 2):
+            for c in range(1, BEST_OF + 1):
                 try:
                     cand, cb = recreate(base, url, prompt)
                     cv = qc_check(base, cand)
@@ -428,8 +438,17 @@ def process_lead(listing: dict, cap=None) -> dict:
                           f"{('- ' + cv.get('reason','')[:70]) if cv.get('verdict')=='fail' else ''}")
                 except Exception as e:
                     print(f"  {n}.{c}: generation failed ({str(e)[:70]})")
+            if candidates and BEST_OF == 1 and candidates[0][2].get("verdict") != "pass":
+                try:   # adaptive: spend a 2nd generation only when needed
+                    cand, cb = recreate(base, url, prompt)
+                    cv = qc_check(base, cand)
+                    record_lesson(cv)
+                    candidates.append((cand, cb, cv))
+                    print(f"  {n}.2(adaptive): QC {cv.get('verdict','?')}")
+                except Exception as e:
+                    print(f"  {n}.2(adaptive): failed ({str(e)[:60]})")
             if not candidates:
-                raise RuntimeError("both candidates failed to generate")
+                raise RuntimeError("all candidates failed to generate")
             candidates.sort(key=lambda t: (t[2].get("verdict") == "pass", qc_score(t[2])), reverse=True)
             rec, backend, verdict = candidates[0]
 
@@ -459,7 +478,12 @@ def process_lead(listing: dict, cap=None) -> dict:
             (out_dir / "staged").mkdir(exist_ok=True)
             s_cands = []
             from photo_grade import highkey_grade as _grade
-            for _ in (1, 2):
+            s_tries = 1 if BEST_OF == 1 else 2
+            for _try in range(s_tries + 1):   # +1 = adaptive retry room
+                if s_cands and s_cands[0][1].get("verdict") == "pass":
+                    break
+                if _try >= s_tries and not s_cands:
+                    break
                 try:
                     s_img, _b = recreate(base, url, STAGING_PROMPT)
                     s_img = _grade(s_img)          # grade BEFORE QC — judge the shipping image

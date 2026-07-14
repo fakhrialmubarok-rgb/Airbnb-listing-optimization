@@ -175,6 +175,12 @@ def write_brief(d: dict, markets: dict, dry=False) -> Path | None:
     lines += ["", "## Lead criteria this run"] + [f"- {c}" for c in d["criteria"]]
     lines += ["", "## Process lessons in effect"] + \
              ([f"- {l}" for l in d["process_lessons"]] or ["- none yet"])
+    if d.get("experiments"):
+        lines += ["", "## A/B experiment funnel (price / subject / hook)"] + \
+                 [f"- {l}" for l in d["experiments"]]
+    if d.get("icp_banks"):
+        lines += ["", "## ICP banks (which host profile converts)"] + \
+                 [f"- {l}" for l in d["icp_banks"]]
     if d["warnings"]:
         lines += ["", "## ⚠ Warnings"] + [f"- {w}" for w in d["warnings"]]
     text = "\n".join(lines) + "\n"
@@ -188,12 +194,42 @@ def write_brief(d: dict, markets: dict, dry=False) -> Path | None:
     return p
 
 
+def icp_banks(rows) -> list[str]:
+    """Per-segment funnel tallies — which host profile actually converts."""
+    from collections import defaultdict
+    banks = defaultdict(lambda: [0, 0, 0])   # leads, replied, paid
+    for r in rows:
+        # segment: business vs individual host x photo-badness band
+        biz = "business" if r.get("contact_channel") == "email" else "individual"
+        prio = 0
+        if "photo_priority=" in (r.get("notes") or ""):
+            try:
+                prio = int(r["notes"].split("photo_priority=")[1][:2].rstrip(","))
+            except ValueError:
+                pass
+        band = "ugly-photos" if prio >= 6 else "ok-photos"
+        seg = f"{biz}/{band}"
+        banks[seg][0] += 1
+        banks[seg][1] += r.get("replied", "").lower() in ("1", "true", "yes")
+        banks[seg][2] += r.get("paid", "").lower() in ("1", "true", "yes")
+    return [f"{seg}: {v[0]} leads, {v[1]} replied, {v[2]} paid"
+            for seg, v in sorted(banks.items())]
+
+
 def main():
     dry = "--dry" in sys.argv
     rows = load_tracker()
+    # learning sync: pull tracker outcomes into the experiment store
+    try:
+        from experiments import record_outcomes, summary as exp_summary
+        record_outcomes(rows)
+    except Exception as e:
+        exp_summary = lambda: [f"experiments unavailable: {e}"]
     markets = market_stats(rows)
     lessons = photo_lessons()
     decisions = reason(rows, markets, lessons)
+    decisions["experiments"] = exp_summary()
+    decisions["icp_banks"] = icp_banks(rows)
     write_brief(decisions, markets, dry=dry)
 
 
