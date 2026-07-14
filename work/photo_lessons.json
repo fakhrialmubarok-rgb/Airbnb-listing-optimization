@@ -1,0 +1,13 @@
+{
+  "fail_counts": {
+    "curtains_open": 8,
+    "no_added_objects": 6,
+    "lights_on": 4,
+    "nothing_removed_or_moved": 3,
+    "dramatically_brighter": 3,
+    "straight_verticals": 2,
+    "no_visible_cables": 1,
+    "window_not_blown_out": 1
+  },
+  "candidates_seen": 24
+}

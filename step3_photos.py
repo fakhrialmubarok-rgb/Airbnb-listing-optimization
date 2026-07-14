@@ -33,6 +33,7 @@ import os
 from perspective_fix import straighten
 
 TRACKER_CSV  = HERE / "work" / "leads_tracker.csv"
+LESSONS_FILE = HERE / "work" / "photo_lessons.json"
 QUALIFIED    = HERE / "work" / "step1_qualified.json"
 PHOTOS_DIR   = HERE / "work" / "photos"
 MAX_PHOTOS   = 10          # selective mode: recreate only the photos that matter
@@ -95,13 +96,59 @@ CITY_ATTRACTIONS = {
     "liverpool":  "the Royal Liver Building on Liverpool's waterfront",
 }
 
+# ---------------------------------------------------------------------------
+# LEARNING LOOP — persistent across runs. Every QC verdict is recorded in
+# LESSONS_FILE; the most frequent failure modes are injected back into every
+# future prompt as preemptive warnings, so each run starts smarter than the last.
+LESSON_FIXES = {
+    "no_added_objects":         "adding objects that do not exist in the original (throws, decor, curtains, blinds, doors, TVs) — add NOTHING",
+    "nothing_removed_or_moved": "removing or relocating furniture/fixtures that exist in the original — everything stays exactly in place",
+    "curtains_open":            "leaving curtains or blinds closed/covering the window — they must be fully open and tied back",
+    "lights_on":                "leaving lamps or ceiling lights switched off — every light must glow warmly",
+    "dramatically_brighter":    "output not bright enough — the room must be dramatically brighter, high-key, near-white walls",
+    "straight_verticals":       "tilted camera / leaning verticals — all wall and frame edges must be perfectly vertical",
+    "no_visible_cables":        "leaving visible cables or wires — remove them all",
+    "window_not_blown_out":     "blowing out the window to pure white — keep the outside view correctly exposed",
+    "no_ai_artifacts":          "warped shapes or gibberish text (especially on TV screens) — keep all geometry and text clean",
+}
+LESSON_MIN_COUNT = 3   # a failure mode must recur this often before it's injected
+LESSON_TOP_N     = 3   # inject at most this many warnings (keep the prompt tight)
+
+def _load_lessons() -> dict:
+    try:
+        return json.loads(LESSONS_FILE.read_text())
+    except Exception:
+        return {"fail_counts": {}, "candidates_seen": 0}
+
+def record_lesson(verdict: dict) -> None:
+    """Persist which QC checks failed for this candidate."""
+    data = _load_lessons()
+    data["candidates_seen"] = data.get("candidates_seen", 0) + 1
+    for check in LESSON_FIXES:
+        if verdict.get(check) is False:
+            data["fail_counts"][check] = data["fail_counts"].get(check, 0) + 1
+    LESSONS_FILE.write_text(json.dumps(data, indent=2))
+
+def lesson_clause() -> str:
+    """Preemptive warnings for the most frequent historical failure modes."""
+    counts = _load_lessons().get("fail_counts", {})
+    top = sorted(((c, n) for c, n in counts.items() if n >= LESSON_MIN_COUNT),
+                 key=lambda t: -t[1])[:LESSON_TOP_N]
+    if not top:
+        return ""
+    warnings = "; ".join(LESSON_FIXES[c] for c, _ in top)
+    return (" LEARNED FROM PAST FAILURES — previous attempts were most often "
+            f"rejected for: {warnings}. Do not repeat these mistakes. ")
+# ---------------------------------------------------------------------------
+
+
 def build_prompt(listing: dict, tv_visible: bool) -> str:
     city = (listing.get("location") or "").lower()
     attraction = next((a for c, a in CITY_ATTRACTIONS.items() if c in city),
                       "a famous local tourist attraction near the property")
     if tv_visible:
-        return PROMPT_TEMPLATE.format(tv_rule=TV_RULE.format(attraction=attraction))
-    return PROMPT_TEMPLATE.format(tv_rule="")
+        return PROMPT_TEMPLATE.format(tv_rule=TV_RULE.format(attraction=attraction)) + lesson_clause()
+    return PROMPT_TEMPLATE.format(tv_rule="") + lesson_clause()
 
 
 def detect_tv(image_bytes: bytes) -> bool:
@@ -297,6 +344,7 @@ def process_lead(listing: dict, cap=None) -> dict:
                 try:
                     cand, cb = recreate(base, url, prompt)
                     cv = qc_check(base, cand)
+                    record_lesson(cv)
                     candidates.append((cand, cb, cv))
                     print(f"  {n}.{c}: QC {cv.get('verdict','?')} (score {qc_score(cv)}) "
                           f"{('- ' + cv.get('reason','')[:70]) if cv.get('verdict')=='fail' else ''}")
@@ -314,6 +362,7 @@ def process_lead(listing: dict, cap=None) -> dict:
                     f" CORRECTION: the previous attempt failed review because: "
                     f"{verdict.get('reason','')}. You MUST fix exactly that while following all other rules.")
                 verdict2 = qc_check(base, rec2)
+                record_lesson(verdict2)
                 if (verdict2.get("verdict") == "pass") or qc_score(verdict2) > qc_score(verdict):
                     rec, backend, verdict = rec2, backend2, verdict2
             if verdict.get("verdict") == "fail":
