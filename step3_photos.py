@@ -64,6 +64,17 @@ TV_RULE = ("If a television exists in the photo it stays EXACTLY where it is —
            "same stand, same size — and displays a beautiful scenic photo of {attraction} "
            "with no text or writing on the screen. Never add a TV where none exists. ")
 
+# HERO MODE — richest treatment for the listing's cover photo. SAME camera
+# angle as the original (never relocate the camera — relocation experiments
+# produced invented geometry). Layered light per Fakhri's reference standards.
+HERO_SUFFIX = (
+    " HERO TREATMENT for the cover photo: layered two-temperature light — airy bright "
+    "daylight base with warm golden pools from the glowing lamps, gentle depth and falloff, "
+    "luminous but never clinical. Textiles in relaxed luxe drape: smooth ordered folds, "
+    "plumped layers, inviting not stretched. Palette harmonized around the room's own 2-3 "
+    "colors. The single most beautiful, magazine-cover-worthy version of this exact view."
+)
+
 TV_DETECT_PROMPT = ("Is there a television/TV screen clearly visible in this photo? "
                     "Return ONLY JSON: {\"tv_visible\": true|false}")
 
@@ -263,6 +274,8 @@ def process_lead(listing: dict, cap=None) -> dict:
 
         tv = detect_tv(base)
         prompt = build_prompt(listing, tv_visible=tv)
+        if n == 1:   # first selected photo = cover -> hero treatment, same angle
+            prompt += HERO_SUFFIX
         status, backend, verdict = "recreated", "", {}
 
         def qc_score(v):
