@@ -245,73 +245,55 @@ def _offer_plain(variant: int, first: str, outreach_hook: str,
     rev = f"${revenue_at_stake:,.0f}"
 
     if variant == 0:
-        # Refined bullets — loss framing up front
+        # Obsessive-about-listings angle — personal context, then the specific find
         return f"""Hi {first},
 
 {outreach_hook}
 
-You've got {open_nights} nights empty over the next 90 days. That's around \
-{rev} that won't come back once those dates pass.
+I've spent the last few months going through Airbnb listings — it's a bit of an obsession at this point. I keep seeing the same thing: hosts with genuinely good properties sitting on empty nights because the listing isn't showing what the place actually is.
 
-I had a look at your listing and there are a few things worth fixing — specific to how \
-your photos are sequenced, what your cover image is doing, and a gap or two in how you're \
-showing up in search. Most of it takes under an hour to action.
+Yours caught my eye. The photos aren't bad — but the sequencing is off, and I'm fairly sure your cover isn't the one that would get the click. You've got {open_nights} nights open in the next 90 days. At your rate that's around {rev}, and once those dates pass they don't come back.
 
-For $29 I'll put together:
+For $29 I'll go through your listing properly — score every photo, edit and reorder them, pull the right one to the front — and have everything in your inbox as a ZIP within 48 hours.
 
-  - Listing teardown — photo scores, what's hurting your CTR, what to fix first
-  - Edited photos — your shots reordered and cleaned up, cover selected for clicks, upload-ready
-  - Everything in a ZIP, in your inbox within 48 hours
-
-If it doesn't move your bookings, reply and I'll refund it.
+If it doesn't move things, just reply and I'll refund it.
 
   {checkout_url}
 
 AL
-hello@scalr-us.com
 """
 
     if variant == 1:
-        # Prose-heavy, no bullets — warmer, more conversational
+        # Honest/vulnerable opener — "almost didn't send this"
         return f"""Hi {first},
 
 {outreach_hook}
 
-Those {open_nights} empty nights over the next 90 days — once the calendar moves past them, \
-they're gone. At your current rate that's roughly {rev} sitting there.
+I'll be straight with you — I almost didn't send this. But I went through your listing and a couple of things stood out that felt worth flagging.
 
-I went through your listing. The main things costing you clicks are in the photo order and \
-how your cover is set up (neither is obvious until you see the data). There's also a search \
-visibility gap that's pretty quick to close.
+Your photos aren't being shown in the order that would actually convert someone who's on the fence. And your cover — the one photo that decides whether someone clicks through or keeps scrolling — I don't think it's your strongest one.
 
-For $29 I'll send you a full teardown of your listing — photo scores, what to fix and in \
-what order — plus your photos edited and reordered with the best one pulled forward as your \
-cover. Everything arrives as a ZIP in your inbox within 48 hours, ready to upload.
+You've got {open_nights} nights open in the next 90 days. That's around {rev} at your current rate, and once those dates move past, they're gone.
 
-If it doesn't help, just reply and I'll refund it.
+I do listing teardowns for $29. Full photo scores, everything edited and reordered, cover pulled forward, ZIP in your inbox within 48 hours. If it doesn't help you pick up bookings, reply and I'll send the money back — no back and forth about it.
 
 {checkout_url}
 
 — AL
-hello@scalr-us.com
 """
 
-    # variant == 2: question-led, shortest
+    # variant == 2: guest-perspective question — makes them see their listing differently
     return f"""Hi {first},
 
 {outreach_hook}
 
-Quick question — do you know which of your photos is actually getting people to click \
-through to your listing?
+Real question — when did you last look at your listing the way a guest does? Not as the host who knows the place, but as someone scrolling through 40 options trying to decide which one to click.
 
-Most hosts don't, and it's usually not the one set as the cover. You've got {open_nights} \
-open nights in the next 90 days (around {rev} at your rate), and that cover photo is often \
-the first thing worth fixing.
+I went through yours. The photos are decent — better than most, actually. But decent doesn't get the click. The sequencing is off and your cover is probably costing you bookings you don't even know you're losing. You've got {open_nights} empty nights coming up, which is around {rev} at your rate.
 
-I put together a $29 package: a full listing teardown, your photos edited and reordered \
-with the right one up front, delivered to your inbox as a ZIP within 48 hours.
+For $29 I'll put together a full teardown of your listing, edit and reorder your photos with the right one up front, and have everything in your inbox as a ZIP within 48 hours.
 
-Doesn't help? Reply and I'll refund it.
+Doesn't move things? Reply and I'll refund it.
 
 {checkout_url}
 
@@ -373,75 +355,85 @@ def _offer_html(variant: int, first: str, outreach_hook: str,
     pixel = _tracking_pixel_tag(listing_id)
 
     if variant == 0:
+        # Obsession angle — personal context, specific find
         body_html = f"""
 <p class="hook">Hi {first},<br><br>{outreach_hook}</p>
 
-<p style="font-size:14px;color:#555;">You've got {open_nights} empty nights in the next 90 days.
-Once those dates pass, they're gone. Here's what they're worth:</p>
+<p style="font-size:14px;color:#555;line-height:1.7;">I've spent the last few months going through Airbnb listings &mdash;
+it's a bit of an obsession at this point. I keep seeing the same thing: hosts with genuinely good
+properties sitting on empty nights because the listing isn't showing what the place actually is.</p>
+
+<p style="font-size:14px;color:#555;line-height:1.7;">Yours caught my eye. The photos aren't bad &mdash; but the sequencing
+is off, and I'm fairly sure your cover isn't the one that would get the click.</p>
 
 <div class="revenue">
   <strong>{rev}</strong>
-  at your current nightly rate &mdash; sitting in open nights on your calendar right now.
+  {open_nights} open nights &mdash; at your rate, once those dates pass they don't come back.
 </div>
 
-<p style="font-size:14px;color:#555;">I went through your listing. A few things in your photos
-and search setup are costing you clicks. Most of it's fixable in under an hour.</p>
-
 <div class="what-you-get">
-  <h3>What you get for $29</h3>
+  <h3>For $29 I'll go through your listing properly</h3>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div><strong>Listing teardown</strong> &mdash; photo scores, what's hurting your CTR, priority action list</div>
+    <div>Score every photo &mdash; teardown PDF with what's costing you clicks, what to fix first</div>
   </div>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div><strong>Edited photos</strong> &mdash; your shots reordered and cleaned up, cover selected for clicks, ready to upload</div>
+    <div>Edit and reorder the photos, pull the right one to the front as your cover</div>
   </div>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div><strong>ZIP to your inbox</strong> &mdash; within 48 hours, nothing to install</div>
+    <div>ZIP in your inbox within 48 hours &mdash; upload and done</div>
   </div>
 </div>"""
 
     elif variant == 1:
+        # Honest/vulnerable — "almost didn't send this"
         body_html = f"""
 <p class="hook">Hi {first},<br><br>{outreach_hook}</p>
 
-<p style="font-size:14px;color:#555;">Those {open_nights} empty nights over the next 90 days —
-once those dates pass, they're gone. At your current rate that's roughly {rev} sitting there.</p>
+<p style="font-size:14px;color:#555;line-height:1.7;">I'll be straight with you &mdash; I almost didn't send this.
+But I went through your listing and a couple of things stood out that felt worth flagging.</p>
 
-<p style="font-size:14px;color:#555;">I went through your listing. The main things costing you
-clicks are in the photo order and how your cover is set up. Neither is obvious until you see the
-data. There's also a search visibility gap that's quick to close.</p>
+<p style="font-size:14px;color:#555;line-height:1.7;">Your photos aren't being shown in the order that would actually
+convert someone who's on the fence. And your cover &mdash; the one photo that decides whether
+someone clicks through or keeps scrolling &mdash; I don't think it's your strongest one.</p>
+
+<div class="revenue">
+  <strong>{rev}</strong>
+  {open_nights} open nights in the next 90 days &mdash; once those dates move past, they're gone.
+</div>
 
 <div class="what-you-get">
-  <h3>$29 gets you</h3>
+  <h3>$29 &mdash; full teardown, photos fixed, ZIP in 48 hours</h3>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div>Full listing teardown &mdash; photo scores, what to fix and in what order</div>
+    <div>Full photo scores &mdash; what's hurting your CTR and in what order to fix it</div>
   </div>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div>Your photos edited and reordered, best one pulled forward as your cover</div>
+    <div>Everything edited and reordered, cover pulled forward, ready to upload</div>
   </div>
   <div class="item"><div class="item-icon">&#10003;</div>
-    <div>ZIP in your inbox within 48 hours, ready to upload</div>
+    <div>ZIP to your inbox within 48 hours &mdash; nothing to install</div>
   </div>
 </div>"""
 
     else:
+        # Guest-perspective question — shifts how they see their listing
         body_html = f"""
 <p class="hook">Hi {first},<br><br>{outreach_hook}</p>
 
-<p style="font-size:15px;font-weight:600;color:#1a1a1a;">Do you know which of your photos is
-actually getting people to click through to your listing?</p>
+<p style="font-size:15px;font-weight:600;color:#1a1a1a;line-height:1.5;">When did you last look at your listing
+the way a guest does &mdash; not as the host who knows the place, but as someone scrolling through
+40 options trying to decide which one to click?</p>
 
-<p style="font-size:14px;color:#555;">Most hosts don't — and it's usually not the one set as
-the cover. You've got {open_nights} open nights in the next 90 days
-(around {rev} at your rate). That cover photo is often the first thing worth fixing.</p>
+<p style="font-size:14px;color:#555;line-height:1.7;">I went through yours. The photos are decent &mdash; better than most, actually.
+But decent doesn't get the click. The sequencing is off and your cover is probably
+costing you bookings you don't even know you're losing.</p>
 
 <div class="revenue">
   <strong>{rev}</strong>
-  in open nights over the next 90 days at your current rate.
+  {open_nights} empty nights coming up at your current rate.
 </div>
 
-<p style="font-size:14px;color:#555;">For $29: a full listing teardown, your photos edited and
-reordered with the right one up front, delivered as a ZIP within 48 hours.</p>"""
+<p style="font-size:14px;color:#555;line-height:1.7;">For $29: a full teardown of your listing, photos edited
+and reordered with the right one up front, ZIP in your inbox within 48 hours.</p>"""
 
     return f"""<!DOCTYPE html>
 <html>
