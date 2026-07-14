@@ -121,6 +121,26 @@ def _run_fulfillment(listing_id: str) -> None:
         _update_tracker_fields(listing_id, {"notes": "fulfillment_error: step4 failed"})
         return
 
+    # Step 5 — Deliver ZIP to host
+    rows, _ = _read_tracker()
+    row = next((r for r in rows if r["listing_id"] == listing_id), None)
+    if row and row.get("host_email"):
+        listing_dir = REPO / "work" / "photos" / listing_id
+        results_dir = REPO / "work" / "photos" / listing_id
+        deliver_cmd = [
+            py, str(REPO / "deliver.py"),
+            "--listing-dir", str(listing_dir),
+            "--results-dir", str(results_dir),
+            "--host-email",  row["host_email"],
+            "--host-name",   row.get("host_name", "Host"),
+            "--listing-title", row.get("title", "Your Airbnb Listing"),
+        ]
+        if not run(deliver_cmd, "deliver"):
+            _update_tracker_fields(listing_id, {"notes": "fulfillment_error: deliver failed"})
+            return
+    else:
+        log.warning(f"[{listing_id}] no host_email in tracker — skipping email send")
+
     # Mark fulfilled
     _update_tracker_fields(listing_id, {
         "status": "Fulfilled",
