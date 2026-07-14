@@ -513,6 +513,9 @@ def main() -> None:
     parser.add_argument("--creem-product-id",
                         default=os.environ.get("CREEM_PRODUCT_ID", ""),
                         help="Creem product ID (override CREEM_PRODUCT_ID env)")
+    parser.add_argument("--gumroad-url",
+                        default=os.environ.get("GUMROAD_URL", "https://itsalfahri.gumroad.com/l/bkitwy"),
+                        help="Gumroad checkout URL (used when Creem is unavailable)")
     args = parser.parse_args()
 
     listing_dir = Path(args.listing_dir)
@@ -522,9 +525,6 @@ def main() -> None:
 
     # Step 0a: send-offer mode — email the host a payment link, no PDF
     if args.send_offer:
-        if not args.creem_product_id:
-            print("[deliver] ERROR: --creem-product-id or CREEM_PRODUCT_ID required for --send-offer")
-            sys.exit(1)
 
         listing_id = listing_dir.name
         teardown_json = Path(f"work/teardowns_cache/teardown_{listing_id}.json")
@@ -558,15 +558,19 @@ def main() -> None:
         revenue_at_stake = float(revenue_at_stake)
         open_nights      = int(open_nights)
 
-        from creem_payment import create_checkout_link
-        discount_code = os.environ.get("CREEM_DISCOUNT_CODE", "FAST29")
-        checkout_url = create_checkout_link(
-            product_id=args.creem_product_id,
-            customer_email=args.host_email,
-            metadata={"listing_id": listing_id, "host_name": args.host_name,
-                      "host_email": args.host_email},
-            discount_code=discount_code,
-        )
+        if args.creem_product_id:
+            from creem_payment import create_checkout_link
+            discount_code = os.environ.get("CREEM_DISCOUNT_CODE", "FAST29")
+            checkout_url = create_checkout_link(
+                product_id=args.creem_product_id,
+                customer_email=args.host_email,
+                metadata={"listing_id": listing_id, "host_name": args.host_name,
+                          "host_email": args.host_email},
+                discount_code=discount_code,
+            )
+        else:
+            checkout_url = args.gumroad_url
+            print("[deliver] Creem product ID not set — using Gumroad checkout URL")
 
         recipient = os.environ.get("OWNER_EMAIL", "fakhrialmubarok@gmail.com") if args.test else args.host_email
         if args.test:
