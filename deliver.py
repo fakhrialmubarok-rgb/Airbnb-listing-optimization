@@ -51,7 +51,8 @@ def _access_token() -> str:
 
 
 # ── Email body ─────────────────────────────────────────────────────────────────
-def _build_body(host_name: str, listing_title: str, photo_count: int) -> tuple[str, str]:
+def _build_body(host_name: str, listing_title: str, photo_count: int,
+                listing_id: str = "") -> tuple[str, str]:
     """Return (plain, html) email bodies."""
     plain = f"""Hi {host_name},
 
@@ -153,10 +154,19 @@ hello@scalr-us.com
   AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
   ListingBoost by Scalr &bull; Questions? Just reply to this email.
 </div>
+{_tracking_pixel_tag(listing_id)}
 </body>
 </html>"""
 
     return plain, html
+
+
+def _tracking_pixel_tag(listing_id: str) -> str:
+    """Return a 1×1 tracking pixel img tag, or '' if WEBHOOK_BASE not set."""
+    base = os.environ.get("WEBHOOK_BASE", "").rstrip("/")
+    if not base or not listing_id:
+        return ""
+    return f'<img src="{base}/t/{listing_id}" width="1" height="1" style="display:none" alt="">'
 
 
 # ── ZIP builder ───────────────────────────────────────────────────────────────
@@ -224,6 +234,7 @@ def send_offer_email(
     revenue_at_stake: float,
     open_nights: int,
     recipient: str,
+    listing_id: str = "",
 ) -> None:
     """Send the payment-gated offer email (no PDF attached)."""
     subject = f"Your Airbnb listing — {open_nights} open nights in the next 90 days"
@@ -334,6 +345,7 @@ hello@scalr-us.com
   AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
   ListingBoost &bull; Airbnb listing optimization
 </div>
+{_tracking_pixel_tag(listing_id)}
 </body>
 </html>"""
 
@@ -446,6 +458,7 @@ def main() -> None:
             revenue_at_stake=revenue_at_stake,
             open_nights=open_nights,
             recipient=recipient,
+            listing_id=listing_id,
         )
         print("\n[deliver] Offer sent. Run without --send-offer once payment is confirmed.")
         return
@@ -513,7 +526,8 @@ def main() -> None:
     zip_name   = f"ListingBoost_{listing_id}.zip"
     subject    = f"Your ListingBoost package is ready -- {args.listing_title}"
 
-    plain, html = _build_body(args.host_name, args.listing_title, photo_count)
+    plain, html = _build_body(args.host_name, args.listing_title, photo_count,
+                              listing_id=listing_id)
 
     print(f"[deliver] Sending to {recipient}...")
     send_with_attachment(
