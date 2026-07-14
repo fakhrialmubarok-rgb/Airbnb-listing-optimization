@@ -297,6 +297,35 @@ def _hf_kontext(image_url: str, prompt: str) -> bytes:
     return requests.get(out_url, timeout=60).content
 
 
+def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
+    """fal.ai flux-kontext-pro direct API — ~$0.05/image, better quality than Replicate dev.
+    Falls back to flux-kontext-dev (~$0.025) if pro quota exceeded.
+    Requires FAL_API_KEY in .env."""
+    key = os.environ.get("FAL_API_KEY", "")
+    if not key:
+        raise RuntimeError("FAL_API_KEY not set")
+    # fal.ai accepts base64 data URIs directly — no pre-upload needed
+    b64 = base64.b64encode(image_bytes).decode()
+    data_uri = f"data:image/jpeg;base64,{b64}"
+    for model in ("fal-ai/flux-kontext/pro", "fal-ai/flux-kontext/dev"):
+        r = requests.post(
+            f"https://fal.run/{model}",
+            headers={"Authorization": f"Key {key}",
+                     "Content-Type": "application/json"},
+            json={"prompt": prompt, "image_url": data_uri,
+                  "output_format": "jpeg", "aspect_ratio": "match_input_image",
+                  "safety_tolerance": "2"},
+            timeout=180)
+        if r.status_code == 429:
+            continue  # quota exceeded, try dev tier
+        r.raise_for_status()
+        data = r.json()
+        out_url = (data.get("images") or data.get("image", [{}]))[0]
+        out_url = out_url.get("url") if isinstance(out_url, dict) else out_url
+        return requests.get(out_url, timeout=60).content
+    raise RuntimeError("fal.ai quota exceeded on both pro and dev tiers")
+
+
 def _replicate_kontext(image_url: str, prompt: str) -> bytes:
     if os.getenv("ALLOW_PAID_IMAGES") != "1":
         raise RuntimeError("paid Replicate rung blocked — set ALLOW_PAID_IMAGES=1 to allow spend")
@@ -322,6 +351,7 @@ def _replicate_kontext(image_url: str, prompt: str) -> bytes:
 
 IMG_CHAIN = [
     ("gemini nano-banana (free)", lambda b, u, p: _gemini_image(b, p)),
+    ("fal.ai kontext-pro ($0.05)", lambda b, u, p: _fal_kontext(b, p)),
     ("hf kontext (free credits)", lambda b, u, p: _hf_kontext(u, p)),
     ("replicate kontext (paid)",  lambda b, u, p: _replicate_kontext(u, p)),
 ]
@@ -514,26 +544,75 @@ def process_lead(listing: dict, cap=None) -> dict:
             "dir": str(out_dir)}
 
 
+def _listing_from_tracker_row(r: dict) -> dict:
+    """Rebuild a listing dict from tracker row; uses image_urls_json if present."""
+    import json as _json
+    urls = []
+    if r.get("image_urls_json"):
+        try: urls = _json.loads(r["image_urls_json"])
+        except: pass
+    elif r.get("cover_photo_url"):
+        urls = [r["cover_photo_url"]]
+    by_room = {}
+    for u in urls:
+        by_room.setdefault("photos", []).append(u)
+    return {
+        "listing_id": r["listing_id"], "listing_url": r.get("url",""),
+        "title": r.get("title",""), "city": r.get("city",""),
+        "host_name": r.get("host_name",""), "nightly_rate": None,
+        "image_urls": urls, "images_by_room": by_room,
+    }
+
+
 def main():
     only_id = sys.argv[1] if len(sys.argv) > 1 else None
     cap = int(sys.argv[2]) if len(sys.argv) > 2 else None
 
-    leads = json.loads(QUALIFIED.read_text())
     with open(TRACKER_CSV) as f:
         rows = list(csv.DictReader(f))
     by_id = {r["listing_id"]: r for r in rows}
 
-    for l in leads:
-        lid = l["listing_id"]
-        if only_id and lid != only_id:
-            continue
+    # Build lead list: prefer full JSON (has images_by_room), fall back to tracker
+    qual_leads = {}
+    if QUALIFIED.exists():
+        for l in json.loads(QUALIFIED.read_text()):
+            if l.get("image_urls"):
+                qual_leads[l["listing_id"]] = l
+
+    # Also check for a one-shot scraped_listing.json (single-listing rescrape)
+    scraped_json = HERE / "scraped_listing.json"
+    if scraped_json.exists():
+        raw = json.loads(scraped_json.read_text())
+        if isinstance(raw, list): raw = raw[0]
+        if raw.get("listing_id") and raw.get("image_urls"):
+            qual_leads[raw["listing_id"]] = raw
+
+    # Determine which listing IDs to process
+    if only_id:
+        target_ids = [only_id]
+    else:
+        target_ids = [r["listing_id"] for r in rows if r.get("status") == "Analyzed"]
+
+    for lid in target_ids:
         row = by_id.get(lid)
-        if row is None or row.get("status") != "Analyzed":
+        if row is None or row.get("status") not in ("Analyzed", "Photos Done"):
+            if only_id: print(f"[step3] {lid}: not found or wrong status ({row and row.get('status')})")
             continue
         if (PHOTOS_DIR / lid / "manifest.json").exists() and not only_id:
             print(f"[step3] {lid}: manifest exists — skipping (rerun-safe)")
             row["status"] = "Photos Done"
             continue
+
+        # Get listing with image URLs: qual_leads > tracker row fallback
+        l = qual_leads.get(lid) or _listing_from_tracker_row(row)
+        if not l.get("image_urls"):
+            print(f"[step3] {lid}: no image URLs — run scraper.py on listing URL first")
+            continue
+        if (PHOTOS_DIR / lid / "manifest.json").exists() and not only_id:
+            print(f"[step3] {lid}: manifest exists — skipping (rerun-safe)")
+            row["status"] = "Photos Done"
+            continue
+
         res = process_lead(l, cap=cap)
         row["status"] = "Photos Done"
         from tracker_io import write_rows

@@ -134,6 +134,8 @@ def to_row(l: dict) -> dict:
         "reviews":               l.get("host_review_count") or 0,
         "rating":                l.get("host_rating_avg") or "",
         "photo_count":           len(l.get("image_urls") or []),
+        "cover_photo_url":       (l.get("image_urls") or [""])[0],
+        "image_urls_json":       json.dumps(l.get("image_urls") or []),
         "status":                "Scraped",
         "date_scraped":          date.today().isoformat(),
         "notes":                 (f"photo_priority={l['photo_priority']}"
