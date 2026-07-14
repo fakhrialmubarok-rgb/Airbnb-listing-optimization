@@ -477,12 +477,37 @@ def send_offer_email(
     html    = _offer_html(v, first, outreach_hook, open_nights, revenue_at_stake, checkout_url, listing_id)
 
     token = _access_token()
-    msg = MIMEMultipart("alternative")
+    msg = MIMEMultipart("mixed")
     msg["To"]      = recipient
     msg["From"]    = "AL <hello@scalr-us.com>"
     msg["Subject"] = subject
-    msg.attach(MIMEText(plain, "plain"))
-    msg.attach(MIMEText(html,  "html"))
+
+    # Body (alternative plain + html)
+    body_part = MIMEMultipart("alternative")
+    body_part.attach(MIMEText(plain, "plain"))
+    body_part.attach(MIMEText(html,  "html"))
+    msg.attach(body_part)
+
+    # Outreach PDF — attach if it exists or can be built
+    if listing_id:
+        pdf_path = Path(__file__).parent / "work" / "pdfs" / f"outreach_{listing_id}.pdf"
+        if not pdf_path.exists():
+            try:
+                from outreach_pdf import build_outreach_pdf
+                pdf_path = build_outreach_pdf(listing_id, checkout_url)
+                print(f"  [pdf] Built outreach PDF: {pdf_path}")
+            except Exception as e:
+                print(f"  [pdf] Could not build outreach PDF: {e}")
+                pdf_path = None
+        if pdf_path and pdf_path.exists():
+            with open(pdf_path, "rb") as f:
+                att = MIMEBase("application", "pdf")
+                att.set_payload(f.read())
+            encoders.encode_base64(att)
+            att.add_header("Content-Disposition", "attachment",
+                           filename="your-listing-teardown-preview.pdf")
+            msg.attach(att)
+            print(f"  [pdf] Attached {pdf_path.name} ({pdf_path.stat().st_size//1024} KB)")
 
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
     resp = requests.post(
