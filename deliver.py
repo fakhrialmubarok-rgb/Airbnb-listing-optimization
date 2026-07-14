@@ -223,28 +223,35 @@ def send_with_attachment(
     print(f"  [gmail] Sent to {to}  (msg id: {resp.json().get('id', '?')})")
 
 
-# ── Offer email ───────────────────────────────────────────────────────────────
-def send_offer_email(
-    host_name: str,
-    host_email: str,
-    listing_title: str,
-    checkout_url: str,
-    outreach_hook: str,
-    revenue_at_stake: float,
-    open_nights: int,
-    recipient: str,
-    listing_id: str = "",
-) -> None:
-    """Send the payment-gated offer email (no PDF attached)."""
-    first = host_name.split()[0] if host_name else "there"
-    subject = f"{open_nights} nights sitting empty — something I found on your listing"
+# ── Offer email variant engine ────────────────────────────────────────────────
 
-    plain = f"""Hi {first},
+def _variant(seed: str, n: int) -> int:
+    """Deterministic 0..n-1 selector so the same listing always gets the same copy."""
+    import hashlib
+    return int(hashlib.md5(str(seed).encode()).hexdigest(), 16) % n
+
+
+_SUBJECTS = [
+    lambda first, nights, _title: f"{nights} nights sitting empty — something I found on your listing",
+    lambda first, nights, _title: f"quick thing I noticed about your listing, {first}",
+    lambda first, nights, _title: f"your calendar has {nights} gaps — found something specific",
+    lambda first, nights, _title: f"honest question about your Airbnb bookings, {first}",
+    lambda first, nights, _title: f"{first} — {nights} open nights and a fix I think is worth it",
+]
+
+
+def _offer_plain(variant: int, first: str, outreach_hook: str,
+                 open_nights: int, revenue_at_stake: float, checkout_url: str) -> str:
+    rev = f"${revenue_at_stake:,.0f}"
+
+    if variant == 0:
+        # Refined bullets — loss framing up front
+        return f"""Hi {first},
 
 {outreach_hook}
 
 You've got {open_nights} nights empty over the next 90 days. That's around \
-${revenue_at_stake:,.0f} that won't come back once those dates pass.
+{rev} that won't come back once those dates pass.
 
 I had a look at your listing and there are a few things worth fixing — specific to how \
 your photos are sequenced, what your cover image is doing, and a gap or two in how you're \
@@ -264,52 +271,116 @@ AL
 hello@scalr-us.com
 """
 
-    html = f"""<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8">
-<style>
-  body {{ font-family: -apple-system, Arial, sans-serif; color: #1a1a1a;
-          max-width: 560px; margin: 0 auto; padding: 24px 16px; }}
-  .logo {{ font-size: 18px; font-weight: 700; }}
-  .logo span {{ color: #ff5a3c; }}
-  .hook {{ font-size: 15px; line-height: 1.6; margin: 20px 0; }}
-  .revenue {{ background: #f5f5f3; border-radius: 8px; padding: 16px 20px;
-              margin: 20px 0; font-size: 14px; line-height: 1.6; }}
-  .revenue strong {{ font-size: 22px; color: #ff5a3c; display: block; margin-bottom: 4px; }}
-  .what-you-get {{ border: 1px solid #e0e0e0; border-radius: 8px;
-                   padding: 16px 20px; margin: 20px 0; }}
-  .what-you-get h3 {{ font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
-                      color: #888; font-weight: 600; margin: 0 0 12px; }}
-  .item {{ display: flex; gap: 10px; margin: 8px 0; font-size: 14px; line-height: 1.5; }}
-  .item-icon {{ flex-shrink: 0; width: 20px; height: 20px; background: #fff3f0;
+    if variant == 1:
+        # Prose-heavy, no bullets — warmer, more conversational
+        return f"""Hi {first},
+
+{outreach_hook}
+
+Those {open_nights} empty nights over the next 90 days — once the calendar moves past them, \
+they're gone. At your current rate that's roughly {rev} sitting there.
+
+I went through your listing. The main things costing you clicks are in the photo order and \
+how your cover is set up (neither is obvious until you see the data). There's also a search \
+visibility gap that's pretty quick to close.
+
+For $29 I'll send you a full teardown of your listing — photo scores, what to fix and in \
+what order — plus your photos edited and reordered with the best one pulled forward as your \
+cover. Everything arrives as a ZIP in your inbox within 48 hours, ready to upload.
+
+If it doesn't help, just reply and I'll refund it.
+
+{checkout_url}
+
+— AL
+hello@scalr-us.com
+"""
+
+    # variant == 2: question-led, shortest
+    return f"""Hi {first},
+
+{outreach_hook}
+
+Quick question — do you know which of your photos is actually getting people to click \
+through to your listing?
+
+Most hosts don't, and it's usually not the one set as the cover. You've got {open_nights} \
+open nights in the next 90 days (around {rev} at your rate), and that cover photo is often \
+the first thing worth fixing.
+
+I put together a $29 package: a full listing teardown, your photos edited and reordered \
+with the right one up front, delivered to your inbox as a ZIP within 48 hours.
+
+Doesn't help? Reply and I'll refund it.
+
+{checkout_url}
+
+AL
+"""
+
+
+_OFFER_CSS = """
+  body { font-family: -apple-system, Arial, sans-serif; color: #1a1a1a;
+          max-width: 560px; margin: 0 auto; padding: 24px 16px; }
+  .logo { font-size: 18px; font-weight: 700; }
+  .logo span { color: #ff5a3c; }
+  .hook { font-size: 15px; line-height: 1.6; margin: 20px 0; }
+  .revenue { background: #f5f5f3; border-radius: 8px; padding: 16px 20px;
+              margin: 20px 0; font-size: 14px; line-height: 1.6; }
+  .revenue strong { font-size: 22px; color: #ff5a3c; display: block; margin-bottom: 4px; }
+  .what-you-get { border: 1px solid #e0e0e0; border-radius: 8px;
+                   padding: 16px 20px; margin: 20px 0; }
+  .what-you-get h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+                      color: #888; font-weight: 600; margin: 0 0 12px; }
+  .item { display: flex; gap: 10px; margin: 8px 0; font-size: 14px; line-height: 1.5; }
+  .item-icon { flex-shrink: 0; width: 20px; height: 20px; background: #fff3f0;
                 border-radius: 50%; display: flex; align-items: center;
                 justify-content: center; font-size: 11px; color: #ff5a3c;
-                font-weight: 700; margin-top: 1px; }}
-  .pricing {{ display: flex; align-items: center; gap: 12px; margin: 20px 0; }}
-  .price-old {{ font-size: 18px; color: #bbb; text-decoration: line-through; }}
-  .price-new {{ font-size: 32px; font-weight: 800; color: #1a1a1a; }}
-  .price-badge {{ background: #fff3f0; border: 1px solid #ffd5cc; color: #ff5a3c;
-                  border-radius: 20px; padding: 3px 10px; font-size: 12px;
-                  font-weight: 700; }}
-  .cta {{ display: block; background: #ff5a3c; color: #fff; text-decoration: none;
+                font-weight: 700; margin-top: 1px; }
+  .pricing { display: flex; align-items: center; gap: 12px; margin: 20px 0; }
+  .price-old { font-size: 18px; color: #bbb; text-decoration: line-through; }
+  .price-new { font-size: 32px; font-weight: 800; color: #1a1a1a; }
+  .price-badge { background: #fff3f0; border: 1px solid #ffd5cc; color: #ff5a3c;
+                  border-radius: 20px; padding: 3px 10px; font-size: 12px; font-weight: 700; }
+  .cta { display: block; background: #ff5a3c; color: #fff; text-decoration: none;
           text-align: center; padding: 16px 24px; border-radius: 8px;
-          font-weight: 700; font-size: 17px; margin: 20px 0; }}
-  .guarantee {{ font-size: 12px; color: #888; text-align: center; margin-top: -10px; }}
-  .footer {{ margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0e0e0;
-              font-size: 12px; color: #888; }}
-  a {{ color: #ff5a3c; }}
-</style>
-</head>
-<body>
-<div class="logo">Listing<span>Boost</span></div>
+          font-weight: 700; font-size: 17px; margin: 20px 0; }
+  .guarantee { font-size: 12px; color: #888; text-align: center; margin-top: -10px; }
+  .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0e0e0;
+              font-size: 12px; color: #888; }
+  a { color: #ff5a3c; }
+"""
 
+_CTA_LABELS = [
+    "Get the package — $29",
+    "Send me the teardown — $29",
+    "Fix my listing — $29",
+]
+
+_GUARANTEE_LINES = [
+    "Doesn't move your bookings? Reply and I'll refund it. No forms.",
+    "If it doesn't help, just reply — I'll refund it.",
+    "Not useful? Reply and I'll send the money back. No questions.",
+]
+
+
+def _offer_html(variant: int, first: str, outreach_hook: str,
+                open_nights: int, revenue_at_stake: float,
+                checkout_url: str, listing_id: str) -> str:
+    rev = f"${revenue_at_stake:,.0f}"
+    cta  = _CTA_LABELS[variant]
+    guar = _GUARANTEE_LINES[variant]
+    pixel = _tracking_pixel_tag(listing_id)
+
+    if variant == 0:
+        body_html = f"""
 <p class="hook">Hi {first},<br><br>{outreach_hook}</p>
 
 <p style="font-size:14px;color:#555;">You've got {open_nights} empty nights in the next 90 days.
 Once those dates pass, they're gone. Here's what they're worth:</p>
 
 <div class="revenue">
-  <strong>${revenue_at_stake:,.0f}</strong>
+  <strong>{rev}</strong>
   at your current nightly rate &mdash; sitting in open nights on your calendar right now.
 </div>
 
@@ -318,38 +389,100 @@ and search setup are costing you clicks. Most of it's fixable in under an hour.<
 
 <div class="what-you-get">
   <h3>What you get for $29</h3>
-  <div class="item">
-    <div class="item-icon">✓</div>
-    <div><strong>Listing teardown</strong> &mdash; photo scores, what's hurting your CTR,
-    priority action list</div>
+  <div class="item"><div class="item-icon">&#10003;</div>
+    <div><strong>Listing teardown</strong> &mdash; photo scores, what's hurting your CTR, priority action list</div>
   </div>
-  <div class="item">
-    <div class="item-icon">✓</div>
-    <div><strong>Edited photos</strong> &mdash; your shots reordered and cleaned up, cover
-    selected for clicks, ready to upload to Airbnb</div>
+  <div class="item"><div class="item-icon">&#10003;</div>
+    <div><strong>Edited photos</strong> &mdash; your shots reordered and cleaned up, cover selected for clicks, ready to upload</div>
   </div>
-  <div class="item">
-    <div class="item-icon">✓</div>
+  <div class="item"><div class="item-icon">&#10003;</div>
     <div><strong>ZIP to your inbox</strong> &mdash; within 48 hours, nothing to install</div>
   </div>
+</div>"""
+
+    elif variant == 1:
+        body_html = f"""
+<p class="hook">Hi {first},<br><br>{outreach_hook}</p>
+
+<p style="font-size:14px;color:#555;">Those {open_nights} empty nights over the next 90 days —
+once those dates pass, they're gone. At your current rate that's roughly {rev} sitting there.</p>
+
+<p style="font-size:14px;color:#555;">I went through your listing. The main things costing you
+clicks are in the photo order and how your cover is set up. Neither is obvious until you see the
+data. There's also a search visibility gap that's quick to close.</p>
+
+<div class="what-you-get">
+  <h3>$29 gets you</h3>
+  <div class="item"><div class="item-icon">&#10003;</div>
+    <div>Full listing teardown &mdash; photo scores, what to fix and in what order</div>
+  </div>
+  <div class="item"><div class="item-icon">&#10003;</div>
+    <div>Your photos edited and reordered, best one pulled forward as your cover</div>
+  </div>
+  <div class="item"><div class="item-icon">&#10003;</div>
+    <div>ZIP in your inbox within 48 hours, ready to upload</div>
+  </div>
+</div>"""
+
+    else:
+        body_html = f"""
+<p class="hook">Hi {first},<br><br>{outreach_hook}</p>
+
+<p style="font-size:15px;font-weight:600;color:#1a1a1a;">Do you know which of your photos is
+actually getting people to click through to your listing?</p>
+
+<p style="font-size:14px;color:#555;">Most hosts don't — and it's usually not the one set as
+the cover. You've got {open_nights} open nights in the next 90 days
+(around {rev} at your rate). That cover photo is often the first thing worth fixing.</p>
+
+<div class="revenue">
+  <strong>{rev}</strong>
+  in open nights over the next 90 days at your current rate.
 </div>
 
+<p style="font-size:14px;color:#555;">For $29: a full listing teardown, your photos edited and
+reordered with the right one up front, delivered as a ZIP within 48 hours.</p>"""
+
+    return f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><style>{_OFFER_CSS}</style></head>
+<body>
+<div class="logo">Listing<span>Boost</span></div>
+{body_html}
 <div class="pricing">
   <span class="price-old">$197</span>
   <span class="price-new">$29</span>
-  <span class="price-badge">85% off — today only</span>
+  <span class="price-badge">85% off</span>
 </div>
-
-<a href="{checkout_url}" class="cta">Get the package &mdash; $29</a>
-<p class="guarantee">Doesn't move your bookings? Reply and I'll refund it. No forms.</p>
-
+<a href="{checkout_url}" class="cta">{cta}</a>
+<p class="guarantee">{guar}</p>
 <div class="footer">
   AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
   ListingBoost &bull; Airbnb listing optimization
 </div>
-{_tracking_pixel_tag(listing_id)}
+{pixel}
 </body>
 </html>"""
+
+
+# ── Offer email ───────────────────────────────────────────────────────────────
+def send_offer_email(
+    host_name: str,
+    host_email: str,
+    listing_title: str,
+    checkout_url: str,
+    outreach_hook: str,
+    revenue_at_stake: float,
+    open_nights: int,
+    recipient: str,
+    listing_id: str = "",
+) -> None:
+    """Send the payment-gated offer email (no PDF attached)."""
+    first   = host_name.split()[0] if host_name else "there"
+    v       = _variant(listing_id or host_email, 3)
+    subject = _SUBJECTS[_variant(listing_id or host_email, len(_SUBJECTS))](first, open_nights, listing_title)
+    plain   = _offer_plain(v, first, outreach_hook, open_nights, revenue_at_stake, checkout_url)
+    html    = _offer_html(v, first, outreach_hook, open_nights, revenue_at_stake, checkout_url, listing_id)
 
     token = _access_token()
     msg = MIMEMultipart("alternative")
@@ -367,7 +500,7 @@ and search setup are costing you clicks. Most of it's fixable in under an hour.<
         timeout=60,
     )
     resp.raise_for_status()
-    print(f"  [gmail] Offer sent to {recipient}  (msg id: {resp.json().get('id', '?')})")
+    print(f"  [gmail] Offer sent to {recipient} (variant={v}, msg id: {resp.json().get('id', '?')})")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
