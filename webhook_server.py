@@ -151,15 +151,22 @@ def _run_fulfillment(listing_id: str) -> None:
 
 # ── Routes ────────────────────────────────────────────────────────────────────
 
+RELAY_MODE = not TRACKER_CSV.exists()
+if RELAY_MODE:
+    log.warning("Tracker not found — running in RELAY MODE (validate + ack only, no local fulfillment)")
+
 @app.route("/health")
 def health():
-    return jsonify({"status": "ok", "tracker_rows": sum(1 for _ in open(TRACKER_CSV))})
+    info = {"status": "ok", "mode": "relay" if RELAY_MODE else "full"}
+    if not RELAY_MODE:
+        info["tracker_rows"] = sum(1 for _ in open(TRACKER_CSV))
+    return jsonify(info)
 
 
 @app.route("/webhook/creem", methods=["POST"])
 def creem_webhook():
     payload = request.get_data()
-    sig = request.headers.get("X-Creem-Signature", "")
+    sig = request.headers.get("Creem-Signature", "")
 
     if not _verify_creem(payload, sig):
         log.warning("Creem webhook: invalid signature — rejected")
@@ -171,7 +178,7 @@ def creem_webhook():
         return jsonify({"error": "bad JSON"}), 400
 
     event_type = event.get("type", "")
-    log.info(f"Creem event: {event_type}")
+    log.info(f"Creem event: {event_type} | keys: {list(event.keys())}")
 
     # Only act on completed payments
     if event_type not in ("payment.succeeded", "order.paid", "checkout.completed"):
@@ -189,6 +196,11 @@ def creem_webhook():
     if not listing_id:
         log.warning("No listing_id in metadata — cannot fulfil")
         return jsonify({"received": True, "action": "no_listing_id"}), 200
+
+    # In relay mode (Railway deploy), just ack — local machine polls Creem API for fulfillment
+    if RELAY_MODE:
+        log.info(f"RELAY MODE: order {order_id} for listing {listing_id} acknowledged — local cron handles fulfillment")
+        return jsonify({"received": True, "action": "relay_acked", "listing_id": listing_id}), 200
 
     now = datetime.now(timezone.utc).isoformat()
     found = _update_tracker_fields(listing_id, {
@@ -259,8 +271,5 @@ def index():
 
 
 if __name__ == "__main__":
-    if not TRACKER_CSV.exists():
-        log.error(f"Tracker not found: {TRACKER_CSV}")
-        sys.exit(1)
-    log.info(f"Starting on port {PORT}, repo={REPO}")
+    log.info(f"Starting on port {PORT}, repo={REPO}, relay_mode={RELAY_MODE}")
     app.run(host="0.0.0.0", port=PORT, debug=False)

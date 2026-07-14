@@ -54,24 +54,23 @@ def _access_token() -> str:
 def _build_body(host_name: str, listing_title: str, photo_count: int,
                 listing_id: str = "") -> tuple[str, str]:
     """Return (plain, html) email bodies."""
-    plain = f"""Hi {host_name},
+    first = host_name.split()[0] if host_name else "there"
+    plain = f"""Hi {first},
 
-Your ListingBoost package is ready. Attached is a ZIP file containing:
+Your package is attached — everything's in the ZIP.
 
-  - teardown_report.pdf  -- your full listing teardown with photo scores,
-                            priority action checklist, and AI upgrade analysis
-  - {photo_count} upgraded photos (01.jpg ... {str(photo_count).zfill(2)}.jpg)
-                            -- ready to upload to Airbnb in order
+What's inside:
+  - teardown_report.pdf — your photo scores, what's costing you clicks, and a priority checklist
+  - {photo_count} edited photos (01.jpg through {str(photo_count).zfill(2)}.jpg) — ready to upload, cover-first
 
-Quick-start:
-  1. Open teardown_report.pdf and read the Executive Summary (p.2)
-  2. Upload the photos in the ZIP to your Airbnb listing (replace all)
-  3. Set photo 01 as your cover -- it was selected for highest CTR
-  4. Follow the Priority Action Checklist on the last pages
+Three things to do right now (takes about 10 minutes):
+  1. Open teardown_report.pdf — skip to page 2, the top 3 fixes are listed there
+  2. Upload all photos from the ZIP in order, replacing what's on Airbnb now
+  3. Make sure photo 01 is your cover — it was pulled forward specifically for click-through
 
 Your listing: {listing_title}
 
-Questions? Just reply to this email.
+Any questions, just hit reply.
 
 AL
 hello@scalr-us.com
@@ -105,44 +104,44 @@ hello@scalr-us.com
 <div class="logo">Listing<span>Boost</span></div>
 <p style="color:#888;font-size:13px;margin:4px 0 0;">by Scalr</p>
 
-<h2>Your listing upgrade is ready, {host_name}.</h2>
+<h2>Here's your package, {first}.</h2>
 
 <p style="font-size:14px;color:#555;">
-  Your ZIP file is attached. It contains your full teardown report and
-  {photo_count} upgraded photos ready to upload.
+  ZIP is attached. Open it and you'll find the teardown report and
+  {photo_count} edited photos ready to drop straight into your listing.
 </p>
 
 <div class="box">
   <strong style="font-size:13px;">What's in the ZIP:</strong>
   <ul>
-    <li><strong>teardown_report.pdf</strong> &mdash; photo scores, AI upgrade analysis,
-        priority action checklist</li>
-    <li><strong>{photo_count} upgraded photos</strong> (01 &ndash; {str(photo_count).zfill(2)})
-        &mdash; pre-ordered, cover-first, ready to upload</li>
+    <li><strong>teardown_report.pdf</strong> &mdash; photo scores, what's costing you clicks,
+        priority checklist</li>
+    <li><strong>{photo_count} edited photos</strong> (01 &ndash; {str(photo_count).zfill(2)})
+        &mdash; reordered, cover-first, upload-ready</li>
   </ul>
 </div>
 
-<h2>Quick-start (5 minutes)</h2>
+<h2>Do these three things first (10 min)</h2>
 <div class="steps">
   <div class="step">
     <div class="step-n">1</div>
-    <div class="step-text">Open <strong>teardown_report.pdf</strong> and read the
-      Executive Summary &mdash; 3 highest-impact fixes are listed there.</div>
+    <div class="step-text">Open <strong>teardown_report.pdf</strong> and jump to page 2 &mdash;
+      your top 3 fixes are right there.</div>
   </div>
   <div class="step">
     <div class="step-n">2</div>
-    <div class="step-text">Upload all photos from the ZIP to your Airbnb listing,
-      replacing the current set in order.</div>
+    <div class="step-text">Upload all photos from the ZIP in order, replacing
+      what's on your listing now.</div>
   </div>
   <div class="step">
     <div class="step-n">3</div>
-    <div class="step-text">Set <strong>photo 01</strong> as your cover &mdash;
-      it was selected for highest click-through rate.</div>
+    <div class="step-text">Make sure <strong>photo 01</strong> is your cover &mdash;
+      it was pulled forward specifically for click-through.</div>
   </div>
   <div class="step">
     <div class="step-n">4</div>
-    <div class="step-text">Complete the Priority Action Checklist in the PDF
-      to maximise the upgrade.</div>
+    <div class="step-text">Work through the rest of the checklist in the PDF when you
+      get a chance &mdash; those are your next-biggest levers.</div>
   </div>
 </div>
 
@@ -237,30 +236,31 @@ def send_offer_email(
     listing_id: str = "",
 ) -> None:
     """Send the payment-gated offer email (no PDF attached)."""
-    subject = f"Your Airbnb listing — {open_nights} open nights in the next 90 days"
+    first = host_name.split()[0] if host_name else "there"
+    subject = f"{open_nights} nights sitting empty — something I found on your listing"
 
-    plain = f"""Hi {host_name},
+    plain = f"""Hi {first},
 
 {outreach_hook}
 
-I ran a quick analysis on your listing and found 3 specific fixes. Together they could \
-recover around ${revenue_at_stake:,.0f} in the next 90 days.
+You've got {open_nights} nights empty over the next 90 days. That's around \
+${revenue_at_stake:,.0f} that won't come back once those dates pass.
 
-Here's what you get:
+I had a look at your listing and there are a few things worth fixing — specific to how \
+your photos are sequenced, what your cover image is doing, and a gap or two in how you're \
+showing up in search. Most of it takes under an hour to action.
 
-  - Full teardown PDF — photo scores, title fix, amenity gaps, priority checklist
-  - AI-enhanced photos — ready to upload to Airbnb, cover photo selected for highest CTR
-  - Delivered to your inbox as a ZIP file within 48 hours
+For $29 I'll put together:
 
-Normal price: $197
-Today: $29
+  - Listing teardown — photo scores, what's hurting your CTR, what to fix first
+  - Edited photos — your shots reordered and cleaned up, cover selected for clicks, upload-ready
+  - Everything in a ZIP, in your inbox within 48 hours
+
+If it doesn't move your bookings, reply and I'll refund it.
 
   {checkout_url}
 
-If it doesn't help you get more bookings, reply and I'll refund it — no questions.
-
 AL
-ListingBoost
 hello@scalr-us.com
 """
 
@@ -303,32 +303,34 @@ hello@scalr-us.com
 <body>
 <div class="logo">Listing<span>Boost</span></div>
 
-<p class="hook">Hi {host_name},<br><br>{outreach_hook}</p>
+<p class="hook">Hi {first},<br><br>{outreach_hook}</p>
 
-<p style="font-size:14px;color:#555;">I ran a quick analysis on your listing and found
-3 specific fixes. Together they could recover:</p>
+<p style="font-size:14px;color:#555;">You've got {open_nights} empty nights in the next 90 days.
+Once those dates pass, they're gone. Here's what they're worth:</p>
 
 <div class="revenue">
   <strong>${revenue_at_stake:,.0f}</strong>
-  in the next 90 days &mdash; based on your {open_nights} open nights at your current nightly rate.
+  at your current nightly rate &mdash; sitting in open nights on your calendar right now.
 </div>
 
+<p style="font-size:14px;color:#555;">I went through your listing. A few things in your photos
+and search setup are costing you clicks. Most of it's fixable in under an hour.</p>
+
 <div class="what-you-get">
-  <h3>What you get</h3>
+  <h3>What you get for $29</h3>
   <div class="item">
     <div class="item-icon">✓</div>
-    <div><strong>Teardown PDF</strong> &mdash; photo scores, title fix, amenity gap checklist,
-    priority action plan</div>
+    <div><strong>Listing teardown</strong> &mdash; photo scores, what's hurting your CTR,
+    priority action list</div>
   </div>
   <div class="item">
     <div class="item-icon">✓</div>
-    <div><strong>AI-enhanced photos</strong> &mdash; your existing photos upgraded and
-    re-ordered, cover photo selected for highest click-through rate, ready to upload</div>
+    <div><strong>Edited photos</strong> &mdash; your shots reordered and cleaned up, cover
+    selected for clicks, ready to upload to Airbnb</div>
   </div>
   <div class="item">
     <div class="item-icon">✓</div>
-    <div><strong>ZIP delivered to your inbox</strong> &mdash; within 48 hours, nothing to
-    install</div>
+    <div><strong>ZIP to your inbox</strong> &mdash; within 48 hours, nothing to install</div>
   </div>
 </div>
 
@@ -338,8 +340,8 @@ hello@scalr-us.com
   <span class="price-badge">85% off — today only</span>
 </div>
 
-<a href="{checkout_url}" class="cta">Get My ListingBoost Package &mdash; $29</a>
-<p class="guarantee">If it doesn't help you get more bookings, reply for a full refund.</p>
+<a href="{checkout_url}" class="cta">Get the package &mdash; $29</a>
+<p class="guarantee">Doesn't move your bookings? Reply and I'll refund it. No forms.</p>
 
 <div class="footer">
   AL &mdash; <a href="mailto:hello@scalr-us.com">hello@scalr-us.com</a><br>
@@ -436,7 +438,8 @@ def main() -> None:
         checkout_url = create_checkout_link(
             product_id=args.creem_product_id,
             customer_email=args.host_email,
-            metadata={"listing_id": listing_id, "host_name": args.host_name},
+            metadata={"listing_id": listing_id, "host_name": args.host_name,
+                      "host_email": args.host_email},
             discount_code=discount_code,
         )
 
@@ -476,7 +479,8 @@ def main() -> None:
         url = create_checkout_link(
             product_id=args.creem_product_id,
             customer_email=args.host_email,
-            metadata={"listing_id": listing_id, "host_name": args.host_name},
+            metadata={"listing_id": listing_id, "host_name": args.host_name,
+                      "host_email": args.host_email},
             discount_code=discount_code,
         )
         print(f"\n[deliver] Payment link for {args.host_name} ({args.host_email}):")
