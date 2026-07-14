@@ -16,7 +16,7 @@ def highkey_grade(jpeg_bytes: bytes) -> bytes:
     if img is None:
         return jpeg_bytes
     img = img.astype(np.float32) / 255.0
-    img = np.clip(img * np.array([1.04, 1.00, 0.97]), 0, 1)   # cool WB (BGR)
+    img = np.clip(img * np.array([0.99, 1.00, 1.02]), 0, 1)   # neutral-warm WB (BGR)
     img = img ** 0.82                                          # gamma lift
     img = img + 0.035 * (1 - img)                              # shadow floor
     lum = 0.114 * img[..., 0] + 0.587 * img[..., 1] + 0.299 * img[..., 2]

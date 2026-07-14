@@ -56,7 +56,14 @@ PROMPT_TEMPLATE = (
     "no less: do NOT add any throw, blanket, cushion, plant, tray or decor of any kind. "
     "Do not move, remove, resize or relocate anything. Same furniture, same wall art, same "
     "positions. Only lighting, curtain position, tidiness and camera geometry improve. "
-    "Perfectly level camera, dead straight verticals, no tilt. "
+    "Perfectly level camera, dead straight verticals, no tilt. Composition: main "
+    "furniture in the lower two-thirds of frame with breathing room above, camera at "
+    "about 110cm. "
+    "BEDROOM STYLING (only when the photo shows a bed, using ONLY textiles already on "
+    "it): white/cream duvet dominant and smooth, any colored bedspread folded into a "
+    "neat flat runner across the FOOT of the bed with a soft cascade, pillows in "
+    "hierarchy (sleeping pillows behind, accent cushions in front), everything in "
+    "ordered relaxed-luxe drape — no chaotic wrinkles, no stretched-flat plastic look. "
     "Ultra-photorealistic editorial real-estate photography."
 )
 
