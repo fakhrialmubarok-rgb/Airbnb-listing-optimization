@@ -160,6 +160,8 @@ hello@scalr-us.com
 
 
 # ── ZIP builder ───────────────────────────────────────────────────────────────
+MAX_ATTACH_BYTES = 20 * 1024 * 1024   # Gmail hard cap is 25MB; keep margin
+
 def build_zip(export_dir: Path, pdf_path: Path) -> bytes:
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -386,7 +388,7 @@ def main() -> None:
             sys.exit(1)
 
         listing_id = listing_dir.name
-        teardown_json = Path(f"/tmp/listingboost_teardowns/teardown_{listing_id}.json")
+        teardown_json = Path(f"work/teardowns_cache/teardown_{listing_id}.json")
         if not teardown_json.exists():
             print(f"[deliver] ERROR: teardown JSON not found at {teardown_json}")
             print("  Run:  python3 teardown.py <url>  first to generate it.")
@@ -495,6 +497,10 @@ def main() -> None:
     photo_count = len(photos)
     print(f"[deliver] Building ZIP: {photo_count} photos + PDF...")
     zip_bytes = build_zip(export_dir, pdf_path)
+    if len(zip_bytes) > MAX_ATTACH_BYTES:
+        print(f"[deliver] ZIP {len(zip_bytes)//(1024*1024)}MB > 20MB Gmail margin — "
+              "attach would 500. Rebuild without staged/ set or deliver via Drive link.")
+        raise SystemExit(1)
     zip_kb = len(zip_bytes) // 1024
     print(f"[deliver] ZIP ready: {zip_kb} KB")
 

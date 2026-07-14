@@ -207,12 +207,13 @@ def page_scorecard(c, a, nums, page_no):
     cohort_n = nums.get("cohort_size") or 0
     cohort_line = ""
     if cohort_n >= 15 and nums.get("cohort_median_rate"):
-        cohort_line = (f"Market benchmark: the median of {cohort_n} live listings scraped "
+        cohort_line = (f"Indicative market benchmark: median of {cohort_n} live listings observed "
                        f"in your market on the capture date (median rate "
-                       f"£{nums['cohort_median_rate']:,.0f}) — real comparables, not estimates. ")
+                       f"£{nums['cohort_median_rate']:,.0f}) — an indicative snapshot, not a valuation. ")
     y = _wrap_text(c,
         "*Realistic upside assumes filling one third of your open nights at your current "
-        "rate — a conservative scenario, not a promise. " + cohort_line +
+        "rate — a conservative scenario, not a promise; open nights may include dates "
+        "you have deliberately blocked. " + cohort_line +
         "How we scored: everything above comes from your live public listing — the "
         "3-month availability calendar, photo set, title, description and review "
         "signals, captured on the date on the cover. Scores weight what guests see "
@@ -441,7 +442,7 @@ def page_close(c, page_no):
     c.drawString(M, y, "7-day guarantee")
     c.setFont("Helvetica", 9.5); c.setFillColor(HexColor("#aab4c8"))
     y -= 5.5*mm
-    c.drawString(M, y, "Not useful? Reply within 7 days and you get a full refund — and keep every file.")
+    c.drawString(M, y, "Not satisfied? Reply within 48 hours of delivery for a full, no-questions refund.")
     y -= 9*mm
     c.setFont("Helvetica-Bold", 10); c.setFillColor(WHITE)
     c.drawString(M, y, "The honest print")
@@ -509,9 +510,8 @@ def main():
         row["status"] = "PDF Done"; touched = True
         print(f"[step4] {lid}: -> {out} ({out.stat().st_size//1024} KB)")
     if touched:
-        with open(TRACKER_CSV, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-            w.writeheader(); w.writerows(rows)
+        from tracker_io import write_rows
+        write_rows(TRACKER_CSV, rows)
 
 
 if __name__ == "__main__":

@@ -290,6 +290,8 @@ def _hf_kontext(image_url: str, prompt: str) -> bytes:
 
 
 def _replicate_kontext(image_url: str, prompt: str) -> bytes:
+    if os.getenv("ALLOW_PAID_IMAGES") != "1":
+        raise RuntimeError("paid Replicate rung blocked — set ALLOW_PAID_IMAGES=1 to allow spend")
     r = requests.post(
         "https://api.replicate.com/v1/models/black-forest-labs/flux-kontext-dev/predictions",
         headers={"Authorization": f"Bearer {os.environ['REPLICATE_API_TOKEN']}",
@@ -316,6 +318,7 @@ IMG_CHAIN = [
     ("replicate kontext (paid)",  lambda b, u, p: _replicate_kontext(u, p)),
 ]
 _CHAIN_START = 0
+_UNCHECKED_COUNT = 0   # QC infra failures this run — watchdog signal, never ship unchecked
 
 
 def recreate(image_bytes: bytes, image_url: str, prompt: str) -> tuple[bytes, str]:
@@ -357,6 +360,8 @@ def _qc_vision(prompt: str, original: bytes, recreated: bytes) -> dict:
         txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(txt)
     except Exception as e:
+        global _UNCHECKED_COUNT
+        _UNCHECKED_COUNT += 1
         return {"verdict": "unchecked", "reason": str(e)[:100]}
 
 
@@ -429,7 +434,7 @@ def process_lead(listing: dict, cap=None) -> dict:
             rec, backend, verdict = candidates[0]
 
             # One corrective retry if even the best candidate fails
-            if verdict.get("verdict") == "fail":
+            if verdict.get("verdict") != "pass":
                 print(f"  {n}: best candidate still fails — corrective retry")
                 rec2, backend2 = recreate(base, url, prompt +
                     f" CORRECTION: the previous attempt failed review because: "
@@ -438,8 +443,8 @@ def process_lead(listing: dict, cap=None) -> dict:
                 record_lesson(verdict2)
                 if (verdict2.get("verdict") == "pass") or qc_score(verdict2) > qc_score(verdict):
                     rec, backend, verdict = rec2, backend2, verdict2
-            if verdict.get("verdict") == "fail":
-                print(f"  {n}: QC FAIL after best-of-2 + retry — shipping straightened original")
+            if verdict.get("verdict") != "pass":
+                print(f"  {n}: QC not-pass ({verdict.get('verdict')}) after best-of-2 + retry — shipping straightened original")
                 rec, status = base, "original_kept"
         except Exception as e:
             print(f"  {n}: recreation failed ({str(e)[:80]}) — shipping original")
@@ -501,14 +506,25 @@ def main():
         row = by_id.get(lid)
         if row is None or row.get("status") != "Analyzed":
             continue
+        if (PHOTOS_DIR / lid / "manifest.json").exists() and not only_id:
+            print(f"[step3] {lid}: manifest exists — skipping (rerun-safe)")
+            row["status"] = "Photos Done"
+            continue
         res = process_lead(l, cap=cap)
         row["status"] = "Photos Done"
+        from tracker_io import write_rows
+        write_rows(TRACKER_CSV, rows)
         print(f"[step3] {lid}: {res['recreated']}/{res['photos']} recreated -> {res['dir']}\n")
 
-    fieldnames = list(rows[0].keys())
-    with open(TRACKER_CSV, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader(); w.writerows(rows)
+    from tracker_io import write_rows
+    write_rows(TRACKER_CSV, rows)
+
+    # Watchdog: QC infra failures must be loud, never silent
+    if _UNCHECKED_COUNT:
+        print(f"[step3] WATCHDOG: {_UNCHECKED_COUNT} QC checks were UNCHECKED (infra "
+              f"failure) this run — those photos shipped as straightened originals. "
+              f"Investigate the QC key/quota before the next batch.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

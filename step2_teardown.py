@@ -69,7 +69,11 @@ def main():
             continue
 
         print(f"[step2] Analyzing {lid} ({l.get('host_name')})...")
-        analysis = _analyze(l, market_context=market_context, cohort_median_rate=median_rate)
+        try:
+            analysis = _analyze(l, market_context=market_context, cohort_median_rate=median_rate)
+        except Exception as e:
+            print(f"  [step2] {lid} FAILED ({str(e)[:100]}) — continuing with next lead")
+            continue
 
         out = TEARDOWN_DIR / f"teardown_{lid}.json"
         out.write_text(json.dumps({
@@ -101,11 +105,12 @@ def main():
               f"P{analysis.get('score_images')}/A{analysis.get('score_amenities')} "
               f"| weakest={analysis.get('weakest_element')}")
         print(f"  hook: {analysis.get('outreach_hook')}\n")
+        # per-lead commit: a crash at lead N keeps leads 1..N-1 Analyzed
+        from tracker_io import write_rows
+        write_rows(TRACKER_CSV, rows, fieldnames)
 
-    with open(TRACKER_CSV, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader()
-        w.writerows(rows)
+    from tracker_io import write_rows
+    write_rows(TRACKER_CSV, rows, fieldnames)
 
     print(f"[step2] {done} lead(s) analyzed. Teardowns -> {TEARDOWN_DIR}/  Tracker updated.")
 

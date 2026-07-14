@@ -57,9 +57,8 @@ def load_tracker() -> list[dict]:
         for r in rows:
             for c in OUTCOME_COLS:
                 r.setdefault(c, "")
-        with open(TRACKER, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-            w.writeheader(); w.writerows(rows)
+        from tracker_io import write_rows
+        write_rows(TRACKER, rows)
         print("[step0] added outcome columns to tracker")
     return rows
 
@@ -122,13 +121,19 @@ def reason(rows, markets, lessons) -> dict:
                                       "next candidates: " + "; ".join(CANDIDATE_MARKETS))
     decisions["market_verdicts"] = verdicts
 
-    # --- lead criteria for this run ---
+    # --- lead criteria for this run (stress-test doctrine 2026-07-15) ---
     decisions["criteria"] = [
         "stake >= £2,000 (agreed floor)",
         "entire home, 5-500 host reviews, pro-operator filter (agreed)",
         "PRIORITIZE bad original photos (dark/tilted/cluttered cover) — biggest "
         "before/after delta = strongest teaser = best conversion odds",
-        "contact: email first, Airbnb DM fallback",
+        "contact: cold email ONLY to business-domain addresses (PECR corporate "
+        "exemption); personal-mailbox hosts = inbound_only, NEVER cold email",
+        "Airbnb DMs: DEAD as a channel — identity-level ban risk (legal red-team)",
+        "outreach: plain text, no images/attachments first touch; teaser assets "
+        "only after a reply; NEVER send cold from scalr-us.com — secondary domains only",
+        "KILL-LINE (pre-committed): <2 sales per 2,000 contacted leads = model "
+        "falsified, stop and restructure; <0.2% purchase = structurally unprofitable",
     ]
 
     # --- process lessons from QC history ---
@@ -145,6 +150,12 @@ def reason(rows, markets, lessons) -> dict:
         decisions["warnings"].append(
             f"{no_outcome} finished lead(s) have no outreach outcome recorded — "
             "the brain is blind until sends are logged")
+    emailable = sum(1 for r in rows if r.get("contact_channel") == "email")
+    if rows and emailable / len(rows) < 0.2:
+        decisions["warnings"].append(
+            f"only {emailable}/{len(rows)} leads are cold-emailable under the PECR "
+            "policy — inbound channels (host groups, content, free listing-score "
+            "lead magnet) are the real pipeline, not outbound")
     cohort_rows = [r for r in rows if r.get("status") not in ("", "Skipped")]
     if len(cohort_rows) < 15:
         decisions["warnings"].append(

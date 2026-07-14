@@ -50,7 +50,7 @@ load_dotenv()
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY    = os.getenv("OPENAI_API_KEY", "")
-OUTPUT_DIR        = Path("/tmp/listingboost_teardowns")
+OUTPUT_DIR        = Path(__file__).parent / "work" / "teardowns_cache"  # was /tmp — macOS purges /tmp on reboot
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
@@ -236,15 +236,19 @@ def _call_groq(prompt: str, model: str = "llama-3.3-70b-versatile") -> dict:
     payload = {"model": model, "max_tokens": 4000,
                "messages": [{"role": "system", "content": SYSTEM_PROMPT},
                              {"role": "user", "content": prompt}]}
-    for attempt in range(2):
+    for attempt in range(4):
         resp = _req.post(
             "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
             json=payload, timeout=30,
         )
         if resp.status_code == 429:
-            wait = min(int(resp.headers.get("retry-after", 10)), 10)
-            print(f"  [teardown] Groq {model} rate-limited, waiting {wait}s...")
+            # exponential backoff + jitter — a 429 storm at batch scale needs
+            # patience, not instant failover to the next (also-limited) model
+            import random as _rand
+            wait = min(int(resp.headers.get("retry-after", 0)) or (8 * 2 ** attempt), 60)
+            wait += _rand.uniform(0, 3)
+            print(f"  [teardown] Groq {model} rate-limited, waiting {wait:.0f}s (attempt {attempt+1}/4)...")
             _time.sleep(wait)
             continue
         resp.raise_for_status()

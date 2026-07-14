@@ -229,16 +229,24 @@ def _run_actor(input_payload: dict, timeout_secs: int = 120) -> dict:
             break
         if status in ("FAILED", "ABORTED", "TIMED-OUT"):
             raise RuntimeError(f"Apify run {run_id} ended with status {status}")
+    else:
+        # Loop exhausted without SUCCEEDED — never return a partial dataset
+        raise RuntimeError(f"Apify run {run_id} still {status} after {timeout_secs}s — "
+                           "raise timeout_secs or check the run in Apify console")
 
-    # Fetch dataset
+    # Fetch dataset — paginated, never silently capped
     dataset_id = status_r.json()["data"]["defaultDatasetId"]
-    items_r = requests.get(
-        f"{APIFY_BASE}/datasets/{dataset_id}/items?clean=true&limit=100",
-        headers=headers,
-        timeout=30
-    )
-    items_r.raise_for_status()
-    items = items_r.json()
+    items, offset = [], 0
+    while True:
+        items_r = requests.get(
+            f"{APIFY_BASE}/datasets/{dataset_id}/items?clean=true&limit=500&offset={offset}",
+            headers=headers, timeout=30)
+        items_r.raise_for_status()
+        page = items_r.json()
+        items.extend(page)
+        if len(page) < 500:
+            break
+        offset += 500
 
     cost_usd = 0.00009 + len(items) * 0.0045  # actor start + per listing
     ls.emit("scraper", "scrape_cost_usd", cost_usd, {"run_id": run_id, "items": len(items)})

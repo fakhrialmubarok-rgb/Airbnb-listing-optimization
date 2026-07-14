@@ -62,6 +62,28 @@ def qualify(l: dict) -> tuple[bool, str]:
     return True, f"stake £{stake:,.0f}"
 
 
+# Contact policy (stress-test 2026-07-15, legal + deliverability red-team):
+#  - Cold email ONLY to business-subscriber addresses (custom domains) — PECR's
+#    corporate exemption. Personal-mailbox hosts (gmail/hotmail/etc.) need
+#    consent: route them to inbound channels, never cold email.
+#  - Airbnb DMs from an identity-linked account = permanent-ban risk +
+#    ToS breach: the DM channel is DEAD as a volume channel.
+PERSONAL_MAIL_DOMAINS = {
+    "gmail.com", "googlemail.com", "hotmail.com", "hotmail.co.uk", "outlook.com",
+    "live.com", "live.co.uk", "yahoo.com", "yahoo.co.uk", "icloud.com", "me.com",
+    "aol.com", "btinternet.com", "sky.com", "talktalk.net", "protonmail.com",
+    "proton.me", "mail.com", "gmx.com", "gmx.co.uk", "ymail.com", "msn.com",
+}
+
+def _contact_channel(email):
+    if not email or "@" not in email:
+        return "inbound_only"          # no cold contact — nurture via content/inbound
+    domain = email.rsplit("@", 1)[1].lower()
+    if domain in PERSONAL_MAIL_DOMAINS:
+        return "inbound_only"          # PECR individual subscriber — no cold email
+    return "email"                     # business-subscriber address — cold OK w/ LIA rules
+
+
 PHOTO_SCORE_PROMPT = (
     "Rate how BAD this Airbnb listing cover photo is as marketing, 0-10: "
     "0 = professional (bright, straight, styled), 10 = terrible (dark, tilted, "
@@ -94,7 +116,7 @@ def score_cover_photo(l: dict) -> int:
 
 def to_row(l: dict) -> dict:
     stake = round((l.get("nightly_rate") or 0) * (l.get("open_nights_90d") or 0), 2)
-    channel = "email" if l.get("host_email") else "airbnb_dm"
+    channel = _contact_channel(l.get("host_email"))
     return {
         "listing_id":            l.get("listing_id"),
         "url":                   (l.get("url") or "").split("?")[0],
