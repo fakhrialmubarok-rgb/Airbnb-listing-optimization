@@ -31,12 +31,58 @@ TEARDOWN_DIR   = HERE / "work" / "teardowns"
 TEARDOWN_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def _tracker_to_listing(r: dict) -> dict:
+    """Reconstruct a listing dict from tracker CSV columns for step2 input."""
+    def _f(v, t=float):
+        try: return t(v) if v else None
+        except: return None
+    return {
+        "listing_id":        r.get("listing_id",""),
+        "listing_url":       r.get("url",""),
+        "title":             r.get("title",""),
+        "description":       r.get("description",""),
+        "property_type":     "Entire home",
+        "city":              r.get("city",""),
+        "host_name":         r.get("host_name",""),
+        "host_email":        r.get("host_email",""),
+        "nightly_rate":      _f(r.get("nightly_rate_gbp")),
+        "occupancy_pct":     _f(r.get("occupancy_pct")),
+        "open_nights_90d":   _f(r.get("open_nights_90d"), int),
+        "revenue_at_stake_gbp": _f(r.get("revenue_at_stake_gbp")),
+        "photo_count":       _f(r.get("photo_count"), int),
+        "rating_overall":    _f(r.get("rating")),
+        "review_count":      _f(r.get("reviews"), int),
+        "is_superhost":      r.get("superhost",""),
+        "person_capacity":   4,
+        "amenities_available": "",
+        "cover_photo_url":   r.get("cover_photo_url",""),
+        "is_entire_home":    True,
+        "host_years": 0, "host_rating_avg": None,
+        "amenities_missing": [], "image_rooms": [],
+    }
+
+
 def main():
     only_id = sys.argv[1] if len(sys.argv) > 1 else None
-    leads = json.loads(QUALIFIED_JSON.read_text())
-    # Benchmark pool = the FULL scrape cohort (rejected listings are still
-    # real market data), not just the qualified leads.
-    cohort = json.loads(COHORT_JSON.read_text()) if COHORT_JSON.exists() else leads
+
+    # Always read leads from tracker (authoritative), not just the last scrape's JSON
+    with open(TRACKER_CSV) as f:
+        all_rows = list(csv.DictReader(f))
+    scraped_rows = [r for r in all_rows if r.get("status") == "Scraped"]
+    if only_id:
+        scraped_rows = [r for r in all_rows
+                        if r.get("listing_id") == only_id and
+                        r.get("status") in ("Scraped", "Analyzed")]
+    leads = [_tracker_to_listing(r) for r in scraped_rows]
+    if not leads and not only_id:
+        print("[step2] No Scraped leads in tracker."); return
+
+    # Cohort = ALL tracker rows with a rate (multi-market benchmark)
+    cohort_rows = [r for r in all_rows if r.get("nightly_rate_gbp")]
+    cohort = [_tracker_to_listing(r) for r in cohort_rows]
+    # Fallback: use the saved cohort JSON if tracker has no rates yet
+    if not cohort and COHORT_JSON.exists():
+        cohort = json.loads(COHORT_JSON.read_text())
     if len(cohort) < MIN_COHORT:
         print(f"[step2] WARNING: cohort has only {len(cohort)} listings (< {MIN_COHORT}). "
               f"Benchmark is thin — scrape a bigger batch (step1 count >= 20) before "
@@ -50,8 +96,7 @@ def main():
     market_context = build_market_context(cohort)
     print(f"[step2] Market context:\n{market_context}\n")
 
-    with open(TRACKER_CSV) as f:
-        rows = list(csv.DictReader(f))
+    rows = all_rows   # already loaded above
     fieldnames = list(rows[0].keys())
     for col in ("score_title", "score_desc", "score_photos", "score_amenities",
                 "weakest_element", "outreach_hook", "teardown_json"):

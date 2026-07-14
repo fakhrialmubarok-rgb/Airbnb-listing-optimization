@@ -219,7 +219,7 @@ def _run_actor(input_payload: dict, timeout_secs: int = 120) -> dict:
     print(f"  [scraper] Apify run started: {run_id}")
 
     # Poll until terminal
-    deadline = time.time() + timeout_secs
+    deadline = time.time() + max(timeout_secs, 360)   # min 6min; large batches need it
     while time.time() < deadline:
         time.sleep(4)
         status_r = requests.get(f"{APIFY_BASE}/actor-runs/{run_id}", headers=headers, timeout=10)

@@ -89,9 +89,72 @@ def discover(host: str, city: str) -> tuple[str, str]:
         except Exception as ex:
             print(f"    serp error: {str(ex)[:60]}")
             break
-    # Apollo fallback — gated on explicit approval (credit spend rule)
+    # Apollo fallback — real implementation, gated on APOLLO_OK=1
+    # Uses 1 lead credit per enriched match. SerpAPI goes first (free).
     if os.getenv("APOLLO_OK") == "1":
-        print("    (Apollo fallback would run here — implement org search when approved)")
+        result = _apollo_search(host, city)
+        if result:
+            return result
+    return "", ""
+
+
+def _apollo_search(host: str, city: str) -> tuple[str, str]:
+    """Apollo people-search + enrich. 1 credit per revealed email."""
+    import subprocess, sys
+    # We call Apollo via a tiny MCP-aware subprocess because the MCP client
+    # isn't importable here; instead we write a temp script that calls it.
+    # Simpler approach: use Apollo REST API directly (same credentials via env).
+    api_key = os.getenv("APOLLO_API_KEY", "")
+    if not api_key:
+        print("    (APOLLO_API_KEY not set — skipping Apollo)")
+        return "", ""
+
+    # 1. People search by name + location
+    import requests as _r
+    try:
+        s = _r.post(
+            "https://api.apollo.io/v1/mixed_people/search",
+            headers={"Content-Type": "application/json",
+                     "Cache-Control": "no-cache",
+                     "X-Api-Key": api_key},
+            json={"q_keywords": host,
+                  "person_locations": [city + ", UK"],
+                  "contact_email_status": ["verified", "likely to engage"],
+                  "per_page": 5},
+            timeout=30)
+        s.raise_for_status()
+        people = s.json().get("people", [])
+    except Exception as e:
+        print(f"    apollo search err: {str(e)[:60]}")
+        return "", ""
+
+    for p in people:
+        # Must have an email already revealed (no extra credit) or enrich
+        email = p.get("email") or ""
+        if email and "@" in email and _contact_channel(email) == "email" \
+                and _plausible(email, host, city):
+            return email.lower(), "apollo:search"
+
+        # Try enrich (1 credit)
+        pid = p.get("id", "")
+        if not pid:
+            continue
+        try:
+            e = _r.post(
+                "https://api.apollo.io/v1/people/match",
+                headers={"Content-Type": "application/json",
+                         "Cache-Control": "no-cache",
+                         "X-Api-Key": api_key},
+                json={"id": pid, "reveal_personal_emails": False},
+                timeout=30)
+            e.raise_for_status()
+            person = e.json().get("person", {})
+            email = person.get("email") or ""
+            if email and "@" in email and _contact_channel(email) == "email" \
+                    and _plausible(email, host, city):
+                return email.lower(), "apollo:enrich"
+        except Exception as ex:
+            print(f"    apollo enrich err: {str(ex)[:50]}")
     return "", ""
 
 
