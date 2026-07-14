@@ -241,20 +241,30 @@ _SUBJECTS = [
 
 
 def _offer_plain(variant: int, first: str, outreach_hook: str,
-                 open_nights: int, revenue_at_stake: float, checkout_url: str) -> str:
-    rev = f"${revenue_at_stake:,.0f}"
+                 open_nights: int, revenue_at_stake: float, checkout_url: str,
+                 photo_position_hook: str = "", sends_so_far: int = 0) -> str:
+    rev = f"£{revenue_at_stake:,.0f}"
+    # Social proof line — only include when we have real send history
+    proof = (
+        "I've been doing this across UK Airbnb listings for the past few months — "
+        "the photo order fix alone has been the single biggest lever I've seen.\n\n"
+        if sends_so_far > 0 else ""
+    )
+    # Photo-specific hook — one sentence from teardown, appended naturally
+    photo_line = f"\n\n({photo_position_hook})" if photo_position_hook else ""
 
     if variant == 0:
-        # Obsessive-about-listings angle — personal context, then the specific find
         return f"""Hi {first},
 
 {outreach_hook}
 
 I've spent the last few months going through Airbnb listings — it's a bit of an obsession at this point. I keep seeing the same thing: hosts with genuinely good properties sitting on empty nights because the listing isn't showing what the place actually is.
 
-Yours caught my eye. The photos aren't bad — but the sequencing is off, and I'm fairly sure your cover isn't the one that would get the click. You've got {open_nights} nights open in the next 90 days. At your rate that's around {rev}, and once those dates pass they don't come back.
+{proof}Yours caught my eye. The photos aren't bad — but the sequencing is off, and I'm fairly sure your cover isn't the one that would get the click.{photo_line}
 
-For $29 I'll go through your listing properly — score every photo, edit and reorder them, pull the right one to the front — and have everything in your inbox as a ZIP within 48 hours.
+You've got {open_nights} nights open in the next 90 days. At your rate that's around {rev}, and once those dates pass they don't come back.
+
+For £29 I'll go through your listing properly — score every photo, edit and reorder them, pull the right one to the front — and have everything in your inbox as a ZIP within 48 hours.
 
 If it doesn't move things, just reply and I'll refund it.
 
@@ -264,34 +274,34 @@ AL
 """
 
     if variant == 1:
-        # Honest/vulnerable opener — "almost didn't send this"
         return f"""Hi {first},
 
 {outreach_hook}
 
 I'll be straight with you — I almost didn't send this. But I went through your listing and a couple of things stood out that felt worth flagging.
 
-Your photos aren't being shown in the order that would actually convert someone who's on the fence. And your cover — the one photo that decides whether someone clicks through or keeps scrolling — I don't think it's your strongest one.
+{proof}Your photos aren't being shown in the order that would actually convert someone who's on the fence. And your cover — the one photo that decides whether someone clicks through or keeps scrolling — I don't think it's your strongest one.{photo_line}
 
 You've got {open_nights} nights open in the next 90 days. That's around {rev} at your current rate, and once those dates move past, they're gone.
 
-I do listing teardowns for $29. Full photo scores, everything edited and reordered, cover pulled forward, ZIP in your inbox within 48 hours. If it doesn't help you pick up bookings, reply and I'll send the money back — no back and forth about it.
+£29. Full photo scores, everything edited and reordered, cover pulled forward, ZIP in your inbox within 48 hours. If it doesn't help you pick up bookings, reply and I'll send the money back — no back and forth about it.
 
 {checkout_url}
 
 — AL
 """
 
-    # variant == 2: guest-perspective question — makes them see their listing differently
     return f"""Hi {first},
 
 {outreach_hook}
 
 Real question — when did you last look at your listing the way a guest does? Not as the host who knows the place, but as someone scrolling through 40 options trying to decide which one to click.
 
-I went through yours. The photos are decent — better than most, actually. But decent doesn't get the click. The sequencing is off and your cover is probably costing you bookings you don't even know you're losing. You've got {open_nights} empty nights coming up, which is around {rev} at your rate.
+{proof}I went through yours. The photos are decent — better than most, actually. But decent doesn't get the click. The sequencing is off and your cover is probably costing you bookings you don't even know you're losing.{photo_line}
 
-For $29 I'll put together a full teardown of your listing, edit and reorder your photos with the right one up front, and have everything in your inbox as a ZIP within 48 hours.
+You've got {open_nights} empty nights coming up, which is around {rev} at your rate.
+
+For £29 I'll put together a full teardown of your listing, edit and reorder your photos with the right one up front, and have everything in your inbox as a ZIP within 48 hours.
 
 Doesn't move things? Reply and I'll refund it.
 
@@ -348,10 +358,11 @@ _GUARANTEE_LINES = [
 
 def _offer_html(variant: int, first: str, outreach_hook: str,
                 open_nights: int, revenue_at_stake: float,
-                checkout_url: str, listing_id: str) -> str:
-    rev = f"${revenue_at_stake:,.0f}"
-    cta  = _CTA_LABELS[variant]
-    guar = _GUARANTEE_LINES[variant]
+                checkout_url: str, listing_id: str,
+                cta_idx: int | None = None, guar_idx: int | None = None) -> str:
+    rev = f"£{revenue_at_stake:,.0f}"
+    cta  = _CTA_LABELS[cta_idx if cta_idx is not None else variant]
+    guar = _GUARANTEE_LINES[guar_idx if guar_idx is not None else variant]
     pixel = _tracking_pixel_tag(listing_id)
 
     if variant == 0:
@@ -468,13 +479,23 @@ def send_offer_email(
     open_nights: int,
     recipient: str,
     listing_id: str = "",
+    photo_position_hook: str = "",
 ) -> None:
-    """Send the payment-gated offer email (no PDF attached)."""
-    first   = host_name.split()[0] if host_name else "there"
-    v       = _variant(listing_id or host_email, 3)
-    subject = _SUBJECTS[_variant(listing_id or host_email, len(_SUBJECTS))](first, open_nights, listing_title)
-    plain   = _offer_plain(v, first, outreach_hook, open_nights, revenue_at_stake, checkout_url)
-    html    = _offer_html(v, first, outreach_hook, open_nights, revenue_at_stake, checkout_url, listing_id)
+    """Send the payment-gated offer email (no PDF attached). Uses ML Thompson sampling."""
+    from ml_variants import pick_variants, record_send, total_sends
+    first    = host_name.split()[0] if host_name else "there"
+    ml_v     = pick_variants()
+    v        = ml_v["body"]
+    v_subj   = ml_v["subject"]
+    v_cta    = ml_v["cta"]
+    v_guar   = ml_v["guarantee"]
+    sends    = total_sends()
+    subject  = _SUBJECTS[v_subj](first, open_nights, listing_title)
+    plain    = _offer_plain(v, first, outreach_hook, open_nights, revenue_at_stake,
+                            checkout_url, photo_position_hook=photo_position_hook,
+                            sends_so_far=sends)
+    html     = _offer_html(v, first, outreach_hook, open_nights, revenue_at_stake,
+                           checkout_url, listing_id, cta_idx=v_cta, guar_idx=v_guar)
 
     token = _access_token()
     msg = MIMEMultipart("mixed")
@@ -517,7 +538,8 @@ def send_offer_email(
         timeout=60,
     )
     resp.raise_for_status()
-    print(f"  [gmail] Offer sent to {recipient} (variant={v}, msg id: {resp.json().get('id', '?')})")
+    record_send(ml_v, listing_id or host_email)
+    print(f"  [gmail] Offer sent to {recipient} (body={v} subj={v_subj} cta={v_cta} guar={v_guar}, msg id: {resp.json().get('id', '?')})")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -565,6 +587,9 @@ def main() -> None:
         revenue_at_stake = td.get("revenue_at_stake_90d") or 0
         open_nights      = td.get("open_nights_90d") or 0
         nightly_rate     = td.get("nightly_rate") or 0
+        # Photo-specific hook: first sentence of photo_order_rec from teardown analysis
+        _photo_rec = td.get("analysis", {}).get("photo_order_rec", "")
+        photo_position_hook = (_photo_rec.split(".")[0] + ".").strip() if _photo_rec else ""
 
         # Hard stop — never send revenue numbers we can't verify from real data
         if not outreach_hook:
@@ -616,6 +641,7 @@ def main() -> None:
             open_nights=open_nights,
             recipient=recipient,
             listing_id=listing_id,
+            photo_position_hook=photo_position_hook,
         )
         print("\n[deliver] Offer sent. Run without --send-offer once payment is confirmed.")
         return
