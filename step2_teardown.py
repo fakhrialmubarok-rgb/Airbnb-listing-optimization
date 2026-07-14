@@ -44,7 +44,8 @@ def main():
 
     import statistics as st
     rates = [l["nightly_rate"] for l in cohort if l.get("nightly_rate")]
-    median_rate = st.median(rates) if rates else None
+    # Thin-cohort guard: no price-vs-market hooks off a <15 cohort
+    median_rate = st.median(rates) if rates and len(cohort) >= 15 else None
 
     market_context = build_market_context(cohort)
     print(f"[step2] Market context:\n{market_context}\n")

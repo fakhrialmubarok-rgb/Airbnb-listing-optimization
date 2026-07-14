@@ -16,7 +16,7 @@ Contact channel:
 Usage:
   python3 step1_scrape.py "Manchester, United Kingdom" 10
 """
-import sys, json, csv
+import sys, json, csv, os
 from datetime import date
 from pathlib import Path
 from dotenv import load_dotenv
@@ -62,6 +62,36 @@ def qualify(l: dict) -> tuple[bool, str]:
     return True, f"stake £{stake:,.0f}"
 
 
+PHOTO_SCORE_PROMPT = (
+    "Rate how BAD this Airbnb listing cover photo is as marketing, 0-10: "
+    "0 = professional (bright, straight, styled), 10 = terrible (dark, tilted, "
+    "cluttered, phone-quality). Consider: lighting, verticals, clutter, framing, "
+    "appeal. Return ONLY JSON: {\"badness\": <0-10>, \"issues\": \"<short>\"}"
+)
+
+def score_cover_photo(l: dict) -> int:
+    """0-10 badness of the cover photo (10 = worst = highest lead priority)."""
+    import base64, requests as rq
+    url = (l.get("image_urls") or [None])[0]
+    if not url:
+        return 0
+    try:
+        img = rq.get(url, timeout=30).content
+        r = rq.post(
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+            params={"key": os.environ["GEMINI_API_KEY"]},
+            json={"contents": [{"parts": [
+                      {"text": PHOTO_SCORE_PROMPT},
+                      {"inline_data": {"mime_type": "image/jpeg",
+                                       "data": base64.b64encode(img).decode()}}]}],
+                  "generationConfig": {"responseMimeType": "application/json"}},
+            timeout=60)
+        r.raise_for_status()
+        return int(json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"]).get("badness", 0))
+    except Exception:
+        return 0
+
+
 def to_row(l: dict) -> dict:
     stake = round((l.get("nightly_rate") or 0) * (l.get("open_nights_90d") or 0), 2)
     channel = "email" if l.get("host_email") else "airbnb_dm"
@@ -84,7 +114,8 @@ def to_row(l: dict) -> dict:
         "photo_count":           len(l.get("image_urls") or []),
         "status":                "Scraped",
         "date_scraped":          date.today().isoformat(),
-        "notes":                 "",
+        "notes":                 (f"photo_priority={l['photo_priority']}"
+                                  if l.get("photo_priority") is not None else ""),
     }
 
 
@@ -104,6 +135,23 @@ def main():
         ok, why = qualify(l)
         (qualified if ok else rejected).append((l, why))
 
+    # Cohort floor (brain rule 2026-07-15): market medians from thin cohorts
+    # destroy credibility. <10 listings = hard stop; <20 = loud warning.
+    if len(listings) < 10:
+        print(f"\n[step1] HARD STOP: only {len(listings)} listings scraped — a market "
+              f"median from <10 points is a guess. Scrape at least 20 (ask for more).")
+        sys.exit(1)
+    if len(listings) < 20:
+        print(f"[step1] WARNING: cohort of {len(listings)} < 20 — Step 2 will suppress "
+              f"market-median claims in hooks/copy.")
+
+    # Photo-quality priority score (brain rule 2026-07-15): bad original photos
+    # = biggest before/after delta = best conversion. Score cover photo 0-10
+    # (10 = terrible photos = TOP priority). Cheap vision call, skip on failure.
+    for l, _ in qualified:
+        l["photo_priority"] = score_cover_photo(l)
+
+    qualified.sort(key=lambda t: -(t[0].get("photo_priority") or 0))
     rows = [to_row(l) for l, _ in qualified]
 
     # Append to tracker CSV (source of truth for dedup; mirror to Google Sheet manually/via sync)

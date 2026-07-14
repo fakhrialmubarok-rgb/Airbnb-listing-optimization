@@ -333,6 +333,16 @@ def build_market_context(cohort: list[dict]) -> str:
     photos = [len(l.get("image_urls") or []) for l in cohort if l.get("image_urls")]
     if not rates:
         return "No cohort data available — do not invent benchmarks."
+    # Thin-cohort guard (2026-07-15): a median from <15 points is not a market
+    # claim a savvy host can't debunk. Give the model the numbers as WEAK
+    # signals and explicitly ban quoting them as "the market median".
+    if len(cohort) < 15:
+        return (f"Cohort size: only {len(cohort)} listings — TOO SMALL for market claims. "
+                f"Internal reference only (do NOT quote as 'market median' or any "
+                f"market statistic in copy or hooks): rate ~£{_st.median(rates):.0f}"
+                + (f", occupancy ~{_st.median(occs):.0f}%" if occs else "") +
+                ". Base all diagnosis on the listing's OWN numbers: open nights x "
+                "nightly rate, photo count, title quality, review signals.")
     lines = [f"Cohort size: {len(cohort)} listings scraped in the same market."]
     lines.append(f"Median nightly rate: £{_st.median(rates):.2f}")
     if occs:

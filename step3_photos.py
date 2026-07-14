@@ -21,7 +21,7 @@ Usage:
   python3 step3_photos.py <listing_id> 3 # one lead, cap photos (testing)
 """
 from __future__ import annotations
-import sys, json, csv, base64, time
+import sys, json, csv, base64, time, io
 from pathlib import Path
 import requests
 from dotenv import load_dotenv
@@ -85,6 +85,72 @@ HERO_SUFFIX = (
 
 TV_DETECT_PROMPT = ("Is there a television/TV screen clearly visible in this photo? "
                     "Return ONLY JSON: {\"tv_visible\": true|false}")
+
+# ---------------------------------------------------------------------------
+# STAGED TIER — "virtual staging concept" (disclosed). Approved by Fakhri
+# 2026-07-15: tasteful additions ALLOWED, architecture + furniture pinned.
+# Output goes to staged/ with a deterministic PIL watermark for disclosure.
+STAGING_PROMPT = (
+    "Transform this photo into a page from a high-end interior design portfolio — "
+    "the aspirational 'virtually staged' version of this exact room. "
+    "KEEP: the room's architecture, window and door positions, all existing large "
+    "furniture in their exact current positions and sizes, the same camera angle. "
+    "YOU MAY ADD tasteful staging: an area rug grounding the main furniture, "
+    "a throw draped on the sofa or bed, accent cushions, a coffee-table book or "
+    "ceramic vase styling, a plant in a dead corner (never blocking doors, windows "
+    "or radiators), upgraded wall art in the SAME frames/positions as existing art. "
+    "Keep additions minimal and coherent — 2-3 new elements maximum, luxury-restraint "
+    "aesthetic, palette matched to the room's existing 2-3 colors. "
+    "LIGHTING: bright, airy, editorial — soft diffuse daylight flooding in, curtains "
+    "fully open and tied, every lamp glowing warm, layered two-temperature light, "
+    "high-key near-white walls, windows correctly exposed. "
+    "GEOMETRY: perfectly level camera, dead straight verticals. "
+    "Ultra-photorealistic, magazine-cover interior photography. "
+    "Do NOT render any text, watermark, label or writing anywhere in the image."
+)
+
+QC_STAGED_PROMPT = (
+    "You are a photo QC inspector for VIRTUAL STAGING. Photo 1 is the original room; "
+    "photo 2 is a virtually staged version. Staging additions (rug, throw, cushions, "
+    "plant, vase, books, upgraded art in existing frame positions) are ALLOWED and "
+    "expected. Judge only these: "
+    "Return ONLY JSON: {"
+    "\"same_architecture\": bool,   # walls, windows, doors, radiators unchanged — window never becomes a door\n"
+    "\"furniture_kept\": bool,      # every large furniture item from photo 1 still present, same position and size\n"
+    "\"tasteful_restraint\": bool,  # additions look coherent and minimal, nothing blocking doors/windows/radiators\n"
+    "\"photorealistic\": bool,      # no warped shapes, no CGI plastic look, no gibberish text\n"
+    "\"dramatically_brighter\": bool,\n"
+    "\"straight_verticals\": bool,\n"
+    "\"verdict\": \"pass\"|\"fail\", \"reason\": \"<short>\"}. "
+    "Verdict is pass ONLY if every check is true."
+)
+
+
+def watermark_staged(jpeg_bytes: bytes) -> bytes:
+    """Deterministic disclosure watermark — same font, position, opacity every time."""
+    from PIL import Image as PILImage, ImageDraw, ImageFont
+    im = PILImage.open(io.BytesIO(jpeg_bytes)).convert("RGB")
+    w, h = im.size
+    overlay = PILImage.new("RGBA", im.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    size = max(18, int(w * 0.018))
+    try:
+        font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", size)
+    except Exception:
+        font = ImageFont.load_default()
+    text = "VIRTUAL STAGING CONCEPT"
+    pad = int(w * 0.015)
+    draw.text((pad + 1, h - size - pad + 1), text, font=font, fill=(0, 0, 0, 90))
+    draw.text((pad, h - size - pad), text, font=font, fill=(255, 255, 255, 200))
+    im = PILImage.alpha_composite(im.convert("RGBA"), overlay).convert("RGB")
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=92)
+    return buf.getvalue()
+
+
+def qc_check_staged(original: bytes, staged: bytes) -> dict:
+    return _qc_vision(QC_STAGED_PROMPT, original, staged)
+# ---------------------------------------------------------------------------
 
 # City -> nearby tourist attraction shown on TVs (extend as new markets are scraped)
 CITY_ATTRACTIONS = {
@@ -265,6 +331,10 @@ def recreate(image_bytes: bytes, image_url: str, prompt: str) -> tuple[bytes, st
 
 
 def qc_check(original: bytes, recreated: bytes) -> dict:
+    return _qc_vision(QC_PROMPT, original, recreated)
+
+
+def _qc_vision(prompt: str, original: bytes, recreated: bytes) -> dict:
     """Free vision QC via Gemini 2.5 Flash. On QC infra failure, pass-through
     with verdict 'unchecked' rather than blocking the batch."""
     try:
@@ -273,7 +343,7 @@ def qc_check(original: bytes, recreated: bytes) -> dict:
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
             params={"key": key},
             json={"contents": [{"parts": [
-                      {"text": QC_PROMPT},
+                      {"text": prompt},
                       {"inline_data": {"mime_type": "image/jpeg",
                                        "data": base64.b64encode(original).decode()}},
                       {"inline_data": {"mime_type": "image/jpeg",
@@ -373,9 +443,37 @@ def process_lead(listing: dict, cap=None) -> dict:
             rec, status = base, "original_kept"
 
         (out_dir / "recreated" / f"{n:02d}.jpg").write_bytes(rec)
+
+        # STAGED TIER — best-of-2 with staging QC; skip silently on failure
+        # (the staged set is a bonus deliverable, never blocks the true set)
+        staged_status = "skipped"
+        try:
+            (out_dir / "staged").mkdir(exist_ok=True)
+            s_cands = []
+            for _ in (1, 2):
+                try:
+                    s_img, _b = recreate(base, url, STAGING_PROMPT)
+                    s_v = qc_check_staged(base, s_img)
+                    s_cands.append((s_img, s_v))
+                except Exception as e:
+                    print(f"    staged gen failed: {str(e)[:70]}")
+            s_cands.sort(key=lambda t: (t[1].get("verdict") == "pass",
+                                        sum(1 for x in t[1].values() if x is True)),
+                         reverse=True)
+            if s_cands and s_cands[0][1].get("verdict") == "pass":
+                from photo_grade import highkey_grade
+                (out_dir / "staged" / f"{n:02d}.jpg").write_bytes(
+                    watermark_staged(highkey_grade(s_cands[0][0])))
+                staged_status = "staged"
+            else:
+                staged_status = "qc_fail"
+        except Exception as e:
+            print(f"    staged tier error: {str(e)[:70]}")
+
         manifest.append({"n": n, "url": url, "status": status,
-                         "backend": backend, "qc": verdict})
-        print(f"  {n}: {status} via {backend or '-'} | QC: {verdict.get('verdict','-')}")
+                         "backend": backend, "qc": verdict,
+                         "staged": staged_status})
+        print(f"  {n}: {status} via {backend or '-'} | QC: {verdict.get('verdict','-')} | staged: {staged_status}")
 
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
     return {"listing_id": lid, "photos": len(manifest),
