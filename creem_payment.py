@@ -36,6 +36,46 @@ _HEADERS = {
 }
 
 
+# ── Moderation (required by Creem ToS for AI generation products) ─────────────
+
+def moderate_prompt(prompt: str, external_id: str | None = None) -> str:
+    """
+    Screen a prompt against Creem's content policy BEFORE any generation.
+    Returns the decision: 'allow', 'flag', or 'deny'.
+
+    Fails CLOSED — if the API is unreachable, raises RuntimeError so the
+    caller blocks generation rather than slipping unsafe prompts through.
+    Treat 'flag' same as 'deny' per Creem recommendation.
+    """
+    payload: dict = {"prompt": prompt}
+    if external_id:
+        payload["external_id"] = external_id
+    try:
+        resp = requests.post(
+            f"{_BASE}/moderation/prompt",
+            headers=_HEADERS,
+            json=payload,
+            timeout=5,
+        )
+        resp.raise_for_status()
+        return resp.json().get("decision", "deny")
+    except Exception as e:
+        raise RuntimeError(f"Creem moderation unavailable — blocking generation: {e}") from e
+
+
+def assert_prompt_allowed(prompt: str, external_id: str | None = None) -> None:
+    """
+    Call before any image generation. Raises RuntimeError if the prompt is
+    denied, flagged, or if moderation is unreachable.
+    """
+    decision = moderate_prompt(prompt, external_id=external_id)
+    if decision in ("deny", "flag"):
+        raise RuntimeError(
+            f"Prompt rejected by Creem moderation (decision={decision}). "
+            "Generation blocked."
+        )
+
+
 # ── Checkout link ─────────────────────────────────────────────────────────────
 
 def create_checkout_link(

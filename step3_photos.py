@@ -269,10 +269,9 @@ QC_PROMPT = (
 )
 
 
-def _gemini_image(image_bytes: bytes, prompt: str) -> bytes:
-    key = os.environ["NANO_BANANA_KEY"]
+def _gemini_image_model(image_bytes: bytes, prompt: str, model: str, key: str) -> bytes:
     r = requests.post(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent",
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         params={"key": key},
         json={"contents": [{"parts": [
                   {"text": prompt},
@@ -284,6 +283,21 @@ def _gemini_image(image_bytes: bytes, prompt: str) -> bytes:
     parts = r.json()["candidates"][0]["content"]["parts"]
     part = next(p for p in parts if "inlineData" in p)
     return base64.b64decode(part["inlineData"]["data"])
+
+
+def _gemini_image(image_bytes: bytes, prompt: str) -> bytes:
+    """Primary Gemini image gen — gemini-2.5-flash-image (preview, fast)."""
+    return _gemini_image_model(image_bytes, prompt,
+                               "gemini-2.5-flash-image",
+                               os.environ["NANO_BANANA_KEY"])
+
+
+def _gemini_image_flash(image_bytes: bytes, prompt: str) -> bytes:
+    """Fallback Gemini image gen — gemini-2.0-flash-preview-image-generation.
+    Separate quota pool from 2.5-flash-image, so 500s on one rarely hit both."""
+    key = os.environ.get("GEMINI_API_KEY") or os.environ["NANO_BANANA_KEY"]
+    return _gemini_image_model(image_bytes, prompt,
+                               "gemini-2.0-flash-preview-image-generation", key)
 
 
 def _hf_kontext(image_url: str, prompt: str) -> bytes:
@@ -307,7 +321,7 @@ def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
     # fal.ai accepts base64 data URIs directly — no pre-upload needed
     b64 = base64.b64encode(image_bytes).decode()
     data_uri = f"data:image/jpeg;base64,{b64}"
-    for model in ("fal-ai/flux-kontext/pro", "fal-ai/flux-kontext/dev"):
+    for model in ("fal-ai/flux-kontext-pro", "fal-ai/flux-kontext-dev"):
         r = requests.post(
             f"https://fal.run/{model}",
             headers={"Authorization": f"Key {key}",
@@ -350,10 +364,11 @@ def _replicate_kontext(image_url: str, prompt: str) -> bytes:
 
 
 IMG_CHAIN = [
-    ("gemini nano-banana (free)", lambda b, u, p: _gemini_image(b, p)),
-    ("fal.ai kontext-pro ($0.05)", lambda b, u, p: _fal_kontext(b, p)),
-    ("hf kontext (free credits)", lambda b, u, p: _hf_kontext(u, p)),
-    ("replicate kontext (paid)",  lambda b, u, p: _replicate_kontext(u, p)),
+    ("gemini 2.5-flash-image",         lambda b, u, p: _gemini_image(b, p)),
+    ("gemini 2.0-flash-preview-image", lambda b, u, p: _gemini_image_flash(b, p)),
+    ("fal.ai kontext-pro ($0.05)",     lambda b, u, p: _fal_kontext(b, p)),
+    ("hf kontext (free credits)",      lambda b, u, p: _hf_kontext(u, p)),
+    ("replicate kontext (paid)",       lambda b, u, p: _replicate_kontext(u, p)),
 ]
 _CHAIN_START = 0
 _UNCHECKED_COUNT = 0   # QC infra failures this run — watchdog signal, never ship unchecked
@@ -379,28 +394,34 @@ def qc_check(original: bytes, recreated: bytes) -> dict:
 
 
 def _qc_vision(prompt: str, original: bytes, recreated: bytes) -> dict:
-    """Free vision QC via Gemini 2.5 Flash. On QC infra failure, pass-through
-    with verdict 'unchecked' rather than blocking the batch."""
-    try:
-        key = os.environ["GEMINI_API_KEY"]
-        r = requests.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-            params={"key": key},
-            json={"contents": [{"parts": [
-                      {"text": prompt},
-                      {"inline_data": {"mime_type": "image/jpeg",
-                                       "data": base64.b64encode(original).decode()}},
-                      {"inline_data": {"mime_type": "image/jpeg",
-                                       "data": base64.b64encode(recreated).decode()}}]}],
-                  "generationConfig": {"responseMimeType": "application/json"}},
-            timeout=120)
-        r.raise_for_status()
-        txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(txt)
-    except Exception as e:
-        global _UNCHECKED_COUNT
-        _UNCHECKED_COUNT += 1
-        return {"verdict": "unchecked", "reason": str(e)[:100]}
+    """Vision QC via Gemini 2.5 Flash. Tries GEMINI_API_KEY then NANO_BANANA_KEY
+    so a single key throttle never leaves QC unchecked."""
+    keys = list(dict.fromkeys(filter(None, [
+        os.environ.get("GEMINI_API_KEY"),
+        os.environ.get("NANO_BANANA_KEY"),
+    ])))
+    last_err = None
+    for key in keys:
+        try:
+            r = requests.post(
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+                params={"key": key},
+                json={"contents": [{"parts": [
+                          {"text": prompt},
+                          {"inline_data": {"mime_type": "image/jpeg",
+                                           "data": base64.b64encode(original).decode()}},
+                          {"inline_data": {"mime_type": "image/jpeg",
+                                           "data": base64.b64encode(recreated).decode()}}]}],
+                      "generationConfig": {"responseMimeType": "application/json"}},
+                timeout=120)
+            r.raise_for_status()
+            txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            return json.loads(txt)
+        except Exception as e:
+            last_err = e
+    global _UNCHECKED_COUNT
+    _UNCHECKED_COUNT += 1
+    return {"verdict": "unchecked", "reason": str(last_err)[:100]}
 
 
 def select_photos(listing: dict) -> list[str]:
@@ -432,6 +453,17 @@ def process_lead(listing: dict, cap=None) -> dict:
     if cap:
         photos = photos[:cap]
     print(f"[step3] {lid}: {len(photos)} photos selected (of {len(listing.get('image_urls') or [])})")
+
+    # Creem moderation gate — required before ANY AI image generation.
+    # Fails closed: if moderation is unreachable, we block rather than slip through.
+    if os.environ.get("CREEM_API_KEY"):
+        try:
+            from creem_payment import assert_prompt_allowed
+            sample_prompt = build_prompt(listing, tv_visible=False)[:500]
+            assert_prompt_allowed(sample_prompt, external_id=f"listing_{lid}")
+        except RuntimeError as e:
+            print(f"[step3] {lid}: BLOCKED by Creem moderation — {e}")
+            return {"photos": len(photos), "recreated": 0, "dir": str(out_dir)}
 
     manifest = []
     for n, url in enumerate(photos, 1):
