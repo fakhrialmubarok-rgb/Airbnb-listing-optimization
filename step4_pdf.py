@@ -204,14 +204,22 @@ def page_scorecard(c, a, nums, page_no):
     # methodology — the credibility box the report was missing
     y -= 12*mm
     c.setFont("Helvetica", 8); c.setFillColor(MUTED)
+    cohort_n = nums.get("cohort_size") or 0
+    cohort_line = ""
+    if cohort_n >= 15 and nums.get("cohort_median_rate"):
+        cohort_line = (f"Market benchmark: the median of {cohort_n} live listings scraped "
+                       f"in your market on the capture date (median rate "
+                       f"£{nums['cohort_median_rate']:,.0f}) — real comparables, not estimates. ")
     y = _wrap_text(c,
         "*Realistic upside assumes filling one third of your open nights at your current "
-        "rate — a conservative scenario, not a promise. "
+        "rate — a conservative scenario, not a promise. " + cohort_line +
         "How we scored: everything above comes from your live public listing — the "
         "3-month availability calendar, photo set, title, description and review "
         "signals, captured on the date on the cover. Scores weight what guests see "
         "first when deciding to click: title and cover photo, then photos, then copy. "
-        "No third-party estimates are used. Where the diagnosis cites your review "
+        "No third-party estimates are used. Demand signal reflects how much of your "
+        "next 90 days is already booked — steady bookings mean demand exists and "
+        "presentation, not location, is the constraint. Where the diagnosis cites your review "
         "count, that's the listing's own public review total at capture (a new "
         "listing starts at zero even when the host profile has reviews).",
         M, y, W - 2*M, size=8, color=MUTED, leading=11)
@@ -381,10 +389,23 @@ def pages_staged(c, pdir: Path, page_no: int) -> int:
         slot_h = (y - 18*mm) / (per_page if len(batch) > 1 else 1)
         for p in batch:
             img_h = slot_h - 13*mm
-            # NO cropping — the disclosure watermark must stay fully visible
-            iw, ih = _fit(p, W - 2*M, img_h)
-            x = M + (W - 2*M - iw) / 2
-            c.drawImage(str(p), x, y - ih - 3*mm, iw, ih)
+            # Uniform grid: every concept sits in the same fixed frame (panel note).
+            # Fill the frame with a gentle center-crop but PROTECT the watermark:
+            # crop from the top only, never the bottom-left disclosure strip.
+            frame_w, frame_h = W - 2*M, img_h
+            im = PILImage.open(p).convert("RGB")
+            iw0, ih0 = im.size
+            target = frame_w / frame_h
+            if iw0 / ih0 > target:                    # wide -> trim sides equally
+                nw = int(ih0 * target)
+                im = im.crop(((iw0-nw)//2, 0, (iw0+nw)//2, ih0))
+            else:                                      # tall -> trim from TOP only
+                nh = int(iw0 / target)
+                im = im.crop((0, ih0 - nh, iw0, ih0))
+            buf = io.BytesIO(); im.save(buf, "JPEG", quality=90); buf.seek(0)
+            x = M
+            c.drawImage(ImageReader(buf), x, y - frame_h - 3*mm, frame_w, frame_h)
+            iw, ih = frame_w, frame_h
             _wrap_text(c, "Virtual staging concept — added items are styling suggestions, "
                           "not present in the property. Never upload to Airbnb.",
                        M, y - ih - 8*mm, W - 2*M, size=8, color=MUTED, leading=10.5)
