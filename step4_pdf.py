@@ -475,7 +475,8 @@ def page_close(c, page_no):
 def build_pdf(lid: str) -> Path:
     td = json.loads((TEARDOWNS / f"teardown_{lid}.json").read_text())
     # clean AFTER parsing — the file stores \uXXXX escapes, so cleaning raw text misses them
-    td = json.loads(clean(json.dumps(td, ensure_ascii=False)))
+    # clean() is for rendering individual strings, not for round-tripping full JSON
+    # (it strips chars like ─+ which appear inside string values and breaks the parser)
     # Consistency guard: LLM body copy may quote the raw stake figure; the report's
     # own framing is the conservative one-third scenario. Rewrite any stray mentions.
     stake_raw = td.get("listing_numbers", {}).get("revenue_at_stake_gbp") or 0
