@@ -1,0 +1,39 @@
+{
+  "listing_id": "1408754113190352536",
+  "host_name": "Eric",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.0,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 10220.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 8,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Stylish 3BR Garden Home, Wifi, \u00a3146/night, 70 open nights",
+      "Cozy 3BR Birmingham House with Outdoor Space, Parking Nearby",
+      "3BR House Near Birmingham City with Private Garden, Sleeps 4"
+    ],
+    "rewritten_desc": "Welcome to this charming 3-bedroom home, perfectly situated for a relaxing stay in Birmingham. The property features a private garden and free WiFi, providing the ideal base for your next adventure. With its spacious interior and comfortable furnishings, the house can accommodate up to 4 guests. Eric is a host who cares about providing a comfortable and clean space for his guests, and his home is reflected in the high 4.92-star rating from 72 delighted reviewers. Take advantage of the home's convenient location, with Birmingham city centre just a short drive away. You'll also appreciate the ease of access to nearby parking facilities. Make this lovely home your base for exploring the city and surrounding areas. Whether you're in town for business or pleasure, you'll feel right at home in this stylish 3-bedroom retreat.",
+    "top_amenity_gaps": [
+      "Parking facilities nearby",
+      "Outdoor living and dining space",
+      "Entertainment options (TV, game console, etc.)"
+    ],
+    "photo_order_rec": "The living room should be the cover photo to showcase the home's interior and appeal to potential guests. Additionally, consider adding photos of the garden to highlight one of the property's unique features.",
+    "key_diagnosis": [
+      "This listing's rate of \u00a3146/n is significantly lower than the cohort median of \u00a3175.00, potentially impacting occupancy.",
+      "The 21.7% occupancy rate is below the market average, indicating a significant room for improvement in terms of attracting guests.",
+      "There are no photos of the kitchen, bathroom, or bedrooms in the current image set, which may be deterring potential guests from booking."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a significant gap in your nightly rate (\u00a3146 vs cohort median \u00a3175) and an occupancy rate below the market average (21.7% vs 28.3%), we believe there's a clear opportunity to improve bookings and revenue.",
+    "weakest_element": "photos"
+  }
+}

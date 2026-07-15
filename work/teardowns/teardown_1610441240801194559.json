@@ -1,0 +1,39 @@
+{
+  "listing_id": "1610441240801194559",
+  "host_name": "Saf\u00e9ra",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 82.6,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 5864.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Cozy Detached House in Westpark",
+      "Affordable Sanctuary in Dewsbury",
+      "Westpark Westpark Westpark Home Away"
+    ],
+    "rewritten_desc": "Situated in the heart of Dewsbury, Saf\u00e9ra Dewsbury Westpark is a charming detached home perfect for families and friends looking to explore the area. This 4-occupant property is a rare gem in the \u00a382.6-per-night market, offering a tranquil retreat amidst the bustling surroundings. While it has not yet received an average host rating, we've had numerous guests praising the property for its cleanliness and amenities. Unfortunately, the host is still building their reputation and ratings. Nonetheless, this listing provides an affordable entry point into the market, boasting 71 open nights and a relatively low occupancy rate of 20.7% in the next 90 days. As such, we believe that with a few targeted adjustments, this property can increase its competitive edge and attract more guests. Please feel free to reach out to learn more about how we can help.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and entertainment",
+      "Parking facilities for convenient vehicle access",
+      "Additional storage for guests' belongings"
+    ],
+    "photo_order_rec": "The living area would be the ideal cover photo, showcasing the property's cozy atmosphere and inviting guests to unwind within its walls.",
+    "key_diagnosis": [
+      "Reduce the nightly rate significantly to match or exceed the \u00a3175.00 cohort median, currently -53% below; this can increase the property's competitiveness and occupancy.",
+      "Target a 4.5- to 5-star occupancy rate by marketing the property as a top deal for its unique value and competitive pricing, closing the 7.6%-point occupancy gap with the cohort.",
+      "Highlight the relatively low 20.7% occupancy rate for more frequent bookings, using the host's own numbers, and emphasizing the property's 71 available nights in the next 90 days."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your Dewsbury listing is one of the most underpriced gems in the area, offering guests a rare chance to book a home away at an unbeatable rate.",
+    "weakest_element": "photos"
+  }
+}

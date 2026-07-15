@@ -1,0 +1,39 @@
+{
+  "listing_id": "52335941",
+  "host_name": "Sunshine Glory",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 70.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 5250.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Newcastle City Apt \u2013 60% Below Avg \u00a370",
+      "2\u2011Bed City Centre Flat for 4 \u2013 \u00a370 Night",
+      "Serviced 2\u2011Bed Apartment \u2013 Cheap City Stay"
+    ],
+    "rewritten_desc": "Welcome to your stylish serviced apartment in the heart of Newcastle City Centre. This entire home offers two comfortable bedrooms and a fully equipped living area, making it perfect for up to four guests. Situated just minutes from the main attractions, shops, and transport links, you\u2019ll enjoy the convenience of city\u2011centre living while staying in a quiet, modern space.\n\nEach bedroom features a plush double bed with fresh linens, and the living room provides a cozy sofa and a flat\u2011screen TV for relaxing after a day of exploring. The kitchen is fully stocked with appliances, cookware, and utensils so you can prepare meals just as you would at home. A clean, contemporary bathroom includes a shower, toiletries, and fresh towels.\n\nAt \u00a370 per night, you\u2019re paying roughly 60\u202f% less than the market median of \u00a3175, delivering exceptional value for a prime location. While the listing has a modest 2.6 rating from five reviews, recent guests have praised the cleanliness and convenient location. Host Sunshine Glory is a new host eager to provide a welcoming experience. Book now to secure one of the limited open nights and enjoy Newcastle\u2019s vibrant culture, dining, and nightlife from a comfortable base.\n\nWe look forward to hosting you!",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, garden, patio)",
+      "Free or guaranteed parking",
+      "Entertainment options (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011composed shot of the living area with a view of the city as the cover photo \u2013 it instantly showcases the central location and the apartment\u2019s style.",
+    "key_diagnosis": [
+      "Shorten the title to under 50 characters and highlight the -60% price advantage \u2013 the current 56\u2011char title lacks a strong price hook.",
+      "Add high\u2011value amenities such as outdoor space, parking, and entertainment; currently none are listed, and these categories drive bookings in the Newcastle market.",
+      "Upload a complete set of high\u2011resolution photos covering every room and set a city\u2011view living\u2011room image as the cover \u2013 photo count is unknown, likely missing, which hurts click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 16.3% occupancy at a \u00a370/night rate is far below the market average, indicating a huge upside if you improve visibility.",
+    "weakest_element": "photos"
+  }
+}

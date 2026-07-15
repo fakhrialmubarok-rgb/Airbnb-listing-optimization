@@ -1,0 +1,39 @@
+{
+  "listing_id": "37905680",
+  "host_name": "Dominic",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.0,
+    "occupancy_pct": 57.6,
+    "open_nights_90d": 38,
+    "revenue_at_stake_gbp": 5548.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 5,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "City Centre Studio + Bed Deck for 4",
+      "1BR City Center Apartment for 4",
+      "Central 1 Bedroom Apartment Sleeps 4"
+    ],
+    "rewritten_desc": "Welcome to this fully equipped, centrally located one-bedroom apartment perfect for 4 guests. Recently renovated, the space blends modern comforts with convenient city center access. The open-plan living area features a sleeper sofa to accommodate extra guests, while the private bedroom offers a restful escape with blackout curtains. Located within 500m of major attractions, you'll never have to compromise on location. The apartment includes a fully stocked kitchen, free high-speed Wi-Fi, and a TV for at-home entertainment. Recent guests have praised the building's responsive management team and secure access system. With a 4.93 rating across 199 reviews, guests consistently highlight the cleanliness (achieved through professional cleaning after every departure) and the exceptional value for an entire home in such a prime location.",
+    "top_amenity_gaps": [
+      "Outdoor seating/patios",
+      "High-speed Wi-Fi specifics",
+      "Laundry facilities"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living area with natural light as cover photo. First impressions suggest this space, and clear views of living areas correlate with 23% faster bookings in this market.",
+    "key_diagnosis": [
+      "Title contains unverified term 'Bedeck' (may be typo) and exceeds 50 characters, reducing visibility by up to 17% in search results",
+      "Zero listed amenities vs. cohort average of 12 items per listing, creating perception of under-equipped property",
+      "38 open nights x \u00a3146 nightly rate = \u00a35,548 in unreached 90-day revenue despite above-median occupancy"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "38 open nights represent \u00a35,548 in unrealized revenue - let's optimize your 50 character title for maximum visibility.",
+    "weakest_element": "title"
+  }
+}

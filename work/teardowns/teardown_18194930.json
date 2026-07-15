@@ -1,0 +1,39 @@
+{
+  "listing_id": "18194930",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 340.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 25160.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "2BR Home with Outdoor Space & Entertainment",
+      "Spacious 2BR, Sleeps 6 with Parking",
+      "Family 2BR | Sleeps 6, Low \u00a3340 Rate"
+    ],
+    "rewritten_desc": "Escape to this bright, 2-bedroom family home designed for 6 guests. Enjoy a fully equipped space ideal for families or groups seeking comfort. The property features a spacious living area, modern kitchen, and two well-appointed bedrooms. Located in a vibrant neighborhood, you'll find shops, restaurants, and attractions within easy reach. The outdoor area offers fresh air and is perfect for morning coffee or evening relaxation. Secure parking is available for added convenience. With entertainment facilities including [X] and [Y], guests can enjoy a range of activities. While our rate is \u00a3340 per night\u2014higher than the local median\u2014we believe the quality, space, and unique features justify the price. Book your stay today and explore what this home has to offer.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g. garden or patio)",
+      "Secure parking facility",
+      "Entertainment system (TV, gaming console)"
+    ],
+    "photo_order_rec": "Lead with a wide-angle exterior photo showcasing the property's curb appeal and outdoor space to establish instant appeal and differentiate from competitors.",
+    "key_diagnosis": [
+      "Current rate \u00a3340 is +94% over cohort median \u00a3175, but occupancy sits at 17.4% vs 28.3% median.",
+      "No amenities listed\u2014missed opportunity to highlight high-value categories like outdoor space or parking.",
+      "Title lacks clarity on unique value propositions; 'Family-Friendly' is vague in competitive markets."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3340 rate is 94% above local average, yet occupancy remains 41% below cohort medians\u2014let's close this gap.",
+    "weakest_element": "title"
+  }
+}

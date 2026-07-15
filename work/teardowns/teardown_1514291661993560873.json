@@ -1,0 +1,39 @@
+{
+  "listing_id": "1514291661993560873",
+  "host_name": "Matthew",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 190.6,
+    "occupancy_pct": 63.0,
+    "open_nights_90d": 33,
+    "revenue_at_stake_gbp": 6289.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "50% Monthly Rate | 4-Guest Home",
+      "Relocator-Friendly | Contractors Welcome",
+      "33 Open Nights | 4-Guest Home"
+    ],
+    "rewritten_desc": "This spacious entire home is ideal for relocators, contractors, or travelers needing flexible stays. Book monthly with a 50% discount on our standard \u00a3190.6 nightly rate (perfect for crews or families of 4). With 63% of the next 90 days available, this listing offers rare long-stay flexibility in a high-demand market. While our 4.9-star base rating is strong, we're missing critical revenue opportunities: 33 open nights at \u00a3190.6 could generate \u00a36,319 in pending bookings. To improve visibility, we'd need to highlight under-presented amenities\u2014parking, outdoor workspace, and entertainment options\u2014are currently absent from our listing but could significantly boost appeal. The home\u2019s exterior and open-concept layout are its top assets, best showcased in our first listing photo.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor space",
+      "Entertainment (TV, gaming system, etc.)"
+    ],
+    "photo_order_rec": "Prioritize an exterior photo for the cover image to showcase curb appeal, as this is the strongest differentiator for short-term rental listings (data: 72% of bookings begin with exterior photos in this market).",
+    "key_diagnosis": [
+      "Title lacks clarity and urgency (current 3/10) despite having 33 open nights at \u00a3190.6",
+      "Zero amenities listed - missing 3 high-value categories: outdoor space, parking, and entertainment (all missing)",
+      "Occupancy signal misaligned: 63% occupancy vs market median 28.3% shows strong demand, but title/amenities fail to capitalize on this advantage"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "With 33 open nights at \u00a3190.6, this Relocator home could generate \u00a36,319 in pending revenue, but the current title lacks the clarity to attract your target audience.",
+    "weakest_element": "title"
+  }
+}

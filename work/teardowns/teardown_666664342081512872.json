@@ -1,0 +1,39 @@
+{
+  "listing_id": "666664342081512872",
+  "host_name": "Jo",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 266.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 20261.6
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 3,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury Penthouse with Private Gated Access",
+      "Exclusive 3-Bed Private Gated Penthouse",
+      "Gated Luxury Penthouse with Unmatched Views"
+    ],
+    "rewritten_desc": "Welcome to this exceptional 3-bedroom private gated penthouse, providing a luxurious getaway for up to 4 guests. This stunning property boasts unobstructed city views, making it an ideal location for those seeking a relaxed and refined atmosphere. The apartment features a spacious interior design, perfectly tailored to ensure your stay is both comfortable and enjoyable. Guests will appreciate the private gated access, ensuring a sense of security and seclusion. Enjoy a 4.83-star rating on 143 reviews, with guests praising the property's excellent condition and cleanliness.",
+    "top_amenity_gaps": [
+      "Private Parking and Facilities would significantly enhance the guest experience, especially considering their high nightly rate.",
+      "Outdoor spaces and Entertainment areas could be added to boost guest enjoyment, potentially increasing occupancy.",
+      "More details on Parking and Facilities would be beneficial for potential guests considering the property's luxury appeal."
+    ],
+    "photo_order_rec": "The cover photo should be a wide-angle shot of the penthouse's open-plan living area, showcasing its expansive and stylish interior design.",
+    "key_diagnosis": [
+      "Their \u00a3266.6 nightly rate is an astonishing +52% above the median rate of \u00a3175.00 in this market, indicating a pricing strategy that may be deterring bookings.",
+      "With an occupancy rate of 15.2% over the next 90 days, this penthouse is currently underperforming compared to the average occupancy rate of 28.3% for listings in the same area.",
+      "As there are unknown image counts, it would be beneficial to review and potentially add more photos to showcase the property's rooms and features, potentially increasing the sense of luxury and authenticity."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With an occupancy rate 12.1% below the area's average, and a significant price gap to the median rate, we believe fine-tuning this penthouse's presentation and amenities can unlock its full booking potential.",
+    "weakest_element": "title"
+  }
+}

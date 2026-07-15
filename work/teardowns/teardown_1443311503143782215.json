@@ -1,0 +1,39 @@
+{
+  "listing_id": "1443311503143782215",
+  "host_name": "Claire",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 185.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14060.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Modern 2BR on Queen St \u2013 Sleeps 4, City\u2011Center",
+      "City Break Stay: Queen St Apartment for 4 Guests",
+      "Queen St Flat \u2013 Ideal for Couples & Families"
+    ],
+    "rewritten_desc": "Welcome to your modern retreat on Queen Street, a stylish entire home perfectly placed for a city break or a relaxed staycation. Designed for up to four guests, this bright and airy flat offers two comfortable bedrooms, a fully equipped kitchen, and a spacious living area where you can unwind after a day of exploring the city. At a nightly rate of \u00a3185, you\u2019ll enjoy a premium experience while staying within a competitive price point \u2013 just 6% above the local median. \n\nThe property has earned a solid 4.58 rating from 401 reviews, reflecting consistent guest satisfaction. Although the host, Claire, is new to Airbnb, the home\u2019s high\u2011quality furnishings and thoughtful layout make it a compelling choice for families, couples, or small groups seeking convenience and comfort. \n\nLocated steps from the bustling heart of the city, you\u2019ll have easy access to top restaurants, cultural attractions, and public transport. Whether you\u2019re planning a short city escape or a longer stay, this Queen Street flat provides a welcoming base with all the essentials you need for a memorable visit. Book now to secure your stay and experience the best of city living in a modern, well\u2011appointed setting.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, garden or terrace)",
+      "Parking (dedicated spot or guaranteed free street parking)",
+      "Entertainment amenities (TV with streaming, board games, etc.)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living room as the cover photo; it instantly showcases the space\u2019s size and style, drawing guests in before they scroll through the rest of the gallery.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3185 is only +6% above the cohort median (\u00a3175) while occupancy is just 15.2% versus the market median 28.3% \u2013 price isn\u2019t the issue, you need to drive bookings.",
+      "The current title (47 chars) lacks SEO focus and clear differentiators; a sharper, keyword\u2011rich title under 50 chars will improve search visibility.",
+      "No amenities are listed, missing high\u2011value categories like Outdoor, Parking and Entertainment that travelers actively seek."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 76 open nights left in the next 90 days, you\u2019re leaving roughly \u00a314,060 of potential revenue on the table at your current \u00a3185 rate.",
+    "weakest_element": "photos"
+  }
+}

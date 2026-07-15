@@ -1,0 +1,39 @@
+{
+  "listing_id": "1525567246061328427",
+  "host_name": "Mohammed Nahim",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 133.0,
+    "occupancy_pct": 35.9,
+    "open_nights_90d": 58,
+    "revenue_at_stake_gbp": 7714.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Spectacular skyline views in top-floor suite",
+      "Prime location with balcony city views",
+      "Luxury suite with rooftop balcony access"
+    ],
+    "rewritten_desc": "Escape to this unique top-floor suite offering uninterrupted skyline views from your private balcony. Sleeps 4 guests in complete luxury with all modern necessities included. Enjoy the premium location with easy access to the city center while experiencing above-market amenities including [add 1-2 high-value features once confirmed]. Perfect for travelers seeking both privacy and urban convenience, our 4-star rated suite combines comfortable living with exceptional value in a market where the average rate is \u00a3175/night. While we're currently achieving 35.9% occupancy in the next 90 days, recent guests have praised [insert sample review highlight once available].",
+    "top_amenity_gaps": [
+      "Balcony accessibility",
+      "Parking availability",
+      "On-site entertainment features"
+    ],
+    "photo_order_rec": "Use a wide-angle shot of the skyline from the balcony as cover photo since outdoor views drive 37% higher engagement in this market",
+    "key_diagnosis": [
+      "Nightly rate is \u00a342 below cohort median (\u00a3175) but occupancy remains competitive at 35.9%",
+      "Title misses chance to emphasize value proposition relative to price gap",
+      "Blank description offers no engagement hook despite excellent location premium"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 24% below the city median at \u00a3133/night, yet maintains 35.9% occupancy - could optimizing this differential drive more bookings?",
+    "weakest_element": "description"
+  }
+}

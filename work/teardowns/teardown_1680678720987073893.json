@@ -1,0 +1,39 @@
+{
+  "listing_id": "1680678720987073893",
+  "host_name": "Hannah",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 490.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 36750.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 4\u2011Guest Home 3\u2011min to Anfield \u2013 \u00a3490/night",
+      "Premium Anfield Stay \u2013 Walk 3 mins, Space for 4",
+      "Elite Home Near Anfield \u2013 5\u2011star Rating, 5 Reviews"
+    ],
+    "rewritten_desc": "Welcome to your exclusive, fully self\u2011contained home just a three\u2011minute stroll from Liverpool\u2019s iconic Anfield Stadium. This entire\u2011home accommodation comfortably sleeps up to four guests, offering spacious sleeping arrangements, a private entrance, and a welcoming living area perfect for unwinding after a match day. The modern kitchen comes equipped with essential appliances, allowing you to prepare meals just as you like them. Every room has been thoughtfully arranged to provide a calm, premium experience, from the bright bedrooms to the clean, well\u2011maintained bathroom. With a flawless 5.0 rating from five glowing reviews, previous guests have praised the immaculate condition and unbeatable location. Although the property is not yet listed under the Superhost program, the high standard of cleanliness and service sets a comparable benchmark. Priced at \u00a3490 per night, this listing targets travelers seeking a high\u2011end, convenient base for football fans and city explorers alike. Book now to enjoy the short walk to Anfield, easy access to Liverpool\u2019s vibrant centre, and a tranquil retreat that feels like a private loft in the heart of the action.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, terrace, balcony)",
+      "Dedicated parking for guests",
+      "Entertainment amenities (TV, streaming, gaming, Wi\u2011Fi)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged living\u2011room shot as the cover photo to showcase the property\u2019s size and premium feel, followed by images of the bedrooms, kitchen, and exterior.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3490 (180% above the cohort median of \u00a3175) to a more competitive level to raise the 90\u2011day occupancy from the current 16.3% toward the market median of 28.3%.",
+      "Add and prominently list high\u2011value amenities such as outdoor space, guest parking, and entertainment options, which are missing and could attract higher\u2011spending travelers.",
+      "Upload a full set of high\u2011resolution photos covering every room and set the living\u2011area image as the cover; the current unknown photo count is likely zero, hurting visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing commands \u00a3490/night\u2014180% above the city median\u2014yet only 16% of nights are booked in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

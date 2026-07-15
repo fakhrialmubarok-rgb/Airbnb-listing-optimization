@@ -1,0 +1,39 @@
+{
+  "listing_id": "1147600691366778470",
+  "host_name": "Ben",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.4,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 6976.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 9,
+    "score_images": 9,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Cozy 2 Bed Apt near NEC & Resorts World",
+      "Best Rate in Coventry: 2 Bed Apt \u00a3122.4",
+      "Coventry City Centre Apt: 2 Bed, 4 Guests"
+    ],
+    "rewritten_desc": "Immerse yourself in Coventry City Centre at this charming 2 Bed Apt, ideal for families and couples seeking an urban escape. This Entire Home is conveniently located near NEC, Resorts World, and HS2, ensuring easy access to events, exhibitions, and attractions. Enjoy the flexibility of a self-contained space while soaking up the vibrant atmosphere of the city. Property highlights include: Entire home, 2 bedrooms, accommodating 4 guests, perfect for families and groups. The location offers easy access to Coventry City Centre, making it an excellent base for exploring the area. Come and experience Coventry's unique blend of history, culture, and entertainment.",
+    "top_amenity_gaps": [
+      "Outdoor space would elevate this listing",
+      "On-site parking or nearby options would enhance guest convenience",
+      "Access to laundry facilities would increase guest satisfaction"
+    ],
+    "photo_order_rec": "Lead with a high-quality image of the living area, showcasing the space's natural light and comfort",
+    "key_diagnosis": [
+      "Significant revenue potential is being left on the table due to a \u00a352.60 (\u00a3175 - \u00a3122.4) nightly rate gap to the cohort median, with 57 open nights in the next 90 days",
+      "Low occupancy (37.0%) compared to the market median (28.3%), indicating room for optimization through targeted marketing or pricing adjustments",
+      "No listed amenities are a missed opportunity for differentiation and guest convenience enhancement"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate of \u00a3122.4, your listing is \u00a352.60 under the cohort median, yet still offers 57 open nights in the next 90 days \u2013 we have strategies to boost bookings and maximize revenue",
+    "weakest_element": "description"
+  }
+}

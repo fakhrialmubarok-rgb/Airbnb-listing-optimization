@@ -93,15 +93,55 @@ If you hit any snag uploading, just reply and I'll walk you through it.
     return subject, plain
 
 
-def _d7_email(first: str) -> tuple[str, str]:
+def _pricing_hook_from_teardown(lid: str) -> str:
+    """Pull specific rate vs market gap from teardown for D+7 email."""
+    td_path = Path(__file__).parent / "work" / "teardowns" / f"teardown_{lid}.json"
+    if not td_path.exists():
+        return ""
+    try:
+        td = json.loads(td_path.read_text())
+        nums = td.get("listing_numbers", {})
+        rate = nums.get("nightly_rate_gbp")
+        median = nums.get("cohort_median_rate_gbp")
+        city = td.get("location", "")
+        if rate and median and abs(rate - median) > 10:
+            gap = rate - median
+            direction = "above" if gap > 0 else "below"
+            return (f"Your rate (£{rate:.0f}/night) is £{abs(gap):.0f} {direction} the "
+                    f"{city} median (£{median:.0f}). That gap is usually the first thing "
+                    f"to tune once photos are live.")
+    except Exception:
+        pass
+    return ""
+
+
+def _d7_email(first: str, lid: str = "") -> tuple[str, str]:
     subject = f"one more thing that might help, {first}"
+    pricing_hook = _pricing_hook_from_teardown(lid) if lid else ""
+    hook_line = f"\n\n{pricing_hook}" if pricing_hook else ""
     plain = f"""Hi {first},
 
-Hope the listing changes are starting to show.
+Hope the listing changes are starting to show.{hook_line}
 
 One thing I didn't include in the £29 package — a pricing audit. Your nightly rate vs open nights suggests there might be a sweet spot you're currently missing (either slightly too high for weekdays, or not taking advantage of weekend demand).
 
 I can put together a quick pricing breakdown for £39. Reply 'pricing' and I'll get it to you within 48 hours.
+
+— AL"""
+    return subject, plain
+
+
+def _d14_email(first: str) -> tuple[str, str]:
+    subject = f"quick check — have you looked at your Airbnb stats lately, {first}?"
+    plain = f"""Hi {first},
+
+It's been about two weeks since the new photos went live.
+
+Now's a good time to check your Airbnb stats page — specifically your listing views and booking rate. If the photos are working, you'll usually see a movement in views within the first 14 days.
+
+(Airbnb app → Insights → Listing performance, or desktop: airbnb.com/hosting/listings → Stats)
+
+If things have moved — even a little — I'd love to hear it. And if not, reply and I'll take another look.
 
 — AL"""
     return subject, plain
@@ -165,8 +205,9 @@ def main():
         sent_flags.discard("")
 
         to_send = []
-        if 3 <= days <= 5   and (args.force or "d3"  not in sent_flags): to_send.append("d3")
-        if 7 <= days <= 9   and (args.force or "d7"  not in sent_flags): to_send.append("d7")
+        if 3  <= days <= 5  and (args.force or "d3"  not in sent_flags): to_send.append("d3")
+        if 7  <= days <= 9  and (args.force or "d7"  not in sent_flags): to_send.append("d7")
+        if 13 <= days <= 15 and (args.force or "d14" not in sent_flags): to_send.append("d14")
         if 28 <= days <= 32 and (args.force or "d30" not in sent_flags): to_send.append("d30")
 
         for step in to_send:
@@ -174,7 +215,9 @@ def main():
             if step == "d3":
                 subj, body = _d3_email(first, photo_ref)
             elif step == "d7":
-                subj, body = _d7_email(first)
+                subj, body = _d7_email(first, lid=lid)
+            elif step == "d14":
+                subj, body = _d14_email(first)
             else:
                 subj, body = _d30_email(first)
 

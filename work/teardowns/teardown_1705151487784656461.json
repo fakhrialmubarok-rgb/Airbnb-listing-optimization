@@ -1,0 +1,39 @@
+{
+  "listing_id": "1705151487784656461",
+  "host_name": "CasaCity",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 90.0,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 4500.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Save 42% \u2013 Modern 2BR Apt, Free Parking",
+      "Cozy 2BR City Apt \u2013 Sleeps 6, Parking Included",
+      "Budget\u2011Friendly 2BR Apartment \u2013 Free Parking"
+    ],
+    "rewritten_desc": "Welcome to your modern 2\u2011bedroom apartment in the heart of the city, perfect for up to 4 guests. This entire home offers a spacious living area, a fully equipped kitchen, and two comfortable bedrooms, each with fresh linens and ample storage. Enjoy the convenience of free on\u2011site parking, a rare perk in this market. While the building does not feature a private outdoor terrace, you\u2019ll find nearby parks and caf\u00e9s within walking distance. Stay connected with high\u2011speed Wi\u2011Fi and unwind with a flat\u2011screen TV in the living room. The bathroom is stocked with plush towels and essential toiletries for a hassle\u2011free stay. Guests have praised the spotless cleanliness and the quiet neighbourhood, reflected in a solid 4.65 rating from 344 reviews. Although we\u2019re not a Superhost yet, we\u2019re committed to delivering a comfortable and affordable stay at just \u00a390 per night\u2014significantly lower than the city\u2019s median nightly rate of \u00a3154.60. The apartment is just a 5\u2011minute walk from the main subway station, giving easy access to top attractions, museums, and shopping districts. Flexible self\u2011check\u2011in with a keypad lock lets you arrive at any time. We also provide fresh coffee, a kettle and basic pantry items to kick\u2011start your mornings. Book now to experience great value, easy parking, and a welcoming space for families or small groups visiting the city.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony/garden)",
+      "Entertainment (TV, streaming services)",
+      "Explicit parking amenity listed"
+    ],
+    "photo_order_rec": "Use an exterior shot showing the building fa\u00e7ade and the free parking spot as the cover photo; it instantly highlights the rare parking perk and sets expectations.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a390 is 42% below the city median (\u00a3154.60) yet your 90\u2011day occupancy is only 44.6% (below the cohort median of 47.8%); consider a modest price increase or listing enhancements to capture more demand.",
+      "The title claims \"Sleeps 6\" while the capacity field shows only 4 guests \u2013 this discrepancy can deter bookings; update the title to reflect the correct guest limit.",
+      "No amenities are listed and photos are unknown; add at least 8 high\u2011quality images covering each room and list key amenities (free parking, Wi\u2011Fi, TV) to boost conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your rate of \u00a390 is 42% lower than the city median, yet your 90\u2011day occupancy sits at just 44.6%\u2014there\u2019s clear upside to raise bookings.",
+    "weakest_element": "photos"
+  }
+}

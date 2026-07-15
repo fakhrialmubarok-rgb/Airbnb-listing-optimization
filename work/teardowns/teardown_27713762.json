@@ -1,0 +1,39 @@
+{
+  "listing_id": "27713762",
+  "host_name": "Steph",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 71.0,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 3053.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 5,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Charming Farmhouse in Parbold for 4 Guests \u00a371",
+      "\u00a371 \u2013 Spacious Farmhouse Stay in Parbold",
+      "Rural Retreat in Dalton \u2013 52% 90-Day Availability"
+    ],
+    "rewritten_desc": "Escape to this cozy 4-guest farmhouse in the quiet town of Parbold, where you'll find exceptional value at just \u00a371/night\u201454% less than the local market median. With 52% of its next 90 nights available, this entire home offers a rare chance to enjoy authentic countryside living at prices too good to ignore. The property\u2019s prime location in Dalton provides easy access to local attractions while maintaining the peace and privacy of rural life. Though still finding its hosting groove (Steph is a new host with 226 reviews at 4.96 stars), the farmhouse\u2019s competitive pricing and high-value opportunity for guests seeking spacious accommodation at a fraction of typical rates make it a smart choice for families or groups. Secure your stay now while availability remains significantly higher than the 47.8% median for local listings.",
+    "top_amenity_gaps": [
+      "Outdoor seating area/courtyard access",
+      "On-site parking confirmation",
+      "Streaming or entertainment features"
+    ],
+    "photo_order_rec": "Prioritize the farmhouse exterior as the cover photo to emphasize the property's authentic rural charm and curb appeal\u2014the most visually differentiating feature in this listing.",
+    "key_diagnosis": [
+      "Title exceeds 50 characters and lacks SEO keywords; current 52.2% 90-day occupancy falls 4.4 percentage points above market median despite 54% price discount",
+      "Description lacks explicit mention of competitive pricing advantage (local median: \u00a3154.60/night) that could drive urgency",
+      "No explicit confirmation of core high-value amenities (parking, outdoor space) despite hosting in a rural market where these are table-stakes for bookings"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 52.2% 90-day occupancy is impressive, but \u00a371/night represents 54% below the \u00a3154.60 median rate\u2014leaving potential revenue on the table.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "52180082",
+  "host_name": "Kim",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 123.92,
+    "occupancy_pct": 62.0,
+    "open_nights_90d": 34,
+    "revenue_at_stake_gbp": 4213.28
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "\u00a320 Under Median Rate! 4-Guest Loft in Manchester Core",
+      "Chic City-Center Escape: 4 Guests, \u00a3124/night",
+      "Top-Value Manchester Stay: Stylish 4-Person Loft"
+    ],
+    "rewritten_desc": "Sleek urban retreat with unbeatable city-center location. Sleeps 4 in an open-plan design that blends modern aesthetics with practicality. Prime spot for exploring Manchester's attractions, restaurants, and nightlife. While our rate is \u00a3123.92 per night (20% below Manchester's median of \u00a3154.60), occupancy remains strong at 62% booked for the next 90 days. Ideal for both work and play, this loft offers all the essentials in a vibrant central neighborhood. Recent guests praise 'the perfect mix of style and comfort' and 'easy access to tram connections and iconic landmarks'. Note: High priority missing amenities to be added in an upcoming photoshoot.",
+    "top_amenity_gaps": [
+      "Outdoor seating/patios",
+      "Secure parking options",
+      "Smart TV/Streaming capabilities"
+    ],
+    "photo_order_rec": "Prioritize an exterior shot or living area with bold architectural features as the cover photo to showcase the modern vibe that 4.93-rated guests value. This visual anchor should complement the price advantage highlighted in title variants.",
+    "key_diagnosis": [
+      "Current \u00a3123.92 rate beats median \u00a3154.60 by 20%, but title doesn't leverage this competitive positioning",
+      "Description lacks concrete details that could build on the 220-review base (currently just 'entire home')",
+      "Missing high-value amenity categories (outdoor space/parking/entertainment) hurt appeal at this price tier"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3123.92 rate is 20% below Manchester's median, yet your 62% occupancy exceeds the 47.8% average\u2014what's the untapped potential in this pricing strategy?",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "49749326",
+  "host_name": "Chris",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 116.0,
+    "occupancy_pct": 77.2,
+    "open_nights_90d": 21,
+    "revenue_at_stake_gbp": 2436.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Coach House Ecclesall Road Parking \u00a3116",
+      "Cozy Coach House with Parking - \u00a3116 Ntly",
+      "Ecclesall Coach House \u00a3116 Parking Included"
+    ],
+    "rewritten_desc": "Welcome to our charming coach house located on the vibrant Ecclesall Road. This entire home is perfect for 4 guests and features a comfortable and relaxing atmosphere. With a nightly rate of \u00a3116, you can enjoy a great value in this popular area. The property boasts a unique coach house design, complete with plenty of natural light and comfortable furnishings. Guests can enjoy the local shops, restaurants, and cafes within walking distance, as well as the scenic parks and green spaces surrounding the area. The coach house is also close to public transportation links, making it easy to explore the surrounding area. With a 4.97-star rating from our previous guests, you can trust that you're in good hands. Come and experience the best of Ecclesall with us! Occupancy: 77.2% - don't miss out on this hidden gem.",
+    "top_amenity_gaps": [
+      "Outdoor space - essential for guests seeking relaxation and recreation",
+      "Parking and facilities - a must-have for this area, with high-demand for on-street parking",
+      "Entertainment options - consider adding a TV, streaming devices, or a games console"
+    ],
+    "photo_order_rec": "Use a high-quality photo of the living area as the cover photo to showcase the property's open-plan design and natural light",
+    "key_diagnosis": [
+      "Increase occupancy by 10-12% (from 77.2% to 89%) to capitalize on the \u00a3154.60 median rate - a \u00a316.60 revenue increase per night",
+      "Address the significant rate gap: \u00a338.60 vs the \u00a3154.60 cohort median, by enhancing the property's value proposition or adjusting pricing",
+      "Improve reviews and credibility by responding to 0/365 guest reviews and considering a higher nightly rate (\u00a3130+)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Boost occupancy from 77.2% to 89% and unlock \u00a316.60 revenue increase per night in this high-demand area",
+    "weakest_element": "title"
+  }
+}

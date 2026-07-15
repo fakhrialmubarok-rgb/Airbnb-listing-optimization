@@ -1,0 +1,39 @@
+{
+  "listing_id": "1583684894050640622",
+  "host_name": "Fountain Residence",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 956.0,
+    "occupancy_pct": 67.4,
+    "open_nights_90d": 29,
+    "revenue_at_stake_gbp": 27724.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "5 Modern Flats for 24 Guests! Close to Station",
+      "Spacious 5-Flat Home (Sleeps 24)!",
+      "24-Bed Home in 5 Flats & Station Access"
+    ],
+    "rewritten_desc": "This unique 5-flat property offers 24 beds across stylish accommodations, ideal for large groups or extended stays. Located near the station, it\u2019s perfect for travelers prioritizing convenience. Despite its capacity to sleep 24, the listing is strictly for groups of up to 4 guests, ensuring a comfortable, private experience. The open-concept design and multiple flats provide ample space for socializing or winding down. Proximity to public transport makes exploring the city effortless. With a 4.87 rating from 31 reviews, guests praise the home\u2019s layout and accessibility. Note: Rates reflect this property\u2019s premium positioning in the market.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/terrace)",
+      "Entertainment (TV streaming capabilities)",
+      "Parking access"
+    ],
+    "photo_order_rec": "Prioritize a wide shot of a common living area to showcase space and modern design in the first photo. This highlights the property\u2019s most compelling differentiator for large groups.",
+    "key_diagnosis": [
+      "Title misrepresents capacity: advertises 'Sleeps up to 24' while actual guest limit is 4, potentially misleading booking intent (capacity mismatch).",
+      "Nightly rate is +518% above cohort median (\u00a3956 vs \u00a3154.60), but occupancy lags at 67.4% booked vs market cohort\u2019s 47.8% booked \u2013 signals potential pricing overreach.",
+      "Description lacks high-value amenity mentions (e.g., parking, outdoor access) despite market valuation of these features."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a3956/night rate is +518% vs city median, yet 29 open nights remain in a market averaging 47% occupancy \u2013 suggesting strong optimization potential.",
+    "weakest_element": "title"
+  }
+}

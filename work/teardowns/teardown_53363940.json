@@ -1,0 +1,39 @@
+{
+  "listing_id": "53363940",
+  "host_name": "Ayo",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 116.0,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 8352.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Liverpool City Anfield Apartment (\u00a3116)",
+      "Liverpool City Home Close to Anfield Stadium",
+      "Luxurious City Apartment Anfield \u00a3116/night"
+    ],
+    "rewritten_desc": "Experience the vibrant city of Liverpool in this comfortable and stylish 2-bedroom apartment. Located in the Anfield area, just a short walk from Anfield Stadium, this home offers the perfect combination of local culture and easy access to the city. Sleep up to 4 guests in the spacious bedrooms, each with ample storage space and a relaxing atmosphere. Enjoy the fully-equipped kitchen, perfect for cooking up a storm, and the modern bathrooms, complete with all the essentials. With a 4.65-star rating from 133 reviews, this home is a trusted choice for visitors to Liverpool.\n\nAdditional features of this apartment include:\n\n* 2 spacious bedrooms for up to 4 guests\n* 1 fully-equipped kitchen\n* 1 modern bathroom\n* Fast Wi-Fi for staying connected\n\nThis apartment is available for \u00a3116 per night. Guests can look forward to a comfortable and enjoyable stay in this beautifully-presented Liverpool home.",
+    "top_amenity_gaps": [
+      "Outdoor space for guests to unwind and enjoy the city views",
+      "Parking facilities for easy access to the apartment",
+      "Entertainment options such as a TV or games console for relaxation"
+    ],
+    "photo_order_rec": "Feature a beautiful photo of the living room as the cover photo, leading in with the stylish decor and modern furniture.",
+    "key_diagnosis": [
+      "Listings in the same market as Ayo's property have a 28.3% median occupancy rate over the next 90 days, while Ayo's property is at 19.6%, leaving significant room for improvement",
+      "Ayo's property is priced \u00a359 less than the median nightly rate in the same market (\u00a3175.00), which may be deterring bookings and impacting occupancy",
+      "The property has no listed images, which can have a direct impact on booking conversion rates, with a typical property having 5-7 labelled images"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a significant price gap of \u00a359 vs the cohort median and an occupancy rate of only 19.6% over the next 90 days, there's a clear opportunity to enhance your property's appeal and boost bookings.",
+    "weakest_element": "photos"
+  }
+}

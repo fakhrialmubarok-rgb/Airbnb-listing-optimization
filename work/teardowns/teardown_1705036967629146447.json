@@ -1,0 +1,39 @@
+{
+  "listing_id": "1705036967629146447",
+  "host_name": "Aania",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 276.8,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 19376.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 6,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Luxury Garden Oasis, Free Parking \u00a3276.8",
+      "Cozy Spacious Home with Free Parking & Garden",
+      "Escape to Seclusion: Spacious Home & Garden \u00a3276.8"
+    ],
+    "rewritten_desc": "Escape to a luxurious garden oasis in the heart of [location]. This spacious home provides the perfect retreat for 4 guests, offering a serene atmosphere and tranquil surroundings. Enjoy the beauty of nature from the comfort of your own garden, or make the most of free parking and head out to explore the local area. With a 4.57 rating from 99 reviewers, you can trust this Superhost-free property for a seamless stay. Although Aania, the host, may be new to hosting, this property is a hidden gem waiting to be discovered.",
+    "top_amenity_gaps": [
+      "Outdoor amenities, such as garden furniture or a BBQ, are missing",
+      "Parking and facilities amenities, like secure bike storage, are not listed",
+      "Entertainment amenities, such as a smart TV or board games, are not mentioned"
+    ],
+    "photo_order_rec": "Use a photo of the garden as the cover photo to showcase the beautiful outdoor space and entice guests to book.",
+    "key_diagnosis": [
+      "Increase occupancy by 6.6pp (from 21.7% to 28.3%) to better match the market median and maximize \u00a3276.8 nightly rate",
+      "Implement at least \u00a31,000 worth of outdoor upgrades to provide value-add to guests and increase booking conversion",
+      "Add a minimum of 15 photos to showcase the property's room types and provide a more comprehensive guest experience"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your \u00a3276.8 nightly rate is \u00a3101.8 higher than the cohort median, yet your 21.7% occupancy is 6.6pp below the market average. Let's work together to capitalize on your high nightly rate and drive bookings through targeted amenity enhancements.",
+    "weakest_element": "photos"
+  }
+}

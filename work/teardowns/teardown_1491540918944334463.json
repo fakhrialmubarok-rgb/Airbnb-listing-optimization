@@ -1,0 +1,39 @@
+{
+  "listing_id": "1491540918944334463",
+  "host_name": "Zahir",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.0,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 10366.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 5,
+    "score_amenities": 9,
+    "score_images": 0,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Central flat with free parking - ideal for 4 guests! (\u00a3146/nt)",
+      "\u00a3146/nt: Peaceful central flat with free parking",
+      "Stay in style: Peaceful central flat with free parking (\u00a3146/nt)"
+    ],
+    "rewritten_desc": "Welcome to our charming Peaceful central flat with free parking! Perfect for 4 guests, this entire home offers a comfortable retreat in the heart of the city. Enjoy your stay in a secure building with designated free parking. Whether you're here for the nearby attractions or just looking for a relaxing break, our flat is the perfect base for you. We've taken great care to ensure our home is clean, comfortable, and well-equipped for your needs. Please note that we're not a superhost, but we strive to provide the best possible experience for our guests. We're looking forward to hosting you soon!",
+    "top_amenity_gaps": [
+      "Outdoor space for fresh air and relaxation",
+      "Parking for guests with cars",
+      "Access to facilities such as laundry and Wi-Fi"
+    ],
+    "photo_order_rec": "The living room should be the cover photo as it showcases the best features of the flat, including its size and comfort.",
+    "key_diagnosis": [
+      "With a nightly rate \u00a329 below the median \u00a3175 in the same market, consider revising your pricing strategy to remain competitive.",
+      "Despite having only 17 reviews, the 4.71 rating suggests that guests are highly satisfied with their stay - a great basis to build on, especially considering your occupancy is 20.7% booked over the next 90 days, significantly lower than the median 28.3% across your cohort.",
+      "Given the high demand for a flat with free parking in central London (\u00a3146/nt), your occupancy is a major missed opportunity at 20.7% booked over the next 90 days - that's 71 open nights for you to attract more guests"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "With 71 open nights over the next 90 days and an occupancy rate of 20.7%, there's a significant gap between your demand and bookings - let's discuss how to enhance the offering to attract more guests.",
+    "weakest_element": "description"
+  }
+}

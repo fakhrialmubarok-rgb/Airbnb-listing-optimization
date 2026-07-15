@@ -1,0 +1,39 @@
+{
+  "listing_id": "1628175878509658264",
+  "host_name": "Hussain",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 220.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 16720.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Rainforest oasis with rainfall shower and floor-to-ceiling views",
+      "Luxury retreat with rainfall shower and stunning city views",
+      "Unwind in style with rainfall shower, floor-to-ceiling windows, and city views"
+    ],
+    "rewritten_desc": "Escape to an urban oasis in this luxurious, light-filled retreat. Perfect for couples and small groups, this stylish whole home boasts a rainfall shower, floor-to-ceiling windows, and stunning city views. Enjoy the tranquil atmosphere and unwind in complete comfort. With a 4.88-star rating from 33 reviews, you can rest assured that this property is a top contender in the city. Take advantage of the 76 open nights throughout the next 3 months, with a occupancy rate of 15.2% booked.",
+    "top_amenity_gaps": [
+      "Outdoor space: consider adding a small garden or courtyard to enhance the property's ambiance",
+      "Parking and facilities: guests often prioritize easy parking and convenient access to amenities like laundry and Wi-Fi",
+      "Entertainment: add a TV or entertainment system to enhance the relaxation experience"
+    ],
+    "photo_order_rec": "The cover photo should feature the rainfall shower, as it's a unique selling point and will appeal to guests immediately",
+    "key_diagnosis": [
+      "The host's \u00a3220.0 nightly rate is 26% above the cohort median, yet their occupancy is 12.1% lower than the average 28.3% - this suggests a price-to-occupancy imbalance",
+      "The property currently has no listed amenities, a significant missed opportunity to attract guests searching for specific facilities like laundry or parking",
+      "The property has a very low number of images (unknown), failing to showcase its unique features and ambiance - adding more photos could increase interest and bookings"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By adding just a few high-value amenities, Hussain could boost occupancy from 15.2% to a more competitive 28.3% and increase revenue on those 76 open nights",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1410332155029038983",
+  "host_name": "Samina",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 266.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 20261.6
+  },
+  "analysis": {
+    "score_title": 7,
+    "score_desc": 2,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Quiet Cul-de-sac Oasis (near [location])",
+      "Luxury Home in Quiet [location] Neighbourhood",
+      "\u00a3266.6/night Cul-de-sac Home in [location]"
+    ],
+    "rewritten_desc": "Welcome to my tranquil home, nestled in a quiet cul-de-sac in [location]. This luxurious property is the perfect retreat for up to 4 guests. With its comfortable seating, well-equipped kitchen, and spacious bedrooms, this home has everything you need for a relaxing stay. Take stroll around the quiet neighbourhood, explore the local area, or head into [location] for its many attractions. This home has been beautifully decorated to create a warm and inviting atmosphere, making it the ideal base for your [number of open nights] night stay. As a valued guest, you'll have full access to the property, with no shared spaces to worry about. Whether you're looking for a weekend getaway or a longer stay, this home is the perfect choice for you. Please note that the home is located near [local points of interest].",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxing and entertaining guests",
+      "Designated parking to make arrival and departure stress-free",
+      "Entertainment facilities such as a TV or games console to keep guests entertained"
+    ],
+    "photo_order_rec": "Use a photo of the outdoor space or the cul-de-sac exterior as the cover photo to immediately convey the peaceful atmosphere and tranquil setting of the home.",
+    "key_diagnosis": [
+      "Your nightly rate is \u00a3266.6, a whopping 52% above the \u00a3175.00 cohort median, which may be pricing out potential guests and affecting occupancy.",
+      "Your home is sitting at 15.2% occupancy over the next 90 days, significantly below the 28.3% cohort median, indicating a strong opportunity to improve your occupancy signals.",
+      "You have no amenities listed, leaving potential guests unsure of what to expect and missing out on opportunities to showcase your property's unique features and selling points."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "We've identified that your home's nightly rate and occupancy levels are significantly off the cohort median, which could be limiting bookings \u2013 we'd love to discuss how to optimize for maximum revenue.",
+    "weakest_element": "description"
+  }
+}

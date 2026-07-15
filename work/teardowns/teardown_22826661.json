@@ -1,0 +1,39 @@
+{
+  "listing_id": "22826661",
+  "host_name": "Carol",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 77.0,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 5082.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Flat @ Leeds Airport \u2013 50% cheaper than average",
+      "Cozy 2BR Flat, 4 Guests, Near Airport \u2013 \u00a377/night",
+      "Budget Airport Flat \u2013 Sleeps 4, 27% Occupancy"
+    ],
+    "rewritten_desc": "Welcome to your self\u2011contained flat just minutes from Leeds Bradford Airport. This entire\u2011home property comfortably sleeps up to four guests, making it ideal for families, friends, or business travelers seeking a hassle\u2011free stay. Rated an impressive 4.93 from 145 guest reviews, the flat combines a warm, modern interior with the convenience of a prime location.\n\nInside, you\u2019ll find a bright living area perfect for relaxing after a flight, a fully equipped kitchen ready for any home\u2011cooked meal, and a comfortable bedroom that guarantees a restful night\u2019s sleep. Free Wi\u2011Fi and a dedicated workspace keep you connected whether you\u2019re working remotely or planning your next adventure. The flat\u2019s quiet neighbourhood offers easy access to public transport, local shops, and restaurants, while the airport is just a short drive away.\n\nAt \u00a377 per night, this flat is priced roughly 50% below the Leeds\u2011Bradford market median of \u00a3154.60, presenting excellent value for savvy travelers. Although current bookings cover only 27.2% of the next 90 days, there\u2019s ample opportunity to enjoy this well\u2011rated, budget\u2011friendly stay. Book now and experience comfort, convenience, and savings all in one place.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, garden, or patio)",
+      "Dedicated parking or free on\u2011site parking",
+      "Entertainment amenities (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011lit living\u2011room shot as the cover photo to showcase the flat\u2019s spaciousness, followed by images of the bedroom, kitchen, bathroom, exterior building, and nearby airport view.",
+    "key_diagnosis": [
+      "Rewrite the title to highlight the \u00a377/night price \u2013 about 50% lower than the cohort median of \u00a3154.60 \u2013 to capture price\u2011sensitive search traffic.",
+      "Add high\u2011value amenities (outdoor space, parking, entertainment) that are missing, as these categories drive bookings in this market.",
+      "Upload at least 8 high\u2011quality photos covering all major rooms and set the living\u2011room image as the lead photo to improve visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your flat is priced at \u00a377/night\u2014about 50% below the Leeds\u2011Bradford market median of \u00a3154.60\u2014yet it\u2019s only booked 27.2% of the time, leaving plenty of upside.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1689196509909357930",
+  "host_name": "Avion",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 113.76,
+    "occupancy_pct": 41.3,
+    "open_nights_90d": 53,
+    "revenue_at_stake_gbp": 6029.28
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a3114 Leeds Apartment Sleeps 4 with Prime Downtown Access",
+      "Central Leeds Apartment for 4 with Competitive Pricing",
+      "Spacious Leeds Apartment for 4 with Direct City Center Access"
+    ],
+    "rewritten_desc": "Nestled in the heart of Leeds, this charming \u00a3114-per-night apartment offers exceptional value for solo travelers, couples, or small groups. The central location puts you just steps from Leeds' vibrant nightlife, dining options, and cultural attractions. Despite being priced 26% below the city-wide median rate (\u00a3154.60), we observe an opportunity to increase occupancy from current 41.3% to match the market average of 47.8% over 90 days. The apartment features all the conveniences you need for a comfortable stay, including [insert missing amenities details] while maintaining competitive nightly pricing. With 53 open nights remaining at this attractive rate point, this property represents a compelling value-for-money option in Leeds' premium central location. Recent guests have left 48 thoughtful reviews highlighting [insert review highlights if available]. Take advantage of this strategically priced property to experience all that Leeds has to offer, with easy access to [transportation options/attractions].",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "On-site parking",
+      "Smart TV with streaming services"
+    ],
+    "photo_order_rec": "The living area photo should be the cover image as it best showcases the property's layout and central location, which are key differentiators in Leeds' competitive market.",
+    "key_diagnosis": [
+      "Listing claims capacity for 8 guests but only officially accommodates 4, creating misleading expectations",
+      "Priced 26% below cohort median (\u00a3114 vs \u00a3154.60) yet occupancy is 6.5% below cohort average (41.3% vs 47.8%)",
+      "No amenities listed despite high-value categories available for inclusion (Outdoor/Parking/Entertainment)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 26% below the Leeds median but sits at 6.5% lower occupancy than similar properties - we can fix this.",
+    "weakest_element": "title"
+  }
+}

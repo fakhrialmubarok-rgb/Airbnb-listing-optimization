@@ -1,0 +1,39 @@
+{
+  "listing_id": "1039713770930018085",
+  "host_name": "Uchenna",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 113.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 8362.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "35% Below Avg \u2013 2\u2011Bed Flat w/ Ensuite Baths",
+      "Cozy 2\u2011Bed City Flat \u2013 Walk to Attractions",
+      "4 Guests, 2 Ensuite Rooms \u2013 Budget City Stay"
+    ],
+    "rewritten_desc": "Welcome to your bright, comfortable 2\u2011bedroom flat, perfectly designed for up to four guests. Both bedrooms feature private ensuite bathrooms, giving you the convenience of hotel\u2011style privacy while enjoying the space of an entire home. The open\u2011plan living area is ideal for relaxing after a day of exploring the city, with a fully equipped kitchen ready for home\u2011cooked meals. At just \u00a3113 per night, your stay costs roughly 35% less than the local market median of \u00a3175, offering excellent value for budget\u2011savvy travelers. \n\nThe flat has earned a solid 4.12 rating from 17 guests, reflecting consistent cleanliness and comfort. While the host, Uchenna, is new to hosting, the property\u2019s competitive price and thoughtful layout make it a compelling choice for families, couples, or small groups. \n\nLocated in a vibrant neighbourhood with easy access to public transport, restaurants, and attractions, you\u2019ll be close to the city\u2019s best spots while enjoying a peaceful retreat. Though the listing is not yet a Superhost, the combination of low nightly rates, ensuite bedrooms, and a capacity for four makes this flat an attractive option for anyone seeking a cost\u2011effective city stay. Book now and experience the comfort of a private home at a fraction of the usual price.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., patio or garden)",
+      "Free parking for guests",
+      "Entertainment amenities (TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area as the cover photo \u2013 it showcases the open layout and leads viewers into the space, then follow with bedroom, bathroom, kitchen, and exterior images.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities such as free parking and a small outdoor seating area; with a nightly rate 35% below the cohort median but only 17.4% occupancy, these amenities can lift conversion and fill the 74 open nights.",
+      "Upload at least 8 professional photos covering the living room, each bedroom, both ensuites, kitchen, and building exterior; the unknown photo count likely hurts click\u2011through rates.",
+      "Revise the title to highlight the 35% price advantage and ensuite feature; the current title scores about 5/10 and misses a strong SEO hook."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your flat is priced 35% below the city median yet only 17% booked \u2013 there\u2019s huge upside.",
+    "weakest_element": "amenities"
+  }
+}

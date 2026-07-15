@@ -1,0 +1,39 @@
+{
+  "listing_id": "1305861025905176088",
+  "host_name": "Usman",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 214.2,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 15422.4
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 8,
+    "score_amenities": 1,
+    "score_images": 0,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Modern House in City Center | Free Parking and Workspace | \u00a3214/Night",
+      "City Center Oasis: Free Parking and Workspace - \u00a3214/Night",
+      "Cozy City Haven: Parking, Workspace, and \u00a3214/Night Deals"
+    ],
+    "rewritten_desc": "Welcome to our modern city center haven, perfect for 4 guests. This entire home boasts free parking and a dedicated workspace, ideal for remote workers or those who want to stay productive while exploring our vibrant city. Unwind in our spacious interior, and make the most of your stay with easy access to local attractions and amenities. As a responsible host, we ensure a warm welcome and comfortable stay. With 33 reviews and a 4.85 rating, we pride ourselves on providing an exceptional guest experience. We've made sure that you'll have all you need during your stay, so feel free to ask us if you have any questions.",
+    "top_amenity_gaps": [
+      "High-end outdoor spaces for relaxation and entertainment",
+      "Secure and well-lit parking facilities",
+      "Access to amenities like gyms, restaurants, or local shops"
+    ],
+    "photo_order_rec": "The living area with natural light and comfortable furniture should be the cover photo, showcasing the space's warmth and inviting atmosphere. This will help potential guests visualize themselves relaxing and enjoying the home's amenities.",
+    "key_diagnosis": [
+      "Raise the nightly rate to \u00a3235 to better align with the +22% gap against the cohort median, potentially increasing occupancy and revenue.",
+      "Fill the vacant 72 open nights with a 28.3% average occupancy rate, exceeding the market average.",
+      "Add photos of the entire home, including all 4 rooms, to showcase its full potential and help guests plan their stay."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By adding a few high-end outdoor spaces and well-lit parking facilities, we could increase occupancy rates and appeal to more guests, ultimately increasing revenue and visibility.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "862612010175014290",
+  "host_name": "Adam",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 212.8,
+    "occupancy_pct": 64.1,
+    "open_nights_90d": 32,
+    "revenue_at_stake_gbp": 6809.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Plough House \u2013 Premium Home at \u00a3213/night",
+      "Spacious 4\u2011Guest Retreat \u2013 50% Breakfast Off",
+      "Cozy 4\u2011Guest Home Near Pub \u2013 Luxury Stay"
+    ],
+    "rewritten_desc": "Welcome to Plough House, an entire\u2011home haven perfectly suited for up to four guests. Nestled in a charming neighbourhood, this stylish property combines comfort with convenience \u2013 just steps from the local pub where you can enjoy a generous 50\u202f% discount on breakfast. Every detail has been thoughtfully curated: a bright, open\u2011plan living area invites you to relax after a day of exploring, while the fully equipped kitchen lets you prepare meals just the way you like them. Two well\u2011appointed bedrooms offer plush bedding and ample storage, and the modern bathroom features fresh towels and premium toiletries. With a nightly rate of \u00a3212.80, you\u2019ll experience a boutique\u2011level stay that rivals higher\u2011priced hotels, all while enjoying a remarkable 4.99 rating from 331 satisfied guests. Whether you\u2019re traveling for leisure or work, Plough House provides a quiet retreat with easy access to local attractions, dining, and public transport. Book now to secure one of the 32 open nights in the next 90 days and take advantage of the exclusive breakfast discount \u2013 a perfect blend of value and luxury for your next getaway.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/patio)",
+      "Dedicated parking",
+      "Entertainment options (games, streaming)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the main living area with a view of the nearby pub as the cover photo; it instantly conveys the home\u2019s size, style, and the unique breakfast\u2011discount perk.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3212.8 is 38\u202f% above the city median (\u00a3154.6) while occupancy is only 64\u202f% (32 open nights in 90 days) \u2013 consider a 10\u201115\u202f% price adjustment to capture more bookings.",
+      "The description currently provides no detail; a compelling 200\u2011300\u2011word narrative highlighting the 4\u2011guest capacity, 4.99 rating, and 50\u202f% breakfast discount will improve conversion.",
+      "No amenities are listed; add high\u2011value items like free parking, a private garden/patio, and entertainment (board games/streaming) to meet guest expectations and boost perceived value."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 38\u202f% above the city median (\u00a3212.8 vs \u00a3154.6) yet you have 32 open nights in the next 90 days \u2013 a clear opportunity to raise occupancy.",
+    "weakest_element": "photos"
+  }
+}

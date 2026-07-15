@@ -1,0 +1,39 @@
+{
+  "listing_id": "653739440629720685",
+  "host_name": "Amaan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 210.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 15960.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 5,
+    "score_amenities": 2,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "\u00a3210/night 3 Bed House Perfect for Families, 20% above the city median",
+      "Cozy Family Villa, 4 Guests, 76 Open Nights, Prices \u00a3210",
+      "\u00a3210 London Flat, 3 Bedrooms, Capacity 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to our spacious 3-bedroom house, perfect for families and groups of up to 4 guests! Located in the heart of London, this villa offers a relaxing retreat with plenty of space to spread out. With 76 open nights available throughout the next 90 days, you can enjoy a flexible stay without worrying about availability. Our house is fully furnished and equipped with everything you need for a comfortable stay. Located just a short walk from local shops, restaurants, and pubs, it's the perfect base for exploring the city. Whether you're here for business or pleasure, our house is the perfect choice for a relaxing and enjoyable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space would be highly desirable for a house of this size and price point in this area.",
+      "Additional amenities such as a washing machine and dryer would be highly valued by long-stay guests.",
+      "A separate living area with TV and entertainment facilities would enhance the overall guest experience."
+    ],
+    "photo_order_rec": "First, showcase the spacious living room and comfortable furnishings to establish a sense of relaxation and comfort. Then, lead to the private bedrooms and well-appointed bathrooms.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3210, 20% above the median rate of \u00a3175 in the same market, which may be deterring guests.",
+      "Occupancy stands at 15.2%, significantly below the cohort average of 28.3%, indicating a gap in attracting bookings.",
+      "With 6 reviews, the host has barely begun to build credibility, which can negatively impact guest confidence."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Amaan, I noticed your listing has an opportunity to increase occupancy by 13.1% by matching the cohort average, would you like to discuss potential enhancements?",
+    "weakest_element": "title"
+  }
+}

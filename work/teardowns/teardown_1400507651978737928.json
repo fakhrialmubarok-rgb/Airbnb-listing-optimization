@@ -1,0 +1,39 @@
+{
+  "listing_id": "1400507651978737928",
+  "host_name": "Native Manchester",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 88.74,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 6478.02
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a388 Manchester Studio Near Piccadilly \u2014 43% Off City Median",
+      "Spacious Piccadilly Studio in Manchester from \u00a388/night",
+      "Affordable Studio in Manchester, Steps from Piccadilly"
+    ],
+    "rewritten_desc": "Stylish self-contained studio in the heart of Manchester, just a short walk from the iconic Piccadilly area. Perfect for travelers seeking a budget-friendly stay with access to the city's top restaurants, shopping, and cultural attractions. As a new host, we\u2019re committed to making your stay comfortable \u2014 your home-away-from-home features [insert key amenities if available] within walking distance to [local landmarks/amenities]. While our rate of \u00a388.74/night is 43% below the Manchester studio median, we believe the convenience of our location more than compensates. Please note capacity is limited to 4 guests per booking, and we\u2019re happy to provide [suggest adding guest-specific details if available].",
+    "top_amenity_gaps": [
+      "Outdoor space/balcony for scenic views",
+      "Secure on-site parking for guests",
+      "Smart TV with streaming services"
+    ],
+    "photo_order_rec": "Prioritize a clean, well-lit photo of the studio\u2019s living area as cover image to immediately convey space and modernity, followed by a wide shot showcasing Piccadilly proximity.",
+    "key_diagnosis": [
+      "18.5% occupancy (vs 47.8% median) despite rate 43% below cohort median \u2014 indicates pricing strategy or listing visibility issues",
+      "Missing all high-value amenities (Outdoor, Parking & Entertainment) that would justify occupancy increase",
+      "Description absent entirely \u2014 losing critical conversions from travelers seeking context beyond basics"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your studio stays 43% below Manchester\u2019s median rate, yet only achieves 18.5% occupancy against the cohort\u2019s 47.8% \u2014 what\u2019s missing?",
+    "weakest_element": "description"
+  }
+}

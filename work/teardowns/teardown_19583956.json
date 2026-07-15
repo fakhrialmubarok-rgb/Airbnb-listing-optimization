@@ -1,0 +1,39 @@
+{
+  "listing_id": "19583956",
+  "host_name": "Jessica",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 97.6,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 6441.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 0,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "NEC Close, Free Parking, 4 Bed Flat from \u00a397",
+      "\u00a397.6 Night, 27.2% Occupancy, First Floor Flat near NEC",
+      "4 Bedroom Flat near NEC, \u00a397.6, Free Parking"
+    ],
+    "rewritten_desc": "Welcome to this spacious first-floor flat, located in a prime spot near the NEC. This entire home can accommodate up to 4 guests and features free parking. The flat is situated in a convenient area, making it an ideal choice for those attending events at the NEC. Although Jessica has limited hosting experience, she has maintained a guest-approval rating of 4.7/5 based on 234 reviews. Guests will enjoy the flat's comfortable living space and have access to free parking on the premises. If you're looking for a budget-friendly accommodation near the NEC, this flat is an excellent option.",
+    "top_amenity_gaps": [
+      "Outdoor facilities",
+      "Parking and facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "A photo of the flat's living room should be the cover photo, showcasing its spacious and comfortable layout.",
+    "key_diagnosis": [
+      "Their nightly rate of \u00a397.6 is -44% lower than the cohort median of \u00a3175.00, making it crucial to emphasize the price point in the title.",
+      "Despite having a lower nightly rate, the flat's occupancy rate of 27.2% is only 1.1% lower than the cohort median of 28.3%, indicating room for improvement in marketing and optimizing listing appeal.",
+      "Jessica's average rating of 4.7/5, based on 234 reviews, is an impressive metric, but the host has only been hosting for 0 years, indicating that experience is still a developing aspect of the hosting business."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Our data suggests that there's significant room for improvement in occupancy rates, with a potential to increase bookings by leveraging your flat's competitive price point.",
+    "weakest_element": "amenities"
+  }
+}

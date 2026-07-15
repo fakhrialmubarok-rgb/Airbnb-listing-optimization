@@ -1,0 +1,41 @@
+{
+  "listing_id": "1138936464321342722",
+  "host_name": "Nikki",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 170.0,
+    "occupancy_pct": 70.7,
+    "open_nights_90d": 26,
+    "revenue_at_stake_gbp": 4420.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 3,
+    "score_amenities": 3,
+    "score_images": 3,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Canal Cottage near Leeds LBA Airport - 4.9\u2605",
+      "Cozy Leeds Canal Cottage (5mi to LBA)",
+      "4.9\u2605 Self-contained Leeds Cottages"
+    ],
+    "rewritten_desc": "Escape to this charming canal-side cottage just 5 miles from Leeds Bradford Airport (LBA), perfect for travelers needing easy access to both Leeds and the airport. Recently renovated, this 4-guest property offers modern comforts paired with a peaceful waterside setting. With a 4.9-star rating from 60 reviews, guests praise its cleanliness and prime location. While the home lacks a traditional kitchen, it features a modern bathroom and free on-site parking (subject to availability). Enjoy walking trails right from your door or request local restaurant recommendations. Sleeps 4 in bright, airy bedrooms with fresh linens. Fully secured for safety. 26 nights available in the next 90 days waiting to host your next getaway.",
+    "top_amenity_gaps": [
+      "Free parking confirmation",
+      "Outdoor seating area for canal views",
+      "Smart TV with streaming services"
+    ],
+    "photo_order_rec": "Show the canal-side exterior first - it's the strongest visual hook for this location-specific listing",
+    "key_diagnosis": [
+      "Title lacks specific keywords like 'canal views' or 'airport proximity' that would boost visibility (title score: 3/10)",
+      "No amenities are listed despite high rating, risking guest uncertainty (amenities score: 3/10)",
+      "Missing lead photo showing the canal access - critical for this property type (images score: 3/10)",
+      "Host has 0 years' experience while competitors average 2 years (market benchmark data suggests experience correlate with occupancy)",
+      "At 70.7% booked vs cohort median 47.8%, there is \u00a34,420 in revenue potential across 26 open nights at \u00a3170/night"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "With 26 nights available at \u00a3170/night, a stronger title could unlock \u00a34,420 in potential revenue while matching demand patterns",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "44180837",
+  "host_name": "Paul",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 184.8,
+    "occupancy_pct": 42.4,
+    "open_nights_90d": 52,
+    "revenue_at_stake_gbp": 9609.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "5.0-rated Entire Home in Central City",
+      "Charming \u00a3184 Cottage with 5.0 Stars",
+      "4-Guest Home | 5.0 Reviews | City Centre"
+    ],
+    "rewritten_desc": "Welcome to this charming 4-guest entire home with a perfect 5.0-star rating from 109 guests. Located conveniently in the city center (exact location details would strengthen this section), our property offers a unique blend of rustic cottage charm and urban accessibility. Guests praise the space\u2019s cleanliness, comfort, and thoughtful design. While the host is still building their listing profile, the strong 5-star reviews indicate consistent guest satisfaction. Priced at \u00a3184.80 per night (20% above the market median of \u00a3154.60), this home has room for improvement in occupancy compared to the 47.8% median rate in our market. Ideal for families or groups seeking a cozy city retreat, the property\u2019s current description is enhanced here to better highlight its strengths: consistent 5-star reviews, central location, and the privacy of an entire home. Additional amenities such as free parking, outdoor space, or entertainment features would further enhance guest experience and competitiveness in this market. To ensure accuracy, please verify property-specific details about parking, nearby attractions, and any unique features.",
+    "top_amenity_gaps": [
+      "On-site parking",
+      "Outdoor seating area",
+      "Smart TV/entertainment system"
+    ],
+    "photo_order_rec": "Lead with the living room or entryway if available to immediately showcase space and style. Front exterior photos next to emphasize location appeal, followed by any unique interior features like kitchen or bedroom setups.",
+    "key_diagnosis": [
+      "Priced 20% above median (\u00a3184.8 vs \u00a3154.6) while showing 5.4% occupancy gap (42.4% booked vs 47.8% market median)",
+      "No amenities listed despite market emphasis on Outdoor, Parking, and Entertainment categories",
+      "Title lacks specific differentiation (e.g., neighborhood, unique features, or verified occupancy signal)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Great 5.0 rating but your \u00a3184.8 rate is outperforming your 42.4% occupancy (47.8% is average in this market).",
+    "weakest_element": "amenities"
+  }
+}

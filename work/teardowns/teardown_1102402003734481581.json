@@ -1,0 +1,39 @@
+{
+  "listing_id": "1102402003734481581",
+  "host_name": "Abdul",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 770.0,
+    "occupancy_pct": 43.5,
+    "open_nights_90d": 51,
+    "revenue_at_stake_gbp": 39270.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "6-Bed Luxury Home with Private Cinema/Games",
+      "Luxury House: 6-Bed + Screening Room",
+      "6-Bed Villa with Games Room & Cinema"
+    ],
+    "rewritten_desc": "Welcome to our spacious 6-bedroom luxury home, perfect for large groups seeking entertainment and comfort. While the property sleeps 4 (double check capacity accuracy), it boasts a standout cinematic experience with a dedicated screening room and games room for unforgettable stays. Ideal for special occasions or movie enthusiasts, this exclusive entire-home rental features [insert missing amenities like 'outdoor garden' or 'secure parking' based on local benchmarks\u2014add based on market research]. With prime location access and no street-level noise, guests can relax amidst [mention nearby attractions]. We pride ourselves on responsiveness and ensuring every stay exceeds expectations. Note: Our price reflects the unique entertainment features not found in standard listings at the median \u00a3155 rate.",
+    "top_amenity_gaps": [
+      "Secure parking",
+      "Outdoor space (garden/patio)",
+      "Smart home technology"
+    ],
+    "photo_order_rec": "Prioritize the cinema room photo as cover image to showcase the property\u2019s unique differentiator \u2014 this premium entertainment feature could justify the high rate when prominently displayed.",
+    "key_diagnosis": [
+      "Nightly rate of \u00a3770 is 398% above cohort median \u00a3155, yet 43.5% occupancy lags below 47.8% median 90-day booked rate for market",
+      "No amenity tags listed despite 'facilities' being top local category, costing 15-30% in search ranking per platform benchmarks",
+      "Title mentions 6 bedrooms but only 4 guests accommodated\u2014potential mispricing that deters group bookings"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With \u00a3770 nights costing 400% more than local median but only 44% occupancy (underperforming vs 47.8% market), we can help reposition this luxury asset to fill more nights without discounting.",
+    "weakest_element": "amenities"
+  }
+}

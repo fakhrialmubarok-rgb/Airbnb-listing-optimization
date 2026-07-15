@@ -1,0 +1,39 @@
+{
+  "listing_id": "1645748587118311311",
+  "host_name": "Cyril",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 78.2,
+    "occupancy_pct": 30.4,
+    "open_nights_90d": 63,
+    "revenue_at_stake_gbp": 4926.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 8,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Sheffield City Pad",
+      "1 Bed Apartment",
+      "Urban Retreat"
+    ],
+    "rewritten_desc": "Experience the best of Sheffield in this modern, 1 bed apartment, perfectly located for both business and leisure stays. With its bright open-plan living area, fully equipped kitchen, and comfortable sleeping space, you'll feel right at home. Enjoy high-speed WiFi, a smart TV, and essential amenities, all designed to make your stay easy and enjoyable. Please note that the flat is located on the 1st floor and is accessed by stairs only, making it unsuitable for guests requiring disabled access or mobility assistance. As a special bonus, get 10% off your food at the nearby Crawler's Catch with our exclusive discount code: Happy Holiday. With a UK double bed and a folding bed with airflow mattress, this apartment can accommodate up to 3 guests.",
+    "top_amenity_gaps": [
+      "Exterior security cameras on property",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "The Full Kitchen photo should be the cover photo, as it showcases one of the apartment's strongest features and will immediately grab the attention of potential guests.",
+    "key_diagnosis": [
+      "With 63 open nights in the next 90 days, and an occupancy rate of 30.4%, there is a significant opportunity to increase bookings by 18.5 percentage points to match the cohort median of 48.9%",
+      "The nightly rate of \u00a378.2 is -25% lower than the cohort median of \u00a3104.90, which could be attracting more price-sensitive guests and increasing occupancy",
+      "With 17 photos, the listing has fewer images than the cohort median of 23, which could be impacting the guest's ability to fully visualize the space and make a booking decision"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your current occupancy rate of 30.4% and 63 open nights in the next 90 days, there is a significant opportunity to increase bookings and reach the cohort median of 48.9%",
+    "weakest_element": "title"
+  }
+}

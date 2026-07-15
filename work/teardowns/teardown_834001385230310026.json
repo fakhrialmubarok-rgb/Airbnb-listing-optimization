@@ -1,0 +1,39 @@
+{
+  "listing_id": "834001385230310026",
+  "host_name": "Boomer",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 99.6,
+    "occupancy_pct": 64.1,
+    "open_nights_90d": 32,
+    "revenue_at_stake_gbp": 3187.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "\u00a399 City centre apartment with free parking",
+      "Affordable central apartment, free parking available",
+      "\u00a399 central flat with free parking & noon checkout"
+    ],
+    "rewritten_desc": "Escape to this cozy yet spacious city centre apartment, where you can enjoy the convenience of free on-site parking. Perfectly suited for 4 guests, it's ideal for families or groups looking for a central yet affordable option. Strategically located to provide easy access to the city's top attractions while maintaining a calm and comfortable atmosphere, this apartment offers a wonderful base for any length of stay. With noon checkout included, you'll appreciate the flexibility of leaving at your leisure. While the rate is 36% below the local market median (\u00a399.6 vs \u00a3154.60), it's clear that this property offers tremendous value for such a desirable location. The high occupancy rate (69.1% booked) demonstrates that this listing is already in demand, making it one of the most competitive in the area. Guests consistently rate this apartment with high marks, reflecting the quality of their stays.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden access",
+      "In-room entertainment systems",
+      "Smart home technology"
+    ],
+    "photo_order_rec": "The cover photo should be of the exterior of the building or a wide shot of the living area, whichever is available, as visuals of the location and overall space will create the strongest first impression for potential guests looking for central accommodations.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a399.6 is -36% vs the cohort median of \u00a3154.60, making price a major differentiator, but the title fails to emphasize this key selling point effectively.",
+      "The current description is completely missing, offering zero content for guests to learn about the property or experience it might offer.",
+      "The occupancy rate of 64.1% is above the median 90-day occupancy of 47.8% in the market, but the listing lacks specific information about amenities, room coverage, and visual content quality to optimize conversions."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing already outperforms the market with higher occupancy (64.1% booked) than the cohort median (47.8%), while charging 36% less than the median \u00a3154.60.",
+    "weakest_element": "description"
+  }
+}

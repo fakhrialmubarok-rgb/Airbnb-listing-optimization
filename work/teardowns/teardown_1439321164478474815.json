@@ -1,0 +1,39 @@
+{
+  "listing_id": "1439321164478474815",
+  "host_name": "Yafeng",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.4,
+    "occupancy_pct": 73.9,
+    "open_nights_90d": 23,
+    "revenue_at_stake_gbp": 2815.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Manchester City Centre Apartment & Free Parking",
+      "Spacious Central Apartment for 4 Guests",
+      "\u00a3122 Booking Available in Prime Manchester"
+    ],
+    "rewritten_desc": "Step into this centrally located 4-guest apartment in Manchester, where convenience meets affordability. Located at just \u00a3122.40 per night, this entire home comes with exclusive on-site car park access - rare for short-term rentals in this dense urban area. Positioned within walking distance to major attractions yet benefiting from a quieter neighborhood setting, our space combines modern comforts with old-world charm. While our rate is 21% below the local market average (\u00a3154.60 median), we maintain a strong 74% occupancy in the next 90 days. With fresh linens, secure parking, and all essentials provided, this property promises both value and convenience. Perfect for business travelers needing weekday stays (Monday-Friday availability), or weekend getaways for up to four friends or family members. Recent guests praise the apartment's location as the best feature, citing easy access to both Manchester's vibrant nightlife and historical landmarks. We consistently keep our space in top condition and respond promptly to guest needs. While we maintain competitive pricing, data shows we're booking at twice the rate of average local properties. For those wanting to maximize convenience without paying top dollar, this is the ideal Manchester accommodation choice.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Wired Internet (Ethernet)",
+      "Smart TV"
+    ],
+    "photo_order_rec": "Use the living room shot as cover photo - it best demonstrates the space's size and layout while showing the modern aesthetic that differentiates this property from others in the price range.",
+    "key_diagnosis": [
+      "Your nightly rate (122.40) is 21% below the median 154.60 while maintaining 74% occupancy (vs 48% market average) - this suggests underpricing",
+      "No amenities listed at all - critical missing signals for search ranking and guest expectations",
+      "Title lacks superlatives ('perfect central spot', 'value-focused') that would help it stand out in dense Manchester market"
+    ],
+    "outreach_angle": "price_vs_occupancy",
+    "outreach_hook": "Your \u00a3122 rate is 21% below the Manchester median, yet you're filling 74% of nights vs the market's 48% average - let's maximize this pricing power while maintaining strong occupancy.",
+    "weakest_element": "description"
+  }
+}

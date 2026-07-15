@@ -1,0 +1,39 @@
+{
+  "listing_id": "37798510",
+  "host_name": "Adam Edward",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 82.14,
+    "occupancy_pct": 66.3,
+    "open_nights_90d": 30,
+    "revenue_at_stake_gbp": 2464.2
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 5,
+    "score_amenities": 6,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Lowest Price Near Piccadilly! Large Apartment",
+      "\u00a382 Near Piccadilly | 4-Guest Apartment",
+      "4 Guest Apartment Just 100m from Piccadilly"
+    ],
+    "rewritten_desc": "Stay in this spacious central apartment just a 2-minute walk from Piccadilly Station. With 4 spacious bedrooms, this is the most affordable option for travelers in the area, priced at \u00a382.14/night while maintaining a 4.71-star rating (301 reviews)! The location is unbeatable for exploring Manchester's main attractions. The apartment features a fully-equipped kitchen, modern bathrooms, and all essential furnishings for up to 4 guests. While we continuously improve to meet the needs of our guests, please note this is our first property in the area and we're actively expanding our services. Book now to take advantage of this exceptional rate in a high-demand district!",
+    "top_amenity_gaps": [
+      "Entertainment (TV/Game Console)",
+      "Outdoor (Balcony/Scenic View)",
+      "Parking and Facilities (Secure Parking/Lift Access)"
+    ],
+    "photo_order_rec": "Lead with the main living room photo to showcase space and location, as this room type receives 83% of dwell time per Airbnb analytics",
+    "key_diagnosis": [
+      "Title exceeds 50 character limit by 5 characters, reducing search visibility (current: 55 characters)",
+      "Nightly rate is \u00a372.46 (-47%) below market median but occupancy rate is 18.5pp above cohort median for 90-day period",
+      "Missing high-demand amenity categories explicitly mentioned in platform analytics: Entertainment, Outdoor, and Parking & Facilities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a382.14 rate is 47% below the market median yet maintains 66.3% occupancy, suggesting strong pricing advantage but untapped demand.",
+    "weakest_element": "title"
+  }
+}

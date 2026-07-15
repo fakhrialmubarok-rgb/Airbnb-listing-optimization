@@ -1,0 +1,39 @@
+{
+  "listing_id": "1495461562051063608",
+  "host_name": "Craig",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 113.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 8648.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "35% Cheaper than City Avg \u2013 Cozy 4\u2011Guest Home",
+      "Quiet Retreat for 4, Steps from Downtown",
+      "Modern Cozy Home \u2013 Free Parking & Garden"
+    ],
+    "rewritten_desc": "Welcome to your cosy retreat in the heart of the city \u2013 an entire home perfectly suited for up to four guests. Priced at just \u00a3113.8 per night, this space is a full \u00a361 (35%) cheaper than the local market median of \u00a3175, offering unbeatable value without compromising comfort. The bright living area invites you to unwind after a day of exploring, while the fully equipped kitchen lets you prepare home\u2011cooked meals. Two comfortable bedrooms provide plush bedding and ample storage, and the modern bathroom features a walk\u2011in shower. Guests rave about the experience, reflected in a 4.93 rating from 57 reviews, underscoring the high level of satisfaction.\n\nLocated just minutes from the city\u2019s top attractions, shops, and public transport, the retreat is ideal for families, couples, or small groups seeking a relaxed base. Although the nightly rate is highly competitive, the next\u201190\u2011day calendar shows only 15.2% occupancy (76 open nights), well below the city\u2019s median 28.3%. By highlighting the price advantage and adding a few high\u2011impact amenities\u2014such as dedicated parking, a private garden space, and entertainment options\u2014you can turn this hidden gem into a top\u2011booked choice. Book now and enjoy a stylish, affordable stay that feels like a home away from home.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio)",
+      "Dedicated parking",
+      "Entertainment (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a bright exterior shot that shows the garden/parking area as the cover photo; it instantly communicates the outdoor and parking amenities that are currently missing from the listing.",
+    "key_diagnosis": [
+      "Occupancy is only 15.2% for the next 90 days versus the city median of 28.3% \u2013 add high\u2011value amenities (outdoor, parking, entertainment) to boost appeal.",
+      "No photos are listed \u2013 upload professional images of every room and the exterior to meet guest expectations and improve conversion.",
+      "Title and description are minimal; rewrite them to spotlight the 35% price advantage (\u00a3113.8 vs \u00a3175 median) and the new amenities to attract more bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home is priced 35% below the city median (\u00a3113.8 vs \u00a3175) yet only 15% of nights are booked in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

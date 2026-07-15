@@ -1,0 +1,39 @@
+{
+  "listing_id": "1674158085276039202",
+  "host_name": "Sara",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 131.8,
+    "occupancy_pct": 59.8,
+    "open_nights_90d": 36,
+    "revenue_at_stake_gbp": 4744.8
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Low\u2011Price Home 15% Cheaper than Avg \u2013 NEC",
+      "Family\u2011Friendly 4\u2011Guest Retreat Near Airport",
+      "Modern Entire Home Steps from NEC & Airport"
+    ],
+    "rewritten_desc": "Welcome to your comfortable, modern entire home just minutes from the NEC exhibition centre and London\u202fHeathrow Airport. Perfect for families or business travellers, this 4\u2011guest retreat offers two well\u2011appointed bedrooms, a bright open\u2011plan living area, a fully equipped kitchen and a spotless bathroom. Guests have consistently praised the space, earning a 4.88 rating from 85 reviews.\n\nAt \u00a3131.80 per night, your stay is about 15\u202f% cheaper than the city\u2019s average nightly rate of \u00a3154.60, giving you excellent value without compromising comfort. The home comfortably sleeps four, with a queen\u2011size bed in the master bedroom and a double sofa bed in the lounge. High\u2011speed Wi\u2011Fi, a flat\u2011screen TV and a dedicated work desk keep you connected, while the quiet neighbourhood provides a restful night\u2019s sleep after a day at the NEC or a flight.\n\nThe property is just a 5\u2011minute drive to the NEC, a 10\u2011minute ride to Heathrow, and a short walk to local shops, caf\u00e9s and a park. A private entrance and self\u2011check\u2011in box let you arrive on your schedule. Sara, a new host, is eager to ensure every stay is smooth and welcomes any questions you may have. With 59.8\u202f% occupancy projected over the next 90\u202fdays, there are still 36 open nights waiting for guests like you. Book now and enjoy a convenient, affordable base for meetings, exhibitions, or a quick airport stop\u2011over.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden or balcony)",
+      "Dedicated parking for guests",
+      "Entertainment options (TV with streaming, games)"
+    ],
+    "photo_order_rec": "Use a bright exterior/front\u2011of\u2011house shot as the cover photo to showcase proximity to the NEC and Airport and convey the property\u2019s modern look.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities\u2014especially a secure guest parking spot\u2014to address the missing parking amenity and attract travellers with cars.",
+      "Upload a full set of professional photos (at least 8), covering the living room, each bedroom, kitchen, bathroom and exterior, because the current photo count is unknown and likely insufficient.",
+      "Rewrite the title to highlight the 15% price advantage (\u00a3131.8 vs \u00a3154.6 median) and the NEC/Airport proximity, turning the generic title into a strong selling point."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your home is already priced 15% below the city median (\u00a3131.8 vs \u00a3154.6) yet you still have 36 open nights in the next 90 days\u2014adding a few key amenities could fill them.",
+    "weakest_element": "amenities"
+  }
+}

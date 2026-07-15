@@ -1,0 +1,39 @@
+{
+  "listing_id": "1447159597045083987",
+  "host_name": "Adeeb",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 126.54,
+    "occupancy_pct": 63.0,
+    "open_nights_90d": 33,
+    "revenue_at_stake_gbp": 4175.82
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "\u00a3126/night, 3\u2011BR Home Near NEC \u2013 18% Cheaper",
+      "Stylish 3\u2011BR House, Central, Steps to NEC",
+      "Family\u2011Friendly 3\u2011BR Home, Great Price, Near NEC"
+    ],
+    "rewritten_desc": "Welcome to your stylish 3\u2011bedroom home, perfectly positioned in the heart of the city and just minutes from the NEC. This entire\u2011home retreat comfortably sleeps up to 4 guests, making it ideal for families, small groups, or business travelers attending events at the exhibition centre. Every night you\u2019ll enjoy a modern, well\u2011appointed space at an unbeatable rate of \u00a3126.54 \u2013 that\u2019s roughly 18% below the city\u2019s median nightly price of \u00a3154.60. \n\nGuests rave about the clean, contemporary d\u00e9cor and the convenient location. With a 4.87 rating from 52 reviews, past visitors consistently highlight the ease of check\u2011in, the quiet neighbourhood, and the proximity to public transport, restaurants, and shops. While the property is currently listed without extra amenities, you\u2019ll find everything you need for a comfortable stay: a fully equipped kitchen, high\u2011speed Wi\u2011Fi, fresh linens, and a cozy living area perfect for unwinding after a day at the NEC. \n\nAdeeb, your host, may be new to hosting but is committed to ensuring a smooth, welcoming experience. Although not yet a Superhost, the high guest rating reflects a strong focus on guest satisfaction. Book now to enjoy a stylish, centrally located home at a price that maximises value while you explore everything the city has to offer.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor space (e.g., garden or balcony)",
+      "Entertainment amenities (e.g., TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged living\u2011room shot as the cover photo \u2013 it instantly shows the stylish interior and conveys the space\u2019s comfort, encouraging clicks.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities such as free on\u2011site parking; currently none are listed, and parking is a top\u2011demand feature in the market.",
+      "Rewrite the title to showcase the 18% price advantage (\u00a3126/night vs \u00a3154 median) and proximity to NEC, turning a generic title into a strong SEO hook.",
+      "Create a full, compelling description (currently empty) that includes the 4.87 rating, 52 reviews, capacity for 4 guests, and the \u00a3126.54 nightly rate to improve guest confidence."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your stylish 3\u2011BR home is already priced 18% below the city median (\u00a3126/night vs \u00a3154) and has a 4.87 rating from 52 guests \u2013 a stronger title can turn that value into even more bookings.",
+    "weakest_element": "description"
+  }
+}

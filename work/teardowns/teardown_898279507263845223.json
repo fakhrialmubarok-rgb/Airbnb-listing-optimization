@@ -1,0 +1,39 @@
+{
+  "listing_id": "898279507263845223",
+  "host_name": "Mischelle",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 240.0,
+    "occupancy_pct": 42.4,
+    "open_nights_90d": 52,
+    "revenue_at_stake_gbp": 12480.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "River View Cottage \u2013 Luxury at \u00a3240/night",
+      "Wharfe View Ilkley \u2013 4 Guests, 4.98\u2605 Rating",
+      "Scenic Ilkley Cottage \u2013 Book Your River Retreat"
+    ],
+    "rewritten_desc": "Welcome to Wharfe View Cottage, a charming entire\u2011home retreat nestled in Ilkley with breathtaking views over the River Wharfe. The cottage comfortably sleeps up to four guests across two cozy bedrooms, each equipped with premium linens. The open\u2011plan living area opens onto a large picture\u2011window framing the river, perfect for morning coffee or evening relaxation. A fully stocked kitchen provides everything needed to prepare home\u2011cooked meals, and a modern bathroom offers a spacious shower. Guests enjoy a spotless, 4.98\u2011rated stay backed by 63 glowing reviews. Located within walking distance of Ilkley\u2019s village centre, boutique shops, caf\u00e9s and scenic walking routes, the cottage is ideal for couples, families or small groups seeking a peaceful countryside escape. At \u00a3240 per night, you receive a premium experience with high\u2011speed Wi\u2011Fi, fresh towels, and personalized local tips from host Mischelle. The property is currently booked 42.4% of the next 90 days, leaving ample opportunity for new guests to discover this high\u2011rated hideaway. Whether you\u2019re exploring the Yorkshire Dales, cycling along the river path, or simply unwinding in a serene setting, Wharfe View Cottage offers comfort, style, and unforgettable river vistas. The cottage is a short 10\u2011minute stroll to the historic Ilkley Manor Museum and the famous Cow and Calf rock formations, and only a 5\u2011minute drive to the bustling Bradford Canal for waterside dining. After a day of exploring, return to your private garden terrace where you can enjoy a barbecue or simply soak in the sunset over the river.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/terrace)",
+      "Dedicated parking",
+      "Entertainment amenities (games, streaming, books)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality image of the river view from the living room as the cover photo, as it showcases the property\u2019s unique selling point and invites clicks.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3240 (37% above the Ilkley median of \u00a3175) to improve the 42.4% 90\u2011day occupancy, which is lower than the potential demand at market\u2011aligned pricing.",
+      "Add and list high\u2011value amenities \u2013 outdoor garden/terrace, guaranteed on\u2011site parking, and entertainment options \u2013 to match guest expectations and increase appeal.",
+      "Upload a full photo set (at least 12 images) covering each bedroom, kitchen, bathroom, living area, and outdoor view; prioritize the river view as the lead image to boost click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your cottage charges \u00a3240/night \u2013 37% higher than Ilkley\u2019s median \u00a3175 \u2013 yet its 90\u2011day occupancy is only 42.4%, so a price adjustment could unlock many more bookings.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1623839425484551483",
+  "host_name": "Anthony James Estate Agents",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2200.0,
+    "occupancy_pct": 89.1,
+    "open_nights_90d": 10,
+    "revenue_at_stake_gbp": 22000.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a32200 Luxury Georgian Home - 89% Occupancy",
+      "Royal Birkdale Premium Home - 72 Reviews",
+      "2026 Available - \u00a32200 4-Bedroom Gem"
+    ],
+    "rewritten_desc": "Sleek, high-end Georgian home in prime Royal Birkdale proximity. Sleep 4 in lavish comfort, just [insert key location details]. While your \u00a32200 rate exceeds the local median by 1323%, we recommend pairing this premium price point with explicit mentions of [insert key amenities] and [unique differentiators]. Currently achieving 89.1% occupancy against your cohort's 47.8% median is outstanding, but strategic optimization could maximize revenue on your 10 remaining open nights. This property's exceptional 4.92-star rating (72 reviews) demonstrates strong guest satisfaction - let's leverage this while emphasizing [specific luxury features] to maintain premium positioning.",
+    "top_amenity_gaps": [
+      "Outdoor seating area (key for \u00a32200+ listings)",
+      "Designated parking (essential for high-end bookings)",
+      "Streaming TV setup (required for 21st century luxury perception)"
+    ],
+    "photo_order_rec": "Prioritize exterior/front garden photo for cover image to immediately convey \u00a32200+ price justification through architectural grandeur",
+    "key_diagnosis": [
+      "\u00a32200 rate is 1323% above cohort median of \u00a3154.60, yet occupancy at 89.1% exceeds category average",
+      "Description provides no factual context or luxury amenities to justify extreme price point",
+      "Zero listed amenities make high-end appeal incoherent for potential bookers"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a32,200 rate is +1323% vs cohort median, but only 10 open nights remain in next 90 days - what's limiting full capacity?",
+    "weakest_element": "title"
+  }
+}

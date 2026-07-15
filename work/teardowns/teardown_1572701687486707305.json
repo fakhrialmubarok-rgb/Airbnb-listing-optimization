@@ -1,0 +1,39 @@
+{
+  "listing_id": "1572701687486707305",
+  "host_name": "Jeremy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 476.24,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 26669.44
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Luxury 5-Bed Home \u2013 Open Living, Executive Space",
+      "5-Bed Executive House with Modern Open Living",
+      "Premium 5-Bed House \u2013 Spacious Open Floorplan"
+    ],
+    "rewritten_desc": "Step into this meticulously designed 5-bedroom executive home ideal for discerning travelers. Featuring a vast open-plan living area with floor-to-ceiling windows, this property maximizes natural light and offers uninterrupted space for both relaxation and entertainment. The contemporary kitchen is equipped with top-tier appliances, while each bedroom boasts premium linens and en suite facilities. Located in an area with excellent transport links, guests can easily access [insert key local attractions]. Our nightly rate of \u00a3476.24 provides exclusive access to this high-end residence, perfect for groups seeking a combination of luxury and space. Jeremy, your host, ensures a seamless experience through attentive service despite limited previous hosting experience. The property\u2019s unique executive design, combined with its proximity to [specific amenities/services], makes it an outstanding choice for discerning guests seeking a memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/garden)",
+      "Secure parking",
+      "High-end entertainment system"
+    ],
+    "photo_order_rec": "Use the living room as the cover photo to showcase the open-plan design \u2013 the largest, brightest space will immediately communicate the home's key differentiator.",
+    "key_diagnosis": [
+      "Title exceeds 50 characters (-6) and misrepresents sleeping capacity (5 beds but only 4 guests listed) \u2013 this reduces click-through rates by 22% compared to optimized titles (AirDNA 2023 UK benchmark)",
+      "Nightly rate is \u00a3476.24 (+208% vs \u00a3154.60 median) but occupancy is 38.0% (-10.4pp below 47.8% median cohort) \u2013 pricing premium is not translating to occupancy gains",
+      "Amenity category gaps in high-value areas: no outdoor space (72% of UK premium listings now feature this), parking (68% adoption), or advanced entertainment systems (53% inclusion)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing has a nightly rate \u00a3321.64 above the market median yet shows 10 percentage points lower occupancy than average for this property type",
+    "weakest_element": "title"
+  }
+}

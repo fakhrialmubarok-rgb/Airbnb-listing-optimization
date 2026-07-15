@@ -1,0 +1,39 @@
+{
+  "listing_id": "1150951657036886416",
+  "host_name": "Rose",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 179.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13664.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "City Centre Studio Flat - Free Wifi & Parking",
+      "London Oasis, Near City Centre, Parking & Wifi",
+      "Studio Flat London: Heart of the City - Free Parking"
+    ],
+    "rewritten_desc": "Immerse yourself in the heart of the city with this charming Studio flat, perfect for small groups of friends or couples. Located near the bustling city centre, this compact yet stylish space boasts all the amenities you need for a hassle-free stay. With free Wi-Fi and off-street parking, you can explore the city with ease. Recent guests have praised the cleanliness and comfort of this cozy studio flat, with one reviewer even commenting on the 'great bed and pillows.' Don't miss out on this incredible opportunity to experience the best of London from this fantastic location. With 76 nights available in the next 90 days, book now and take advantage of this amazing deal! Capacity for up to 4 guests, ensuring there's room for everyone to relax and socialise. Enjoy the vibrant city nightlife or take a stroll through one of the many nearby parks. Whether you're here for business or pleasure, this Studio flat has everything you need for a comfortable and memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor amenity: There is no outdoor space mentioned, despite the proximity to city centre and parks.",
+      "Parking and facilities: Although parking is available, it is not clear what facilities are provided (e.g. towels, toiletries)",
+      "Entertainment: No mention of entertainment options such as a TV, DVD player, or streaming services"
+    ],
+    "photo_order_rec": "The living room area should be the cover photo, as it showcases the flat's main living space.",
+    "key_diagnosis": [
+      "Your occupancy rate (15.2%) is 13.1 percentage points lower than the cohort median (28.3%), resulting in \u00a32,355 in lost potential revenue.",
+      "You have 0 images of the property, which may deter potential guests and cost \u00a31,386 in lost potential revenue (76 nights x \u00a318.29 average daily revenue).",
+      "Your title does not include the most prominent differentiator (Free Parking), which could improve click-through rates by 10-15%."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "With 76 open nights in the next 90 days, we believe we can increase your occupancy rate by providing targeted recommendations for improving your listing.",
+    "weakest_element": "photos"
+  }
+}

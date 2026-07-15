@@ -1,0 +1,39 @@
+{
+  "listing_id": "22610032",
+  "host_name": "Michael",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 833.86,
+    "occupancy_pct": 60.9,
+    "open_nights_90d": 35,
+    "revenue_at_stake_gbp": 29185.1
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury Home \u00a3834/night \u2013 439% above market",
+      "Modern Solihull Home, Midway Birmingham & Warwick",
+      "Spacious 4\u2011guest Modern House \u2013 Premium Comfort"
+    ],
+    "rewritten_desc": "Welcome to a contemporary retreat in Solihull, perfectly positioned between Birmingham and Warwick. This entire modern house accommodates up to four guests, offering a spacious living area, fully equipped kitchen, and comfortable bedrooms designed for relaxation. Guests consistently praise the experience, reflected in a 4.95 rating from 144 reviews. \n\nAt a nightly rate of \u00a3833.86, the property delivers premium comfort and a unique location advantage\u2014just a short drive to both city centres and the historic charm of Warwick. Over the next 90 days, the calendar shows a 60.9% occupancy rate, leaving 35 open nights ready for new bookings. \n\nThe home\u2019s sleek design includes large windows that flood the interior with natural light, a stylish open\u2011plan layout, and modern finishes throughout. While no specific amenities are listed, you can expect essential comforts such as high\u2011speed Wi\u2011Fi, heating, and fresh linens. Whether you\u2019re visiting for business, a family getaway, or exploring the Midlands, this Solihull residence offers a tranquil base with easy access to major attractions, shopping, and dining. Book now to enjoy a luxurious stay in a prime location, and experience the blend of modern style and convenience that makes this house a standout choice for discerning travelers.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking space",
+      "Private outdoor area (garden or patio) for relaxation",
+      "Entertainment options such as smart TV, streaming services, and games"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior/front\u2011of\u2011house shot as the cover photo to showcase the property's premium look and location, followed by interior rooms (living area, kitchen, bedrooms) to give guests a complete view.",
+    "key_diagnosis": [
+      "Price mismatch: nightly rate \u00a3833.86 is 439% higher than the cohort median (\u00a3154.60) while occupancy is only 60.9%\u2014lowering the rate could capture dozens of additional bookings.",
+      "No amenities are listed; adding high\u2011value amenities like parking, outdoor space, and entertainment can improve search ranking and guest appeal.",
+      "Missing compelling description and photos; create a 200\u2011300 word description and upload professional images of every room plus an exterior cover photo to increase conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3833.86 is 439% above the local median, yet your occupancy is only 60.9%\u2014adjusting price could unlock dozens of extra bookings.",
+    "weakest_element": "description"
+  }
+}

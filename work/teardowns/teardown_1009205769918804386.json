@@ -1,0 +1,39 @@
+{
+  "listing_id": "1009205769918804386",
+  "host_name": "Suzanne",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 101.0,
+    "occupancy_pct": 60.9,
+    "open_nights_90d": 35,
+    "revenue_at_stake_gbp": 3535.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "King Bed + Wetroom \u2013 35% Below Avg \u00a3101/night",
+      "Spacious 4\u2011Guest Home, King Bed, Private Lounge",
+      "Modern Wetroom, King Bed, Great Value at \u00a3101"
+    ],
+    "rewritten_desc": "Welcome to your stylish, entire\u2011home retreat in the heart of the city. This bright space comfortably sleeps up to four guests and features a plush king\u2011size bed, perfect for couples or families seeking a restful night. A unique wetroom adds a touch of luxury, while the private lounge offers a cozy spot to unwind with a book or enjoy a glass of wine after a day of exploring. \n\nThe open\u2011plan layout includes a fully equipped kitchen, a dining area, and a modern living space where you can relax on comfortable seating. All essentials are provided, and the home is kept immaculate, reflected in its 4.98 rating from 80 glowing reviews. \n\nAt just \u00a3101 per night, you\u2019re enjoying a rate that\u2019s 35\u202f% lower than the city\u2019s median nightly price of \u00a3154.60, yet the calendar shows a strong 60.9\u202f% occupancy for the next 90 days, leaving only 35 open nights. Host Suzanne, though new to hosting, is committed to delivering a flawless experience. Book now and enjoy a high\u2011quality stay at unbeatable value.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., patio or garden)",
+      "Dedicated parking or on\u2011site parking facilities",
+      "Entertainment options (e.g., streaming TV, games, books)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged shot of the private lounge with the king bed visible as the cover photo \u2013 it showcases the most attractive, high\u2011value spaces first.",
+    "key_diagnosis": [
+      "Raise the nightly rate modestly (e.g., to \u00a3120) \u2013 you\u2019re currently \u00a353 below the cohort median (\u00a3154.60) while already booking 60.9% of the next 90 days, so a small increase can boost revenue without harming occupancy.",
+      "Add and list high\u2011value amenities such as outdoor space, parking, and entertainment \u2013 these are missing entirely and are proven to attract more searches and higher\u2011paying guests.",
+      "Upload a full set of professional photos covering bedroom, wetroom, private lounge, kitchen, and exterior \u2013 the current photo count is unknown, and strong visuals are crucial for conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home is already booked 61% of the next 90 days at \u00a3101/night\u2014just 35% below the market average\u2014so a modest price bump could lift your revenue without hurting occupancy.",
+    "weakest_element": "amenities"
+  }
+}

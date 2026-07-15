@@ -1,0 +1,39 @@
+{
+  "listing_id": "1625508197315005695",
+  "host_name": "James",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 310.4,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 19244.8
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Period Home Near NEC \u2013 5\u2605 Rating",
+      "Central Solihull Period Home, Sleeps 4, 5\u2605",
+      "Charming 4\u2011Guest Period Home, Steps from NEC"
+    ],
+    "rewritten_desc": "Welcome to a beautifully restored period home in the heart of Solihull, just minutes from the NEC. This entire\u2011home retreat comfortably accommodates up to four guests, offering a perfect blend of historic charm and modern convenience. The spacious living area showcases original architectural details, while the fully equipped kitchen lets you prepare meals with ease. Relax in the tastefully furnished bedrooms, each designed for a restful night\u2019s sleep, and enjoy the convenience of a private bathroom.\n\nRated a flawless 5.0 from 20 guest reviews, James\u2019 property consistently earns praise for its location, cleanliness, and authentic character. Priced at \u00a3310.40 per night, the home sits in a premium segment\u2014over 100% above the local median nightly rate of \u00a3154.60\u2014yet offers a unique, high\u2011quality experience that distinguishes it from typical Solihull listings. \n\nIn the next 90 days the calendar shows a 31.5% booking rate, leaving 62 open nights ready for new guests. Whether you\u2019re attending a conference at the NEC, exploring Solihull\u2019s boutique shops, or simply enjoying a weekend getaway, this period home provides a memorable base. James is a new host eager to ensure a flawless stay, and while the listing currently highlights no specific amenities, the property\u2019s historic appeal and central location serve as its strongest selling points. Book now to experience Solihull\u2019s charm from a truly distinctive home.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, balcony)",
+      "Dedicated parking or on\u2011site facilities",
+      "Entertainment amenities (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution image of the period living room with original details as the cover photo\u2014it instantly conveys the home\u2019s unique character and draws guests in.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3310.4 (which is +101% vs the Solihull median of \u00a3154.60) to become more price\u2011competitive and raise the 31.5% occupancy toward the market median of 47.8%.",
+      "Add and highlight high\u2011value amenities\u2014outdoor space, parking, and entertainment options\u2014in the listing to meet guest expectations and improve perceived value.",
+      "Rewrite the title to include SEO\u2011friendly keywords and differentiators (e.g., \"Period Home\", \"Central Solihull\", \"Near NEC\", \"5\u2605 Rating\") while keeping it under 50 characters."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing charges \u00a3310 per night\u2014over 100% above the Solihull median\u2014yet is only 31.5% booked for the next 90 days.",
+    "weakest_element": "amenities"
+  }
+}

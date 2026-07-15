@@ -1,0 +1,39 @@
+{
+  "listing_id": "507195313774796639",
+  "host_name": "Raab",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 178.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13528.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Renovated Barn Retreat \u2013 Sleeps 4, Countryside",
+      "Cozy Country Barn \u2013 Private Stay for 4",
+      "Newly Renovated Barn \u2013 Ideal for Small Groups"
+    ],
+    "rewritten_desc": "Welcome to our cosy, newly renovated barn, a tranquil countryside retreat perfect for a small group of up to four guests. This entire\u2011home property blends rustic charm with modern comforts, offering a spacious bedroom, a bright living area, a fully equipped kitchen and a clean bathroom. Guests consistently love their stay, reflected in a 4.78 rating from 186 reviews. Although we are new to hosting and not yet a Superhost, we are committed to providing a memorable experience. Set at \u00a3178 per night, the barn is competitively priced\u2014only 2\u202f% above the local median nightly rate of \u00a3175\u2014yet our current occupancy for the next 90 days is only 15.2\u202f% booked, leaving 76 open nights and significant revenue potential. The property currently lists no specific amenities, so adding outdoor features, dedicated parking and entertainment options would further enhance its appeal. Located within easy reach of local attractions, the barn offers a peaceful base for exploring the surrounding area. Whether you\u2019re enjoying a quiet evening by a fire pit, taking a stroll through nearby trails, or simply relaxing in the comfortable living space, this barn provides a unique blend of seclusion and convenience. Book now to experience the charm of countryside living in a freshly updated setting.",
+    "top_amenity_gaps": [
+      "Outdoor (garden, fire pit, seating area)",
+      "Parking (private on\u2011site space)",
+      "Entertainment (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use an exterior shot of the barn with surrounding countryside as the cover photo to highlight the unique property type and attract search clicks.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3178) is only +2\u202f% above the cohort median, yet occupancy is just 15.2\u202f% booked versus the market median 28.3\u202f% \u2013 a clear revenue leak.",
+      "The title \"Cosy Newly Renovated Barn\" lacks key search terms like capacity and location; updating it can improve SEO and click\u2011through rates.",
+      "No photos are listed; adding at least 12 high\u2011quality images (exterior, bedroom, living area, kitchen, bathroom) can dramatically boost booking confidence."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 76 open nights in the next 90 days, representing about \u00a313.5k of untapped revenue.",
+    "weakest_element": "photos"
+  }
+}

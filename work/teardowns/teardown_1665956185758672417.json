@@ -1,0 +1,39 @@
+{
+  "listing_id": "1665956185758672417",
+  "host_name": "Zoe",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 436.4,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 24438.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Entire Home in Manchester for 4",
+      "\u00a3436 Manchester Home with Prime Location",
+      "4-Bed Manchester Retreat for 38% Availability"
+    ],
+    "rewritten_desc": "Welcome to your Manchester sanctuary \u2014 this spacious entire home accommodates 4 guests with modern comforts and a prime location. Despite its high nightly rate of \u00a3436.40, we have 56 open nights available over the next 90 days. While our current occupancy rate sits at 38%, which is lower than the market average of 47.8%, your high 4.94-star rating from 281 reviews shows guests appreciate our property. While we currently don't list specific amenities, we aim to enhance your stay experience. Ideal for travelers seeking privacy and space, this property offers the perfect base to explore Manchester's vibrant attractions. We're just starting with 0 years hosting, but our strong guest satisfaction ratings are a promise of excellent service. Book now for the best available dates in this sought-after location.",
+    "top_amenity_gaps": [
+      "Outdoor space for guest relaxation",
+      "Dedicated parking for convenience",
+      "Entertainment system for guest enjoyment"
+    ],
+    "photo_order_rec": "If available, a well-lit living room photo should be the cover to showcase space and ambiance. A second photo highlighting exterior features would help guests visualize access and neighborhood.",
+    "key_diagnosis": [
+      "Priced 182% above cohort median (\u00a3436.40 vs \u00a3154.60) while occupancy lags 9.8% below market average (38% vs 47.8%)",
+      "0 listed amenities despite 281+ reviews showing potential for strong amenity appeal",
+      "Missing Superhost status with only 0 years hosting experience"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3436 price is priced 182% above median while occupancy remains 9.8% below market average",
+    "weakest_element": "amenities"
+  }
+}

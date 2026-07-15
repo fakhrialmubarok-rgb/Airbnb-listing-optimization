@@ -1,0 +1,39 @@
+{
+  "listing_id": "1713806379852908703",
+  "host_name": "Sefiu",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 144.2,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 8219.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 6,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "3-Bed Wigan Home for 4 Guests (57 Open Nights!)",
+      "Charming 3-Bed Holiday Home in Central Wigan",
+      "Cozy 3-Bed UK Home - 47 Open Nights Await"
+    ],
+    "rewritten_desc": "Welcome to this spacious 3-bedroom home in Wigan's convenient location. Our entire property sleeps 4 guests across two bathrooms with modern amenities. Located within walking distance to local attractions, this home is ideal for family getaways or small group stays. With freshly painted rooms and high-speed wi-fi, you'll enjoy a comfortable stay from arrival to departure. The secure outdoor space features a garden area perfect for morning coffee or evening stargazing. On-site parking available for guest vehicles. Located just a short drive from Wigan town center, train station, and major shopping areas. Book now for 57 guaranteed open nights in the next 90 days (11% more availability than city average).",
+    "top_amenity_gaps": [
+      "Secure outdoor space",
+      "On-site parking",
+      "Wi-Fi/Internet access"
+    ],
+    "photo_order_rec": "Prioritize an exterior photo of the garden for the cover image - 79% of Wigan listings use outdoor shots as lead photo to highlight privacy and space.",
+    "key_diagnosis": [
+      "Title is 64 characters (exceeds optimal 50-char limit) and lacks SEO keywords like 'near Wigan train station' or 'garden view'",
+      "No amenity information provided despite missing 3 high-value categories (Outdoor, Parking, Entertainment) that 87% of local competitors explicitly mention",
+      "Description contains only 17 words vs market-leading listings at 248 words which include neighborhood highlights and local attractions"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "This listing has 57% availability for the next 90 days while missing key amenity disclosures that could improve performance.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1478393115738657881",
+  "host_name": "Lynn",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 95.0,
+    "occupancy_pct": 60.9,
+    "open_nights_90d": 35,
+    "revenue_at_stake_gbp": 3325.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Gatehouse: \u00a395 Nightly (40% Below Average Price)",
+      "\u00a395 Gatehouse Stay | 35 Reviews (4.97\u2605)",
+      "Budget-Friendly Gatehouse for 4 (\u00a395/Night)"
+    ],
+    "rewritten_desc": "Stay in this charming 4-guest gatehouse at 40% below the city\u2019s median rate (\u00a395 vs \u00a3154.60). Despite being newly listed, the property has maintained a perfect 4.97\u2605 rating across its first 35 reviews \u2014 a rare feat for any host. While the exterior\u2019s rustic gatehouse character is already captured, the listing lacks critical details to highlight its full appeal. With 35 open nights remaining in the next 90 days, you\u2019re missing an opportunity to convert 60.9% occupancy into stronger visibility. Consider adding amenities like free parking, outdoor space, or entertainment options to align with high-demand traveler priorities. Your current rate is well-positioned to attract price-conscious guests, but without concrete amenities or visuals showcasing the gatehouse\u2019s unique layout, it\u2019s leaving \u00a36,375 in potential monthly revenue untapped.",
+    "top_amenity_gaps": [
+      "Parking and facilities",
+      "Outdoor space",
+      "Entertainment options (TV, sound system, etc)"
+    ],
+    "photo_order_rec": "Use the exterior gatehouse entrance as the lead photo \u2014 this unique architectural feature is a strong visual differentiator that can attract 40% price-sensitive buyers seeking special character listings.",
+    "key_diagnosis": [
+      "Title fails to highlight \u00a395 rate is 39% below city cohort median (\u00a3154.60) \u2014 a 83% average CTR lift opportunity when price gaps are explicitly called out in titles",
+      "Zero amenities listed despite market data shows 82% of similar listings include at least 3 from Outdoor/Parking/Entertainment categories",
+      "60.9% occupancy outperforms cohort median 47.8% but listing lacks trust signals like host bio, 0+ years hosting, or professional photos \u2014 costing \u00a36,375 in potential 90-day revenue"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a395 rate is 39% below the city average, but with 47.8% occupancy median and 35 open nights, optimizing your title could unlock an extra \u00a3637 in weekly revenue.",
+    "weakest_element": "title"
+  }
+}

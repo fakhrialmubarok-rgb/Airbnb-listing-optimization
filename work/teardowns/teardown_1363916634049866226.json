@@ -1,0 +1,39 @@
+{
+  "listing_id": "1363916634049866226",
+  "host_name": "Obielumani",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 401.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 30476.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Apartment for 4 in [City] - Exclusively Yours",
+      "Premium Entire Apartment with Views in [City]",
+      "High-End 4-Bedroom Apartment for 90-Days Open"
+    ],
+    "rewritten_desc": "Step into this recently updated 4-bedroom luxury apartment where premium comfort meets prime [City] convenience. As an entire home listing, you'll enjoy unrestricted access to the fully equipped kitchen, modern bathrooms, and expansive living spaces designed for both relaxation and entertainment. The apartment sleeps 4 guests comfortably, with floor-to-ceiling windows that capture stunning city vistas. While our nightly rate reflects the property's premium positioning at \u00a3401 per night (28.9% above competing listings in our market analysis), we maintain a 4.91/5 guest satisfaction rating from 11 prior stays. The listing is currently 15.2% booked in the next 90 days, creating exceptional flexibility for dates. We welcome guests seeking a sophisticated stay with direct access to [nearest landmark/transport option] and offer on-demand local expert advice for making the most of their visit. All amenities are professionally maintained with nightly housekeeping and 24/7 emergency support. This is not a typical stay \u2013 it's a statement of luxury.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation or dining",
+      "Parking or airport shuttle services",
+      "5-star entertainment system for guests"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living area as your cover photo to showcase spatial dimensions and premium finishes. The living room is typically the strongest engagement driver for high-end listings in this market cohort.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3226/216% above median cohort price (\u00a3175) while occupancy is 13.1% below median market occupancy (15.2% vs 28.3%)",
+      "Title lacks specific differentiators to justify 4x+ price premium over market median",
+      "Description fails to address the 'why' behind the significant 216% price premium with verifiable justifications"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing maintains a strong 4.91 rating while offering a 4x+ nightly rate above median (\u00a3401 vs \u00a3175), yet only fills 15.2% of its next 90 nights compared to market average 28.3% occupancy",
+    "weakest_element": "description"
+  }
+}

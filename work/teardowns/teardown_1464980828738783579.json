@@ -1,0 +1,39 @@
+{
+  "listing_id": "1464980828738783579",
+  "host_name": "Calum",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 105.4,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 7378.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3105 Pod \u2022 2-Min Walk to NEC",
+      "Luxury Pod Near NEC | 4 Guests",
+      "Woodland Stay with NEC Access"
+    ],
+    "rewritten_desc": "This luxury woodland pod offers a private retreat just 2 minutes from the NEC in Birmingham. Sleeps 4 guests in a spacious entire home with modern comforts. While currently booking at a 40% discount versus market rates (\u00a3175 median), proximity to the NEC, and the 4.81-star guest rating are strong differentiators. The open 90-day calendar (21.7% booked) suggests pricing and description optimization could help capture demand from event attendees and locals seeking nearby accommodations. Highlights include the secluded woodland setting and convenient location for accessing Birmingham's top attractions. Guests praise the pod's cleanliness and attention to detail despite limited publicly listed amenities.",
+    "top_amenity_gaps": [
+      "Outdoor seating area (missing high-value category)",
+      "On-site parking (listed as missing in market context)",
+      "Streaming/wifi-equipped entertainment (implied by 'luxury' but not stated)"
+    ],
+    "photo_order_rec": "The cover photo should be the woodland exterior at golden hour to highlight both the luxury aesthetic and proximity to nature\u2014key differentiators in a price-sensitive market.",
+    "key_diagnosis": [
+      "Nightly rate (-\u00a370 vs \u00a3175 median) is 40% below cohort but occupancy (21.7% booked) trails market average (28.3%) and could improve with better value presentation",
+      "Empty amenities section loses 3.6% of \u00a3105.4 revenue/night from unaddressed guest expectations about entertainment, outdoor, and parking features",
+      "90-day calendar has 70 open nights but title lacks 'NEC' keyword which could improve local SEO visibility for event attendees"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With rates 40% below market average (\u00a3105 vs \u00a3175) yet 28.3% occupancy vs your 21.7%, a title/amenity optimization could unlock \u00a37,378 in potential revenue over 70 open nights",
+    "weakest_element": "description"
+  }
+}

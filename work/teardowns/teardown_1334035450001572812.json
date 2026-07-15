@@ -1,0 +1,39 @@
+{
+  "listing_id": "1334035450001572812",
+  "host_name": "Phil",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 136.0,
+    "occupancy_pct": 80.4,
+    "open_nights_90d": 18,
+    "revenue_at_stake_gbp": 2448.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Free Parking, 5\u2011min to City Centre \u2013 3BR Home \u00a3136",
+      "3\u2011Bedroom, 4\u2011Bed House \u2013 12% Cheaper than Median",
+      "Cozy 3BR Near CC \u2013 80% Occupancy, \u00a3136/night"
+    ],
+    "rewritten_desc": "Welcome to your perfect city\u2011break base \u2013 a spacious three\u2011bedroom, two\u2011bathroom entire home that comfortably sleeps four guests. Located just five minutes from the city centre, this modern house offers the convenience of free on\u2011site parking, making arrivals hassle\u2011free. Every night you\u2019ll enjoy a \u00a3136 rate, which is 12% lower than the local median of \u00a3154.60, yet the property already boasts an impressive 80.4% occupancy over the next 90 days \u2013 a testament to its appeal.  \n\nInside, you\u2019ll find four comfortable beds across three well\u2011appointed rooms, a fully equipped kitchen, and a bright living area ideal for relaxing after a day of exploring. The two clean, contemporary bathrooms ensure no morning queues. With a 5\u2011star rating from 128 guests, past visitors praise the spot\u2011on location, the value for money, and the smooth check\u2011in experience.  \n\nWhile we\u2019re not a Superhost yet, our dedication to guest satisfaction is evident in every detail. Whether you\u2019re visiting for business, family, or leisure, the combination of low price, prime location, and free parking makes this home an unbeatable choice. Book now and experience the city at a fraction of the typical cost, with all the comforts of home waiting for you.",
+    "top_amenity_gaps": [
+      "Explicit parking amenity listing",
+      "Outdoor space (e.g., garden or patio)",
+      "Entertainment options such as streaming TV or games"
+    ],
+    "photo_order_rec": "Use an exterior shot that clearly shows the free parking space as the cover photo, followed by bright images of the living room and master bedroom to convey space and comfort.",
+    "key_diagnosis": [
+      "Add a detailed amenities list that highlights free parking, outdoor space, and entertainment options \u2013 this aligns with high\u2011value categories and leverages the fact your nightly rate (\u00a3136) is 12% below the cohort median (\u00a3154.60).",
+      "Replace the empty description with a compelling 200\u2011300 word narrative that repeats the 5\u2011star rating, 128 reviews, 80.4% occupancy (vs. market 47.8%), and the 5\u2011minute proximity to the city centre to boost SEO and guest confidence.",
+      "Rewrite the title to stay under 50 characters, lead with the strongest differentiator (free parking & price advantage), and include a location cue \u2013 for example: \u201cFree Parking, 5\u2011min to City Centre \u2013 3BR Home \u00a3136\u201d."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your home is priced \u00a318 (12%) below the city median yet already enjoys 80% occupancy\u2014there\u2019s untapped revenue you could capture with a sharper title and highlighted amenities.",
+    "weakest_element": "description"
+  }
+}

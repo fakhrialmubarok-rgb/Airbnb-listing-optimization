@@ -1,0 +1,39 @@
+{
+  "listing_id": "50838357",
+  "host_name": "Julie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 829.0,
+    "occupancy_pct": 76.1,
+    "open_nights_90d": 22,
+    "revenue_at_stake_gbp": 18238.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 10,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a3829 Luxury Home in [Location]",
+      "Insure-Approved Accommodation in [Location]",
+      "[Location] Emergency Accommodation at \u00a3829"
+    ],
+    "rewritten_desc": "Escape to this exquisite [entire home] in the heart of [Location], offering an unforgettable experience for up to 4 guests. This stunning property boasts [specific details about home features, location advantages, or any unique aspects]. With 1 room and 0 bathrooms, it's perfect for those seeking a home away from home. Located in a tranquil neighborhood, [Location] provides easy access to local hotspots, shops, and restaurants, making it an ideal base for your stay.\n\nAs a Superhost, Julie delivers exceptional quality and service. Don't miss out on this exclusive opportunity to experience [Location] at its best! 161 guests have stayed here and praised the property for its cleanliness (4.7/5 rating) and amenities.\n\nTake a deep breath, relax, and let [Location] work its magic. Book your dream getaway now!",
+    "top_amenity_gaps": [
+      "Outdoor spaces or garden to enhance the living experience",
+      "Parking facilities for added convenience",
+      "Entertainment options such as a TV or music facilities"
+    ],
+    "photo_order_rec": "Consider featuring the interior/exterior shots of the living room as the lead photo to showcase the property's best features and set the tone for guests.",
+    "key_diagnosis": [
+      "Your \u00a3829 nightly rate is an eye-watering 374% higher than the cohort median of \u00a3175, indicating a significant opportunity to adjust your pricing strategy while maintaining competitiveness.",
+      "Your occupancy rate of 76.1% is lower than the cohort median of 28.3%, suggesting guests are deterred by your pricing, which may need to be re-evaluated to drive more bookings.",
+      "With 0 years of hosting experience and a guest rating of None, prioritizing communication, prompt responses, and exceptional hosts may be crucial to boosting credibility and driving more bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your occupancy rate of 76.1% pales against the cohort average of 28.3%, leaving \u00a32,144 (829 x 22 nights) on the table this season.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "740639296279655656",
+  "host_name": "Asbk",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 502.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 38212.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 1 Bed Apartment - 187% above Market Rate!",
+      "Book Now: \u00a3502/Night, 4 Guests, 15% Occupancy",
+      "4 Guests Luxury - Market Rate: \u00a3175, Your Rate: \u00a3502"
+    ],
+    "rewritten_desc": "Located in [neighborhood], this entire home is a luxury apartment perfect for 4 guests. Featuring [list any known features here, e.g. 'kitchen, living area, etc.']. Guests have given this property an average rating of 4.15 after 13 reviews. With a high nightly rate of \u00a3502 and a low occupancy rate of 15.2%, there's a great opportunity to attract more guests. Contact host Asbk for more information on this listing.",
+    "top_amenity_gaps": [
+      "Parking and facilities, essential for high-value bookings",
+      "Outdoor space or a patio for guests to relax",
+      "Entertainment options, such as a games console or smart TV"
+    ],
+    "photo_order_rec": "Use the cover photo to showcase the property's luxury features, and arrange the subsequent photos to highlight the property's layout and key rooms.",
+    "key_diagnosis": [
+      "This listing offers a nightly rate 187% above the cohort median of \u00a3175, with a corresponding occupancy rate 12.1 percentage points below the cohort median - a strong suggestion that the pricing strategy should be reassessed.",
+      "Despite having an average rating of 4.15, the 13 reviews available could be a significant limiting factor, as the median number of reviews for the same-city cohort is higher at 20.",
+      "At 0 photos, this listing is missing a key opportunity to showcase the property to potential guests and stand out in a crowded market."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "I noticed your property has an occupancy rate of just 15.2% over the next 90 days, which is 12.9 percentage points lower than the cohort median - is there an opportunity to adjust pricing to meet the market's demand?",
+    "weakest_element": "photos"
+  }
+}

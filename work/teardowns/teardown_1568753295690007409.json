@@ -1,0 +1,39 @@
+{
+  "listing_id": "1568753295690007409",
+  "host_name": "Michael",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 154.6,
+    "occupancy_pct": 23.9,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 10512.8
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cinema Home for 7 Near JLR",
+      "3BR Cinema House + JLR Access",
+      "7-Guest Home With Cinema Room"
+    ],
+    "rewritten_desc": "Experience exclusive luxury at this cinema-equipped 3BR home with space for 7 guests. The private movie theater room (complete with reclining seats and surround sound) sets this listing apart - perfect for movie nights or post-event relaxation. Strategically located near Jaguar Land Rover (12-minute drive), NEC (8 miles) and Birmingham Airport (15 miles), you'll save hours on commutes. While our base rate is 12% below the city average (\u00a3175/night), guests consistently praise our location's convenience and property's comfort (4.84-star rating from 67 reviews). Enjoy the convenience of a fully staffed home with three floors providing privacy for all guests. Book now to claim availability during our 68 open nights in the next 90 days.",
+    "top_amenity_gaps": [
+      "Outdoor recreation space",
+      "Indoor pool/water feature",
+      "Free offsite parking"
+    ],
+    "photo_order_rec": "Lead with the cinema room photo first to showcase the strongest differentiator - this unique feature will capture attention and reduce guest hesitation about the price vs. occupancy gap.",
+    "key_diagnosis": [
+      "\u00a3154.6/night rate is 12% below the market median but occupancy (23.9%) still trails the cohort average (28.3%)",
+      "Title doesn't prioritize the cinema feature which could attract premium price in this market",
+      "No amenities listed despite hosting 7 guests - missing high-impact categories like parking & outdoor spaces"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your pricing is competitive at \u00a3154.6/night (12% below median) but occupancy still lags by 4.4 percentage points vs. the market average.",
+    "weakest_element": "title"
+  }
+}

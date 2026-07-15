@@ -1,0 +1,39 @@
+{
+  "listing_id": "1295472254080709690",
+  "host_name": "Yasir",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 153.2,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 11030.4
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "12% Below Market \u2013 Modern 2\u2011Bed Near City Centre",
+      "Spacious 4\u2011Guest Apartment, Low Price",
+      "Modern Newcastle Home \u2013 2 Beds, \u00a3153 Night"
+    ],
+    "rewritten_desc": "Welcome to a modern, fully\u2011furnished two\u2011bedroom apartment perfectly positioned just minutes from Newcastle city centre. This entire home comfortably sleeps up to four guests, offering a spacious living area, a well\u2011equipped kitchen, and two bright bedrooms\u2014all designed with contemporary style and convenience in mind. With a nightly rate of \u00a3153.20, you\u2019re enjoying a price that is 12\u202f% lower than the city\u2019s median (\u00a3175), delivering exceptional value for travellers seeking comfort and location without the premium price tag.\n\nThe apartment has earned a strong 4.8 rating from five recent guests, reflecting high satisfaction with cleanliness, accuracy, and host communication. Although the host, Yasir, is new to Airbnb, the positive reviews demonstrate a commitment to a great guest experience. The property is ideal for small families, business travellers, or groups of friends looking to explore Newcastle\u2019s attractions, dining, and nightlife while returning to a quiet, modern retreat.\n\nWith a current 90\u2011day occupancy of just 19.6\u202f% (72 open nights), there is ample opportunity to secure more bookings at this attractive rate. Book now and enjoy the best of Newcastle from a stylish, budget\u2011friendly base.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking space",
+      "Private outdoor seating or terrace",
+      "Entertainment setup (smart TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living room with modern furnishings as the cover photo\u2014it showcases the space and location instantly.",
+    "key_diagnosis": [
+      "Highlight the 12\u202f% price advantage in the title and description (rate \u00a3153.2 vs cohort median \u00a3175) to attract price\u2011sensitive guests and improve the current 19.6\u202f% occupancy versus the market 28.3\u202f% median.",
+      "Add high\u2011value amenities\u2014parking, outdoor space, and entertainment\u2014to the listing; these categories drive bookings and can justify the low rate while filling the amenities score gap.",
+      "Upload at least 8 high\u2011quality photos covering the living area, kitchen, both bedrooms, bathroom, and building exterior, then set the living\u2011room image as the cover to boost the images score from 2 to a competitive level."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is 12\u202f% below the Newcastle market average (\u00a3153 vs \u00a3175) yet your next\u201190\u2011day occupancy sits at just 19.6\u202f%\u2014a clear opportunity to boost bookings.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1714496457567083962",
+  "host_name": "Salma",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 124.0,
+    "occupancy_pct": 64.1,
+    "open_nights_90d": 32,
+    "revenue_at_stake_gbp": 3968.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Luxury 2\u2011BR Apt \u2013 20% Below City Avg \u00a3124",
+      "Central Birmingham 2\u2011BR Home, Sleeps 4",
+      "Modern 2\u2011Bedroom City Centre Flat \u2013 \u00a3124/night"
+    ],
+    "rewritten_desc": "Welcome to your stylish, fully\u2011equipped 2\u2011bedroom apartment in the heart of Birmingham City Centre. This entire home comfortably sleeps four guests, making it perfect for families, friends, or business travelers. The modern living space features a bright open\u2011plan layout, a fully stocked kitchen, and high\u2011speed Wi\u2011Fi, ensuring a seamless stay. Both bedrooms are furnished with premium bedding and ample storage, while the contemporary bathroom offers a refreshing shower. Located just minutes from the city\u2019s top attractions, restaurants, and public transport, you\u2019ll enjoy easy access to everything Birmingham has to offer. At a nightly rate of \u00a3124, the apartment is priced roughly 20\u202f% lower than the city\u2019s median rate of \u00a3154.60, yet it already delivers a strong 64.1\u202f% occupancy over the next 90 days (32 open nights). Hosted by Salma, a new host with a flawless 5.0 rating from seven glowing reviews, you can expect attentive, personalized service. Whether you\u2019re here to explore the vibrant nightlife, attend a conference, or simply relax in a central, comfortable base, this apartment provides the perfect blend of value, convenience, and style.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or garden)",
+      "Dedicated parking for guests",
+      "Entertainment amenities (e.g., smart TV, games)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011styled living\u2011room shot that showcases a glimpse of the city view as the cover photo; it instantly conveys space and location.",
+    "key_diagnosis": [
+      "Increase nightly rate from \u00a3124 toward the city median (\u00a3154) \u2013 a potential 20\u201125\u202f% uplift \u2013 while likely retaining strong occupancy (currently 64.1\u202f%).",
+      "Add high\u2011value amenities such as free parking and a balcony to justify a higher price point and attract more bookings.",
+      "Create a compelling, SEO\u2011rich description (currently missing) that highlights the 20\u202f% price advantage and central location."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your Birmingham 2\u2011BR flat is priced 20\u202f% below the city median (\u00a3124 vs \u00a3154) and already enjoys 64\u202f% occupancy\u2014let\u2019s amplify that advantage with a sharper title to drive even more bookings.",
+    "weakest_element": "description"
+  }
+}

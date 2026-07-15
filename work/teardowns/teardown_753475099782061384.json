@@ -1,0 +1,39 @@
+{
+  "listing_id": "753475099782061384",
+  "host_name": "Jonathan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 248.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 18878.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Premium 2br+3bed apartment with free parking",
+      "Cozy 4-guest apartment with free parking",
+      "Prime 2BR apartment with free parking"
+    ],
+    "rewritten_desc": "Escape to this spacious 2-bedroom, 3-bed apartment perfectly suited for 4 guests. Located in [specific neighborhood/district], this entire home offers a comfortable retreat just minutes from [nearest landmark/transportation]. Enjoy the convenience of a private free parking space on-site, eliminating the stress of urban car searches. The apartment features [natural light from large windows/a modern kitchen with stainless steel appliances/guests consistently praise the building's secure access]. With a 5.0 rating in just 13 reviews, guests love [specific feature from reviews - e.g., 'easy access to nearby attractions' or 'quiet neighborhood vibe']. Ideal for short stays or weekend getaways, this high-end listing maintains exceptional standards with regular check-ins and housekeeping. While we recommend a minimum price of \u00a3248/night (aligned with the 42% premium over the city median), our occupancy rate could improve with strategic optimizations to make the property's unique features even more discoverable to price-appropriate travelers.",
+    "top_amenity_gaps": [
+      "Parking and facilities (free parking in title needs explicit amenity tagging)",
+      "Entertainment (TV type, streaming options)",
+      "Outdoor (balcony/garden access if available)"
+    ],
+    "photo_order_rec": "Lead with the parking space visual - it's the strongest differentiator and should be first photo to immediately address city travelers' common pain point of parking stress",
+    "key_diagnosis": [
+      "\u00a3248.4 rate is +42% above \u00a3175 median but occupancy is -47% below 28.3% cohort average",
+      "No description content at all - 0/10 score is extreme for missing core information",
+      "Free parking in title but not listed as official amenity - this key differentiator is under-optimized"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3248/night rate is 42% above median but occupancy is 47% below market average across 76 open nights - let's optimize to convert that premium positioning into full occupancy",
+    "weakest_element": "description"
+  }
+}

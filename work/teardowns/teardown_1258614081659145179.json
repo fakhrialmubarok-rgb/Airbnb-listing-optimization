@@ -1,0 +1,40 @@
+{
+  "listing_id": "1258614081659145179",
+  "host_name": "Adventure Connections",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1380.0,
+    "occupancy_pct": 41.3,
+    "open_nights_90d": 53,
+    "revenue_at_stake_gbp": 73140.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Heaton Spa: Indoor Pool/Hot Tub (4 Guests) \u00a31380",
+      "\u00a31380/night SpaHouse - Pool/Hot Tub 4 Guests",
+      "Heaton Luxury Spa: Pool/Hot Tub for 4 @ \u00a31380"
+    ],
+    "rewritten_desc": "Dive into luxury at this exclusive Heaton Park Spa House, offering an indoor swimming pool and hot tub for private relaxation and rejuvenation. With space for 4 guests, this entire home is perfect for small groups or extended families seeking privacy and comfort. Located minutes from local amenities and attractions, the property combines modern spa features with classic home comforts. The indoor pool maintains ideal water temperatures year-round, while the hot tub offers panoramic views of the surrounding park. While the nightly rate reflects the premium amenities offered, we recommend optimizing pricing strategy to align with local competitive positioning (current local median: \u00a3154.60/night). The property's 4.5-star rating from 49 reviews suggests strong guest satisfaction with cleanliness and safety protocols. Guests particularly praise the seamless spa maintenance routines and professional housekeeping services. Additional features include free parking for 2 vehicles and a secure entrance for privacy. While the listing currently lacks formal amenity categorization, adding these details would enhance visibility for travelers seeking specific inclusions.",
+    "top_amenity_gaps": [
+      "Indoor Pool Maintenance",
+      "24/7 Housekeeping Service",
+      "Free Parking (2 vehicles)",
+      "Premium Spa Products"
+    ],
+    "photo_order_rec": "The indoor pool should be cover photo as it's the strongest differentiator in a photos-over-text listing culture, followed by hot tub exterior shots to showcase space scale",
+    "key_diagnosis": [
+      "Priced at 793% above cohort median (\u00a31380 vs \u00a3154.60) yet occupancy (41.3%) lags 6.5% below city average",
+      "No formally categorized amenities despite listing having 4 verified premium offerings (indoor pool, hot tub, parking, spa)",
+      "Title exceeds 50 character limit by 34% (85 vs 50), reducing search visibility"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing commands \u00a31380/night, 800% above typical local prices, yet only achieves 41% occupancy\u20146.5% below the market average",
+    "weakest_element": "title"
+  }
+}

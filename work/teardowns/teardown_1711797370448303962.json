@@ -1,0 +1,39 @@
+{
+  "listing_id": "1711797370448303962",
+  "host_name": "Casabridge",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 154.6,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 9585.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Leeds City Centre 2BR, 2BA \u2013 Walk to Station",
+      "Spacious 2\u2011Bedroom, Steps from Leeds Station",
+      "Leeds Central 2BR/2BA Flat, Near Train & Shops"
+    ],
+    "rewritten_desc": "Welcome to your perfect Leeds base \u2013 an entire home right in the heart of the city, just a short walk from the main train station. This modern 2\u2011bedroom, 2\u2011bathroom flat comfortably sleeps up to four guests, making it ideal for families, friends, or business travellers. Every night you\u2019ll enjoy a bright, open\u2011plan living area, a fully equipped kitchen, and sleek bathrooms that blend style with convenience. \n\nLocated in Leeds City Centre, you\u2019re steps away from vibrant shops, acclaimed restaurants, and cultural attractions, while excellent public transport puts the wider region at your fingertips. With a spotless 5\u2011star rating from seven delighted guests, the property consistently delivers a five\u2011star experience. \n\nAt \u00a3154.60 per night, you\u2019re positioned at the market median, offering excellent value for a centrally located, well\u2011appointed space. The next 90 days show 62 nights still open \u2013 a fantastic opportunity to welcome more guests and boost your earnings. Although you\u2019re not yet a Superhost, the glowing reviews demonstrate the potential to achieve that status quickly. \n\nTake advantage of the prime location, the spacious layout, and the strong guest feedback to fill those open nights and turn this Leeds gem into a top\u2011performing listing.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or garden)",
+      "Dedicated parking",
+      "Entertainment amenities (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality image of the living room that showcases the city\u2011center vibe and the view toward the station as the cover photo; it instantly communicates location and spaciousness.",
+    "key_diagnosis": [
+      "Occupancy is low: only 31.5% booked in the next 90 days, leaving 62 open nights and up to \u00a39,585 of potential revenue unfilled.",
+      "No high\u2011impact amenities listed; adding outdoor space, parking, or entertainment options could attract more bookings in Leeds.",
+      "Photo count is unknown and likely insufficient; adding professional shots of every room and setting the living\u2011room view as the cover can raise interest."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 62 nights still open over the next 90 days, you're leaving up to \u00a39,585 in potential revenue on the table.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1559501608961306148",
+  "host_name": "Zoe",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 109.0,
+    "occupancy_pct": 51.1,
+    "open_nights_90d": 44,
+    "revenue_at_stake_gbp": 4796.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 6,
+    "score_images": 8,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "River\u2011View Balcony + Parking \u2013 2BR Kelham",
+      "Stylish 2\u2011Bedroom Riverside Apt, Sleeps 6",
+      "Kelham Island Retreat \u2013 Private Balcony, 6 Guests"
+    ],
+    "rewritten_desc": "Experience the buzz of Kelham Island right from a modern riverside retreat. This freshly refurbished entire\u2011unit apartment sleeps up to six guests across two spacious double bedrooms, each fitted with a king\u2011size twin bed that can be split into singles on request. The open\u2011plan lounge and kitchen flows seamlessly, featuring an L\u2011shaped double sofa\u2011bed, sleek appliances, ample counter space and all the utensils you need to whip up a meal. Step out onto your private balcony and soak in uninterrupted river views \u2013 the perfect backdrop for sunrise coffee or sunset drinks. Self\u2011check\u2011in and lift access make arrival effortless, while a designated parking space removes any hassle of street parking. The unit is professionally cleaned before each stay and comes stocked with essentials \u2013 hair\u2011dryer, shampoo, conditioner, towels and more. No parties are allowed, ensuring a peaceful environment for all guests. Located steps from Kelham Island\u2019s thriving pubs, bars and restaurants, you\u2019ll be at the heart of Sheffield\u2019s most vibrant riverside scene. Enjoy an automatic 10% discount on weekly stays and 20% off monthly stays, applied at checkout. Book now for a stylish, convenient base with river views and all the comforts of home.",
+    "top_amenity_gaps": [
+      "Air conditioning",
+      "Tumble dryer",
+      "Exterior security cameras"
+    ],
+    "photo_order_rec": "Use the balcony river\u2011view shot as the cover photo \u2013 it instantly showcases the most marketable feature and differentiates the listing from competitors.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3109) is only 4% above the market median (\u00a3104.90) yet you have 44 open nights, leaving \u2248\u00a34,800 of unearned revenue \u2013 consider a targeted discount or dynamic pricing to boost occupancy.",
+      "The current title omits high\u2011impact keywords like \u201criver view\u201d and \u201cparking\u201d; adding these can improve click\u2011through rates.",
+      "Your photo set is strong, but the cover image isn\u2019t the river\u2011view balcony; swapping it to that shot can instantly showcase the best view and attract more bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 44 open nights this quarter, representing about \u00a34,800 of potential earnings at your current \u00a3109 rate.",
+    "weakest_element": "description"
+  }
+}

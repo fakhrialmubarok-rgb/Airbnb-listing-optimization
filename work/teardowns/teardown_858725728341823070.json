@@ -1,0 +1,39 @@
+{
+  "listing_id": "858725728341823070",
+  "host_name": "Dan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.0,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 7808.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "30% Below City Avg \u2013 Modern 2\u2011Bed for \u00a3122",
+      "Cozy 4\u2011Guest Apartment \u2013 Save \u00a353/night vs Avg",
+      "Bright City\u2011Side Home \u2013 30% Cheaper, 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to Dan\u2019s stylish Anox Services Apartments, an entire home perfectly suited for up to four guests. Located in a vibrant part of town, this bright, modern space offers a comfortable bedroom, a well\u2011equipped kitchen, and a relaxing living area where you can unwind after a day of exploring. With a nightly rate of \u00a3122, you\u2019re paying roughly 30% less than the city\u2019s median rate of \u00a3175 \u2013 a rare value that lets you enjoy premium comforts without the premium price. The apartment sleeps four, featuring two cozy beds, fresh linens, and ample storage for your belongings. While you\u2019re here, take advantage of fast Wi\u2011Fi, a flat\u2011screen TV, and a full\u2011size fridge stocked for self\u2011catering meals. The building is secure, and you\u2019ll find easy access to public transport, local caf\u00e9s, shops, and cultural attractions within walking distance. With 81 positive reviews and a solid 4.56 rating, guests consistently praise the clean, quiet environment and the attentive host. Book now to secure one of the remaining 64 open nights in the next 90 days and experience a high\u2011quality stay at a price that\u2019s hard to beat.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., patio or garden)",
+      "Dedicated parking",
+      "Entertainment amenities (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011lit image of the living area as the cover photo; it showcases the space\u2019s size and style and immediately highlights the value guests get for \u00a3122 per night.",
+    "key_diagnosis": [
+      "Update the title to emphasize the 30% price advantage (\u00a3122 vs \u00a3175 median) and the 4\u2011guest capacity \u2013 the current title provides no compelling signal.",
+      "Add a full, keyword\u2011rich description (200\u2011300 words) that includes the nightly rate, guest limit, and local attractions \u2013 the listing currently has no description.",
+      "List high\u2011value amenities such as outdoor space, dedicated parking, and entertainment options; none are currently shown, missing a key draw for price\u2011sensitive travelers."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate is \u00a3122, about 30% below the city median of \u00a3175, yet your 90\u2011day occupancy is only 29.3%\u2014there\u2019s a clear opportunity to fill those open nights.",
+    "weakest_element": "amenities"
+  }
+}

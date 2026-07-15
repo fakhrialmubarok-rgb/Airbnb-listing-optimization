@@ -1,0 +1,39 @@
+{
+  "listing_id": "943526329810179191",
+  "host_name": "Eric",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 161.0,
+    "occupancy_pct": 28.3,
+    "open_nights_90d": 65,
+    "revenue_at_stake_gbp": 10465.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "3BR + Parking for Families & Contractors",
+      "Modern 3BR Home with Spacious Parking",
+      "Families & Contractors: 3BR + Secure Parking"
+    ],
+    "rewritten_desc": "This modern 3-bedroom home is perfectly suited for families and working professionals who need reliable parking. Situated in a convenient location, the property offers 4 guests ample space to relax and work. Enjoy a fully-equipped kitchen for meal prep and a cozy living area ideal for unwinding after a busy day. The on-site parking ensures peace of mind for contractors managing equipment or families needing extra space. Located in a well-connected neighborhood, this entire home provides the privacy and flexibility needed for both leisure and work. While current amenities focus on core functionality, guests are encouraged to request specific updates to enhance their stay experience. Book this versatile retreat and enjoy the flexibility of an open calendar with 65 available nights in the next 90 days.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/balcony)",
+      "Work-friendly setup (ergonomic desk, stable Wi-Fi)",
+      "Security features (smart locks/alarms)"
+    ],
+    "photo_order_rec": "Prioritize the first image as a wide shot of the living room to establish space and ambiance. This room is typically the most impactful for potential guests evaluating comfort and layout.",
+    "key_diagnosis": [
+      "Title length (34 characters) is acceptable but lacks a stronger headline keyword than 'Modern 3BR' when 'Secure Parking' would resonate more with 72-reviewed audiences",
+      "Description is only 30 words long vs 260+ average for high-performing listings in the 357-listing cohort",
+      "No explicit mention of Superhost credentials despite 4.92 rating, which is the top-tier review score in this market"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "The current 65-night availability at \u00a3161/night means \u00a310,465 in potential revenue could be booked within 90 days with stronger listing optimization",
+    "weakest_element": "description"
+  }
+}

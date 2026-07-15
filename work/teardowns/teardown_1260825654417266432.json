@@ -1,0 +1,37 @@
+{
+  "listing_id": "1260825654417266432",
+  "host_name": "James",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 155.0,
+    "occupancy_pct": 65.2,
+    "open_nights_90d": 31,
+    "revenue_at_stake_gbp": 4805.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Newcastle's Cozy Haven by Racecourse",
+      "Westmoor Home with Quorum Views",
+      "Relax by Newcastle Racecourse"
+    ],
+    "rewritten_desc": "Welcome to our charming home in the heart of Westmoor, just a stone's throw from Newcastle Racecourse and the stunning Quorum business park. This entire home is perfect for four guests looking for a peaceful retreat. With its comfortable layout and tasteful decor, this property is an ideal base for exploring the beautiful North East. Enjoy the scenic views from the private outdoor spaces and unwind in the evening with a glass of wine from the fully-equipped kitchen. Whether you're in town for business or pleasure, our home is the perfect haven.",
+    "top_amenity_gaps": [
+      "Outdoor spaces for al-fresco dining and relaxation"
+    ],
+    "photo_order_rec": "The living room should be the cover photo as it showcases the property's cozy atmosphere and spacious layout.",
+    "key_diagnosis": [
+      "Boost occupancy by 17.4% to 82.6% (current occupancy is 4.2% below cohort median), potentially adding \u00a3311.7 to annual revenue (based on 31 open nights)",
+      "Add or highlight the outdoor spaces, including the garden and any private seating areas",
+      "Highlight 'Quorum' in the title to capitalize on the local business park's reputation and potentially attract more corporate guests"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Our current occupancy of 65.2% could mean up to \u00a3311.7 less in annual revenue, which we're confident we can improve together",
+    "weakest_element": "title"
+  }
+}

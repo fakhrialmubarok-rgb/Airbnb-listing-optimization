@@ -1,0 +1,39 @@
+{
+  "listing_id": "1500783468804688106",
+  "host_name": "Nathan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 92.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 6992.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 7,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "London Apt \u00a392 - Perfect Long Stay Super King Bed",
+      "Super King Bed City Apt | London | Long Stay",
+      "Luxury \u00a392 Apt in London | 4 Guests | Super King Bed"
+    ],
+    "rewritten_desc": "Welcome to my charming London apartment, perfect for long stays. This entire home can accommodate up to 4 guests and boasts a super king-sized bed for ultimate comfort. The open-plan living area and kitchen provide a great space for relaxation and cooking. The property is located in the heart of London, making it an ideal base for exploring the city. Whether you're here for business or leisure, my apartment has everything you need to make your stay special. I've taken great care to ensure that the property is clean and well-maintained, so you can feel at home. Reviewers have given me a rating of 4.8, which I'm proud of and strive to maintain.",
+    "top_amenity_gaps": [
+      "Parking facilities",
+      "Outdoor space for relaxation",
+      "Entertainment options such as Netflix or a games console"
+    ],
+    "photo_order_rec": "The open-plan living area with super king-sized bed should be the cover photo, as it showcases the best features of the property.",
+    "key_diagnosis": [
+      "-47% difference in nightly rate compared to the \u00a3175 median rate in this market suggests that the price is a significant barrier to bookings. Consider increasing the rate to match the competition.",
+      "Occupancy is at 15.2% with 76 open nights over the next 90 days, which is 13.1 points below the median 28.3% occupancy in this market. Focus on optimising the listing to attract more bookings.",
+      "No photos of the bedrooms, living area, kitchen or bathroom provide a comprehensive view of the property. Share photos of these key areas to showcase the property's features."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Our data suggests that your occupancy rate of 15.2% over the next 90 days is 13.1 points lower than the median in this market. We'd love to discuss how we can help you optimise your listing for higher occupancy.",
+    "weakest_element": "photos"
+  }
+}

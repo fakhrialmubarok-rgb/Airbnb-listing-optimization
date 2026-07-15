@@ -1,0 +1,39 @@
+{
+  "listing_id": "735657438257367724",
+  "host_name": "Anchor",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 524.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 39824.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Entire Loft for 4 Guests",
+      "Central City Loft - 4 Guests",
+      "Chic 2-Bedroom Entire Loft"
+    ],
+    "rewritten_desc": "Step into this sleek, modern loft perfect for 4 guests seeking comfort and style. The expansive open-plan space includes a fully equipped kitchen, plush living area with high-end furnishings, and two generous bedrooms. Located [insert neighborhood/landmark if available], it's ideal for travelers wanting to explore the best of the city. While amenities are intentionally curated to maintain privacy and tranquility, you'll enjoy all the benefits of living in a premium urban location. With daily housekeeping available as an add-on, this unique offering combines convenience with a touch of upscale living. Sleep soundly in this top-rated accommodation that's been meticulously maintained to ensure a memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g. terrace or balcony)",
+      "Secure parking access",
+      "Premium entertainment system"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living/dining area as the cover photo to showcase the property's spacious layout, as this is the most common entry point for potential guests scanning listings.",
+    "key_diagnosis": [
+      "\u00a3524/night is +199% above median, but only 15.2% occupancy vs 28.3% cohort median indicates price/positioning misalignment",
+      "209 reviews without Superhost status suggests inconsistent guest satisfaction, potentially impacting conversion",
+      "Title (4/10) lacks specificity and differentiators when compared to 357 local competitors"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3524 rate is 199% above median, yet only 15.2% occupancy suggests a significant price/occupancy imbalance compared to 357 local competitors",
+    "weakest_element": "title"
+  }
+}

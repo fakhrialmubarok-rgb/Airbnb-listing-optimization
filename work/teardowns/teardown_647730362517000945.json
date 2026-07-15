@@ -1,0 +1,39 @@
+{
+  "listing_id": "647730362517000945",
+  "host_name": "Nancy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2296.0,
+    "occupancy_pct": 70.7,
+    "open_nights_90d": 26,
+    "revenue_at_stake_gbp": 59696.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Spa Home with Pool, Hot Tub & Sauna for 4 Guests",
+      "5-Star Luxury Home: Pool, Sauna, Hot Tub Nearby",
+      "Exclusive 4-Guest House with Full Spa & Pool Features"
+    ],
+    "rewritten_desc": "Escape to this fully private 4-guest home featuring a resort-style swimming pool, hot tub, and sauna. Designed for ultimate relaxation, the property includes fully equipped accommodations for long-term stays. Despite the high occupancy rate of 70.7% booked in the next 90 days (26 nights available), its nightly rate of \u00a32,296 reflects the premium amenities available. While the market median is \u00a3154.60, verified guests appreciate the spa experience and secure booking system (223 total reviews at 4.96). Located in a central area with proximity to local attractions, the listing provides an unmatched wellness-focused stay. Ideal for wellness retreats, private holidays, or special events, this home maintains high turnover despite its price premium. Note: For a seamless stay, additional amenities can be requested at the time of booking.",
+    "top_amenity_gaps": [
+      "Outdoor seating area/BBQ",
+      "On-site parking",
+      "Smart home entertainment system"
+    ],
+    "photo_order_rec": "Prioritize the swimming pool in the first photo to emphasize the primary differentiator - the most impactful amenity for attracting premium bookings in this market segment.",
+    "key_diagnosis": [
+      "Priced at +1385% above the cohort median (\u00a32296 vs \u00a3154.60) while maintaining 70.7% occupancy, suggesting both pricing power and untested opportunities to increase occupancy through optimization",
+      "Missing 3 high-value amenity categories (Outdoor, Parking and facilities, Entertainment) that could increase booking conversion in luxury segments",
+      "Zero-word description leaves \u00a32296 value proposition unexplained to potential guests - market context shows 70.7% occupancy despite the premium rate but lacks supporting narrative"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're booking 23.9% more nights than the cohort average (70.7% vs 47.8%) but charging 1385% above the median rate - let's unlock higher occupancy by making your spa amenities more visible.",
+    "weakest_element": "description"
+  }
+}

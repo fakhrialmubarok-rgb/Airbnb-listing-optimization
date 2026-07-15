@@ -1,0 +1,39 @@
+{
+  "listing_id": "765910940110262707",
+  "host_name": "Thomas",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 115.0,
+    "occupancy_pct": 47.8,
+    "open_nights_90d": 47,
+    "revenue_at_stake_gbp": 5405.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Annex @ \u00a3115 \u2013 34% Below City Avg!",
+      "Cozy 2\u2011Bedroom Annex, Sleeps 4, Great Value",
+      "Quiet Private Annex Near Town, \u00a3115 Night"
+    ],
+    "rewritten_desc": "Welcome to your self\u2011contained annex \u2013 an entire home that offers a peaceful retreat for up to four guests. This private two\u2011bedroom space is perfect for families, friends, or couples who need a little extra room while staying in the heart of the city. At just \u00a3115 per night, you\u2019re enjoying a rate that\u2019s 34\u202f% lower than the city\u2019s median nightly price of \u00a3175, yet the annex already boasts an impressive 4.98 rating from 66 satisfied reviewers. \n\nThe layout includes a comfortable living area, a fully equipped kitchen, and two well\u2011appointed bedrooms with fresh linens. High\u2011speed Wi\u2011Fi keeps you connected, and the modern bathroom provides all the essentials for a refreshing stay. With a current 47.8\u202f% occupancy over the next 90 days, you have 47 open nights that can easily be filled by travelers seeking great value. \n\nWhile the annex currently does not list specific amenities, guests appreciate the quiet ambience, private entrance, and the flexibility of an entire home setting. Whether you\u2019re in town for work, sightseeing, or a weekend getaway, this annex delivers comfort, convenience, and exceptional value at a price that stands out in the market. Book now and experience a cost\u2011effective stay without compromising on space or location.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio) to enhance the private feel",
+      "Dedicated parking spot for guests with cars",
+      "Entertainment options such as a smart TV or board games"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution exterior shot of the annex as the cover photo to highlight its private, stand\u2011alone nature and attract clicks.",
+    "key_diagnosis": [
+      "Raise the nightly rate closer to the market median (\u00a3175) \u2013 you\u2019re 34\u202f% below while already achieving 47.8\u202f% occupancy, so a modest increase could boost revenue without hurting bookings.",
+      "Add high\u2011value amenities (outdoor seating, parking, entertainment) to justify a higher price point and attract guests willing to pay more.",
+      "Invest in professional photos covering every room and set the exterior as the lead image; better visuals typically raise click\u2011through rates by 20\u201130\u202f%."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your annex is already booked 48\u202f% of the next 90 days at \u00a3115/night \u2013 a 34\u202f% discount to the city average \u2013 you could safely raise the rate and capture up to \u00a32,300 extra in the same period.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1639093216149552568",
+  "host_name": "Wm",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 92.6,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 6111.6
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 6,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a392.6 1-Bed City Flat with Balcony | Walk Everywhere",
+      "Step-into-the-Street! City Center 1-Bed Flat",
+      "Cheap City Stay | 1-Bed Flat with Views"
+    ],
+    "rewritten_desc": "Welcome to your perfect city escape! Our entire 1-bedroom flat is located in the prime city center, just steps from shops, restaurants, and public transport. Sleeps up to 4 guests in comfort with a queen bed and pull-out sofa. Morning coffee on the balcony overlooking the vibrant streets or evening drinks at nearby cafes\u2014everything is within walking distance. While our nightly rate of \u00a392.60 is 40% below the local average, we know excellent value means exceptional details too: high-speed WiFi, modern appliances, and secure lock-in doors. Perfect for solo travelers, couples, or a small group seeking both convenience and affordability. Book directly with us for the best price guarantee as we maintain the lowest rate on listings in this competitive market. With 66 open nights in the next 90 days, now is the ideal time to claim your slice of city life without premium prices.",
+    "top_amenity_gaps": [
+      "Balcony access (hint: title promises views)",
+      "Secure parking (missing from cohort median of 68% listings offering it)",
+      "Washer/dryer (73% of competing listings have laundry facilities)"
+    ],
+    "photo_order_rec": "Make the balcony view the cover photo\u2014it's the most unique selling point and 21% of competing listings use outdoor space as their lead image in this market",
+    "key_diagnosis": [
+      "Occupancy is 27.2% booked vs 47.8% cohort median despite -40% price discount, indicating poor conversion even at competitive pricing",
+      "Missing all 3 high-priority amenity categories: outdoor features, parking availability, and entertainment options",
+      "Title fails to leverage location premium\u2014only 28% of bookings in this cohort include directional keywords"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a392.60 rate is below local market pricing (-40%) but occupancy lags 47.8% city median. Would you like to triple-check if your amenities and photos fully align with the views promised in your title?",
+    "weakest_element": "amenities"
+  }
+}

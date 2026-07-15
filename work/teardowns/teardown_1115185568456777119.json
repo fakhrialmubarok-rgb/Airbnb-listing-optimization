@@ -1,0 +1,39 @@
+{
+  "listing_id": "1115185568456777119",
+  "host_name": "Charlie",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 326.8,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 18627.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a3327 Family Home with Free Parking (4 Guests)",
+      "Spacious Family House in [City] (4 Guests)",
+      "4-Guest Home with Free Parking (\u00a3327/night)"
+    ],
+    "rewritten_desc": "Step into this charming family home offering space and privacy for up to 4 guests. Located in [City], it's ideally suited for families seeking a comfortable stay with free on-site parking. With 3 bedrooms and 2 bathrooms, the layout ensures ample room for everyone to relax. Modern amenities include [insert if amenities exist]. While the nightly rate of \u00a3326.80 is 111% above the market median, the home's spacious design and strategic location make it a compelling choice for extended stays. Book confidently with 14 verified reviews (5.0 star rating). Note: Host Charlie is new to hosting but committed to delivering a top-tier experience. Open dates include 57 nights across the next 90 days \u2013 check availability for your preferred dates.",
+    "top_amenity_gaps": [
+      "Outdoor Space",
+      "Entertainment (TV, Wi-Fi)",
+      "Kitchen Amenities"
+    ],
+    "photo_order_rec": "Start with a wide shot of the living area to showcase space and family-friendly layout, as the 'Family Home' title emphasizes communal living areas as the primary value proposition for multi-guest stays.",
+    "key_diagnosis": [
+      "Price is +111% of median \u00a3154.60 while occupancy lags 10.8% behind median 47.8%",
+      "No amenities listed despite 5.0 rating suggesting substantial value to highlight",
+      "Title lacks specific family-friendly features (3 bedrooms, 2 bathrooms) mentioned in property type"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "This \u00a3326.80 listing in [City] is priced 111% above the median yet only 37.0% booked next 90 days \u2013 10.8% below market occupancy.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1658716960408718297",
+  "host_name": "Adam",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 88.92,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 4090.32
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a389 Home in Central Area | 4 Guests | Private Patio",
+      "4-Guest Home with Patio | Central | \u00a389/Night",
+      "Central Home + Patio | Sleeps 4 | \u00a389 Nightly"
+    ],
+    "rewritten_desc": "Stay in this charming 4-guest home perfectly located in the city center, offering immediate access to local attractions and shops. The property features a private patio perfect for morning coffee or evening relaxation. Priced at just \u00a388.92/night (42% below the local market median), this entire home provides great value without compromising comfort. The central location ensures all your transportation, dining, and activity needs are just minutes away. Sleeps 4 comfortably across its bedrooms, making it ideal for couples, families, or friends visiting the city. Please note the host is still building their review count, but guests can expect reliable availability with 51.1% of the next 90 nights open.",
+    "top_amenity_gaps": [
+      "Parking availability",
+      "Entertainment systems (TV/Netflix)",
+      "Outdoor seating"
+    ],
+    "photo_order_rec": "The private patio should be the cover photo if available, as highlighted in the title. This creates immediate visual differentiation for this property's key selling point.",
+    "key_diagnosis": [
+      "Title fails to leverage 42% price discount advantage over median \u00a3154.60 cohort rate",
+      "Description lacks explicit mentions of 3 high-value amenity categories: Outdoor (patio), Parking, and Entertainment",
+      "0 amenities explicitly listed despite 30 reviews - this severely reduces visibility in amenity-filtered searches"
+    ],
+    "outreach_angle": "price_vs_occupancy",
+    "outreach_hook": "Your listing is priced at \u00a388.92/night (42% below the cohort median of \u00a3154.60), yet occupancy remains 1.1% above the market median at 48.9% booked. Let's optimize this significant price-value opportunity.",
+    "weakest_element": "amenities"
+  }
+}

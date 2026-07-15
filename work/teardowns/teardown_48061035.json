@@ -1,0 +1,39 @@
+{
+  "listing_id": "48061035",
+  "host_name": "Johnson",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 716.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 54416.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Airport Proximity, Private Home, Free Parking",
+      "5min Airport, Spacious \u00a3716 Entire Home",
+      "4.1 Rated Home, 5min Airport & Free Parking"
+    ],
+    "rewritten_desc": "Welcome to this newly updated 3-bedroom home with modern furnishings, situated just 5 minutes from [Airport Name] and offering free street parking. Ideal for travelers seeking convenience without airport shuttle fees, this property features a fully stocked kitchen, Wi-Fi, and a private backyard for relaxation. Despite its high price point, the home maintains a 4.07-star rating from 15 guests who praise its cleanliness and accessibility. Sleeps 4 with two queen beds, it\u2019s perfect for families or groups needing short-term airport access. Book direct to bypass rental fees and enjoy priority check-in.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/garden)",
+      "TV/Cable",
+      "In-unit washer/dryer"
+    ],
+    "photo_order_rec": "Lead photo should showcase the street view highlighting airport proximity (e.g., visible runway or road signage). Secondary photos should emphasize key differentiators: kitchen, parking space, and backyard.",
+    "key_diagnosis": [
+      "Priced at \u00a3716/night (+309% vs median \u00a3175) but occupancy is 15.2% vs cohort\u2019s 28.3% \u2014 indicating a price-to-occupancy mismatch.",
+      "Description lacks factual details, amenities, and guest benefits despite the premium rate.",
+      "Title omits 4.07-star rating, missing a trust signal critical for high-end bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced at \u00a3716/night (+309% above median) but only 15.2% booked next 90 days vs 28.3% cohort average.",
+    "weakest_element": "description"
+  }
+}

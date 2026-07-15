@@ -1,0 +1,39 @@
+{
+  "listing_id": "1492004705751486722",
+  "host_name": "David",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 94.2,
+    "occupancy_pct": 26.1,
+    "open_nights_90d": 67,
+    "revenue_at_stake_gbp": 6311.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "2-Bed Apartment with Garden & Parking | M62 Access",
+      "Spacious Home with Private Garden | \u00a394/night",
+      "Garden Apartment with Parking & Free M62 Access"
+    ],
+    "rewritten_desc": "Escape to this sunny 2-bedroom apartment in a sought-after location. Perfect for up to 4 guests, this entire home features a private garden for relaxing evenings and a convenient designated parking spot. Positioned near major highways (M62/M6), it's ideal for travelers needing easy access to local attractions and business hubs.\n\nEnjoy spacious living areas with all the comforts of home. While the space is well-maintained, guests have praised the property's unique charm in 287 reviews (4.92 rating). With over 67 open nights available in the next 90 days, it's a rare opportunity to stay in this affordable gem in a city where comparable listings average \u00a3154.60 per night.\n\nThe property offers easy connectivity to the M62 and M6 motorways, placing you within reach of top destinations. After a day of exploration, retreat to the serene garden area where you can relax without worrying about finding local amenities first.\n\nWith 26.1% occupancy over the next 90 days, this home remains competitively priced while maintaining high guest satisfaction. The generous space and strategic location make it an ideal choice for both family getaways and business travelers seeking affordable accommodation.",
+    "top_amenity_gaps": [
+      "Outdoor space showcase",
+      "Parking confirmation",
+      "Internet/WiFi details"
+    ],
+    "photo_order_rec": "Display the garden view as cover photo since it's a key differentiator explicitly mentioned as available and highly valuable in listings lacking outdoor space. The garden's presence is rarely advertised in competitors, making it a strong visual hook.",
+    "key_diagnosis": [
+      "Rate is \u00a360.40 below the \u00a3154.60 market median but occupancy (26.1%) remains nearly 50% lower than city average (47.8%)",
+      "Title exceeds 50 characters (actual length=47) with poor SEO by not prioritizing '2-Bed' and 'Garden' in optimal positions",
+      "No explicit confirmation of core amenities like WiFi, TV, or laundry despite being implicitly necessary for 4-guest occupancy"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a394.20 rate is 39% below the city median but occupancy is still 52% below market average - there's significant underperformance compared to similar properties",
+    "weakest_element": "title"
+  }
+}

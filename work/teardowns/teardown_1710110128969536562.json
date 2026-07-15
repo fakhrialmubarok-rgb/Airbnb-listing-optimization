@@ -1,0 +1,39 @@
+{
+  "listing_id": "1710110128969536562",
+  "host_name": "Emily",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 197.4,
+    "occupancy_pct": 28.3,
+    "open_nights_90d": 65,
+    "revenue_at_stake_gbp": 12831.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "3-Bed Family Home Near Roundhay Park (65 Open Nights)",
+      "Spacious 3-Bed Rental Close to Park",
+      "3-Bed Home in Leeds with Park Proximity"
+    ],
+    "rewritten_desc": "Perfect for families, this 3-bedroom home offers modern comforts for up to 4 guests. Located just minutes from Roundhay Park\u2019s 188-hectare green space, guests enjoy easy access to walking trails, zoo, and cycling paths. Every room is designed for comfort, with the open-plan layout ideal for family meals. While our base rate is \u00a3197.40 (28% above the market average), we\u2019re currently seeing 28.3% occupancy vs 47.8% market median\u2014let\u2019s see how we can align value with this vibrant Leeds location. Fully equipped for daily living, though note our listing could add more detail on premium amenities to match our price point.",
+    "top_amenity_gaps": [
+      "Outdoor space/patio (high-demand listing in family market)",
+      "Dedicated parking (often required for family bookings)",
+      "Smart TV/entertainment system (premium price needs premium perks)"
+    ],
+    "photo_order_rec": "Cover photo should be the entrance/living area to immediately convey family-friendly space, followed by the best room showing proximity to Roundhay Park",
+    "key_diagnosis": [
+      "Priced at \u00a3197.40 (+28% vs \u00a3154.60 median rate) but only 28.3% occupancy (vs 47.8% market median) suggests pricing/positioning misalignment",
+      "No amenities listed despite premium pricing\u2014missing high-value categories: outdoor, parking, entertainment",
+      "Title under 50 characters but lacks urgency; 50-char limit is untapped marketing opportunity"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3197.40 rate (+28% vs median) currently yields 28.3% occupancy (65 open nights), below the 47.8% market average. Let\u2019s bridge this gap.",
+    "weakest_element": "amenities"
+  }
+}

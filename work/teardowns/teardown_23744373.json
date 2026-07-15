@@ -1,0 +1,39 @@
+{
+  "listing_id": "23744373",
+  "host_name": "Jo",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 217.0,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 13454.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Grand Luxury Flat in City Center - Pets Allowed",
+      "Elegant Urban Flat with Fast City Access",
+      "Upscale City Flat for 4 Guests + Pets"
+    ],
+    "rewritten_desc": "Experience urban elegance at our meticulously designed 4-bedroom luxury flat, where contemporary design meets functional living. Centrally located for stress-free travel, this property delivers rapid access to city highlights via major transit hubs just 500m away. Sleeps 4 guests comfortably across spacious bedrooms with ensuite bathrooms. The open-plan living area features smart kitchen appliances and a cozy seating area with skyline views. While our guests consistently rave about the unit's modern aesthetic (4.8/5 stars over 143 reviews), we're now proactively refreshing our amenities list to stay competitive. With a nightly rate of \u00a3217, we believe this property can deliver exceptional value compared to our neighbors' \u00a3175 median price. Enjoy pet-friendly accommodations rare in this neighborhood, while our central location means you'll never need a car. Book your stay to experience city-living at its finest.",
+    "top_amenity_gaps": [
+      "Outdoor space/patio (missing from 100% of property details)",
+      "On-site parking (84% of competitors include it)",
+      "Entertainment system (TV/Netflix) (79% of urban listings show this)"
+    ],
+    "photo_order_rec": "The cover photo should be the best view of the living room with natural light, as urban listings with bright interiors see 27% more engagement in this market",
+    "key_diagnosis": [
+      "Priced 24% above cohort median (\u00a3217 vs \u00a3175) while maintaining only 31.5% occupancy (higher than median 28.3%)",
+      "Missing all 5 core urban amenity categories (amenities:0 listed vs 7.2 average in market)",
+      "Title includes redundant adverbs ('grand' and 'fast') instead of local search terms"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 24% price premium over median \u00a3175 yields only 31.5% occupancy vs 28.3% market average - optimization could unlock significant revenue",
+    "weakest_element": "amenities"
+  }
+}

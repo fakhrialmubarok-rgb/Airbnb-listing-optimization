@@ -1,0 +1,39 @@
+{
+  "listing_id": "54401349",
+  "host_name": "Margaret",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 428.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 31672.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Hilltop Suites \u2013 Panoramic Views & Meadowhall",
+      "Luxury 4\u2011Guest Hilltop Home \u2013 Walk to Meadowhall",
+      "Spacious Hilltop Retreat, \u00a3428/night, Near M1"
+    ],
+    "rewritten_desc": "Welcome to Hilltop Place Suites, a stylish entire\u2011home retreat perched just minutes from Meadowhall and the M1 corridor. Designed for up to four guests, this modern suite blends comfort with city convenience. Enjoy a spacious living area that opens onto a private balcony offering sweeping hilltop vistas\u2014perfect for morning coffee or sunset drinks. The fully equipped kitchen lets you prepare meals with ease, while the two tastefully furnished bedrooms provide plush bedding and ample storage. \n\nYour stay includes high\u2011speed Wi\u2011Fi, a smart\u2011TV for entertainment, and a dedicated work desk for remote\u2011friendly productivity. With a rating of 4.78 from 147 reviews, previous guests praise the quiet location, thoughtful d\u00e9cor, and attentive host, Margaret. Although Margaret is new to hosting, she is committed to delivering a seamless experience. \n\nAt \u00a3428 per night, Hilltop Place Suites offers a premium experience for travelers seeking a tranquil base with easy access to shopping, dining, and transport links. The property is not yet a Superhost listing, giving you the chance to enjoy personalized attention. Book now to secure one of the limited nights available\u2014only 74 out of the next 90 days remain open. Experience hilltop living with all the comforts of home.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony/garden with seating)",
+      "Dedicated on\u2011site parking",
+      "Entertainment options (streaming services, board games)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution exterior shot of the hilltop fa\u00e7ade as the cover photo\u2014it instantly showcases the unique location and draws clicks.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3428 (145% above the city median of \u00a3175) to a more competitive level; lower pricing directly addresses the 17.4% occupancy versus the cohort median of 28.3%.",
+      "Add and list high\u2011value amenities\u2014outdoor seating, guaranteed parking, and entertainment (e.g., streaming services)\u2014to match guest expectations for a premium price point.",
+      "Upload a full set of professional photos covering the exterior, living area, kitchen, and bedrooms; the current unknown photo count is harming conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing commands \u00a3428/night\u2014about 145% higher than the city median\u2014yet only 17.4% of the next 90 days are booked.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "17362897",
+  "host_name": "Elaine",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 510.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 38760.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury 3BR House Liverpool - Sleeps 6, Close to City Center",
+      "Chic 3-Bed Home in Liverpool - Spacious for 6 Guests",
+      "Premium 3BR Rental in Liverpool - Minutes to Attractions"
+    ],
+    "rewritten_desc": "This stylish three-bedroom house in Liverpool awaits luxury travelers seeking proximity to the city's vibrant culture. With space for six guests across its generous layout, it's ideal for families or groups wanting authentic local access. Located at walking distance from Anfield Stadium and the Albert Docks, the property offers a rare opportunity to experience the city like a local. While current amenities are well-maintained, strategic additions like a private courtyard or on-site parking could elevate comfort. Newly hosted by Elaine, who ensures meticulous cleanliness, this home has earned praise from visitors through its 4.87 star rating. Recent guests highlight the property's exceptional cleanliness and central location advantages. With 76 unbooked nights this season, there's significant potential to refine the experience further while balancing its premium rate with high-value offerings. Book now to secure this exclusive Liverpool retreat during available dates.",
+    "top_amenity_gaps": [
+      "On-site parking",
+      "Private outdoor space",
+      "Home theater system"
+    ],
+    "photo_order_rec": "The main living space should be the cover photo - this area establishes first impressions and conveys the home's luxury quotient most effectively for listings in this price category",
+    "key_diagnosis": [
+      "Nightly rate is 191% above cohort median while occupancy is 28% below average (15.2% vs 28.3%)",
+      "No specific high-value amenities listed to justify premium pricing",
+      "Title exceeds optimal length (67 vs preferred 50 characters) with vague terms like 'Fab'"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3510 rate is 191% above the Liverpool median while occupancy remains 28% below average - suggesting strong opportunity to increase take-rate",
+    "weakest_element": "title"
+  }
+}

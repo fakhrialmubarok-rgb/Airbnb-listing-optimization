@@ -1,0 +1,39 @@
+{
+  "listing_id": "1321624215281578257",
+  "host_name": "Anisah",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 144.44,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 10255.24
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Birmingham City Centre 2BR Apt - 17% Off Lead Rates!",
+      "City Centre Gem - 17% Less Than Market, Same Price!",
+      "2 Bedroom Apt in Birmingham City Centre - 20 Nights Left!"
+    ],
+    "rewritten_desc": "This stylish 2-bedroom apartment lies in the heart of Birmingham City Centre, a perfect spot to explore the city's famous attractions, museums, and lively nightlife. The property boasts a comfortable layout, sleeping up to 4 guests. With a short walk to popular destinations, it's an ideal choice for friends and families alike. Enjoy the convenience of being close to the city's transportation network, amenities, and restaurants. With its perfect balance of location and affordability, this apt is perfect for business or leisure travelers.",
+    "top_amenity_gaps": [
+      "Outdoor facilities, such as a balcony or garden, would be a great addition.",
+      "In-buiding Parking facilities would greatly increase guest convenience and safety.",
+      "On-site entertainment options like a gym or lounge would enhance the overall stay."
+    ],
+    "photo_order_rec": "The cover photo should be of the living area, showcasing the city view and natural light.",
+    "key_diagnosis": [
+      "Price is set 17% below the median (\u00a3175) nightly rate of similar listings in the same market, which may indicate an attractive value proposition for guests.",
+      "Occupancy is 20.7% booked with 71 open nights, which is 8.7% lower than the cohort average (28.3% occupancy over 90 days) in the same market.",
+      "Photos are not provided, which might impact the listing's ability to compete in a visually-driven market."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Anisah, your \u00a3144.44 nightly rate is 17% less than the market median, but occupancy is still lagging 8.7% behind the competition. Let's discuss how to boost bookings.",
+    "weakest_element": "photos"
+  }
+}

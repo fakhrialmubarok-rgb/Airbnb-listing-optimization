@@ -1,0 +1,39 @@
+{
+  "listing_id": "1472392181617383894",
+  "host_name": "Calum",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 353.6,
+    "occupancy_pct": 56.5,
+    "open_nights_90d": 39,
+    "revenue_at_stake_gbp": 13790.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "2\u2011min walk to NEC \u2013 Luxury Suite for 4",
+      "Premium NEC Location \u2013 Upscale 4\u2011Guest Suite",
+      "Luxury Suite Near NEC \u2013 Walk 2 mins, High\u2011End"
+    ],
+    "rewritten_desc": "Welcome to your exclusive, all\u2011private home just two minutes\u2019 walk from the NEC. This upscale, fully\u2011equipped suite comfortably accommodates up to four guests, making it perfect for families or small groups seeking a premium stay in the heart of the city. Guests enjoy a spacious living\u2011area, a modern bedroom with high\u2011quality linens, and a sleek bathroom stocked with essentials. With a nightly rate of \u00a3353.60, you receive a level of luxury that far exceeds the local median of \u00a3154.60. \n\nOur property has earned a strong 4.81 rating from 216 satisfied travelers, reflecting consistent cleanliness, comfort, and attentive service. Although Calum is a new host, the flawless condition of the home and its prime location ensure a memorable experience. Over the next 90 days, the calendar shows a 56.5% occupancy rate, leaving 39 open nights ready for new guests. \n\nWhether you\u2019re attending an event at the NEC, exploring the city, or simply relaxing in a high\u2011end setting, this suite offers the perfect blend of convenience and elegance. Book now to enjoy a luxurious base just steps from the exhibition centre, with all the comforts of home and the prestige of a premium address.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, terrace, or garden)",
+      "Dedicated on\u2011site parking",
+      "In\u2011suite entertainment (Smart TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged shot of the main living/bedroom area as the cover photo\u2014it showcases the luxury feel and immediately signals the premium experience to guests.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3353.6 (129% above the market median of \u00a3154.6) to around \u00a3180\u2011\u00a3200 to align price with demand and boost occupancy.",
+      "Correct the title to reflect the true capacity (4 guests) and highlight the 2\u2011minute walk to the NEC, eliminating the misleading \"6\u2011Person Suite\" claim.",
+      "Add and prominently list high\u2011value amenities\u2014outdoor space, parking, and entertainment\u2014to match guest expectations and improve the amenities score."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your suite commands \u00a3353/night\u2014\u202f129% above the market median\u2014yet occupancy sits at only 56.5%, leaving clear room to capture more bookings with a price tweak.",
+    "weakest_element": "photos"
+  }
+}

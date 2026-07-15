@@ -1,0 +1,39 @@
+{
+  "listing_id": "24621469",
+  "host_name": "Phil",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 178.0,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 10146.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 5,
+    "score_amenities": 6,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Peak District Barn Retreat \u2013 Luxury for 4",
+      "Rustic Barn House with Wood\u2011Fire Stove & Views",
+      "Self\u2011Contained Barn \u2013 Near Sheffield Michelin"
+    ],
+    "rewritten_desc": "Discover a beautifully restored barn conversion set in the rolling open countryside of Ughill, right inside the Peak District National Park. Ideal for explorers, the property offers immediate foot\u2011path access across the moors and a short drive to Sheffield\u2019s city centre, where you\u2019ll find shops, pubs, restaurants and the Michelin\u2011starred Joro just 10 minutes away.\n\nThe ground floor welcomes you with a spacious double bedroom and a sleek en\u2011suite bathroom with a shower. A fully equipped kitchen\u2014including a dishwasher\u2014flows into an open\u2011plan vaulted dining hall and a family bathroom with a bathtub. A set of stairs leads to a cosy upper lounge featuring a wood\u2011burning stove, Smart TV and plenty of natural light. A second double bedroom enjoys its own private staircase for added privacy.\n\nAll guests enjoy self\u2011contained comfort: fresh linens, towels, hair\u2011dryer, essentials, Wi\u2011Fi, indoor fireplace, heating, and a selection of books and board games. Outside, a picnic table sits in the orchard for sunny afternoons. With capacity for four, this barn offers a perfect blend of rural peace and modern luxury, making it an unforgettable base for your Peak District adventure.",
+    "top_amenity_gaps": [
+      "Washing machine",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use the exterior shot of the Beautiful Barn Conversion as the cover photo\u2014it showcases the unique barn silhouette against the Peak District scenery and immediately differentiates the listing.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3178 is 70% higher than the market median (\u00a3104.90) while occupancy over the next 90 days is only 37% (57 open nights), indicating price is suppressing bookings.",
+      "Add a washing machine (and ideally a dryer) to meet the expectations of families and longer\u2011stay guests; the lack of laundry facilities is a common reason for lower conversion.",
+      "Increase the photo count from 19 to at least the market median of 23 and ensure each bedroom, kitchen, lounge, and bathroom is represented; replace the current lead image with the striking exterior barn view."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your barn commands a \u00a3178 nightly rate \u2013 70% above the local median \u2013 yet occupancy this quarter is only 37%, leaving roughly 57 nights open that could be booked with a smarter pricing strategy.",
+    "weakest_element": "photos"
+  }
+}

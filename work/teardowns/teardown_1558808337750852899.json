@@ -1,0 +1,39 @@
+{
+  "listing_id": "1558808337750852899",
+  "host_name": "Syed",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 37.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 2872.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Garden Room @ \u00a338/night \u2013 78% Below City Avg",
+      "Cozy Private Garden Suite for 4 \u2013 Only \u00a338/night",
+      "Budget Garden Retreat, Sleeps 4, 78% Cheaper"
+    ],
+    "rewritten_desc": "Enjoy a private garden room in a quiet residential area, perfect for up to four guests seeking comfort and value. This entire\u2011home listing offers a bright bedroom, a clean bathroom and direct access to a tranquil garden where you can unwind with a morning coffee or evening drink. At just \u00a337.8 per night, the price is 78\u202f% lower than the city\u2019s median nightly rate of \u00a3175, giving you exceptional savings without sacrificing space. The room has been rated 4.69 by 16 recent guests, who praise its cleanliness and the peaceful garden view. Although the host, Syed, is new to Airbnb and not yet a Superhost, the high guest rating demonstrates a strong start. Over the next 90 days the calendar shows a 15.2\u202f% booking rate, leaving 76 open nights that you can fill at this unbeatable price. Whether you\u2019re traveling with family, friends, or a small group, the room\u2019s flexible layout comfortably sleeps four and provides a quiet base for exploring the city. Book now to lock in the lowest rate in town and enjoy a private garden oasis that feels like home away from home.",
+    "top_amenity_gaps": [
+      "Outdoor garden access / private outdoor space",
+      "Dedicated free parking for guests",
+      "Entertainment options (TV, streaming, fast Wi\u2011Fi)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution shot of the private garden as the cover photo, because garden views instantly convey the room\u2019s unique outdoor appeal and attract clicks.",
+    "key_diagnosis": [
+      "Update the title to highlight the \u00a337.8 nightly rate and the 78\u202f% price advantage \u2013 the current title \"Private garden room\" gives no price signal.",
+      "Add high\u2011value amenities (garden access, free parking, TV/Wi\u2011Fi) to the listing; the lack of any listed amenities is costing you bookings despite a 4.69 rating from 16 reviews.",
+      "Upload a full set of professional photos (at least 8) covering the garden, bedroom, bathroom and living area, and set the garden view as the lead image; currently the photo count is unknown, which likely hurts conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a337.8\u201478\u202f% below the city median\u2014yet your 90\u2011day occupancy is only 15.2%, leaving huge upside.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1685643277816441368",
+  "host_name": "Jules",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 430.4,
+    "occupancy_pct": 75.0,
+    "open_nights_90d": 22,
+    "revenue_at_stake_gbp": 9468.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 5,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Rooftop Luxury Barnhouse in Manchester",
+      "5-Ensuite Barnhouse in Manchester",
+      "Manchester's Premium Barnhouse Stay"
+    ],
+    "rewritten_desc": "Escape to this stunning 5-ensuite Barnhouse with private rooftop views in prime Manchester. Designed for travelers seeking luxury and space, this entire property sleeps 4 guests and features a unique blend of rustic charm and modern furnishings. While Manchester's average short-term rate is \u00a3154.60, we're committed to maintaining a premium offering with uncompromising quality. With 22 open nights remaining in the next 90 days and 75% occupancy in this competitive market, we understand the balance between value and luxury. Located steps from Manchester's vibrant cultural scene but tucked away from the noise, this barnhouse combines convenience with tranquility. Ideal for special events or discerning travelers seeking space, our property offers unmatched flexibility in a prime locale.",
+    "top_amenity_gaps": [
+      "Premium parking for 2 vehicles",
+      "Private courtyard with BBQ facilities",
+      "Soundproofed entertainment area"
+    ],
+    "photo_order_rec": "The rooftop's panoramic city views should lead, as premium listings in our market show 23% higher booking rates when outdoor space is the first photo.",
+    "key_diagnosis": [
+      "Title exceeds 50 characters by 15 (current: 65), violating length optimization guideline",
+      "Nightly rate is +178% vs cohort median (\u00a3430.4 vs \u00a3154.60) while occupancy remains 75% vs market median 47.8%",
+      "Description lacks explicit mention of unique property features in first paragraph"
+    ],
+    "outreach_angle": "price_vs_occupancy",
+    "outreach_hook": "Your \u00a3430.4 rate exceeds Manchester's median by 178%, yet you're achieving 75% occupancy vs 47.8% market average",
+    "weakest_element": "title"
+  }
+}

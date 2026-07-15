@@ -62,9 +62,12 @@ PROMPT_TEMPLATE = (
     "window into a door or balcony). "
     "{tv_rule}"
     "ABSOLUTE RULE — the room contains EXACTLY the objects in the original photo, no more, "
-    "no less: do NOT add any throw, blanket, cushion, plant, tray or decor of any kind. "
+    "no less: do NOT add any throw, blanket, cushion, plant, tray, vase, book, lamp or "
+    "decor of any kind — NOT EVEN if the room looks bare. Do NOT draw curtains or add "
+    "curtains where none exist. Do NOT add a TV where none exists. "
     "Do not move, remove, resize or relocate anything. Same furniture, same wall art, same "
-    "positions. Only lighting, curtain position, tidiness and camera geometry improve. "
+    "positions. Only lighting, curtain OPENING (if curtains already exist), tidiness and "
+    "camera geometry improve. "
     "Perfectly level camera, dead straight verticals, no tilt. Composition: main "
     "furniture in the lower two-thirds of frame with breathing room above, camera at "
     "about 110cm. "
@@ -651,6 +654,23 @@ def main():
             print(f"[step3] {lid}: manifest exists — skipping (rerun-safe)")
             row["status"] = "Photos Done"
             continue
+
+        # Skip photo processing for listings with already-good photos.
+        # These hosts get text-only teardown — the written analysis is the value-add.
+        td_path = HERE / "work" / "teardowns" / f"teardown_{lid}.json"
+        if td_path.exists():
+            try:
+                td = json.loads(td_path.read_text())
+                si = td.get("analysis", {}).get("score_images") or 0
+                pc = int(row.get("photo_count") or 0)
+                if pc > 20 and si >= 7:
+                    print(f"[step3] {lid}: ok-photos (count={pc}, score={si}) — text-only teardown, skipping photo regen")
+                    row["status"] = "Photos Done"
+                    from tracker_io import write_rows
+                    write_rows(TRACKER_CSV, rows)
+                    continue
+            except Exception:
+                pass
 
         res = process_lead(l, cap=cap)
         row["status"] = "Photos Done"

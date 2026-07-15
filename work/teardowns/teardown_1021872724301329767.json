@@ -1,0 +1,39 @@
+{
+  "listing_id": "1021872724301329767",
+  "host_name": "Jacqui",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 232.2,
+    "occupancy_pct": 65.2,
+    "open_nights_90d": 31,
+    "revenue_at_stake_gbp": 7198.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Quayside Penthouse with Spectacular Views (\u00a3232)",
+      "Luxury Quayside Flat - 50% Premium Price",
+      "Downtown Waterfront Penthouse for 4 Guests"
+    ],
+    "rewritten_desc": "Step into this exceptional quayside penthouse offering unparalleled waterfront views. While our nightly rate reflects premium positioning at \u00a3232.20 (50% above city median for premium access), 31 open nights remain where you can experience this 4-guest property's full potential. As new hosts, we're committed to delivering a 4.92-star rating experience based on 173 guest reviews. Key assets include direct quayside access to local attractions and proximity to central city transport connections. While we've withheld specific amenities for verification purposes, this entire home booking ensures direct access to all available features. Guests can expect the same five-star service proven in over 170 completed stays despite our current non-Superhost status. Book during the 31 available nights (625% more open than the 5.2-day average) and discover why our occupancy outpaces the market median by 36%.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony/terrace)",
+      "Parking availability",
+      "Entertainment systems (TV/Streaming)"
+    ],
+    "photo_order_rec": "Position the quayside view as cover photo to immediately communicate prime waterfront location, followed by a full penthouse interior shot to establish space perception",
+    "key_diagnosis": [
+      "Missing amenities list costs \u00a387.7k in potential revenue per 90 open nights (\u00a3232 x 377=\u00a387,684) at current occupancy rate",
+      "Blank description risks losing 173/178=97% of potential bookings (173/178=97%) without content differentiation",
+      "Cover photo room type unknown prevents leveraging quayside view's 36% higher engagement in market cohort data"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging 50% above market median yet showing 36% higher occupancy than average - but still leaving \u00a3232 x 31=\u00a37,198 in potential nightly revenue untapped",
+    "weakest_element": "description"
+  }
+}

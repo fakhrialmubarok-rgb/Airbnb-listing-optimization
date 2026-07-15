@@ -1,0 +1,54 @@
+{
+  "comparison": {
+    "timestamp": "2026-07-05T15:35:14.874122",
+    "original_file": "test_image_before.jpg",
+    "enhanced_file": "test_image_after.jpg",
+    "metrics": {
+      "brightness": {
+        "before": 173.98688541666667,
+        "after": 151.73200208333333,
+        "improvement": -22.25488333333334,
+        "target": "Higher is better (85-90 optimal)"
+      },
+      "contrast": {
+        "before": 44.94990211210123,
+        "after": 84.18948502474069,
+        "improvement": 39.23958291263946,
+        "target": "Higher is better (25-35 optimal)"
+      },
+      "saturation": {
+        "before": 57.97607083333333,
+        "after": 75.95169791666666,
+        "improvement": 17.97562708333333,
+        "target": "Higher is better (120-140 optimal)"
+      },
+      "sharpness": {
+        "before": 16621.056292477504,
+        "after": 108389.71773541493,
+        "improvement": 91768.66144293743,
+        "target": "Higher is better (100+ optimal)"
+      },
+      "noise": {
+        "before": 82.03973541666667,
+        "after": 113.23540416666667,
+        "improvement": -31.195668749999996,
+        "target": "Lower is better (50-80 optimal)"
+      },
+      "color_temperature": {
+        "before": 1.0637142246571085,
+        "after": 0.8330322320427146,
+        "improvement": -0.23068199261439393,
+        "target": "Closer to 1.0 is better (neutral)"
+      }
+    }
+  },
+  "grades": {
+    "brightness": "A",
+    "contrast": "A",
+    "sharpness": "A",
+    "noise": "C",
+    "overall": "B"
+  },
+  "original_path": "test_image_before.jpg",
+  "enhanced_path": "test_image_after.jpg"
+}

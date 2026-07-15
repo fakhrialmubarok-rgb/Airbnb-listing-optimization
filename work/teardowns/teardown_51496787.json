@@ -1,0 +1,39 @@
+{
+  "listing_id": "51496787",
+  "host_name": "Oliver",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1174.0,
+    "occupancy_pct": 40.2,
+    "open_nights_90d": 54,
+    "revenue_at_stake_gbp": 63396.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Luxury Brookhouse with Hot Tub for 4 Guests",
+      "Exclusive Hot Tub Home in Brookhouse",
+      "Private Hot Tub Cottage for 4"
+    ],
+    "rewritten_desc": "Escape to Brookhouse in this exquisite family home featuring a private hot tub perfect for unwinding after a day of exploring. With dedicated parking and spacious living areas across 4 bedrooms, this is an ideal retreat for vacationers seeking both privacy and luxury. The hot tub offers breathtaking views, creating the perfect atmosphere for romantic getaways or family vacations. Just a short walk to local attractions, this home combines comfort with convenience. Sleeps up to 4 guests in beautifully appointed bedrooms, each with modern amenities. The fully equipped kitchen makes it easy to prepare meals at home while you enjoy the seasonal outdoor space. With its prime location and high-end features, this is the ultimate holiday destination. Book now to experience exceptional service and a truly memorable stay.",
+    "top_amenity_gaps": [
+      "Lack of listed amenities despite high-end property",
+      "No entertainment options listed",
+      "Parking confirmation missing"
+    ],
+    "photo_order_rec": "The hot tub area should be the cover photo as it's a major differentiator for this luxury listing",
+    "key_diagnosis": [
+      "Priced at \u00a31174/night which is +659% above cohort's \u00a3154.60 median rate while occupancy is 40.2% (54 open nights) vs cohort's 47.8% median",
+      "No listed amenities despite being a premium listing with potential for high-end features",
+      "Description is underdeveloped at 87 characters vs industry average of 200-300 words"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a31174/night property has 54 open nights at 40% occupancy while the market median is 47.8%",
+    "weakest_element": "amenities"
+  }
+}

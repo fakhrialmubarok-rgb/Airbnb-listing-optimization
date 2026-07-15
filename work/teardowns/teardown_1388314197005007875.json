@@ -1,0 +1,39 @@
+{
+  "listing_id": "1388314197005007875",
+  "host_name": "Juli",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 189.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14364.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 0,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Private Backyard Retreat near Shops",
+      "Free Parking near Local Businesses",
+      "Luxury Home with Private Garden, Shops Nearby"
+    ],
+    "rewritten_desc": "Welcome to our luxurious home, perfectly positioned close to local shops and amenities. With four comfortable bedrooms and a spacious private garden, it's the perfect choice for families and groups of friends. Our home is fully equipped with everything you need for a relaxing stay, including free parking for your convenience. We're committed to providing a warm and welcoming space for our guests, and we can't wait to share it with you. As a host with high standards, you can expect a spotless and well-maintained property, complete with luxurious touches and attention to detail. We're excited to have you stay with us!",
+    "top_amenity_gaps": [
+      "Outdoor amenities such as seating areas or fire pits",
+      "Parking facilities for guests with disabilities",
+      "Entertainment options such as board games or streaming services"
+    ],
+    "photo_order_rec": "The backyard should be the cover photo as it's a unique selling point. Showcase the lush greenery and inviting seating areas to entice potential guests.",
+    "key_diagnosis": [
+      "With a 15.2% occupancy rate, significantly lower than the median 28.3% of the same-city cohort, we need to enhance the listing's appeal to increase bookings.",
+      "With zero amenities listed, a major opportunity lies in adding high-value categories such as Outdoor, Parking and facilities, and Entertainment to the listing to attract more guests.",
+      "With an unknown number of images and no labelled room types, we need to add more and reorganise them to showcase the property's best features, ideally starting with the impressive backyard."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Our analysis reveals a significant opportunity to improve occupancy and drive more bookings, and we'd love to assist with optimising your listing to achieve this goal.",
+    "weakest_element": "photos"
+  }
+}

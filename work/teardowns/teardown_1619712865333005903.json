@@ -1,0 +1,39 @@
+{
+  "listing_id": "1619712865333005903",
+  "host_name": "Joost",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 119.86,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 8629.92
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 10,
+    "score_images": null,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Leeds City-Centre 1-Bed Roof Ter & \u00a3119",
+      "4G Leeds City 1-Bed w/ Rooftop \u00a3119.86",
+      "Leeds City Centre 1-Bed with 4G Access \u00a3119"
+    ],
+    "rewritten_desc": "Imagine waking up in the heart of Leeds, surrounded by vibrant culture and entertainment options. This 1-bedroom apartment boasts a private roof terrace, perfect for soaking up the sun or enjoying a BBQ with friends. With 4 guests comfortably accommodated, it's an ideal spot for families, couples, or groups of friends. Located in the midst of the city centre, you'll be just a short walk from major attractions and amenities. The apartment itself is a serene oasis, with a spacious living area and a fully equipped kitchen. The private roof terrace offers breathtaking views of the city, and a great spot to relax after a long day. With a 4.66 rating and 400 reviews, we're confident you'll love your stay here. Please note that this apartment is an entire home, and you'll have access to 72 open nights over the next 90 days. With a nightly rate of \u00a3119.86, it's a rare gem in the Leeds market that won't break the bank. Don't miss out on this amazing opportunity to live like a local in the heart of the city!",
+    "top_amenity_gaps": [
+      "Outdoor space with a private roof terrace",
+      "Parking and facilities, to cater to guests with vehicles",
+      "Entertainment options, such as a projector or board games"
+    ],
+    "photo_order_rec": "The private roof terrace should be the cover photo, as it's the strongest differentiator and a major selling point of the apartment. This will showcase the views and the unique outdoor space, drawing potential guests in.",
+    "key_diagnosis": [
+      "Their \u00a3119.86 nightly rate is -32% vs the cohort median of \u00a3175.00, indicating a significant price gap that may be deterring bookings.",
+      "At 19.6% booked occupancy, they're 8.7% points below the cohort median of 28.3%, suggesting a major opportunity to improve occupancy.",
+      "This listing lacks specific photos of each room type, which may make it harder for potential guests to visualize themselves in the space."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Given their \u00a3119.86 nightly rate and 72 open nights over the next 90 days, we believe we can double their occupancy to match the market average of 28.3%.",
+    "weakest_element": "description"
+  }
+}

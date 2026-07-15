@@ -1,0 +1,39 @@
+{
+  "listing_id": "1681316531603272107",
+  "host_name": "Stephen",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 135.0,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 6750.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "2BR Flat Deansgate | \u00a3135 Night | Free Parking",
+      "Central Manchester Flat | 2BR for 4 | \u00a3135",
+      "Modern 2-Bedroom Flat | 4 Guests | Deansgate"
+    ],
+    "rewritten_desc": "This bright, modern 2-bedroom flat in Deansgate, Manchester, sleeps up to 4 guests across its twin/double layout. Located in a bustling area, the entire home is yours with secure entry and all necessary furnishings for comfort. The nightly rate of \u00a3135 reflects a 13% discount below typical pricing in Manchester, offering great value for longer stays or multiple guests. Recent guests praise the space\u2019s cleanliness and location, with a rating of 4.92 from 66 reviews. While currently 44.6% booked for the next 90 days, the listing lacks explicit details about amenities like outdoor access, parking availability, and entertainment features\u2014key categories that drive interest in Manchester\u2019s competitive market. Stephen, the new host, ensures a straightforward experience with clear communication. Guests will have exclusive access to the property, ensuring a private retreat in a vibrant city neighborhood.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/roof/balcony)",
+      "On-site parking",
+      "Smart TV or streaming equipment"
+    ],
+    "photo_order_rec": "The living room should be the cover photo to showcase the property\u2019s layout and overall aesthetic immediately\u2014this room is critical for first impressions in flat listings.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a318.65 (-13%) below Manchester\u2019s median \u00a3154.60, yet 90-day occupancy (44.6%) is 3.2pp lower than cohort median (47.8%)",
+      "Description section is completely empty, with no textual details to differentiate the listing from 201 competing Deansgate properties",
+      "Zero amenities are listed in a market where 80%+ of top performers explicitly name parking, outdoor access, or entertainment features"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your pricing is 13% below the Manchester median, yet occupancy lags 3.2 percentage points below the market average\u2014for better leverage, consider enhancing your listing\u2019s competitiveness.",
+    "weakest_element": "description"
+  }
+}

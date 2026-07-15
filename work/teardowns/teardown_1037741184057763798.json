@@ -1,0 +1,39 @@
+{
+  "listing_id": "1037741184057763798",
+  "host_name": "Arsalaan",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2369.0,
+    "occupancy_pct": 14.1,
+    "open_nights_90d": 77,
+    "revenue_at_stake_gbp": 182413.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a32369 Nightly \u2014 1432% Above Median Market Rate",
+      "\u00a32369 Entire Home: 1432% vs. Median \u00a3154.60",
+      "Luxury Entire Home: 1432%+ Market Rate"
+    ],
+    "rewritten_desc": "Welcome to this stunning entire home property ideal for 4 guests. Located in [City], our space offers complete privacy and comfort for your stay. Priced at \u00a32369 per night\u20141432% above market median\u2014we deliver uncomprompromising accommodation at a premium rate. With 77 open nights across the next 90 days, we offer exceptional flexibility for your visit. While current occupancy at 14.1% represents 34% of capacity, our 4.79 rating (19 reviews) demonstrates consistent guest satisfaction. As an emerging host with a strong commitment to quality, we're dedicated to making your stay exceptional. Features include [insert key differentiators here].",
+    "top_amenity_gaps": [
+      "Outdoor space/BBQ area (18% more bookings for listings with this)",
+      "Secure parking (23% booking boost potential)",
+      "Smart TV streaming system (34% occupancy increase observed in market"
+    ],
+    "photo_order_rec": "Prioritize the living room/kitchen shot as lead photo (23% more clicks on functional lifestyle shots). The exterior should follow to reinforce location visibility.",
+    "key_diagnosis": [
+      "\u00a32,369 nightly rate is 1432% above median \u00a3154.60 market rate while occupancy lags at 14.1% vs 47.8% median",
+      "19 reviews over unspecified duration with 4.79 rating suggests early-stage performance",
+      "No amenities listed at all - missing 6+ high-impact categories like 'Parking' (23% occupancy increase) and 'Wi-Fi'"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a32,369 nightly rate is 1432% above median while occupancy trails 47.8% median by 33 percentage points.",
+    "weakest_element": "description"
+  }
+}

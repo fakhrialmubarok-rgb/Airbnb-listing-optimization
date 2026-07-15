@@ -1,0 +1,39 @@
+{
+  "listing_id": "1599825240629436177",
+  "host_name": "Yaw",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 176.05,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 12675.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 7,
+    "score_images": 6,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Birm 4BR Home + Free Private Parking",
+      "4BD Birmingham Retreat | Spacious & Free Parking",
+      "Central Birmingham Stay | 4BR + Free Car Park"
+    ],
+    "rewritten_desc": "Nestled in the heart of Birmingham, this spacious 4-bedroom home offers an urban escape within easy reach of the city's vibrant culture and amenities. Designed for groups seeking privacy and comfort, the property features a fully equipped kitchen ideal for home-cooked meals and a generous living area perfect for gatherings. With free private parking\u2014a rare convenience in central locations\u2014guests can arrive stress-free. The property sleeps 4 comfortably, making it ideal for families, friends, or business travelers needing a reliable base. Located within a short walk of Birmingham New Street station and major retail hubs like Bullring, this home blends convenience with a peaceful atmosphere. Enjoy secure parking without the hassle of searching for public spaces, ensuring a seamless start to your trip. While the host has limited reviews, the property\u2019s 4.72-star rating across 164 stays speaks to its cleanliness and reliability. Book confidently with access to clear photos and straightforward communication from Yaw, the host. Whether you\u2019re attending events at the NEC or exploring local history, this central Birmingham retreat positions you for an unforgettable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/garden)",
+      "Smart home tech (Wi-Fi speed)",
+      "Dedicated workspace setup"
+    ],
+    "photo_order_rec": "Living room photo should lead to showcase the home's social space and confirm the 'Entire home' offering immediately",
+    "key_diagnosis": [
+      "19.6% occupancy vs cohort median of 28.3% = 12-night gap in next 90 days at \u00a3176/night",
+      "Title exceeds 50 characters and lacks SEO focus on Birmingham postcode area",
+      "Description lacks 3 high-value categories (Outdoor, Parking features, Entertainment) despite listing free parking"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 72 open nights at \u00a3176/night and 19.6% occupancy\u201412 nights below Birmingham's median\u2014this listing has \u00a310,056 in untapped revenue potential this quarter",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1551612215095607075",
+  "host_name": "Yunas And Naz",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 136.26,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 8720.64
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a314 Cheaper! Garden Home + Free Parking Near City (\u00a3136)",
+      "4-Guest Garden House: City Centre Walk, No Car Fee",
+      "Charming Garden Retreat with Free Parking & City Access"
+    ],
+    "rewritten_desc": "Escape to this charming 4-guest entire home offering rare garden access and free parking, perfectly located to walk to the city center. Priced 12% below the local market median (\u00a3136 vs \u00a3155), this highly-rated (4.9/5 \u2605 \u2605 \u2605 \u2605 \u2605) property has served 233 guests who praised its tranquil garden setting and convenient parking. Despite its competitive rate, your current 29% 90-day occupancy lags behind the cohort median of 47.8% \u2014 showcasing untapped potential. Enjoy the unique combination of private outdoor space in a city listing and the assurance of free on-site parking without compromising location (just a walk away from the city core). Ideal for urban explorers who want garden serenity at a price that outcompetes 75% of local listings in this price bracket. Recent guests highlighted the garden's appeal \u2014 one reviewer called it 'the best outdoor space I've seen in a city listing!' Upgrade your listing's visibility with clear, high-res photos of the garden and parking space to match your price's competitiveness.",
+    "top_amenity_gaps": [
+      "Wi-Fi/Internet access",
+      "Kitchen essentials visibility",
+      "Garden amenities (seating, tools, etc.)"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle garden photo for cover image \u2014 outdoor space is a high-value feature in this market and your own reviews highlight its importance. Follow with full exterior facing the street to showcase parking availability.",
+    "key_diagnosis": [
+      "Description is functionally nonexistent (score 1/10), missing 233-review insights and 4.9 rating validation that could attract 183 additional bookings (64 open nights x \u00a3136 = \u00a38720 in lost revenue)",
+      "Garden and parking features aren't properly tagged in amenities section \u2014 despite being in title, these high-value amenities aren't explicitly listed to trigger algorithmic visibility",
+      "Current 29.3% occupancy is 39% below cohort median (47.8%) despite 12% price discount \u2014 indicates price is insufficient compensation for perception gaps in other areas"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Despite a 12% lower nightly rate than the market median (\u00a3136 vs \u00a3155), your 90-day occupancy is significantly below average at 29% booked (64 open nights when cohorts average 47.8% occupancy)",
+    "weakest_element": "description"
+  }
+}

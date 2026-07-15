@@ -1,0 +1,39 @@
+{
+  "listing_id": "42402895",
+  "host_name": "Manny",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 135.0,
+    "occupancy_pct": 28.3,
+    "open_nights_90d": 65,
+    "revenue_at_stake_gbp": 8775.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a3135 Modern Apt 1 Mile from City \u2013 23% Below Avg",
+      "Cozy 1\u2011Bed Apartment, 4 Guests, 1 Mile to Centre",
+      "Bright Modern Flat, 23% Cheaper, Near City"
+    ],
+    "rewritten_desc": "Enjoy a stylish, modern half\u2011bedroom apartment just one mile from the city centre, perfect for up to four guests. This entire home offers a bright living space with contemporary d\u00e9cor, a fully equipped kitchen, and a comfortable sleeping area that sleeps two adults and two children or friends. At \u00a3135 per night, the rate is 23% lower than the city\u2019s median nightly price of \u00a3175, giving you great value without compromising on comfort. The apartment is located in a quiet neighbourhood yet only a short walk or easy public\u2011transport ride to major attractions, shopping, and dining. With 493 reviews and an overall rating of 4.39, previous guests appreciate the clean, well\u2011maintained space and the host\u2019s responsive communication. While the listing is not yet a Superhost, the high review count reflects consistent guest satisfaction. The next 90 days show 28.3% occupancy (65 open nights), indicating ample opportunity to attract more bookings, especially at this competitive price. Whether you\u2019re visiting for business, a short city break, or a family getaway, this modern flat provides a convenient, affordable base to explore the city\u2019s vibrant culture and landmarks.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or terrace)",
+      "Dedicated parking or secure bike storage",
+      "Entertainment amenities (smart TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area with city views as the cover photo \u2013 it showcases the modern d\u00e9cor and proximity to the centre, driving higher click\u2011through rates.",
+    "key_diagnosis": [
+      "Highlight the 23% price advantage in the title and description \u2013 your rate of \u00a3135 is \u00a340 below the cohort median of \u00a3175, a strong selling point that\u2019s currently missing.",
+      "Add high\u2011value amenities (outdoor balcony, free parking, streaming TV) to the amenities list \u2013 these categories are absent and are proven to boost search ranking and guest appeal.",
+      "Upload a full set of high\u2011quality photos (minimum 8, covering living room, bedroom, kitchen, bathroom, view, and a cover image) \u2013 the listing currently has an unknown photo count, far below the market average of 12 images."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a3135, which is 23% lower than the city\u2019s median of \u00a3175 yet your 90\u2011day occupancy sits at just 28.3% \u2013 there\u2019s clear upside to capture more bookings.",
+    "weakest_element": "description"
+  }
+}

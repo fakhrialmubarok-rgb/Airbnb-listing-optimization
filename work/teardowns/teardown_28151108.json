@@ -1,0 +1,39 @@
+{
+  "listing_id": "28151108",
+  "host_name": "Micheal",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.6,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 9516.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Bright 2\u2011Bed Apt \u2013 27% Below Market Rate",
+      "Modern Large 2\u2011Bed for \u00a3129 \u2013 Save 27%",
+      "Spacious 2\u2011Bedroom Apt \u2013 Low \u00a3128 Night"
+    ],
+    "rewritten_desc": "Welcome to a bright, modern and generously\u2011sized two\u2011bedroom apartment in the heart of the city. This entire\u2011home rental comfortably sleeps up to four guests, making it perfect for families, small groups, or business travelers seeking space and style. The open\u2011plan living area is flooded with natural light, showcasing contemporary d\u00e9cor and a fully equipped kitchen ready for any culinary adventure. Both bedrooms feature large windows and ample storage, ensuring a restful night\u2019s sleep. \n\nAt just \u00a3128.6 per night, this apartment is priced 27% below the city\u2019s median nightly rate of \u00a3175, offering exceptional value without compromising comfort. Guests have already left a strong 4.48 rating from 97 reviews, praising the cleanliness, location, and overall experience. While you\u2019re not yet a Superhost, the positive feedback demonstrates a solid foundation for growth. \n\nCurrent occupancy for the next 90 days sits at 17.4% (only 74 open nights), well under the market median of 28.3%, indicating significant upside potential. Whether you\u2019re exploring nearby attractions, attending a conference, or simply unwinding after a day out, this apartment provides a convenient base with easy access to transport, dining, and entertainment. Book now to enjoy a spacious, well\u2011appointed home at a remarkable price.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or garden)",
+      "Parking availability",
+      "Entertainment options (TV, streaming services, board games)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution shot of the bright living area as the cover photo \u2013 it showcases the apartment\u2019s size, natural light, and modern d\u00e9cor, immediately capturing guest interest.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities (outdoor, parking, entertainment) \u2013 these three categories are missing and could lift perceived value, helping convert the 17.4% occupancy (10.9\u202fpp below market) into bookings.",
+      "Update the title to highlight the 27% price advantage \u2013 the current title scores 4/10 and omits the strongest differentiator, which could improve click\u2011through rates.",
+      "Create and upload a complete photo set covering living room, bedrooms, kitchen and bathroom \u2013 with unknown photo count, adding at least 8 well\u2011lit images can boost the image score from 3/10 and improve conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 27% below the city median yet only 17.4% occupied over the next 90 days\u2014there\u2019s huge upside to capture more bookings.",
+    "weakest_element": "description"
+  }
+}

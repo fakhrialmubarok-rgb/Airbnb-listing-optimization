@@ -1,0 +1,39 @@
+{
+  "listing_id": "879716653760872927",
+  "host_name": "Molly",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 169.0,
+    "occupancy_pct": 64.1,
+    "open_nights_90d": 32,
+    "revenue_at_stake_gbp": 5408.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 8,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Spacious 6\u2011guest cottage with valley views",
+      "Family\u2011friendly Peak District retreat, dogs ok",
+      "Luxury cottage near Sheffield, walking & climbing"
+    ],
+    "rewritten_desc": "Charlesworth\u2019s sits on the edge of the Peak District, just a short drive from Sheffield, giving guests the best of both city convenience and countryside serenity. The upside\u2011down layout places the lounge at the front to capture breathtaking valley and mountain vistas. Inside, the bright, airy kitchen boasts integrated dishwasher, fridge, freezer and granite worktops, while the large dining table comfortably seats ten. The lounge offers leather seating for six, a 43\u2011inch smart TV and direct views of the surrounding hills. A boot\u2011room with sink and washer lets you stash dogs for up to four hours. Bedroom\u202f1 features a king\u2011size bed, en\u2011suite with an extra\u2011long bath, a 43\u2011inch TV and a dressing room with full\u2011length mirror. Bedroom\u202f2 provides another king\u2011size bed and wardrobe. Bedroom\u202f3 holds two single beds and a chest of drawers. The main bathroom mirrors the en\u2011suite with an extra\u2011long bath and heated towel radiator. Under the stairs, a spacious workspace with desk is perfect for remote work. Families, contractors and dogs are warmly welcomed, and the property includes essential comforts such as hot water, hairdryer, cleaning products, iron, extra pillows, board games, a travel cot, high chair and baby safety gates. Outdoor enthusiasts will love nearby country walks, pubs, Stanage and Bamford climbing edges, and \u2018Le Tour\u2019 cycling routes, while city attractions like Chatsworth House, Buxton, the Crucible and Tramlines Festival are within easy reach.",
+    "top_amenity_gaps": [
+      "Exterior security cameras (guest safety)",
+      "Tumble dryer (convenient laundry option)",
+      "Carbon monoxide alarm (essential safety device)"
+    ],
+    "photo_order_rec": "Use the living\u2011room shot that shows the panoramic valley view and leather seating as the cover photo\u2014it instantly showcases the unique view and spacious comfort.",
+    "key_diagnosis": [
+      "Price mismatch: nightly rate \u00a3169 is 61% above the Sheffield median (\u00a3104) while 90\u2011day occupancy is only 64% (32 open nights), indicating price may be suppressing bookings.",
+      "Title is generic \u2013 \u201cCharlesworth's\u201d scores 2/10; replace it with keyword\u2011rich, differentiating copy to improve search visibility.",
+      "Cover photo does not highlight the standout view; re\u2011order images so the valley\u2011view lounge image leads, then kitchen, bedrooms, and outdoor spaces."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your cottage is priced at \u00a3169/night \u2013 61% higher than the Sheffield median of \u00a3104, yet its 64% 90\u2011day occupancy suggests a pricing tweak could unlock far more bookings.",
+    "weakest_element": "title"
+  }
+}

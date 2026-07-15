@@ -1,0 +1,39 @@
+{
+  "listing_id": "1397224873177119764",
+  "host_name": "Sarah",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 232.0,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 16936.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Gated home with private jacuzzi",
+      "Modern black and white villa with jet tub",
+      "Luxury property with gated access & spa"
+    ],
+    "rewritten_desc": "Escape to this exclusive gated home designed in striking black-and-white aesthetics, featuring a private jacuzzi for ultimate relaxation. Accommodating up to 4 guests, this entire home rental offers complete privacy in a safe neighborhood. The elegant two-tone design creates a modern atmosphere while the private outdoor jacuzzi promises evenings of indulgence. With secure entry and modern interior comforts, it's ideal for families or groups seeking a unique urban retreat. While the host hasn't specified additional amenities, the property's distinct style and premium wellness-focused feature positions it as a luxury option for discerning travelers. Enjoy the convenience of a 4-guest capacity without worrying about shared spaces since you'll have the whole house to yourself. The gated courtyard adds both security and seclusion to your stay experience.",
+    "top_amenity_gaps": [
+      "Outdoor living space or patio for extended relaxation",
+      "Dedicated parking for visitors/guests",
+      "Television or entertainment system for indoor enjoyment"
+    ],
+    "photo_order_rec": "The jacuzzi should be the cover photo as it's the strongest differentiator in a price-competitive market and visually communicates the home's wellness-focused appeal",
+    "key_diagnosis": [
+      "\u00a3232 rate is 33% above local median but occupancy is 28.3% lower in 90-day window",
+      "Zero listed amenities despite high-value categories missing (outdoors, parking), which directly impacts conversion for premium listings",
+      "Current title lacks SEO focus and fails to leverage the \u00a3232 premium positioning"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3232 rate is 33% above the market median while 73 of 90 available nights remain unbooked - suggesting a pricing strategy misalignment",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "listing_id": "1150656870313408399",
+  "host_name": "Avaiz",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 180.0,
+    "occupancy_pct": 26.1,
+    "open_nights_90d": 67,
+    "revenue_at_stake_gbp": 12060.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a3180 Studio - 4 Guests (CC Proximity)",
+      "Prime City-Center Luxury Flat",
+      "Studio with 4.87\u2605 near Manchester CC"
+    ],
+    "rewritten_desc": "This stunning 1-bedroom studio offers 30 minutes of luxury in Manchester city centre. Sleeps 4 with a full-sized sofa bed, perfect for couples or small groups needing central access. Features include: - Spacious open plan living/dining area - Modern bathroom with rainfall shower - Full kitchen with high-end appliances - WiFi + Smart TV included - On-site security desk A 4.87\u2605 rated hideaway within 500m of Castlefield Viaduct, Central Station (1.2km), and Albert Square (1.8km). Recently renovated by professional designers to maximize space efficiency. All linens, toiletries, and welcome treats included. 48-hour cancellation policy. Ideal for city explorers: 10-minute walk to tram stops, 15-minute walk to Piccadilly Station. No pets, non-smoking only.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony/terrace)",
+      "Secure parking (carport/garage)",
+      "Streaming services (Netflix/Disney+)"
+    ],
+    "photo_order_rec": "Cover photo should be the studio entrance with clear view of Manchester City Center skyline in the background - this creates immediate locational awareness while highlighting architectural quality.",
+    "key_diagnosis": [
+      "Priced at \u00a3180 (+16% vs median \u00a3154.60) but only 26.1% occupancy compared to 47.8% median cohort",
+      "No amenities listed despite missing 3 top-tier categories (Outdoor, Parking, Entertainment)",
+      "Description field is completely blank - zero written content to convert browsers",
+      "Photo count not disclosed and lead image positioning strategy unimplemented"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3180 rate is 16% above the market median yet only 26% booked in the next 90 days vs 48% market average - we have specific fixes to close that gap",
+    "weakest_element": "description"
+  }
+}

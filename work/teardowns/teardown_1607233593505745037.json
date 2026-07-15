@@ -1,0 +1,39 @@
+{
+  "listing_id": "1607233593505745037",
+  "host_name": "Prime Nites",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.0,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 8540.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Luxury Home near Alexander Stadium, parking included",
+      "Cozy House within Walking Distance to Stadium",
+      "Stunning Home with Free Parking close to Alexander"
+    ],
+    "rewritten_desc": "Welcome to our stunning home, perfectly positioned within walking distance to the historic Alexander Stadium. With 4 beautifully appointed bedrooms and free parking, this is the ideal retreat for large families or groups of friends. Enjoy the tranquility of the surrounding area and take advantage of the home's well-equipped kitchen to whip up a feast. Our home sleeps up to 4 guests and is available for short-term stays. We've taken great care to ensure that every room is spotlessly clean and well-maintained. You'll have full access to the entire property, with plenty of space to relax and unwind. Located just a short walk from the stadium, this home is perfect for event-goers or sports enthusiasts. Book now and experience the best of this great location.",
+    "top_amenity_gaps": [
+      "Outdoor space or balcony to take in the surroundings",
+      "Additional amenities in the kitchen, such as a dishwasher or microwave",
+      "Entertainment options, such as a TV or games console"
+    ],
+    "photo_order_rec": "The exterior of the house should be the cover photo, as it sets the tone for the rest of the listing and highlights the home's proximity to the stadium.",
+    "key_diagnosis": [
+      "The host's nightly rate is significantly lower than the cohort median, indicating a potential pricing issue that could be affecting occupancy.",
+      "The home's occupancy rate of 21.7% over the next 90 days is nearly 7% below the market median, suggesting opportunities to increase bookings.",
+      "The listing lacks images, which makes it difficult for potential guests to visualize the space and may be deterring bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home's occupancy rate is lagging behind the market median, which could be costing you \u00a31,330 (70 open nights x \u00a319.00 discount vs cohort median) in potential bookings.",
+    "weakest_element": "photos"
+  }
+}

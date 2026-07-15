@@ -1,0 +1,39 @@
+{
+  "listing_id": "1728502052287538078",
+  "host_name": "Emilia",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 5236.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 397936.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Bradford Studio \u00a35236 Nightly with High-End Amenities",
+      "Central Bradford Property for Elite Guests",
+      "Premium 4-Person Studio in Bradford (Open 76 Nights)"
+    ],
+    "rewritten_desc": "This spacious entire home studio in Bradford offers luxury lodging for up to 4 guests. Set in a prime location, it features modern furnishings and all the comforts of home. With 76 open nights available at \u00a35236 per night, guests can enjoy a private retreat with no neighbors nearby. The home\u2019s high-end construction and exclusive positioning make it ideal for discerning visitors seeking maximum privacy. While the property already offers a complete living experience, new hosts can enhance guest confidence by clearly specifying parking options, outdoor spaces, and entertainment features through an updated amenities list. For business travelers or small groups, this location offers a direct route to major Bradford landmarks. With 15.2% occupancy currently, this listing has significant potential to attract more bookings by aligning pricing strategy with competitive benchmarking.",
+    "top_amenity_gaps": [
+      "Free parking confirmation",
+      "Outdoor space (courtyard/garden)",
+      "High-speed internet speed guarantee"
+    ],
+    "photo_order_rec": "If outdoor space or parking photos exist, use them as cover photo. These high-value amenities increase booking confidence and differentiate the listing in competitive markets.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a35236 (+2892% above \u00a3175 cohort median) but occupancy (15.2%) underperforms cohort (28.3%)",
+      "No amenities explicitly listed despite market demand for outdoor, parking, entertainment categories",
+      "Host has 0 years experience and no published reviews, creating trust deficit for high-value pricing"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "This \u00a35236 property has 76 open nights available, with 15.2% occupancy despite being 2892% above local median pricing \u2014 suggesting major untapped demand.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListingBoost - Improve Your Airbnb Listing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin: 60px 0 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            color: white;
+        }
+
+        .value-prop {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .value-prop h3 {
+            font-size: 1.3rem;
+            margin: 15px 0;
+        }
+
+        .value-prop p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .emoji {
+            font-size: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 60px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .secondary-btn {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .secondary-btn:hover {
+            background: #d0d0d0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .file-upload {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .file-upload input[type="file"] {
+            display: none;
+        }
+
+        .file-upload-label {
+            display: block;
+            padding: 30px;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f8f9ff;
+        }
+
+        .file-upload-label:hover {
+            border-color: #764ba2;
+            background: #f0f0ff;
+        }
+
+        .file-upload-label p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .file-upload-label strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .preview-section {
+            display: none;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .preview-section.active {
+            display: block;
+        }
+
+        .preview-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .preview-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .preview-content {
+            line-height: 1.8;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .title-suggestions {
+            display: grid;
+            gap: 10px;
+        }
+
+        .title-item {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #764ba2;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .title-item:hover {
+            background: #f0f0ff;
+            transform: translateX(5px);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            border-left: 4px solid #c33;
+        }
+
+        .error-message.active {
+            display: block;
+        }
+
+        .success-message {
+            background: #efe;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            border-left: 4px solid #3c3;
+        }
+
+        .success-message.active {
+            display: block;
+        }
+
+        .pricing {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .pricing h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .comparison-card {
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        .comparison-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .comparison-card ul {
+            list-style: none;
+            line-height: 2;
+        }
+
+        .comparison-card li:before {
+            content: "• ";
+            color: #667eea;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .comparison-card.before {
+            border-left: 4px solid #999;
+        }
+
+        .comparison-card.after {
+            border-left: 4px solid #667eea;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .tab {
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            border: none;
+            background: none;
+            color: #999;
+            position: relative;
+            bottom: -2px;
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 ListingBoost</h1>
+            <p>Transform Your Airbnb Listing in Minutes</p>
+        </header>
+
+        <div class="value-props">
+            <div class="value-prop">
+                <div class="emoji">📝</div>
+                <h3>Better Descriptions</h3>
+                <p>AI-powered copy that highlights your best features and converts more bookings</p>
+            </div>
+            <div class="value-prop">
+                <div class="emoji">✨</div>
+                <h3>Enhanced Photos</h3>
+                <p>Professional image enhancement makes your listing stand out instantly</p>
+            </div>
+            <div class="value-prop">
+                <div class="emoji">💰</div>
+                <h3>Affordable</h3>
+                <p>Professional quality for just $20-$50, not $500+ for a photographer</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Comparison Section -->
+            <div class="section">
+                <h2>🎯 Before & After</h2>
+                <div class="comparison">
+                    <div class="comparison-card before">
+                        <h4>❌ Generic Listing</h4>
+                        <ul>
+                            <li>Basic description</li>
+                            <li>Dim photos</li>
+                            <li>Generic title</li>
+                            <li>Lower booking rate</li>
+                            <li>Guests overlook it</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card after">
+                        <h4>✅ Boosted Listing</h4>
+                        <ul>
+                            <li>Compelling copy</li>
+                            <li>Vibrant photos</li>
+                            <li>Unique, catchy title</li>
+                            <li>Higher conversion</li>
+                            <li>Stands out in search</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for different features -->
+            <div class="section">
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('description')">📝 Description</button>
+                    <button class="tab" onclick="switchTab('titles')">🎨 Titles</button>
+                    <button class="tab" onclick="switchTab('images')">📸 Images</button>
+                </div>
+
+                <!-- Description Tab -->
+                <div id="description" class="tab-content active">
+                    <div class="input-group">
+                        <label for="description">Your Current Listing Description</label>
+                        <textarea id="description" placeholder="Paste your current Airbnb description here..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description-property-type">Property Type</label>
+                        <select id="description-property-type">
+                            <option>Apartment</option>
+                            <option>House</option>
+                            <option>Studio</option>
+                            <option>Villa</option>
+                            <option>Condo</option>
+                            <option>Townhouse</option>
+                        </select>
+                    </div>
+
+                    <button onclick="improveDescription()">✨ Improve My Description</button>
+
+                    <div id="description-loading" class="loading">
+                        <div class="spinner"></div>
+                        <p>Making your description shine...</p>
+                    </div>
+
+                    <div id="description-error" class="error-message"></div>
+
+                    <div id="description-preview" class="preview-section">
+                        <div class="preview-box">
+                            <div class="preview-title">Original Description</div>
+                            <div class="preview-content" id="original-desc"></div>
+                        </div>
+                        <div class="preview-box">
+                            <div class="preview-title">✨ Improved Description</div>
+                            <div class="preview-content" id="improved-desc"></div>
+                        </div>
+                        <button class="secondary-btn" onclick="copyToClipboard('improved-desc')">📋 Copy to Clipboard</button>
+                    </div>
+                </div>
+
+                <!-- Titles Tab -->
+                <div id="titles" class="tab-content">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="title-property-type">Property Type</label>
+                            <select id="title-property-type">
+                                <option>Apartment</option>
+                                <option>House</option>
+                                <option>Studio</option>
+                                <option>Villa</option>
+                                <option>Condo</option>
+                                <option>Townhouse</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="title-location">Location</label>
+                            <input type="text" id="title-location" placeholder="e.g., San Francisco, Downtown Brooklyn">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="title-features">Key Features (comma-separated)</label>
+                        <input type="text" id="title-features" placeholder="e.g., Ocean view, Modern kitchen, Rooftop terrace">
+                    </div>
+
+                    <button onclick="generateTitles()">🎨 Generate Title Ideas</button>
+
+                    <div id="titles-loading" class="loading">
+                        <div class="spinner"></div>
+                        <p>Creating perfect titles...</p>
+                    </div>
+
+                    <div id="titles-error" class="error-message"></div>
+
+                    <div id="titles-preview" class="preview-section">
+                        <div class="preview-box">
+                            <div class="preview-title">🎯 Suggested Titles</div>
+                            <div class="title-suggestions" id="titles-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Images Tab -->
+                <div id="images" class="tab-content">
+                    <div class="input-group">
+                        <label>Upload & Enhance Your Photos</label>
+                        <div class="file-upload">
+                            <label class="file-upload-label" for="image-upload">
+                                <strong>📸 Click or drag images here</strong>
+                                <p>PNG, JPG, WEBP up to 10MB each</p>
+                                <p>Upload multiple photos at once</p>
+                            </label>
+                            <input type="file" id="image-upload" multiple accept="image/*">
+                        </div>
+                    </div>
+
+                    <button onclick="enhanceImages()" id="enhance-btn" style="display: none;">✨ Enhance Images</button>
+
+                    <div id="images-loading" class="loading">
+                        <div class="spinner"></div>
+                        <p>Enhancing your photos...</p>
+                    </div>
+
+                    <div id="images-error" class="error-message"></div>
+
+                    <div id="images-preview" class="preview-section">
+                        <div class="preview-box">
+                            <div class="preview-title">✨ Enhanced Photos</div>
+                            <div class="image-gallery" id="images-gallery"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <div class="pricing">
+                <h3>Simple Pricing</h3>
+                <p>💰 $20 for description + titles | $50 for description + titles + image enhancement</p>
+            </div>
+
+            <!-- Success Message -->
+            <div id="success-message" class="success-message"></div>
+        </div>
+
+        <footer>
+            <p>© 2024 ListingBoost. Transform your Airbnb listing and boost bookings. 🚀</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Questions? Contact us at hello@listingboost.com</p>
+        </footer>
+    </div>
+
+    <script>
+        // Tab switching
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Image upload handling
+        document.getElementById('image-upload').addEventListener('change', function() {
+            if (this.files.length > 0) {
+                document.getElementById('enhance-btn').style.display = 'block';
+            }
+        });
+
+        // Drag and drop
+        const fileUploadLabel = document.querySelector('.file-upload-label');
+        fileUploadLabel.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUploadLabel.style.borderColor = '#764ba2';
+        });
+        fileUploadLabel.addEventListener('dragleave', () => {
+            fileUploadLabel.style.borderColor = '#667eea';
+        });
+        fileUploadLabel.addEventListener('drop', (e) => {
+            e.preventDefault();
+            document.getElementById('image-upload').files = e.dataTransfer.files;
+            document.getElementById('enhance-btn').style.display = 'block';
+        });
+
+        // Improve description
+        async function improveDescription() {
+            const description = document.getElementById('description').value;
+            
+            if (!description || description.length < 10) {
+                showError('description', 'Please enter at least 10 characters');
+                return;
+            }
+
+            showLoading('description', true);
+            clearError('description');
+
+            try {
+                const response = await fetch('/api/improve-description', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ description })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById('original-desc').textContent = data.original;
+                    document.getElementById('improved-desc').textContent = data.improved;
+                    document.getElementById('description-preview').classList.add('active');
+                } else {
+                    showError('description', data.error || 'Failed to improve description');
+                }
+            } catch (error) {
+                showError('description', error.message);
+            } finally {
+                showLoading('description', false);
+            }
+        }
+
+        // Generate titles
+        async function generateTitles() {
+            const propertyType = document.getElementById('title-property-type').value;
+            const keyFeatures = document.getElementById('title-features').value;
+            const location = document.getElementById('title-location').value;
+
+            if (!location || !keyFeatures) {
+                showError('titles', 'Please fill in location and key features');
+                return;
+            }
+
+            showLoading('titles', true);
+            clearError('titles');
+
+            try {
+                const response = await fetch('/api/generate-titles', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ property_type: propertyType, key_features: keyFeatures, location })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    const titlesList = document.getElementById('titles-list');
+                    titlesList.innerHTML = data.titles.map(title => 
+                        `<div class="title-item" onclick="copyToClipboard(this)">${title}</div>`
+                    ).join('');
+                    document.getElementById('titles-preview').classList.add('active');
+                } else {
+                    showError('titles', data.error || 'Failed to generate titles');
+                }
+            } catch (error) {
+                showError('titles', error.message);
+            } finally {
+                showLoading('titles', false);
+            }
+        }
+
+        // Enhance images
+        async function enhanceImages() {
+            const files = document.getElementById('image-upload').files;
+            
+            if (files.length === 0) {
+                showError('images', 'Please select images');
+                return;
+            }
+
+            const formData = new FormData();
+            for (let file of files) {
+                formData.append('images', file);
+            }
+
+            showLoading('images', true);
+            clearError('images');
+
+            try {
+                const response = await fetch('/api/enhance-images', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    const gallery = document.getElementById('images-gallery');
+                    gallery.innerHTML = Object.entries(data.images).map(([filename, result]) => {
+                        if (result.status === 'success') {
+                            return `
+                                <div class="image-item">
+                                    <img src="${result.base64}" alt="${filename}">
+                                </div>
+                            `;
+                        }
+                        return '';
+                    }).join('');
+                    document.getElementById('images-preview').classList.add('active');
+                    showSuccess(`Successfully enhanced ${data.count} image(s)`);
+                } else {
+                    showError('images', data.error || 'Failed to enhance images');
+                }
+            } catch (error) {
+                showError('images', error.message);
+            } finally {
+                showLoading('images', false);
+            }
+        }
+
+        // Helper functions
+        function showLoading(section, show) {
+            const loading = document.getElementById(`${section}-loading`);
+            if (show) {
+                loading.classList.add('active');
+            } else {
+                loading.classList.remove('active');
+            }
+        }
+
+        function showError(section, message) {
+            const error = document.getElementById(`${section}-error`);
+            error.textContent = message;
+            error.classList.add('active');
+        }
+
+        function clearError(section) {
+            const error = document.getElementById(`${section}-error`);
+            error.classList.remove('active');
+        }
+
+        function showSuccess(message) {
+            const success = document.getElementById('success-message');
+            success.textContent = message;
+            success.classList.add('active');
+            setTimeout(() => success.classList.remove('active'), 3000);
+        }
+
+        function copyToClipboard(elementId) {
+            let text;
+            if (typeof elementId === 'object') {
+                text = elementId.textContent;
+            } else {
+                text = document.getElementById(elementId).textContent;
+            }
+            
+            navigator.clipboard.writeText(text).then(() => {
+                showSuccess('Copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>

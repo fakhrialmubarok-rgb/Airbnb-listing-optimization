@@ -1,0 +1,39 @@
+{
+  "listing_id": "1617380729401095524",
+  "host_name": "Yasir",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 200.04,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 14602.92
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury 3\u2011BR Apartment \u2013 \u00a3200/night Premium Stay",
+      "Spacious 3\u2011Bedroom Home for 4 Guests \u2013 Top Rating",
+      "Modern 3\u2011Bed Entire Home \u2013 4.8\u2605 Rating"
+    ],
+    "rewritten_desc": "Experience upscale city living in this 3\u2011bedroom luxury apartment, offered as an entire home for up to four guests. The space has earned a strong 4.8\u2011star rating from five recent reviewers, reflecting the care taken to provide a comfortable stay. At a nightly rate of \u00a3200.04, the apartment positions itself at the higher end of the market, which is 14\u202f% above the city\u2019s median nightly price of \u00a3175. Over the next 90 days the calendar shows 18.5\u202f% occupancy, leaving 73 open nights that could be filled with the right adjustments. Host Yasir is new to Airbnb, bringing fresh energy to the listing. While the property does not yet highlight any specific amenities, the modern design and generous layout make it ideal for families or small groups seeking a stylish base. With a focus on delivering a premium experience, the apartment is ready to attract discerning travelers looking for a high\u2011quality, well\u2011rated stay in the city.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony, garden)",
+      "Parking facilities",
+      "Entertainment options (e.g., streaming TV, games)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the main living area with any city view as the cover photo; follow with dedicated photos of each bedroom, kitchen, and bathroom to showcase the full space.",
+    "key_diagnosis": [
+      "Rate adjustment: Your nightly price of \u00a3200.04 is 14\u202f% above the cohort median (\u00a3175) while occupancy is only 18.5\u202f% versus the market median of 28.3\u202f%; lowering the rate to around \u00a3170 could close the gap and boost bookings.",
+      "Add high\u2011value amenities: Introducing outdoor space, free parking, and entertainment features will align the listing with top\u2011value categories and justify the premium price.",
+      "Photo upgrade: The current photo count is unknown, likely insufficient; add clear shots of the living room, each bedroom, kitchen, and bathroom, and set the living\u2011room view as the lead image to improve visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing charges \u00a3200/night \u2013 14\u202f% above the city median \u2013 yet only 18.5\u202f% of the next 90 days are booked.",
+    "weakest_element": "amenities"
+  }
+}

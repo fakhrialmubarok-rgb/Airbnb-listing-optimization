@@ -1,0 +1,39 @@
+{
+  "listing_id": "1083143506224223024",
+  "host_name": "Ruth",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 79.6,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 3422.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a379.6 Entire Home for 4 Guests \u2013 Cinnamon Annex",
+      "4-Guest \u00a379.6 Home \u2013 52% Open in Next 90 Days",
+      "Affordable Cinnamon Annex Home \u2013 \u00a379.6 Near City Centre"
+    ],
+    "rewritten_desc": "Book our spacious Entire Home at \u00a379.6/night - perfectly suited for 4 guests. Located in a vibrant city area (exact location), this listing boasts an impressive 4.87-star rating from 124 guests. While our rate is 49% below the local average, we\u2019re maintaining strong demand with 52.2% occupancy booked over the next 90 days (43 confirmed open nights). Ideal for couples, families, or small groups seeking value without compromising comfort. Note: We continuously evaluate guest feedback to enhance services like outdoor seating and entertainment features.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Free on-site parking",
+      "TV or streaming services"
+    ],
+    "photo_order_rec": "Prioritize a sharp, warm shot of the living room as the cover photo to showcase available seating and space, with a secondary image of the bedroom to emphasize comfort for guests.",
+    "key_diagnosis": [
+      "Title underperforms with only 12 characters versus optimal 50-character length, missing critical value propositions like price (\u00a379.6) and occupancy (52% open).",
+      "Description field is completely empty despite 4.87 rating and 124 reviews - a major missed opportunity to convert interested guests.",
+      "Missing high-value amenities in Outdoor, Parking, and Entertainment categories could cost 5-10% in conversion based on market trends."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a379.6 rate is 49% below the city median but occupancy remains 4.4% above average - optimizing your title with this value proposition could further boost bookings.",
+    "weakest_element": "title"
+  }
+}

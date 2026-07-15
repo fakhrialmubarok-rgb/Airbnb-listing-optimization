@@ -1,0 +1,39 @@
+{
+  "listing_id": "1263478052029339307",
+  "host_name": "Gabriel",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 78.4,
+    "occupancy_pct": 46.7,
+    "open_nights_90d": 48,
+    "revenue_at_stake_gbp": 3763.2
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 8,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "25% Cheaper Chic Apartment \u2013 Cathedral Quarter",
+      "Historic Temple Chambers Apt w/ Mood Lighting",
+      "Private 1\u2011BR Near Sheffield Cathedral \u2013 \u00a378/night"
+    ],
+    "rewritten_desc": "Welcome to a stylish, fully private one\u2011bedroom apartment tucked in Sheffield\u2019s historic Cathedral Quarter. Housed in the beautifully restored Temple Chambers (formerly Synagogue Chambers), the flat sits on a quiet, flagstone pedestrian lane just a 10\u2011minute walk from the train station. \n\nThe second\u2011floor unit is bright and airy by day, and comes alive after dark with customizable mood lighting that lets you set the ambience to match your mood. The open\u2011plan living, dining and kitchen area is framed by reconfigurable curtains, so you can enjoy a spacious lounge or a cosy, separated dining nook. \n\nFeatures include a comfortable bedroom with ample wardrobe space, a modern bathroom, a 65\u2011inch smart TV, high\u2011speed Wi\u2011Fi, and a fully equipped kitchen (induction cooktop, oven, microwave, kettle, fridge). Laundry is simple with an in\u2011unit washing machine, iron, ironing board, clothes horse and vacuum cleaner. Additional conveniences are a digital building entry, shoe storage in the hallway, and dedicated workspace. \n\nPerfect for couples or small families seeking a blend of historic charm and contemporary comforts, this apartment offers a unique stay in the heart of Sheffield while keeping you completely private and relaxed.",
+    "top_amenity_gaps": [
+      "Dedicated parking or guaranteed off\u2011street parking",
+      "Carbon monoxide alarm for enhanced safety",
+      "Outdoor space (balcony/terrace) or garden access"
+    ],
+    "photo_order_rec": "Use a bright living\u2011room shot showcasing the colour\u2011changing mood lighting as the cover photo; it instantly conveys the unique ambience and open\u2011plan layout that set this listing apart.",
+    "key_diagnosis": [
+      "Raise the nightly rate from \u00a378.4 (25% below the cohort median of \u00a3104.90) to around \u00a395 to capture more revenue while still staying competitively priced.",
+      "Replace the current cover image with the existing living\u2011room mood\u2011lighting photo to improve click\u2011through rates; the listing already has 37 photos covering all rooms.",
+      "Add a carbon monoxide alarm (currently missing) and clearly list guaranteed parking in the amenities section to close high\u2011value amenity gaps and boost guest confidence."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your apartment is priced 25% below the city median (\u00a378 vs \u00a3105) yet its 90\u2011day occupancy sits at just 46.7%\u2014there\u2019s clear upside to boost bookings.",
+    "weakest_element": "description"
+  }
+}

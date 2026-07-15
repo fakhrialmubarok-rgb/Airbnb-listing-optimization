@@ -1,0 +1,39 @@
+{
+  "listing_id": "1230919941456647978",
+  "host_name": "CasaCity",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 635.4,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 43207.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "4BR Townhouse w/ Roof Terrace & Free Parking",
+      "Luxury 4BR Home + Private Roof Terrace Access",
+      "Spacious 4BR w/ Terrace, Parking & Modern Amenities"
+    ],
+    "rewritten_desc": "Stay in our beautifully appointed 4BR townhouse, offering the perfect blend of luxury and convenience. Enjoy the serene atmosphere of your own rooftop terrace, ideal for sunrise views or evening stargazing. Each bedroom is designed for comfort, accommodating up to 4 guests with ease. Free parking is available for your vehicle, ensuring a stress-free stay. Whether you're visiting for business or leisure, our property provides a high-end retreat in a sought-after location. Experience the perfect balance of privacy and accessibility in this exclusive rental, where modern comforts meet classic charm. Book now to secure privileged access to this premium space.",
+    "top_amenity_gaps": [
+      "Outdoor seating/patio area",
+      "Indoor entertainment options (TV, games)",
+      "Modern kitchen with appliances"
+    ],
+    "photo_order_rec": "Prioritize the roof terrace as the cover photo since it's the most unique and high-value differentiator for a luxury listing",
+    "key_diagnosis": [
+      "High rate vs low occupancy: \u00a3635.40 night price is +311% above \u00a3154.60 median but occupancy is only 25% (vs 47.8% median)",
+      "Missing 3 high-value amenity categories: Outdoor, Parking & Entertainment (despite 'free parking' mention in title)",
+      "Title is 53 characters exceeding recommended 50, uses weak connector 'I' instead of more dynamic language"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3635.40 rate is 311% above the local median, yet occupancy is only 25% - 45% below the 47.8% median for this market. Let's realign pricing to match demand.",
+    "weakest_element": "amenities"
+  }
+}

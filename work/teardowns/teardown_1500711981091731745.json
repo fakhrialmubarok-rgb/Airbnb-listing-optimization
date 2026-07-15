@@ -1,0 +1,39 @@
+{
+  "listing_id": "1500711981091731745",
+  "host_name": "Jo",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2803.0,
+    "occupancy_pct": 22.8,
+    "open_nights_90d": 69,
+    "revenue_at_stake_gbp": 193407.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 8,
+    "score_amenities": 7,
+    "score_images": 9,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Peak District Retreat",
+      "Luxury Country Home",
+      "7-Acre Estate Getaway"
+    ],
+    "rewritten_desc": "Escape to our stunning country home in the heart of the Peak District, where tranquility and luxury await. With 7 acres of private gardens, an orchard, and breathtaking views, this historic home is perfect for a memorable getaway. Unwind in the spa area, featuring a hot tub and indoor pool, or explore the best walks in the Peak District. The property boasts a large kitchen, dining room, lounge, and summer room, accommodating up to 16 guests. Enjoy the large indoor swimming pool, shared family changing rooms, and rest area. Each bedroom is carefully designed for relaxation, including a king-size bed and step-down shower room in Bedroom 1, and a super-king bed and bathroom in Bedroom 2. Whether you're looking for adventure or relaxation, our country home has something for everyone.",
+    "top_amenity_gaps": [
+      "Air conditioning",
+      "Essentials",
+      "Outdoor entertainment facilities"
+    ],
+    "photo_order_rec": "The cover photo should be of the indoor pool or hot tub, as it showcases the property'sunique luxury features and will grab the attention of potential guests.",
+    "key_diagnosis": [
+      "With a nightly rate of \u00a32803.0, 2572% above the cohort median of \u00a3104.90, and an occupancy rate of 22.8%, 26.1% below the cohort median of 48.9%, there is a significant gap in the pricing strategy.",
+      "The listing has 53 photos, more than twice the cohort median of 23, but the order and focus of the photos could be optimized to better showcase the property's best features.",
+      "With 69 open nights in the next 90 days, there is a huge opportunity to improve occupancy and increase revenue, potentially by \u00a3193,947, based on the nightly rate and open calendar days."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your nightly rate being 2572% higher than the cohort median and your occupancy rate 26.1% lower, we believe there is a significant opportunity to optimize your pricing strategy and increase revenue by up to \u00a3193,947 in the next 90 days.",
+    "weakest_element": "title"
+  }
+}

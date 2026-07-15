@@ -1,0 +1,39 @@
+{
+  "listing_id": "811269059605785824",
+  "host_name": "Raquel",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 456.95,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 34728.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 8,
+    "score_amenities": 9,
+    "score_images": 4,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Luxury Wednesbury Apt 101 - Free Parking | Sleeps 4, \u00a3456.95",
+      "Wednesbury Luxury Apt with Private Parking | Sleeps 4, \u00a3456.95",
+      "Private Parking, Wednesbury 2 Bedroom Apt 101 | Max 4 Guests"
+    ],
+    "rewritten_desc": "Experience luxury in Wednesbury at our 2-bedroom apartment, Apt 101. Enjoy private parking for your convenience and flexibility. With a maximum capacity of 4 guests, this entire home apartment is ideal for couples and small families. Our nightly rate is \u00a3456.95, and we take pride in providing a clean and comfortable space for all our guests. In your free time, explore the charming town of Wednesbury, visit the local museum, or take a stroll along the canal. This apartment offers a tranquil retreat from the hustle and bustle of city life, and we're confident you'll love every moment of your stay.",
+    "top_amenity_gaps": [
+      "Free parking - a highly sought-after amenity",
+      "Entertainment options - currently none listed",
+      "Access to outdoor spaces - currently none listed"
+    ],
+    "photo_order_rec": "We recommend making the kitchen photo the cover image as it showcases the modern appliances and ample counter space, making it the central hub of the apartment.",
+    "key_diagnosis": [
+      "Their \u00a3456.95 nightly rate is a significant +161% above the cohort median rate, yet their 15.2% occupancy is below the median 28.3%, indicating a potential pricing strategy issue.",
+      "With 71 reviews and a 4.38 rating, the host has established some credibility, but they could amplify their Superhost status and enhance the listing's overall credibility by adding 0-5 new reviews.",
+      "Given the 76 open nights in their 90-day calendar, they have ample opportunities to fill more dates and increase occupancy - especially considering their high nightly rate."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing has 76 open nights with a high nightly rate of \u00a3456.95 but only a 15.2% occupancy rate - can we discuss strategies to optimize your pricing and fill more dates?",
+    "weakest_element": "title"
+  }
+}

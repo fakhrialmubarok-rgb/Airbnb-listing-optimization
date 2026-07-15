@@ -1,0 +1,39 @@
+{
+  "listing_id": "1273784337251331932",
+  "host_name": "Zach",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 448.4,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 33181.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 4BR Sheffield Home \u2013 \u00a3448/night",
+      "Steps to Sheffield Attractions \u2013 4BR Comfort",
+      "4BR Near Sheffield Transport \u2013 Easy City Access"
+    ],
+    "rewritten_desc": "Welcome to your exclusive 4\u2011bedroom entire home in the heart of Sheffield, perfect for travelers who value space, style, and convenience. This premium property comfortably sleeps four guests, offering a private bedroom for each traveler, so everyone enjoys their own retreat. Rated 4.55 stars from 316 reviews, the home consistently earns praise for its cleanliness and prime location. Situated just minutes from Sheffield\u2019s main attractions and key transport links, you\u2019ll be within easy walking distance of museums, theaters, shopping districts, and the railway station, making city exploration effortless. \n\nAt \u00a3448.4 per night, this listing positions itself as a high\u2011end option in a market where the median nightly rate is \u00a3175. While the price reflects the upscale feel and central location, current bookings show only 17.4% occupancy for the next 90 days (74 open nights), compared with the city\u2019s median occupancy of 28.3%. This gap indicates strong potential for higher booking rates through strategic adjustments. \n\nThe home features a fully equipped kitchen, spacious living area, and modern bathrooms, ensuring a comfortable stay for families or small groups. Although no specific amenities are highlighted, you can enhance the guest experience by adding high\u2011value touches such as dedicated parking, a private outdoor terrace, and entertainment options like a smart TV and high\u2011speed Wi\u2011Fi. Take advantage of the exceptional location and upscale setting to create memorable Sheffield experiences for every guest.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden or patio)",
+      "Dedicated parking",
+      "Entertainment amenities (TV, high\u2011speed Wi\u2011Fi, games)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the main living area or exterior fa\u00e7ade as the cover photo to immediately convey the property\u2019s premium feel and central location.",
+    "key_diagnosis": [
+      "Price\u2011occupancy mismatch: nightly rate \u00a3448.4 is 156% above the city median (\u00a3175) while 90\u2011day occupancy is only 17.4% versus the cohort median 28.3%; consider a price adjustment or targeted promotions.",
+      "Title lacks a clear value proposition; replace the current title with a headline that highlights the premium price or central location to attract high\u2011value guests.",
+      "No amenities are listed; add high\u2011impact amenities like free parking, a private outdoor area, and entertainment options to raise perceived value and booking rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a3448.4, which is 156% above the city median of \u00a3175, yet your 90\u2011day occupancy is only 17.4% compared to the cohort\u2019s 28.3%\u2014a clear opportunity to boost bookings.",
+    "weakest_element": "amenities"
+  }
+}

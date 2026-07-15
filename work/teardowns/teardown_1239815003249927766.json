@@ -1,0 +1,39 @@
+{
+  "listing_id": "1239815003249927766",
+  "host_name": "Zoe",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 482.2,
+    "occupancy_pct": 78.3,
+    "open_nights_90d": 20,
+    "revenue_at_stake_gbp": 9644.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Escape to Manchester's Hidden Luxury for \u00a3482",
+      "\u00a3482/night 4-star Gem in Manchester - 20 Empty Nights!",
+      "Manchester's Secret Luxury - \u00a3482/night - Book Now!"
+    ],
+    "rewritten_desc": "Welcome to Manchester's hidden luxury retreat, perfect for your next 4-person adventure. This spacious entire home boasts an unparalleled level of comfort and sophistication. Spread across [ unknown bedrooms ] and [ unknown bathrooms ], the interior is a harmonious blend of sleek modern design and cozy accents. Take a leisurely stroll through [ unknown neighborhood ] and unwind in the evenings with breathtaking views of [ unknown nearby landmark ]. With [ unknown amenities ] at your fingertips, this enchanting haven is the ideal destination for discerning travelers.",
+    "top_amenity_gaps": [
+      "Outdoor space or a garden to match the luxurious vibe and attract more bookings",
+      "Parking facilities for guests arriving by car",
+      "Entertainment options, like a TV or games console, to create a more home-away-from-home experience"
+    ],
+    "photo_order_rec": "Lead with the living room or a cozy bedroom to showcase the interior design and create a sense of warmth, and then move to showcase the unique views or local attractions",
+    "key_diagnosis": [
+      "\u00a3482/night is a whopping +212% higher than the \u00a3154.60 cohort median, hinting at a pricing strategy that may be deterring potential guests",
+      "A 78.3% occupancy rate is below the 47.8% median for the cohort, indicating potential opportunities to increase direct bookings and revenue via improved marketing or listing optimization",
+      "With no amenities listed, the current listing may miss out on bookings from guests looking for essential services or luxuries"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Given your \u00a3482/night rate is 212% higher than the local cohort median, you may be missing out on bookings due to a perceived value mismatch",
+    "weakest_element": "photos"
+  }
+}

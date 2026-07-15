@@ -1,0 +1,39 @@
+{
+  "listing_id": "1723345792393179405",
+  "host_name": "Gabriel",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 64.3,
+    "occupancy_pct": 46.7,
+    "open_nights_90d": 48,
+    "revenue_at_stake_gbp": 3086.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 3,
+    "score_images": 3,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Architect\u2011Designed 1BR Apt \u2013 39% Off \u00a364",
+      "Sheffield City Centre 1BR \u2013 Near Tram & Theatres",
+      "Cozy 1BR Cathedral Quarter \u2013 \u00a364 Night, Bright"
+    ],
+    "rewritten_desc": "Welcome to Apartment 2 at Temple Chambers \u2013 a stylish, architect\u2011designed one\u2011bedroom apartment tucked into the historic Cathedral Quarter on pedestrian\u2011only Figtree Lane. This bright, airy space boasts high ceilings, large windows, and an open\u2011plan kitchen and living area equipped with a Smart TV and dedicated workspace. The comfortable double bedroom offers a peaceful retreat, while the modern shower room includes a WC. Guests enjoy free high\u2011speed Wi\u2011Fi, a washing machine, and a fully\u2011fitted kitchen for self\u2011catering stays.\\n\\nLocation is unbeatable: a two\u2011minute walk to Cathedral Tram Stop puts you within easy reach of the Utilita Arena, theatres, caf\u00e9s, and restaurants, making it perfect for business trips, concerts, or city breaks. Paid parking is available nearby at Hartshead Square (not included).\\n\\nWhether you\u2019re staying for a night or a longer visit, you\u2019ll find everything you need for a comfortable, convenient Sheffield experience at an exceptional rate of \u00a364.3 per night.",
+    "top_amenity_gaps": [
+      "Heating and hot water",
+      "Essentials (towels, toiletries, linens)",
+      "Included on\u2011site parking"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011ceiling living\u2011area shot as the cover photo\u2014it showcases the apartment\u2019s most compelling features (natural light, spaciousness) and instantly captures guest interest.",
+    "key_diagnosis": [
+      "Despite a nightly rate of \u00a364.3 (39% below the city median of \u00a3104.90), occupancy is only 46.7% booked versus the cohort median of 48.9% \u2013 the low price isn\u2019t being highlighted enough to drive bookings.",
+      "The listing has just 9 photos compared with the market median of 23; adding at least 12 high\u2011quality images of the bedroom, bathroom, kitchen, workspace, and building exterior will improve visual coverage.",
+      "Key guest\u2011expectation amenities are missing: heating/hot water, essential toiletries, and included parking \u2013 adding these will raise guest satisfaction and potential Superhost scores."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 39% lower nightly rate (\u00a364 vs the city median \u00a3105) is only delivering 46.7% occupancy \u2013 there\u2019s a clear opportunity to boost bookings by highlighting this price advantage.",
+    "weakest_element": "photos"
+  }
+}

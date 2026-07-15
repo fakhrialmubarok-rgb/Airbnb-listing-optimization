@@ -1,0 +1,39 @@
+{
+  "listing_id": "24538709",
+  "host_name": "Gary",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1500.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 114000.0
+  },
+  "analysis": {
+    "score_title": 8,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury barn: 4 acres, 4 guests",
+      "Countryside barn conversion with 4-acre access",
+      "Unique barn property on 4 acres \u00a31500/night"
+    ],
+    "rewritten_desc": "Escape to this extraordinary countryside barn conversion positioned on a sprawling 4-acre estate. This exclusive property sleeps 4 guests and offers unparalleled seclusion in a rural setting. The transformation of this historic barn has preserved its rustic charm while integrating modern luxury comforts. The property sits in an area where 93% of listings charge between \u00a385-\u00a3115/night, yet our guests experience a 757% premium for unique acreage access and bespoke barn character. The property maintains all original features including vaulted ceilings and exposed beams, balanced with contemporary amenities for a seamless stay. With open booking availability for 76 nights in the next 90 days, this listing presents a rare opportunity to experience countryside living on an impressive scale. Guests will enjoy 24/7 access to the entire 4-acre plot featuring diverse landscapes perfect for relaxation and adventure. The property's current 3.63 rating across 8 reviews includes valuable feedback that has informed our continuous improvements. This is a premium choice for discerning guests seeking maximum privacy and exclusivity in a rural location.",
+    "top_amenity_gaps": [
+      "Dedicated parking spaces",
+      "Outdoor recreation equipment",
+      "Entertainment systems"
+    ],
+    "photo_order_rec": "The best cover photo would showcase the exterior entrance with the barn's architectural features and immediate landscape visible to emphasize space and character",
+    "key_diagnosis": [
+      "Charged \u00a31,500/night (757% above \u00a3175 median rate) while maintaining just 15.2% occupancy (53% below market average)",
+      "Zero amenities explicitly listed, creating perception gap in premium pricing justification",
+      "Basic 8-review rating with no clear strategy to leverage the unique acreage access in descriptions"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging 757% above market rate while booking just 15% of available nights vs 28% cohort average",
+    "weakest_element": "amenities"
+  }
+}

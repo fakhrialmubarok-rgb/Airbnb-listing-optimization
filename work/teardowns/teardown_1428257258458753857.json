@@ -1,0 +1,37 @@
+{
+  "listing_id": "1428257258458753857",
+  "host_name": "Ann",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 127.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9682.4
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Secluded Field View House | Book now from \u00a3127.4!",
+      "Escape to Field View House, 25% cheaper!",
+      "Cozy Field View Home for 4, 27% under median"
+    ],
+    "rewritten_desc": "Escape to our tranquil Field View House, a haven for 4 guests. This entire home features a field view, ensuring complete separation from the bustling city. Enjoy your stay amidst beautiful surroundings and take advantage of our flexible check-in times (arrive between 3\u20138 pm). Ann, your host, is here to ensure you have the perfect stay. With a Superhost rating of 4.66 based on 47 reviews, you can trust you're in good hands. Explore local pubs, restaurants, and scenic trails just minutes from your doorstep, and let our Field View House be your peaceful retreat.",
+    "top_amenity_gaps": [
+      "Outdoor space"
+    ],
+    "photo_order_rec": "Consider making the exterior cover photo or one of the surrounding fields to showcase the property's tranquil setting.",
+    "key_diagnosis": [
+      "Fix your rate by raising your nightly rate to \u00a3175, the cohort median, to unlock more bookings and generate 76% more revenue (\u00a396.2) per 90 days.",
+      "Target the missing outdoor amenity category to attract guests seeking relaxation amidst natural surroundings, which would be the second-highest booked listings in your market with median 90-day occupancy at 28.3%.",
+      "Consider raising the \u00a3127.4 nightly rate by 28.6% (\u00a336) to match cohort median nightly rate (\u00a3175) and potentially fill 50 more nights (\u00a36,420) within 90 days."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Our analysis suggests that adding an outdoor space to your Field View House could attract guests willing to pay \u00a3175 per night, allowing you to fill 50 more nights within the next 90 days.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "listing_id": "1485051319433134253",
+  "host_name": "Arsalan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 60.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 4590.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Unique Cozy Home in the Heart of the City, Free Parking & Wi-Fi!",
+      "Peaceful London Haven: Central Location, Free Parking",
+      "Central Gem with Free Parking: Comfortable Home, Ideal Spot"
+    ],
+    "rewritten_desc": "Immerse yourself in the heartbeat of London at this peaceful and central haven. As a solo traveler or with friends and family, you'll feel at home in this charming entire house, complete with complimentary free parking. Located in the heart of the bustling city, you'll be mere steps away from iconic landmarks, vibrant neighborhoods, and all the city has to offer. The four guest capacity makes it perfect for a small group or even a family gathering. The \u00a360.40 nightly rate provides incredible value, considering the median nightly rate in our market is \u00a3175.00. While you won't find any specific amenities listed, the location alone makes up for it. With an occupancy rate of 15.2% booked over the next 90 days and 76 open nights, we believe with some tweaks, this home can become a sought-after gem. Please take a glance inside, and let us know how we can help.",
+    "top_amenity_gaps": [
+      "Parking and facilities, Entertainment (Outdoor is less impactful due to limited season)"
+    ],
+    "photo_order_rec": "The cover photo should be the cozy living area, highlighting the home's central location through a scenic view of the city.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a360.40 is -65% vs the median nightly rate of \u00a3175.00 within the same market, indicating room for price optimization.",
+      "With an occupancy rate of 15.2% booked over the next 90 days (76 open nights), there's a significant opportunity to improve occupancy, particularly considering the cohort's median is 28.3%.",
+      "The listing lacks images, which is unusual for an entire home, and should have at least 10-15 high-quality photos showcasing each room, especially the living area and bedrooms, to improve guest trust and desire."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "By refining your occupancy strategy and focusing on the central location, we can significantly boost bookings and help you reach the \u00a3175.00 median nightly rate.",
+    "weakest_element": "photos"
+  }
+}

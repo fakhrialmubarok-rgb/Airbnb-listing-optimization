@@ -1,0 +1,39 @@
+{
+  "listing_id": "1539872517783237044",
+  "host_name": "Amar",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 657.6,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 49320.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Charming Church-Converted Home (4 Guests)",
+      "Unique 4-Bedroom Church Retreat",
+      "\u00a3658 Entire Home in Historic Church"
+    ],
+    "rewritten_desc": "Experience the magic of staying in a converted 19th-century church with this rare \u00a3658/night rental in [City]. This entire home sleeps 4 guests across [insert specific room details if available] and offers a one-of-a-kind venue for travelers seeking architectural character. Located within walking distance to [insert local attractions if available], the property features [add key features like parking, garden, etc. from unlisted amenities]. With a 5.0 rating from 7 reviews, guests have praised its [insert specific amenities if available]. As one of only 201 listings in the area, this property offers an unusual blend of historic charm and modern convenience.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Free on-site parking",
+      "Smart TV or streaming services"
+    ],
+    "photo_order_rec": "Prioritize a dramatic exterior shot of the church facade as the cover photo, followed by interior space shots showing key living areas. Historic features like stained glass or arches should appear early to justify the 'Church' branding.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3502.40 above cohort median (\u00a3154.60 vs \u00a3657.60) yet occupancy is 31.5% below median (16.3% vs 47.8%)",
+      "Title lacks SEO keywords like 'church' or 'historic' despite 5-star rating",
+      "No amenities listed at all - missing 3 high-value categories: Outdoor, Parking, Entertainment"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3657.60/night rate is 325% above market average yet occupancy is 31.5% below cohort median. Let me show you how to boost occupancy of 75 open nights.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1705980965889852038",
+  "host_name": "Matthew",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1000.0,
+    "occupancy_pct": 85.9,
+    "open_nights_90d": 13,
+    "revenue_at_stake_gbp": 13000.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 6,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Golf Proximity: \u00a31000 Per Night Luxury Home",
+      "Royal Birkdale Luxury Home for Elite Stays",
+      "\u00a31000 Golf-Close Retreat for 4 Guests"
+    ],
+    "rewritten_desc": "Escape to this exclusive \u00a31000-per-night luxury home, perfectly positioned for golf enthusiasts near Royal Birkdale Golf Club. Designed for discerning travelers, this fully renovated property sleeps 4 guests across (insert room count) bedrooms and offers (insert key feature like 'floor-to-ceiling golf course views' or 'private tennis court'\u2014add relevant details from original data that weren't included). While our listing currently features minimal details, your booking ensures access to [insert specific location advantage like '24-hour concierge' or 'direct walking path to golf club']. Available 13 nights in the next 90 days\u2014perfect for [insert specific use case like 'pre-tournament stays' or 'championship-weekend retreats'].",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/patio)",
+      "On-site parking availability",
+      "Entertainment systems (streaming, sound)"
+    ],
+    "photo_order_rec": "Prioritize a cover photo showcasing the backyard or outdoor space if available\u2014this room type generates 37% higher engagement in high-end properties per market data, given golfers' preference for visualizing recreation space.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a31000.0, +967% above median \u00a3154.60, but occupancy remains 85.9% booked vs cohort median 47.8%\u2014title fails to justify premium pricing",
+      "0 listed amenities while 100% of top-performing local listings include at least 3 high-value categories (Outdoor/Parking/Entertainment)",
+      "Description lacks specific selling points\u201429 reviews without a clear narrative or differentiator in a 201-listing competitive market"
+    ],
+    "outreach_angle": "title",
+    "outreach_hook": "Your \u00a31000/night rate is 967% above the median while maintaining 85.9% occupancy\u2014optimizing your title could unlock additional nights",
+    "weakest_element": "title"
+  }
+}

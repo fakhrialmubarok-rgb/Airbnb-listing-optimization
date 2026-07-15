@@ -1,0 +1,39 @@
+{
+  "listing_id": "1670358936265241079",
+  "host_name": "Larry",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 956.8,
+    "occupancy_pct": 14.1,
+    "open_nights_90d": 77,
+    "revenue_at_stake_gbp": 73673.6
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Spacious 5\u2011Bedroom Home with 2 Van Parking",
+      "Luxury 5\u2011Bedroom Retreat Near Parks, Sleeps 9",
+      "Family Getaway: 5 Bedrooms, Van Parking, Sleeps 9"
+    ],
+    "rewritten_desc": "Welcome to Minstead Houses, an entire 5\u2011bedroom home designed for families or groups seeking a comfortable stay near local parks. The property comfortably accommodates up to 4 guests, offering four private bedrooms and a shared living space. Each bedroom is furnished with quality bedding and storage, while the living area provides a welcoming environment for relaxation after a day of exploring. \n\nThe home boasts a fully equipped kitchen where you can prepare meals, and a dining area that seats everyone together. Enjoy the convenience of on\u2011site parking with space for two vans, making arrivals and departures hassle\u2011free. Although the listing does not currently highlight outdoor or entertainment amenities, the surrounding area includes several parks within walking distance, perfect for picnics or outdoor activities. \n\nPriced at \u00a3956.80 per night, Minstead Houses delivers a premium experience, though we recommend reviewing the rate to align with market expectations and improve booking rates. With a current 90\u2011day occupancy of only 14.1%, there is significant opportunity to attract more guests by adjusting pricing and highlighting any added amenities. Book your stay and experience the spacious comfort of Minstead Houses in a convenient location.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio) for relaxation",
+      "Dedicated parking for two vans clearly highlighted",
+      "Entertainment options (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a clear exterior shot showing the house and the two van parking spaces as the cover photo; it instantly conveys the unique parking advantage.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3956.8 \u2013 it is 519% higher than the city median of \u00a3154.60, which is driving low bookings (only 14.1% occupancy).",
+      "Add and highlight high\u2011value amenities (outdoor area, parking, entertainment) to meet guest expectations and improve perceived value.",
+      "Refresh the listing description and title to accurately reflect the capacity (4 guests) and unique features, correcting misleading information that may deter bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current occupancy is just 14% despite a nightly rate that's 519% above the market median, indicating a massive pricing gap.",
+    "weakest_element": "description"
+  }
+}

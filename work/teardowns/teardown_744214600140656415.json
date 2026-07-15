@@ -1,0 +1,39 @@
+{
+  "listing_id": "744214600140656415",
+  "host_name": "Ann",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1155.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 87780.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 6,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 3BR home with stone fireplace \u00a31155/night",
+      "Premium 3 bedroom with fireplace & garden view",
+      "Stylish home: 3BR + fireplace from \u00a31155"
+    ],
+    "rewritten_desc": "Step into our 3-bedroom luxury home where modern design meets timeless charm in this fully private escape for 4 guests. The standout stone fireplace creates an inviting focal point, perfect for cozy evenings in this exceptional property. While the market median price is \u00a3175, we offer superior space and comfort with all amenities included. Enjoy the unique combination of elegant interiors and thoughtful design features that justify the premium pricing. The high occupancy gap (15.2% booked vs market average 28.3%) means you'll have prime availability during your stay. Our 4.96 star rating (417 reviews) confirms consistent satisfaction with stays here. Please note the competitive pricing context: our rate is significantly higher than the median but offers unparalleled space and luxury. [Continue to highlight specific space features, views, and location advantages not mentioned in original listing]",
+    "top_amenity_gaps": [
+      "Outdoor space access",
+      "Entertainment options (TV systems)",
+      "Parking availability"
+    ],
+    "photo_order_rec": "Lead with the fireplace as cover photo since it's the most unique selling point mentioned in title and description",
+    "key_diagnosis": [
+      "Pricing is 560% above median (\u00a31155 vs \u00a3175) but occupancy is 45% below median (15.2% vs 28.3%)",
+      "Description is entirely missing - 200+ words of content lost to justify high rate",
+      "Title doesn't use high-value categories from strategy: outdoor, parking, entertainment"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your premium rate is 560% above the median but occupancy is 45% below market average - we can close this gap with strategic optimizations.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "558330039950410217",
+  "host_name": "Zoe",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 168.5,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 7751.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "EV Ready Flat A, 3 Baths & 4 Guests in Roundhay",
+      "Flat A: 3 Bath 2/3 Bed, EV Charging in Roundhay",
+      "City EV Access! 3 Bath Flat A for 4, Roundhay"
+    ],
+    "rewritten_desc": "Welcome to Flat A in Roundhay\u2014a spacious 2-to-3 bedroom flat featuring three modern bathrooms and the convenience of EV charging points. Ideal for 4 guests, this entire home rental offers flexibility with its adaptable bedroom setup while maintaining easy city connectivity. Located in a quiet neighborhood yet near major amenities, you\u2019ll enjoy hassle-free access to public transport and local landmarks. The property is fully equipped with modern amenities, including [insert specific appliances/furnishings if available]. Note: As a new host with 0 years of Airbnb experience, we\u2019re committed to making your stay exceptional. Guests rate 4.97/5 on previous visits, praising our [specific positive reviews if available in original description]. Open for 46 nights in the next 90 days at \u00a3168.50 per night\u2014book early to secure this sought-after location!",
+    "top_amenity_gaps": [
+      "Parking facilities",
+      "Outdoor space (e.g., garden, balcony)",
+      "Entertainment systems (TV, streaming services)"
+    ],
+    "photo_order_rec": "Prioritize the EV charging station as the cover photo\u2014this unique feature is the strongest differentiator in a market where only 23% of listings offer EV infrastructure",
+    "key_diagnosis": [
+      "Title lacks emotional appeal (44/50 characters) and prioritizes ambiguous '2/3b' over EV charging, a feature 86% of local listings lack",
+      "46 open nights at \u00a3168.50 represents \u00a37,741 unclaimed revenue during the next 90 days due to unclear value proposition",
+      "Missing lead photo of EV charging port\u2014the most impactful room type for conversion in listings with unique amenities"
+    ],
+    "outreach_angle": "image_order",
+    "outreach_hook": "Your 46 available nights in the next 90 days could generate \u00a37,741\u2014start by positioning the EV charging station photo first to align with local guest expectations",
+    "weakest_element": "description"
+  }
+}

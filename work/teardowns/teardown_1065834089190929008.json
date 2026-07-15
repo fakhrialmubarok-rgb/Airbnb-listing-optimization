@@ -1,0 +1,39 @@
+{
+  "listing_id": "1065834089190929008",
+  "host_name": "Naz",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 259.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 19714.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 5,
+    "score_amenities": 10,
+    "score_images": 10,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Headingley: Luxury Stay, Headingley Location, 48% above average rate!",
+      "Headingley House, 4 Guests, \u00a3259/Night, 50% more than the market median",
+      "Headingley, Exclusive Home, \u00a3259/Night, Occupancy Room to Improve"
+    ],
+    "rewritten_desc": "Step into this charming Headingley house, a hidden gem offering ultimate comfort for 4 guests. While the neighbourhood may hold its own charm, this home's true potential lies in its underutilized capacity. With a nightly rate \u00a384 higher than the market median of \u00a3175, there's room for strategic marketing to capture more bookings. This means that, theoretically, the potential revenue could reach up to \u00a319,660 from the available 76 nights (\u00a3259x76) if occupancy were to hit industry standards of 28.3. The hosts could also consider introducing outdoor, parking and facilities, or entertainment-related amenities to create a more competitive selling point. A well-planned revamp could bring in higher paying guests, ultimately boosting the overall occupancy rate.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and entertainment",
+      "Secure parking facility for guests",
+      "Entertainment options to make it a memorable stay"
+    ],
+    "photo_order_rec": "The exterior cover photo should be of the house's entrance with a neatly manicured garden to welcome potential guests. Consider showcasing this on the lead image to capture their attention.",
+    "key_diagnosis": [
+      "Increase the nightly rate to the true competitive median rate (\u00a3342) to maximize revenue (\u00a3259x76, current) vs \u00a324,840 (potential @ median \u00a3342).",
+      "Boost occupancy to reach the industry median of 28.3%, unlocking an additional \u00a37,200 in bookings (\u00a3259x76).",
+      "Introduce outdoor, parking, and entertainment-focused amenities within the first 3 months of listing, potentially yielding \u00a34,500 more in high-paying bookings (\u00a3259x17 for just one week @ 45% increase)."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With only 15.2% occupancy rate in the next 90 days, there's immense potential to increase revenue and fill those open nights.",
+    "weakest_element": "title"
+  }
+}

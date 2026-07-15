@@ -1,0 +1,39 @@
+{
+  "listing_id": "50445510",
+  "host_name": "Anthony",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 92.2,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 6822.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Cozy Guesthouse with Free Parking (\u00a392.2/nt)",
+      "Park in Style + Relax in Our Quiet Guesthouse",
+      "Unbeatable Value - Free Parking & Charming Accommodations (\u00a392.2)"
+    ],
+    "rewritten_desc": "Escape to the perfect retreat with our charming guesthouse, perfect for couples and families alike. We offer a serene and comfortable atmosphere, ideal for those seeking a relaxing getaway. Our cozy spaces can accommodate up to 4 guests, providing ample room for relaxation and rejuvenation. Take advantage of the free parking available on-site, making it easy to enjoy the local area without worrying about transportation costs. With a short commute to nearby attractions, you'll have plenty of opportunities to explore and make unforgettable memories. Enjoy a comfortable and relaxing stay in our delightful guesthouse, where you can unwind and recharge.",
+    "top_amenity_gaps": [
+      "Outdoor space would greatly enhance the guest experience",
+      "A laundry facility would be a convenient addition for guests",
+      "A TV or entertainment system would be a welcome amenity"
+    ],
+    "photo_order_rec": "Showcase the cozy living area as the cover photo, highlighting the comfortable seating and warm d\u00e9cor.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a392.2) is 47% below the median in your market (\u00a3175.00), which may indicate a pricing issue.",
+      "Your occupancy (17.4%) is 41.3 percentage points below the median occupancy (58.7%) in your market, suggesting that your pricing or listing might not be effectively reaching potential guests.",
+      "With a review count of 438, your credibility and perceived quality are high, but could be even stronger with a more engaging title and description."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have a significant pricing gap, with your rate 47% below the median, but only 17.4% of your occupancy calendar is booked.",
+    "weakest_element": "description"
+  }
+}

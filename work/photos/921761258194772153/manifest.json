@@ -1,0 +1,44 @@
+[
+  {
+    "n": 1,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTIxNzYxMjU4MTk0NzcyMTUz/original/98d17985-c8cd-46e3-84c7-42b19013e470.jpeg",
+    "status": "recreated",
+    "backend": "gemini 2.5-flash-image",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "staged": "qc_fail",
+    "tv": false
+  },
+  {
+    "n": 2,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTIxNzYxMjU4MTk0NzcyMTUz/original/c0038256-49b8-492b-9103-793d1ab78291.jpeg",
+    "status": "recreated",
+    "backend": "gemini 2.5-flash-image",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "staged": "staged",
+    "tv": true
+  }
+]

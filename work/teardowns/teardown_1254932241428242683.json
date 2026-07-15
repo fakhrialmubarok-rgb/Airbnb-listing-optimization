@@ -1,0 +1,39 @@
+{
+  "listing_id": "1254932241428242683",
+  "host_name": "Jonathan",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 130.0,
+    "occupancy_pct": 72.8,
+    "open_nights_90d": 24,
+    "revenue_at_stake_gbp": 3120.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Penthouse Near NEC \u2013 16% Below Avg Rate",
+      "Top\u2011Floor Suite, 4 Guests, Walk to BHX & HS2",
+      "Spacious 4\u2011Guest Penthouse, Near Train Links"
+    ],
+    "rewritten_desc": "Welcome to your top\u2011floor penthouse suite, perfectly positioned just minutes from the NEC, Birmingham Airport (BHX) and the new HS2 station. This entire\u2011home accommodation comfortably sleeps up to four guests, offering a spacious bedroom, a modern bathroom, and an open\u2011plan living area with floor\u2011to\u2011ceiling windows that flood the space with natural light. Enjoy a fully equipped kitchen, high\u2011speed Wi\u2011Fi, and a cosy lounge perfect for relaxing after a day of meetings or exploring the city. \n\nRated 4.96 from 98 glowing reviews, our guests consistently praise the immaculate condition, thoughtful layout, and unbeatable location. At \u00a3130 per night, you\u2019re paying 16% less than the city\u2019s median nightly rate of \u00a3154.60, yet you already have a 72.8% booking rate for the next 90 days \u2013 only 24 nights remain open. Whether you\u2019re traveling for business at the NEC, catching a flight from BHX, or hopping on the HS2, everything you need is just a short walk away. \n\nBook now and experience a premium stay that combines comfort, convenience, and exceptional value, all under one roof.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or terrace)",
+      "Parking for guests",
+      "Entertainment (TV, streaming services, gaming console)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution shot of the living area showing the panoramic view from the top floor as the cover photo; it instantly highlights the \u2018penthouse\u2019 feel and the property\u2019s prime location.",
+    "key_diagnosis": [
+      "Revise the title to spotlight the 16% price advantage (\u00a3130 vs \u00a3154.60 median) and key transport links, increasing click\u2011through rates.",
+      "Create a compelling 200\u2011300 word description that includes the 4.96 rating, 98 reviews, capacity for 4 guests, and proximity to NEC, BHX, and HS2 to improve conversion.",
+      "Add high\u2011value amenities \u2013 a balcony, guest parking, and a TV/streaming setup \u2013 to match market expectations and justify the price."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a3130/night rate is 16% below the market median, yet you\u2019re already booking 73% of your calendar in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1647022963388902886",
+  "host_name": "Rooms Near Me",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 132.2,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 9782.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 6,
+    "score_images": 1,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Escape & Relax in 4BR Home | \u00a3132.2/nt",
+      "Peaceful Garden Getaway | Entire 4BR Home",
+      "Smart TV & Free WiFi in 4BR Home | Book Now"
+    ],
+    "rewritten_desc": "Escape and relax in our 4-bedroom home, perfectly suited for couples or small families. Enjoy exclusive access to a private drive and serene garden, ideal for unwinding and rejuvenating. This entire home boasts a Smart TV for your entertainment and free WiFi to stay connected. Our home sleeps 4 guests, making it an ideal retreat for those seeking quiet and comfort. With 74 open nights in the next 90 days, there's plenty of opportunity to make the most of our property. As a host, we're committed to providing a seamless and enjoyable stay for all our guests. Our home is located within a scenic area, offering easy access to [insert local amenities]. We can't wait to welcome you to our humble abode!",
+    "top_amenity_gaps": [
+      "Parking and facilities",
+      "Outdoor space",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "Use a shot of the private garden as the cover photo, immediately conveying a sense of serenity and seclusion.",
+    "key_diagnosis": [
+      "Their \u00a3132.2 nightly rate is significantly lower (-24%) than the cohort median of \u00a3175.00, leaving space to increase occupancy and revenue by \u00a31,044 over 74 open nights (132.2 * 8.1 = 1044).",
+      "Their occupancy at 17.4% booked in the next 90 days is a considerable 29.9% below the cohort median of 28.3%, suggesting opportunities for optimization.",
+      "Photos are completely absent from the listing - a total of 5-7 high-quality images of each room type will be required to meet Airbnb's standard."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 74 open nights and an occupancy rate 29.9% below the cohort median, we believe there's tremendous opportunity to boost bookings and revenue by revising your approach.",
+    "weakest_element": "photos"
+  }
+}

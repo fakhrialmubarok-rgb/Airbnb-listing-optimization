@@ -1,0 +1,39 @@
+{
+  "listing_id": "32860825",
+  "host_name": "Ray",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 238.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 17850.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 4,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "2-Bed Luxury Apartment, Stylish & Comfortable",
+      "Luxury 2BD Apartment in City Center",
+      "Modern 2-Bed Apartment for 4 Guests"
+    ],
+    "rewritten_desc": "Step into this stylish 2-bedroom apartment featuring two modern bathrooms and space for four guests. Located in [insert specific neighborhood/district], this entire home rental offers a luxurious base for travelers. The property's contemporary design blends comfort and elegance, with high-quality furnishings and curated decor. Perfect for couples, small families, or friends seeking a premium experience in the city. Enjoy the convenience of being in a desirable location while maintaining privacy in this well-maintained residence. Rates include [insert any specific booking terms]. All amenities are available at your disposal, ensuring a comfortable stay from arrival to departure. Ideal for those seeking both space and sophistication.",
+    "top_amenity_gaps": [
+      "Outdoor/rooftop space",
+      "Secure parking facility",
+      "Gym or fitness center"
+    ],
+    "photo_order_rec": "Show the master bedroom first to highlight the property's luxury feel. This space is likely the strongest differentiator at this price point.",
+    "key_diagnosis": [
+      "Your rate is \u00a3238/night (+36% vs cohort median) but occupancy is 16.3% (12.0% below market median) = significant price-vs-occupancy gap",
+      "Title exceeds 50 characters (-10 chars needed) which reduces SEO visibility",
+      "Missing high-value amenity categories (outdoor, parking, fitness) that could justify premium pricing"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3238/night rate is 36% above the market median but occupancy is 12.0% behind at 16.3% booked over 90 days.",
+    "weakest_element": "title"
+  }
+}

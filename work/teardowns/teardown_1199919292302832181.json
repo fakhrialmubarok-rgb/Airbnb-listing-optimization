@@ -1,0 +1,39 @@
+{
+  "listing_id": "1199919292302832181",
+  "host_name": "Christian",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 162.0,
+    "occupancy_pct": 71.7,
+    "open_nights_90d": 25,
+    "revenue_at_stake_gbp": 4050.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Summerhill Square Hidden Gem, 5* City Centre",
+      "Experience the Heart of the City at Summerhill",
+      "City Centre Hideaway, Perfect for 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to our charming Summerhill Square Mews House, a 5* rated, hidden gem in the heart of the city centre. This beautifully appointed, entire home property is perfect for 4 guests looking to experience the best of the city. With its historic charm and stylish furnishings, you'll feel right at home in this beautiful Mews House. Enjoy the perfect blend of traditional and modern comforts, complete with all the essentials for a comfortable and relaxing stay. Enjoy strolling through the city's historic streets and exploring its vibrant culture, all within walking distance from your front door.",
+    "top_amenity_gaps": [
+      "Adding outdoor seating or a small garden to take advantage of the city's pleasant weather",
+      "Installing secure on-site parking or providing a parking permit for guests",
+      "Including a selection of local entertainment options and experiences in the description"
+    ],
+    "photo_order_rec": "The living room should be the lead photo as it showcases the property's interior design and style.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3162) is +7.4% above the cohort median, but your occupancy (71.7%) is 23.9% lower than the cohort median of 47.8% - you may be pricing out potential guests.",
+      "Only 25 nights are currently available, generating \u00a34,050 in revenue - a significant opportunity to increase occupancy and earnings.",
+      "With 0 images of the rooms, we can't showcase the property's layout, comfort, and style, missing out on converting potential guests."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Hi Christian, with only 25 nights available in the next 90 days and earning \u00a34,050 in revenue, we think there's an opportunity to increase occupancy and earnings with some targeted improvements.",
+    "weakest_element": "title"
+  }
+}

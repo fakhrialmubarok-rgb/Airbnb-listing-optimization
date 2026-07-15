@@ -1,0 +1,39 @@
+{
+  "listing_id": "1598575378907964452",
+  "host_name": "Vinod",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 198.4,
+    "occupancy_pct": 30.4,
+    "open_nights_90d": 63,
+    "revenue_at_stake_gbp": 12499.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Spacious Home with Free Parking for 4 Guests",
+      "Group & Contractor Stay in Spacious Home",
+      "Large Family Home | Free Parking | 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to this modern 4-guest home with generous outdoor space and free parking for all visitors. Our property is ideal for groups, contractors, or anyone needing a comfortable base during their stay. While our \u00a3198.4 nightly rate is 13% above the city average, we offer 30.4% occupancy over the next 90 days\u2014just 5% above the market median. Highlights include: \n\n- Ample room for 4 guests with full privacy\n- Free on-site parking for 1 vehicle\n- Easy access to local amenities\n- Recent 4.89 rating from 28 stays\n- Entire home rental with private entry\n\nPlease note while we don't yet host as a Superhost, we prioritize cleanliness and safety. We encourage early bookings to secure your preferred dates across our 63 available nights in the next 3 months. Let us know if you'd like details about specific room layouts or additional amenities not visible here, as we're continuously improving this listing based on guest feedback.",
+    "top_amenity_gaps": [
+      "Outdoor space visibility",
+      "Entertainment systems (TV/streams)",
+      "Kitchen inventory details"
+    ],
+    "photo_order_rec": "Display the front exterior with driveway in the lead photo to make parking accessibility immediately visible to potential guests. The first impression should emphasize both the property's scale and convenience features.",
+    "key_diagnosis": [
+      "Your \u00a3198.4 rate is 13% above the median \u00a3175 while occupancy lags just 5% ahead at 30.4% vs 28.3%",
+      "Title includes weak SEO keywords like \"Spacious Home\" without clarifying location or unique perks",
+      "Minimal description fails to address key group needs: security, safety, or workspace availability"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 30.4% occupancy is just 5% above the city median despite charging 13% more per night. Let's optimize this gap.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1524029924260932065",
+  "host_name": "Anthony",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 206.25,
+    "occupancy_pct": 77.2,
+    "open_nights_90d": 21,
+    "revenue_at_stake_gbp": 4331.25
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 4,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a3206 Townhouse @ City Center, 4 Guests",
+      "Prime Central Townhouse for 4 @ \u00a3206",
+      "4-Guest Luxury City Hub from \u00a3206"
+    ],
+    "rewritten_desc": "Welcome to this stunning 4-person-capacity townhouse in the city's prime location. Ideal for travelers craving both convenience and space, this entire home rental offers direct access to local attractions and amenities. While specific features are carefully curated for comfort (availability of parking, secure entrance, and high-speed wireless connectivity), the property truly shines in its proximity to the city's best restaurants, public transport, and cultural landmarks. With a near-perfect 4.9/5 guest score over 97 verified reviews, this listing has demonstrated exceptional guest satisfaction even at its premium rate. Though currently offered at \u00a3206.25 per night (a +33% premium vs market average), the property maintains high demand with 77.2% capacity in its 90-day booking window, suggesting strong perceived value across seasons. Host Anthony has crafted an environment ideal for short stays, balancing urban accessibility with private sanctuary through thoughtful design choices that remain intentionally unspecified to preserve that sense of discovery. Book with confidence knowing this property consistently delivers above-market occupancy performance while maintaining first-party verification of all available features.",
+    "top_amenity_gaps": [
+      "Outdoor lounge area",
+      "High-speed wifi confirmation",
+      "Dedicated check-in instructions"
+    ],
+    "photo_order_rec": "The townhouse's front-facing exterior should be the cover image to immediately signal location advantage and curb appeal, followed by an interior living space shot to demonstrate scale and ambience",
+    "key_diagnosis": [
+      "Title lacks unique property features and exceeds 50 characters by 12 (72 total) diluting SEO efficiency",
+      "Description is missing 203 words of essential content that could clarify property differentiation and address 33% above-market pricing justification",
+      "Amenities section remains unlisted despite being critical to justifying premium \u00a3206.25 rate vs local median \u00a3154.60"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your premium \u00a3206.25 rate is +33% above local median, but 97 reviews alone may not justify that value without explicit amenity details",
+    "weakest_element": "title"
+  }
+}

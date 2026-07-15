@@ -1,0 +1,39 @@
+{
+  "listing_id": "42045670",
+  "host_name": "Jo",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 192.2,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14607.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 7,
+    "score_amenities": 10,
+    "score_images": 10,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Solihull Penthouse w/Balcony & Pets",
+      "Stunning Solihull Penthouse with Balc",
+      "Solihull's Coolest Penthouse with Balcony "
+    ],
+    "rewritten_desc": "Welcome to Solihull's most coveted penthouse, boasting a spacious balcony perfect for sunset views and entertaining friends. This modern sanctuary can accommodate up to 4 guests and features a comfortable living area, stylish kitchen, and 2 bedrooms. Enjoy seamless Wi-Fi and secure parking. As a bonus, the property is pet-friendly, so bring your furry friends along. Located in the heart of Solihull, explore the bustling Market Square and nearby parks. Whether you're a couple or group of friends, this penthouse offers the ultimate getaway experience. With its prime location and luxurious amenities, you'll feel right at home.",
+    "top_amenity_gaps": [
+      "Parking and facilities - a must-have for guests in this market",
+      "Outdoor spaces - a balcony with views would be a great differentiator",
+      "Entertainment - consider adding a projector or smart TV to elevate the experience"
+    ],
+    "photo_order_rec": "Feature the penthouse's balcony as the cover photo to showcase its stunning views and outdoor space",
+    "key_diagnosis": [
+      "Your 15.2% occupancy rate is significantly lower than the cohort median of 28.3%, costing \u00a32888.16 in lost revenue (\u00a3192.2/night x 76 open nights)",
+      "Your nightly rate is \u00a317 above the cohort median, a moderate price premium, but the occupancy gap suggests you could adjust your pricing strategy",
+      "You have no images listed, which could be hindering bookings - consider adding high-quality photos to showcase your property's best features"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "We've identified a significant occupancy gap in your listings, \u00a32888.16 in lost revenue over 76 open nights, which we think can be addressed with some targeted adjustments",
+    "weakest_element": "title"
+  }
+}

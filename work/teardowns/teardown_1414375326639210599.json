@@ -1,0 +1,39 @@
+{
+  "listing_id": "1414375326639210599",
+  "host_name": "Haroon",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 89.2,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 6690.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Half\u2011Price Modern 1\u2011Bed Flat \u2013 Newcastle",
+      "4\u2011Guest Urban Flat \u2013 Just \u00a389/night Near Gateshead",
+      "Cozy 1\u2011Bed Flat, 4 Guests, \u00a389 Night \u2013 Newcastle"
+    ],
+    "rewritten_desc": "Welcome to a bright, modern one\u2011bedroom flat perfectly positioned for exploring both Newcastle and Gateshead. This entire\u2011home accommodation comfortably sleeps up to four guests, making it ideal for couples, small families, or business travelers. The space features a contemporary living area with a sofa bed, a fully equipped kitchen, and a sleek bathroom\u2014all styled with clean lines and high\u2011quality finishes. Guests enjoy fast Wi\u2011Fi, a flat\u2011screen TV, and a dining table for four, ensuring a comfortable stay whether you\u2019re working or relaxing.\n\nThe flat has earned a solid 4.3 rating from 20 verified reviews, reflecting consistent guest satisfaction. Although you\u2019re not yet a Superhost, the positive feedback highlights the value you already provide. At a nightly rate of \u00a389.2, you\u2019re offering a price that is 49% lower than the city\u2019s median nightly rate of \u00a3175, a compelling advantage for budget\u2011savvy travelers. \n\nLocated just minutes from the vibrant city centres, you\u2019ll have easy access to restaurants, public transport, and cultural attractions. While the property currently lacks listed outdoor, parking, or entertainment amenities, you can easily add a secure parking spot or a small balcony to boost appeal. Book now and experience a modern, well\u2011located home at an unbeatable price.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or garden)",
+      "Dedicated parking spot",
+      "Entertainment amenities (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area as the cover photo\u2014it showcases the modern d\u00e9cor and the space where guests will spend most of their time, immediately conveying value.",
+    "key_diagnosis": [
+      "Occupancy gap: your nightly rate is \u00a389.2, 49% lower than the cohort median of \u00a3175, yet you\u2019re only booked 16.3% of the next 90 days versus the market average of 28.3% \u2013 boost visibility and dynamic pricing to capture demand.",
+      "Amenity shortfall: no outdoor, parking, or entertainment amenities listed; adding even a secured parking space or a small balcony can increase perceived value and attract higher\u2011paying guests.",
+      "Photo deficiency: photo count unknown and likely insufficient; acquire at least 5 professional photos (living room, bedroom, kitchen, bathroom, exterior) and set the living\u2011room shot as the cover to improve click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a389 is 49% below the city median of \u00a3175, yet you\u2019re only booked 16.3% of the next 90 days.",
+    "weakest_element": "description"
+  }
+}

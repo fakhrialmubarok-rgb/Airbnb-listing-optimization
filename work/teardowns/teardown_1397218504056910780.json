@@ -1,0 +1,37 @@
+{
+  "listing_id": "1397218504056910780",
+  "host_name": "Heather",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 133.2,
+    "occupancy_pct": 42.4,
+    "open_nights_90d": 52,
+    "revenue_at_stake_gbp": 6926.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 8,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3133 Quayside Stay with Views",
+      "Cheap Stay Near City Centre",
+      "\u00a3133 City Apartment Deal"
+    ],
+    "rewritten_desc": "Stay in a charming 4-bedroom apartment on the bustling Quayside for just \u00a3133/night. With 42 nights available in the next 90 days, this is a rare opportunity to book a prime city location at 14% below market rate. Located steps from major attractions, our space blends style with convenience. Recent guests praise the apartment's modern design (4.9/5 stars from 49 reviews), but 52 nights remain unfilled in a market averaging 47.8% occupancy. While we haven't listed specific amenities yet, you'll find all essentials included to make your stay comfortable. Book directly with Heather, our newer host with a strong track record in customer service. Don't miss this value proposition - 0 years hosting, but with the flexibility of an entire home for your group of up to 4 guests.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Secure parking facility",
+      "Streaming entertainment"
+    ],
+    "photo_order_rec": "The living room should be the cover photo (showcasing the modern style mentioned in reviews) followed by waterfront views to immediately highlight the location advantage",
+    "key_diagnosis": [
+      "Despite 14% below-market pricing (\u00a3133 vs \u00a3154.60 cohort median), occupancy lags (42.4% vs 47.8%)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3133/night rate is 14% below the \u00a3154.60 median but you're still missing 28% of bookings vs the 47.8% cohort median.",
+    "weakest_element": "description"
+  }
+}

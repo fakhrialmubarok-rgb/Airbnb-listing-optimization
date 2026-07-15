@@ -1,0 +1,39 @@
+{
+  "listing_id": "1160292035240787918",
+  "host_name": "Zara",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 510.0,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 23460.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 6,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Retreat near City Centre \u00a3510",
+      "Jewellery Quarter Gem - Sleep 4 \u00a3510",
+      "Serene Oasis in City Centre \u00a3510"
+    ],
+    "rewritten_desc": "Experience ultimate luxury in this serene retreat, nestled just a short stroll from the vibrant City Centre and iconic Jewellery Quarter. This stylish entire home comfortably sleeps 4 guests, perfect for families, couples, or friends celebrating a special occasion. With its prime location and exceptional amenities, this property is the perfect blend of sophistication and relaxation. Enjoy easy access to Birmingham's top attractions, restaurants, and shops. Unwind in style with plush furnishings, high-quality finishes, and a fully equipped kitchen. Ideal for those seeking a tranquil retreat in the heart of the city.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and recreation",
+      "Parking and private parking facilities for guests",
+      "Smart entertainment system for seamless streaming"
+    ],
+    "photo_order_rec": "Place a photo of the living area or kitchen as the cover photo to showcase the property's luxurious feel and high-quality finishes",
+    "key_diagnosis": [
+      "Increase nightly rate to \u00a3525 (\u00a325 increase) to bring it in line with the cohort median rate (\u00a3175) and potentially boost occupancy to 48%",
+      "Add an outdoor amenity, such as a small balcony or garden, to appeal to 71% of the cohort listings that offer outdoor spaces",
+      "Highlight the property's 4.22 review rating and showcase the 9 reviews from previous guests to build trust and credibility with potential bookers"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a \u00a3510 nightly rate that's 191% above the cohort median, there's room to improve occupancy - can we discuss how to make this property more attractive to bookers?",
+    "weakest_element": "photos"
+  }
+}

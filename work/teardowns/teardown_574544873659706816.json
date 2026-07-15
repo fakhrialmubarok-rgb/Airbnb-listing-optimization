@@ -1,0 +1,39 @@
+{
+  "listing_id": "574544873659706816",
+  "host_name": "Bobsy",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 201.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 14874.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Hot Tub Suite with Panoramic Views, \u00a3201/night",
+      "Deluxe Jet Hot Tub Apartment - City Centre Luxury",
+      "Luxury Hot Tub Suite - Perfect for 4 Guests"
+    ],
+    "rewritten_desc": "Escape to a luxurious city centre retreat with breathtaking views of the surrounding area. This stunning Deluxe Jet Hot Tub Suite is the perfect haven for couples and friends looking to indulge in some well-deserved relaxation. Boasting a spacious open-plan living area, a sleek and stylish design, and a sumptuous hot tub, you'll feel like royalty in this tranquil oasis. With 4 guests in mind, this apartment is perfect for special occasions or simply a luxurious weekend getaway. With its ideal location, just minutes from local amenities and attractions, you'll never be far from the action. So why wait? Book your stay today and experience the epitome of high-end luxury!",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Parking",
+      "Facilities (pool, gym, etc.)"
+    ],
+    "photo_order_rec": "The hot tub suite should be the cover photo as it's the main differentiator and a key part of the accommodation's luxurious appeal.",
+    "key_diagnosis": [
+      "This listing is priced \u00a326 above the \u00a3175 cohort median, yet has only a 17.4% occupancy rate, significantly underperforming the 28.3% cohort median. This indicates a potential pricing mismatch.",
+      "As a 4.99-rated listing, it's surprising that there are no photos of the property's exterior, living room, or additional bedrooms, leaving much to the viewer's imagination.",
+      "With only 286 reviews and 0 years of hosting experience, it may be beneficial to showcase Bobsy's excellent communication skills and any previous guest feedback to build trust with potential guests."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Considering your listing's \u00a3201 nightly rate is 15% above the cohort median, but only 17.4% of the next 90 days are booked, we believe re-examining your pricing strategy could be beneficial for increasing occupancy.",
+    "weakest_element": "title"
+  }
+}

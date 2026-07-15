@@ -1,0 +1,39 @@
+{
+  "listing_id": "1516718237162220726",
+  "host_name": "Oliver",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 168.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 12600.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Jacuzzi\u2011tub Retreat for 4 \u2013 Tranquil Escape",
+      "Quiet 4\u2011Guest Home with Private Hot Tub",
+      "Relaxing Entire Home \u2013 Jacuzzi Bath, Sleeps 4"
+    ],
+    "rewritten_desc": "Welcome to your tranquil getaway in the heart of the city. This entire home comfortably sleeps up to four guests, offering a peaceful space for families, friends, or couples looking to unwind. The standout feature is the private jacuzzi tub, perfect for relaxing after a day of exploring. Guests enjoy a fully equipped kitchen, a cozy living area, and two well\u2011appointed bedrooms designed for restful sleep. \n\nAt \u00a3168 per night, the home provides great value for a premium experience. Although the listing is new\u2014host Oliver has zero years of hosting experience and is not yet a Superhost\u2014the property has already earned nine reviews, averaging a 3.0 rating. This early feedback highlights the potential for improvement and a chance for you to shape the guest experience from the start. \n\nThe property is available for 75 open nights over the next 90 days, presenting a significant opportunity to fill dates and generate up to \u00a312,600 in revenue at the current rate. Whether you\u2019re planning a short city break or a longer retreat, this home offers the privacy, comfort, and unique jacuzzi amenity that will make your stay memorable. Book now and be among the first to enjoy this serene space.",
+    "top_amenity_gaps": [
+      "Private outdoor space (e.g., patio or garden)",
+      "Dedicated parking spot",
+      "Entertainment amenities (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution image of the jacuzzi\u2011tub bathroom as the cover photo, as it showcases the property\u2019s unique selling point and will attract clicks.",
+    "key_diagnosis": [
+      "Capitalize on the 75 open nights (83.7% of the next 90 days) to generate up to \u00a312,600 in potential revenue at the current \u00a3168 rate.",
+      "Add at least one high\u2011value amenity such as a dedicated parking space; none are listed for this property, and parking is a top demand in the 357\u2011listing cohort.",
+      "Upload a minimum of 5 professional photos covering bedroom, living room, kitchen, exterior, and the jacuzzi\u2011tub bathroom to match market expectations and improve visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 75 open nights over the next 90 days, representing a potential revenue of \u00a312,600 at your current \u00a3168 nightly rate.",
+    "weakest_element": "description"
+  }
+}

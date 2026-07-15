@@ -1,0 +1,39 @@
+{
+  "listing_id": "744721665934938483",
+  "host_name": "Steve",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1421.0,
+    "occupancy_pct": 35.9,
+    "open_nights_90d": 58,
+    "revenue_at_stake_gbp": 82418.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 6,
+    "score_images": 7,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 14\u2011Guest Farmhouse with Hot Tub & Views",
+      "Boutique Farmhouse Retreat \u2013 14 Guests, Hot Tub",
+      "Spacious Peak Forest Farmhouse, Hot Tub, 14 Guests"
+    ],
+    "rewritten_desc": "Welcome to Cop Farm \u2013 a spacious, modern farmhouse built in 2006 that comfortably sleeps up to 14 guests. Nestled in the scenic Peak Forest, the property offers breathtaking mountain and valley views, a private hot\u2011tub, and a 75\u2011inch HDTV for evening entertainment. The open\u2011plan lounge is perfect for family gatherings, while the master bedroom suite boasts an en\u2011suite bathroom and a dedicated view of the surrounding countryside. Additional sleeping quarters provide ample space for larger groups, and a cot and high chair are available on request for families travelling with little ones. \nAll essentials are supplied, including fresh linens, towels, a hairdryer, body soap, and extra pillows and blankets. Kitchen basics, a free washer and dryer, and an iron ensure a hassle\u2011free stay. For added comfort, a fireplace with safety guards keeps the evenings cosy. \nGuests have exclusive access to the entire home and its outdoor area, where the hot\u2011tub awaits under the stars. Please bring an extra towel for the tub. Note that we do not accept stag or all\u2011male bookings. With 61 high\u2011quality photos showcasing every room and view, Cop Farm promises a memorable countryside retreat for families, friends, or groups seeking luxury and space in the heart of England.",
+    "top_amenity_gaps": [
+      "Exterior security cameras on the property",
+      "Air conditioning for summer comfort",
+      "Clear on\u2011site parking information or dedicated parking space"
+    ],
+    "photo_order_rec": "Use the \"View From Master Bedroom\" shot as the cover photo\u2014it highlights the dramatic valley and mountain vistas that set this listing apart and immediately captures guests\u2019 attention.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a31,421 is +1255% above the city median (\u00a3104.90) while your 90\u2011day occupancy is only 35.9% versus the market average of 48.9% \u2013 consider a price adjustment or added value to boost bookings.",
+      "The current title does not leverage high\u2011impact keywords; replace it with a 50\u2011character, SEO\u2011friendly version that features \"hot tub\", \"peak forest\" and \"14 guests\" to improve search visibility.",
+      "Reorder the photo set so the first image is the panoramic view, reduce the total to ~30 targeted shots, and ensure each key amenity (hot tub, views, entertainment) appears within the first five photos to increase conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a31,421 nightly rate is 1255% above the local median, yet your 90\u2011day occupancy sits at 35.9% versus the market\u2019s 48.9% \u2013 there\u2019s a clear upside.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1403544653875081438",
+  "host_name": "Chris",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 130.0,
+    "occupancy_pct": 66.3,
+    "open_nights_90d": 30,
+    "revenue_at_stake_gbp": 3900.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Railway Cottage Horsforth (20% off median price)",
+      "Charming 4-Person Cottage Near City \u00a3130",
+      "Spacious Railway Cottage Great for Outdoors"
+    ],
+    "rewritten_desc": "Experience this fully private 4-guest Railway Cottage in Horsforth\u2019s vibrant community. Strategically priced at \u00a3130/night (20% below the local market median), this entire home offers exceptional value for families and travelers seeking comfort. Situated in a central location, it combines modern convenience with historical charm. While we\u2019re continually improving our amenities list, guests can request additional facilities for a tailored stay. With 30 open nights ahead, now is the perfect time to claim this underpriced gem in high-demand Horsforth. *Note: Host Chris is new to hosting and committed to excellence.*",
+    "top_amenity_gaps": [
+      "Outdoor seating/patio",
+      "On-site parking (not explicitly listed)",
+      "Stream-ready entertainment system"
+    ],
+    "photo_order_rec": "Start with a clean exterior shot of the cottage to establish trust, followed by the living room to showcase space. Outdoor areas should be prioritized if available.",
+    "key_diagnosis": [
+      "Title underperforms at 25% length (max 50 chars, 0 chars used for property type/kindness flags)",
+      "Description score at rock-bottom 1/10 due to no content \u2014 critical for converting price-competitive guests",
+      "Amenities score 1/10 lacks 3 high-value categories (Outdoor, Parking, Entertainment) that could boost \u00a3130 rate\u2019s competitiveness"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "\u00a3130 rate is -16% vs \u00a3154.60 median yet achieves 66.3% occupancy (vs 47.8% cohort average) \u2013 this underpricing suggests massive revenue untapped.",
+    "weakest_element": "description"
+  }
+}

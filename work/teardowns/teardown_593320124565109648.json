@@ -1,0 +1,39 @@
+{
+  "listing_id": "593320124565109648",
+  "host_name": "Kathleen",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 235.2,
+    "occupancy_pct": 68.5,
+    "open_nights_90d": 28,
+    "revenue_at_stake_gbp": 6585.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Countryside Cottage w/ Log Burner",
+      "Quaint Cottage with Country Views & Wood Stove",
+      "Charm Cottage | Scenic Countryside & Log Fire"
+    ],
+    "rewritten_desc": "Escape to this charming countryside cottage just minutes from local attractions. The entire home sleeps 4 guests in warmth and comfort, featuring a rustic log burner for cozy evenings. Overlooking rolling green vistas, this property offers a peaceful retreat ideal for couples or small families seeking countryside tranquility. While the description highlights key assets like the log burner and views, strategic upgrades would strengthen appeal. Consider adding specific amenities that align with the property's value proposition to maximize bookings.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor seating area",
+      "Smart TV with streaming services"
+    ],
+    "photo_order_rec": "The living room with unobstructed countryside views should be the cover photo to showcase the property's signature asset and create instant visual appeal in search results.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a379.2 higher than cohort median but occupancy is 20.7% above median, suggesting price could be optimized to increase revenue (27 open nights remaining at \u00a3235/night = \u00a36,345 potential revenue)",
+      "Title exceeds 50-character limit (57 characters) reducing visibility in search feeds",
+      "Zero listed amenities despite premium pricing strategy, missing opportunities to justify \u00a3235/night"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced \u00a379.2 above the local market average yet has 20.7% higher occupancy than the 47.8% median. Strategic pricing adjustments could increase revenue by \u00a33,055 over 90 days.",
+    "weakest_element": "title"
+  }
+}

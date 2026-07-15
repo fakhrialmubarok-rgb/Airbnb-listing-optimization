@@ -1,0 +1,39 @@
+{
+  "listing_id": "1470259580892674922",
+  "host_name": "Claire",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 185.0,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 12210.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Modern 4\u2011Guest Jesmond Flat \u2013 Walk to City Centre",
+      "Stylish Newcastle Apartment \u2013 4 Guests, Central",
+      "Jesmond City\u2011Centre Apartment \u2013 Modern Comfort 4"
+    ],
+    "rewritten_desc": "Welcome to your modern, entire\u2011home retreat in the heart of Jesmond, just steps from Newcastle\u2019s city centre. This bright, spacious apartment comfortably sleeps up to four guests, making it perfect for families, small groups, or business travelers. Inside, you\u2019ll find a welcoming living area that opens onto large windows, a fully equipped kitchen ready for home\u2011cooked meals, two cozy bedrooms with quality bedding, and a contemporary bathroom stocked with fresh towels. Guests rave about the clean, stylish decor and the convenient location \u2013 the property holds a solid 4.58 rating from 401 reviews, reflecting consistent guest satisfaction. While you enjoy the quiet residential vibe of Jesmond, you\u2019re only a short walk away from bustling caf\u00e9s, restaurants, shops, and public transport that put the city\u2019s attractions within easy reach. At \u00a3185 per night, this apartment offers a premium stay with modern comforts and a prime spot to explore Newcastle. Book now to experience the perfect blend of comfort and city\u2011side convenience for your next visit.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or terrace)",
+      "Dedicated parking or nearby secure parking",
+      "Entertainment amenities (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality image of the bright living area with city views as the cover photo; it showcases the modern interior and prime location, grabbing attention instantly.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3185 is about 6% above the cohort median (\u00a3175) while occupancy is 27.2% (66 open nights), below the market average of 28.3% \u2013 consider a modest price drop to boost bookings.",
+      "No amenities are listed, missing high\u2011value categories like outdoor space, parking, and entertainment that competitors highlight and guests seek.",
+      "The listing has no description, leaving potential guests without any narrative; a compelling 200\u2011300\u2011word description is essential for conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 66 open nights in the next 90 days that could generate up to \u00a312,210 in revenue at your current \u00a3185 rate.",
+    "weakest_element": "description"
+  }
+}

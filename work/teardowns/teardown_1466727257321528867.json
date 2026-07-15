@@ -1,0 +1,39 @@
+{
+  "listing_id": "1466727257321528867",
+  "host_name": "Julie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 119.7,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9097.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Free parking and 4-star flat by the canal: \u00a3119/n",
+      "-32% off the market: \u00a3119/night canal-side flat",
+      "Unique canal flat, \u00a3119/night, free parking"
+    ],
+    "rewritten_desc": "Escape to our charming canal-side flat, perfect for 4 guests, with free on-site parking. Enjoy stunning views of the waterway and a tranquil atmosphere. Our flat is a short walk from local shops and restaurants. With its stylish decor and comfortable furniture, this is the ideal base for your next city break. We're proud to say our guests have rated us 4.5/5 stars, based on 265 glowing reviews. Come and experience it for yourself!",
+    "top_amenity_gaps": [
+      "On-site entertainment facilities (e.g. projector, games console)",
+      "Outdoor seating area with canal views",
+      "Private parking for bicycles"
+    ],
+    "photo_order_rec": "The living room should be the cover photo as it showcases the flat's stylish decor and is a key selling point.",
+    "key_diagnosis": [
+      "Julie's nightly rate is -32% vs the cohort median (\u00a3175.00), which may signal to potential guests that the property is underpriced.",
+      "The flat has an occupancy of 15.2% over the next 90 days, significantly lower than the cohort median (28.3%), suggesting that the listing may not be optimized for search.",
+      "The property type is 'Entire home', but no amenities are listed, which could make it harder for guests to decide whether to book."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Julie's flat has a significant gap in bookings (15.2% vs 28.3% median) which may indicate that it's not optimized for search.",
+    "weakest_element": "photos"
+  }
+}

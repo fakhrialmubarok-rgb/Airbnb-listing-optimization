@@ -1,0 +1,39 @@
+{
+  "listing_id": "1069543507362573324",
+  "host_name": "Tirath",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 166.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 12616.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Riverfront Entire Home in Birkenhead (Garden Views!)",
+      "4-Guest Entire Property with River & Garden Views",
+      "Garden View Retreat Near Birkenhead Docks"
+    ],
+    "rewritten_desc": "Escape to this charming Entire Property in Birkenhead featuring unmatched river and garden vistas. Perfect for 4 guests seeking a private retreat, the home offers a tranquil setting just minutes from city attractions. While details about specific in-home amenities will be added for clarity, our focus is on creating memorable stays for guests of all ages. Please check the 'About This Place' section for ongoing updates while we complete the listing details.",
+    "top_amenity_gaps": [
+      "Outdoor seating for nature views",
+      "Nearby parking convenience",
+      "Entertainment features"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the property's garden-side balcony or terrace as cover photo. Outdoor spaces with views drive engagement and should be featured first.",
+    "key_diagnosis": [
+      "Occupancy 25% below cohort median with 76 open nights at \u00a3166/night = \u00a312,656 potential revenue unclaimed (15.2% vs 28.3% booked)",
+      "Title contains only location + view claims but misses Superhost status/capacity differentiators",
+      "28% below median cohort price yet occupancy signal weaker than market leaders"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 76 open nights remaining at your current rate and occupancy 25% below Birkenhead market average, there's \u00a312,656 in untapped revenue potential to unlock this season.",
+    "weakest_element": "title"
+  }
+}

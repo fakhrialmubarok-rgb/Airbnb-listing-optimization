@@ -1,0 +1,39 @@
+{
+  "listing_id": "1714668457195783882",
+  "host_name": "Ashley",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 143.2,
+    "occupancy_pct": 73.9,
+    "open_nights_90d": 23,
+    "revenue_at_stake_gbp": 3293.6
+  },
+  "analysis": {
+    "score_title": 7,
+    "score_desc": 5,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Entire Home | 3 En-Suite Bedrooms | 4 Guests",
+      "3 En-Suite Bedrooms | Entire Home for 4",
+      "4-Guest Home | 3 En-Suite Bedrooms | Full Property"
+    ],
+    "rewritten_desc": "Welcome to your private retreat in [Location], this beautifully appointed entire home sleeps 4 guests with three en-suite bedrooms offering privacy and comfort. Perfect for families or groups seeking space, the property features [mention any hidden strengths like proximity to attractions or unique layout]. With 23 open nights available in the next 90 days, book now to secure this highly sought-after listing (73.9% occupancy). While amenities will be detailed to enhance your stay, the 4.71-star rating reflects our commitment to hospitality. [Add specific location benefits if available].",
+    "top_amenity_gaps": [
+      "Outdoor/BBQ area",
+      "Secure on-site parking",
+      "Streaming/entertainment system"
+    ],
+    "photo_order_rec": "Lead with a wide-angle shot of the living area showing space and style. Interior photos with natural light perform best in occupancy-focused markets.",
+    "key_diagnosis": [
+      "Title lacks urgency; 73.9% occupancy exceeds cohort median (47.8%) but isn't highlighted",
+      "Missing 3 high-value amenity categories impacting conversion (outdoor/parking/entertainment)",
+      "Photo data absent - market winners have 30+ images with front-loaded room diversity"
+    ],
+    "outreach_angle": "ammenity_gap",
+    "outreach_hook": "With 23 open nights at \u00a3143.20/night, 3 missing high-value amenities are creating lost revenue opportunities for this 4.71-rated listing",
+    "weakest_element": "amenities"
+  }
+}

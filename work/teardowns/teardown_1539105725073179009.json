@@ -1,0 +1,39 @@
+{
+  "listing_id": "1539105725073179009",
+  "host_name": "John",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9728.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a3128 apt 10-min beach walk",
+      "Chic \u00a3128 apt near coastal walk",
+      "Budget \u00a3128 apt just 10min to beach"
+    ],
+    "rewritten_desc": "Escape to this stylish, 4-guest apartment where the \u00a3128 nightly rate offers exceptional value in a walkable beach locale. Just 10 minutes from the shore, it's perfect for travelers seeking a peaceful base without compromising on cost. While the open layout and private access are already featured, potential upgrades could include outdoor space or parking facilities to further enhance appeal. With a 4.65 guest rating, this is a proven value spot for those prioritizing both comfort and budget-friendly stays.",
+    "top_amenity_gaps": [
+      "Balcony/patio with ocean views",
+      "On-site parking for 2 vehicles",
+      "Streamable TV with local channels"
+    ],
+    "photo_order_rec": "Prioritize a living room shot showcasing natural light and views over a standard exterior photo as the cover image. This room type best communicates the property's ambiance and spatial quality.",
+    "key_diagnosis": [
+      "Nightly rate (-27% vs \u00a3175 median cohort rate) isn't translating to competitive occupancy (15.2% 90-day booked vs 28.3% median)",
+      "Title fails to lead with price differential or highlight Superhost differentiation despite 4.65 rating",
+      "Description lacks specific amenities that could justify the market discount and meet guest expectations"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3128 rate is -27% vs the city median but only achieved 15.2% occupancy over next 90 days \u2014 let's identify 3 actionable fixes to close this gap.",
+    "weakest_element": "amenities"
+  }
+}

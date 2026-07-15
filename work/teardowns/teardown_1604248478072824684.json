@@ -1,0 +1,39 @@
+{
+  "listing_id": "1604248478072824684",
+  "host_name": "Adam Zaib",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 177.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13512.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 1,
+    "score_images": 0,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Octagon Apartment Sleeps 4 with City Views",
+      "Skyline Views at The Octagon | 2-Bed Apartment",
+      "The Octagon 2-Bed Apartment | City Views"
+    ],
+    "rewritten_desc": "Experience the best of the city from The Octagon, a 2-bedroom apartment with breathtaking skyline views. This entire home is perfectly located for exploring everything the city has to offer. With room for 4 guests, this apartment is ideal for friends and family looking to experience the urban buzz. The Octagon is a secure and well-maintained building with a 24/7 concierge team. Your hosts, Adam and his team, ensure that every guest has a fantastic stay. With 58 reviews and a 4.47 rating, you can be confident in the quality of your stay. Please note that this apartment does not have any amenities, but is close to plenty of great restaurants and bars.",
+    "top_amenity_gaps": [
+      "Secure outdoor parking for guests",
+      "Access to a 24/7 gym or fitness centre",
+      "In-apartment entertainment options, such as Netflix or a PlayStation"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, as it showcases the apartment's best feature - the skyline views.",
+    "key_diagnosis": [
+      "Nightly rate is only +\u00a32.8 vs the cohort median, yet occupancy is a low 15.2% - a strong opportunity to increase revenue (\u00a32,678 at stake from 76 open nights)",
+      "No photos or descriptions of the apartment's best feature - the skyline views - are included in the existing description",
+      "0-year hosting veteran with no average rating - a potential trust issue for guests"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "I noticed 76 open nights on your calendar at a nightly rate of \u00a3177.8, which only beats the cohort median by +\u00a32.8, while your occupancy is significantly lower than the median - a huge opportunity to increase revenue.",
+    "weakest_element": "photos"
+  }
+}

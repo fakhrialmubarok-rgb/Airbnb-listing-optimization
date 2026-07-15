@@ -1,0 +1,39 @@
+{
+  "listing_id": "1183139380425215196",
+  "host_name": "Nazia",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 104.0,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 4784.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 6,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Leeds City Retreat: Lift & Balcony *\u00a3104*",
+      "Lift & Balcony Leeds Gem: \u00a3104 Per Night",
+      "City Living in Leeds: \u00a3104 Lift & Balcony"
+    ],
+    "rewritten_desc": "Welcome to City Aparthotel in Leeds! This stylish aparthotel is located in an ideal spot for exploring everything this vibrant city has to offer. As an entire home, this property can accommodate up to 4 guests perfectly. It features a luxurious lift and spacious balcony, perfect for taking in the sights and sounds of the city. Whether you're looking to relax or explore, this aparthotel is the perfect base for your adventures in Leeds. Enjoy the convenience of city living without sacrificing any of the comfort and luxury you deserve.",
+    "top_amenity_gaps": [
+      "Parking and facilities: a crucial amenity missing from this listing",
+      "Outdoor spaces: adding a garden or patio could elevate the guest experience",
+      "Entertainment: including a streaming library or games selection could boost occupancy"
+    ],
+    "photo_order_rec": "The balcony photo should be the cover photo to draw potential guests in with the view and outdoor space.",
+    "key_diagnosis": [
+      "Their nightly rate of \u00a3104 is -41% below the cohort median, suggesting a significant pricing gap that could be addressed through targeted listing optimization.",
+      "Occupancy at just 48.9% in the next 90 days is 2.6 times lower than the cohort median, indicating ample room for growth through minor adjustments to the listing.",
+      "The lack of amenities and missing image data severely impacts the guest experience and could be improved by implementing these missing elements"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "We noticed your Leeds aparthotel listing has an impressive 4.7-star rating, but its \u00a3104 nightly rate is -41% below the local cohort median. Our listing optimization services aim to boost occupancy and grow revenue without affecting your excellent rating.",
+    "weakest_element": "photos"
+  }
+}

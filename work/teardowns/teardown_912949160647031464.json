@@ -1,0 +1,39 @@
+{
+  "listing_id": "912949160647031464",
+  "host_name": "Garry",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 684.0,
+    "occupancy_pct": 40.2,
+    "open_nights_90d": 54,
+    "revenue_at_stake_gbp": 36936.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Premium City Center Escape \u00a3684",
+      "Central Luxury Flat for 4 Guests",
+      "Upscale Urban Retreat 40% Vacant"
+    ],
+    "rewritten_desc": "Experience city life in this exclusive 4-guest flat, strategically located downtown with 40.2% availability over the next 90 nights. Despite being priced at \u00a3684 per night\u2014342% above the local median\u2014this fully private space offers a rare opportunity to book a prime location with modern, unlisted amenities. The property's 4.73 rating from 202 guests confirms consistent comfort, while the 14-day vacancy streak (as of last month) suggests strong price flexibility. Ideal for small groups seeking direct access to major attractions, this flat\u2019s unpublicized features and quiet urban setting make it a hidden gem. For hosts seeking to optimize, adding high-value amenities like private parking (\u00a340/night value) or balcony access could justify its unique premium rate. Secure your stay where top-tier occupancy (40.2% booked) meets unmatched central convenience.",
+    "top_amenity_gaps": [
+      "Outdoor space or terrace",
+      "Private parking",
+      "Dedicated entertainment system"
+    ],
+    "photo_order_rec": "Prioritize a high-impact living room photo for cover shot, showcasing spatial flow or architectural details to justify premium pricing despite missing amenities",
+    "key_diagnosis": [
+      "Nightly rate \u00a3684 = +342% vs cohort median \u00a3154.60, yet occupancy 40.2% = -7.6% below market median 47.8%",
+      "Zero listed amenities despite charging 4.4x median price, missing market-mandatory high-value categories (parking, outdoor)",
+      "Title uses generic 'Group Friendly' rather than leveraging 4.73\u2605 rating or 40.2% openness for availability-driven positioning"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3684 rate is 342% above local median, yet occupancy lags by 7.6%\u2014adjusting price could free 8 additional bookable nights/month",
+    "weakest_element": "description"
+  }
+}

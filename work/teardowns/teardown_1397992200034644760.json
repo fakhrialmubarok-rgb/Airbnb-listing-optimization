@@ -1,0 +1,39 @@
+{
+  "listing_id": "1397992200034644760",
+  "host_name": "Bernadette",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 150.0,
+    "occupancy_pct": 67.4,
+    "open_nights_90d": 29,
+    "revenue_at_stake_gbp": 4350.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Canalside 2\u2011Bed Apartment w/ Private Balcony",
+      "Spacious 4\u2011Guest Home on Canal, Balcony",
+      "Modern Canal\u2011Side 2\u2011BR Apartment, Steps to Water"
+    ],
+    "rewritten_desc": "Welcome to your canalside retreat \u2013 a bright, entire\u2011home 2\u2011bedroom apartment perfectly suited for up to four guests. Nestled beside the water, the flat features a private balcony where you can enjoy sunrise coffee or evening drinks with the gentle sound of passing boats. Inside, the open\u2011plan living area offers a comfortable sofa, a flat\u2011screen TV, and a fully equipped kitchen stocked with all the essentials for home\u2011cooked meals. Both bedrooms are thoughtfully arranged: the master hosts a queen\u2011size bed, while the second bedroom provides a double bed, ensuring restful nights for every traveler. \n\nThe apartment has earned a stellar 4.82 rating from 179 reviews, reflecting consistent guest satisfaction. At \u00a3150 per night, you\u2019re positioned just below the city\u2019s median nightly rate of \u00a3154.60, yet your current occupancy for the next 90 days sits at 67.4% \u2013 still leaving 29 open nights and roughly \u00a34,350 of untapped revenue. Bernadette, your host, is ready to make your stay seamless, even though she\u2019s new to hosting. Whether you\u2019re here for a romantic getaway, a family break, or a work\u2011cation, this canalside haven offers the space, comfort, and location to make your visit unforgettable.",
+    "top_amenity_gaps": [
+      "Parking \u2013 no on\u2011site or nearby dedicated parking listed",
+      "Entertainment \u2013 lack of listed Wi\u2011Fi, TV streaming, or game options",
+      "Outdoor \u2013 beyond the balcony, no garden or patio space mentioned"
+    ],
+    "photo_order_rec": "Use a high\u2011quality shot of the balcony overlooking the canal as the cover photo; it instantly showcases the property\u2019s unique location and biggest visual draw.",
+    "key_diagnosis": [
+      "Occupancy: 29 open nights in the next 90 days equal ~\u00a34,350 of potential revenue you\u2019re missing \u2013 boost visibility and pricing to fill them.",
+      "Title: The current 42\u2011character title is generic; a more compelling, keyword\u2011rich title can improve search clicks and set your listing apart.",
+      "Amenities: No amenities are listed, leaving high\u2011value categories like parking, entertainment, and expanded outdoor space unaddressed, which competitors in the cohort highlight."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 29 open nights in the next 90 days, representing about \u00a34,350 of potential revenue you could capture.",
+    "weakest_element": "description"
+  }
+}

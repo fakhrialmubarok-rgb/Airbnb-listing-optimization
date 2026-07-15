@@ -1,0 +1,39 @@
+{
+  "listing_id": "617175530521067515",
+  "host_name": "Sefton Park",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 400.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 29600.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Premier Coach House at Sefton Park for 4",
+      "Luxury Coach House Near Sefton Park, \u00a3400/night",
+      "Park-Adjacent Coach House Sleeps 4 Guests"
+    ],
+    "rewritten_desc": "Nestled near the iconic Sefton Park, this exclusive 4-person coach house offers luxury for discerning guests seeking city escapes. Fully booked as an entire home, our premium \u00a3400/night accommodation ensures privacy and comfort for your group. While neighboring listings may offer lower rates, our property prioritizes exceptional access to Liverpool's vibrant culture\u2014just minutes from Sefton Museum and Echo Arena concerts. Ideal for art enthusiasts and sports fans (Anfield & Goodison within reach), we deliver premium guest stays in one of the city's most iconic areas. Book directly for seamless access to this sought-after property.",
+    "top_amenity_gaps": [
+      "Off-street parking for premium guests",
+      "Private outdoor seating area with garden",
+      "Smart TV/Streaming options for entertainment"
+    ],
+    "photo_order_rec": "Prioritize an exterior shot with Sefton Park visible in the background for the cover photo to leverage location desirability and establish premium positioning immediately",
+    "key_diagnosis": [
+      "Nightly rate is +129% vs cohort median (\u00a3175) despite occupancy 31.2% below average (17.4% vs 28.3%)",
+      "No explicit amenities listed despite high-value categories like Outdoor and Entertainment being missing",
+      "Title lacks occupancy-boosting SEO elements like 'luxury' and 'sleeps 4' while remaining under 50 characters"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3400/night listing is priced 129% above competitors but only 74 nights open in a market where similar 4-guest homes have 28.3% occupancy",
+    "weakest_element": "title"
+  }
+}

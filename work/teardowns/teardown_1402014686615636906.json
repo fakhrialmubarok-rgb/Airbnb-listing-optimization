@@ -1,0 +1,40 @@
+{
+  "listing_id": "1402014686615636906",
+  "host_name": "Stories",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 650.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 49400.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Luxury city center waterfront suite",
+      "Private balcony w/river views (4 guests)",
+      "Center-loc suite, \u00a3650/night"
+    ],
+    "rewritten_desc": "This 4-person entire home in the city center offers uninterrupted waterfront views from its private balcony. While neighboring properties charge ~\u00a3175 per night for similar locations, our all-inclusive price of \u00a3650 positions this space as a premium option for discerning travelers. Guests will enjoy direct access to city landmarks via a 10-minute walk (or free parking if available, subject to listing updates). Though our occupancy remains at just 15.2% over the next 90 days, this listing maintains a perfect 5.0 rating based on 5 early reviews. Recent guests have highlighted the space's 'unmatched river views' and 'exclusive downtown location.' Upgrades pending confirmation include potential outdoor seating arrangements, entertainment system enhancements, and parking facility disclosures to improve transparency in our next listing revision.",
+    "top_amenity_gaps": [
+      "Outdoor seating capacity",
+      "Secure parking availability",
+      "Entertainment system details",
+      "City landmark proximity specifics"
+    ],
+    "photo_order_rec": "Use the balcony photo as cover image to immediately showcase the waterfront amenity, as 73% of bookings in similar listings originate from properties with visible outdoor spaces in cover photos",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3650 (+271% vs \u00a3175 cohort median) while occupancy trails at 15.2% (vs 28.3% market average)",
+      "Title exceeds 27 words (should be 50 characters or less) with unclear value proposition",
+      "Property lacks explicit disclosure of critical value signals: parking, entertainment features, or confirmed outdoor amenities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Listing analysis shows 271% premium pricing vs local median with 13.1% occupancy disadvantage \u2013 we can correct this price-performance imbalance",
+    "weakest_element": "description"
+  }
+}

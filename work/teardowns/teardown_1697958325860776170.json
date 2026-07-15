@@ -1,0 +1,39 @@
+{
+  "listing_id": "1697958325860776170",
+  "host_name": "John",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 65.4,
+    "occupancy_pct": 32.6,
+    "open_nights_90d": 61,
+    "revenue_at_stake_gbp": 3989.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 5,
+    "score_images": 7,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cheap Chic Flat",
+      "Sheffield Centre Gem",
+      "Cozy 1 Bed Flat"
+    ],
+    "rewritten_desc": "Experience the perfect blend of style and convenience in this stunning first-floor apartment, located in the heart of Sheffield. With its modern design and thoughtful touches, this one-bedroom flat is ideal for couples or solo travellers looking to explore the city. Enjoy the comforts of home, including a fully equipped kitchen, washing machine, and Wi-Fi. Take advantage of the self-check-in and lockbox for a seamless arrival. Pets are also welcome, making this the perfect retreat for all. With 14 photos showcasing the property, you can get a true sense of this fantastic space.",
+    "top_amenity_gaps": [
+      "Exterior security cameras",
+      "Tumble dryer",
+      "Heating"
+    ],
+    "photo_order_rec": "The cover photo should be the Exterior photo, as it sets the scene and provides an initial impression of the property's location and appearance.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a365.4 is 38% below the cohort median of \u00a3104.90, which may be contributing to the 32.6% occupancy rate",
+      "The listing has 14 photos, which is below the median photo count of 23 in the cohort, potentially impacting visibility and attractiveness",
+      "The listing has 0 reviews, which may be affecting its visibility and credibility, especially compared to other listings in the cohort"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate 38% below the cohort median and an occupancy rate of 32.6%, there may be opportunities to optimize the listing and increase bookings",
+    "weakest_element": "title"
+  }
+}

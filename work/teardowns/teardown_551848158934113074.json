@@ -1,0 +1,39 @@
+{
+  "listing_id": "551848158934113074",
+  "host_name": "Heaton",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 3000.0,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 210000.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a33k Night Private Home Near City Centre",
+      "Luxury 3-Bed Apartment for 4 Guests",
+      "Modern Entire Home \u00a33k Night Premium"
+    ],
+    "rewritten_desc": "This exclusive 3-bedroom modern residential property offers complete privacy for 4 guests in a premium location. Features include spacious living areas, contemporary kitchen, and private bathrooms. Perfect for business travelers or those seeking luxury accommodation. The entire home is available for your stay, ensuring maximum comfort and flexibility. Note: This property is competitively priced for its location and amenities.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Entertainment system",
+      "Parking facilities"
+    ],
+    "photo_order_rec": "The master bedroom should be the first photo as it shows the main sleeping area and conveys space and quality",
+    "key_diagnosis": [
+      "\u00a33000 rate is +1840% above \u00a3154.60 cohort median while occupancy at 21.7% is 52% below 47.8% market average",
+      "Description completely missing which removes any narrative to justify premium pricing",
+      "Title lacks location and unique value propositions that would attract buyers at this price point"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a33000 rate is over 18x local average yet occupancy remains 48% below market benchmarks",
+    "weakest_element": "description"
+  }
+}

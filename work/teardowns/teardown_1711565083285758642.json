@@ -1,0 +1,39 @@
+{
+  "listing_id": "1711565083285758642",
+  "host_name": "Amy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 232.0,
+    "occupancy_pct": 80.4,
+    "open_nights_90d": 18,
+    "revenue_at_stake_gbp": 4176.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "3-Bedroom Flat 2 Min Walk to Oxford Road Station",
+      "Spacious Flat with Oxford Road Station Nearby",
+      "Charming 3-Bed Flat Close to Manchester City Centre"
+    ],
+    "rewritten_desc": "This 3-bedroom entire flat sleeps 4 guests and offers a peaceful retreat just 2 minutes from Oxford Road Station (Manchester). Located 15 minutes from city centre attractions, it's ideal for travelers needing station-adjacent accommodation. With a 4.64 rating across 368 reviews, guests praise our property's consistent availability - currently offering 18 open nights in the next 90 days. While the rate is set at \u00a3232/night (50% above Manchester's median rate of \u00a3154), our occupancy remains strong at 80.4% booked. Note: Please check directly for the most current availability and amenities updates.",
+    "top_amenity_gaps": [
+      "Parking facilities",
+      "TV/Entertainment system",
+      "Outdoor seating area"
+    ],
+    "photo_order_rec": "The living room serves as the ideal cover photo to showcase the property's inviting common space while establishing the station proximity mentioned in the title.",
+    "key_diagnosis": [
+      "Title lacks strongest differentiator - 3-bedrooms (current rate \u00a3232 vs median \u00a3154)",
+      "Missing all 3 high-value amenity categories despite above-market pricing",
+      "Description contains no narrative despite 368 reviews and 4.64 rating"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your \u00a3232 rate exceeds Manchester's median by 50% while maintaining 80.4% occupancy, but missing 3 key amenity categories may prevent maximizing this strong performance",
+    "weakest_element": "description"
+  }
+}

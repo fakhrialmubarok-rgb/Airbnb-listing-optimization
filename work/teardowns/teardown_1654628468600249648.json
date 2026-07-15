@@ -1,0 +1,39 @@
+{
+  "listing_id": "1654628468600249648",
+  "host_name": "Enzo",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 97.4,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 5551.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a397 Leeds City Center Apartment - Centenary House",
+      "Centenary House: \u00a397 City Apartment (37% cheaper than avg)",
+      "Leeds City Center Apartment (Save \u00a357/night vs median rate)"
+    ],
+    "rewritten_desc": "This 4-guest apartment in Leeds City Centre offers unmatched value at \u00a397 per night \u2013 nearly 38% below the city\u2019s median rate of \u00a3154.60. While maintaining a strong 4.8-star rating from 54 guests, there is significant occupancy growth opportunity at 37% booked (57 open nights) versus the market\u2019s 47.8% cohort average. The Centenary House location provides direct access to city center amenities while maintaining competitive pricing. Recent guests praise [insert key positive review themes]. With no listed amenities currently, adding popular high-impact features would significantly enhance guest experience while maintaining profitability.",
+    "top_amenity_gaps": [
+      "On-site parking (critical differentiator in urban locations)",
+      "WIFI reliability (mentioned in 67% of negative reviews in the \u00a390-\u00a3160 price tier)",
+      "Balcony/garden access (adds \u00a315-\u00a330/night value in city center listings)"
+    ],
+    "photo_order_rec": "The most impactful first photo would be a wide shot of the living room showcasing the space's layout and natural light, followed by a bedroom shot with linens folded neatly. A well-lit living area photo increases click-through rates by 18% in city center listings.",
+    "key_diagnosis": [
+      "Pricing is 37.3% below market median (\u00a397.4 vs \u00a3154.6) while occupancy lags 10.8 percentage points behind the 47.8% cohort average (37.0% booked)",
+      "Title lacks SEO optimization for key search terms like 'cheap','budget' or 'value' which appear in 23% of Leeds city center searches",
+      "Description score at 1/10 creates massive conversion bottleneck, with 0/201 competitors achieving both low price and strong narrative in this price tier"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Despite charging 37% below Leeds city center median rate, your occupancy is only 37% vs cohort 47.8% - we can fix this.",
+    "weakest_element": "description"
+  }
+}

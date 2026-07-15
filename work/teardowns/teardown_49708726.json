@@ -1,0 +1,39 @@
+{
+  "listing_id": "49708726",
+  "host_name": "Jo",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 213.8,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 14966.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Charming Tudor Home in Moseley with High Ceilings",
+      "Spacious Moseley Lodge with Cozy High Ceilings",
+      "Tudor Gem: Bright High Ceilings in Moseley"
+    ],
+    "rewritten_desc": "Step into this beautifully preserved Tudor-style lodge in Moseley, where historic charm meets modern comfort. The property's signature high ceilings create a grand, airy feel across all four rooms. Sleeps up to four guests in a private, secure setting just moments from Birmingham's vibrant city center. While no amenities are listed, the entire home offers flexible space for guests to relax and unwind. Ideal for families or small groups seeking a unique architectural experience. Booking includes use of the full property for privacy and convenience. Located in one of Birmingham's most sought-after areas, this listing combines urban accessibility with a peaceful retreat atmosphere.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/terrace availability)",
+      "Parking options",
+      "Entertainment features (TV, broadband speeds)"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle living room shot with high ceilings as cover photo to immediately communicate the home's architectural appeal",
+    "key_diagnosis": [
+      "Nightly rate of \u00a3213.8 exceeds cohort median by 22% while occupancy lags 6.6% below market average (21.7% vs 28.3%)",
+      "Title doesn't reach 50 characters and misses SEO keywords (e.g., Birmingham, nearby attractions)",
+      "Completely missing amenities listing despite 74% of similar Moseley listings highlighting outdoor/parking/entertainment features"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging \u00a348.8 more than the median \u00a3175 rate yet have 70 open nights in the next 90 days - we can fix this price/occupancy imbalance",
+    "weakest_element": "title"
+  }
+}

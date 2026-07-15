@@ -1,0 +1,39 @@
+{
+  "listing_id": "1594918404152580741",
+  "host_name": "Michelle",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1309.8,
+    "occupancy_pct": 66.3,
+    "open_nights_90d": 30,
+    "revenue_at_stake_gbp": 39294.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 6,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "6BR Historic House \u2022 66.3% Occupancy in 90 Days",
+      "\u00a31309.8 for 6BR \u2022 Over 60 Open Nights Left",
+      "Prime Mission Area Home \u2022 4.93 Superhost Rating"
+    ],
+    "rewritten_desc": "Step into a beautifully preserved 6-bedroom historic house at the heart of The Mission. Recently reviewed by 282 guests with a 4.93 rating, this spacious entire home offers unmatched charm and convenience in a prime location. Hosted by Michelle, your host for this unique experience, we believe this is The Mission's most underrated opportunity for stays - with 30 highly visible open nights in the next 90 days, our occupancy of 66.3% outperforms typical listings in the area. While local properties average \u00a3154.60, we've positioned this premium offering at \u00a31,309.8 per night to provide discerning guests exceptional value in a rare historic property. Guests can expect a meticulously maintained home that balances history with modern comfort, all within easy reach of The Mission's best attractions and conveniences.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/patio)",
+      "Entertainment system (sound system/TV)",
+      "Parking facilities"
+    ],
+    "photo_order_rec": "The lead photo should showcase the most historic architectural feature of the home first to emphasize its unique character. A well-lit common area photo should follow if available.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a31,155.2 higher than cohort median (\u00a3154.60) while maintaining 18.5% higher occupancy than average listings (66.3% vs 47.8%)",
+      "Title fails to leverage occupancy advantage despite 282 reviews at 4.93 rating",
+      "No amenities listed at all - critical gap in 6-bedroom listing that would typically feature 8-12 high-value amenities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 66.3% occupancy with 30 open nights at \u00a31,309.8/night is impressive - but what if you could increase bookings by better showcasing your 4.93 rating and historic location?",
+    "weakest_element": "title"
+  }
+}

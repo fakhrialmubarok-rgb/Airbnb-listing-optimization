@@ -1,0 +1,39 @@
+{
+  "listing_id": "1240419061106513799",
+  "host_name": "Sameer",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 663.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 50388.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a3663 NE1 Luxury City Apartment (4 guests)",
+      "Exclusive NE1 Apartment \u00a3663/night",
+      "Top-rated NE1 Studio \u00a3663/night"
+    ],
+    "rewritten_desc": "Experience the vibrant NE1 area in this fully furnished city studio or apartment. With space for up to four guests, our property offers easy access to [insert nearby landmarks or amenities based on actual location]. While guests praise our location (though current 3.71 rating shows room for improvement), our \u00a3663 rate includes [add specific features like 'spacious living area', 'fully equipped kitchen', or 'luxurious bathroom']. We're just starting out as a new host (0 years hosting) but are committed to providing exceptional service. Book directly with us to unlock [insert unique selling points about the property] while rates are still [insert price justification].",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor space",
+      "High-speed internet"
+    ],
+    "photo_order_rec": "Prioritize a professionally staged living room photo first to create instant visual appeal, followed by property exterior shots to reinforce location advantage.",
+    "key_diagnosis": [
+      "\u00a3663 rate is 329% above median \u00a3154.60 cohort pricing while occupancy is 15.2% vs median 47.8% (strong price/occupancy misalignment)",
+      "0 years hosting experience with 7 small reviews (3.71 rating suggests need for service improvements)",
+      "Missing all explicit amenity listings despite market emphasis on Outdoor, Parking, and Entertainment categories"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3663 rate is 329% higher than the central London median while occupancy (15.2%) trails the cohort average (47.8%) - this price-occupancy gap shows significant monetization upside.",
+    "weakest_element": "description"
+  }
+}

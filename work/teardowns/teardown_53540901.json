@@ -1,0 +1,39 @@
+{
+  "listing_id": "53540901",
+  "host_name": "Simon",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 422.2,
+    "occupancy_pct": 53.3,
+    "open_nights_90d": 42,
+    "revenue_at_stake_gbp": 17732.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 8,
+    "score_amenities": 8,
+    "score_images": 9,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Sheffield Loft: Hot Tub & City Views",
+      "The Loft: 4 Bed, City Centre, Hot Tub",
+      "City Centre Loft with Hot Tub & Parking"
+    ],
+    "rewritten_desc": "Experience the ultimate city retreat in our stunning 4-bedroom loft apartment, perfectly located in the heart of Sheffield City Centre. Enjoy breathtaking views of the city from our rooftop terrace, complete with a 6-person hot tub. With 2 dedicated car parking spaces, you'll have no trouble getting here. Our spacious open-plan living area features a fully equipped kitchen, 10-seater dining table, and a large U-shape leather sofa. Each of the 4 bedrooms is stylishly decorated, with 3 king-size beds and 1 single bunk bed. You'll also have access to 2 bathrooms, one with a large walk-in shower. Our apartment is exclusively yours for the duration of your stay, so relax, unwind, and make yourself at home. We're just a short walk from all the bars, theatres, restaurants, and universities, making us the perfect base for your Sheffield adventure.",
+    "top_amenity_gaps": [
+      "Tumble dryer",
+      "Air conditioning",
+      "More emphasis on outdoor spaces"
+    ],
+    "photo_order_rec": "The rooftop terrace with hot tub should be the cover photo, as it's the most unique and attention-grabbing feature of the apartment. This will help to immediately differentiate the listing from others in the area.",
+    "key_diagnosis": [
+      "With a nightly rate of \u00a3422.2, you're 302% above the cohort median of \u00a3104.90, which may be limiting your occupancy potential",
+      "Your 53.3% occupancy rate is only slightly above the cohort median of 48.9%, indicating room for improvement in attracting more guests",
+      "With 56 photos, you have more than twice the median photo count of 23, but may benefit from reordering them to showcase your most unique features first"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate 302% above the cohort median and an occupancy rate only slightly above average, there may be opportunities to optimize your pricing and listing to attract more guests",
+    "weakest_element": "title"
+  }
+}

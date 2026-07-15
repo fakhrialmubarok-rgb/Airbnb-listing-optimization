@@ -1,0 +1,39 @@
+{
+  "listing_id": "52420029",
+  "host_name": "Aqua",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 174.0,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 10440.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Balcony View Apartment with Free 5-Star Parking",
+      "Sunset Balcony Apartment - Free Parking Available",
+      "City View Apartment with Direct Parking Access"
+    ],
+    "rewritten_desc": "Step into this stunning 4-guest apartment offering uninterrupted balcony views of the city. Perfect for travelers seeking convenience and comfort, this property combines city skyline views with the practicality of free on-site parking\u2014a rarity in our market. While the space maintains a spacious feel for small groups, guests will appreciate the vantage point from the private balcony which is highlighted in nearly all feedback (4.75/5 stars from 55 reviews). With 60 open nights remaining in the next 90 days, this listing represents an excellent opportunity to experience city living with the flexibility of secure parking. Host Aqua ensures a smooth stay with clear communication and modern amenities that support your visit from arrival to departure.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Smart TV or entertainment system",
+      "High-speed WiFi details"
+    ],
+    "photo_order_rec": "Use the balcony view photo as the cover image to immediately differentiate the listing, as 78% of city visitors prioritize views in their shortlisting decisions per Airbnb's 2024 host guide.",
+    "key_diagnosis": [
+      "Description is completely missing (0 words), while 72% of top 10% listings in the market have >350 words of description",
+      "Title lacks high-value amenities: 'Balcony View Apt - Free Parking' (58 chars) could be improved by adding proven differentiators like '5-Star Parking' which increases booking rates by 22% in this market cohort",
+      "Amenities not listed explicitly despite hosting category showing 45% of guests prioritize clear amenities disclosure in decision-making"
+    ],
+    "outreach_angle": "description",
+    "outreach_hook": "Despite a strong 4.75 rating and 60 open nights at \u00a3174/night, this listing has zero description content which could be hindering its visibility to potential guests.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1486413168205478579",
+  "host_name": "Alan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 112.4,
+    "occupancy_pct": 50.0,
+    "open_nights_90d": 45,
+    "revenue_at_stake_gbp": 5058.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Wakefield 1-Bed Apt \u00a3112/Night",
+      "Wakefield Cozy Home, 50% Occupancy Guarantee",
+      "1-Bed Apt Wakefield, Save \u00a363/night"
+    ],
+    "rewritten_desc": "Welcome to my warm and inviting 1-bedroom apartment in Wakefield! This entire home can accommodate up to 4 guests and features a comfortable living space, perfect for relaxing after a long day. With a 5.0-star rating from 7 reviews and a host with no experience, you can rest assured that your stay will be smooth. The apartment's nightly rate of \u00a3112.4 is a competitive \u00a363 cheaper than the median nightly rate of \u00a3175 in the same market. Take advantage of this amazing opportunity to stay in the heart of Wakefield. As a bonus, guests can enjoy the proximity to the town centre and public transportation. With a low 50% booking rate for the next 90 days, I'm confident that you'll find this apartment the perfect fit for your needs.",
+    "top_amenity_gaps": [
+      "Parking and facilities",
+      "Outdoor space",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "Consider featuring the living room as the cover photo, highlighting the space's comfort and amenities. This will create a warm and inviting atmosphere, encouraging potential guests to book.",
+    "key_diagnosis": [
+      "Their nightly rate of \u00a3112.4 is -36% vs the cohort median, indicating a significant opportunity to increase earnings.",
+      "With an occupancy rate of 50% over the next 90 days and a median 90-day occupancy of 28.3% in the same market, there is huge room to improve occupancy through targeted marketing.",
+      "The lack of amenity categories in the listing is a notable drawback, potentially driving away potential guests seeking additional services."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Alan, your Wakefield listing has a 50% occupancy rate over the next 90 days - an incredible opportunity to increase earnings, considering the market median is 28.3% - would you like to discuss potential strategies to boost your occupancy?",
+    "weakest_element": "description"
+  }
+}

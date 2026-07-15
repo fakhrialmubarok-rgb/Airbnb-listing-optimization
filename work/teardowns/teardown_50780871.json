@@ -1,0 +1,39 @@
+{
+  "listing_id": "50780871",
+  "host_name": "Henry",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 3006.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 228456.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a33006 Entire Home in Baltic Triangle",
+      "Brand-new 4-Guest Home in Baltic Triangle",
+      "Exclusive Entire Home near Creative Hub"
+    ],
+    "rewritten_desc": "This brand-new, fully renovated entire home in the vibrant Baltic Triangle features 4 guest capacity, 2 bedrooms, and modern amenities across 1200 sq ft. Located near creative hubs, breweries, and the Liverpool Biennial, guests enjoy direct access to street art tours and craft beer scenes. Despite the location, this 4.46-rated space remains under-booked at 15.2% occupancy (76 open nights) for the next 90 days. The high nightly rate of \u00a33006 is 1618% above the city median. Ideal for small groups seeking privacy, this home lacks specified amenities but promises a clean, contemporary stay with full use of kitchen, bathrooms, and living areas. Note: The property currently has no listed facilities, but proximity to public transport and dining options is a key benefit.",
+    "top_amenity_gaps": [
+      "Outdoor seating (high-value in this price segment)",
+      "On-site parking (missing from description)",
+      "Smart entertainment system (TV/Netflix/PS5)"
+    ],
+    "photo_order_rec": "Use the living room photo first to showcase the primary entertainment space, as comfort and style are critical for \u00a33k/night bookings",
+    "key_diagnosis": [
+      "Nightly rate is \u00a32831.00 above the \u00a3175.00 market median despite 13.1% below median occupancy (28.3% vs 15.2%)",
+      "Title lacks property type (Entire home) and key differentiators from the 84 reviews",
+      "Description contains no amenities and fails to justify \u00a33006.00 rate with tangible benefits"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a33006/night rate is 1618% above market average while you're only at 15.2% occupancy vs 28.3% for similar listings",
+    "weakest_element": "description"
+  }
+}

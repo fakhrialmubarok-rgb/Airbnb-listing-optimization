@@ -1,0 +1,39 @@
+{
+  "listing_id": "1655120409447271725",
+  "host_name": "Laura",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 150.0,
+    "occupancy_pct": 71.7,
+    "open_nights_90d": 25,
+    "revenue_at_stake_gbp": 3750.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Charming 4-Guest Cottage Near Otley",
+      "Cottage in Otley: Cosy 4-Person Home",
+      "Otley Retreat: Cozy Home for 4"
+    ],
+    "rewritten_desc": "Tucked near the historic town of Otley, this inviting cottage offers a warm escape for up to 4 guests. The spacious interiors balance rustic charm with modern comfort, featuring [describe layout, e.g. lounge with [specific feature], and [kitchen amenities if available]]. Outside, visitors will appreciate [mention views/landscaping/adjacent space if known]. Ideal for couples, families, or friends seeking a relaxed retreat, the property ensures convenience without compromising character. With 25 nights upcoming where this home is available in the next 90 days, book early to secure your stay at \u00a3150 per night.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Dedicated parking",
+      "Smart TV or streaming service"
+    ],
+    "photo_order_rec": "Prioritize the cottage's exterior as the cover photo to showcase curb appeal immediately\u2014this is most important for first impressions on mobile searches.",
+    "key_diagnosis": [
+      "Title lacks differentiators (current 4.92 rating but no specific selling points in title vs 201 competitors in area)",
+      "Amenities score 2/10 - no amenities listed despite market data showing 'Outdoors' and 'Parking' as top booking drivers",
+      "Photos score 3/10 - no room type labels provided to verify visual appeal or layout clarity"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your listing has 25 open nights at \u00a3150/night in the next 90 days, but currently lists no amenities\u2014adding 2-3 high-value items like parking or outdoor space could make these dates bookable faster.",
+    "weakest_element": "amenities"
+  }
+}

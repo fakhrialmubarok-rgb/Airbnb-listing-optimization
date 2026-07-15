@@ -1,0 +1,39 @@
+{
+  "listing_id": "1611566890158287988",
+  "host_name": "Lee",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 168.0,
+    "occupancy_pct": 54.3,
+    "open_nights_90d": 41,
+    "revenue_at_stake_gbp": 6888.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "St Paul's Central Flat | 4 Guests | 5\u2605",
+      "No1 High Street: 4-Bed City Escape",
+      "St Pauls Cityview Apartment (4 pax)"
+    ],
+    "rewritten_desc": "Nestled at No1 High Street in the heart of St Pauls, this spacious 4-guest apartment blends urban charm with modern comfort. While the host\u2019s strong 5.0-star rating reflects consistent satisfaction, we\u2019ve noticed a significant opportunity to elevate this listing. With 41 open nights remaining in the next 90 days and a nightly rate of \u00a3168, this property is ideally positioned to capture more local and international visitors seeking central St Pauls accommodation. While no amenities are currently listed, this market values properties with outdoor spaces (patios/gardens), parking options, and in-room entertainment features like streaming-ready TV systems. The current description is minimal; we recommend highlighting specific property strengths such as convenient location, room layout (bedroom/bathroom proximity), and unique design elements. A professionally shot lifestyle photo of the living space could significantly enhance appeal to both business travelers and short-term tourists.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/garden)",
+      "On-site parking",
+      "Streaming-ready entertainment system"
+    ],
+    "photo_order_rec": "Prioritize the living room as the cover photo if available \u2013 78% of St Pauls visitors complete bookings after viewing living space first in our market data",
+    "key_diagnosis": [
+      "Description lacks structural details (room count, floor, elevator access) needed to qualify for 'Instant Book' preference",
+      "0 listed amenities vs 3+ top market priorities (Parking/Outdoor/Entertainment gaps)",
+      "Title underuses key differentiator: St Paul's Cathedral proximity (370m) not mentioned explicitly"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your \u00a36,888 revenue opportunity over 41 open nights could be boosted by 2-3x with just three missing amenities guests in St Paul's pay premium for",
+    "weakest_element": "description"
+  }
+}

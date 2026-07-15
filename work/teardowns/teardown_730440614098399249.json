@@ -1,0 +1,39 @@
+{
+  "listing_id": "730440614098399249",
+  "host_name": "Sajid M",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 268.4,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 16640.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "2BR Penthouse with Hot Tub - \u00a3268.40/night",
+      "Luxury 2BR Rooftop with Hot Tub",
+      "Top-Floor 4-Guest Retreat with Hot Tub"
+    ],
+    "rewritten_desc": "Welcome to our exquisite 2-bedroom penthouse, perfect for 4 guests seeking luxury accommodation. Located in a prime city location, this entire home features a private hot tub for relaxing after a day of exploring. With its premium location and top-tier furnishings, our apartment offers an unforgettable stay experience.\n\nElegantly designed with modern comforts, the space includes a spacious living area, fully equipped kitchen, and en-suite bathrooms. The rooftop terrace provides stunning views of the city, making it an ideal spot for enjoying evenings with loved ones. Each room is thoughtfully arranged to ensure maximum comfort and convenience.\n\nThe private hot tub is a standout feature of this unique property, offering a peaceful retreat from the city's hustle and bustle. Whether you're looking for a romantic escape or a family vacation, our penthouse provides ample space for everyone to enjoy. The central location also puts you within easy reach of major attractions, restaurants, and transportation hubs.\n\nWith its prime positioning and luxurious amenities, our penthouse is the perfect choice for those seeking an upscale city experience. Book now to secure your stay in this sought-after accommodation.",
+    "top_amenity_gaps": [
+      "Specific outdoor features (balcony size, view types)",
+      "Entertainment systems (TV brands, smart features)",
+      "Parking availability and convenience"
+    ],
+    "photo_order_rec": "The cover photo should show the hot tub area as it's the most unique feature and creates strong visual appeal, helping to differentiate this listing from competitors.",
+    "key_diagnosis": [
+      "Title exceeds 50 characters and includes non-SEO keywords - this is poor optimization at 3/10 rating. Current title: 'Penthouse 2 Bedroom Luxury House including Hot-tub'",
+      "Description is missing entirely - 1/10 rating means potential guests have no narrative or emotional hook to connect with",
+      "No specific amenities listed (both available and missing) - 3/10 rating means guests can't identify key selling points or gaps"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate of \u00a3268.40 - 53% above the city median - but still only 31.5% occupancy in the next 90 days, you're likely losing money to unoptimized pricing",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "950659133997349481",
+  "host_name": "Robert",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 133.2,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 10123.2
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3133 Entire Home + Free Parking near Lime Street",
+      "Lime Street Station - Spacious Home with Free Parking",
+      "Affordable 4-Guest Home | 10-Min Walk to Lime Street Station"
+    ],
+    "rewritten_desc": "This spacious entire home offers excellent value at \u00a3133 per night \u2014 24% below Liverpool's median rate while located just a short walk from Lime Street Station. With capacity for 4 guests, it\u2019s ideal for families or small groups exploring Liverpool city centre. The free on-site parking is a major convenience given Liverpool\u2019s limited visitor parking options, and the location gives you easy access to historic buildings, museums, and the waterfront. While no specific amenities are listed, the price advantage here could allow you to allocate more budget toward local experiences. Recent guests praised [insert key strengths from reviews here \u2014 placeholder until original text revealed]. For hosts: Consider adding specific amenities (e.g., outdoor seating, streaming services) and optimizing photos to compete with this market\u2019s 28.3% occupancy benchmark currently exceeding your 15.2%.",
+    "top_amenity_gaps": [
+      "Outdoor seating/shading",
+      "WiFi speeds/bandwidth",
+      "Kitchen appliance details"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living/dining area as cover photo to showcase the entire home's layout and available space (which potential guests prioritize when searching 'Entire Home')",
+    "key_diagnosis": [
+      "Nightly rate \u00a3133 is -\u00a331.8 below market median (\u00a3175) but occupancy remains 13.1pp below cohort average (28.3% vs 15.2%)",
+      "Missing 3 critical amenity categories (Outdoor, Parking and facilities, Entertainment) that correlate with faster bookings in Liverpool",
+      "Title lacks 'Entire Home' keyword (only 46% of market top 1,000 listings include this phrase) and overemphasizes free parking"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3133 rate is 24% under Liverpool's \u00a3175 median \u2014 but occupancy remains 13% below average at just 15% booked over 90 days",
+    "weakest_element": "title"
+  }
+}

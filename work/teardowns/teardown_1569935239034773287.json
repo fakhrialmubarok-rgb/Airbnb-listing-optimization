@@ -1,0 +1,39 @@
+{
+  "listing_id": "1569935239034773287",
+  "host_name": "Khateeb",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 129.0,
+    "occupancy_pct": 35.9,
+    "open_nights_90d": 58,
+    "revenue_at_stake_gbp": 7482.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 7,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Designer Italian Suite \u2013 Kelham, City Centre",
+      "Luxury 65\" OLED TV Suite, Walk to City Centre",
+      "Boutique 4\u2011Guest Suite \u2013 Kelham, Prime Spot"
+    ],
+    "rewritten_desc": "Welcome to The Caesar Suite \u2013 a boutique\u2011hotel\u2011style retreat that feels like home the moment you step inside. Nestled on the edge of Kelham Island and Sheffield\u2019s City Centre, this designer haven blends Italian craftsmanship with contemporary comfort. The open\u2011plan living area is flooded with natural light and features a 3\u2011seater leather sofa that easily converts into a full double sofa\u2011bed, comfortably sleeping up to four guests (please request set\u2011up when you book). A striking Italian coffee table crafted from high\u2011end quartz anchors the space, complemented by a textured rug, coordinated corner table and next\u2011generation fluid LED accent lighting that creates a warm, cinematic ambience. Entertainment is covered by a 65\u2011inch LG OLED C4 TV and a premium sound system, perfect for relaxed mornings or late\u2011night movie marathons. \n\nThe suite\u2019s sleek, fully equipped kitchen, plush bedroom, and modern bathroom are all finished with the same attention to detail. Essential comforts include premium linens, hairdryer, washing machine, and a curated selection of reading material. With heating, room\u2011darkening blinds, and exterior security cameras, you\u2019ll feel both pampered and secure. Whether you\u2019re here for work, culture, or a weekend escape, The Caesar Suite offers a refined, effortless stay in one of Sheffield\u2019s most sought\u2011after locations.",
+    "top_amenity_gaps": [
+      "Tumble dryer",
+      "Air conditioning",
+      "Outdoor/parking facilities"
+    ],
+    "photo_order_rec": "Use the living\u2011room shot that shows the leather sofa, quartz coffee table and the 65\" OLED TV as the cover photo; it instantly communicates luxury, capacity and entertainment value.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3129 is 23% above the cohort median (\u00a3104.90) while occupancy is only 35.9% versus the market average of 48.9% \u2013 a clear price\u2011to\u2011occupancy mismatch.",
+      "You have 0 reviews despite a 4.89 host rating; lack of social proof is likely suppressing bookings.",
+      "The current lead photo isn\u2019t specified; switching the cover to the styled living\u2011room with the TV will improve click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your suite commands \u00a3129/night \u2013 23% above the local median \u2013 yet it\u2019s only 35.9% booked, 13 points below the market average, a clear chance to boost revenue.",
+    "weakest_element": "description"
+  }
+}

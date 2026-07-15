@@ -1,0 +1,39 @@
+{
+  "listing_id": "1632569895139705106",
+  "host_name": "Chantelle",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 120.0,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 7200.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a3120 Cozy Apartment for 4 in [City, UK]",
+      "Well-located 4-Guest Apartment Near [Highlight]",
+      "Budget-friendly 4-Person Apartment in [Neighborhood]"
+    ],
+    "rewritten_desc": "Escape to this warm, fully-equipped apartment perfect for 4 guests. Recently renovated with modern touches, it features [insert specific high-value amenities if available]. Located just minutes from [local landmark/amenity], the apartment offers excellent access to public transport and popular attractions. While our rate of \u00a3120 per night is 22% below the local market average (median \u00a3154.60), we maintain a 4.95-star rating across 62 guest reviews. For a more complete stay experience, consider [list 3 high-priority amenities missing from listing]. Sleep soundly in [mention specific bedroom/bathroom features] and enjoy fully functional kitchen, free WiFi, and [any unique selling point based on property type]. Book your 33.7% open nights and experience why 60 guests can occupy this space within the next 90 days.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "On-site parking",
+      "Smart TV streaming access"
+    ],
+    "photo_order_rec": "Feature a wide-angle shot of the living room as the cover photo to showcase space and ambience, followed by bedroom/bathroom images",
+    "key_diagnosis": [
+      "Title lacks local landmarks/amenities despite 4.95 rating (12 characters to add would increase SEO relevance)",
+      "Description entirely missing for 62 review property - critical to listing performance",
+      "No amenities listed despite 60 open nights in 90-day calendar (market median occupancy is 47.8%)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3120 rate is 22% below the local market median, yet 33.7% occupancy falls 14.1% short of the median 47.8%",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1359388235999156018",
+  "host_name": "Charlie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 305.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 23180.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": null,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Renovated Home near Kirkstall Abbey, 74% above cohort rate",
+      "Detached Home, 74% above cohort rate",
+      "Kirkstall Abbey Retreat, price leader in area"
+    ],
+    "rewritten_desc": "Escape to this beautifully renovated detached home, nestled in a tranquil setting near the historic Kirkstall Abbey. With its four spacious bedrooms, this property is perfect for a family or group of friends. Enjoy the stunning surroundings, explore the local area, and relax in the calm atmosphere. The home is fully equipped with everything you need for a comfortable stay. With its unique blend of history and tranquility, this property is an ideal base for exploring the region. The property type is an entire home, and it can accommodate up to 4 guests. The nightly rate is \u00a3305.00. The host has a 4.82 rating based on 56 reviews. The property has been well-maintained and is ready for your arrival.",
+    "top_amenity_gaps": [
+      "Outdoor space for recreation and relaxation",
+      "Parking and facilities for convenience",
+      "Entertainment options for a memorable stay"
+    ],
+    "photo_order_rec": "Consider making the exterior photo of the property the lead photo, as it showcases the property's location and setting near the historic Kirkstall Abbey.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3305.00) is a whopping 74% above the cohort median, yet your occupancy rate is only 15.2%, significantly lagging the cohort median of 28.3% - this is a huge opportunity to leverage your pricing power to maximize bookings.",
+      "With 76 open nights in the next 90 days, there's ample opportunity to increase occupancy and revenue by implementing effective marketing strategies",
+      "Given your 0 years of hosting experience and 'None' average rating, investing in clear and professional photography and a rewritten description is crucial for building trust with potential guests"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your property has 76 open nights in the next 90 days, yet your occupancy rate is only 15.2% - I'd love to discuss opportunities to maximize your bookings and revenue.",
+    "weakest_element": "description"
+  }
+}

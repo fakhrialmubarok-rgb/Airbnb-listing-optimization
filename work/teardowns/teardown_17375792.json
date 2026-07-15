@@ -1,0 +1,39 @@
+{
+  "listing_id": "17375792",
+  "host_name": "Sheree",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 159.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 12084.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 3,
+    "score_images": 1,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Charming 4 Bed Apartment at Crosshills",
+      "Elegant Crosshills Serviced Apartment",
+      "Cozy 4 Bedroom Flat at Crosshills"
+    ],
+    "rewritten_desc": "Welcome to this lovely 4-bedroom apartment at Crosshills, perfect for up to 4 guests. This modern serviced apartment boasts a cozy atmosphere, making it ideal for a family vacation or a business trip. Its central location provides easy access to local amenities, including restaurants, shops, and transport links. The apartment features a spacious living area and a fully equipped kitchen. Each bedroom has ample storage and is designed to provide a comfortable night's sleep. As a guest, you'll have access to shared laundry facilities and secure parking. With its high rating of 4.28 out of 5 from 79 reviews, this apartment is the perfect choice for a comfortable and memorable stay.",
+    "top_amenity_gaps": [
+      "Parking and secure storage facilities to cater to guests with cars",
+      "An outdoor space or garden for relaxing and socializing",
+      "Entertainment facilities, such as a flat-screen TV or streaming device"
+    ],
+    "photo_order_rec": "The living area should be the cover photo, showcasing the spacious and cozy atmosphere. This will provide potential guests with an instant understanding of the apartment's comfort and livability.",
+    "key_diagnosis": [
+      "Increase occupancy by targeting guests who book longer stays, as there are 76 open nights on the calendar.",
+      "Improve the listing's rating and appeal by adding a photo-per-view ratio of at least 1.4, considering the unknown photo count.",
+      "Implement the suggested title variant 'Charming 4 Bed Apartment at Crosshills' to lead with a stronger differentiator and entice potential guests."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "With 76 open nights on the calendar, there's a missed opportunity to fill available dates and maximize revenue. A reworked title and photo strategy can help attract more guests.",
+    "weakest_element": "title"
+  }
+}

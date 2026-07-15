@@ -1,0 +1,39 @@
+{
+  "listing_id": "33212117",
+  "host_name": "Claude",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 109.0,
+    "occupancy_pct": 41.3,
+    "open_nights_90d": 53,
+    "revenue_at_stake_gbp": 5777.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Marina 2\u2011Bed Flat \u2013 38% Cheaper Than Avg!",
+      "Spacious Marina Flat for 4 \u2013 Modern 2\u2011Bed",
+      "Cozy Marina Retreat \u2013 Walk to Waterfront"
+    ],
+    "rewritten_desc": "Welcome to your modern 2\u2011bedroom flat nestled in a vibrant marina development. This entire\u2011home retreat comfortably sleeps up to four guests, making it perfect for families, friends, or couples seeking a waterfront escape. Every night you\u2019ll enjoy a bright open\u2011plan living area, a fully equipped kitchen, and two stylish bedrooms with plush bedding. The flat\u2019s contemporary d\u00e9cor, large windows, and balcony views let the marina\u2019s relaxed vibe flow right into your stay.\n\nRated 4.78 out of 5 based on 257 glowing reviews, Claude\u2019s flat consistently earns praise for cleanliness, location, and value. With a nightly rate of \u00a3109 \u2013 a striking 38\u202f% lower than the city\u2019s median of \u00a3175 \u2013 you\u2019re getting premium comfort without the premium price tag. Over the next 90 days the calendar shows 53 open nights (41.3\u202f% booked), presenting a prime opportunity to fill those dates with the right guests.\n\nLocated steps from the water, you\u2019ll be within easy walking distance of restaurants, shops, and leisure activities. Whether you\u2019re watching the boats glide by from the balcony, cooking a meal in the modern kitchen, or exploring the surrounding attractions, this flat offers the perfect blend of convenience and charm. Book now and experience the marina lifestyle at an unbeatable price.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or terrace with marina view)",
+      "Dedicated parking for guests",
+      "Entertainment options (e.g., smart TV, streaming services, board games)"
+    ],
+    "photo_order_rec": "Use a bright living\u2011area or marina\u2011view photo as the cover image, as it instantly showcases the property\u2019s location and space.",
+    "key_diagnosis": [
+      "Title currently ignores the -38% price advantage; rewrite the headline to highlight \u00a3109 vs the cohort median \u00a3175 to capture price\u2011sensitive travelers.",
+      "The description is essentially empty; add a compelling 200\u2011300 word copy that leverages the 4.78 rating, 257 reviews, and 53 open nights to create urgency.",
+      "No high\u2011value amenities are listed; add Outdoor (balcony), Parking, and Entertainment amenities to meet market expectations and boost perceived value."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your flat is priced 38% below the city median (\u00a3109 vs \u00a3175) yet only 41% booked \u2013 a stronger headline could turn those 53 open nights into bookings.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1602347207645603522",
+  "host_name": "Shaz",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 173.0,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 12283.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Cozy Garden Oasis with Parking",
+      "Newly Renovated Home near [Location]",
+      "Private Garden Getaway in [Location]"
+    ],
+    "rewritten_desc": "Escape to a tranquil oasis in the heart of [Location]. Our newly renovated home is the perfect retreat for couples and families alike. With a private garden and off-street parking, you'll have all the amenities you need to unwind. The property sleeps up to 4 guests and is equipped with all the mod cons, making it an ideal base for exploring the local area. And with 7 reviews to date, we're confident you'll love our little corner of [Location].",
+    "top_amenity_gaps": [
+      "Outdoor Space with Garden",
+      "Parking",
+      "None listed - consider highlighting local amenities such as bars and restaurants"
+    ],
+    "photo_order_rec": "The garden should be the cover photo as it's the standout feature of the property.",
+    "key_diagnosis": [
+      "Your occupancy rate is significantly below the market average (20.7% vs 28.3%) - optimizing your listing to attract more guests could unlock an additional \u00a33,446 in revenue (\u00a3173 x 71 open nights) over the next 90 days.",
+      "You're missing key high-value amenity categories such as Entertainment - consider adding local recommendations or facilities to improve your listing's appeal.",
+      "Your property has an unknown number of photos - consider adding more visuals to showcase the space and increase engagement (currently 0/10 for photo coverage)."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "We think there's a big opportunity to boost occupancy and unlock more bookings - can you tell us more about your goals for this listing?",
+    "weakest_element": "photos"
+  }
+}

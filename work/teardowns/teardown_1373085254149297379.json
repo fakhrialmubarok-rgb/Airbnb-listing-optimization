@@ -1,0 +1,40 @@
+{
+  "listing_id": "1373085254149297379",
+  "host_name": "Dare",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 91.0,
+    "occupancy_pct": 43.5,
+    "open_nights_90d": 51,
+    "revenue_at_stake_gbp": 4641.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Contractor-Friendly Free Parking 2BR",
+      "\u00a391 2BR with Free Parking & Fast Wi-Fi",
+      "Contractor-Friendly 2BR Free Parking",
+      "\u00a391 Market-Low Rate with 2BR+Parking"
+    ],
+    "rewritten_desc": "Looking for a flexible, affordable workspace with free parking? Our 2BR home is ideally suited for contractors, remote professionals, or small groups. Located within easy reach of the city's top employers, this modern retreat offers a fully equipped kitchen, dedicated workspace, and high-speed Wi-Fi perfect for virtual meetings. With 4 spacious guest beds and a welcoming kitchen, you'll have everything needed for short or extended stays. The property's standout perk is our 24/7 free parking - a rare asset in this market. While our \u00a391 rate is 41% below the neighborhood median, we've found through guest feedback that emphasizing our contractor-friendly amenities and parking advantages helps attract consistent bookings. Please note: We require a 30-day notice for stays longer than 7 nights.",
+    "top_amenity_gaps": [
+      "Outdoor space with seating",
+      "Smart TV in common area",
+      "In-unit washer/dryer"
+    ],
+    "photo_order_rec": "Use the front parking lot exterior as cover photo to immediately highlight one of our strongest differentiators (free parking visibility). This aligns with market demand for transparent access to essential amenities like parking in urban locations.",
+    "key_diagnosis": [
+      "Title exceeds Airbnb's recommended 50-character limit (has 52 characters) and lacks SEO-focused descriptors like 'contractor' near the beginning",
+      "Nightly rate is \u00a363.60 below cohort median (\u00a391.0 vs \u00a3154.60) yet occupancy remains 4.3 percentage points below market norm (43.5% vs 47.8%)",
+      "No amenities listed in the database despite free parking being mentioned in title - a major lost opportunity to claim ownership of a valuable differentiation factor"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a391 rate is 41% below the market median yet occupancy is 4.3 percentage points lower than the city average (43.5% vs 47.8%), suggesting a significant opportunity to recapture lost revenue through strategic price differentiation",
+    "weakest_element": "title"
+  }
+}

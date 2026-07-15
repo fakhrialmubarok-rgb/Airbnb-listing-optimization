@@ -1,0 +1,39 @@
+{
+  "listing_id": "1667496986299043708",
+  "host_name": "Stephen Charles",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 87.6,
+    "occupancy_pct": 39.1,
+    "open_nights_90d": 55,
+    "revenue_at_stake_gbp": 4818.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "3-Bed House - \u00a388 Near Manchester & Liverpool",
+      "\u00a388 3-Bed Home - 30Mins to 2 Cities",
+      "Spacious Home - 4 Guests Near Manchester"
+    ],
+    "rewritten_desc": "Experience a welcoming 3-bedroom home just minutes from Manchester and Liverpool's excitement! Sleeps 4, this spacious property offers easy access to both cities' vibrant nightlife, sports arenas, and cultural attractions. Parked in a safe neighborhood with 24/7 access, the home features a large living area with modern furnishings, a fully equipped kitchen with dining for 6, and all beds in bright, private rooms. With secure parking and on-site storage facilities, bring your family, friends, or sports team! Located 25 minutes from Manchester Airport and 15 minutes from both cities' train stations, this is the perfect base for adventure-seekers. Sleep soundly in our 0-review house (freshly listed!) just 30 minutes from Old Trafford, Anfield, and Liverpool's iconic music venues. Book now to enjoy a competitive rate of \u00a387.6 per night during our 39.1% open availability period.",
+    "top_amenity_gaps": [
+      "Parking facilities",
+      "Secure storage space",
+      "On-site entertainment"
+    ],
+    "photo_order_rec": "The living room photo should be cover photo to showcase space and comfort - first impression matters most.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3154.60 median but only 39.1% booked vs 47.8% cohort median",
+      "Newly listed with 0 reviews despite 5.0 rating - build trust through description enhancements",
+      "Missing core 'entertainment' and 'outdoor' amenities in listing"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Despite charging \u00a387.6 (43% below market rate), you're only booking 39.1% of days vs 47.8% in your area",
+    "weakest_element": "description"
+  }
+}

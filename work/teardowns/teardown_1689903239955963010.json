@@ -1,0 +1,39 @@
+{
+  "listing_id": "1689903239955963010",
+  "host_name": "Aerial House Newcastle",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 126.6,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 9495.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Save 28% \u2013 Modern 4\u2011Guest Apartment, Newcastle",
+      "Affordable Luxury: 4\u2011Bed Serviced Apt in City Centre",
+      "Newcastle City\u2011Center Apartment \u2013 Only \u00a3126/night"
+    ],
+    "rewritten_desc": "Welcome to a bright, modern serviced apartment perfectly positioned in the heart of Newcastle. This entire home comfortably sleeps up to four guests, making it ideal for families, small groups, or business travellers seeking space and convenience. At a nightly rate of \u00a3126.60, the apartment is priced 28% below the city\u2019s median nightly rate of \u00a3175, offering excellent value for money. \n\nThe property has earned 386 reviews with an average rating of 3.83, reflecting solid guest satisfaction while leaving room for improvement. Although it isn\u2019t a Superhost listing yet, you\u2019ll enjoy a self\u2011contained, fully equipped space that includes a living area, kitchen, bedroom, and bathroom, all designed with contemporary finishes. \n\nLocated just minutes from Newcastle\u2019s main attractions, restaurants, and transport links, you\u2019ll have easy access to everything the city offers. Over the next 90 days the calendar shows only 16.3% occupancy (about 15 nights booked), indicating a significant opportunity to attract more guests\u2014especially given the attractive price point. \n\nWhether you\u2019re visiting for work, leisure, or a city break, this apartment provides the comfort of home with the flexibility of a serviced stay. Book now to enjoy a cost\u2011effective, centrally\u2011located Newcastle experience.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or garden)",
+      "Dedicated parking or secure bike storage",
+      "Entertainment amenities (Smart TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the living area with city views as the cover photo; it instantly showcases space and location, drawing guests in.",
+    "key_diagnosis": [
+      "Increase the nightly rate from \u00a3126.6 to around \u00a3140 (still ~20% below the cohort median) to capture perceived value while keeping the 28% price advantage, leveraging the low 16.3% occupancy figure.",
+      "Add and highlight high\u2011value amenities\u2014outdoor balcony, on\u2011site parking, and a Smart TV with streaming\u2014to align with guest expectations and improve the 2/10 amenities score.",
+      "Refresh the photo gallery with at least 8 professional shots covering the living room, kitchen, bedroom, bathroom, and exterior; set the living\u2011room view as the lead photo to boost the 3/10 images score."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your apartment is priced 28% below Newcastle\u2019s average nightly rate yet sees only 16.3% occupancy over the next 90 days \u2013 a clear opportunity to boost bookings.",
+    "weakest_element": "description"
+  }
+}

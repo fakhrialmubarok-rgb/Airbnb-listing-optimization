@@ -1,0 +1,39 @@
+{
+  "listing_id": "567144035374653221",
+  "host_name": "Joe",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 143.0,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 6578.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Peak District Cottage",
+      "Cosy Getaway \u00a3143/nt",
+      "Heart of Peaks"
+    ],
+    "rewritten_desc": "Experience the breathtaking beauty of the Peak District in our cosy cottage, perfectly situated in the heart of this stunning national park. With a nightly rate of \u00a3143, our entire home is an affordable luxury, accommodating up to 4 guests. Enjoy the tranquility of the surroundings and the comfort of our well-appointed cottage, ideal for a relaxing retreat. As a new host, I am dedicated to providing exceptional service and ensuring your stay is nothing short of wonderful.",
+    "top_amenity_gaps": [
+      "Outdoor activities information",
+      "Parking facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should be of the living room or a notable outdoor feature to immediately showcase the cosy atmosphere and Peak District beauty, setting the tone for the rest of the photos.",
+    "key_diagnosis": [
+      "With 48.9% occupancy over the next 90 days, there's a significant opportunity to increase bookings, especially considering the cohort median occupancy is 28.3%",
+      "The nightly rate of \u00a3143 is -18% compared to the cohort median of \u00a3175, suggesting potential for rate optimization or highlighting unique selling points to justify the current rate",
+      "With only 39 reviews and a rating of 4.87, focusing on improving host reputation through enhanced guest experiences and encouraging more reviews could significantly boost visibility and attractiveness"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your current occupancy at 48.9% compared to the cohort median of 28.3%, there's a substantial opportunity to increase bookings and revenue, potentially by \u00a3143 per available night for the 46 open nights in the next 90 days",
+    "weakest_element": "amenities"
+  }
+}

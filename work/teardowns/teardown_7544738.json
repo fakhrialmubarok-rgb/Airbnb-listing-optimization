@@ -1,0 +1,39 @@
+{
+  "listing_id": "7544738",
+  "host_name": "Andrew",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 85.6,
+    "occupancy_pct": 65.2,
+    "open_nights_90d": 31,
+    "revenue_at_stake_gbp": 2653.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "North Manchester Apt \u2013 45% Below Market Rate",
+      "Cozy 1\u2011Bed Apartment \u2013 \u00a385 Nightly, Prime Location",
+      "Affordable North Manchester Home for 4 \u2013 65% Booked"
+    ],
+    "rewritten_desc": "Welcome to your modern 1\u2011bedroom apartment in North Manchester, perfect for families or groups of up to four guests. This entire home offers a comfortable bedroom with a queen\u2011size bed, a bright living area with a sofa and dining table, a fully equipped kitchen, and a clean bathroom. Hosted by Andrew, a new host who\u2019s eager to provide a seamless stay, the property boasts a solid 4.77 rating from 44 reviews. At just \u00a385.60 per night, it\u2019s priced 45% below the city\u2019s median nightly rate of \u00a3154.60, yet it already enjoys a strong 65.2% occupancy for the next 90 days, leaving only 31 open nights. While the listing doesn\u2019t currently highlight specific amenities, guests can expect the basics for a pleasant stay. The location in North Manchester offers easy access to local shops, restaurants, and public transport, making it a convenient base for exploring the city. Book now to experience comfort, value, and a great host who\u2019s committed to making your visit memorable.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, garden, or patio)",
+      "Dedicated parking or free on\u2011street parking information",
+      "Entertainment options (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area as the cover photo\u2014it showcases the main gathering space and immediately conveys the apartment\u2019s size and style.",
+    "key_diagnosis": [
+      "Raise the nightly rate from \u00a385.6 to around \u00a3100 (\u2248+17%) \u2013 you\u2019re 45% below the market median yet already have 65.2% occupancy, so a modest increase can boost revenue without sacrificing bookings.",
+      "Add high\u2011value amenities such as a balcony or patio, guaranteed parking, and a TV with streaming services \u2013 these are the top gaps and can justify a higher price point.",
+      "Upload at least 8 high\u2011resolution photos covering the living room, bedroom, kitchen, bathroom, and any view; set the living\u2011room shot as the cover to improve visual appeal and click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "At \u00a385.6 per night you\u2019re charging 45% less than the city median while already enjoying a 65.2% booking rate \u2013 a simple rate tweak could unlock significant extra revenue.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1583661748212083241",
+  "host_name": "Gurmukh",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 113.12,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 7692.16
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Japandi Loft Studio \u2013 27% Cheaper Than Avg!",
+      "Modern Loft with Projector & Bathtub \u2013 Sleeps 4",
+      "Cozy Japandi Studio \u2013 Low Price, High Style"
+    ],
+    "rewritten_desc": "Welcome to our Modern Japandi Loft Studio, a sleek and tranquil retreat that blends Scandinavian minimalism with Japanese warmth. Designed for up to four guests, this entire\u2011home loft features a spacious open\u2011plan living area, a comfortable queen\u2011size bed, and a second sofa bed for extra guests. Unwind on the stylish Japandi furnishings while enjoying a high\u2011definition projector for movie nights, and soak away in the luxurious bathtub after a day of exploring the city.\n\nThe kitchen is fully equipped with modern appliances, allowing you to prepare simple meals or a coffee to start your morning. Large windows flood the space with natural light, highlighting the clean lines and neutral palette that make the loft feel both airy and inviting. With a nightly rate of \u00a3113.12, you\u2019re paying 27% less than the city\u2019s median rate of \u00a3154.60, giving you premium style at a bargain price.\n\nOur guests consistently love the experience, reflected in a 4.95 rating from 83 reviews. Although the listing is not yet a Superhost, the high rating demonstrates strong satisfaction. Currently, the next 90 days show a 25% occupancy rate, leaving 68 open nights ready for you to book. Whether you\u2019re traveling for work, a city break, or a small family getaway, this Japandi loft offers a perfect blend of comfort, design, and value.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or garden) \u2013 a high\u2011value amenity guests seek",
+      "Dedicated parking spot \u2013 improves convenience and attracts drivers",
+      "Entertainment amenities (streaming device, board games) \u2013 complements the projector"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution shot of the main living area showing the projector screen and Japandi d\u00e9cor as the cover photo; it instantly showcases the unique entertainment feature and design appeal.",
+    "key_diagnosis": [
+      "Occupancy is only 25% for the next 90 days (68 open nights) despite a 27% lower nightly rate than the market median \u2013 run a targeted promotion to fill those nights.",
+      "Add at least three high\u2011value amenities (outdoor space, parking, entertainment) to match market expectations and boost perceived value.",
+      "Upload a minimum of 8 professional photos covering living area, bedroom, bathroom, kitchen, and any view; set the living\u2011area shot with projector as the cover to attract clicks."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your loft is priced 27% below the market median yet only 25% booked for the next 90 days \u2013 there\u2019s massive upside to fill those 68 open nights.",
+    "weakest_element": "amenities"
+  }
+}

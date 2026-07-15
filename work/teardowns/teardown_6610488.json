@@ -1,0 +1,39 @@
+{
+  "listing_id": "6610488",
+  "host_name": "Carole",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 125.53,
+    "occupancy_pct": 69.6,
+    "open_nights_90d": 27,
+    "revenue_at_stake_gbp": 3389.31
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 5,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Saltaire flat sleeps 4 guests - \u00a3125/nt",
+      "Cosy 2 bed flat near Saltaire's charm",
+      "\u00a3125/nt in this 2 bed Saltaire gem"
+    ],
+    "rewritten_desc": "Escape to the charm of historic Saltaire in this 2-bedroom flat. Located just a short stroll from the beautiful Salts Mill and vibrant village centre, this home provides the perfect base for exploring the surrounding countryside. This flat can comfortably accommodate 4 guests and includes everything you need for a relaxed and enjoyable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden for guests to relax",
+      "Parking space for added convenience",
+      "Entertainment options such as a TV or games console"
+    ],
+    "photo_order_rec": "Start with a photo of the flat's living area, showcasing the space and furniture to give potential guests a great first impression.",
+    "key_diagnosis": [
+      "Their nightly rate is -28% vs the cohort median of \u00a3175.00, leaving significant room for rate optimisation to boost occupancy and revenue.",
+      "Occupancy stands at 69.6% booked with 27 open nights, which is 41.3% higher than the market cohort's median occupancy of 28.3%.",
+      "This 0-year-old host with a None average rating may be impacting their ability to attract guests and drive bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate of \u00a3125.53 and occupancy at 69.6%, there's a clear window for increasing their nightly rate to reach their target occupancy and drive revenue.",
+    "weakest_element": "photos"
+  }
+}

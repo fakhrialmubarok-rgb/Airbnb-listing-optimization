@@ -1,0 +1,39 @@
+{
+  "listing_id": "1221206676516869575",
+  "host_name": "Arsalan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 56.0,
+    "occupancy_pct": 30.4,
+    "open_nights_90d": 63,
+    "revenue_at_stake_gbp": 3528.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 0,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Bradford City Center Studio at 56GBP - Lowest Rate!",
+      "Cozy Studio Flat in Heart of Bradford - From \u00a356!",
+      "Stunning Studio in Bradford for 56GBP/night"
+    ],
+    "rewritten_desc": "Escape to Bradford's vibrant city center in this delightful studio flat, perfect for 4 guests. Enjoy the best of local culture, history, and entertainment within walking distance. This charming studio features a modern design, ensuring a comfortable stay. Arsalan takes pride in offering a home away from home, making it ideal for business travelers, couples, or friends exploring the region. Please note the studio's amenities are currently not listed. Bradford's famous attractions and bustling High Street await you.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Parking",
+      "TV"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, featuring the unique studio design and modern furniture. Highlighting its comfort and style will make viewers eager to stay.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a356 is 68% lower than the cohort median of \u00a3175, indicating a major pricing opportunity to match the surrounding market.",
+      "With an occupancy of 30.4% over the next 90 days, you can improve your occupancy rate by 2.1% points, closing the gap with the cohort median of 28.3%.",
+      "You have 0 listed amenities, whereas top-rated listings in your market highlight their outdoor spaces, parking options, and entertainment facilities."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "By adjusting your pricing strategy to match the local market median, you can unlock a significant 2.1% occupancy increase, translating to more bookings and revenue for your studio.",
+    "weakest_element": "photos"
+  }
+}

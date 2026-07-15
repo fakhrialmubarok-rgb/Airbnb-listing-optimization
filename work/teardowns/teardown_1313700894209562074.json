@@ -1,0 +1,39 @@
+{
+  "listing_id": "1313700894209562074",
+  "host_name": "Claire",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 185.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14060.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Hideaway on Monk St \u2013 Free WiFi, Quiet",
+      "Cozy 4\u2011Guest Home, Prime Location, No Parking",
+      "Spacious Monk Street Escape \u2013 Ideal for Families"
+    ],
+    "rewritten_desc": "Welcome to your private hideaway on Monk Street, a fully self\u2011contained home that comfortably sleeps up to four guests. Every night you\u2019ll enjoy fast, reliable Wi\u2011Fi and a peaceful setting perfect for couples, small families, or business travellers seeking a quiet retreat. Rated 4.58 by 401 happy guests, our space combines modern comforts with a homely feel. The entire property is yours to use \u2013 no shared areas \u2013 giving you the freedom to relax, work, or cook at your own pace. With a nightly rate of \u00a3185, you get excellent value compared with the city\u2019s median of \u00a3175. Although the next 90\u2011day calendar shows 76 open nights (only 15.2% booked), there\u2019s huge potential to fill those dates and boost your earnings. The home\u2019s layout includes a bright living area, a fully equipped kitchen, a comfortable bedroom suite, and a modern bathroom, all designed for convenience. While we currently list no specific amenities, you\u2019ll find everything you need for a pleasant stay, and we\u2019re eager to add high\u2011impact features such as outdoor seating, dedicated parking, and entertainment options. Book your stay at the Hideaway at Monk Street and experience a blend of comfort, convenience, and calm in the heart of the city.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., patio or garden)",
+      "Parking (dedicated or nearby)",
+      "Entertainment (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged living\u2011room shot as the cover photo \u2013 it instantly shows the space\u2019s size and comfort and entices guests to scroll further.",
+    "key_diagnosis": [
+      "Rate vs occupancy: your nightly price of \u00a3185 is only +6% above the cohort median (\u00a3175) yet you\u2019re only 15.2% booked for the next 90 days versus the market median 28.3% \u2013 a clear mismatch.",
+      "Title is generic and at 49 characters it barely highlights your unique selling point; a sharper, keyword\u2011rich title will improve search clicks.",
+      "No amenities are listed \u2013 adding high\u2011value items like outdoor seating, parking, and entertainment can lift both rating perception and booking conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 76 open nights in the next 90 days at \u00a3185 per night, you\u2019re leaving up to \u00a314,060 on the table.",
+    "weakest_element": "amenities"
+  }
+}

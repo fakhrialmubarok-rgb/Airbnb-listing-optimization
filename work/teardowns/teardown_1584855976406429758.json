@@ -1,0 +1,39 @@
+{
+  "listing_id": "1584855976406429758",
+  "host_name": "Robert",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 4 listings scraped in the same market.\nMedian nightly rate: \u00a390.20\nMedian 90-day occupancy: 55.4%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 89.0,
+    "occupancy_pct": 64.1,
+    "open_nights_90d": 32,
+    "revenue_at_stake_gbp": 2848.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 3,
+    "score_amenities": 6,
+    "score_images": 7,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "3\u2011Bedroom House, Central Middleton, Parking & Netflix",
+      "Spacious 3BR Home Steps from Train, Garden & WiFi",
+      "Family\u2011Friendly 3BR with Private Driveway & Netflix"
+    ],
+    "rewritten_desc": "Enjoy a centrally\u2011located stay in Middleton at this fully\u2011furnished 3\u2011bedroom house, perfect for families, friends or contractors. The property is just under a mile (about a 10\u2011minute train ride) from Manchester Centre, giving you easy access to the city while you relax in a quiet neighbourhood. All three bedrooms feature fresh linens, towels, and their own 52\u2011inch TV with Netflix, so everyone can unwind after a day of exploring. The spacious living area also boasts a large TV with Netflix, a comfortable sofa, and free Wi\u2011Fi. A modern kitchen at the rear is equipped with a new fridge\u2011freezer, cooker, hob, toaster, coffee maker and a washer; a tumble dryer can be added on request. You\u2019ll appreciate the private driveway that provides one guaranteed parking space, plus a rear garden for outdoor relaxation. Self\u2011check\u2011in is simple with a key box and smart lock. Central heating and hot water are included in the price. For peace of mind, a door\u2011bell camera is installed at the front door. Guests have full access to the bedrooms, kitchen, living room, bathroom, garden and parking. Whether you\u2019re visiting for work or leisure, this home offers comfort, convenience and entertainment in one package.",
+    "top_amenity_gaps": [
+      "Exterior security cameras on the property",
+      "Tumble dryer for added laundry convenience",
+      "Essentials kit (shampoo, soap, toilet paper)"
+    ],
+    "photo_order_rec": "Use a bright front\u2011exterior shot showing the driveway and garden as the cover photo \u2013 it instantly highlights the private parking and outdoor space, the two strongest selling points.",
+    "key_diagnosis": [
+      "Raise the nightly rate from \u00a389 to around \u00a395; you\u2019re already 64.1% booked (32 open nights) and the market median rate is \u00a390.20, so a modest increase can boost revenue without hurting occupancy.",
+      "Rewrite the title to include high\u2011search keywords (\"3\u2011Bedroom\", \"parking\", \"central\", \"Netflix\"); the current title is only 25 characters and scores 3/10, limiting SEO visibility.",
+      "Reorder the photo gallery so the first image is the front\u2011exterior with driveway; with 25 photos (above the cohort median of 23) you have ample coverage, but the lead image currently doesn\u2019t showcase the parking advantage."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your listing already books 64% of nights at \u00a389\u2014let's boost visibility with a keyword\u2011rich title and a cover photo that showcases the private parking to push bookings even higher.",
+    "weakest_element": "title"
+  }
+}

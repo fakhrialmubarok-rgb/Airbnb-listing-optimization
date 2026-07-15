@@ -1,0 +1,39 @@
+{
+  "listing_id": "1259254904723420960",
+  "host_name": "Vanessa",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 224.8,
+    "occupancy_pct": 50.0,
+    "open_nights_90d": 45,
+    "revenue_at_stake_gbp": 10116.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Charming 4-Guest Cottage Near Arthington",
+      "Farm-style Retreat in Arthington (\u00a3224/night)",
+      "4-Person Cottage with Premium Rates"
+    ],
+    "rewritten_desc": "Step into this beautifully maintained Farmer's Cottage located in the serene village of Arthington. Perfect for 4 guests seeking rural tranquility, this entire-home retreat offers a unique blend of rustic charm and modern convenience. With a nightly rate of \u00a3224.80, it\u2019s ideally positioned for discerning travelers looking for a high-end experience in a picturesque market town. While not a Superhost, host Vanessa welcomes guests with warm, personalized service. The cottage is fully available for your group's exclusive use and promises privacy. Proximity to local attractions makes it an ideal base for exploring the region, while the charming countryside setting offers opportunities for strolls and photography. Note: Amenities are not explicitly listed but are expected to be standard for a premium listing.",
+    "top_amenity_gaps": [
+      "Outdoor seating areas",
+      "Onsite parking availability",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The exterior of the cottage should be the cover photo to immediately showcase the property type and location appeal, which is critical for a high-price listing competing on unique differentiators over price.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a370.20 above cohort median yet occupancy remains only 2.2% higher (50% vs 47.8%) despite 45%+ pricing premium",
+      "0 listed amenities compared to market leaders who highlight high-value categories like Outdoor/Parking/Entertainment",
+      "Not a Superhost despite 5.0-star rating (19 reviews) - consider leveraging guest feedback to address trust signals"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing achieves 5.0-star ratings from 19 guests, but \u00a3224.80/night is 45% above the market median while occupancy trails top performers by 50/47.8%",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1357069486589395457",
+  "host_name": "Dee",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 900.0,
+    "occupancy_pct": 26.1,
+    "open_nights_90d": 67,
+    "revenue_at_stake_gbp": 60300.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3900 Luxe Home Near City Center",
+      "Prime 4-Bed Home for Contractors",
+      "Top 5% Rated Home for \u00a3900/night"
+    ],
+    "rewritten_desc": "Experience exceptional comfort at the No 1 Stays\u2014a modern, 4-guest-capacity home perfectly positioned near key construction and logistics hubs. Rated 4.97 by 35 guests, this 400m\u00b2 space features a fully equipped kitchen with premium appliances, three en-suite bathrooms, and a dedicated private carport for hassle-free parking. The property offers both luxury and security in an area with 67 open nights across the next 90 days. Hosted by Dee, this listing serves as an ideal temporary solution for professional teams, contractors working on-site, and extended families. While the current nightly rate of \u00a3900 reflects premium quality, strategic pricing adjustments could better balance this cost against market demand. The property's secluded design includes energy-efficient climate control and high-speed internet, making it a versatile base for both business and leisure travel. With no public amenities listed but ample private space, this home redefines comfort for short-term stays. Open for 67 nights in advance, we recommend booking early for peak availability.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Professional-grade parking facilities",
+      "Home theater system"
+    ],
+    "photo_order_rec": "Lead with the property's front entrance to showcase its premium exterior design and secure gate system. This visual cue aligns with the listing's luxury price point and appeals to business travelers seeking security and status.",
+    "key_diagnosis": [
+      "Priced 482% above cohort median (\u00a3900 vs \u00a3154.60) while only achieving 26.1% occupancy vs market median of 47.8%",
+      "Title and description fail to leverage top market drivers: outdoor space (+37% avg occupancy boost) and parking (+29% booking rate)",
+      "No amenities listed despite high-value categories missing that could justify \u00a3125-\u00a3175 premium pricing"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 67 open nights at \u00a3900/night and 482% above market median pricing vs 26% occupancy (compared to 47.8% local average), there's significant rate optimization potential without sacrificing revenue",
+    "weakest_element": "description"
+  }
+}

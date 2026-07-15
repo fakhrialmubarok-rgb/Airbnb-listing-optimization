@@ -1,0 +1,39 @@
+{
+  "listing_id": "769366990911385201",
+  "host_name": "Arron",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 130.0,
+    "occupancy_pct": 39.1,
+    "open_nights_90d": 55,
+    "revenue_at_stake_gbp": 7150.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Airport & NEC Stay | Free Parking | \u00a3130/nt",
+      "\u00a3130/nt Airport Stay with Parking by NEC",
+      "Best NEC/Airport Accommodation, Parking Free"
+    ],
+    "rewritten_desc": "Welcome to our Airport & NEC Stay, a spacious and convenient whole home perfect for business travelers. Our house offers free parking for your stay, making it ideal for guests arriving by air or looking to explore the NEC and surrounding areas. With 4 guests in mind, we've equipped our home with everything you need to relax and unwind after a long day. Located close to the airport and NEC, you'll be just minutes away from world-class shopping, dining, and entertainment options. Our home features [insert features], making it the perfect choice for both corporate and leisure travelers. We're proud to be a [superhost/host] with a [rating] rating based on [review count] reviews, so you can trust that we'll provide a clean, comfortable and welcoming stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (essential for business travelers looking to unwind)",
+      "Parking (already offered, but could be highlighted more)",
+      "Entertainment (consider adding a TV or games to enhance guest experience)"
+    ],
+    "photo_order_rec": "Showcase the living area as the cover photo, as it's the heart of the home and will give potential guests a sense of the space.",
+    "key_diagnosis": [
+      "Lower the nightly rate to \u00a3175 to bring it in line with the cohort median and potentially increase occupancy by 10%.",
+      "Add a short sentence highlighting the free parking benefit in the description to make it stand out, increasing the chance of attracting airport and NEC travelers.",
+      "Increase occupancy from 39.1% to 28.3% or above, as this is still 10% lower than the cohort median, and potentially increase revenue by \u00a31,075 (55 nights x \u00a3130/nt)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your current occupancy rate at 39.1% vs the cohort median of 28.3%, there's a potential increase in bookings and revenue by \u00a31,075 (55 nights x \u00a3130/nt).",
+    "weakest_element": "title"
+  }
+}

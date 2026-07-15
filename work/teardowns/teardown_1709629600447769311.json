@@ -1,0 +1,39 @@
+{
+  "listing_id": "1709629600447769311",
+  "host_name": "Roxy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 102.96,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 4427.28
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Bridge Cottage \u2013 33% Below Avg Rate",
+      "Cozy 4\u2011Guest Bridge Cottage \u2013 Great Value",
+      "Little Bridge Cottage \u2013 Quiet Spot for 4"
+    ],
+    "rewritten_desc": "Welcome to Little Bridge Cottage, an entire home perfectly suited for up to four guests seeking a peaceful retreat at an unbeatable price. With a nightly rate of \u00a3102.96, you\u2019re paying roughly 33\u202f% less than the city\u2019s median of \u00a3154.60, giving you premium comfort without the premium cost. The cottage boasts a bright living space, a fully equipped kitchen, comfortable sleeping arrangements for four, and a clean, modern bathroom \u2013 all designed for a seamless stay. Guests have consistently praised the property, reflected in a 4.8 rating from five reviews, highlighting the cleanliness, quiet location, and attentive host. Over the next 90 days, the calendar shows 52.2\u202f% occupancy, leaving 43 nights still open \u2013 a prime opportunity for travelers looking for value. Whether you\u2019re exploring the local attractions, enjoying a quiet evening by the bridge, or simply need a home\u2011away\u2011from\u2011home, Little Bridge Cottage offers the space, comfort, and price advantage you deserve. Book now and experience a charming stay that combines affordability with the charm of a bridge\u2011side setting.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, or bridge view seating)",
+      "Dedicated parking for guests",
+      "Entertainment amenities (TV, Wi\u2011Fi, streaming services)"
+    ],
+    "photo_order_rec": "Use a striking exterior shot of the bridge and cottage as the cover photo to immediately showcase the unique location; follow with interior images of the living area, bedroom, kitchen, and bathroom for full coverage.",
+    "key_diagnosis": [
+      "Add at least 8 high\u2011quality photos covering every room and the exterior (currently unknown), because visual coverage directly drives bookings.",
+      "Enrich the listing description with a compelling 200\u2011word narrative that highlights the \u00a3102.96 nightly rate, 33\u202f% price advantage, 4.8 rating from 5 reviews, and 52.2\u202f% occupancy to convert browsers into guests.",
+      "Introduce high\u2011value amenities such as outdoor seating, guest parking, and entertainment options (TV/Wi\u2011Fi) \u2013 categories missing from the current amenity list \u2013 to increase perceived value and justify bookings for the 43 open nights."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your cottage is priced \u00a3102.96 per night \u2013 about 33% less than the market median, yet you\u2019re only at 52.2% occupancy, leaving 43 nights untapped.",
+    "weakest_element": "description"
+  }
+}

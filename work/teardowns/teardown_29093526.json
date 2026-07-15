@@ -1,0 +1,39 @@
+{
+  "listing_id": "29093526",
+  "host_name": "Elizabeth",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 5005.0,
+    "occupancy_pct": 14.1,
+    "open_nights_90d": 77,
+    "revenue_at_stake_gbp": 385385.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury home in city centre - L4 2RS",
+      "Exclusive 4-bedroom retreat near Argyle Park",
+      "Prime location home for 4 guests L4"
+    ],
+    "rewritten_desc": "Experience exceptional city living in this beautifully appointed 4-bedroom home. Located at 14 Argyle Road (L4 2RS), this spacious sanctuary offers modern comforts in an ideal central location. Perfect for groups or families seeking both privacy and convenience. While we currently price this unique property at \u00a35,005 per night, we're actively seeking ways to optimize visibility and occupancy while maintaining premium standards. Specializing in [property type], this home offers [insert actual property highlights from guest reviews once 0+ reviews exist]. Book your stay today to secure dates at this exceptional address.",
+    "top_amenity_gaps": [
+      "Off-street parking",
+      "Secure outdoor space",
+      "High-speed Wi-Fi"
+    ],
+    "photo_order_rec": "Prioritize the front fa\u00e7ade in the cover photo to establish location credibility and property presence, followed by a shot of the main living area to showcase spatial quality.",
+    "key_diagnosis": [
+      "Priced 3137% above cohort median \u00a3154.60 yet only achieving 14.1% occupancy vs 47.8% market norm, demonstrating significant mismatch between rate and market demand",
+      "Description field is completely empty, missing the critical narrative element of listings that converts browsers to bookers",
+      "Zero amenities listed despite 0% occupancy vs 14.1% market benchmark, failing to address minimum expected features for \u00a35k+ nightly rate"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a35,005 nightly rate is 3137% above the market median while occupancy remains at just 14% of calendar days (77 open nights) in the next 90 days - a significant opportunity exists to optimize pricing strategy.",
+    "weakest_element": "description"
+  }
+}

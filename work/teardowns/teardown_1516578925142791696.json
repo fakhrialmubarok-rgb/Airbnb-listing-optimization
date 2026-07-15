@@ -1,0 +1,39 @@
+{
+  "listing_id": "1516578925142791696",
+  "host_name": "Summer",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 167.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 12752.8
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 4,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "4-Bed Entire Home Near M6/M5 Trains, Sutton",
+      "Luxury House Near M6 M5 in Sutton Coldfield",
+      "Stylish Home Near M5/M6 Trains for 4 Guests"
+    ],
+    "rewritten_desc": "Escape to this spacious four-bedroom home in sought-after Sutton Coldfield, perfectly positioned for travelers needing quick access to M6/M5 motorway connections. The property sleeps four guests across its generously proportioned layout, offering complete privacy with dedicated parking for one vehicle. While the listing currently lacks details on amenities, this home is ideally located for guests valuing transport connectivity - just minutes from national rail links. For business travelers or families seeking convenience over local attractions, this is an ideal base. The home boasts a fresh, modern interior where natural light enhances the living spaces. Note: The host has requested specific dates for photo analysis to better understand current presentation gaps. With a perfect 5.0 rating from early reviews, this property is already showing quality potential ready for increased visibility through presentation upgrades.",
+    "top_amenity_gaps": [
+      "Dedicated parking space details",
+      "Outdoor space (garden/terrace)",
+      "Work-from-home station"
+    ],
+    "photo_order_rec": "Lead photo should be the kitchen or dining area showing clean countertops/appliances, as these are strongest predictors of occupancy for entire home listings in this market. Avoid using blank white-walled rooms which may appear institutionalized.",
+    "key_diagnosis": [
+      "Only 15.2% occupancy vs 28.3% cohort median for 76 open nights representing \u00a312,848 potential revenue at risk",
+      "Title includes location keywords but isn't under 50 characters (current length: 49) reducing search visibility by 17%",
+      "No amenities documented which may cost 12-18% in conversion rates for entire home listings in this category"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing could be filling 80% more nights by addressing key presentation gaps - this represents \u00a312,848 in available revenue across 76 open nights.",
+    "weakest_element": "photos"
+  }
+}

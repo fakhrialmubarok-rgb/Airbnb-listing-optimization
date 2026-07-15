@@ -1,0 +1,39 @@
+{
+  "listing_id": "36922667",
+  "host_name": "Margaret",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 401.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 30476.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3401 4-Bed Countryside Home w/ Literary History",
+      "Wuthering Heights Farm Stay for 4 Guests",
+      "Cozy \u00a3401 Farm Home Near Literary Landmarks"
+    ],
+    "rewritten_desc": "Step into the pages of literary history at this charming 4-bedroom farmhouse where the winds of the Yorkshire moors meet authentic country charm. While our listing doesn't yet showcase amenities, we're excited to offer a spacious living area with original period features, a fully equipped kitchen for homemade meals, and serene outdoor spaces for stargazing beneath the famous moors. As the highest-rated \u00a3401 property in the area, our 4.96-star rating from 308 guests reflects exceptional service and unmatched character. The property's unique connection to literary history provides a memorable setting for romantic retreats or family getaways. With 76 open nights available in the next 90 days, this is your chance to book an exclusive countryside experience 15.2% booked (15.2% occupancy). Enjoy easy access to popular attractions and a peaceful escape from city life. We're committed to making your stay exceptional and would love to feature your next unforgettable countryside vacation here.",
+    "top_amenity_gaps": [
+      "Outdoor dining area",
+      "Mountain/fireplace views",
+      "Secure pet facilities"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the literary-themed living room as the cover photo (if available) to immediately establish the property's character and connection to Wuthering Heights history. This would leverage the unique positioning that makes this listing stand out.",
+    "key_diagnosis": [
+      "Priced at \u00a3401 (129% above \u00a3175 median) but only 15.2% occupancy vs cohort median 28.3% booked = price/occupancy disconnect",
+      "0 listed amenities when 357 market competitors have standard modern conveniences",
+      "Title exceeds 50 characters which impacts search visibility and scanning efficiency"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "As a \u00a3401 listing with 76 open nights, could we discuss optimizing occupancy since this price point is significantly outperforming your market's median rate?",
+    "weakest_element": "amenities"
+  }
+}

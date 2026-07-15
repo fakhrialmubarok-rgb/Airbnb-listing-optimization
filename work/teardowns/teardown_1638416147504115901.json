@@ -1,0 +1,39 @@
+{
+  "listing_id": "1638416147504115901",
+  "host_name": "Camilla",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 227.6,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 17070.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Victoria Studio \u2022 4 Guests",
+      "Luxury Studio @ Victoria",
+      "Stay Angels Studio"
+    ],
+    "rewritten_desc": "Experience the best of the city in this premium studio, perfectly suited for 4 guests. With a nightly rate of \u00a3227.6, this entire home offers a unique blend of comfort and luxury. Located in a prime area, this studio is ideal for those looking to explore the city. With 440 reviews and a rating of 4.66, you can trust that you're in good hands.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Parking facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should be of the living area, as it is the most welcoming and spacious room in the studio. This will help set the tone for the rest of the photos.",
+    "key_diagnosis": [
+      "The nightly rate of \u00a3227.6 is 30% above the cohort median of \u00a3175, which may be contributing to the low occupancy of 16.3%",
+      "The occupancy of 16.3% is 12% below the cohort median of 28.3%, indicating a significant opportunity for improvement",
+      "With 440 reviews and a rating of 4.66, the host has a strong reputation, but the low occupancy suggests that the listing needs to be optimized to attract more bookings"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate 30% above the local median and occupancy 12% below the median, there's a significant opportunity to increase bookings and revenue",
+    "weakest_element": "amenities"
+  }
+}

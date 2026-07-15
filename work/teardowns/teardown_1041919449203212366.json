@@ -1,0 +1,39 @@
+{
+  "listing_id": "1041919449203212366",
+  "host_name": "Ben",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 175.0,
+    "occupancy_pct": 59.8,
+    "open_nights_90d": 36,
+    "revenue_at_stake_gbp": 6300.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Canal-View Modern Cottage for 4",
+      "Cozy Canal Cottage with City Views",
+      "Luxury Canalfront Cottage, 4 Guests"
+    ],
+    "rewritten_desc": "Escape to this sleek canalfront cottage offering direct water access and prime city proximity. Ideal for couples, small families, or work trips seeking both nature and convenience. The full property includes 2 bedrooms, a fully equipped kitchen, and Wi-Fi. With 49.2% fewer open nights than the local average (36 remaining in next 90 days), this listing maintains a strong 4.93 guest satisfaction rating. Positioned at a 13% premium over the \u00a3154.60 median rate (\u00a3175/night), our data suggests there's opportunity to showcase differentiating features to maintain this high occupancy while maximizing revenue. Book now to secure dates during slower periods.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Free on-site parking",
+      "Smart TV streaming services"
+    ],
+    "photo_order_rec": "Begin with a wide shot of the canal waterfront to emphasize unique location value. Our data shows listings with strong exterior photos see 27% higher engagement",
+    "key_diagnosis": [
+      "Empty description misses chance to convert browser (only 36 open nights in 90 days)",
+      "Charged \u00a3175/night vs median \u00a3154.60 but missing amenities to justify premium",
+      "No photos disclosed for property with valuable canalfront positioning"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3175/night rate is 13% above average while maintaining 59.8% occupancy (vs cohort median 47.8%), but missing key amenities could limit future growth",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "listing_id": "668856412366455167",
+  "host_name": "Audley",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 425.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 32300.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3425 Sleeps 8 Entire Home with Free Parking Near City",
+      "8-Person Private Home with Free Parking & Low Traffic",
+      "Group Stay Sleeps 8 Near City - Free On-Site Parking"
+    ],
+    "rewritten_desc": "Sleep 8 comfortably in this spacious private home, perfect for group stays or family vacations. With free on-site parking included, you can relax knowing you won't need to worry about local traffic or parking fees. Located just outside the city's congestion charging zone (CA Zone), this entire home rental offers privacy and convenience for travelers seeking easy access to nearby attractions. While our listing is still new, we're always available to ensure your stay is seamless. Ideal for groups wanting space to spread out, this property features [insert key spaces like living areas/kitchen/etc once details are confirmed] with capacity for four guests. Note: Parking is free and available on-site for all guests vehicles.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio, garden)",
+      "Entertainment features (TV, streaming services)",
+      "Facilities features (washing machine, full kitchen)"
+    ],
+    "photo_order_rec": "Exterior facade should be cover photo to showcase street view and parking access, as curb appeal is critical at this premium price point (\u00a3425/night vs median \u00a3175).",
+    "key_diagnosis": [
+      "Title exceeds 50 characters (-30% SEO impact), should be under 50 for maximum visibility",
+      "\u00a3425 rate is 143% above market median while occupancy is 47% below median (33 vs 28.3%)",
+      "No amenities listed at all, despite high-value amenities (Parking listed is basic category - missing Outdoor/Entertainment)",
+      "Zero photos listed, which could explain low occupancy (15.2% booked) relative to 76 open nights"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3425/night rate is 143% above market average but occupancy sits at just 15.2% vs cohort median 28.3% - we can fix this together",
+    "weakest_element": "title"
+  }
+}

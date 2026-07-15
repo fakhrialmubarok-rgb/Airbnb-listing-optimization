@@ -1,0 +1,39 @@
+{
+  "listing_id": "1663083147869488063",
+  "host_name": "John",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 98.0,
+    "occupancy_pct": 56.5,
+    "open_nights_90d": 39,
+    "revenue_at_stake_gbp": 3822.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Lux 1-Bed Apt | Leeds Station, Gym & Outdoor Space",
+      "\u00a398 Apt near Leeds Station | Gym & Secure Parking",
+      "Cozy Studio Near Leeds | Gym & High Speed WiFi"
+    ],
+    "rewritten_desc": "Stay in this fully private high-rise apartment just 2 minutes' walk from Leeds Central Station. The open-plan living area offers modern comforts for up to 4 guests, including free on-site parking (limited availability). While the building provides access to a well-equipped gym, we recommend bringing yoga mats as these aren't currently available. The apartment's location puts you within walking distance of Leeds' top attractions, while the high floor ensures privacy and city views. Our rate of \u00a398 per night is especially competitive for guests needing direct train access to London and Manchester. While you'll find full bedding for 4 guests, please note outdoor space is limited to balcony access. We're always available via phone to help make your stay comfortable.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony)",
+      "Secure parking (limited)",
+      "High-speed WiFi (confirm details)"
+    ],
+    "photo_order_rec": "The cover photo should be the living area to showcase space and natural light, followed by the bedroom and gym access. A clear shot of the building's location relative to Leeds Station would strengthen positioning.",
+    "key_diagnosis": [
+      "Title exceeds optimal length and doesn't leverage market-prioritize outdoor (50% of top listings include outdoor space)",
+      "Nightly rate \u00a337% below median but occupancy only 8.7% higher (56.5% vs 47.8%) shows pricing leverage exists",
+      "Description lacks explicit mention of high-value amenities (parking, gym) that 82% of Leeds listings advertise"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging \u00a398/night -37% below the \u00a3154.60 market median while achieving 56.5% occupancy -8.7 percentage points above market average, but your title doesn't reflect your unique amenities.",
+    "weakest_element": "title"
+  }
+}

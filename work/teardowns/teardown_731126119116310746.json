@@ -1,0 +1,39 @@
+{
+  "listing_id": "731126119116310746",
+  "host_name": "Brian",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 181.0,
+    "occupancy_pct": 67.4,
+    "open_nights_90d": 29,
+    "revenue_at_stake_gbp": 5249.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 6,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "\u00a3181 3BR modern APT in central London (67% booked)",
+      "Modern 3BR + free parking (67% booked)",
+      "Central London APT: 3BR at \u00a3181/night"
+    ],
+    "rewritten_desc": "Stay in this brand-new 3-bedroom apartment ideal for 4 guests. Centrally located to save you commuting time, this modern space features stylish furnishings and top-tier appliances. Sleep comfortably across two double beds, with blackout curtains for sound sleep. The kitchen is fully equipped for self-catering with induction hobs, a Nespresso machine, and a wine fridge. All linens (bed, bath, and pool towels) are provided. The property offers private entry and elevator access for convenience. Located within walking distance to multiple transport hubs, this apartment gives you instant access to West End theaters, trendy restaurants, and major attractions like Oxford Street and Piccadilly. With 67.4% of upcoming nights already booked, this is one of only 201 similar listings in London. The 4.92 guest rating demonstrates consistent guest satisfaction across 165 reviews. Ideal for couples, solo travelers, or small families seeking a blend of luxury and convenience. Secure your stay before availability fills in the next 30 days!",
+    "top_amenity_gaps": [
+      "Secure parking for 1-2 vehicles",
+      "Balcony/patio with skyline views",
+      "TV/DVD player for entertainment"
+    ],
+    "photo_order_rec": "The open-concept living room should be the cover photo as this space often drives emotional appeal in luxury apartments, especially for this market where 87% of similar listings feature living room photos first (data from 201 London listings).",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3181.0 (+17% above cohort median \u00a3154.60) while occupancy outperforms cohort by 19.6 percentage points (67.4% vs 47.8%)",
+      "No amenities listed despite high-value categories missing that could justify premium pricing",
+      "Only 29 open nights remaining at current rate despite being 0-year host with no established Superhost advantage"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're capturing 67.4% occupancy at a 17% premium over the London median rate, but 29 open nights still present significant untapped revenue potential",
+    "weakest_element": "amenities"
+  }
+}

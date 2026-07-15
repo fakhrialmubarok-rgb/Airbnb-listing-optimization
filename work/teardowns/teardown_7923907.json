@@ -1,0 +1,41 @@
+{
+  "listing_id": "7923907",
+  "host_name": "Jennie",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 636.6,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 43288.8
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "City Center Sauna Stay + 4 Guests",
+      "\u00a3636 Urban Getaway With Sauna",
+      "Luxury City Break: 3BR + Sauna"
+    ],
+    "rewritten_desc": "Experience unmatched urban luxury in our fully private 3-bedroom retreat. Located at the city's vibrant heart, this 4-guest space features a wellness-focused sauna for post-adventure relaxation. While the price reflects premium positioning at +312% above local median rates, we're committed to delivering exceptional value through our carefully designed city-center location. Sleeps 4 guests with all amenities included for a comfortable stay. As a new host, we're continuously refining our service to meet the needs of your city vacation, balancing world-class comfort with our central address. Limited availability: only 25% booked for the next 90 days.",
+    "top_amenity_gaps": [
+      "Outdoor space or terrace for city views",
+      "Secure parking options for extended stays",
+      "Smart home entertainment systems",
+      "High-speed broadband for remote work",
+      "Premium toiletries suite for spa-like bathrooms"
+    ],
+    "photo_order_rec": "Prioritize the city skyline view from a window as the cover photo to immediately showcase the location advantage. This perspective anchors the listing's premium positioning while justifying the premium price point.",
+    "key_diagnosis": [
+      "Priced at \u00a3636.60/night (312% above cohort median of \u00a3154.60) yet only achieving 25% occupancy vs market median 47.8% - suggesting significant overpricing for target market",
+      "No specific amenities listed despite being a 4.82-rated entire home property - missing opportunity to showcase differentiators",
+      "New host with 0 years experience and undefined guest expectations - lacks trust signals needed to justify premium price"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3636.60 rate outperforms the market price by 312%, yet your 25% occupancy is only half the 47.8% median of similar properties in the area. Let's address this pricing/occupancy disconnect.",
+    "weakest_element": "amenities"
+  }
+}

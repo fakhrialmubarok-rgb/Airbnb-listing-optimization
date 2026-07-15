@@ -1,0 +1,39 @@
+{
+  "listing_id": "50722766",
+  "host_name": "Bobsy",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 297.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 22275.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Executive London Hot Tub Home - 4 Guests",
+      "Baths in London - 297\u00a3/night, 4 guests",
+      "Luxury Hot Tub Apartment in London (4+1)"
+    ],
+    "rewritten_desc": "Experience the ultimate in luxury with our Executive London Hot Tub Home, sleeping 4 guests in style. Our property boasts a stunning outdoor space, perfect for relaxation and entertainment, including a hot bath under the stars. Located in the heart of the city, our home offers easy access to London's top attractions, making it the perfect base for your next adventure. With its modern decor and lavish amenities, this home is sure to exceed your expectations. Please note that our calendar is open 75 nights, offering a great opportunity to secure your dream dates. Our reviews speak for themselves with 286 glowing reviews and a 4.99 rating from our guests. Book now and enjoy the city in style!",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and entertainment",
+      "Parking facilities for guests",
+      "Entertainment facilities, such as a TV or games console"
+    ],
+    "photo_order_rec": "The living room should be the main cover photo, showcasing the stunning natural light and comfortable seating area. This sets the tone for the rest of the property and gives potential guests a clear idea of the level of luxury they can expect.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3297.00 is +79.4% vs the cohort median of \u00a3175.00, indicating a significant pricing gap that may be deterring potential guests",
+      "With only 16.3% occupancy in the next 90 days, there is a huge room to improve occupancy, especially considering the median cohort occupancy is 28.3%",
+      "Your property has no images, making it impossible for guests to get a sense of the space, amenities, and overall aesthetic, which may be leading to low engagement and bookings"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 16.3% occupancy in the next 90 days indicates a significant opportunity to fill more nights and grow your bookings, and we'd love to discuss some strategies to help you achieve this",
+    "weakest_element": "photos"
+  }
+}

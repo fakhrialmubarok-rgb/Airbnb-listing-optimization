@@ -1,0 +1,39 @@
+{
+  "listing_id": "672454486378451548",
+  "host_name": "Wonderment Adventures",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 336.4,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 23884.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Nature Escape \u00a3336/nt",
+      "Fun & Relaxation",
+      "Private Home Getaway"
+    ],
+    "rewritten_desc": "Escape to our wonderful entire home, perfectly suited for 4 guests. With a unique blend of nature and fun, this property offers a one-of-a-kind experience. Please note that we don't have any listed amenities, but our home is ready for your arrival.",
+    "top_amenity_gaps": [
+      "Outdoor amenities",
+      "Parking facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should be of the living room or a notable outdoor feature, showcasing the best of the property to potential guests.",
+    "key_diagnosis": [
+      "The nightly rate of \u00a3336.4 is +92% higher than the cohort median of \u00a3175.00, potentially impacting occupancy",
+      "The occupancy rate of 20.7% is lower than the cohort median of 28.3%, indicating room for improvement",
+      "With 27 reviews and a rating of 4.81, there is an opportunity to leverage this positive feedback to attract more guests"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate \u00a3161.4 above the local median and an occupancy rate 7.6% below the median, there's a significant opportunity to optimize your listing for more bookings",
+    "weakest_element": "amenities"
+  }
+}

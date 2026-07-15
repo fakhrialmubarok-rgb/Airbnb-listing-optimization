@@ -1,0 +1,39 @@
+{
+  "listing_id": "1004209895107794647",
+  "host_name": "Sahera",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 156.48,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 10014.72
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 7,
+    "score_images": 8,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Games Room Duplex \u2013 Snooker, Air Hockey, Cinema",
+      "Exclusive Ecclesfield Retreat \u2013 Sleeps 6, Fun",
+      "Duplex with Private Games Room & 70\u201d HDTV"
+    ],
+    "rewritten_desc": "Welcome to an exclusive duplex in the heart of Ecclesfield, designed for unforgettable entertainment and comfort. The ground floor boasts a fully\u2011furnished games room featuring a grand snooker table, a professional\u2011grade air\u2011hockey table, and a 70\u2011inch 5.1.4 JBL Atmos surround\u2011sound system that turns movie night into a cinema experience. Adjacent is a modern kitchen equipped for everything from quick breakfasts to gourmet meals, and a dining area that seats six. Two double pull\u2011out sofas in the lounge and games room provide additional sleeping space, while the private upstairs bedroom adds a third double bed, allowing the whole home to comfortably host up to six guests. Both bathrooms are sparkling clean, stocked with essentials, plush towels, and premium shower\u2011gel and soap. Guests enjoy a workspace, high\u2011speed Wi\u2011Fi, a 70\u2011inch HDTV, PS4 console, and a selection of arcade games for extra fun. The property sits near charming pubs, caf\u00e9s, woodland walks, and is a short drive from Sheffield\u2019s vibrant nightlife. With a washer in\u2011unit, essentials, and thoughtful touches like room\u2011darkening blinds and an iron, this duplex offers the perfect blend of relaxation and excitement for short or longer stays.",
+    "top_amenity_gaps": [
+      "Carbon monoxide alarm (safety)",
+      "Tumble dryer (convenience)",
+      "Air conditioning (comfort)"
+    ],
+    "photo_order_rec": "Use a high\u2011impact image of the games room showcasing the snooker table and sound system as the cover photo \u2013 it instantly communicates the property\u2019s unique entertainment value.",
+    "key_diagnosis": [
+      "Rate reduction: your nightly price of \u00a3156.48 is 49% above the local median (\u00a3104.90); lowering it toward the median can boost the current 29.3% occupancy.",
+      "Safety upgrade: the listing lacks a carbon monoxide alarm, a key safety amenity that guests expect and that can improve trust and ranking.",
+      "Title overhaul: the current title scores ~4/10 and includes cryptic code (M1J35 1.5m); replace it with a clear, benefit\u2011focused headline to improve SEO and click\u2011through."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is 49% above the local median (\u00a3104.90) while your 90\u2011day occupancy is only 29.3% (vs a 48.9% market median) \u2013 a clear opportunity to boost bookings.",
+    "weakest_element": "title"
+  }
+}

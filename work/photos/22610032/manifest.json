@@ -1,0 +1,44 @@
+[
+  {
+    "n": 1,
+    "url": "https://a0.muscache.com/im/pictures/e7b13b61-32d1-48a6-8457-7873fa79fd02.jpg",
+    "status": "original_kept",
+    "backend": "gemini 2.5-flash-image",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": false,
+      "curtains_open": true,
+      "no_visible_cables": false,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "lights_on, no_visible_cables"
+    },
+    "staged": "staged",
+    "tv": false
+  },
+  {
+    "n": 2,
+    "url": "https://a0.muscache.com/im/pictures/39e65491-27e3-41c2-918a-f04a00ba9b29.jpg",
+    "status": "original_kept",
+    "backend": "gemini 2.5-flash-image",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": false,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "curtains_open"
+    },
+    "staged": "qc_fail",
+    "tv": false
+  }
+]

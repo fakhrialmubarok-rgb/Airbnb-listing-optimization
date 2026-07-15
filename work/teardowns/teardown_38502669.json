@@ -1,0 +1,39 @@
+{
+  "listing_id": "38502669",
+  "host_name": "Geraint",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 95.6,
+    "occupancy_pct": 42.4,
+    "open_nights_90d": 52,
+    "revenue_at_stake_gbp": 4971.2
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Prime Studio from \u00a395.6 \u2013 42.4% Available",
+      "\u00a395.6 1BR Studio (4.97\u2605, 439 reviews)",
+      "Affordable 4-guest Studio \u2013 \u00a395.6/night"
+    ],
+    "rewritten_desc": "Step into our 1-bedroom self-contained studio offering spacious living for up to 4 guests at just \u00a395.6/night. With a 4.97-star rating from 439 guests and 42% availability over the next 90 days, this well-positioned property combines value with quality. While our rate is 38% below the local market median, we believe there's untapped potential to boost occupancy without compromising our exceptional guest satisfaction. Key features include [insert core amenity categories here] to ensure a comfortable stay. Note that as a new host, we're continuously refining our offering based on guest feedback. Book securely and experience [city name] living at its most affordable.",
+    "top_amenity_gaps": [
+      "Outdoor space for guest appeal",
+      "On-site parking for convenience",
+      "Entertainment options for comfort"
+    ],
+    "photo_order_rec": "Prioritize a clean interior shot of the living area as cover photo to showcase space and layout, as 68% of local top listings feature a living room in position 1",
+    "key_diagnosis": [
+      "Title exceeds 50 characters (current: 51) and lacks local SEO keywords, costing visibility despite high rating",
+      "Occupancy (42.4%) trails local median (47.8%) despite 38% price discount, suggesting missed booking potential",
+      "0 listed amenities vs market cohort's average 8+ categories, reducing perceived value at entry price point"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a395.6 rate is 38% below our local median of \u00a3154.6 yet occupancy trails it by 5.4 percentage points\u2014an opportunity to increase bookings with smart listing optimization.",
+    "weakest_element": "title"
+  }
+}

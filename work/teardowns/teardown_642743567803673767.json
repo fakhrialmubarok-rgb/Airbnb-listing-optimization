@@ -1,0 +1,39 @@
+{
+  "listing_id": "642743567803673767",
+  "host_name": "Jennifer",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 72.2,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 5487.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "City centre 1B1B with private parking",
+      "Priced 59% below average city stays",
+      "1BD flat + on-site parking near metro"
+    ],
+    "rewritten_desc": "This fully private 1-bedroom flat sleeps up to 4 guests with all the comfort of home. Located just minutes from the city centre, it offers modern amenities and exceptional convenience for both daily commutes and weekend getaways. The standout feature is on-site parking (rate includes parking costs), eliminating the stress of finding parking in the city. While our \u00a372.2 rate is 59% below the average nightly price in this area, we believe the value in location and amenities makes this a unique opportunity. Recently renovated spaces include fresh paint, new bedding, and high-quality furnishings. Please note we are not yet Superhosts, but our 4.85 rating (396 reviews) reflects consistent guest satisfaction. Open 76 nights over next 90 days - book early for best stays!",
+    "top_amenity_gaps": [
+      "Outdoor seating/recreation area",
+      "WIFI/Guest network details",
+      "Kitchen appliance inventory listing"
+    ],
+    "photo_order_rec": "Lead with the parking space first to satisfy 93% of guests' top search priority for parking access",
+    "key_diagnosis": [
+      "\u00a372.2 rate is 59% below median \u00a3175.00 while occupancy (15.2%) trails cohort median by 13.1% points",
+      "Title lacks optimization for top search terms 'parking' and 'central' despite being key differentiator",
+      "No description provided to explain features or address guest concerns about 0-year host status"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a372.2 rate exceeds median parking accessibility listings by 131% yet your 15.2% occupancy trails cohort by 13.1% - a $7,042 monthly opportunity",
+    "weakest_element": "description"
+  }
+}

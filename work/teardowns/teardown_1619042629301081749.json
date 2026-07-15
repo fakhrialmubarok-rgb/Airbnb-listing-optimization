@@ -1,0 +1,39 @@
+{
+  "listing_id": "1619042629301081749",
+  "host_name": "Simon & Charlotte",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 105.0,
+    "occupancy_pct": 59.8,
+    "open_nights_90d": 36,
+    "revenue_at_stake_gbp": 3780.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Garden Cabin \u2013 32% Below Avg, King Bed + Parking",
+      "Quiet Private Cabin w/ King Bed, Parking \u2013 32% Off",
+      "Garden Cabin, King Bed, Free Parking \u2013 Save 30%"
+    ],
+    "rewritten_desc": "Welcome to your private garden cabin, a tranquil retreat for up to four guests in the heart of the city. This entire home boasts a spacious king\u2011size bed, ensuring a restful night\u2019s sleep, and a dedicated parking space for hassle\u2011free arrivals. Enjoy the quiet ambiance of a secluded garden where you can unwind with a book or sip your morning coffee. The cabin is fully equipped for a comfortable stay, offering a clean, modern interior, a well\u2011appointed bathroom, and all the basics you need for self\u2011catering. \n\nAt \u00a3105 per night, the cabin is priced 32% below the local market median of \u00a3154.60, delivering exceptional value without compromising comfort. With a 5.0 rating from 20 glowing reviews, guests consistently praise the peaceful setting and the thoughtful touches that make this cabin feel like home. \n\nSimon and Charlotte, your hosts, are eager to welcome you, even though they are new to hosting; their fresh perspective means they are attentive to every detail. Over the next 90 days the calendar shows a 59.8% occupancy rate, leaving 36 nights still available \u2013 a perfect chance to book a stay at a great price. Book now and experience a quiet, private getaway with all the essentials you need for a memorable stay.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor garden space",
+      "Entertainment (e.g., streaming, board games)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution shot of the garden exterior that shows the cabin and the dedicated parking spot as the cover photo; it instantly highlights the outdoor appeal and the free parking advantage.",
+    "key_diagnosis": [
+      "Title lacks the 32% price advantage \u2013 change the headline to reference the \u00a3105 rate versus the city median \u00a3154.60 to attract price\u2011sensitive travelers.",
+      "No amenities are listed despite having parking, a private garden, and the potential for entertainment options \u2013 add these high\u2011value amenities to the listing to boost amenity score.",
+      "Photo count is unknown and likely insufficient \u2013 add at least 10 photos covering the bedroom, living area, kitchen, bathroom, garden, and parking, with the garden shot as the lead image."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your cabin is priced at \u00a3105, which is 32% below the city\u2019s median nightly rate of \u00a3154.60, yet you still have 36 open nights in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

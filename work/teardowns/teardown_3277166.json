@@ -1,0 +1,39 @@
+{
+  "listing_id": "3277166",
+  "host_name": "Sue & Tim",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1015.33,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 77165.08
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 5,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Unbeatable View 2 Bedroom Apt \u00a31015",
+      "Luxury 2Bed Apt with Panoramic View",
+      "4Guest 2Bed Apt with Stunning Market View"
+    ],
+    "rewritten_desc": "Experience the ultimate in luxury and comfort in our 2 bedroom apartment, boasting an unbeatable view of the vibrant market area. This stunning property is perfect for families and friends looking to explore the city in style. With its sleek modern design and spacious interiors, you'll feel right at home. Located in a sought-after area, you're just a short stroll away from top-notch restaurants, bars, and shops. Whether you're looking to relax or explore, our apartment has everything you need to make your stay unforgettable.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and entertainment",
+      "Parking facilities for guests with cars",
+      "Entertainment options, such as games or a piano"
+    ],
+    "photo_order_rec": "The living room should be the cover photo as it's the most inviting space in the apartment, and its panoramic view is the standout feature.",
+    "key_diagnosis": [
+      "The nightly rate of \u00a31015.33 is an astonishing 557% above the cohort median rate of \u00a3154.60.",
+      "With an occupancy rate of just 15.2%, the listing is 31.7% below the cohort median occupancy of 47.8%, suggesting significant room for improvement.",
+      "With no amenities listed, guests are unaware of the potential for additional services that could enhance their stay."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "With a significantly underutilized listing at \u00a31015.33 and a meager 15.2% occupancy rate, we believe that introducing key amenities will increase bookings and revenue.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1542772888132679178",
+  "host_name": "Bex",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 137.0,
+    "occupancy_pct": 73.9,
+    "open_nights_90d": 23,
+    "revenue_at_stake_gbp": 3151.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "\u00a3137 Cottage \u2013 11% Below Market Rate",
+      "Cozy 2\u2011Bed, 2\u2011Bath Cottage for 4 Guests",
+      "High\u2011Rated 4.9 Cottage Near [City] \u2013 Great Value"
+    ],
+    "rewritten_desc": "Welcome to your perfect countryside retreat \u2013 a cosy, fully\u2011equipped cottage that sleeps up to four guests. This entire\u2011home offering features two comfortable bedrooms and two modern bathrooms, giving families or small groups plenty of space and privacy. Rated an outstanding 4.9 by ten recent guests, the cottage consistently earns praise for its charm and cleanliness.\n\nLocated in a tranquil part of town, the property is ideal for those seeking a quiet escape while still being within easy reach of local attractions. With a nightly rate of \u00a3137, you\u2019re paying roughly 11\u202f% less than the city\u2019s median price of \u00a3154.60, delivering exceptional value without compromising on comfort.\n\nYour stay includes all the essentials for a relaxed visit: a fully stocked kitchen, plush linens, and high\u2011speed Wi\u2011Fi. While the current amenity list is minimal, you\u2019ll find everything needed for a comfortable stay. The host, Bex, is new to Airbnb but is dedicated to ensuring a smooth experience.\n\nBooking is already strong \u2013 73.9\u202f% of the next 90 days are reserved, leaving just 23 open nights for you to claim. Whether you\u2019re planning a weekend getaway or a longer holiday, this cottage provides a welcoming base for unforgettable memories.\n\nBook now and enjoy a high\u2011rated, well\u2011priced stay in a charming cottage that feels like home.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden or patio)",
+      "Free parking",
+      "Entertainment options (e.g., streaming TV, board games)"
+    ],
+    "photo_order_rec": "Use a bright, exterior shot of the cottage as the cover photo to showcase curb appeal, followed by living\u2011room and bedroom images to give guests a complete visual tour.",
+    "key_diagnosis": [
+      "Update the title to highlight the \u00a3137/night price \u2013 that\u2019s 11% below the cohort median of \u00a3154.60, a clear competitive edge.",
+      "Add high\u2011value amenities such as free parking, an outdoor seating area, and streaming entertainment to match guest expectations and improve perceived value.",
+      "Upload a full photo set (at least 8\u201110 images) covering the exterior, living room, kitchen, bedrooms, and bathrooms; currently the photo count is unknown, limiting visual impact."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your cottage is priced \u00a3137/night \u2013 that's 11% below the city\u2019s median rate of \u00a3154, yet you\u2019re already filling 74% of the next 90 days.",
+    "weakest_element": "amenities"
+  }
+}

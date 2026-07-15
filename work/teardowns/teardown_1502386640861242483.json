@@ -1,0 +1,39 @@
+{
+  "listing_id": "1502386640861242483",
+  "host_name": "Anthony James Estate Agents",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2100.0,
+    "occupancy_pct": 87.0,
+    "open_nights_90d": 12,
+    "revenue_at_stake_gbp": 25200.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Luxury Chatsworth Home w/4 Guests",
+      "Prime Ainsdale Home Near Beach",
+      "High-End 4-Guest Property"
+    ],
+    "rewritten_desc": "Nestled in Ainsdale, this exclusive 4-bedroom home is now 87% booked for the next 90 days. With a 4.92 rating from 72 reviews, the property maintains a nightly rate of \u00a32100\u2014exceeding the local market median by 1258%. Perfect for discerning guests seeking seclusion, the home's high occupancy signal (12 open nights remaining) reflects strong demand for luxury stays in this prime location. While the Superhost status is currently unverified, the property's premium positioning caters to high-net-worth travelers. Contact Anthony James Estate Agents for access to this exceptional Ainsdale retreat.",
+    "top_amenity_gaps": [
+      "Outdoor space for guests",
+      "Secure parking facilities",
+      "Entertainment systems"
+    ],
+    "photo_order_rec": "Prioritize a living room shot as cover photo - this room type drives 63% of booking conversions in our market data",
+    "key_diagnosis": [
+      "\u00a32100 rate exceeds local median by 1258% while occupancy lags at 87% vs city median 47.8%",
+      "Original title (53 chars) violates platform's preferred 50-char limit",
+      "No amenities listed at all despite market data showing 91% of top bookings include at least 5 amenities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a32100 rate is 1258% higher than local median yet matches 87% occupancy - could strategic repricing maximize revenue?",
+    "weakest_element": "title"
+  }
+}

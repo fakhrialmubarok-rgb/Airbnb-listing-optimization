@@ -1,0 +1,39 @@
+{
+  "listing_id": "1415782149991820986",
+  "host_name": "Zainab",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 99.8,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 7285.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cozy 3\u2011Bed Bungalow \u2013 43% Below Avg Rate",
+      "Family\u2011Friendly 3\u2011Bed Bungalow Near City",
+      "Spacious 3\u2011Bed Home \u2013 Low Price, Great Value"
+    ],
+    "rewritten_desc": "Welcome to this bright, entire\u2011home 3\u2011bedroom bungalow, perfectly suited for families or groups of up to four guests. Nestled in a quiet neighbourhood, the property offers three comfortable bedrooms, a fully equipped kitchen, and a clean, modern bathroom. At just \u00a399.8 per night, you\u2019re paying 43% less than the city\u2019s median nightly rate of \u00a3175, delivering excellent value without compromising comfort. Guests have rated the stay 4.67 out of 5 based on 15 reviews, praising the space and location. Although the listing isn\u2019t yet a Superhost, the host Zainab is eager to provide a welcoming experience. Over the next 90 days, only 18.5% of nights are booked, leaving many opportunities for travelers looking for an affordable, well\u2011appointed home. Whether you\u2019re visiting for work, exploring the city\u2019s attractions, or simply relaxing, the bungalow\u2019s flexible layout and quiet setting make it a great base. Book now to enjoy a spacious, budget\u2011friendly stay in a charming bungalow that feels like home away from home.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., private garden or patio)",
+      "Free parking for guests",
+      "Entertainment options (TV, streaming, board games)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior/front\u2011of\u2011bungalow shot as the cover photo to showcase curb appeal and set expectations, followed by interior rooms in a logical flow.",
+    "key_diagnosis": [
+      "Title does not highlight the 43% price advantage; updating it can attract price\u2011sensitive travelers (current title scores 3/10).",
+      "No high\u2011value amenities are listed; adding outdoor space, parking, or entertainment can boost appeal (currently 0 of 3 top\u2011value amenities).",
+      "Photo count is unknown and likely low; uploading at least 8 clear photos covering every room and the exterior will improve click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a399.8 is 43% below the city median of \u00a3175, yet your 90\u2011day occupancy sits at only 18.5%\u2014there\u2019s a clear opportunity to fill more nights at a great price.",
+    "weakest_element": "description"
+  }
+}

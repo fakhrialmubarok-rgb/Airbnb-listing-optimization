@@ -1,0 +1,39 @@
+{
+  "listing_id": "32563792",
+  "host_name": "Sara",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 256.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 18944.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "2-Bed Luxury Flat, City Centre",
+      "Stylish 2-Bdrm Apt, Prime Location",
+      "2-Bedroom Luxury, Central Stay"
+    ],
+    "rewritten_desc": "Experience exceptional comfort in this fully updated 2-bedroom, 2-bathroom apartment ideally located in the heart of the city. Perfect for 4 guests, this spacious apartment features a well-designed layout that combines modern luxury with practical living space. While this property is currently undervalued at \u00a3256/night - over 46% above the local market median - it offers a prime location just steps from shopping, dining, and major attractions. Guests will enjoy access to high-end finishes and city center living without the typical premium price tag. With 74 open nights available in the next 90 days, now is the ideal time to book this exclusive urban retreat. The apartment is equipped with [insert basic details about bedding/living areas] and is within walking distance of [add specific landmarks if available].",
+    "top_amenity_gaps": [
+      "No listed outdoor space or balcony",
+      "No parking availability specified",
+      "Missing entertainment features like TV or WiFi"
+    ],
+    "photo_order_rec": "The cover photo should showcase the most vibrant room - ideally the living area or master bedroom. A high-quality shot of the city skyline through a large window would also work well given the 'City Centre' location emphasis",
+    "key_diagnosis": [
+      "Pricing is 46% above median \u00a3175 rate while occupancy is 17.4% (28.3% is local median)",
+      "Empty description creates lost opportunity - 115 reviews indicate potential for showcasing real guest experiences",
+      "Title exceeds 50 characters and fails to mention high value amenities like parking or outdoor space"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3256/night rate is 46% above average while occupancy stands at just 17% - 11% below market benchmarks in your area",
+    "weakest_element": "description"
+  }
+}

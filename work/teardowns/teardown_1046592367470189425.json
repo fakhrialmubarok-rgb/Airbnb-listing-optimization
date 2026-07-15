@@ -1,0 +1,39 @@
+{
+  "listing_id": "1046592367470189425",
+  "host_name": "Daley",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 95.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 7220.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 0,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "\u00a395 Bradford short stay apartment, 46% cheaper",
+      "Bradford gem @ \u00a395, 4 guests, outdoor potential?",
+      "\u00a395/nt Bradford hideaway with growth opportunities"
+    ],
+    "rewritten_desc": "Escape to this charming Bradford short stay apartment, a hidden gem with potential for outdoor adventures and growth opportunities. This entire home is perfectly suited for 4 guests, with a nightly rate of \u00a395 that leaves room for improvement. As a relatively new host to Bradford, Daley's listings are just waiting for that finishing touch. This property has 11 reviews and a 4.82 rating, indicating a high level of guest satisfaction. With 76 open nights in the next 90 days, there's a clear opportunity to increase occupancy. The median nightly rate in Bradford is \u00a3175, leaving this property with a 46% gap in pricing. With its outdoor and entertainment potential, this apartment could be just the ticket for guests looking to explore the city. Whether you're a seasoned host or just starting out, this property has the potential to be a real winner.",
+    "top_amenity_gaps": [
+      "Outdoor parking and facilities",
+      "Entertainment options",
+      "Additional amenities for guest comfort"
+    ],
+    "photo_order_rec": "Cover photos from the living room and outdoor spaces, highlighting the apartment's natural light and potential for relaxation.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a395 is 46% lower than the cohort median, \u00a3175, suggesting there's a gap in pricing that could be addressed for increased occupancy.",
+      "Despite a relatively low nightly rate, your occupancy stands at 15.2% booked with 76 open nights, a significant opportunity to improve in a market with a median 90-day occupancy of 28.3%.",
+      "Your lack of images is a major issue - including at least 10 clearly labelled photos is essential, especially for a property with outdoor opportunities like this one, aiming for at least 3 photos per room type."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 76 open nights and a booking rate of only 15.2%, you have a huge room for improvement in occupancy with a median of 28.3% across comparable listings.",
+    "weakest_element": "photos"
+  }
+}

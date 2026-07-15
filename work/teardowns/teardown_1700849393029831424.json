@@ -1,0 +1,39 @@
+{
+  "listing_id": "1700849393029831424",
+  "host_name": "Samual",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 129.8,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 8566.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 0,
+    "score_amenities": 1,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "City Centre 1BR Flat - Sofa Bed, \u00a3129.8/night",
+      "1BR City Getaway - Sofa Bed, \u00a3129.8",
+      "\u00a3129.8/night City 1BR Home - sofa Bed"
+    ],
+    "rewritten_desc": "Welcome to this stylish 1-bedroom city flat, perfect for couples and small groups. Enjoy a relaxing stay in the heart of the city, within walking distance to local amenities, restaurants, and attractions. This property boasts a comfortable sofa bed, ideal for those who like to spread out. You'll also have easy access to public transport, with several bus and train stations nearby.",
+    "top_amenity_gaps": [
+      "Outdoor space, a rare feature in city centre flats, would greatly enhance the appeal of this listing.",
+      "Parking facilities would be a significant added value, especially considering the competitive nightly rate.",
+      "A TV and entertainment system would help to attract groups of friends and families looking for a fun city break."
+    ],
+    "photo_order_rec": "Showcase the living room with the sofa bed as the main photo, and highlight the compact yet functional layout of this 1-bedroom home.",
+    "key_diagnosis": [
+      "This listing's \u00a3129.8/night rate is 26% lower than the cohort median of \u00a3175.00, which may contribute to the significantly lower occupancy rate of 27.2% (compared to the cohort median of 28.3% in the next 90 days).",
+      "The listing lacks any outdoor space, a feature that would increase the appeal and possibly attract more bookings.",
+      "Despite having only 202 reviews, this property has managed to achieve a respectable rating of 4.86, which suggests there are many happy guests and an opportunity to capitalise on positive word-of-mouth."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By highlighting and addressing the amenity gaps, such as outdoor space and entertainment options, we believe it's possible to increase occupancy and drive more bookings.",
+    "weakest_element": "description"
+  }
+}

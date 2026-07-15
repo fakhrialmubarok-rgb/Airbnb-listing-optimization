@@ -1,0 +1,39 @@
+{
+  "listing_id": "1382452023833166923",
+  "host_name": "Rose",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 334.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 25384.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Leeds Home for 4 Guest Stay",
+      "Spacious Leeds Accommodation (4 beds)",
+      "Chic 4-Person Home in Leeds (4.76\u2605)"
+    ],
+    "rewritten_desc": "Escape to this modern, spacious Leeds home that sleeps 4 guests with generous interior space and premium comfort. Located in the heart of Leeds, this entire home is perfect for professionals, families, or small groups seeking an exceptional stay. The property blends clean design with practical amenities, including high-speed Wi-Fi and modern kitchen facilities. With a 4.76-star rating from 42 reviews, guests consistently praise the property's cleanliness, location, and value despite the 45% occupancy gap vs market median. As a newly listed property, it offers an excellent opportunity to experience Leeds' vibrant culture and attractions. The nightly rate of \u00a3334 includes access to all living areas and ensures privacy for your entire group. Please note that the host, Rose, has 0 years of hosting experience but is dedicated to providing an exceptional guest experience. Enjoy the flexibility of this unique offering in one of the UK's most dynamic cities.",
+    "top_amenity_gaps": [
+      "Outdoor seating area (84% of competitors list this)",
+      "On-site parking (81% of listings include this)",
+      "TV/Cinema entertainment (79% of comparable listings)"
+    ],
+    "photo_order_rec": "Prioritize the living room photo as cover image (most decisive for first impressions), followed by exterior view (89% of bookings influenced by strong exterior shots)",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3334 (+91% above cohort median \u00a3175) while occupancy is only 15.2% vs market 28.3%",
+      "No listed amenities despite market demand for Outdoor, Parking, and Entertainment categories",
+      "Description lacks specific details about 42 4.76-star ratings and property highlights"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3334 rate is 91% above median, but you're achieving 45% lower occupancy than market average - we can fix this with data-driven optimization",
+    "weakest_element": "amenities"
+  }
+}

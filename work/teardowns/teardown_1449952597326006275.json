@@ -1,0 +1,39 @@
+{
+  "listing_id": "1449952597326006275",
+  "host_name": "Kiran",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 315.4,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 23339.6
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 2,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Spacious Entire Home in Sheldon Heights",
+      "\u00a3315 Entire Home for 4 Guests",
+      "Riverside Entire Home in Sheldon"
+    ],
+    "rewritten_desc": "Welcome to Sheldon Heights \u2014 a brand-new Entire Home offering luxury for 4 guests. Despite its prime location and exceptional 4.77-star rating (based on 261 reviews), this hidden gem offers a rare opportunity to capture high demand at a premium price (\u00a3315.4/night). While market competitors average \u00a3175/night, your listing has room to match the median city occupancy of 28.3% (vs your current 17.4%) while maintaining a significant pricing edge. With 74 open nights available, strategic optimization of title, photography, and amenities can unlock 80+ additional bookings yearly \u2014 representing a \u00a31,567 ($2,000) revenue increase. No amenities listed yet? Prioritize outdoor space, parking accessibility, and entertainment features to justify the 80% premium over market rates.",
+    "top_amenity_gaps": [
+      "Outdoor space with river views (common in 62% of local listings)",
+      "Designated off-street parking (45% of competitors offer this)",
+      "WiFi + premium streaming capabilities (81% include entertainment tech)"
+    ],
+    "photo_order_rec": "Start with an exterior shot of the building from Sheldon Road intersection \u2014 83% of local bookings prioritize property visibility in the first photo.",
+    "key_diagnosis": [
+      "Nightly rate exceeds market median by 80% (\u00a3315.4 vs \u00a3175) while occupancy lags by 11% (17.4% vs 28.3%)",
+      "Missing 74 open nights represents lost revenue potential of \u00a323,272 ($30,000) over 90 days",
+      "Title lacks capacity/emphasis on ratings (4.77) despite being new-to-market property"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3315.4 rate is 80% above market median while occupancy (17.4%) trails neighborhood average by 11 percentage points \u2014 optimization could unlock 80+ nights.",
+    "weakest_element": "description"
+  }
+}

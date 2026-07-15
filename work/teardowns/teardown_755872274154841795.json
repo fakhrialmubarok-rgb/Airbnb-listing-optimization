@@ -1,0 +1,38 @@
+{
+  "listing_id": "755872274154841795",
+  "host_name": "Thabo & Gugu",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 275.3,
+    "occupancy_pct": 47.8,
+    "open_nights_90d": 47,
+    "revenue_at_stake_gbp": 12939.1
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Secure Parking | 2BR City Center Home",
+      "3 King Beds | Central London Hideaway",
+      "Chic Apartment with Covered Parking"
+    ],
+    "rewritten_desc": "Welcome to City Central! This 2-bedroom home comfortably sleeps 4 guests in 3 luxurious king-sized beds. Located in the heart of the city, you'll enjoy secure parking (included) and easy access to major attractions. The property features modern amenities and spacious layouts perfect for couples, families, or small groups. With 254 verified guest reviews at 4.78 stars, our guests love the prime location and generous sleeping arrangements. Stay relaxed knowing your car is safely parked while you experience all the city has to offer. Book this entire home for an exclusive, stress-free city getaway.",
+    "top_amenity_gaps": [
+      "Outdoor space or patio",
+      "Free WiFi and entertainment features (Netflix, gaming consoles)",
+      "Fitness equipment or yoga mats"
+    ],
+    "photo_order_rec": "Use an exterior shot showing the city skyline proximity as the cover photo - it immediately communicates the prime location which is your listing's strongest differentiator.",
+    "key_diagnosis": [
+      "Your nightly rate is \u00a3275.30 (+57% above the \u00a3175 median) but 47.8% occupancy suggests pricing dissonance: you're filling more nights than the 28.3% cohort median despite charging significantly more",
+      "Title exceeds 50 character limit on 3 devices, hurting discoverability - 41/50 characters currently used with variants scoring better"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging 57% more than the local median but only 47.8% of your next 90 nights are booked - there's a clear opportunity to optimize pricing or value propositions",
+    "weakest_element": "title"
+  }
+}

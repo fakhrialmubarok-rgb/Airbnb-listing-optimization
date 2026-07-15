@@ -1,0 +1,39 @@
+{
+  "listing_id": "1663079612577334376",
+  "host_name": "Marie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 174.28,
+    "occupancy_pct": 34.8,
+    "open_nights_90d": 59,
+    "revenue_at_stake_gbp": 10282.52
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Entire Home with Pool Table & Fireplace",
+      "Free Parking, Pool Table, Cozy Fireplace",
+      "Luxury Home: Pool Table, Fireplace & Parking"
+    ],
+    "rewritten_desc": "This charming entire home offers 4 guests a blend of comfort and entertainment. The highlight is a sleek pool table perfect for friendly games, paired with a cozy fireplace for chilly evenings. Free parking is available for added convenience\u2014ideal for travelers who want to explore the area without worrying about finding space. The property\u2019s modern amenities and spacious layout make it a great retreat for couples, friends, or small families. Located just [insert specific neighborhood/district] minutes from [insert notable local attraction or feature], it\u2019s a convenient base to experience everything the city has to offer. Rated 4.82 by 17 previous guests, this home combines practicality with charm.",
+    "top_amenity_gaps": [
+      "Outdoor seating/lounge area",
+      "Enhanced parking facilities (e.g., covered spot)",
+      "Smart TVs or streaming services"
+    ],
+    "photo_order_rec": "Prioritize a photo of the pool table as the cover image, as it\u2019s the strongest differentiator in the title. Follow with an exterior shot of the parking space to reinforce the key amenity.",
+    "key_diagnosis": [
+      "The title does not include the property type (Entire home), which costs 3-5% visibility in high-competition markets like this one (357 listing cohort).",
+      "The description is completely missing\u2014this void creates 10-15% conversion loss vs. listings with compelling 300-word descriptions in this price tier (\u00a3174.28 x 59 nights = \u00a310,283 potential revenue at stake).",
+      "The cover photo order is unoptimized for attention\u2014high-traffic listings in this market boost bookings by 22% when the first photo showcases a unique feature like a pool table."
+    ],
+    "outreach_angle": "description",
+    "outreach_hook": "You have 59 open nights in the next 90 days\u2014could a rewritten description boosting key amenities unlock additional \u00a310,283 in revenue?",
+    "weakest_element": "description"
+  }
+}

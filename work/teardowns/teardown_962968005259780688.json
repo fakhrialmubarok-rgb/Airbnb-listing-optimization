@@ -1,0 +1,40 @@
+{
+  "listing_id": "962968005259780688",
+  "host_name": "Craig",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 324.2,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 14913.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "\u00a3324 \u00a3169 Entire Home Near City Center",
+      "Luxury Entire Home 4-Guest Rental",
+      "Tranquil Urban Retreat for 4 Guests"
+    ],
+    "rewritten_desc": "Escape to this modern 4-person entire home offering 48.9% availability in the next 90 days at \u00a3324/night. Despite being 110% pricier than average listings (\u00a3154.60), this property maintains a strong 4.9 rating from 308 reviews. While currently underperforming vs pricing benchmarks, strategic updates could enhance appeal. First-timer Craig hosts with no reviews, making transparency and clear value propositions critical. Guests enjoy secure parking (if available), private outdoor space (subject to confirmation), and entertainment amenities (awaiting verification). With 46 open nights remaining until occupancy peaks at 51% (vs cohort median 47.8%), this property has unmet demand potential at current price points. Full disclosure: Amenities and photo inventory require updating to match premium positioning.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Secure parking",
+      "Smart TV/Streaming services"
+    ],
+    "photo_order_rec": "Prioritize cover photo featuring building exterior showing accessibility or a room showing floor-to-ceiling windows to visually justify premium pricing",
+    "key_diagnosis": [
+      "Priced 110% above market median (\u00a3324 vs \u00a3154.60) but occupancy remains only 1.1% higher than cohort average",
+      "Missing 3 high-value amenity categories linked to booking conversions",
+      "Title fails to communicate premium positioning or differentiate from standard listings",
+      "Description field is entirely missing (scored as 1/10) creating trust vacuum"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3324 rate is double the market median yet occupancy trails competitors by 1.1% \u2014 let's optimize this pricing strategy",
+    "weakest_element": "description"
+  }
+}

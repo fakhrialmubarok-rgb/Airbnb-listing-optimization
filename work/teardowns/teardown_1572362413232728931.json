@@ -1,0 +1,39 @@
+{
+  "listing_id": "1572362413232728931",
+  "host_name": "Juwon",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 89.6,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 4121.6
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Lake\u2011View Apartment \u2013 42% Below Avg \u00a390",
+      "Spacious 2\u2011Bed with Big Balcony \u2013 Great Value",
+      "City Lake View Flat \u2013 Low Price, High Comfort"
+    ],
+    "rewritten_desc": "Welcome to your spacious city lake\u2011view apartment, perfectly designed for up to four guests. Enjoy a bright, open\u2011plan living area that opens onto a large balcony where you can soak in panoramic lake scenery\u2014ideal for morning coffee or evening sunsets. The bedroom comfortably sleeps two, while a sofa bed in the lounge provides extra sleeping space. A fully equipped kitchen lets you prepare meals, and the modern bathroom offers fresh towels and toiletries. \n\nAt just \u00a389.6 per night, your stay costs 42% less than the city\u2019s median nightly rate of \u00a3154.60, delivering exceptional value without compromising comfort. The property has earned a 4.94 rating from 69 satisfied guests, reflecting its clean standards and friendly atmosphere. Although you\u2019re not yet a Superhost, the high review score shows strong guest satisfaction. \n\nAvailability over the next 90 days shows 48.9% of nights already booked, leaving 46 open nights you can fill with the right marketing tweaks. Hosted by Juwon, who is new to hosting but eager to provide a seamless experience, this entire\u2011home rental offers a private, self\u2011contained stay with all the essentials you need for a memorable city getaway.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking space",
+      "High\u2011speed Wi\u2011Fi throughout the apartment",
+      "Streaming TV or entertainment system"
+    ],
+    "photo_order_rec": "Use a sunrise shot of the big balcony with lake view as the cover photo, followed by bedroom, living area, and kitchen shots to showcase the full space.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities: currently 0 amenities are listed; adding parking, Wi\u2011Fi, and entertainment can boost appeal.",
+      "Revise the title to highlight the 42% price advantage (rate \u00a389.6 vs median \u00a3154.60) and lake view for stronger SEO.",
+      "Upload professional photos for all main rooms; the listing currently has an unknown (likely low) photo count, which hurts conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your apartment is priced at \u00a389.6/night \u2013 42% below the city median \u2013 yet you\u2019re only at 48.9% occupancy, leaving huge upside for more bookings.",
+    "weakest_element": "description"
+  }
+}

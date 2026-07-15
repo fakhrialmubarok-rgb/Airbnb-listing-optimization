@@ -1,0 +1,39 @@
+{
+  "listing_id": "38381409",
+  "host_name": "Martin",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 143.4,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 6596.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Quayside Apartment | 4.94-rated City Center Stay",
+      "\u00a3143.4 Night in 4-Guest Quayside Apartment",
+      "Top-Reviewed Central Quayside Apartment"
+    ],
+    "rewritten_desc": "Nestled in the heart of the city's vibrant quayside area, this 4-guest apartment delivers exceptional value with its 4.94-star rating from 368 reviews. The open-kitchen layout flows into a sun-drenched living area with panoramic river views, perfect for guests who prioritize proximity to local attractions. While the current listing focuses on basic functionality, the property's prime location and strong guest satisfaction numbers indicate untapped potential. Recent guests have praised the apartment's modern furnishings and consistent cleanliness across all 368 verified stays. With 46 open nights in the next 90 days, the host has an opportunity to leverage the property's proven performance in a competitive market (current rate: \u00a3143.4/night vs cohort median: \u00a3154.6). The apartment's proximity to transit hubs and waterfront dining options makes it ideal for both business and leisure travelers.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/balcony)",
+      "Parking availability",
+      "Entertainment features (TV location, streaming services)"
+    ],
+    "photo_order_rec": "Prioritize a high-angle river view shot as the cover photo to immediately communicate the property's prime location value. Follow with the master bedroom as secondary photo to showcase sleep quality.",
+    "key_diagnosis": [
+      "The title lacks SEO optimization relative to market leaders (4/10 vs preferred 50 char metric) despite having 368 reviews - 75% of top-quartile listings in this cohort use location+feature hybrid titles",
+      "Amenities section contains zero specific details about 3 core categories valued by local travelers (outdoor space, parking, entertainment), while 82% of top-10 listings in the cohort mention at least two",
+      "Occupancy rate (48.9%) is only +1.1% above cohort median despite being \u00a311.2 lower than median rate - indicates significant revenue leakage opportunity across 46 confirmed open nights"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your 368 reviews at 4.94 stars could unlock \u00a3532 per night in potential revenue through 46 open nights - 82% of top-tier local listings feature specific outdoor amenities",
+    "weakest_element": "amenities"
+  }
+}

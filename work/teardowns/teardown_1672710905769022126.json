@@ -1,0 +1,39 @@
+{
+  "listing_id": "1672710905769022126",
+  "host_name": "Taylor",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 162.0,
+    "occupancy_pct": 47.8,
+    "open_nights_90d": 47,
+    "revenue_at_stake_gbp": 7614.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury Family Home w/ 6\u2011Car Driveway & Pool Table",
+      "Home Theater + Pool Table + Spacious Parking",
+      "Family\u2011Friendly Luxury Home with Projector & Pool"
+    ],
+    "rewritten_desc": "Welcome to your perfect family getaway in this entire\u2011home retreat, thoughtfully designed for up to 4 guests. Hosted by Taylor, a fresh host eager to provide a flawless stay, the property boasts a pristine 4\u2011star rating of 4.9 from 71 glowing reviews. Each night is priced at \u00a3162, just a modest \u00a37 above the city\u2019s median rate, delivering excellent value for the premium amenities on offer.\n\nStep inside to discover a spacious living area equipped with a high\u2011definition projector\u2014ideal for movie nights or catching up on your favorite shows. A stylish pool table sits ready for friendly competition, adding a fun entertainment hub for families and groups. The home also features a fully equipped kitchen, comfortable bedrooms, and modern bathrooms, ensuring every comfort is covered during your stay.\n\nOne of the standout features is the expansive 6\u2011car driveway, providing ample parking for larger families or groups traveling together\u2014an uncommon convenience in the area. Whether you\u2019re planning a weekend escape or a longer vacation, the combination of luxury, entertainment, and practical amenities makes this home a top\u2011choice destination.\n\nBook now and enjoy a high\u2011quality, hassle\u2011free experience backed by a host who values your comfort above all.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/patio) not highlighted",
+      "Entertainment amenities (pool table, projector) not listed as amenities",
+      "Parking convenience not emphasized in amenities list"
+    ],
+    "photo_order_rec": "Use the pool table in the living area as the cover photo\u2014it instantly showcases the unique entertainment offering and captures the spacious, family\u2011friendly vibe.",
+    "key_diagnosis": [
+      "Rate is only +5% above the cohort median (\u00a3162 vs \u00a3154.60) while occupancy is at the median (47.8% booked), indicating price isn\u2019t the barrier\u2014lowering the nightly rate a few pounds could unlock the 47 open nights and boost bookings.",
+      "The current title is cluttered and lacks high\u2011impact keywords; replace it with a concise, SEO\u2011friendly version that highlights the 6\u2011car driveway and entertainment features.",
+      "The listing has no description; add a 200\u2011300\u2011word compelling narrative that repeats the key facts (capacity, rate, rating, amenities) and appeals to family travelers."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 47 open nights that could generate \u00a37,614 at your current nightly rate.",
+    "weakest_element": "description"
+  }
+}

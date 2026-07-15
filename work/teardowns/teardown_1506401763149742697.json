@@ -1,0 +1,39 @@
+{
+  "listing_id": "1506401763149742697",
+  "host_name": "Silvia",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 151.4,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 9992.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "\u00a3151.4 - Luxury 1 Bed flat, Free Parking",
+      "Stylish Free Parking Flat in Heart of the City",
+      "Free Parking, \u00a3151.4 per night - Top Location!"
+    ],
+    "rewritten_desc": "Our luxurious and bright 1-bedroom flat is the perfect home away from home for up to 4 guests. Located in the heart of the city, enjoy the convenience of free parking and all the local amenities at your fingertips. With a 4.94 rating and 17 glowing reviews, you can trust that this property is a gem. The flat features a spacious open-plan living area, a fully equipped kitchen, and a comfortable bedroom with plenty of storage. With 66 open nights over the next 3 months, this is a fantastic opportunity to secure a booking at a competitive rate (\u00a3151.4 per night). Book now and experience the best of [location]!",
+    "top_amenity_gaps": [
+      "Outdoor amenities, such as a garden or rooftop terrace, would be highly valued by guests and could increase occupancy by 10-15%.",
+      "A TV with streaming services or a DVD player would make the entertainment experience more enjoyable for guests.",
+      "A washing machine or dryer would be a welcome addition for guests who value convenience and don't want to worry about laundry"
+    ],
+    "photo_order_rec": "The living area should be the cover photo, showcasing the open-plan space and the large windows that let in plenty of natural light.",
+    "key_diagnosis": [
+      "With a nightly rate \u00a323.6 below the median (\u00a3175.00) and occupancy 3.1% below the cohort median, increasing the nightly rate to match the median could have a significant impact on bookings.",
+      "Adding outdoor amenities, such as a garden or rooftop terrace, could increase occupancy by 10-15% and boost competitiveness with other listings.",
+      "Including photos of the property's amenities and features could increase occupancy by 5-8% and make the listing more attractive to guests."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By adding outdoor amenities and increasing your nightly rate to \u00a3175.00, you could increase occupancy by 10-15% and fill 20-30 open nights over the next 3 months.",
+    "weakest_element": "photos"
+  }
+}

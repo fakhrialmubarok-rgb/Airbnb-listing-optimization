@@ -1,0 +1,39 @@
+{
+  "listing_id": "1464098588722018687",
+  "host_name": "Jennifer - Pocket Paradise",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 344.2,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 24438.2
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Park views retreat \u00a3344/nt",
+      "Luxury retreat with park views +97% rate gap",
+      "Retreat with park views and 95% positive reviews"
+    ],
+    "rewritten_desc": "Welcome to this design-led retreat in the heart of [location]. Enjoy breathtaking park views from the comfort of this entire home, designed to accommodate up to 4 guests. Experience the serenity of a peaceful environment, perfect for unwinding and relaxing. As a Superhost, Jennifer has ensured that every detail is taken care of, from the sleek decor to the modern amenities. Take advantage of the home's central location, with easy access to local amenities and attractions. This retreat is ideal for families, couples, and friends looking for a tranquil escape. Book now and enjoy the ultimate retreat experience.",
+    "top_amenity_gaps": [
+      "Parking is a must-have amenity, with none listed in this property.",
+      "Adding entertainment facilities could attract more guests, such as a projector or a board game collection.",
+      "Including outdoor amenities like a private garden or a terrace could enhance the property's appeal."
+    ],
+    "photo_order_rec": "The living room should be the cover photo as it is a central hub of the home and likely showcases the park views.",
+    "key_diagnosis": [
+      "Their occupancy is 20.7% booked out of 71 open nights, significantly lower than the cohort median of 28.3%, indicating a clear opportunity to increase bookings.",
+      "At \u00a3344.2 per night, this listing is \u00a3169.2 higher than the cohort median, indicating potential for pricing optimization.",
+      "Including 95 reviews but no photos, indicating that image optimization is a crucial step to improve the property's appeal."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "With \u00a3344.2/n \u00a3169.2 above the median rate and occupancy at 20.7%, there's a clear opportunity to increase bookings with the right amenities and image optimization.",
+    "weakest_element": "photos"
+  }
+}

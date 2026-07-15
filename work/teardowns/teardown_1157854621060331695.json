@@ -1,0 +1,39 @@
+{
+  "listing_id": "1157854621060331695",
+  "host_name": "NordStay",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 90.4,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 6328.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Free Parking + 48% Below Avg Rate \u2013 1BR Leeds",
+      "Cozy 1BR Flat Near Leeds City \u2013 Save \u00a345 Night",
+      "Budget 1BR Leeds \u2013 Free Parking, Walk to City"
+    ],
+    "rewritten_desc": "Welcome to your stylish 1\u2011bedroom flat just minutes from Leeds city centre, hosted by NordStay. This entire home comfortably sleeps up to four guests, making it perfect for couples, small families, or business travellers. Enjoy the freedom of free on\u2011site parking \u2013 a rare perk in the city. At \u00a390.40 per night, you\u2019re paying 48% less than the local market median of \u00a3175, while still benefiting from a sparkling clean space and a solid 4.62 rating from 317 reviews. The flat features a bright living area, a fully equipped kitchen, a comfortable bedroom with a plush queen\u2011size bed, and a modern bathroom. High\u2011speed Wi\u2011Fi and a dedicated work desk keep you productive, and the central location puts Leeds\u2019 best restaurants, shops, and attractions within easy walking distance. With a current 90\u2011day occupancy of 21.7% (70 nights still open), there\u2019s plenty of opportunity for more bookings. Book now and enjoy a budget\u2011friendly stay without compromising on comfort or convenience.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony or garden) to enhance guest experience",
+      "Entertainment amenities (Smart TV, streaming services)",
+      "Enhanced kitchen conveniences (coffee maker, dishwasher)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the living room that also shows the free parking space as the cover photo \u2013 it instantly communicates the key value proposition and sets a welcoming tone.",
+    "key_diagnosis": [
+      "Add and prominently list high\u2011value amenities (outdoor, entertainment) to align with guest expectations and boost perceived value.",
+      "Rewrite the description to highlight the 48% price advantage and free parking, turning the low 21.7% occupancy into a conversion driver.",
+      "Upload a full set of professional photos covering living room, bedroom, kitchen, bathroom, and parking; set the living\u2011room/parking view as the cover to improve visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current 21.7% occupancy at \u00a390.4/night is 48% below the market rate, leaving significant revenue untapped.",
+    "weakest_element": "photos"
+  }
+}

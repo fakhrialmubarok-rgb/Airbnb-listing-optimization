@@ -1,0 +1,494 @@
+[
+  {
+    "listing_id": "1297887608083031973",
+    "url": "https://www.airbnb.com/rooms/1297887608083031973?check_in=2026-07-15&check_out=2026-07-20&adults=1&locale=en-GB&currency=GBP",
+    "scraped_at": "2026-07-14T11:56:19.076498",
+    "title": "3 Bed House near Newcastle - Houses for Rent in Tyne and Wear, England, United Kingdom - Airbnb",
+    "description": "Newly renovated 3 bed home | 5 mins Gateshead Metro Interchange | Town Centre |<br /><br />High end | Modern open living and dining space | 55 inch Smart TV | 3 bedrooms | Super-king | Double |  Single bedroom | <br /><br />Doorstep location | City breaks | Shopping | Concerts <br />| Work | Visiting family | Quiet location<br /><br />Free weekend parking adjacent to property | Free mid week parking 2 mins walk |<br /><br />Excellent distance and central links to explore Newcastle Historic City Centre | Gateshead Quays | Museums | Coast |<br /><br /><b>The space</b><br />The property is a newly refurbished end of terrace in a private residential area, comprising of 3 bedrooms, 1 main bath <br />room with separate shower and separate downstairs toilet. It has a front garden and private rear, back yard / garden, with outdoor furniture . There are security cameras front and back to the property.<br />Parking is available at the side and rear of the property. Parking is free from Friday 6pm until Monday 9am. Mid week parking charges apply between 9am - 6pm. Parking can be paid on a parking app, or a free car park is available 150 yards away. <br />There is a local tescos 150 yards away, with many local takeaway and restaurant\u2019s. <br />An 8 minute walk takes you to the VUE cinema, Tesco superstore and restaurants, the walk provides  impressive views of the Tyne bridge.<br />5-6 minutes walk to Gateshead Interchange, to access the Metro underground , and regional bus networks. (It takes 5-6 minutes to travel into the centre of Newcastle from Gateshead Interchange)<br />Local micro pubs available locally. <br />Gateshead International Stadium and the Glasshouse concert halls are all within walkable distance approx 15 mins<br /><br /><b>Guest access</b><br />Guests can use the newly renovated private back garden / yard in the property. There is outside egg chair.<br /><br /><b>Other things to note</b><br />No parties, gatherings or loud music is permitted inside or outside the property. We ask guests to respect the privacy of neighbours and the wider neighbourhood. Please smoke or vape in the private rear garden of the property (and not in the front garden).",
+    "seo_title": "3 Bed House near Newcastle - Houses for Rent in Tyne and Wear, England, United Kingdom - Airbnb",
+    "meta_description": "14 Jul 2026 \u00b7 Entire home \u00b7 Newly renovated 3 bed home | 5 mins Gateshead Metro Interchange | Town Centre |  High end | Modern open living and dining space | 55 inch Smart TV ...",
+    "sub_description": "Entire home/apt in Tyne and Wear, England, United Kingdom",
+    "property_type": "Entire home",
+    "room_type": "Entire home",
+    "person_capacity": 5,
+    "min_nights": null,
+    "max_nights": null,
+    "location": "Tyne and Wear",
+    "location_subtitle": "Tyne and Wear, England, United Kingdom",
+    "latitude": 54.95813320187181,
+    "longitude": -1.6045710900438812,
+    "rating_overall": null,
+    "rating_accuracy": null,
+    "rating_checkin": null,
+    "rating_cleanliness": null,
+    "rating_communication": null,
+    "rating_location": null,
+    "rating_value": null,
+    "review_count": 0,
+    "host_id": "418583110",
+    "host_name": "J",
+    "host_is_superhost": true,
+    "host_is_verified": true,
+    "host_rating_avg": 4.97,
+    "host_review_count": 72,
+    "host_years": 1,
+    "host_about": "",
+    "amenities_available": [
+      {
+        "category": "Bathroom",
+        "name": "Bath",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Hairdryer",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Cleaning products",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Luxury brand shampoo",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Luxury brand body soap",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Hot water",
+        "subtitle": ""
+      },
+      {
+        "category": "Bathroom",
+        "name": "Shower gel",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Washing machine",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Dryer \u2013 In unit",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Essentials",
+        "subtitle": "Towels, bed sheets, soap and toilet paper"
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Hangers",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Bed linen",
+        "subtitle": "Egyptian cotton linen"
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Extra pillows and blankets",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Iron",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Clothes drying rack",
+        "subtitle": ""
+      },
+      {
+        "category": "Bedroom and laundry",
+        "name": "Clothes storage: wardrobe",
+        "subtitle": ""
+      },
+      {
+        "category": "Entertainment",
+        "name": "TV",
+        "subtitle": ""
+      },
+      {
+        "category": "Heating and cooling",
+        "name": "Central heating",
+        "subtitle": ""
+      },
+      {
+        "category": "Home safety",
+        "name": "Exterior security cameras on property",
+        "subtitle": ""
+      },
+      {
+        "category": "Home safety",
+        "name": "Smoke alarm",
+        "subtitle": ""
+      },
+      {
+        "category": "Home safety",
+        "name": "Carbon monoxide alarm",
+        "subtitle": ""
+      },
+      {
+        "category": "Home safety",
+        "name": "Fire extinguisher",
+        "subtitle": ""
+      },
+      {
+        "category": "Home safety",
+        "name": "First aid kit",
+        "subtitle": ""
+      },
+      {
+        "category": "Internet and office",
+        "name": "Wifi",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Kitchen",
+        "subtitle": "Space where guests can cook their own meals"
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Belling refrigerator",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Microwave",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Cooking basics",
+        "subtitle": "Pots and pans, oil, salt and pepper"
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Crockery and cutlery",
+        "subtitle": "Bowls, chopsticks, plates, cups, etc."
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Freezer",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Induction cooker",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Oven",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Kettle",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Coffee maker",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Wine glasses",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Toaster",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Baking sheet",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Blender",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Dining table",
+        "subtitle": ""
+      },
+      {
+        "category": "Kitchen and dining",
+        "name": "Coffee",
+        "subtitle": ""
+      },
+      {
+        "category": "Outdoor",
+        "name": "Private patio or balcony",
+        "subtitle": ""
+      },
+      {
+        "category": "Outdoor",
+        "name": "Private back garden \u2013 Fully fenced",
+        "subtitle": "An open space on the property usually covered in grass"
+      },
+      {
+        "category": "Outdoor",
+        "name": "Outdoor furniture",
+        "subtitle": ""
+      },
+      {
+        "category": "Parking and facilities",
+        "name": "Free parking on premises",
+        "subtitle": ""
+      },
+      {
+        "category": "Parking and facilities",
+        "name": "Paid parking on premises",
+        "subtitle": ""
+      },
+      {
+        "category": "Services",
+        "name": "Long-term stays allowed",
+        "subtitle": "Allow stays of 28 days or more"
+      },
+      {
+        "category": "Services",
+        "name": "Self check-in",
+        "subtitle": ""
+      },
+      {
+        "category": "Services",
+        "name": "Lockbox",
+        "subtitle": ""
+      },
+      {
+        "category": "Services",
+        "name": "Housekeeping available Monday to Thursday",
+        "subtitle": ""
+      }
+    ],
+    "amenities_missing": [
+      {
+        "category": "Not included",
+        "name": "Air conditioning"
+      }
+    ],
+    "amenities_available_count": 49,
+    "amenities_missing_count": 1,
+    "images_by_room": {
+      "Living Room": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/8b95f601-58cf-4bff-9428-dc252bd36080.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/100862a6-3f3f-4802-929d-ef1484e4accb.jpeg"
+      ],
+      "55 Inch Smart Tv": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/01a905dc-d795-4e45-8890-068dae2530a9.jpeg"
+      ],
+      "Full Kitchen": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/9197176a-61c0-4d46-86b3-d7197bc61d8a.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/93b827d5-2cd2-4888-8fdc-0e5352dbcba5.jpeg"
+      ],
+      "Dining Area": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/4d06c33b-cb4e-4b21-89ba-8acf9da23036.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/7bc63701-1edb-47ff-8f81-00d80de00690.jpeg"
+      ],
+      "Bedroom 1": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/3fe77c2f-33da-4104-9ae5-577b489d8dd0.jpeg"
+      ],
+      "Bedroom 2": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/ad3c7e76-ebc5-418e-b27d-6d72dae768ab.jpeg"
+      ],
+      "Bedroom 3": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/0f2d4e9a-42f5-4a6a-9902-2a3a757a293a.jpeg"
+      ],
+      "Full Bathroom": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/e9592f59-e114-44cd-b540-0acd7efe3e1a.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/fb93556d-428d-4369-8489-333db29cf277.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/47545256-cfa1-466b-87ef-d795aa694446.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/20ac875f-03ef-4766-95f1-0f3193fbb6e8.jpeg"
+      ],
+      "Located Less Then 10 Minutes Walk Away From Vibrant Micropubs In Gateshead Railway Quarter, Such As Axis.": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/a4175f95-b7df-4b5e-9b2c-da9e3863ebe6.jpeg"
+      ],
+      "Additional Photos": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/9ed847de-e3f8-462a-8432-aebb5bb21338.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/678c6c91-3be0-4383-a711-a04119d23eb4.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/ec879d31-7e99-47d0-9a0c-f73169fa8816.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/e6e93d6a-d5a1-45bf-a2a4-4f4934fafa69.jpeg"
+      ],
+      "Located 15 Minutes Walk From Newcastle'S Quayside": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/c8cc1aba-edd8-4975-9335-09896a568ac8.jpeg"
+      ],
+      "Located 6 Minutes Walk Away From Gateshead Metro. (2 Stops Away From The Centre Of Newcastle)": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/c5424648-b8d6-4c6f-a4d7-7c8133565636.jpeg"
+      ]
+    },
+    "image_urls": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/8b95f601-58cf-4bff-9428-dc252bd36080.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/100862a6-3f3f-4802-929d-ef1484e4accb.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/01a905dc-d795-4e45-8890-068dae2530a9.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/9197176a-61c0-4d46-86b3-d7197bc61d8a.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/93b827d5-2cd2-4888-8fdc-0e5352dbcba5.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/4d06c33b-cb4e-4b21-89ba-8acf9da23036.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/7bc63701-1edb-47ff-8f81-00d80de00690.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/3fe77c2f-33da-4104-9ae5-577b489d8dd0.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/ad3c7e76-ebc5-418e-b27d-6d72dae768ab.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/0f2d4e9a-42f5-4a6a-9902-2a3a757a293a.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/e9592f59-e114-44cd-b540-0acd7efe3e1a.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/fb93556d-428d-4369-8489-333db29cf277.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/47545256-cfa1-466b-87ef-d795aa694446.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/20ac875f-03ef-4766-95f1-0f3193fbb6e8.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/a4175f95-b7df-4b5e-9b2c-da9e3863ebe6.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/9ed847de-e3f8-462a-8432-aebb5bb21338.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/678c6c91-3be0-4383-a711-a04119d23eb4.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/c8cc1aba-edd8-4975-9335-09896a568ac8.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/ec879d31-7e99-47d0-9a0c-f73169fa8816.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/e6e93d6a-d5a1-45bf-a2a4-4f4934fafa69.jpeg",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/c5424648-b8d6-4c6f-a4d7-7c8133565636.jpeg"
+    ],
+    "image_total_count": 21,
+    "thumbnail": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5Nzg4NzYwODA4MzAzMTk3Mw%3D%3D/original/8b95f601-58cf-4bff-9428-dc252bd36080.jpeg",
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "nightly_rate": null,
+    "calendar_days": 92,
+    "check_in_time": "2026-07-15",
+    "check_out_time": "2026-07-20",
+    "house_rules": {
+      "additional": null,
+      "general": [
+        {
+          "title": "Checking in and out",
+          "values": [
+            {
+              "title": "Check-in after 15:00",
+              "icon": "SYSTEM_CLOCK",
+              "additionalInfo": null
+            },
+            {
+              "title": "Checkout before 11:00",
+              "icon": "SYSTEM_CLOCK",
+              "additionalInfo": null
+            },
+            {
+              "title": "Self check-in with lockbox",
+              "icon": "SYSTEM_CHECK_IN",
+              "additionalInfo": null
+            }
+          ]
+        },
+        {
+          "title": "During your stay",
+          "values": [
+            {
+              "title": "5 guests maximum",
+              "icon": "SYSTEM_FAMILY",
+              "additionalInfo": null
+            },
+            {
+              "title": "No pets",
+              "icon": "SYSTEM_NO_PETS",
+              "additionalInfo": null
+            },
+            {
+              "title": "Quiet hours",
+              "icon": "SYSTEM_EVENING",
+              "additionalInfo": null
+            },
+            {
+              "title": "No parties or events",
+              "icon": "SYSTEM_NO_EVENTS",
+              "additionalInfo": null
+            },
+            {
+              "title": "No commercial photography",
+              "icon": "SYSTEM_NO_CAMERA",
+              "additionalInfo": null
+            },
+            {
+              "title": "No smoking",
+              "icon": "SYSTEM_SMOKING_NOT_ALLOWED",
+              "additionalInfo": null
+            },
+            {
+              "title": "Additional rules",
+              "icon": "SYSTEM_CLIPBOARD",
+              "additionalInfo": null
+            }
+          ]
+        },
+        {
+          "title": "Before you leave",
+          "values": [
+            {
+              "title": "Gather used towels",
+              "icon": "SYSTEM_TOWEL",
+              "additionalInfo": null
+            },
+            {
+              "title": "Throw rubbish away",
+              "icon": "SYSTEM_TRASH",
+              "additionalInfo": null
+            },
+            {
+              "title": "Turn things off",
+              "icon": "SYSTEM_POWER_SWITCH",
+              "additionalInfo": null
+            },
+            {
+              "title": "Return keys",
+              "icon": "SYSTEM_HOST_OWNERS",
+              "additionalInfo": null
+            },
+            {
+              "title": "Lock up",
+              "icon": "SYSTEM_LOCK",
+              "additionalInfo": null
+            },
+            {
+              "title": "Additional requests",
+              "icon": "SYSTEM_NOTE_PAPER",
+              "additionalInfo": null
+            }
+          ]
+        }
+      ]
+    },
+    "ml_title_score": null,
+    "ml_desc_score": null,
+    "ml_amenity_gap_score": null,
+    "ml_image_quality_score": null,
+    "ml_occupancy_predicted": null,
+    "ml_generated_title": null,
+    "ml_generated_desc": null,
+    "ml_outcome_delta": null,
+    "ml_client_feedback": null,
+    "ml_version": 1,
+    "strategy_snapshot": {
+      "priority_fields": [
+        "title",
+        "description",
+        "amenities",
+        "images",
+        "rating"
+      ],
+      "preferred_title_length": null,
+      "high_value_amenities": null
+    },
+    "host_website": null,
+    "host_email": null,
+    "host_email_source": null
+  }
+]

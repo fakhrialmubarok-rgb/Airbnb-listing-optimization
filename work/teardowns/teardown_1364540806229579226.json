@@ -1,0 +1,40 @@
+{
+  "listing_id": "1364540806229579226",
+  "host_name": "Hasan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 144.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 10974.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 8,
+    "score_images": 1,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Charming Apartment - Whirlpool Bath, \u00a3144/nt",
+      "Whirlpool Bath Apartment, 15% booked, room to improve",
+      "Affordable Whirlpool Bath Apartment, Hasan's Home"
+    ],
+    "rewritten_desc": "Immerse yourself in the serene atmosphere of this charming apartment, complete with a luxurious whirlpool bath. This entire home accommodation is perfect for couples and smaller families, accommodating up to 4 guests. Located in the heart of [insert location], you'll be close to all the city's top attractions. Whether you're looking to relax and unwind or explore the local culture, this apartment has everything you need. With its modern amenities and comfortable layout, you'll feel right at home. Don't miss out on this fantastic opportunity to experience [insert location] in style.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden, perfect for relaxing and entertainment",
+      "Parking facilities, ensuring hassle-free travel",
+      "Entertainment options, such as a projector or games console, to enhance your stay"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, as it showcases the apartment's modern and comfortable atmosphere, setting the tone for a relaxing and enjoyable stay.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a3144.4 is -17% below the cohort median of \u00a3175 (\u00a3144.4 / \u00a3175 = 0.823), indicating a significant pricing gap, which may be hindering occupancy.",
+      "Despite being a 4-star rated listing, Hasan's average rating is None, suggesting there may be room for improvement in terms of host communication and guest satisfaction, potentially affecting occupancy.",
+      "At 76 open nights, the listing's occupancy of 15.2% over the next 90 days is far below the cohort median of 28.3%, indicating a significant occupancy gap, which could be addressed by optimizing the listing and its pricing.",
+      "As the listing has no images, it is currently not visible to potential guests, which is a major hindrance to bookings. The goal is to reach 8/10 or above for this metric."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current occupancy of 15.2% is below our cohort's median of 28.3%, despite a competitive nightly rate of \u00a3144.4. We'd love to help you identify ways to improve this and increase bookings.",
+    "weakest_element": "photos"
+  }
+}

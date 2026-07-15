@@ -1,0 +1,39 @@
+{
+  "listing_id": "52369805",
+  "host_name": "Alf",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 178.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13528.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Private Patio + Free Parking \u2013 Sleeps 4",
+      "Free Parking & Quiet Suite with Patio",
+      "Peaceful 4\u2011Guest Suite, Patio, Parking Included"
+    ],
+    "rewritten_desc": "Welcome to your peaceful home\u2011away\u2011from\u2011home in the heart of the city. This entire\u2011home suite comfortably sleeps up to four guests, offering a tranquil bedroom, a fully equipped living space, and a private patio where you can unwind with a morning coffee or an evening glass of wine. Free on\u2011site parking means you\u2019ll never waste time hunting for a spot.  \n\nRated 4.99 by 91 delighted guests, our suite consistently delivers a five\u2011star experience\u2014clean, quiet, and thoughtfully arranged for families or small groups. At \u00a3178 per night, you enjoy premium comforts without the hotel price tag.  \n\nThe open\u2011plan living area includes high\u2011speed Wi\u2011Fi, a smart TV for streaming your favourite shows, and a well\u2011stocked kitchen ready for home\u2011cooked meals. Step outside to the private patio, perfect for al fresco dining or simply soaking up the sunshine.  \n\nWith 76 nights still open over the next 90 days, there\u2019s ample opportunity to book your stay now and secure a memorable getaway. Whether you\u2019re visiting for work or leisure, this suite offers the space, privacy, and convenience you need. Book today and experience the blend of comfort and convenience that has earned us nearly perfect reviews.",
+    "top_amenity_gaps": [
+      "Outdoor amenities \u2013 add garden furniture or BBQ to enhance patio appeal",
+      "Dedicated parking details \u2013 list free on\u2011site parking in amenities",
+      "Entertainment options \u2013 include TV, streaming services, or board games"
+    ],
+    "photo_order_rec": "Use a high\u2011quality image of the private patio as the cover photo, as outdoor space and free parking are the listing\u2019s strongest differentiators.",
+    "key_diagnosis": [
+      "Occupancy is only 15.2% booked (76 open nights) versus the market median of 28.3% \u2013 adjust pricing or add promotions to capture the \u00a313,528 of potential revenue.",
+      "No amenities are listed despite offering outdoor space and free parking \u2013 add high\u2011value amenities (outdoor, parking, entertainment) to improve search ranking.",
+      "Photo count is unknown and likely incomplete \u2013 upload a full set of photos covering bedroom, living area, kitchen, patio, and parking, with the patio as the lead image."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 76 open nights this quarter, representing over \u00a313,500 of untapped revenue.",
+    "weakest_element": "photos"
+  }
+}

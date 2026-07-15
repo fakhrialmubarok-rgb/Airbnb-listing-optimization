@@ -1,0 +1,39 @@
+{
+  "listing_id": "1426797872386197211",
+  "host_name": "Mina",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 228.0,
+    "occupancy_pct": 28.3,
+    "open_nights_90d": 65,
+    "revenue_at_stake_gbp": 14820.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cozy 4\u2011Guest Home \u2013 Great Value for NE",
+      "Modern Entire Home \u2013 Sleeps 4, Perfect Location",
+      "Comfortable NE Retreat \u2013 4 Guests, Easy Access"
+    ],
+    "rewritten_desc": "Welcome to your private, entire home in the heart of the North\u2011East. This comfortable space is designed for up to four guests, making it ideal for families, small groups, or business travellers seeking a quiet base. The open\u2011plan living area offers a warm setting for relaxing after a day of exploring, and the well\u2011appointed bedroom provides a restful night\u2019s sleep. A fully equipped kitchen lets you prepare meals at your own pace, while the dining nook is perfect for sharing breakfast or dinner together. \n\nLocated in a convenient NE neighbourhood, you\u2019ll be close to local shops, transport links and popular attractions, giving you easy access to everything the city has to offer. The property has earned a solid 4.46 rating from 35 guest reviews, reflecting consistent satisfaction with cleanliness, accuracy and host communication. \n\nYour host, Mina, is a new but attentive host who is dedicated to ensuring a smooth stay. At \u00a3228 per night, this listing sits at a premium compared with the city\u2019s median rate of \u00a3175, so you can expect a higher\u2011end experience. Book now to enjoy a peaceful, fully private home that balances comfort, location and quality for a memorable NE stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden or terrace)",
+      "Dedicated parking",
+      "Entertainment amenities (e.g., TV, games, streaming)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution shot of the main living area as the cover photo \u2013 it showcases the full\u2011home feel and immediately signals space for up to four guests.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3228 is about 30% higher than the market median (\u00a3175) while occupancy (28.3%) matches the cohort median, indicating price is suppressing bookings; consider a rate reduction of ~15\u201120% to improve fill\u2011rate.",
+      "No amenities are listed, missing high\u2011value categories like outdoor space, parking and entertainment that attract higher\u2011spending guests; add these to the listing to boost appeal.",
+      "The title \"Humble Home NE 2\" provides no differentiator; rewrite it to highlight capacity, value and location to capture search attention."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current 28.3% occupancy at a \u00a3228 nightly rate is 30% above the market median, suggesting pricing is the primary barrier to more bookings.",
+    "weakest_element": "description"
+  }
+}

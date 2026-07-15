@@ -1,0 +1,39 @@
+{
+  "listing_id": "1653822472759465220",
+  "host_name": "Zaf",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 241.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 18075.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Tradestay \u2013 6 Beds, 20% Off Tonight",
+      "Save 20% on a 6\u2011Bed Home \u2013 Book Now",
+      "Spacious 6\u2011Bed Tradestay for Up to 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to The Tradestay \u2013 a beautifully appointed 6\u2011bed entire home located in the heart of the city. Though the house comfortably sleeps up to four guests, it offers ample space for families or small groups seeking a peaceful retreat. Every room is designed with comfort in mind, featuring crisp linens, modern d\u00e9cor, and a fully equipped kitchen ready for your culinary adventures. \n\nThe property has earned a solid 4.69 rating from 16 recent reviews, reflecting consistent guest satisfaction. While the listing is not yet part of the Superhost program, host Zaf is committed to providing a high\u2011standard experience. The nightly rate stands at \u00a3241, and with 75 open nights out of the next 90, there is plenty of opportunity to secure your stay at a competitive price. \n\nEnjoy easy self\u2011check\u2011in, high\u2011speed Wi\u2011Fi, and a quiet neighbourhood that puts you within walking distance of local attractions, shops, and public transport. Whether you\u2019re visiting for business or leisure, The Tradestay offers a blend of traditional charm and contemporary convenience. Book now to take advantage of the advertised up to 20% discount and experience a memorable stay in a spacious, well\u2011located home.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, balcony)",
+      "Parking (dedicated or on\u2011street)",
+      "Entertainment (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution exterior or main living\u2011area shot as the cover photo to showcase the property\u2019s size and style; follow with dedicated images of each bedroom, kitchen, and bathroom to give a complete visual tour.",
+    "key_diagnosis": [
+      "Reduce the nightly rate: current \u00a3241 is +38% above the city median (\u00a3175) while occupancy is only 16.3% (75 open nights), a price cut of 15\u201120% could lift bookings toward the cohort median occupancy of 28.3%.",
+      "Add missing high\u2011value amenities: the listing shows no outdoor area, parking, or entertainment options, all of which are top\u2011rated in the market and can justify a premium price.",
+      "Upload a full photo set (minimum 8 high\u2011quality images) covering every room and set a compelling cover photo; the current unknown photo count likely hurts click\u2011through and conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3241 is 38% above the city median, yet you\u2019re only 16% booked for the next 90 days, leaving 75 nights open for potential guests.",
+    "weakest_element": "description"
+  }
+}

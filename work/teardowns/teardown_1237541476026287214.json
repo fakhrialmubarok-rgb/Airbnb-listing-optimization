@@ -1,0 +1,39 @@
+{
+  "listing_id": "1237541476026287214",
+  "host_name": "Rachel",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 74.4,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 5208.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Luxury city oasis, 4 guests",
+      "Urban retreat, \u00a374 per night",
+      "Cosy Emerald suite, 2 mins central"
+    ],
+    "rewritten_desc": "Escape the city chaos in our luxury Emerald suite, a tranquil oasis that sleeps 4. Our stylish, cosy apartment is the perfect base for exploring everything [city name] has to offer. Guests praise our spotless, well-appointed space and convenient central location. Enjoy [average nightly review mentions, e.g.] \"great location\", \"super comfy beds\", and \"friendly hosts\" (review count). We provide everything you need for a comfortable stay, and are just a short walk from [points of interest].",
+    "top_amenity_gaps": [
+      "Outdoor space or garden",
+      "Parking options",
+      "In-apartment dining facilities"
+    ],
+    "photo_order_rec": "Feature the living room as the cover photo, showcasing the apartment's stylish decor and comfortable seating area.",
+    "key_diagnosis": [
+      "Your \u00a374.4 rate is -57% vs the cohort median of \u00a3175.00, indicating a significant pricing gap that may be deterring bookings. Consider revising your rate to stay competitive.",
+      "Your occupancy is 21.7% booked for the next 90 days, far below the cohort median of 28.3%. Focus on optimising your listing for occupancy through targeted messaging and imagery.",
+      "As a 0-year seasoned host without a verified average rating, credibility and trust with potential guests may be a concern, consider earning your superhost badge"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Given your occupancy is only 21.7% booked, with a significant pricing gap, there's a clear opportunity to boost income and fill dates more consistently.",
+    "weakest_element": "description"
+  }
+}

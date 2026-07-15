@@ -1,0 +1,39 @@
+{
+  "listing_id": "51301207",
+  "host_name": "Lisa",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 244.8,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 11260.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Hoyland Home \u00a3244.8/nt",
+      "Contractor's Haven",
+      "4 Guests, Entire Home"
+    ],
+    "rewritten_desc": "Welcome to our entire home in Hoyland, perfect for contractors and groups of up to 4 guests. With a nightly rate of \u00a3244.8, we offer a unique and comfortable space for your stay. Our location is ideal for those working in the area, and we're excited to host you. Please note that we have 46 open nights available in the next 90 days, so be sure to book your stay soon.",
+    "top_amenity_gaps": [
+      "Outdoor amenities",
+      "Parking facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should be of the living room or exterior, as it is the first impression guests will have of the home. This will help showcase the space and amenities.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a3244.8 is 40% higher than the cohort median of \u00a3175.00, which may be contributing to the relatively low occupancy of 48.9%.",
+      "The listing has 46 open nights in the next 90 days, indicating a significant opportunity to increase occupancy and revenue, potentially by adjusting the pricing strategy or improving the listing's appeal.",
+      "With 170 reviews and a rating of 4.86, the host has a strong reputation, but the lack of amenities listed and poor photo coverage may be deterring potential guests, highlighting the need for improvement in these areas."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate 40% higher than the cohort median and 48.9% occupancy, there's a significant opportunity to increase bookings and revenue by optimizing the listing.",
+    "weakest_element": "photos"
+  }
+}

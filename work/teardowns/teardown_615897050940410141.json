@@ -1,0 +1,39 @@
+{
+  "listing_id": "615897050940410141",
+  "host_name": "Lucy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 161.0,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 7406.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Indoor Hot Tub Apartment - 4 Guests, \u00a3161",
+      "Adonia's 4-Bed Apartment with Hot Tub",
+      "Luxury Hot Tub Access - 48.9% Open Nights"
+    ],
+    "rewritten_desc": "Welcome to Adonia Apartment - your private retreat featuring a year-round indoor hot tub. Perfect for 4 guests, this spacious home offers a comfortable base for city explorers. Benefit from our location's top-tier accessibility, with major attractions just steps away. The indoor hot tub is perfect for relaxing after a day of activities, ensuring a memorable stay for all guests. With 46 open nights in the next 90 days, book now to secure your ideal getaway at \u00a3161 per night. Enjoy the flexibility of this entire home rental while experiencing the luxury of a heated interior spa. Note: Please review our house rules and booking terms before proceeding with reservations.",
+    "top_amenity_gaps": [
+      "Outdoor space/garden",
+      "On-site parking",
+      "Smart TV/entertainment system"
+    ],
+    "photo_order_rec": "Display the hot tub in the cover photo to immediately showcase the property's key differentiator, maximizing first impression impact as potential guests often decide within 5 seconds of viewing.",
+    "key_diagnosis": [
+      "Your 46 open nights at \u00a3161/night represent \u00a37,406 in potential monthly revenue not being captured",
+      "Non-Superhost status (0 years hosting) may reduce guest trust despite strong 4.93 rating",
+      "No listed amenities despite missing 3 high-impact categories proven to increase bookings in this market"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your 381 reviewers achieved 48.9% occupancy while 46 open nights remain in the next 90 days - adding missing amenities could significantly improve booking conversion",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1205908916769036937",
+  "host_name": "Charlie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 93.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 6975.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 4,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Private Parking Studio from \u00a393 (\u00a3130 savings v.co m.)",
+      "Free Parking Included | Stylish Studio",
+      "Studio with Free Parking | Save on City Stays"
+    ],
+    "rewritten_desc": "Welcome to our beautifully styled studio apartment, perfectly located for your city break. With free private parking and a short walk to local amenities, you'll feel right at home. This entire home studio is ideal for groups of 4 and is equipped with everything you need for a comfortable stay. The private parking space is perfect for those driving to the city or arriving via car. Explore the city and visit local attractions with ease, and then return to your studio for a relaxing evening in. Your hosts Charlie take great care to ensure your stay is enjoyable, and with regular reviews from guests, you can trust that you'll be in good hands. Please note, the studio is for 4 guests only.",
+    "top_amenity_gaps": [
+      "Outdoor space would greatly enhance guest experience.",
+      "Parking and facilities are already covered, but additional amenities like a washing machine would be a nice bonus.",
+      "Entertainment options, such as a TV or board games, could help guests unwind."
+    ],
+    "photo_order_rec": "The studio itself should be the cover photo, giving guests an idea of the space's layout and quality.",
+    "key_diagnosis": [
+      "Their nightly rate (\u00a393) is -47% vs the cohort median (\u00a3175), a significant price gap to address.",
+      "With only 16.3% booked over the next 90 days and 75 open nights, there's a huge room to improve occupancy (vs cohort 28.3% median).",
+      "Photo count is unknown, but assuming it's low, it's essential to provide high-quality images of the entire home, highlighting the studio, bathroom, and living area."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Charlie, we've identified a significant opportunity to increase bookings and revenue by closing the price gap and improving occupancy to 28.3% (cohort median).",
+    "weakest_element": "photos"
+  }
+}

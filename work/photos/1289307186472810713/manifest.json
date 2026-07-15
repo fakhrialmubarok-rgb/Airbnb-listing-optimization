@@ -1,0 +1,32 @@
+[
+  {
+    "n": 1,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-1056823922406708084/original/10b30456-9b5a-4d7c-bcf1-7321cf769a0e.jpeg",
+    "status": "original_kept",
+    "backend": "gemini 2.5-flash-image",
+    "qc": {
+      "no_added_objects": false,
+      "nothing_removed_or_moved": false,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": false,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "no_added_objects, nothing_removed_or_moved"
+    },
+    "staged": "qc_fail",
+    "tv": true
+  },
+  {
+    "n": 2,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-1056823922406708084/original/b7a46f04-b8e4-4ce2-b150-deefa0352bb2.jpeg",
+    "status": "original_kept",
+    "backend": "",
+    "qc": {},
+    "staged": "qc_fail",
+    "tv": true
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "listing_id": "986686716952663062",
+  "host_name": "Rhys",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.8,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 6312.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Victorian Annex with Garden & Free Parking",
+      "Stylish Lodge Near Peak District, Private Road",
+      "Cozy 4\u2011guest Retreat, Gardens, Smart TV, Free Parking"
+    ],
+    "rewritten_desc": "Relax in style at The Little Lodge \u2013 a brand\u2011new, fully renovated annex attached to a charming 1800s Victorian lodge. Set back on a private, tree\u2011lined road in the leafy Ranmoor suburb of Sheffield, the property is surrounded by mature gardens, wildlife and peaceful conservation land. Just 15\u202fminutes from Sheffield\u2019s main train station and on the foothills of the Peak District, it\u2019s an ideal base for city breaks or rambling getaways. \n\nInside, the ground\u2011floor open\u2011plan living area blends a comfortable sofa that folds into a double bed with a fully equipped kitchen featuring an electric oven, hob, fridge, SMEG kettle, toaster and coffee machine. A SMART TV with an Amazon Fire Stick gives instant access to all your favourite streaming apps. The upstairs main bedroom offers a European\u2011size double bed (between a double and king) and a private en\u2011suite bathroom with a large shower. Downstairs you\u2019ll find a stylish, jazzy bathroom for guests. \n\nAll essentials are provided: fresh linens, extra pillows, towels, hair\u2011dryer, iron, ironing board, cleaning products, and a full set of toiletries. Outdoor enthusiasts can enjoy the private garden and optional garden furniture, while free on\u2011site parking makes arrivals hassle\u2011free. An iron, hanging rack and clothes storage keep the space tidy, and a travel cot, high\u2011chair and baby bath are available on request. Your whole stay is yours to enjoy \u2013 from sunrise in the garden to a cozy night in the lodge.",
+    "top_amenity_gaps": [
+      "Exterior security cameras",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use a bright garden\u2011view exterior shot as the cover photo \u2013 it highlights the private road, green space and free parking, the top three search keywords guests look for.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3146.8 to closer to the market median (\u00a3104.9) \u2013 you\u2019re charging ~40% more while occupancy is only 52.2%, just 3.3% above the cohort median.",
+      "Add a high\u2011value amenity such as air\u2011conditioning or a tumble dryer to justify the premium price and attract guests seeking extra comfort.",
+      "Increase the photo count from 17 to at least the market median of 23 and reorder to lead with a garden exterior image to improve visual appeal and click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your rate of \u00a3146.8/night is about 40% higher than the local median of \u00a3104.9, yet your 90\u2011day occupancy is only 52.2%, just 3% above market average.",
+    "weakest_element": "title"
+  }
+}

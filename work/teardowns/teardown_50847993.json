@@ -1,0 +1,39 @@
+{
+  "listing_id": "50847993",
+  "host_name": "Deanna",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 61.2,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 2815.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Cozy Cottage \u2013 60% Below Avg Price!",
+      "Charming 1BR Cottage \u2013 Walk to Town Center",
+      "Quiet Self\u2011Contained Cottage for 4, Great Value"
+    ],
+    "rewritten_desc": "Welcome to your private, self\u2011contained cottage, a charming one\u2011bedroom retreat perfect for up to four guests. Nestled in a peaceful neighbourhood, this entire home offers a cozy living space, a fully equipped kitchen, and a comfortable bedroom with fresh linens. Enjoy a bright, airy living area with a plush sofa and a dining nook, ideal for relaxing after a day of exploring the city. The cottage features a private entrance, giving you complete independence during your stay. Cleanliness is a top priority, with fresh towels and bedding provided for each guest. Free Wi\u2011Fi ensures you stay connected, and a dedicated work\u2011space makes it suitable for remote work. The flexible layout accommodates families, couples, or small groups, and the kitchen is stocked with essential cookware so you can prepare simple meals at your convenience. With a stellar 4.9 rating from 441 reviews, you can trust the quality of the stay. Though we are not yet a Superhost, we are committed to providing a seamless experience. The nightly rate is an unbeatable \u00a361.2, roughly 60% lower than the city\u2019s median of \u00a3154.6, giving you great value for money. Over the next 90 days, 48.9% of the calendar is already booked, leaving 46 open nights for you to plan your visit. Feel free to reach out with any questions \u2013 we\u2019re here to help make your stay comfortable and memorable.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio)",
+      "Dedicated parking",
+      "Entertainment options (TV, games, streaming)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior front\u2011view as the cover photo to showcase the cottage\u2019s curb appeal; follow with interior shots of the living area, bedroom, and kitchen to give guests a full sense of the space.",
+    "key_diagnosis": [
+      "Add high\u2011value amenities such as outdoor seating, on\u2011site parking, and entertainment equipment; with a nightly rate of \u00a361.2 (\u201160% vs median) these upgrades can justify a modest price increase and boost bookings.",
+      "Rewrite the title to highlight the 60% price advantage; the current title scores only 4/10 and misses the strongest differentiator.",
+      "Upload a full set of high\u2011resolution photos covering exterior, living room, bedroom, and kitchen, and set the cover photo to the inviting exterior \u2013 the listing currently has an unknown (likely very low) photo count, scoring 1/10."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your cottage is priced at \u00a361.2 per night \u2013 about 60% less than the city\u2019s median \u00a3154.6, yet you still have 46 open nights in the next 90 days.",
+    "weakest_element": "photos"
+  }
+}

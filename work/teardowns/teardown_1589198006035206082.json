@@ -1,0 +1,39 @@
+{
+  "listing_id": "1589198006035206082",
+  "host_name": "Chantal",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 143.0,
+    "occupancy_pct": 62.0,
+    "open_nights_90d": 34,
+    "revenue_at_stake_gbp": 4862.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 5,
+    "score_images": 5,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "City Centre Quayside Duplex + Free Parking",
+      "34 Open Nights in Quayside Duplex w/Parking",
+      "Quayside Duplex - Free Parking & Guest-Friendly"
+    ],
+    "rewritten_desc": "Stay in this spacious entire home duplex just steps from the city center! Sleeps 4 guests comfortably with modern furnishings and direct access to free on-site parking (perfect for day trips!). The property offers a private entrance and is ideal for both business travelers and vacationers seeking local convenience. With 34 open nights available over the next 90 days, book now to secure your stay in this well-located property rated 4.7 by 20 guests. Fully equipped kitchen, living areas, and separate bedrooms ensure comfort during your visit.",
+    "top_amenity_gaps": [
+      "Outdoor space with seating/BBQ",
+      "High-speed Wi-Fi with upload speeds",
+      "Smart TV or streaming accessibility"
+    ],
+    "photo_order_rec": "Begin with exterior facing the city center to emphasize location advantage, followed by living area to showcase 4-guest capacity",
+    "key_diagnosis": [
+      "Title lacks character limit compliance - original length exceeds platform's SEO optimization parameters",
+      "Description includes only 3 sentences (below 201 cohort listings' average of 4.3 sentences per high-occupancy listings)",
+      "Open nights (34) represent ~38% availability despite superior 4.7 star rating vs 4.0 median across 201 market listings"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your listing has 34 open nights available in the next 90 days - we can optimize title wording to convert these nights into bookings",
+    "weakest_element": "title"
+  }
+}

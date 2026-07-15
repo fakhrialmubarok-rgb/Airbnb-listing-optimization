@@ -1,0 +1,39 @@
+{
+  "listing_id": "1561778072954329185",
+  "host_name": "Conor",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 123.04,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9351.04
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 7,
+    "score_amenities": 3,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Free Parking | 4 guests | NHS Contractors",
+      "City Centre Home | \u00a3123/nt | NHS Contractors",
+      "NHS Contractors | 4 guests | Parking in City Centre"
+    ],
+    "rewritten_desc": "Relax in our NHS-approved, spacious city centre home, perfect for contractors. With free parking and a 4-guest capacity, this is an ideal base for your London stay. The vibrant area is full of amenities, restaurants, and cafes, making it effortless to explore. Enjoy a comfortable stay in our whole home, suitable for contractors and NHS professionals like yourself.",
+    "top_amenity_gaps": [
+      "Outdoor space to unwind",
+      "High-speed internet for work",
+      "Gym or fitness studio for a quick workout"
+    ],
+    "photo_order_rec": "The lead photo should be of the living room, showcasing the comfortable seating and the natural light, making potential guests feel at home.",
+    "key_diagnosis": [
+      "Your rate of \u00a3123.04 is -30% vs the cohort median of \u00a3175.00, suggesting a potential opportunity to explore pricing strategy.",
+      "Your occupancy of 15.2% over the next 90 days, compared to the cohort's 28.3%, indicates room for improvement in attracting guests.",
+      "Given your 48 reviews, adding more photos (unknown current count) could enhance the guest experience and showcase the home's amenities."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Based on your listing's occupancy rate of 15.2% over the next 90 days, there's a potential to increase bookings and revenue.",
+    "weakest_element": "title"
+  }
+}

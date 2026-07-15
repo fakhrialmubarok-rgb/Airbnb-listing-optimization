@@ -1,0 +1,39 @@
+{
+  "listing_id": "1081718569104386223",
+  "host_name": "Omosede",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 75.0,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 5400.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Luxury Studio - Book Now for 72 Unmissable Nights! (\u00a375.0)",
+      "Affordable Luxury Studio - Unbeatable Value - 75% Below Median Rate!",
+      "4.65-Star Studio - Exceptional Value for Less (\u00a375.0)"
+    ],
+    "rewritten_desc": "Escape to this stunning luxury studio, perfectly designed to provide the ultimate in comfort and relaxation. With a 4.64-star rating from past guests, you can rest assured of a high-quality stay. The studio sleeps up to 4 guests and boasts a spacious lounge area, ideal for unwinding after a busy day. Despite being significantly undervalued - \u00a375.0 per night, 57% below the market median - this property still offers a remarkable 72 night's availability over the next three months, equating to a 19.6% occupancy level, well below the market average of 28.3%. We are confident that with a few targeted adjustments, this property can unlock its full potential and become a standout listing in the market.",
+    "top_amenity_gaps": [
+      "Outdoor facilities are noticeably absent from the amenities list. This is a significant omission, given the property's high-end credentials.",
+      "Parking and facilities are not listed as available, potentially deterring guests who prioritize these amenities.",
+      "Entertainment options, such as a TV or streaming services, are also not listed. This is a missed opportunity to enhance the guest experience."
+    ],
+    "photo_order_rec": "The cover photo should feature the studio's impressive lounge area, showcasing the space's open-plan layout and comfortable seating. This will help guests visualize themselves relaxing in the property.",
+    "key_diagnosis": [
+      "Offering luxury facilities, such as an outdoor space or secure parking, could increase occupancy from 19.6% to the market average of 28.3%.",
+      "Targeting guests who prioritize outdoor spaces or parking with a \u00a320-\u00a330 price increase per night could significantly boost occupancy.",
+      "Adding at least 5 high-quality photos to the listing, showcasing the studio's key features and amenities, could increase bookings by 15-20%."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Our analysis suggests that enhancing your luxury studio's amenities could increase occupancy by 8-10 percentage points, securing more bookings and revenue.",
+    "weakest_element": "photos"
+  }
+}

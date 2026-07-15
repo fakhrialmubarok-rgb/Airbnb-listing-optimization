@@ -1,0 +1,39 @@
+{
+  "listing_id": "1697058576416685302",
+  "host_name": "Jess",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 97.2,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 5832.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a397 Entire Home for 4 Near [City]",
+      "Affordable Hideaway for 4 Guests",
+      "Budget-Friendly Home at \u00a397/night"
+    ],
+    "rewritten_desc": "Escape to this exclusive standalone property where you\u2019ll pay 44% less than the city\u2019s average rate. Perfect for 4 travelers, our entire home offers privacy and value unmatched in the area. With 60 open nights remaining in the next 90 days, this is an incredible opportunity for guests seeking a relaxed stay without sacrificing space. Located near local attractions, the home maintains a perfect 5.0 rating from 8 reviews. While photos show functional spaces, we believe adding details about outdoor access, parking options, and entertainment features would make this affordable listing even more compelling to potential guests.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Parking availability",
+      "Streaming services"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the common living area as the cover photo to showcase space and ambiance\u2014essential for first impressions on a listing with strong pricing.",
+    "key_diagnosis": [
+      "Listing offers -44% discount vs city median (\u00a3175) but has only 8 reviews despite 60 open nights, suggesting low visibility",
+      "No amenities listed in any category, though outdoor, parking, and entertainment features are high-value differentiators in this market",
+      "Blank description prevents guests from understanding what makes this property unique despite its strong price advantage"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a \u00a397.2 rate (44% below the city median) yet only 33.7% occupancy, your listing represents untapped booking potential for 60 nights over the next 90 days.",
+    "weakest_element": "description"
+  }
+}

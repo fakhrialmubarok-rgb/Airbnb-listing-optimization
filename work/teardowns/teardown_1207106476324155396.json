@@ -1,0 +1,39 @@
+{
+  "listing_id": "1207106476324155396",
+  "host_name": "Jack",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.0,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 8448.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 5,
+    "score_amenities": 7,
+    "score_images": 6,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Stunning Cathedral Views \u2013 Central Sheffield Apt",
+      "Heart\u2011of\u2011Sheffield Apartment \u2013 Walk to Everything",
+      "Cozy 4\u2011Guest Flat with City Views & Fast Wi\u2011Fi"
+    ],
+    "rewritten_desc": "Welcome to your Sheffield home base \u2013 a bright, modern apartment perched in the city centre with unrivalled cathedral views. Perfect for up to four guests, the space features a comfortable bedroom and a plush sofa bed in the living area, giving you flexible sleeping arrangements. The open\u2011plan living room opens onto a large window framing the historic cathedral, offering a picturesque backdrop for morning coffee or an evening unwind. Cook your favourite meals in the fully\u2011equipped kitchen, complete with all the essentials, and enjoy meals at the dedicated dining nook. Stay connected with high\u2011speed Wi\u2011Fi and unwind with a flat\u2011screen TV and Bluetooth sound system. The sleek bathroom provides hot water, shower gel and premium toiletries, while the bedroom is dressed in fresh linens and equipped with ample storage. For your convenience, a washing machine and tumble dryer are on\u2011site, and the apartment includes a hairdryer, iron and drying rack. Parking is available on the street for \u00a310 per 24\u202fhours. With central heating, portable fans and smoke alarm for safety, you\u2019ll feel right at home the moment you step in. Explore Sheffield\u2019s attractions, restaurants and nightlife right outside your door \u2013 we can\u2019t wait to welcome you!",
+    "top_amenity_gaps": [
+      "Exterior security cameras",
+      "Carbon monoxide alarm",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution living\u2011room shot that captures the cathedral view as the cover photo \u2013 it instantly showcases the unique view and central location that set this listing apart.",
+    "key_diagnosis": [
+      "Rate mismatch: \u00a3128/night is 22% above the Sheffield median (\u00a3104.90) while occupancy is only 27.2% (median 48.9%); consider lowering the nightly rate to boost bookings.",
+      "Photo shortfall: 17 photos versus the market median of 23; add at least 6 more images, especially exterior and view\u2011focused shots, to meet cohort standards.",
+      "Safety gaps: No exterior security cameras or carbon\u2011monoxide alarm; installing these two safety features can increase guest confidence and improve occupancy."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3128 is 22% above the Sheffield median, yet your 90\u2011day occupancy is only 27% versus the market\u2019s 49% \u2013 a clear opportunity to earn more by adjusting price and presentation.",
+    "weakest_element": "title"
+  }
+}

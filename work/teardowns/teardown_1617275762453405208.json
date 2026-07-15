@@ -1,0 +1,39 @@
+{
+  "listing_id": "1617275762453405208",
+  "host_name": "Anthony James Estate Agents",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 4600.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 340400.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Stylish Formby Retreat for The Open 2026 (4 Guests)",
+      "Formby Luxury Villa Near The Open Golf Event",
+      "Elegant 4-Guest Home for The Open 2026 at Formby"
+    ],
+    "rewritten_desc": "This exclusive luxury home in Formby offers a premium stay just steps from The Open 2026 golf event. Designed for 4 guests, it features spacious living areas, modern appliances, and direct access to nearby championship golf courses. Though the nightly rate is set at \u00a34600, the property remains underbooked compared to local standards (17.4% occupancy vs. market median 47.8%). With strategic adjustments to price or presentation, this venue could capitalize on high-demand events while delivering exceptional value to discerning guests. Amenities focus on comfort and convenience\u2014though not yet visible, the property likely includes essentials like a kitchen, high-speed internet, and secure parking to match its \u00a3154.60 median competitor rates. Ideal for golf enthusiasts needing proximity to The Open 2026, this listing\u2019s strength lies in its unique positioning for niche events. To align with market expectations, transparency on key amenities and pricing benchmarks is critical for improving booking rates.",
+    "top_amenity_gaps": [
+      "Outdoor area (patio/garden)",
+      "Free parking on premises",
+      "Entertainment (TV, streaming services)"
+    ],
+    "photo_order_rec": "Lead with the front exterior photo first to emphasize proximity to The Open 2026 golf route and establish a luxury 'arrival experience.' Follow with a high-quality living room shot to showcase interior scale.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a34600 vs cohort median \u00a3154.60 (2875% premium), contributing to 17.4% occupancy vs market median 47.8%",
+      "Title includes event name but lacks SEO optimization (34 characters vs preferred 50 characters) and doesn't state capacity in title",
+      "Amenities section is entirely blank with no visibility on core categories including parking, outdoor space, or entertainment systems"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "While your \u00a34600 nightly rate is 2875% above the local median, your listing shows 17.4% occupancy vs 47.8% in the market \u2014 this price vs occupancy disconnect presents a major revenue growth opportunity.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1728766205156340143",
+  "host_name": "Claire",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 224.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 17054.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Premium City Edge Apt \u2013 Luxury Stay at \u00a3224/night",
+      "Modern 4\u2011Guest City Apt \u2013 Walk to Attractions",
+      "Cozy Edge Apartment \u2013 Perfect for Families"
+    ],
+    "rewritten_desc": "Welcome to City Edge Apartments, an entire home perfectly suited for up to four guests seeking a comfortable stay in the vibrant heart of the city. Rated 4.58 stars from 401 reviews, this modern space offers a bright living area, a fully equipped kitchen, and a cosy bedroom setup that balances style with practicality. Enjoy easy access to local attractions, restaurants, and transport links, making it ideal for families, business travellers, or friends exploring together. The apartment\u2019s contemporary design includes high\u2011speed Wi\u2011Fi, a dedicated workspace, and clean, fresh linens for a hassle\u2011free experience. While the listing is not yet a Superhost, the consistently high rating reflects the care taken to maintain a welcoming environment. At \u00a3224.40 per night, the rate reflects a premium offering in a market where the median nightly price is \u00a3175.00. Book now to experience a centrally located home with all the essentials for a memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or garden)",
+      "Parking facilities",
+      "Entertainment amenities (e.g., TV, board games, streaming services)"
+    ],
+    "photo_order_rec": "Set a bright, high\u2011resolution photo of the living area or the building\u2019s exterior as the cover image, as it instantly showcases the apartment\u2019s scale and the city\u2019s vibe.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3224.4 (28% above the city median of \u00a3175) to improve the current 15.2% 90\u2011day occupancy, which is well below the cohort median of 28.3%.",
+      "Add high\u2011value amenities such as outdoor space, dedicated parking, and entertainment options to justify the premium price and attract more bookings.",
+      "Upload professional photos covering every main room and set the cover photo to the most inviting space (living area or exterior) to boost click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3224 is 28% higher than the city median of \u00a3175, yet your 90\u2011day occupancy sits at just 15%, leaving a large revenue gap you can close quickly.",
+    "weakest_element": "description"
+  }
+}

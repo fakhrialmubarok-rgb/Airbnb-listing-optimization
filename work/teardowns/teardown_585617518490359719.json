@@ -1,0 +1,39 @@
+{
+  "listing_id": "585617518490359719",
+  "host_name": "Claire",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 209.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 15914.4
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Spacious 3BR Home with Carport Parking \u2013 Mayflower",
+      "Mayflower 3BD House \u2013 7 Beds, 2 Baths, Parking",
+      "Family\u2011Friendly 3BR Mayflower Home \u2013 Quiet Street"
+    ],
+    "rewritten_desc": "Welcome to your perfect getaway at Mayflower \u2013 a spacious three\u2011bedroom house perfectly suited for families or small groups. Rated 4.73 stars from 306 guest reviews, this entire\u2011home retreat offers the comfort of seven cozy beds and two modern showers, while comfortably accommodating up to four guests. Situated in a quiet neighbourhood, the property boasts a dedicated carport for hassle\u2011free parking, ensuring you never have to hunt for a spot.\n\nEnjoy a well\u2011appointed living area where natural light floods the space, a fully equipped kitchen for home\u2011cooked meals, and a dining nook ideal for sharing stories over breakfast. Each bedroom is thoughtfully arranged to maximize privacy and rest, and the two clean, contemporary bathrooms provide a fresh start each morning. At \u00a3209.40 per night, you receive premium space and amenities that stand out in the market.\n\nWith a current occupancy of just 15.2% for the next 90 days\u2014well below the city median of 28.3%\u2014there\u2019s ample opportunity to secure this home for your next stay. Whether you\u2019re exploring local attractions, enjoying a quiet weekend, or hosting a small family reunion, Mayflower delivers the space, privacy, and convenience you need. Book now and experience the blend of comfort and convenience that guests love.\n\n*Capacity: 4 guests \u2022 3 bedrooms \u2022 7 beds \u2022 2 showers \u2022 Carport parking \u2022 Rating: 4.73 (306 reviews)*",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio) \u2013 a high\u2011value amenity guests seek",
+      "Entertainment options (TV, streaming, games) \u2013 missing from listing",
+      "Clear parking details (dedicated carport) \u2013 not listed under amenities"
+    ],
+    "photo_order_rec": "Use an exterior shot showing the house frontage and carport as the cover photo to highlight the free parking advantage and curb appeal.",
+    "key_diagnosis": [
+      "Your nightly rate is \u00a3209.40, about 20% above the cohort median (\u00a3175) while occupancy is only 15.2% versus the market median of 28.3% \u2013 a price\u2011occupancy mismatch that hurts bookings.",
+      "No amenities are listed despite missing high\u2011value categories like outdoor space, entertainment, and explicit parking; adding these will improve search ranking and guest appeal.",
+      "The description is virtually empty; a compelling, SEO\u2011rich description of 200\u2011300 words will increase conversion and convey the property\u2019s strengths."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced \u00a3209/night \u2013 roughly 20% above the market median of \u00a3175 \u2013 yet only 15% of nights are booked in the next 90 days, compared with a 28% median occupancy.",
+    "weakest_element": "description"
+  }
+}

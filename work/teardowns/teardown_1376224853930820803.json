@@ -1,0 +1,39 @@
+{
+  "listing_id": "1376224853930820803",
+  "host_name": "Joan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 630.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 47880.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 3,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Chic \u00a3630 Birmingham entire home",
+      "Birmingham luxury home for 4 guests",
+      "Birmingham 4-bed luxury rental"
+    ],
+    "rewritten_desc": "This stunning Birmingham home features [insert property-specific details about layout, location advantages, architectural style or unique features]. Sleeps up to 4 guests perfectly, ideal for [insert target guest type - family/group/solo travelers etc]. Located in [specific Birmingham area/neighborhood], you'll enjoy easy access to [insert 2-3 local attractions or conveniences]. Includes [insert property-specific amenities like fireplace, patio, or other features]. Book now for a premium Birmingham stay experience with all the comforts of a home away from home.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/garden)",
+      "Entertainment system",
+      "Secure parking"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, as it provides the best first impression of the home's interior space and ambiance.",
+    "key_diagnosis": [
+      "Priced at \u00a3630/night (260% above the \u00a3175 median) but only at 15.2% occupancy (76 open nights), this listing is underperforming relative to the market rate-occupancy relationship.",
+      "Title 'Your group stays Birmingham' fails to capture attention and lacks differentiation in a competitve \u00a3175 median market.",
+      "Blank description leaves prospects with no compelling narrative to justify the premium price point."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "This Birmingham listing charges \u00a3630/night (260% above the median) but only has 15.2% occupancy vs the cohort's 28.3% - a significant opportunity to leverage its unique assets.",
+    "weakest_element": "description"
+  }
+}

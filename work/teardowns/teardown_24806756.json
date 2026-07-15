@@ -1,0 +1,39 @@
+{
+  "listing_id": "24806756",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 195.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14820.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Stylish 1-Bedroom Getaway for 4 Guests",
+      "\u00a3195 Cozy Retreat Just 4 Reviews Short of 500!",
+      "Luxury 1BR with 480 Verified Guest Reviews"
+    ],
+    "rewritten_desc": "Escape to this fully private 1-bedroom retreat designed for 4 guests, where modern style meets cozy comfort. With a recent 4.31 average rating from 480 verified guests, this home offers a peaceful base to explore [market location]. Despite our premium positioning at \u00a3195 per night (just 11% above local median), we're maintaining strong guest satisfaction while identifying clear opportunities to enhance visibility and value through strategic upgrades. Current data shows significant untapped potential: while we're booking at 15.2% occupancy over the next 90 days, the local average sits at 28.3%. We're actively evaluating enhancements to amenities and presentation to better reflect our premium positioning and attract discerning travelers. Note: Exact local references unavailable - [local attraction/landmark] access details would strengthen guest understanding.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "On-site parking",
+      "Entertainment system (Soundbar/Streaming)"
+    ],
+    "photo_order_rec": "Feature a wide shot of the coziest room first to emphasize the property's personality, followed by the bed and bathroom. Lead with whichever photo best captures ambient lighting or unique design elements that justify the premium rate.",
+    "key_diagnosis": [
+      "Listed at \u00a3195/night (+11% vs cohort median of \u00a3175), yet occupancy at 15.2% (76 open nights) is 12.7 percentage points below local median of 28.3%",
+      "No listed amenities to differentiate property in competitive market segment",
+      "Title uses vague descriptors ('Stylish', 'Cozy') without leveraging 480 reviews or 4-guest capacity - key ranking factors"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3195 rate offers a 11% premium over local median pricing, but occupancy remains 12.7 percentage points below the market average at 15.2%",
+    "weakest_element": "title"
+  }
+}

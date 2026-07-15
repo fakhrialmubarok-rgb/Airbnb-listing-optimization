@@ -1,0 +1,39 @@
+{
+  "listing_id": "40914201",
+  "host_name": "Roger",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 124.0,
+    "occupancy_pct": 63.0,
+    "open_nights_90d": 33,
+    "revenue_at_stake_gbp": 4092.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "4.9-Rated Cottage for 4 Guests",
+      "\u00a3124 Cottage with 128 Reviews",
+      "Cozy 4-Guest Cottage at 29% Off Median Rate"
+    ],
+    "rewritten_desc": "Escape to Polly Cottage, a 4-guest home with a remarkable 4.91 rating based on 128 reviews. Nestled in [Location], this charming entire home offers exceptional value at \u00a3124 per night\u201429% below the local market average. While we\u2019re new to hosting, we\u2019re committed to your comfort and safety. The property has consistently drawn high occupancy due to its competitive pricing, with 63% of nights already booked over the next 90 days. Though our amenities are intentionally unlisted to avoid overpromising, we invite you to explore this space and ask us directly about available features. With no price markup and a strong guest rating, Polly Cottage delivers reliable, affordable stays for small groups.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "On-site parking",
+      "TV or streaming options"
+    ],
+    "photo_order_rec": "Lead with an exterior photo highlighting architectural features to establish credibility and visual appeal for this high-rating property with no lead image guidance",
+    "key_diagnosis": [
+      "Price is -\u00a351 per night vs median \u00a3175, yet occupancy only 28% higher than cohort average (63% vs 47%)",
+      "No amenities listed despite being a standalone property in a market prioritizing Outdoor, Parking, and Entertainment features",
+      "Title lacks visibility of 4.91 score\u2014critical differentiator in competitive markets"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3124/night rate is 29% below the local median, yet occupancy trails the cohort (63% booked vs 71% market average)",
+    "weakest_element": "description"
+  }
+}

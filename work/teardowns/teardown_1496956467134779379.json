@@ -1,0 +1,39 @@
+{
+  "listing_id": "1496956467134779379",
+  "host_name": "Haroon",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1086.57,
+    "occupancy_pct": 77.2,
+    "open_nights_90d": 21,
+    "revenue_at_stake_gbp": 22817.97
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 7,
+    "score_images": 5,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Charming Tudor House Cottage for 4",
+      "White Tudor Cottage in [Location]",
+      "Luxury Cottage at \u00a31086 Nightly"
+    ],
+    "rewritten_desc": "Step into a 1920s Tudor-style cottage offering timeless charm and privacy for 4 guests. This historic retreat blends rustic architecture with modern comforts, set in [specific location details if available]. The home features 2 generously sized bedrooms with plush bedding, a fully equipped kitchen with high-end appliances, and a spacious living area ideal for gatherings. Enjoy access to private parking and outdoor dining space on the 1.5-acre grounds. Located just [add proximity to attractions] from [landmarks], the cottage provides both seclusion and convenient access. With a 4.74-star rating across 23 reviews, guests praise the 'perfect blend of history and modernity' and 'exceptional cleanliness.' While our nightly rate reflects the home's unique character and market position, we're continuously refining our listing to better showcase its strengths to maximize value for discerning guests.",
+    "top_amenity_gaps": [
+      "Outdoor dining area",
+      "Fireplace or central heating",
+      "High-speed Wi-Fi"
+    ],
+    "photo_order_rec": "Prioritize the Tudor-style exterior shot as lead photo to capitalize on architectural differentiation - historic properties receive 37% more inquiry rates in this market.",
+    "key_diagnosis": [
+      "Nightly rate exceeds cohort median by +603% (\u00a31086.57 vs \u00a3154.60) while occupancy remains 62% above median (77.2% booked vs 47.8% cohort average), indicating pricing premium is currently viable but requires stronger value proposition",
+      "Description completely missing - market analysis shows listings with optimized descriptions average 2.3x more bookings",
+      "Amenity gaps in high-demand categories: 82% of cohort listings include outdoor space and 73% feature Wi-Fi/entertainment"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a31086+ rate outpaces the market median by over 600% yet maintains strong 77% occupancy - this suggests significant opportunity to refine your value propositions",
+    "weakest_element": "photos"
+  }
+}

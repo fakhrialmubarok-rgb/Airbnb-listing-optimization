@@ -1,0 +1,39 @@
+{
+  "listing_id": "1475232402139562349",
+  "host_name": "Max",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 192.4,
+    "occupancy_pct": 43.5,
+    "open_nights_90d": 51,
+    "revenue_at_stake_gbp": 9812.4
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 5,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Sleep 6, walk to City Centre, \u00a3192.4/nt, 4.88/5",
+      "\u00a3192.4/nt Stylish Apt, 6 guests, 4.88/5",
+      "Walk to City, sleep 6, \u00a3192.4/nt"
+    ],
+    "rewritten_desc": "Welcome to our stylish apartment, perfectly located for a city break. This entire home can sleep up to 6 guests, making it ideal for small groups or families. With a 4.88/5 rating and 51 reviews, you can be confident in your booking. Our home is close to the city centre, making it easy to explore all that the city has to offer. With a nightly rate of \u00a3192.4, this property is a great value for its price. Whether you're looking for a relaxing break or an action-packed adventure, our apartment has everything you need.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Parking facilities",
+      "Entertainment options (e.g. TV, streaming services)"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, as it showcases the apartment's stylish decor and will appeal to potential guests looking for a comfortable place to stay.",
+    "key_diagnosis": [
+      "Their nightly rate (\u00a3192.4) is +\u00a337.80 above the median (\u00a3154.60) in the same market, but occupancy is below the 47.8% median, indicating a significant price-vs-occupancy gap.",
+      "Occupancy is 43.5% over the next 90 days, which is 5.7% below the 47.8% 90-day median occupancy for the same market.",
+      "The property has no listed amenities, which is a major gap considering the importance of amenities in guest decision-making."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "I'm writing to help you optimize your listing's occupancy. Your current occupancy rate of 43.5% is 5.7% below the local median, which suggests there's room for improvement.",
+    "weakest_element": "description"
+  }
+}

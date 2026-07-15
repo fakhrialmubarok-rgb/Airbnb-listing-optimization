@@ -1,0 +1,39 @@
+{
+  "listing_id": "1569061559332325239",
+  "host_name": "Jacquelyne",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 791.4,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 49066.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Birmingham Luxury Home \u2013 \u00a3791/night (412% \u2191)",
+      "Near NEC & Belfry \u2013 Sleeps 10, 4\u2605 Rating",
+      "High\u2011End Birmingham Retreat \u2013 4.87\u2605, 15 Reviews"
+    ],
+    "rewritten_desc": "Experience a premium stay in Birmingham\u2019s vibrant NEC district at this spacious, entire\u2011home retreat. Located just minutes from the NEC, the Belfry and Drayton\u202fManor, the property comfortably accommodates up to 4 guests, offering a tranquil escape for families or small groups. Guests enjoy a high rating of 4.87\u2605 from 15 reviews, reflecting consistent satisfaction with cleanliness, comfort and location. The home is priced at \u00a3791.40 per night, a luxury offering that stands out in the market. While the current 90\u2011day calendar shows 31.5% occupancy (62 open nights), there is strong potential to boost bookings by aligning the price and value proposition with guest expectations. Although no specific amenities are listed, the property\u2019s proximity to major event venues, shopping and dining makes it an ideal base for business travellers and leisure visitors alike. With a Superhost status yet to be earned, the host, Jacquelyne, is eager to enhance the listing and deliver an exceptional experience. Book now to secure a high\u2011end Birmingham stay that combines convenience, comfort and a prime location for your next visit.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden, terrace)",
+      "Dedicated parking or on\u2011site facilities",
+      "Entertainment options (e.g., TV, games, streaming)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior shot showing the house\u2019s frontage and nearby parking as the cover photo \u2013 it instantly signals convenience and the premium nature of the property.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3791.4 is 412% higher than the city median (\u00a3154.6) while your 90\u2011day occupancy is only 31.5% (vs. median 47.8%) \u2013 price\u2011value mismatch is driving low bookings.",
+      "The title claims the home sleeps 10, but the listed capacity is 4 guests; correcting this will prevent guest disappointment and improve conversion.",
+      "No amenities are listed; adding high\u2011value amenities such as outdoor space, parking and entertainment can attract more bookings and justify the premium rate."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3791.4 is 412% above the Birmingham median, yet your 90\u2011day occupancy sits at just 31.5% \u2013 there\u2019s a clear upside.",
+    "weakest_element": "description"
+  }
+}

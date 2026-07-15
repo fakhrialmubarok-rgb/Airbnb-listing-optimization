@@ -1,0 +1,39 @@
+{
+  "listing_id": "1723411464016500929",
+  "host_name": "Shah",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.4,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 6120.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "\u00a3122 City Centre Apartment - Free Parking & Balcony",
+      "4-Guest Central Apartment | Balcony, City Views",
+      "Affordable City Flat with Private Balcony & Parking"
+    ],
+    "rewritten_desc": "This charming 4-guest central apartment offers the perfect blend of convenience and value. Located in the heart of the city, guests enjoy instant access to top attractions, shops, and dining options. The property features an entire private apartment with a spacious layout ideal for couples or small families. Free on-site parking solves the headache of finding parking in busy urban areas. Step onto the private balcony to take in the city views and enjoy your morning coffee or evening drinks. While the lower nightly rate makes this a budget-friendly option, guests still benefit from the security of 44.6% occupancy out of the next 50 open nights\u2014a strong booking performance compared to the 28.3% market average. Don't miss this hidden gem where affordability meets accessibility.",
+    "top_amenity_gaps": [
+      "High-speed WiFi access",
+      "Fully equipped kitchen with appliances",
+      "On-site security system"
+    ],
+    "photo_order_rec": "Lead with the balcony photo to emphasize space and views\u2014this outdoor feature is a top differentiator in price-sensitive segments",
+    "key_diagnosis": [
+      "Nightly rate is \u00a352.60 below median cohort price (\u00a3175.00), but occupancy still exceeds market average by 58%",
+      "No listed amenities despite being an entire home with key differentiators like parking/balcony",
+      "Title lacks clear callouts of superhost credentials or verified location perks"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3122.4 rate is 30% below the local median, yet you maintain 44.6% occupancy\u201427 percentage points above the market average",
+    "weakest_element": "amenities"
+  }
+}

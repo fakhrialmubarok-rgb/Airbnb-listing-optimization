@@ -1,0 +1,40 @@
+{
+  "listing_id": "1536304973052619510",
+  "host_name": "Helga",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 95.0,
+    "occupancy_pct": 31.5,
+    "open_nights_90d": 62,
+    "revenue_at_stake_gbp": 5890.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a395 city retreat \u2013 46% under median rate!",
+      "4.92-rated \u00a395 escape with free parking",
+      "Low cost, high ratings: \u00a395 entire home"
+    ],
+    "rewritten_desc": "Escape the city stress in this cozy 4-guest home, rated 4.92 by previous guests. Priced at just \u00a395 (\u00a340 below the city median), this entire home includes free on-site parking and 90% positive guest feedback over 62 reviews. While our amenities are functional, key features align with the 4.92 rating: a private entrance, secure parking, and a layout ideal for small groups or families. With 31.5% occupancy in the next 90 days (slightly above the city average of 28.3%), this home balances affordability and guest satisfaction. Note: Host Helga is new to Airbnb but brings fresh insights to guest comfort. Ideal for visitors seeking simplicity without compromising on safety or value.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden/patio)",
+      "Wi-Fi and streaming services",
+      "Kitchen appliances (e.g., coffee maker)"
+    ],
+    "photo_order_rec": "Prioritize a wide shot of the living area as the cover photo to showcase the full home layout and signal cleanliness. Avoid close-ups of generic rooms.",
+    "key_diagnosis": [
+      "Priced \u00a340 below the \u00a3175 median but missing top-rated amenities like outdoor space, which could explain only 31.5% occupancy vs. 28.3% city benchmark",
+      "Title lacks urgency to highlight 46% pricing advantage vs. \u00a3175 median rate",
+      "Zero amenities formally listed despite missing all three of Airbnb\u2019s highest-value categories: outdoor, parking/facilities, entertainment",
+      "Host with 0 years experience may lack trust signals to match 4.92 rating potential"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your \u00a395 rate is 46% below the \u00a3175 city median, but missing three amenities guests in this market actively seek: outdoor space, entertainment options, and kitchen upgrades.",
+    "weakest_element": "title"
+  }
+}

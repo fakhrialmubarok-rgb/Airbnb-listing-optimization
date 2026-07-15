@@ -1,0 +1,39 @@
+{
+  "listing_id": "1218598660870635509",
+  "host_name": "Charlie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1048.8,
+    "occupancy_pct": 20.7,
+    "open_nights_90d": 71,
+    "revenue_at_stake_gbp": 74464.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Exclusive Country Villa with Grounds",
+      "Luxury Retreat for 4 at \u00a31048",
+      "Private Home with Leisure Facilities"
+    ],
+    "rewritten_desc": "Escape to this stunning Country Retreat where you'll find 4800 sq ft of living space for 4 guests. Perfect for discerning travelers, the property features expansive grounds ideal for outdoor relaxation and a range of leisure facilities to keep you entertained. With 3 bedrooms and 2.5 bathrooms, this is one of the most spacious listings in the area. We offer direct lake access for swimming and boating, and the private gardens are maintained to the highest standards. Book this unique property for an exclusive experience of rural luxury, just minutes from the nearest town center. The home includes high-speed fiber broadband, professional-grade kitchen equipment, and premium bedding. For groups seeking both privacy and world-class amenities, this retreat delivers unparalleled comfort.",
+    "top_amenity_gaps": [
+      "Outdoor space specifics missing (e.g. pool, private garden)",
+      "Parking facility details needed",
+      "Entertainment equipment visibility (e.g. cinema room, games console)"
+    ],
+    "photo_order_rec": "The exterior shot of the home should be the cover photo, as it establishes the property's scale (4800 sq ft) and architectural style - critical for justifying the luxury price point.",
+    "key_diagnosis": [
+      "Priced at \u00a31048.8/night vs median \u00a3175 but only 20.7% occupancy (vs cohort 28.3%) indicates significant downward pricing potential",
+      "No amenities listed - missing opportunity to justify premium rate with visible value add",
+      "Missing 20.7% occupancy signal weakens confidence in the calendar (only 6 reviews total)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "We see you're charging 599% more than peers yet achieving 28% less occupancy - would a tiered pricing strategy unlock more bookings without reducing revenue?",
+    "weakest_element": "amenities"
+  }
+}

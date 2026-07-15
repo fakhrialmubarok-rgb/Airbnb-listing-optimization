@@ -1,0 +1,39 @@
+{
+  "listing_id": "1581068408817067051",
+  "host_name": "Francesca",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 177.7,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 12083.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 5,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Free parking, 4-guest home near Digbeth",
+      "Modern 4-person home with free parking",
+      "Close to Digbeth, spacious and free parking"
+    ],
+    "rewritten_desc": "Experience the vibrant Digbeth area from this elegant 4-guest home offering free on-site parking. Just minutes from Birmingham's thriving cultural district, our spacious property features a light-filled open-plan living area perfect for socializing or relaxing. Stay in a clean, recently updated space with all the comforts you\u2019ll need for a seamless getaway. With 68 open nights in the next 90 days and a prime location near Digbeth\u2019s iconic markets and nightlife, this property promises both convenience and charm. Enjoy peace of mind with our 5.0 guest rating, reflecting our commitment to excellence. While you won\u2019t find standard amenities listed, the home\u2019s generous layout and proximity to local attractions make it an ideal base for exploring Birmingham\u2019s best-kept secrets.",
+    "top_amenity_gaps": [
+      "Outdoor seating or garden space",
+      "High-speed Wi-Fi details",
+      "Entertainment options (TV, streaming services)"
+    ],
+    "photo_order_rec": "Prioritize a clean exterior shot of the home as the cover photo to emphasize location visibility and parking access. Follow with a wide-angle living room image to highlight the property\u2019s spaciousness.",
+    "key_diagnosis": [
+      "Your 25% occupancy is below the 28.3% median for 357 local listings despite \u00a3177.7 rate being just +2% over market median",
+      "Description lacks engagement - current 1-sentence text fails to activate 68 available open nights",
+      "0 listed amenities create 33% gap vs competitors showing at least 5+ standard items in this property category"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 68 open nights at \u00a3177.7/night, this listing could generate \u00a312,083 in revenue if you capture even 10% more of the 28.3% cohort occupancy benchmark.",
+    "weakest_element": "description"
+  }
+}

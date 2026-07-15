@@ -1,0 +1,39 @@
+{
+  "listing_id": "1391706873875309252",
+  "host_name": "Jennifer - Pocket Paradise",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 675.4,
+    "occupancy_pct": 23.9,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 45927.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "4BD Leeds City Parking House Sleeps 12",
+      "Center Leeds 4BD House Parking Sleeps 12",
+      "4-Bed House in Leeds Center Sleeps 12"
+    ],
+    "rewritten_desc": "Escape to this unique 4-bedroom home in Leeds' bustling city center, offering ample space for up to 12 guests. With private parking included, you'll avoid the hassle of navigating crowded city streets. The entire property is available for your group's exclusive use, perfect for families or friends seeking both comfort and convenience. Located at a \u00a3675.40 rate (337% above market average), this listing's premium positioning demands a compelling narrative about why this space justifies the price - luxury finishes, proximity to must-see attractions, or exceptional host support. Parking Sleeps 12",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/garden)",
+      "Entertainment system/Tv",
+      "Kitchen facilities"
+    ],
+    "photo_order_rec": "The cover photo should be the exterior showing access to parking and proximity to Leeds Center to immediately communicate location value",
+    "key_diagnosis": [
+      "\u00a3675.40 rate is +337% vs cohort median \u00a3154.60 but occupancy remains below market",
+      "Current title exceeds 50 characters, reducing SEO visibility",
+      "No amenities explicitly listed despite hosting in a highly competitive market"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3675.40 rate is +337% vs the Leeds median \u00a3154.60, yet occupancy is just 23.9% vs 47.8% - we can fix this.",
+    "weakest_element": "description"
+  }
+}

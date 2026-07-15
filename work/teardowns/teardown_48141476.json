@@ -1,0 +1,39 @@
+{
+  "listing_id": "48141476",
+  "host_name": "Nadia",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 197.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 15017.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Canalside Luxury Home \u2013 4 Guests, Near Leeds",
+      "Luxury Canalside Retreat \u2013 Walk to Leeds Centre",
+      "High\u2011End Canalside Stay \u2013 4 Guests, \u00a3197/night"
+    ],
+    "rewritten_desc": "Experience upscale living on the historic Leeds canals with this beautifully appointed 4\u2011guest home, just a short stroll from the city centre. The entire property offers two spacious bedrooms, each fitted with premium bedding and ample storage, comfortably accommodating up to four guests. An open\u2011plan living area welcomes you with contemporary d\u00e9cor, a fully equipped kitchen, and large windows that frame tranquil water views, creating a serene backdrop for relaxation or entertaining. Enjoy the convenience of a modern bathroom with heated towels and a walk\u2011in shower. While the listing currently highlights its prime location\u2014minutes from Leeds\u2019s vibrant dining, shopping, and cultural attractions\u2014it also provides easy access to public transport, making city exploration a breeze. At \u00a3197.60 per night, the home sits slightly above the city\u2019s median nightly rate of \u00a3175, reflecting its luxury finishes and canal\u2011side charm. With a current 90\u2011day occupancy of just 15.2%, there is significant potential to attract more travellers seeking a high\u2011quality base in Leeds. Whether you\u2019re visiting for business, a weekend getaway, or a family holiday, this canalside retreat offers the perfect blend of comfort, style, and convenience for an unforgettable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, or balcony)",
+      "Dedicated parking for guests",
+      "Entertainment amenities (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a striking canalside exterior view as the cover photo; it instantly showcases the unique location and draws attention, followed by interior shots of the living area, kitchen, bedrooms, and bathroom.",
+    "key_diagnosis": [
+      "Price mismatch: the nightly rate of \u00a3197.6 is 13% above the city median (\u00a3175) while occupancy is only 15.2% (vs. median 28.3%); consider lowering the rate to boost bookings.",
+      "Amenity deficiency: no outdoor, parking, or entertainment amenities listed, which are high\u2011value categories that guests expect for a premium price.",
+      "Photo shortfall: with an unknown (likely low) photo count, add at least 8 high\u2011resolution images covering each room and the canalside view to improve visual appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 13% above the city median while only 15% of nights are booked in the next 90 days\u2014there\u2019s a clear opportunity to boost occupancy.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "883466120202885892",
+  "host_name": "Sam",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 234.64,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 15016.96
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Central Birmingham Deluxe Inn",
+      "\u00a3234 Nightly Luxury Apartment Birmingham",
+      "4-Guest Premium Apartment Birmingham"
+    ],
+    "rewritten_desc": "Experience Birmingham in this spacious 4-guest entire home, offering 29.3% availability across the next 90 days (\u00a3234.64/night). Located in the city center, this non-Superhost property maintains a strong 4.8-star rating from 163 reviews. As one of the top 10% most expensive Birmingham listings (34% above market average), guests will enjoy exclusive use of the full home in a competitive market with 357 active listings. With 64 open nights across 90 days, this property balances premium pricing with consistent demand, outperforming the cohort's 28.3% occupancy benchmark. Host Sam offers 0 years of hosting experience but has maintained a 4.8 rating despite a non-rated average of None. While no specific amenities are currently listed, this home's central location makes it an attractive option for travelers seeking Birmingham accommodation at a premium price point.",
+    "top_amenity_gaps": [
+      "Outdoor space for added appeal",
+      "Verified parking availability",
+      "Entertainment system details"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living area as cover photo to showcase space and ambiance while reinforcing the 'Entire home' booking type",
+    "key_diagnosis": [
+      "Nightly rate \u00a3234.64 is 34% above Birmingham median \u00a3175.00, but occupancy at 29.3% only slightly exceeds cohort median 28.3%",
+      "Zero listed amenities (score:2/10) despite market emphasis on Outdoor & Parking categories",
+      "Title lacks location keyword 'Birmingham' despite being core to guest search behavior"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a3234/night rate is 34% above Birmingham's median price, yet occupancy slightly trails market average. A stronger title with location keyword could boost visibility.",
+    "weakest_element": "title"
+  }
+}

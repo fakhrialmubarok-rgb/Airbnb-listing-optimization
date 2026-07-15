@@ -1,0 +1,39 @@
+{
+  "listing_id": "1093312604807374616",
+  "host_name": "Steven",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 653.2,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 41804.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury 7BR Home \u2013 \u00a3653/night",
+      "Spacious 7BR Retreat, All Ensuite",
+      "Exclusive Modern Villa \u2013 7 BR for 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to a modern, fully\u2011private 7\u2011bedroom retreat where every bedroom boasts its own ensuite bathroom. This entire\u2011home offering is perfect for groups of up to four guests seeking a high\u2011end stay in a prime location. With a stellar 4.85 rating from 269 reviews, our property consistently delivers a five\u2011star experience. Each of the seven stylishly designed bedrooms provides plush bedding, premium linens, and a private bathroom, ensuring maximum comfort and privacy for every guest. The open\u2011plan living area features contemporary d\u00e9cor, a fully equipped kitchen, and large windows that flood the space with natural light. While the home does not currently list specific amenities, you\u2019ll find all the essentials for a seamless stay. At \u00a3653.20 per night, this luxury home commands a rate that is 323% above the city\u2019s median nightly price of \u00a3154.60. Over the next 90 days the calendar shows a 29.3% booking rate, leaving ample opportunity to attract more guests. Whether you\u2019re planning a family getaway, a small corporate retreat, or a special celebration, this upscale retreat offers the space, style, and privacy you deserve. Book now to experience modern comfort combined with exclusive amenities in a tranquil setting.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, or balcony)",
+      "Dedicated parking for guests",
+      "Entertainment options (TV, streaming, games)"
+    ],
+    "photo_order_rec": "Use a striking exterior/front\u2011fa\u00e7ade or the main living area as the cover photo to showcase the property\u2019s scale and modern design, capturing immediate visual interest.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3653.20 is 323% higher than the city median (\u00a3154.60) while the 90\u2011day occupancy is only 29.3% (vs. cohort median 47.8%) \u2013 consider price adjustments or limited\u2011time discounts to boost bookings.",
+      "The listing advertises 7 bedrooms but only accommodates 4 guests, which confuses travelers; clarify capacity or adjust the bedroom count to align with guest limits.",
+      "The description is currently missing and no amenities are listed; add a compelling 200\u2011300 word description and highlight high\u2011value amenities (outdoor space, parking, entertainment) to improve appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing commands \u00a3653/night\u2014over 300% above the city median\u2014yet it\u2019s only 29% booked in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

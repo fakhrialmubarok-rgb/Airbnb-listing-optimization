@@ -1,0 +1,39 @@
+{
+  "listing_id": "921761258194772153",
+  "host_name": "Sandra",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 137.6,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 6880.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "EV Charger Home \u2013 15 mins to BHX & NEC",
+      "Cozy 4\u2011Guest Guest House \u2013 \u00a3138/night",
+      "Budget Stay with EV Plug, Near Airports"
+    ],
+    "rewritten_desc": "Welcome to The Grazing Guest House, a bright, fully\u2011equipped entire home perfect for up to four guests. Located just a 15\u2011minute drive from both Birmingham Airport (BHX) and Nottingham East Midlands Airport (NEC), the house offers the convenience of an on\u2011site EV charger for electric\u2011vehicle travelers.  \n\nThe modern interior features a comfortable living area, a well\u2011appointed kitchen with all essential appliances, and two cozy bedrooms with fresh linens. The bathroom is stocked with towels and basic toiletries. With a nightly rate of \u00a3137.60, you\u2019re paying 11\u202f% less than the city\u2019s median nightly price of \u00a3154.60, delivering exceptional value.  \n\nRated 4.97 stars from 257 reviews, Sandra\u2019s guests consistently praise the cleanliness and the thoughtful touches throughout the home. Over the next 90 days the calendar shows a 44.6\u202f% occupancy rate (50 open nights), indicating room for growth.  \n\nWhether you\u2019re in town for business, a weekend getaway, or a family visit, The Grazing Guest House combines affordability, convenience, and a warm, welcoming atmosphere. Book now to enjoy a stress\u2011free stay with easy airport access and a dedicated EV charging spot.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/patio)",
+      "Dedicated parking for guests",
+      "Entertainment options (TV, games, streaming)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior shot that shows the EV charger and parking area as the cover photo; guests first notice convenience and parking.",
+    "key_diagnosis": [
+      "Add the three high\u2011value amenities (outdoor space, dedicated parking, entertainment) \u2013 currently 0 listed, and they can help lift occupancy from the current 44.6\u202f% toward the market median of 47.8\u202f%.",
+      "Rewrite the title to spotlight the 11\u202f% price advantage and EV charger; the current 50\u2011character title lacks SEO focus and click\u2011through power.",
+      "Upload at least 12 professional photos covering living room, kitchen, bedrooms, bathroom, exterior, and the EV charger, then set the exterior with charger as the cover \u2013 the listing\u2019s photo count is unknown but likely very low, driving the 1/10 image score."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is 11\u202f% below the city median, yet your 90\u2011day occupancy sits at 44.6\u202f%\u2014there\u2019s clear upside.",
+    "weakest_element": "photos"
+  }
+}

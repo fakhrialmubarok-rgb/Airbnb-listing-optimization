@@ -1,0 +1,39 @@
+{
+  "listing_id": "1491544275455151945",
+  "host_name": "Zahir",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 10804.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Luxury 272Apartments in Prime Location (\u00a3146 pn)",
+      "Spacious 4-Bed Flat in Heart of the City",
+      "Charming Apartment for Rent in Popular Area"
+    ],
+    "rewritten_desc": "Located in the heart of the city, this 4-bedroom apartment offers a luxurious living experience for up to 4 guests. With a prime location, you'll be within walking distance to local shops, restaurants, and attractions. The apartment features a spacious living area, fully equipped kitchen, and 4 comfortable bedrooms, ideal for families or groups of friends. Enjoy the vibrant city life without the crowds, making this the perfect base for your stay.",
+    "top_amenity_gaps": [
+      "Outdoor spaces",
+      "Parking and facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should feature the living area to showcase the apartment's spaciousness and luxury, which will appeal to potential guests seeking a comfortable stay.",
+    "key_diagnosis": [
+      "Lowering the price to \u00a3146pn is a whopping -17% vs the cohort median of \u00a3175, resulting in significantly lower occupancy rates.",
+      "At 17.4%, the occupancy rate is almost 10% lower than the market median of 28.3%, indicating a clear room for improvement.",
+      "With zero listed amenities, the apartment appears bare, and guests may struggle to find essential services."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "By adjusting your pricing strategy to match the cohort median, you could potentially boost your occupancy rate by almost 10%\u2014an estimated 73 more nights across the next 90 days.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1431024510309793859",
+  "host_name": "Jake",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 79.4,
+    "occupancy_pct": 50.0,
+    "open_nights_90d": 45,
+    "revenue_at_stake_gbp": 3573.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 8,
+    "score_images": 9,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Grenoside Cottage",
+      "Peak District Retreat",
+      "Cosy Studio Getaway"
+    ],
+    "rewritten_desc": "Escape to Honey Lodge, a serene and stylish retreat in the heart of Grenoside, a picturesque village near the Peak District. This boutique studio cottage offers a peaceful sanctuary with modern fixtures and fittings, perfect for contractors, short breaks, or long-term lets. Enjoy your own private garden and sunny outdoor breakfast area, as well as a fully equipped kitchen, en-suite bathroom, and plush king-size bed. With excellent transport links to the city centre and motorway, you'll be perfectly situated to explore the surrounding countryside. Relax in the beautifully appointed living space, complete with Wi-Fi, Bluetooth speaker, and feature lighting, and unwind in the generous shower with heated towel radiator. Tea, coffee, and milk are provided, along with towels and shower gel, to make your stay as comfortable as possible.",
+    "top_amenity_gaps": [
+      "Exterior security cameras",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "The exterior photo should be the cover photo, as it showcases the private garden and outdoor breakfast area, a unique selling point of the property.",
+    "key_diagnosis": [
+      "With 35 photos, 12 more than the median photo count of 23, consider removing lower-quality images to improve the overall visual appeal, given that 50% of next 90 days are open",
+      "At \u00a379.4 per night, your rate is -24% vs the cohort median of \u00a3104.90, indicating a potential opportunity to increase pricing or enhance amenities to match the market",
+      "With 50% occupancy over the next 90 days, and a cohort median occupancy of 48.9%, focusing on improving the listing's visibility and appeal could help fill the remaining 45 open nights"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 45 open nights over the next 90 days, and a rate -24% below the local median, we see an opportunity to optimize your listing and increase bookings at your \u00a379.4 nightly rate",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1652046169418391296",
+  "host_name": "Anika",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 285.2,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 17112.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a3285 Home with Garden Access + Modern Skylights",
+      "4-Person London Home: Garden & Bifold Doors",
+      "Chic Modern Home | Garden Access | 4 Guests"
+    ],
+    "rewritten_desc": "This stunning entire home offers 4 guests a luxurious base in central [Location], featuring skylights that flood the space with natural light and bifold doors leading to a private garden. While our listing remains under construction, we\u2019re excited to offer 60 open nights over the next 90 days at \u00a3285/night. Despite our rate being 63% above the local median (\u00a3175), your stay will include access to [Location]\u2019s top attractions within walking distance. Ideal for those seeking modern luxury with direct garden access, we\u2019re committed to creating a memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Parking facilities",
+      "Streaming entertainment"
+    ],
+    "photo_order_rec": "Lead with the garden view through bifold doors if available, as outdoor space is high-value in listings and missing from current descriptions",
+    "key_diagnosis": [
+      "Title lacks location/occupancy signal: 50-char limit allows better visibility for [Location] in title",
+      "Description missing entirely: 0/10 rating due to complete absence of written content when 74% of competitors have descriptions",
+      "No amenities listed in 4.92-star listing: Missing 3 high-value categories (Outdoor, Parking, Entertainment) that drive bookings in this market"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a3285 rate is 63% above the local median but 4.92-star rating and 33.7% booking rate suggest strong potential to fill 60 open nights",
+    "weakest_element": "description"
+  }
+}

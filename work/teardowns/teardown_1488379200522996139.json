@@ -1,0 +1,39 @@
+{
+  "listing_id": "1488379200522996139",
+  "host_name": "Eric",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 141.0,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 7050.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 2,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cozy 3BR Getaway in [Location]",
+      "Luxurious Retreat, 19% Under Market",
+      "4-Star Accommodation for \u00a3141 in [Location]"
+    ],
+    "rewritten_desc": "Escape to this beautiful 3BR Retreat in [Location], perfect for up to 4 guests. With a 4.92 rating from 72 reviews, you can trust you're getting an exceptional stay in this spacious home. With plenty of natural light pouring in, you'll feel right at home in this beautifully furnished retreat. The location offers easy access to [local attractions]. The home features a comfortable sleeping arrangement for 4 guests and includes [amenities that are not listed but are inferred from market data]. Whether you're in town for business or leisure, this lovely retreat is the perfect spot to relax and unwind.",
+    "top_amenity_gaps": [
+      "Secure Parking on Premises or Nearby",
+      "Full Entertainment System with Smart TV",
+      "Outdoor Space for Relaxation and BBQs"
+    ],
+    "photo_order_rec": "The living room should be the cover photo to showcase the natural light and spacious layout.",
+    "key_diagnosis": [
+      "Their nightly rate of \u00a3141 is -19% below the median overnight rate of \u00a3175 in the same market, suggesting a missed pricing opportunity.",
+      "With an occupancy rate of 44.6% booked over the next 90 days, they have a significant room to improve occupancy (28.3% median for the market)",
+      "Lack of key amenities such as Outdoor, Parking and facilities, and Entertainment in the listing could be a major deterrent for potential guests."
+    ],
+    "outreach_angle": "amenity-gap",
+    "outreach_hook": "We notice your listing is missing crucial amenities like secure parking, a full entertainment system, and outdoor space, which could be deterring guests and affecting occupancy rates.",
+    "weakest_element": "amenities"
+  }
+}

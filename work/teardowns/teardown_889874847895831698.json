@@ -1,0 +1,38 @@
+{
+  "listing_id": "889874847895831698",
+  "host_name": "Sian",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1058.72,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 80462.72
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a31059 Liverpool Luxury Home",
+      "Private Liverpool Apartment Near Anfield",
+      "Anfield Road Guesthouse Near Reds Stadium"
+    ],
+    "rewritten_desc": "Step into this exclusive Liverpool townhome just minutes from Anfield Stadium and the heart of Liverpool's cultural district. With four spacious guest rooms and modern furnishings, this Entire Home rental offers both privacy and convenience for fans and tourists. Located at 128 Anfield Road, guests enjoy direct access to public transportation routes leading to Liverpool's top attractions including the Cavern Club, Museum of Liverpool, and the waterfront. The property has received 5.0 ratings from all 6 reviews for its exceptional location and cleanliness. While the nightly rate of \u00a31058.72 reflects the premium location, this could be more competitive with targeted amenities enhancements. Current availability shows 76 open nights in the next 90 days. Contact the host for special match-day packages or weekend stay arrangements. Parking information and specific check-in instructions will be provided upon reservation confirmation.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "On-site parking information"
+    ],
+    "photo_order_rec": "Prioritize a clean wide-angle shot of the living room as the cover photo to immediately showcase space and layout potential",
+    "key_diagnosis": [
+      "Priced at 505% above cohort median rate (\u00a3175 vs \u00a31058.72) while maintaining only 15.2% occupancy vs 28.3% market average",
+      "No amenities listed despite being 'Entire home' type, losing competitiveness in high-amenity Liverpool market",
+      "Blank description with only address mentioned in title, failing to highlight key differentiators like stadium adjacency or location perks"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a31058.72 rate is 505% above median while showing 13% lower occupancy (15.2% vs 28.3%) among Liverpool listings",
+    "weakest_element": "title"
+  }
+}

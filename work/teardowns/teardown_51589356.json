@@ -1,0 +1,39 @@
+{
+  "listing_id": "51589356",
+  "host_name": "Helen & John",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 102.4,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 4710.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 6,
+    "score_images": 5,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Botanical Gardens Steps Away \u2013 Private Flat",
+      "Leafy Broomhall Retreat \u2013 2\u2011Guest Private Flat",
+      "Cozy Lower\u2011Ground Flat Near Gardens & Uni"
+    ],
+    "rewritten_desc": "Welcome to our stylish, cosy flat tucked away on the lower\u2011ground floor of our family home in leafy Broomhall, Sheffield. The flat is completely private with its own front entrance, so you\u2019ll enjoy total independence while still being just a minute\u2019s stroll from the beautiful Botanical Gardens. Imagine a pleasant walk through the gardens to the vibrant independent shops and caf\u00e9s on Sharrow Vale\u202fRd, or a short drive to the stunning Peak District for a day of exploration. \n\nThe space offers a spacious sitting\u2011room bathed in natural light, a comfortable double bedroom, a fully equipped kitchen with modern appliances and cooking basics, and a recently refurbished bathroom with a hot shower. All essentials are provided \u2013 fresh linen, towels, hair\u2011dryer, iron, and a clothes\u2011drying rack \u2013 plus free Wi\u2011Fi, a flat\u2011screen TV, and radiant heating for comfort year\u2011round. \n\nWhile there is no private outdoor area, the nearby Botanical Gardens provide a green oasis just steps away. Please note there is a security camera covering the front of the property, and there are a few steps down to the flat, which may not suit guests with mobility challenges. Children under 12 and infants are not accommodated. With easy access to local hospitals, the university, and excellent transport links, our flat is perfect for two guests seeking a peaceful yet well\u2011connected base in Sheffield.",
+    "top_amenity_gaps": [
+      "Outdoor private space (no patio or garden area)",
+      "Dedicated parking information or on\u2011site parking",
+      "Air conditioning (absent for warm weather comfort)"
+    ],
+    "photo_order_rec": "Use the bright living\u2011room shot as the cover photo\u2014it showcases the open layout, natural light, and d\u00e9cor, giving guests an immediate sense of space and comfort.",
+    "key_diagnosis": [
+      "Add at least 8 new high\u2011quality photos to reach the market median of 23 images (currently 15), improving visual appeal and click\u2011through rates.",
+      "Replace the current title with a more compelling, keyword\u2011rich version (e.g., one of the suggested variants) to boost SEO and attract search traffic; the existing title scores only 6/10.",
+      "Address the 46 open nights (\u2248\u00a34,700 potential revenue) by highlighting missing high\u2011value amenities such as parking or a portable air\u2011conditioner in the listing to broaden appeal and increase bookings."
+    ],
+    "outreach_angle": "image_order",
+    "outreach_hook": "You have 46 open nights this quarter, representing about \u00a34,700 in potential earnings you could capture with stronger, more compelling photos.",
+    "weakest_element": "photos"
+  }
+}

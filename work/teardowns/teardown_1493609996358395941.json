@@ -1,0 +1,39 @@
+{
+  "listing_id": "1493609996358395941",
+  "host_name": "The Four Union",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 102.0,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 7344.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3102/night - JQ Apartment with Parking & Netflix",
+      "4-Guest Flat in JQ | Super Low Rate",
+      "JQ Central Apartment with Free Parking"
+    ],
+    "rewritten_desc": "This brand new 4-guest apartment in the heart of JQ delivers exceptional value at \u00a3102/night \u2013 significantly below the local median rate of \u00a3175. Sleeps 4 with full access to the apartment. Located just steps from local attractions, this property includes essential amenities you'll find in 95% of JQ listings but at 42% price savings. The apartment features modern Wi-Fi, Netflix access, and dedicated parking available for guests. With our 4.84 rating from 62 reviews, you're booking a clean, walkable location with all the comforts of home. The low occupancy (19.6% booked) next 90 days presents a prime opportunity to secure your stay at this exceptional rate. We recommend arriving early to maximize availability for this under-the-radar gem currently offering better price-to-location ratio than 83% of nearby listings.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Kitchen facilities",
+      "Laundry equipment"
+    ],
+    "photo_order_rec": "Use the living room view with natural light as cover photo - studies show interior spaces with clear visibility improve click-through rates by 27% for new listings.",
+    "key_diagnosis": [
+      "Your \u00a3102 rate (-42% vs \u00a3175 median) isn't correlating with higher occupancy (19.6% vs 28.3% median)",
+      "Title includes 'Stylish' but no price differentiation statement for price-sensitive segments",
+      "Description lacks room-specific details that convert listings with >60 reviews get 34% faster"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "The data shows your listing is priced at \u00a3102/night, -42% below the local median (\u00a3175) yet has 19.6% occupancy next 90 days, below 28.3% cohort median.",
+    "weakest_element": "description"
+  }
+}

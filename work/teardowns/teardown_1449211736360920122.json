@@ -1,0 +1,39 @@
+{
+  "listing_id": "1449211736360920122",
+  "host_name": "Patrick",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 166.0,
+    "occupancy_pct": 59.8,
+    "open_nights_90d": 36,
+    "revenue_at_stake_gbp": 5976.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "BHX/NEC/NHS Home - 6 Beds",
+      "NEC Rail Station Luxury Home",
+      "Family Home near NEC and BHX"
+    ],
+    "rewritten_desc": "Immerse yourself in the comfort of this 6-bedroom home, perfect for families and groups. Located near the NEC and Birmingham International Airport (BHX), you'll find it easily accessible from anywhere. With a vast open-plan living space, you can socialize and make memories with your loved ones. Each bedroom has its own unique charm, providing ample space for a comfortable stay. Our home can accommodate up to 4 guests, and you can make this experience unforgettable with a personalized touch. Enjoy a relaxing atmosphere and unwind in our well-designed home with amenities that cater to your lifestyle.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden (high-priority for families and groups)",
+      "Free parking for guests (a must-have for travelers)",
+      "Entertainment options like a TV or game console (adds to the overall experience)"
+    ],
+    "photo_order_rec": "The cover photo should feature the spacious living area, showcasing the open-plan layout and modern design, which will give potential guests an idea of the home's interior and make them feel at ease.",
+    "key_diagnosis": [
+      "Increase revenue by \u00a36,564 (\u00a3166/night x 36 open nights) by optimising the title, description, and amenities to attract more bookings.",
+      "Fill the vacant photo slots with high-quality images of the 6 bedrooms and other interior spaces, including the master bedroom which is missing from the current photo count.",
+      "The hosting experience can be improved by having an active host presence, with a goal of reaching 28% occupancy (the median for the market), currently at 59.8%"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Hi Patrick, we noticed you have 36 open nights, which translates to a potential revenue loss of \u00a36,564. We'd like to help you optimise your listing and increase bookings.",
+    "weakest_element": "photos"
+  }
+}

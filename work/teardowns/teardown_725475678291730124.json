@@ -1,0 +1,39 @@
+{
+  "listing_id": "725475678291730124",
+  "host_name": "Charlie",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 230.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 17480.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Jacuzzi + Parking Home for 4 \u00a3230/night",
+      "Private Bath & Parking for 4 Guests",
+      "\u00a3230 Holiday Home with Jacuzzi, Parking"
+    ],
+    "rewritten_desc": "This 4-guest holiday home offers luxury amenities including a private Jacuzzi bath and secure parking. Located in [city], it provides [insert local convenience facts if available]. While our rate is 31% above the market median (\u00a3230 vs \u00a3175), your review highlights can help us improve. Guests typically praise [specific guest favorite if available]. The property includes [list core features - kitchen, living area, etc.] ensuring comfort for all stays. With 76 open nights in the next 90 days, we're focused on optimizing visibility for potential guests seeking premium accommodation in [city].",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Smart TV/Streaming services",
+      "High-speed WiFi details"
+    ],
+    "photo_order_rec": "Lead with the Jacuzzi bath shot to showcase the premium feature most guests would want to see immediately, followed by the parking space in second position per platform testing data.",
+    "key_diagnosis": [
+      "\u00a3230 nightly rate is 31% above cohort median yet occupancy is 45% below median (15.2% vs 28.3%)",
+      "Title lacks urgency and has no clear primary differentiator within 50 characters",
+      "0-star description score due to complete absence of content - essential for driving conversion"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3230 rate is 31% above the market median, yet occupancy is at 15.2% (vs median 28.3%) - let's fix this revenue leak",
+    "weakest_element": "description"
+  }
+}

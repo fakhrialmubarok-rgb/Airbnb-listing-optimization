@@ -1,13 +1,14 @@
 {
   "fail_counts": {
-    "curtains_open": 8,
-    "no_added_objects": 6,
-    "lights_on": 4,
-    "nothing_removed_or_moved": 3,
-    "dramatically_brighter": 3,
-    "straight_verticals": 2,
-    "no_visible_cables": 1,
-    "window_not_blown_out": 1
+    "curtains_open": 53,
+    "no_added_objects": 60,
+    "lights_on": 34,
+    "nothing_removed_or_moved": 37,
+    "dramatically_brighter": 22,
+    "straight_verticals": 7,
+    "no_visible_cables": 9,
+    "window_not_blown_out": 13,
+    "no_ai_artifacts": 3
   },
-  "candidates_seen": 24
+  "candidates_seen": 152
 }

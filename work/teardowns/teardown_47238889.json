@@ -1,0 +1,39 @@
+{
+  "listing_id": "47238889",
+  "host_name": "Gerrad",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 93.4,
+    "occupancy_pct": 51.1,
+    "open_nights_90d": 44,
+    "revenue_at_stake_gbp": 4109.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Central 2 Bed Apartment - \u00a393/nt, \u00a340% Off!",
+      "Very Central 2 Bed Apt, Close to Everything",
+      "Cozy 2 Bedroom Apartment in Heart of City"
+    ],
+    "rewritten_desc": "Experience the ultimate in comfort and convenience at this 2-bedroom apartment in the heart of the city. With its central location, you'll be within walking distance to all major attractions and local amenities. The spacious apartment is perfect for groups of up to 4, with a king-size bed in one bedroom and a double bed in the other. A fully equipped kitchen and modern bathroom complete the picture. As a bonus, this apartment offers easy access to local transport links, making it an ideal base for your city break. With its 334 excellent reviews and 4.75-star rating, you can trust that this apartment will provide a memorable stay.",
+    "top_amenity_gaps": [
+      "Outdoor spaces",
+      "Parking and facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should feature a well-lit and inviting shot of the apartment's living room, showcasing the comfortable seating and large windows with a view of the city.",
+    "key_diagnosis": [
+      "\u00a393/nt is \u00a361.2 less than the cohort median, leaving \u00a361.2 of potential revenue on the table.",
+      "This apartment is 3.3% more booked than the cohort median, indicating opportunities to increase occupancy further.",
+      "The host has no photo coverage of any room types, missing a crucial opportunity to showcase the space and attract guests."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Based on your current occupancy rates, there's room to improve by 3.3% above the cohort median - are you ready to explore opportunities to increase bookings?",
+    "weakest_element": "photos"
+  }
+}

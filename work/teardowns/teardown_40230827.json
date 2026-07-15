@@ -1,0 +1,39 @@
+{
+  "listing_id": "40230827",
+  "host_name": "Jagadish",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 171.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13041.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Cosy Modern Home in Prime Location",
+      "Modern Home for Four near Two Cities",
+      "Stylish Home within Easy Reach of Town"
+    ],
+    "rewritten_desc": "Sleek and modern, this entire home near the city centres offers comfort and convenience in equal measure. Located close to town and surrounded by vibrant neighbourhoods, the house features a light-filled interior, perfect for relaxing or entertaining. With 4 guests comfortably accommodated, this stylish abode is ideal for couples, business visitors, and small families. Jagadish welcomes guests, offering a home away from home in this sought-after area. Recent guests have praised the home's tranquility and modern facilities.",
+    "top_amenity_gaps": [
+      "Parking and facilities for guests",
+      "Outdoor space for relaxation and relaxation",
+      "Entertainment options for guests, such as a TV or gaming console"
+    ],
+    "photo_order_rec": "The living area should be the cover photo, showcasing the home's modern decor and inviting atmosphere. This will immediately convey the home's style and comfort to potential guests.",
+    "key_diagnosis": [
+      "Despite charging \u00a3171.60 (\u00a32 below the cohort median), your occupancy is only 15.2% booked, a significant 13.1ppts under the cohort median of 28.3%",
+      "You have 76 open nights, resulting in \u00a313,047.20 in unrealized revenue (\u00a39,500 above the average nightly rate).",
+      "You're missing essential amenities such as Parking and facilities, Outdoor space, and Entertainment to complete the guest experience."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 76 open nights and occupancy only at 15.2%, we believe there's a huge opportunity to optimize your listing for a more appealing guest experience.",
+    "weakest_element": "title"
+  }
+}

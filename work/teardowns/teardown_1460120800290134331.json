@@ -1,0 +1,39 @@
+{
+  "listing_id": "1460120800290134331",
+  "host_name": "Christina",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 222.7,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 10244.2
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 8,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "River\u2011front mezzanine flat with free parking",
+      "Ground\u2011floor + mezzanine, steps to Kelham bars",
+      "Stylish factory\u2011converted flat with river views"
+    ],
+    "rewritten_desc": "Enjoy a stylish, factory\u2011converted ground\u2011floor flat right in the heart of Kelham Island, where original industrial features meet modern comfort. Floor\u2011to\u2011ceiling windows frame sweeping views of the River Don and Ball Street Bridge, and the ducks even glide up to the glass. The open\u2011plan living area flows into a fully equipped kitchen and dining space, perfect for group meals or a quick coffee before heading out. \n\nThe main bedroom on the ground floor offers a double bed, while a sleek mezzanine upstairs provides a second double bedroom and a cozy double futon at the far end, ideal for extra guests or flexible sleeping arrangements. Please note the mezzanine ladder is steep and the arches require a duck\u2011under \u2013 the central area gives full standing height. \n\nStep outside and you\u2019re a five\u2011minute walk from Kelham\u2019s buzzing bars, restaurants, the famed Yellow Arch Studios, and local breweries. The award\u2011winning Sardinian restaurant Domo is just around the corner. A dedicated parking space sits on the premises, with additional paid street parking nearby. \n\nThe flat is self\u2011check\u2011in via lockbox, features fast Wi\u2011Fi, a workspace, TV, heating, and a full suite of safety devices. It\u2019s an acoustic\u2011friendly space, so feel free to enjoy music or a quiet night in. Perfect for up to six guests seeking urban excitement and easy access to the Peak District.",
+    "top_amenity_gaps": [
+      "Essentials (toiletries, soap, shampoo)",
+      "Air conditioning",
+      "Exterior security cameras"
+    ],
+    "photo_order_rec": "Use the Living Room image with the river view as the cover photo \u2013 it instantly showcases the standout river panorama and spacious feel.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3222.7 is +112% above the city median (\u00a3104.9) while your 90\u2011day occupancy is only 48.9%, matching the median \u2013 a clear price\u2011to\u2011occupancy mismatch.",
+      "You have 0 reviews after 1 year of hosting; lack of social proof is likely suppressing bookings.",
+      "The current title \"Stunning mezzanine flat\" omits high\u2011value differentiators like river views, free parking, and the mezzanine layout."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a3222.7 \u2013 more than double the city median of \u00a3104.9, yet your 90\u2011day occupancy sits at the same 48.9%, indicating a clear pricing\u2011occupancy gap you can close.",
+    "weakest_element": "title"
+  }
+}

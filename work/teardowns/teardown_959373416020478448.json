@@ -1,0 +1,39 @@
+{
+  "listing_id": "959373416020478448",
+  "host_name": "Aania",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 275.0,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 19250.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 5,
+    "score_amenities": 1,
+    "score_images": 7,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Leeds Private Oasis, 57% above median rates",
+      "Exclusive Garden Hideaway in Central Leeds",
+      "Luxury Leeds Getaway, Enclosed Garden & Private Parking"
+    ],
+    "rewritten_desc": "Escape to a serene Leeds oasis, perfect for up to 4 guests. This stunning entire home boasts a private, enclosed garden and designated parking. Enjoy the peace and quiet in a highly sought-after area, just a short walk from Leeds' vibrant city centre. With 76 glowing reviews and a Superhost badge in sight, this property is a must-visit for anyone looking for a luxurious and relaxing getaway. The generous, open-plan living space is ideal for families or friends, with plenty of room to unwind and enjoy each other's company. With a private entrance, guests can come and go as they please, and the secure parking means you can leave your car safely on site. Whether you're looking for a romantic break, a family adventure or simply a well-deserved rest, this beautiful home has everything you need to unwind and recharge. So why wait? Book your stay today and discover the ultimate Leeds oasis!",
+    "top_amenity_gaps": [
+      "Parking and private access is a highly valued amenity, yet this feature is not highlighted in the listing.",
+      "Leeds is a city with many attractions and activities; the listing's lack of entertainment amenities is notable.",
+      "A garden and outdoor space are essential for relaxation and comfort, but the listing could provide more information on this feature."
+    ],
+    "photo_order_rec": "Use a photo of the garden as the cover photo, as it showcases the property's unique feature and sets the tone for a serene and peaceful stay.",
+    "key_diagnosis": [
+      "The occupant has significant room to improve their occupancy rate, currently 21.7% booked (70 open nights) vs the cohort median 28.3%.",
+      "Adding amenities in the Outdoor, Parking and facilities, and Entertainment categories could provide a significant boost to occupancies.",
+      "Given the high nightly rate of \u00a3275.00, which is +57% above the cohort median of \u00a3175.00, the listing could benefit from a more compelling title that addresses this unique selling point."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With an occupancy rate of 21.7% booked (70 open nights), you have significant room to improve your occupancy rate and grow your earnings.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1487721003536103509",
+  "host_name": "Joy",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 411.0,
+    "occupancy_pct": 76.1,
+    "open_nights_90d": 22,
+    "revenue_at_stake_gbp": 9042.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Heated Indoor Pool & Hot Tub \u2013 Rural Retreat Near BHX",
+      "Luxury 4\u2011Guest Home with Indoor Pool, Hot Tub",
+      "Rural 4\u2011Person Escape: Heated Pool, Hot Tub, Near BHX"
+    ],
+    "rewritten_desc": "Welcome to your private rural sanctuary just minutes from Birmingham Airport (BHX) and the NEC. This entire home comfortably sleeps up to four guests, offering a perfect blend of luxury and seclusion. The highlight? A heated indoor swimming pool and a soothing hot\u2011tub, both available year\u2011round for relaxation after a day of travel or business. The spacious living area opens onto the pool deck, creating a bright, inviting atmosphere for evening gatherings. A fully equipped kitchen lets you prepare meals, while the cozy bedroom provides a restful night\u2019s sleep on premium linens. With a 4.72 rating from 499 reviews, guests consistently praise the cleanliness, attentive host, and the unique indoor\u2011water amenities. \n\nLocated in a peaceful countryside setting, you\u2019re still just a short drive to Birmingham\u2019s city centre, the National Exhibition Centre, and major transport links. Ideal for families, couples, or small business groups seeking a memorable stay with premium amenities at a competitive rate. Book now to enjoy the rare combination of a heated pool, hot tub, and tranquil rural charm\u2014all under one roof. Your perfect base for work or leisure awaits.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/patio) for fresh\u2011air relaxation",
+      "Dedicated on\u2011site parking for guests",
+      "Entertainment options (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use the heated indoor pool as the cover photo\u2014it\u2019s the most unique, high\u2011value feature and will instantly grab attention in search results.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3411 is 166% above the city median (\u00a3154) while you have 22 open nights in the next 90 days; lowering the price by ~20% could boost occupancy and revenue.",
+      "The listing description is essentially blank, which hurts conversion; add a compelling 200\u2011300 word description that highlights the indoor pool, hot tub, rural setting, and proximity to BHX/NEC.",
+      "No amenities are listed despite having high\u2011value categories like outdoor space, parking, and entertainment; add these to attract guests filtering for those features."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home is booked 76% of the next 90 days at a \u00a3411 nightly rate\u2014 that's 166% above the city median, yet 22 nights sit empty; a modest price tweak could fill them.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1561044985400178510",
+  "host_name": "Yana",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1394.0,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 89216.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a314,000/night luxury home near city center for 4 guests",
+      "High-end city retreat with private outdoor space for 4",
+      "Exclusive upscale dwelling with premium parking included"
+    ],
+    "rewritten_desc": "Experience exceptional luxury at Liv\u2019s cozy corner, located in a prime city location. This entire home accommodates 4 guests with nightly rates of \u00a31,394. While our price point is significantly above the market average (cohort median \u00a3155), we believe our unique offerings justify the investment. Sleeps 4 - perfect for romantic getaways or small groups. As a newer host (0 years listed), we're continuously refining our service. Guests will enjoy secure parking facilities and private outdoor space. Please review our full amenities list for specific details. We maintain a 4.93 rating from all 15 guests who've stayed with us. With 64 open nights remaining in the next 90 days, we\u2019re eager to host more discerning travelers. For direct inquiries about our premium accommodations, contact us through the official Airbnb platform.",
+    "top_amenity_gaps": [
+      "Outdoor spaces with city views",
+      "Secure on-site parking",
+      "High-speed Wi-Fi connectivity"
+    ],
+    "photo_order_rec": "Lead with the outdoor space photo if available, as it shows our prime location advantages which justify the premium price point. Outdoor images consistently drive higher engagement in high-end listings.",
+    "key_diagnosis": [
+      "Nightly rate is +802% above cohort median (\u00a31394 vs \u00a3155) while occupancy is 29.3% booked vs cohort median 47.8% - classic price/occupancy imbalance for luxury listings",
+      "4.93 rating from only 15 reviews provides limited social proof for premium price",
+      "No amenities listed despite 4.93-star rating - guests can't validate features that justify cost"
+    ],
+    "outreach_angle": "price_vs_occupancy_gap",
+    "outreach_hook": "Your \u00a31,394 rate is 802% above market average yet occupancy lags at 29% vs 47.8% cohort median, suggesting room for strategic price optimization",
+    "weakest_element": "description"
+  }
+}

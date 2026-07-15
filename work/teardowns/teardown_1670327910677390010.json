@@ -1,0 +1,39 @@
+{
+  "listing_id": "1670327910677390010",
+  "host_name": "Larry",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1218.4,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 88943.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "6\u2011Bedroom Home Near Park \u2013 Sleeps 12",
+      "Luxury Villa \u00a31,218/night \u2013 3 Van Parking",
+      "Group Getaway: 6 Bedrooms, 12 Sleeps, Park Views"
+    ],
+    "rewritten_desc": "Welcome to Spaghetti House, a spacious six\u2011bedroom retreat located just steps from the local park. This entire\u2011home property offers a comfortable setting for groups, with up to 12 guests sleeping across its generous bedrooms. The house features a fully equipped kitchen, a bright living area, and a private garden ideal for outdoor gatherings. Parking is plentiful, with space for up to three vans, ensuring hassle\u2011free arrivals for larger parties. Although the nightly rate is \u00a31,218.40, the home provides premium amenities and a prime location that make it perfect for special occasions or corporate retreats. Guests can enjoy easy access to nearby attractions, walking trails, and dining options. The nearby park offers walking paths, playgrounds, and picnic spots, perfect for families. Public transport links are just a short walk away, connecting you to the city centre in under 15 minutes. For those who prefer to cook, the kitchen includes a dishwasher, oven, and ample counter space. After a day of exploring, unwind in the spacious living room with large windows that let in natural light. High\u2011speed Wi\u2011Fi and a flat\u2011screen TV are available for entertainment. Laundry facilities with a washer and dryer make longer stays convenient. Larry is available to answer any questions and can provide local recommendations to enhance your visit. With a perfect 5\u2011star rating from five reviews, the house promises high standards of cleanliness and hospitality. Book now to experience a unique blend of space, convenience, and tranquility at Spaghetti House.",
+    "top_amenity_gaps": [
+      "Outdoor space (private garden or patio)",
+      "Parking for multiple vehicles (3\u2011van capacity)",
+      "Entertainment amenities (high\u2011speed Wi\u2011Fi, TV, games)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the main living area or garden as the cover photo to showcase space and outdoor appeal, then follow with bedroom and kitchen shots.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a31,218.40 \u2013 it is 688% higher than the market median of \u00a3154.60, which is a primary cause of the 18.5% occupancy versus the cohort median of 47.8%.",
+      "Correct the capacity mismatch: the listing shows a capacity of 4 guests but the title claims sleeps 12; align these numbers to avoid guest confusion and improve booking confidence.",
+      "Add high\u2011value amenities (outdoor garden, parking for 3 vans, high\u2011speed Wi\u2011Fi and TV) and upload professional photos of each room, starting with a compelling cover image."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing charges \u00a31,218 per night \u2013 that's 688% higher than the city median of \u00a3154, yet it\u2019s only booked 18.5% of the time.",
+    "weakest_element": "title"
+  }
+}

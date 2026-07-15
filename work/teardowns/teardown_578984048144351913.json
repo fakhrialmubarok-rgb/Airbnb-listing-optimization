@@ -1,0 +1,39 @@
+{
+  "listing_id": "578984048144351913",
+  "host_name": "Tahir",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 101.2,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 7488.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury apt 42% cheaper than city avg",
+      "Spacious 4\u2011guest home near centre",
+      "Comfortable city\u2011center stay for 4"
+    ],
+    "rewritten_desc": "Welcome to your spacious, modern apartment just steps from the heart of the city. This entire\u2011home retreat comfortably sleeps up to four guests, making it perfect for families, friends, or business travelers seeking a convenient base. Inside, you\u2019ll find an open\u2011plan living area with large windows that flood the space with natural light and showcase the vibrant neighbourhood. A fully equipped kitchen lets you whip up meals at your own pace, while the cozy bedroom offers a plush double bed and ample storage for your belongings. The sleek bathroom features a walk\u2011in shower and fresh towels, ensuring a refreshing start or end to your day. With a nightly rate of \u00a3101.2, you enjoy a remarkable 42% discount compared with the city\u2019s median price of \u00a3175, delivering exceptional value without compromising comfort. Guests have praised the location and cleanliness, reflected in a solid 4.68 rating from 216 reviews. Although you\u2019re not yet a Superhost, the consistent positive feedback shows you\u2019re on the right track. Situated within walking distance of major attractions, restaurants, and public transport, the apartment puts the best of the city at your doorstep. Book now and experience a blend of affordability, space, and prime location that makes every stay memorable.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking space",
+      "Private outdoor terrace or garden area",
+      "Entertainment options such as a Smart TV or board games"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area with city views as the cover photo \u2013 it instantly showcases the apartment\u2019s space and prime location.",
+    "key_diagnosis": [
+      "Add at least 3 high\u2011impact photos (living room, bedroom, kitchen) to replace the unknown current count and improve visual appeal.",
+      "Revise the title to highlight the -42% price advantage (e.g., \"Luxury apt 42% cheaper than city avg\") and stay under 50 characters.",
+      "Run a limited\u2011time promotion for the 74 open nights to lift occupancy from 17.4% toward the cohort median of 28.3%."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a3101.2, which is 42% below the city median of \u00a3175, yet your 90\u2011day occupancy is only 17.4% (74 nights open) \u2013 there\u2019s clear upside to capture more bookings.",
+    "weakest_element": "description"
+  }
+}

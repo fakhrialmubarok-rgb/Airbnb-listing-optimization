@@ -1,0 +1,39 @@
+{
+  "listing_id": "46874182",
+  "host_name": "Leroy",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 230.6,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 15680.8
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 7,
+    "score_amenities": 10,
+    "score_images": 7,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Immaculate 4 Bed House, Parking & Parking Free",
+      "Luxury 4 Bedroom Home in [Location], \u00a3230.6/nt",
+      "\u00a3230/nt, Immaculate 4 Bed House in Popular Area"
+    ],
+    "rewritten_desc": "Treat yourself to a luxurious stay in our 4-bedroom house, located in the heart of [Location]. With a private parking spot and ample space for four guests, it's the perfect retreat for families or groups of friends. Our home boasts a beautifully designed interior, complete with comfortable furnishings and all the amenities you need to feel right at home. Take a short stroll to nearby attractions, or enjoy some peaceful downtime in our quiet neighborhood. We can't wait to welcome you!",
+    "top_amenity_gaps": [
+      "Parking facilities should be explicitly mentioned and emphasized, especially considering the \u00a3230.6 nightly rate (\u00a332% above the cohort median)",
+      "Entertainment options (e.g., TV, games) would be a valuable addition",
+      "Outdoor spaces or a garden would be a welcome feature"
+    ],
+    "photo_order_rec": "A photo of the living room should be the cover photo, as it showcases the property's interior and design",
+    "key_diagnosis": [
+      "Increase parking mention: with a \u00a3230.6 nightly rate, guests expect free parking to be highlighted (current description lacks any mention of parking)",
+      "Improve occupancy by \u00a33.30/nt vs the cohort median price (28.3% occupancy vs 25.0% for this listing)",
+      "Consider adding images of the kitchen and bedrooms to increase overall photo count"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "Your \u00a3230.6 nightly rate makes free parking a crucial differentiator; would you consider highlighting this in the listing?",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1653143344690355512",
+  "host_name": "Zaf",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 250.0,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 18250.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Modern home with free parking \u2013 4\u2011guest comfort",
+      "Spacious 4\u2011guest house, free parking, premium style",
+      "Luxury modern stay for 4, free parking included"
+    ],
+    "rewritten_desc": "Welcome to your spacious, modern home in the heart of the city \u2013 an entire house perfectly designed for up to four guests. The sleek interior combines contemporary design with all the comforts you need for a relaxing stay. Enjoy the convenience of free on\u2011site parking, ideal for travellers with a car. With a nightly rate of \u00a3250, this property sits at the higher end of the market, reflecting its premium finishes and prime location. Guests have consistently rated the home highly, earning a 4.69 overall score from 16 reviews, praising its cleanliness, style, and ease of check\u2011in. While the house is not yet a Superhost listing, the attentive host Zaf is ready to provide a seamless experience. Over the next 90 days, only 18.5% of the nights are booked, leaving ample opportunity for more guests to discover this gem. The open\u2011plan living area is perfect for unwinding after a day of exploring, and the fully equipped kitchen lets you prepare meals just the way you like them. Rest easy in comfortable bedrooms designed for a good night\u2019s sleep. Book now to enjoy a stylish, well\u2011located home that offers both comfort and convenience, with the added perk of free parking for your vehicle.",
+    "top_amenity_gaps": [
+      "High\u2011speed Wi\u2011Fi (essential for guests)",
+      "Smart TV or streaming entertainment",
+      "Outdoor space such as a patio or garden"
+    ],
+    "photo_order_rec": "Use a bright exterior shot showing the driveway and free parking as the cover photo; it instantly conveys the high\u2011value parking amenity and invites clicks.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3250 (43% above the city median of \u00a3175) to around \u00a3190\u2011\u00a3200 to close the price gap and lift the 18.5% occupancy.",
+      "Add and prominently list missing high\u2011value amenities \u2013 Wi\u2011Fi, TV, and an outdoor patio \u2013 to meet guest expectations and improve the 2/10 amenity score.",
+      "Upload a full set of high\u2011resolution photos covering the living room, bedrooms, kitchen, bathroom, and exterior, then set the cover to the parking\u2011visible exterior to boost the 2/10 image score."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home is priced 43% above the city median (\u00a3250 vs \u00a3175) yet only 18.5% of nights are booked in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

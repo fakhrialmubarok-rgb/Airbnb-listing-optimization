@@ -1,0 +1,39 @@
+{
+  "listing_id": "902259286314549137",
+  "host_name": "Sterling Edge",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 157.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 11932.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Balcony Garden Aparthotel @ \u00a3157",
+      "Parking Aparthotel Near City (\u00a3157)",
+      "\u00a3157 Aparthotel w/Balcony & Garden"
+    ],
+    "rewritten_desc": "Experience modern comfort in this 4-guest aparthotel with private balcony/garden access and secure parking included. Rated 4.77 by 77 guests, this property offers stylish amenities and central location benefits. The \u00a3157 rate provides exceptional value compared to our city's \u00a3175 median price. Sleeps up to 4 guests in well-equipped spaces\u2014ideal for families or small groups seeking both outdoor relaxation and urban convenience. With 76 open nights available over 90 days (15.2% current occupancy), this property offers an opportunity for hosts to leverage its lower pricing strategy and 4.77-star reputation to attract more stays. Key features include [insert verified amenities based on actual property capabilities] to enhance guest comfort. Previously hosted 77 stays with average positive ratings.",
+    "top_amenity_gaps": [
+      "Outdoor seating equipment",
+      "Smart TV streaming services",
+      "Dedicated workspace"
+    ],
+    "photo_order_rec": "Prioritize balcony/garden view as cover photo to capitalize on highest-value 'Outdoor' category appeal",
+    "key_diagnosis": [
+      "Rate is \u00a318 below median at \u00a3157 vs \u00a3175 yet occupancy (15.2%) lags 28.3% market median - suggesting price may not be competitive differentiator",
+      "0 years hosting experience with no verified Superhost status despite 77 reviews - credibility gap compared to city's 28% occupancy average",
+      "Missing 200-300 word description despite high 4.77 rating - critical SEO and conversion opportunity lost"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Although priced \u00a318 below city median at \u00a3157, your 15.2% occupancy trails market's 28.3% average - where should you focus improvements?",
+    "weakest_element": "description"
+  }
+}

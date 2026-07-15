@@ -1,0 +1,39 @@
+{
+  "listing_id": "1434970336517867328",
+  "host_name": "Eleanor",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 78.4,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 4390.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Leafy Birmingham Guest House \u2013 49% Cheaper",
+      "4\u2011Guest Leafy Home \u2013 \u00a378 Night, Save 49%",
+      "Quiet Leafy Suburb Home for 4, \u00a378/night"
+    ],
+    "rewritten_desc": "Welcome to your private guest house nestled in a leafy suburb of Birmingham. This entire home comfortably sleeps up to four guests, making it perfect for families, small groups, or business travellers seeking a quiet retreat. With a sparkling 4.97 rating from 31 glowing reviews, you can trust the quality of your stay. Each night is priced at \u00a378.40, offering exceptional value compared with the city\u2019s median rate of \u00a3154.60. The house features a spacious living area, a fully equipped kitchen, and two comfortable bedrooms, all set within a tranquil, tree\u2011lined neighbourhood. While the property currently does not list specific amenities, the surrounding area provides easy access to local parks, caf\u00e9s, and public transport, ensuring you can explore Birmingham with ease. Over the next 90 days, the calendar shows a 38% booking rate, leaving 56 open nights for you to capture new guests. Take advantage of the competitive price point and the peaceful setting to enjoy a memorable Birmingham stay. Book now and experience comfort, convenience, and great savings in one charming home.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio)",
+      "Free parking",
+      "Entertainment (TV, streaming services)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution exterior shot showing the leafy front garden as the cover photo \u2013 it instantly conveys the tranquil suburb vibe and attracts clicks.",
+    "key_diagnosis": [
+      "Revise the title to highlight the 49% price advantage (e.g., include \u201c49% cheaper than Birmingham average\u201d), which will improve SEO and click\u2011through rates.",
+      "Add high\u2011value amenities such as a private garden/patio, free on\u2011site parking, and entertainment options; these are missing and can boost desirability.",
+      "Upload at least 8 professional photos covering the exterior, living room, kitchen, and both bedrooms; the current unknown photo count likely hurts visual appeal and occupancy."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a378.40, which is 49% lower than the Birmingham median of \u00a3154.60, yet your 90\u2011day occupancy sits at just 38%\u2014there\u2019s clear upside.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "51126701",
+  "host_name": "Jaya",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 661.0,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 37016.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 1,
+    "score_amenities": 6,
+    "score_images": 3,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "10-Bed Aparthouse w/ Hot Tub & Free Parking",
+      "Spa-Like 10-Bed Apartment in [Location]",
+      "\u00a3661 10-Bed Home w/ Hot Tub (4 Guests)"
+    ],
+    "rewritten_desc": "This 10-bedroom home offers luxury for up to 4 guests in a prime [Location]. Highlighted features include a private hot tub for relaxation after a day of exploration, plus free parking for all guests' convenience. Rated 4.95 from 98 reviews, the property ensures top-tier comfort despite its high capacity. The rate is \u00a3661/night, 328% above the local median of \u00a3154.60, making it best suited for private groups seeking exclusivity. Currently 38% booked for the next 90 days (56 open nights), this home is ideal for those prioritizing parking access and outdoor leisure. All amenities are provided for a self-contained stay, though specific room details are best experienced firsthand. Note: While the listing lacks explicit amenity tags, the presence of a hot tub and parking position it as a unique luxury option in [Location].",
+    "top_amenity_gaps": [
+      "Indoor entertainment (TV, gaming)",
+      "Smart home devices",
+      "Wellness equipment (massage chairs)"
+    ],
+    "photo_order_rec": "The hot tub should lead the gallery photo. Outdoor amenities like hot tubs typically generate the highest guest interest at 42%",
+    "key_diagnosis": [
+      "Nightly rate \u00a3661 is +328% above cohort median \u00a3154.60 while occupancy is 38% vs cohort 47.8%",
+      "Title lacks SEO keyword density (only 2/5 primary selling points prioritized)",
+      "Description is completely blank - no content to address concerns about 10 beds for 4 guests"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3661 rate is 328% above local average while occupancy is 13% below market median - let's close the efficiency gap",
+    "weakest_element": "description"
+  }
+}

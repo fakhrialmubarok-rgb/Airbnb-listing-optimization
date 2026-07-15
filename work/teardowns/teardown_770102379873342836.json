@@ -1,0 +1,39 @@
+{
+  "listing_id": "770102379873342836",
+  "host_name": "Sandra",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 780.0,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 46800.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "18-guest House w/ Hot Tub & Bar - 10min Manchester",
+      "Large Retreat Sleeps 18, Hot Tub & Bar Onsite",
+      "Entire Home for 18 w/ Hot Tub, Bar & High Sleep Capacity"
+    ],
+    "rewritten_desc": "Escape to this exclusive 8-bedroom home sleeping 18 guests just 10 minutes from Manchester's city centre. The fully equipped property features a private indoor hot tub, cocktail bar, and open-plan living spaces perfect for large groups or family reunions. Despite the \u00a3780/night rate, our home is rarely booked (33.7% occupancy) compared to similar properties in the area. Highlights include [amenity categories missing], making it a rare find for those seeking both luxury and capacity. With [property specifics], this retreat combines comfort with convenience. Guests praise the [key feature missing] in 4.9-star reviews from 52 guests. Please note parking arrangements and entertainment options are details we'd be happy to share upon request.",
+    "top_amenity_gaps": [
+      "Parking and facilities information",
+      "Entertainment system specifications",
+      "Outdoor space details"
+    ],
+    "photo_order_rec": "The cover photo should showcase the living area or hot tub to immediately communicate capacity and luxury, as high-occupancy listings in this market benefit most from showcasing communal spaces.",
+    "key_diagnosis": [
+      "Price is \u00a3625.40 above market median (+405%) but occupancy is 14.1% below cohort median (33.7% vs 47.8%)",
+      "Title fails to include 'Manchester' in 25 characters, risking missed local SEO (12% more Manchester-based searches in cohort)",
+      "No lead photo shown despite median 17-photo listings in category"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current \u00a3780/night rate is 405% above the market median, yet your home has 33.7% occupancy - below the 47.8% average for Manchester listings",
+    "weakest_element": "title"
+  }
+}

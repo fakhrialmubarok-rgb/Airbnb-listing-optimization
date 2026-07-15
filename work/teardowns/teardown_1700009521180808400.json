@@ -1,0 +1,39 @@
+{
+  "listing_id": "1700009521180808400",
+  "host_name": "Brodie",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 168.57,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 11462.76
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "6-Bed Entire Home Near Warrington",
+      "Spacious Home Near Warrington for 6",
+      "Warrington Entire Home for 6"
+    ],
+    "rewritten_desc": "This charming Warrington entire home sleeps up to 6 guests, offering modern comfort for families, remote workers, or short-term stays. Fully private and available for immediate booking, it\u2019s ideally suited for those needing temporary accommodation during relocation. Located in a convenient area with easy access to local amenities. Recently renovated for a fresh, welcoming ambiance. All guests will enjoy a fully equipped space with a focus on practicality and comfort. Book now for a stress-free stay!",
+    "top_amenity_gaps": [
+      "Outdoor seating/patio",
+      "Free on-site parking",
+      "TV with local streaming services"
+    ],
+    "photo_order_rec": "Prioritize publishing an exterior photo of the home as cover image to establish trust\u2014first impressions are critical for first-time hosts. Follow with a bright living room shot to showcase the primary social space.",
+    "key_diagnosis": [
+      "Listing\u2019s occupancy (25%) is 56% below market median (47.8%), while rate is only +9% over median (\u00a3154.60 vs \u00a3168.57) \u2013 price is not the main issue",
+      "No amenities listed at all despite high-value categories like parking/outdoor space being common proximity wins in this market",
+      "Title\u2019s 'Ideal for Relocators' niche limits discovery to 9% of market vs broad 201-listing reach when using core descriptors like 'Entire Home for 6 Guests'"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 68 open nights remaining at \u00a3168.57/night, improving occupancy from 25% to the Warrington average 48% would generate an additional \u00a36,070 in potential revenue this season",
+    "weakest_element": "description"
+  }
+}

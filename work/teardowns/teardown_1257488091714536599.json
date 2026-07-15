@@ -1,0 +1,39 @@
+{
+  "listing_id": "1257488091714536599",
+  "host_name": "Ahmed",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 194.4,
+    "occupancy_pct": 37.0,
+    "open_nights_90d": 57,
+    "revenue_at_stake_gbp": 11080.8
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Panoramic Duplex Penthouse + Parking \u2013 City View",
+      "Luxury 2\u2011Bed Penthouse with Skyline Views",
+      "Spacious Duplex with Parking & Panoramic Views"
+    ],
+    "rewritten_desc": "Welcome to a modern duplex penthouse that combines spacious living with breathtaking panoramic views and the convenience of private parking. This entire\u2011home retreat comfortably sleeps up to four guests, making it perfect for families, small groups, or business travelers seeking a touch of luxury. Step inside to discover a bright, open\u2011plan living area that showcases floor\u2011to\u2011ceiling windows framing the city skyline \u2013 an ideal backdrop for morning coffee or evening relaxation. The well\u2011equipped kitchen provides all the essentials for self\u2011catering, while the two thoughtfully designed bedrooms ensure restful nights. A dedicated parking space removes the hassle of street parking, giving you peace of mind throughout your stay. Rated 4.97 from 253 reviews, our guests consistently praise the immaculate condition, attentive host support, and the unforgettable views. At \u00a3194.40 per night, you enjoy a premium experience that sits just 11% above the city\u2019s median rate of \u00a3175, yet our occupancy for the next 90 days stands at 37%, indicating strong demand. Book now to experience the blend of comfort, style, and convenience that makes this penthouse a standout choice for your next visit.",
+    "top_amenity_gaps": [
+      "Outdoor space \u2013 no balcony or terrace highlighted",
+      "Parking \u2013 not listed as an amenity despite being a selling point",
+      "Entertainment \u2013 absence of TV, streaming or gaming options"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution shot of the living area looking out over the city skyline as the cover photo; it instantly showcases the panoramic views and the premium feel of the penthouse.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3194.4 is 11% higher than the cohort median (\u00a3175) while occupancy is only 37% \u2013 lowering the price could capture more bookings.",
+      "The title omits location and SEO\u2011friendly keywords; adding the city name and key amenity can improve search visibility.",
+      "No amenities are listed despite having parking and potential outdoor space \u2013 adding these to the listing will raise the amenity score and appeal."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 37% occupancy at a \u00a3194.4 nightly rate\u201411% above market\u2014means you could boost bookings by adjusting price.",
+    "weakest_element": "description"
+  }
+}

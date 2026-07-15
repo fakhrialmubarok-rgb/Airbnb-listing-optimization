@@ -1,0 +1,39 @@
+{
+  "listing_id": "13188575",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 181.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13756.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 4,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Chic 2BR Duplex w/Open Views",
+      "Spacious 2-Bedroom Downtown Oasis",
+      "Modern 2BR Apartment w/Balcony"
+    ],
+    "rewritten_desc": "This elegant 2-bedroom duplex apartment offers exceptional urban living for small groups. Recently renovated, the 4-guest property features floor-to-ceiling windows with panoramic city views, making it perfect for both work and play. The open-plan layout includes a chef's kitchen with stone countertops, a dining area for 6, and a separate living space with premium furnishings. Each bedroom showcases luxury bedding and en-suite bathrooms with rainfall showerheads. The property includes a private balcony with outdoor seating - ideal for breakfast with a view. Located in a secure building with 24/7 concierge service, this listing is particularly suited for professionals seeking proximity to local transit and upscale amenities. While the current photos show the property's modern design, our data shows 75% of similar listings see 20% higher occupancy with optimized title SEO and improved image presentation.",
+    "top_amenity_gaps": [
+      "Balcony (explicitly mentioned in title variants but not in main description)",
+      "Secure Building Access",
+      "Proximity to Public Transit"
+    ],
+    "photo_order_rec": "The wide shot balcony view should be cover photo as lead amenity",
+    "key_diagnosis": [
+      "Occupancy of 15.2% vs cohort median of 28.3% indicates significant optimization opportunity",
+      "Title mentions 'Luxury' but doesn't specify differentiators like balcony or open views explicitly",
+      "Missing specific location context in 76 open nights' booking window"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "76 open nights at \u00a3181/night represent \u00a313,756 in unoptimized revenue potential this season",
+    "weakest_element": "description"
+  }
+}

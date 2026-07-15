@@ -1,0 +1,39 @@
+{
+  "listing_id": "1700442727798743819",
+  "host_name": "Northside Abodes",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 191.4,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 10718.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 4,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury 3BR + Parking near City Centre",
+      "Spacious 3\u2011Bedroom Suite Steps from Ponds Forge",
+      "Juliette Balcony Luxury Apt, Secure Parking"
+    ],
+    "rewritten_desc": "Experience the height of city\u2011side luxury in this spacious three\u2011bedroom apartment on Fitzalan Square, just minutes from the Ponds Forge International Sports Centre. The open\u2011plan living area greets you with three 65\u201d 4K Smart TVs, fast Wi\u2011Fi and a sleek, fully equipped kitchen ready for gourmet meals. Both the living room and the master bedroom open onto charming Juliette balconies that flood the space with natural light. \n\nThree beautifully styled bedrooms comfortably sleep up to eight guests: the master boasts a king\u2011size bed, wardrobe and its own balcony; the second bedroom offers a king\u2011size bed, wardrobe and a handy workspace; the third bedroom features a cozy double bed. A modern bathroom features a walk\u2011in shower, contemporary fixtures and ample mirrors. \n\nParking is a breeze with a discounted, secure spot at Q\u2011Park Riverside\u201475% off for guests who pre\u2011book. The apartment is stocked with essentials such as hairdryer, premium toiletries, fresh linen, extra pillows, blackout blinds, and a full set of entertainment options. Whether you\u2019re visiting for sport, business, or leisure, this elegant, well\u2011appointed home provides everything you need for a memorable Sheffield stay.",
+    "top_amenity_gaps": [
+      "Air conditioning",
+      "Tumble dryer",
+      "Essential welcome kit (coffee/tea, basic pantry items)"
+    ],
+    "photo_order_rec": "Use a bright living\u2011room image showing the Juliette balcony as the cover photo\u2014it showcases the open layout, luxury finishes, and a key differentiator in a single glance.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3191.4 (82% above the \u00a3104.90 median) to improve the 90\u2011day occupancy, which is currently only 38% versus the market 48.9% median.",
+      "Add high\u2011impact amenities such as air conditioning and a tumble dryer, and provide a basic essentials kit, to close the most noticeable gaps compared with competitor listings.",
+      "Increase the photo count from 16 to at least the market median of 23 and reorder so the living\u2011room balcony shot leads, adding a few lifestyle images of the neighbourhood and amenities."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is 82% higher than the city median, yet your 90\u2011day occupancy sits at just 38% versus a 48.9% market average.",
+    "weakest_element": "amenities"
+  }
+}

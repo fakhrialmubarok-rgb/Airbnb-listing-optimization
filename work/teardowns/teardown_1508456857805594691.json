@@ -1,0 +1,39 @@
+{
+  "listing_id": "1508456857805594691",
+  "host_name": "Lime Green",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 60.0,
+    "occupancy_pct": 30.4,
+    "open_nights_90d": 63,
+    "revenue_at_stake_gbp": 3780.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Flat \u2013 66% Below City Avg \u00a360/night",
+      "Cozy Ground Flat for 4 \u2013 Only \u00a360/night",
+      "Budget City Stay \u2013 4 Guests, \u00a360 Nightly"
+    ],
+    "rewritten_desc": "Welcome to the Ground Flat, a bright entire\u2011home retreat in the heart of the city, perfect for up to four guests. At just \u00a360 per night, this space is priced 66\u202f% below the city\u2019s median nightly rate of \u00a3175, delivering exceptional value without compromising comfort. The flat features a comfortable living area, a fully equipped kitchen, and two cozy bedrooms that can accommodate families, friends, or business travellers. Although the listing has not yet earned Superhost status, it already boasts a solid 4.1 rating from 154 reviews, reflecting consistent guest satisfaction.\n\nThe host, Lime Green, is new to hosting but is eager to provide a welcoming experience. Over the next 90 days the flat is only 30.4\u202f% booked, leaving 63 open nights that could be filled with the right enhancements. While no specific amenities are listed, there is ample opportunity to add high\u2011value perks such as outdoor seating, free parking, and entertainment options like a smart TV and fast Wi\u2011Fi. By showcasing each room with high\u2011quality photos \u2013 living room, kitchen, bedrooms, and bathroom \u2013 and highlighting the unbeatable price, you can attract more bookings and improve occupancy. Book the Ground Flat today and enjoy a comfortable, affordable stay in a prime location.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or garden)",
+      "Parking and facilities (free on\u2011site parking)",
+      "Entertainment (TV, streaming, fast Wi\u2011Fi)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011staged living\u2011room shot as the cover photo; it instantly conveys space and comfort and pairs well with the low price point, encouraging clicks.",
+    "key_diagnosis": [
+      "Highlight the -66% price advantage (\u00a360 vs \u00a3175 median) in the title and description to attract price\u2011sensitive travelers.",
+      "Add the three high\u2011value amenity categories (outdoor, parking, entertainment) to meet guest expectations and boost occupancy; currently none are listed.",
+      "Upload at least 8 professional photos covering the living area, kitchen, each bedroom, bathroom, and exterior to replace the unknown current photo set and improve conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your flat is priced at \u00a360/night \u2013\u202f66% below the city median of \u00a3175 \u2013 yet it\u2019s only 30.4% booked for the next 90 days, leaving 63 open nights you could fill.",
+    "weakest_element": "photos"
+  }
+}

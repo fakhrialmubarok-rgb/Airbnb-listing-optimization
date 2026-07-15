@@ -1,0 +1,39 @@
+{
+  "listing_id": "1633443863534831063",
+  "host_name": "Global Housing",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 103.0,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 5768.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "2BR Manchester Home \u2013 33% Below Avg Rate",
+      "Cozy 2BR for 4 Guests \u2013 \u00a3103 Nightly",
+      "Family\u2011Friendly 2BR Near Manchester Centre"
+    ],
+    "rewritten_desc": "Welcome to your stylish 2\u2011bedroom home in the heart of Manchester, perfect for families or groups of up to four guests. This entire\u2011home rental offers a bright living area, fully equipped kitchen, two comfortable bedrooms and a clean bathroom, all designed for a hassle\u2011free stay. Rated 4.82 from 17 guest reviews, the property consistently earns praise for its cleanliness and convenient layout. You\u2019ll enjoy a nightly rate of \u00a3103, which is 33\u202f% lower than the city\u2019s median of \u00a3154.60, giving you excellent value without compromising comfort. While the next 90 days show a 38\u202f% occupancy (56 open nights), there\u2019s ample opportunity to attract more bookings by highlighting the price advantage and adding a few high\u2011impact amenities. The home is located in a well\u2011connected Manchester neighbourhood, close to public transport, shops, and popular attractions, making it easy to explore the city. Though the host is not yet a Superhost, the strong rating and positive feedback demonstrate a commitment to guest satisfaction. Book now to experience a cozy Manchester stay at an unbeatable price, and enjoy the flexibility of a fully self\u2011catered space where you can relax after a day of sightseeing or business.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden or patio)",
+      "Free parking",
+      "Entertainment (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011lit living\u2011room shot as the cover photo\u2014it showcases the main gathering space and sets an inviting tone for potential guests.",
+    "key_diagnosis": [
+      "Highlight the 33\u202f% price advantage in the title and description to turn the low nightly rate into a strong selling point (rate \u00a3103 vs median \u00a3154.60).",
+      "Add at least 3 high\u2011value amenities (e.g., free parking, outdoor patio, streaming TV) to address the top amenity gaps and boost perceived value.",
+      "Upload a minimum of 8 high\u2011quality photos covering the living room, kitchen, both bedrooms, bathroom, and exterior to improve the image score (currently unknown/low)."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Even though you\u2019re charging \u00a3103/night\u201433\u202f% below Manchester\u2019s median\u2014you\u2019re only at 38\u202f% occupancy over the next 90 days.",
+    "weakest_element": "photos"
+  }
+}

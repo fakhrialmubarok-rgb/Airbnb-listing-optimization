@@ -1,0 +1,39 @@
+{
+  "listing_id": "54188808",
+  "host_name": "Catherine",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 2540.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 193040.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Bell Heath Luxury Villa \u2013 \u00a32,540/night",
+      "Spacious 4\u2011Guest Home \u2013 Prime Location",
+      "High\u2011End Villa Near Attractions \u2013 Book Now"
+    ],
+    "rewritten_desc": "Welcome to Bell Heath, an entire home designed for comfort and style. Hosted by Catherine, this property has earned a 4.72 rating from 439 guests, reflecting consistent quality and attention to detail. The villa comfortably accommodates up to four guests, making it ideal for small families or a group of friends seeking a private retreat. Each night is priced at \u00a32,540, offering a premium experience in a sought\u2011after location. Although the listing is new \u2013 Catherine has just begun hosting \u2013 the high review score demonstrates early guest satisfaction. Over the next 90 days, only 15.2% of the nights are booked, leaving 76 open nights that you can fill with the right pricing and marketing strategy. The home features a fully equipped kitchen, spacious living area, comfortable bedrooms, and modern bathrooms, ensuring a seamless stay. While no specific amenities are listed, you can expect the basics needed for a comfortable visit. Book Bell Heath today to enjoy a high\u2011quality stay with the personal touch of a dedicated host, and take advantage of the ample availability to plan your perfect getaway.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, or pool)",
+      "Dedicated parking for guests",
+      "Entertainment options (TV, games, streaming services)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution exterior/front\u2011of\u2011property shot as the cover photo\u2014it instantly showcases the villa\u2019s scale and appeal, drawing guests in before they explore interior images.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a32,540 is 1,543% higher than the city median (\u00a3154.60) while your 90\u2011day occupancy is only 15.2% (76 open nights); lowering the price will dramatically improve bookings.",
+      "No high\u2011value amenities are listed; adding and highlighting outdoor space, on\u2011site parking, and entertainment will align the listing with the top\u2011performing cohort.",
+      "The listing lacks professional photos; upload clear images of every room and set an attractive exterior shot as the cover to increase click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing charges \u00a32,540/night \u2013 over 1,500% above the city median \u2013 yet only 15% of your nights are booked.",
+    "weakest_element": "description"
+  }
+}

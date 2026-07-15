@@ -1,0 +1,39 @@
+{
+  "listing_id": "49686821",
+  "host_name": "Karen",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 107.0,
+    "occupancy_pct": 40.2,
+    "open_nights_90d": 54,
+    "revenue_at_stake_gbp": 5778.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Affordable Studio in Newcastle Quayside",
+      "4-Guest Studio Near Newcastle Waterfront",
+      "Budget-Friendly Quayside Studio"
+    ],
+    "rewritten_desc": "This fully privatized studio apartment in Newcastle's thriving Quayside area gives guests (154 reviewers have confirmed) a top-rated stay with a 4.97 rating. Located 0.3 miles from Newcastle Castle and 0.5 miles from the River\u7554 promenade, guests enjoy free on-site parking (subject to availability) and walking distance to bars/restaurants. The compact but functional layout sleeps 4 guests, making it ideal for small families or groups. With nightly stays priced at \u00a3107 (31% below the \u00a3154.60 area average), your \u00a3107 rate means \u00a35,778 in potential revenue across the 54 available nights in 2023. Previous guests praise the clean, modern space (though note there is currently no listing of key amenities like outdoor space or streaming services). Secure your stay now for a stress-free holiday in one of the city's most dynamic areas.",
+    "top_amenity_gaps": [
+      "Free parking confirmation",
+      "Outdoor seating area",
+      "High-speed Wi-Fi confirmation"
+    ],
+    "photo_order_rec": "Showcase the living room first to emphasize spatial efficiency in the 25m\u00b2 studio and capture attention with this room's primary quayside orientation",
+    "key_diagnosis": [
+      "\u00a3107 rate is -\u00a347.60 vs \u00a3154.60 median but occupancy is -7.6pp lower (40.2% vs 47.8%)",
+      "0 listed amenities vs cohort's average of 15+ standard offerings",
+      "52-character title exceeds 50-char limit by 2 characters"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3107 rate lags 31% behind city median, yet occupancy remains 7.6pp under average at 40.2% - suggesting untapped potential by better matching guest expectations",
+    "weakest_element": "title"
+  }
+}

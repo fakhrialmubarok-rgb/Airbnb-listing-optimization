@@ -1,0 +1,39 @@
+{
+  "listing_id": "957033342504731095",
+  "host_name": "Helen",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 89.2,
+    "occupancy_pct": 22.8,
+    "open_nights_90d": 69,
+    "revenue_at_stake_gbp": 6154.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 4,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "\u00a389 1-Bed Apartment (50% Cheaper than Market)",
+      "Cozy 1-Bed Home Next to City Center",
+      "High-Traffic 1-Bed Apt in [City Name] for \u00a389"
+    ],
+    "rewritten_desc": "Enjoy this stylish one-bedroom apartment just moments from [City Name]\u2019s top attractions. Priced at \u00a389/night\u201450% below the local market average\u2014this listing offers incredible value for 4 travelers. While photos show a warm, modern interior with functional space for two. Pro tip: The market median occupancy for similar properties is 48% (you\u2019re currently at 23%), suggesting untapped potential to boost bookings. Guests praise the convenience of being \u2018next door\u2019 to key amenities, with 74 travelers awarding an impressive 4.95 rating. Note: To match nearby listings' appeal, consider adding missing outdoor space, parking confirmation, or entertainment features.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g. balcony/terrace)",
+      "Verified parking availability",
+      "Entertainment features (e.g. streaming devices)"
+    ],
+    "photo_order_rec": "Prioritize an exterior photo with visible entryway to establish safety and location cues. Follow with the brightest room that demonstrates spatial flow, as the current lead image may be too small/cropped to convey true layout.",
+    "key_diagnosis": [
+      "Your \u00a389 rate (-42% vs \u00a3155 median) isn't translating to better occupancy (23% vs cohort median 48%)",
+      "Title lacks SEO value\u2014'Next Door' is vague and not location-specific",
+      "No amenities listed under Outdoor/Parking/Entertainment categories that could explain low occupancy"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a389 rate is 42% lower than the local median, yet occupancy remains 23% (vs cohort average 48% for similar homes).",
+    "weakest_element": "title"
+  }
+}

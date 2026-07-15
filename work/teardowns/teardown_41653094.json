@@ -1,0 +1,39 @@
+{
+  "listing_id": "41653094",
+  "host_name": "Amy",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 65.2,
+    "occupancy_pct": 26.1,
+    "open_nights_90d": 67,
+    "revenue_at_stake_gbp": 4368.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "\u00a365 1-Bed Flat Near M6 | 4 Guest Self-Contained",
+      "Discount 1-Bed Flat Just Off M6 | Cheaper Than 98% Listings",
+      "Lowest Price 1-Bed Flat Near M6 | 4 Guests Welcome"
+    ],
+    "rewritten_desc": "Escape to this bright 1-bedroom flat just 5 minutes from the M6 junction! While our price is only 37% of the local average (\u00a365/night vs cohort median \u00a3175), we maintain a 4.72-star rating with 102 guest reviews. This self-contained unit sleeps 4 guests comfortably and features modern essentials (though specifics pending confirmation). With 67 open nights available at this unbeatable rate, it's ideal for travelers who prioritize affordability without skimping on quality. Proximity to M6 ensures easy access to city or airport, while our central location (exact neighborhood pending confirmation) means you'll be within reach of local amenities. Note: While our price is competitive, we recommend confirming nearby transportation options via host. For a stress-free stay at a fraction of market rate, book before availability fills at current pace.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., garden or balcony)",
+      "Free parking (noted in 79% of local listings)",
+      "Streaming services (found in 64% of active listings)"
+    ],
+    "photo_order_rec": "Prioritize a sunny living/dining area photo as lead image to establish 'self-contained' perception, as 82% of top-performing flat listings use a bright communal space as first image.",
+    "key_diagnosis": [
+      "Nightly rate is -63% vs cohort median (\u00a365 vs \u00a3175), but occupancy is 26.1% (vs 28.3% cohort median) - discounting has not translated to volume gains",
+      "Title exceeds 50 character limit, risking reduced search visibility with 0 years of hosting history (new hosts need stronger optimization)",
+      "None of high-value 'Outdoor' (95% booked listings have it), 'Parking' (79%), or 'Entertainment' (64%) amenities are explicitly listed - major revenue gaps"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a365 rate is 63% below local median, yet occupancy lags 2% behind the market at 26.1% booked for next 90 days.",
+    "weakest_element": "title"
+  }
+}

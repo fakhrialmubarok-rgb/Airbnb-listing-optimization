@@ -1,0 +1,39 @@
+{
+  "listing_id": "1030391868050628245",
+  "host_name": "Denise",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 107.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 7918.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Cozy Little Den in [Location] from \u00a3107",
+      "Hidden Gem in [Location] - Book Now!",
+      "Intimate [Location] Retreat for \u00a3107"
+    ],
+    "rewritten_desc": "Escape to our charming Little Den, a cozy home away from home in the heart of [Location]. This quaint retreat sleeps up to 4 guests and offers a serene atmosphere perfect for relaxing holidays. Our home is conveniently located near [proximity to local amenities]. With your own private key, you can enjoy the freedom to come and go as you please. Our guests have left us with a 4.76/5 rating, and we can't wait to welcome you. Whether you're exploring the local culture, trying new foods, or simply unwinding after a long day, our Little Den has everything you need for an unforgettable stay.",
+    "top_amenity_gaps": [
+      "Parking facilities to cater to our guests' needs",
+      "Outdoor spaces to unwind and soak up the atmosphere",
+      "Entertainment options to elevate their stay experience"
+    ],
+    "photo_order_rec": "The exterior of the home should be the cover photo, as it gives a great first impression of the surroundings and sets the tone for the Little Den's cozy ambiance. Alternatively, consider showcasing the interior's cozy living area, which would immediately convey the sense of a snug and welcoming space.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3107 is 38.3% below the cohort median, which may be negatively impacting occupancy (currently 17.4% booked vs 28.3% cohort median). Consider increasing your rate to \u00a3145.90 to stay competitive.",
+      "As a new host with 0 years of experience and an average guest rating of None, building credibility and showcasing your hosting skills is crucial for attracting new guests",
+      "Your occupancy rate of 17.4% suggests you have 74 open nights in the next 90 days. Analyze your calendar to identify slow periods and adjust your pricing or promotion strategies accordingly"
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By filling the gaps in our amenities and adjusting our pricing, we can increase our nightly rate to \u00a3145.90 and potentially boost occupancy to 24.5% (midpoint between current and cohort medians)",
+    "weakest_element": "photos"
+  }
+}

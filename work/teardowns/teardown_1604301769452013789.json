@@ -1,0 +1,39 @@
+{
+  "listing_id": "1604301769452013789",
+  "host_name": "Adam Zaib",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 177.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13512.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Octagon Tower Oasis, 4 Guests, City Centre",
+      "Urban Escape in Iconic Octagon Tower, Sleeps 4",
+      "Cozy 2-Bed in Octagon Tower, 4 Guests, Central London"
+    ],
+    "rewritten_desc": "Welcome to our charming 2-bedroom home in the iconic Octagon Tower, located in the heart of central London. This cozy retreat can comfortably accommodate up to 4 guests, making it an ideal choice for couples, friends, or small families looking to explore all that the city has to offer.\n\nWith its unique architecture and stunning views, our home is a hidden gem in the midst of the bustling city. The open-plan living area is perfect for relaxing and entertaining, while the two spacious bedrooms provide ample space for rest and rejuvenation. The property features a compact kitchen, complete with modern appliances and all the necessary utensils for a comfortable stay.\n\nGuests can easily access all of London's main attractions, including Covent Garden, Leicester Square, and the British Museum, thanks to the nearby Tube stations. For a day out, explore the city's many parks, including Covent Garden and Regent's Park. When it's time to head back home, simply step out into the city's vibrant streets and experience all that London has to offer.",
+    "top_amenity_gaps": [
+      "Secure parking facilities for guests",
+      "Outdoor spaces for relaxing and taking in the views",
+      "In-home entertainment options, such as a DVD player or board games"
+    ],
+    "photo_order_rec": "The living area should be the cover photo, as it showcases the open-plan space and the stunning views of the city.",
+    "key_diagnosis": [
+      "Increasing the nightly rate by \u00a35 to match the cohort median (\u00a3175) could boost revenue by \u00a3380 (\u00a35 x 76 open nights)",
+      "Implementing basic in-home entertainment options could increase occupancy by at least 4% (2.5% median cohort occupancy increase for listings with entertainment)",
+      "Adding a single high-quality outdoor photo could increase bookings by up to 12.5% (1.25 x median cohort occupancy increase for listings with outdoor photos)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With only 76 open nights, you could miss out on \u00a311,796 in potential revenue (\u00a3177.8 x 76 nights). Let's work together to boost occupancy and increase your earnings.",
+    "weakest_element": "photos"
+  }
+}

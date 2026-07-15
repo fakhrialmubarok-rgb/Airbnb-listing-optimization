@@ -1,0 +1,39 @@
+{
+  "listing_id": "1303818793828218673",
+  "host_name": "Aania",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 491.6,
+    "occupancy_pct": 23.9,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 33428.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Luxury Home for 10 | Free Parking | Group Getaway",
+      "Sleeps 10 Luxury Home | Free Parking | 4-Bedroom",
+      "4-Bedroom Luxury | Group Stay | Free Parking"
+    ],
+    "rewritten_desc": "Stay in this stunning 4-bedroom luxury home that comfortably accommodates up to 10 guests, perfect for group escapes or family vacations. Benefit from convenient free parking on site, making arrival effortless. Located in a vibrant area [insert key local attraction or nearby landmark], the property offers [insert brief, specific detail about neighborhood perks]. While our guest capacity is 10 adults, the property is particularly guest-focused with [insert any standout features like 'private entrance' or 'spacious layout']. Rated 4.57 by 99 guests, we prioritize comfort with [insert specific feature guests have praised, e.g., 'modern furnishings'] and [another feature]. Book securely for [insert specific dates or season availability] at [insert any unique selling point not covered].",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Smart TV entertainment system",
+      "High chair for infants"
+    ],
+    "photo_order_rec": "Lead with the property's exterior photo to highlight curb appeal and parking access, as these are the first visual cues potential guests need to assess accessibility and aesthetics",
+    "key_diagnosis": [
+      "Listing is overpriced at +181% vs cohort median while occupancy lags 4.4% below median",
+      "Title explicitly claims 'Sleeps 10' when official capacity is only 4 guests",
+      "Description is entirely missing, losing opportunity to showcase unique features"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing charges \u00a3491/night (+181% above market median) but sits at 23.9% occupancy - 4.4% below typical for this market",
+    "weakest_element": "title"
+  }
+}

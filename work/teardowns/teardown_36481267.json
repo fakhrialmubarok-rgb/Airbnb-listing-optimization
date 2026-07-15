@@ -1,0 +1,39 @@
+{
+  "listing_id": "36481267",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 372.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 28317.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Spacious 10-Bed Home for 4 Guests",
+      "Affordable Luxury | 4 Guests Max",
+      "\u00a3372/Night for Family 4 Sleeps"
+    ],
+    "rewritten_desc": "Welcome to this expansive family home offering exceptional space at a premium rate. While our nightly rate of \u00a3372.60 exceeds the local median by 113% (market avg: \u00a3175/night), we aim to provide unmatched comfort for groups of up to 4 guests. With 10 beds available across the property, family reunions, multi-generational vacations, or large work crews can find ample room to spread out. We are just 480 reviews in but remain dedicated to 5-star service. \n\nThough our current 90-day occupancy (15.2%) lags behind the market average (28.3%), we're proud of our 4.31-star rating and commitment to creating a warm, welcoming atmosphere for all guests. No need to worry about travel logistics - just bring your group and enjoy the comforts of [insert specific features if available]. \n\nBook in advance to secure the best rates and experience what makes this property a standout choice. We're constantly working to improve and would love the opportunity to host you.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "Dedicated parking space",
+      "Smart TV with streaming services"
+    ],
+    "photo_order_rec": "Prioritize a wide-angle shot of the living area as the cover photo to showcase the home's spacious layout for groups - this room type drives the strongest engagement for family-oriented listings in this market.",
+    "key_diagnosis": [
+      "Title falsely implies sleeps 10 beds but only accommodates 4 guests (capacity mismatch)",
+      "Nightly rate \u00a3372.60 is 113% above cohort median (\u00a3175) with 90-day occupancy (15.2%) 44% below market (28.3%)",
+      "No amenities listed in 480-review history despite high-value categories missing (outdoor, parking, entertainment)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3372.60/night rate is 113% above local median but occupancy is only 15.2% vs 28.3% average in your area - I'll show how to fix this pricing/performance gap",
+    "weakest_element": "title"
+  }
+}

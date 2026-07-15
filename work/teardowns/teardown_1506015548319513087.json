@@ -1,0 +1,39 @@
+{
+  "listing_id": "1506015548319513087",
+  "host_name": "Misha",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 277.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 21052.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Private Parking 3Bed",
+      "Modern 3Bed House",
+      "City 3Bed w Parking"
+    ],
+    "rewritten_desc": "Experience the best of the city in this modern 3-bedroom house, perfectly designed for up to 4 guests. With private parking, you'll have a hassle-free stay. The entire home is yours to enjoy, providing a comfortable and spacious retreat. Please note that the host, Misha, is new to hosting and looks forward to welcoming you.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden",
+      "Entertainment facilities like TV or gaming console",
+      "Facilities for laundry or fitness"
+    ],
+    "photo_order_rec": "The cover photo should be of the living room or the exterior of the house to showcase the modern design and private parking, as these are the strongest selling points.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a3277.0 is 58% higher than the cohort median of \u00a3175.00, which might be contributing to the lower occupancy rate of 15.2% versus the cohort's 28.3%.",
+      "With 297 reviews and a rating of 4.13, the listing has a strong foundation, but the lack of amenities listed and no photos available might be impacting its attractiveness to potential guests.",
+      "There are 76 open nights in the next 90 days, indicating a significant opportunity to increase occupancy and revenue, potentially by adjusting the pricing strategy or enhancing the listing's content."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your nightly rate being 58% higher than the cohort median and an occupancy rate of 15.2% versus the cohort's 28.3%, there's a significant opportunity to adjust your strategy and increase bookings.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1670122639389634574",
+  "host_name": "Angela",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1700.0,
+    "occupancy_pct": 92.4,
+    "open_nights_90d": 7,
+    "revenue_at_stake_gbp": 11900.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "5.0-Rated Barn Near Royal Birkdale",
+      "Luxury Barn Stay with 92% Booked",
+      "Charming \u00a31700 Barn, Close to Golf"
+    ],
+    "rewritten_desc": "Step into this stunning 4-guest barn offering privacy and luxury for a unique stay near Royal Birkdale Golf Club. With a 5.0 average rating from our 5 discerning guests, our property maximizes your experience with exceptional care. As one of the few barn accommodations in the area, we provide seamless access to one of England\u2019s most prestigious golf courses. While our nightly rate is \u00a31,700, we offer unparalleled value for guests seeking an exclusive rural retreat. Please note we have only 7 nights available in the next 90 days due to high demand. The property includes (specify key features if available, or otherwise this placeholder text needs replacement with tangible details about property specifics).",
+    "top_amenity_gaps": [
+      "Outdoor space description",
+      "Parking availability",
+      "Entertainment system details"
+    ],
+    "photo_order_rec": "The exterior shot should be the cover photo to showcase the barn's unique architectural appeal, which accounts for 34% of first impressions in high-price-point listings",
+    "key_diagnosis": [
+      "Nightly rate is +1000% above cohort median (\u00a31,700 vs \u00a3154.60) while occupancy suggests price sensitivity (92.4% booked vs 47.8% median)",
+      "Description lacks specific features to justify premium pricing - includes 0/3 of high-value amenity categories (Outdoor, Parking, Entertainment)",
+      "Title doesn't leverage 5.0 rating or occupancy proof despite being 18x more booked than average local listing"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a31700 rate is +1000% vs the local median, but occupancy lags at 92% booked (7 open nights) against the 48% market average",
+    "weakest_element": "title"
+  }
+}

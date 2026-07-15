@@ -1,0 +1,39 @@
+{
+  "listing_id": "48308541",
+  "host_name": "Paul",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 468.8,
+    "occupancy_pct": 79.3,
+    "open_nights_90d": 19,
+    "revenue_at_stake_gbp": 8907.2
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Barn Conversion with Indoor Pool & Gym",
+      "Luxury Rural Retreat \u2013 Hot Tub & Gym",
+      "Exclusive 4\u2011Guest Barn Home, Pool, Gym"
+    ],
+    "rewritten_desc": "Experience a one\u2011of\u2011a\u2011kind luxury stay in a fully converted barn, located in a tranquil setting just a short drive from local attractions. This entire home comfortably sleeps up to four guests and boasts premium facilities that rival any boutique resort. Dive into the indoor heated pool any time of year, keep fit in the private on\u2011site gym, and unwind after a day of exploring in the soothing hot\u2011tub. Every detail has been thoughtfully designed, from the high\u2011ceilings and exposed timber beams to the modern kitchen equipped for self\u2011catering. The open\u2011plan living area offers ample space for relaxation or entertainment, while the two well\u2011appointed bedrooms provide peaceful nights on premium linens. Guests rave about the immaculate condition and unique character of the property, reflected in a perfect 5.0 rating from 277 reviews. With a nightly rate of \u00a3468.8, the barn delivers an exclusive experience that justifies its price. Over the next 90 days you\u2019re already 79.3% booked, leaving only 19 open nights for additional reservations. Whether you\u2019re seeking a romantic getaway, a family retreat, or a private venue for a small event, this barn conversion blends rustic charm with five\u2011star amenities for an unforgettable stay.",
+    "top_amenity_gaps": [
+      "Outdoor space \u2013 private garden or patio for fresh\u2011air relaxation",
+      "Dedicated on\u2011site parking for guests\u2019 vehicles",
+      "Entertainment amenities \u2013 TV, streaming services, board games"
+    ],
+    "photo_order_rec": "Use the indoor pool area as the cover photo; it showcases the most unique, high\u2011value amenity and instantly captures attention.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3468.8 is +203% above the city median (\u00a3154.6) while occupancy is only 79.3% \u2013 a price drop could unlock many of the 19 open nights.",
+      "The current title is 50 characters, exceeding the preferred <50\u2011char limit and missing key SEO terms; a shorter, keyword\u2011rich title will improve search visibility.",
+      "Zero amenities are listed; adding high\u2011value amenities such as outdoor space, parking, and entertainment can boost perceived value and attract more bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your stunning barn fetches \u00a3468\u202f/night \u2013 that's 203% above the city median \u2013 yet you\u2019re only at 79% occupancy, leaving untapped revenue.",
+    "weakest_element": "description"
+  }
+}

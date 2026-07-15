@@ -1,0 +1,39 @@
+{
+  "listing_id": "1158522880468263881",
+  "host_name": "Aura Home",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 85.0,
+    "occupancy_pct": 38.0,
+    "open_nights_90d": 56,
+    "revenue_at_stake_gbp": 4760.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "City Centre Home \u2013 45% Below Avg Price",
+      "Modern 4\u2011Guest Retreat \u2013 Only \u00a385/night",
+      "Cozy City Centre Apartment \u2013 Save \u00a370/night"
+    ],
+    "rewritten_desc": "Welcome to Aura Home, a bright, contemporary entire\u2011home retreat located in the heart of the city centre. Perfect for up to four guests, this stylish space offers easy access to the best restaurants, shops, and cultural attractions the city has to offer. With a guest\u2011rated score of 4.87 from 62 reviews, previous visitors praise the modern d\u00e9cor, comfortable sleeping arrangements, and the convenience of being steps from public transport.\n\nAt just \u00a385 per night, Aura Home is priced about 45% lower than the local market median of \u00a3154.60, giving you exceptional value without compromising on quality. The home features a fully equipped kitchen, a spacious living area with large windows that let in natural light, and a clean, modern bathroom. While the listing currently has no highlighted amenities, you\u2019ll enjoy fast Wi\u2011Fi, a flat\u2011screen TV, and essential comforts to make your stay effortless.\n\nOccupancy for the upcoming 90 days sits at 38%, leaving 56 open nights that could be filled by savvy travelers seeking a budget\u2011friendly city\u2011centre stay. Whether you\u2019re visiting for work, leisure, or a weekend getaway, Aura Home provides a comfortable, centrally located base at a price that\u2019s hard to beat. Book now and experience the perfect blend of style, location, and savings.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or patio)",
+      "Dedicated parking or secure bike storage",
+      "Entertainment options such as a smart TV or streaming services"
+    ],
+    "photo_order_rec": "Use a bright, well\u2011lit living\u2011room shot that showcases the contemporary design and city\u2011center windows as the cover photo; it instantly conveys style and location.",
+    "key_diagnosis": [
+      "Occupancy is only 38% booked for the next 90 days (56 open nights) despite a nightly rate 45% below the cohort median (\u00a385 vs \u00a3154.60) \u2013 run targeted promotions and dynamic pricing to capture price\u2011sensitive demand.",
+      "No amenities are listed, missing high\u2011value categories like outdoor space, parking, and entertainment \u2013 add and highlight these to increase perceived value and attract more bookings.",
+      "The current title does not mention the 45% price advantage; rewrite the title to feature this differentiator and improve SEO, which can boost click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your home is priced 45% below the city average (\u00a385 vs \u00a3154) yet only 38% booked for the next 90 days \u2013 we can turn that gap into higher occupancy.",
+    "weakest_element": "description"
+  }
+}

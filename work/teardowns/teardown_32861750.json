@@ -1,0 +1,37 @@
+{
+  "listing_id": "32861750",
+  "host_name": "Ray",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 214.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 16264.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Central 1BR + 1BA Apartment for 4 Guests",
+      "City Centre 1BR Apartment with Open Layout",
+      "1 Bedroom Apartment in Heart of the City"
+    ],
+    "rewritten_desc": "Welcome to this charming central apartment ideal for 4 guests. Located in the vibrant city center, this 1-bedroom, 1-bathroom apartment offers a perfect blend of comfort and convenience. Enjoy modern amenities, natural light, and a welcoming open-plan layout perfect for relaxation and socializing. Just minutes from top attractions, shops, and restaurants, this location gives you front-row access to the city's best experiences. The apartment sleeps 4 with a comfortable bedroom, a sofa that can accommodate a second guest, and a compact yet functional kitchenette. Recent guests praise the apartment\u2019s prime location and cleanliness, with an impressive 4.95 rating (63 reviews). For longer stays, this property offers excellent value per night at \u00a3214, significantly higher than the market median to ensure premium quality stays. Guests particularly appreciate the quiet yet central setting, and while the current configuration meets basic needs, upgrading amenities like outdoor space, parking, and entertainment features could further appeal to diverse travelers. Book this sought-after apartment today and enjoy the ease of a hassle-free check-in and reliable maintenance support.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio/balcony)",
+      "On-site parking options",
+      "Entertainment system (TV/sound system)"
+    ],
+    "photo_order_rec": "Prioritize a living room shot as the cover photo to showcase space layout, which is critical for 1BR listings where guests prioritize open floorplans and seating capacity.",
+    "key_diagnosis": [
+      "\u00a3214 rate is 22% above the \u00a3175 cohort median while occupancy only at 15.2% vs median 28.3%"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3214 rate is 22% above the average city center rate but occupancy at just 15% suggests significant opportunity to align pricing with performance benchmarks",
+    "weakest_element": "title"
+  }
+}

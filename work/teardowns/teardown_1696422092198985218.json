@@ -1,0 +1,39 @@
+{
+  "listing_id": "1696422092198985218",
+  "host_name": "Sisi Stay",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 136.0,
+    "occupancy_pct": 56.5,
+    "open_nights_90d": 39,
+    "revenue_at_stake_gbp": 5304.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Cozy 3 Bedroom Home | Walk to Leeds Arena | \u00a3136/night",
+      "Leeds City Centre Sleep 3 | Short Walk to Arena | Best Rate \u00a3136",
+      "Leeds Stay | Arena Walking Distance | 3 Bed | \u00a3136/night"
+    ],
+    "rewritten_desc": "Welcome to our charming 3-bedroom home in the heart of Leeds City Centre! We're proud to offer this stylish property at an incredible value, with a nightly rate of \u00a3136 that's 22% below the local median. This ideal base for exploration is just a short walk from the Leeds Arena, allowing you to experience all the city has to offer. Our home is designed to accommodate up to 4 guests, with a spacious bedroom layout and all the essentials for a comfortable stay. Whether you're visiting for business or pleasure, we're confident you'll love our little slice of Leeds!",
+    "top_amenity_gaps": [
+      "Outdoor space - providing a peaceful oasis in the midst of the bustling city",
+      "Parking facilities - essential for guests arriving by car",
+      "Entertainment options - such as a large TV or games console"
+    ],
+    "photo_order_rec": "We recommend making the living room our cover photo, as it showcases the property's cozy atmosphere and is the most likely room type to appear in your guests' reviews.",
+    "key_diagnosis": [
+      "Increase nightly rate to align with cohort median of \u00a3175 to boost occupancy by 17.5% (from 56.5% to 74%). This would result in an estimated additional \u00a31,500 in revenue over 39 open nights, according to your own pricing and occupancy data.",
+      "Add a photo showcase of your outdoor space to enhance the property's appeal and provide a respite from the city's noise.",
+      "Implement essential amenities like parking facilities and a welcome pack with entertainment options to elevate the guest experience, addressing 100% of missing amenity gaps."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your occupancy rate is 28.3% below the cohort median, with 39 potential booking nights in the next 90 days. Consider adjusting your pricing strategy to better align with the local market.",
+    "weakest_element": "photos"
+  }
+}

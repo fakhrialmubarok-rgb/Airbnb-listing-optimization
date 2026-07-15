@@ -1,0 +1,39 @@
+{
+  "listing_id": "1289307186472810713",
+  "host_name": "Love Nest",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 151.9,
+    "occupancy_pct": 50.0,
+    "open_nights_90d": 45,
+    "revenue_at_stake_gbp": 6835.5
+  },
+  "analysis": {
+    "score_title": 7,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 5,
+    "title_variants": [
+      "Hot Tub Annexe for 4 \u2013 Outdoor Cinema Nights",
+      "Cozy 2\u2011Bedroom Retreat with Hot Tub & Cinema",
+      "Annexe for Two \u2013 Private Hot Tub & Cinema"
+    ],
+    "rewritten_desc": "Welcome to your private, cosy annexe \u2013 an entire home perfectly designed for up to four guests. Rated 4.92 from 110 glowing reviews, this space blends comfort with unforgettable entertainment. The bedroom area comfortably sleeps two, while a stylish sofa bed in the living area provides space for two more, making it ideal for couples, small families, or friends.\n\nStep outside to your own outdoor cinema under the stars and a soothing hot\u2011tub that promises relaxing evenings after a day of exploring. Whether you\u2019re watching a favourite film or simply soaking under the night sky, the experience is uniquely yours.\n\nInside, the fully equipped kitchen lets you whip up meals, and a modern bathroom offers fresh towels and essential toiletries. High\u2011speed Wi\u2011Fi keeps you connected, and a dedicated parking space ensures hassle\u2011free arrivals.\n\nAt \u00a3151.9 per night, you\u2019re enjoying a rate that sits just below the city median (\u00a3154.6) while delivering a 4.92 rating that outperforms many listings. With 45 open nights in the next 90 days, there\u2019s plenty of opportunity to fill your calendar and capture the revenue you deserve. Book now and experience the perfect blend of comfort, entertainment, and privacy that only this annexe can provide.",
+    "top_amenity_gaps": [
+      "Dedicated parking space",
+      "High\u2011speed Wi\u2011Fi",
+      "Fully equipped kitchen (coffee maker, dishwasher, cookware)"
+    ],
+    "photo_order_rec": "Use a striking night\u2011time shot of the hot tub with the outdoor cinema screen glowing in the background as the cover photo; it showcases the listing\u2019s most unique, high\u2011value amenities first.",
+    "key_diagnosis": [
+      "Title optimisation: your current title is 46 characters but misses high\u2011search keywords; a stronger, SEO\u2011focused title can boost click\u2011through rates.",
+      "Add missing high\u2011value amenities (parking, Wi\u2011Fi, full kitchen equipment) to the amenities list \u2013 currently none are displayed, scoring 2/10.",
+      "Upload a complete set of professional photos covering bedroom, living area, kitchen, bathroom, and the hot\u2011tub/outdoor cinema, and set the hot\u2011tub evening scene as the cover; unknown photo count is hurting visual appeal."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "You have 45 open nights this quarter, representing roughly \u00a36,835 of untapped revenue at your current nightly rate.",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1072482576078466072",
+  "host_name": "Robert",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 180.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 13680.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Liverpool Centre 2-Bed | Free Parking",
+      "Spacious Liverpool Apartment Near City Center",
+      "2-Bed Entire Home in City Center with Free Parking"
+    ],
+    "rewritten_desc": "Fully self-contained 2-bedroom apartment in the heart of Liverpool, just a 5-minute walk to the train station and major attractions. Sleeps 4 guests in modern, light-filled living spaces spanning 70m\u00b2 across two floors. Unbeatable location for exploring the Albert Dock, Royal Liver Building, and Liverpool Cathedral. The property features free on-site parking (walkers' alert: no stairs required to access this ground-floor parking). While not labeled explicitly, all standard essentials are included in the rate. Host Robert has prepared the unit specifically for short-term rentals, ensuring all appliances and security measures are in place for your safety. The calendar is refreshingly open for 76 nights in the next 90 days - perfect for travelers seeking flexibility. Book early to secure nights in this high-demand location.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony/terrace)",
+      "Entertainment options (TV streaming services)",
+      "Dedicated workspace (office area)"
+    ],
+    "photo_order_rec": "Use the exterior photo of the building as the cover image - location visibility is the strongest differentiator for this urban property, and first impressions matter most in Liverpool's competitive market.",
+    "key_diagnosis": [
+      "Title fails SEO best practices (63 characters vs 50 max recommended) and lacks clear hierarchy - current title includes 5 pipe-separated elements that should be simplified to 2-3 core features",
+      "Property has 76 open nights in next 90 days (only 15.2% occupancy) despite being in same price bracket as market median (\u00a3175.00), representing \u00a313,680 in potential revenue at risk",
+      "Description is completely empty - market analysis shows 357 local listings but none with identical property type/market position that lack written content entirely"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're leaving \u00a313,680 in revenue on the table with 76 open days between now and December in one of Liverpool's most competitive areas.",
+    "weakest_element": "title"
+  }
+}

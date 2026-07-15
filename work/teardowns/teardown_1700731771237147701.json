@@ -1,0 +1,39 @@
+{
+  "listing_id": "1700731771237147701",
+  "host_name": "Jack",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 122.4,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 8935.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3122 Nightly \u2013 21% Below Market Avg",
+      "Contractor\u2011Friendly Home, Fast Wi\u2011Fi, 4 Guests",
+      "4.8\u2605 Rating, 4\u2011Guest Space, Low Nightly Rate"
+    ],
+    "rewritten_desc": "Welcome to Jack\u2019s entire\u2011home retreat, perfectly sized for up to four guests who need space, speed and flexibility. Rated 4.8 stars from 205 reviews, this property delivers a comfortable living area, a fully equipped kitchen, two well\u2011appointed bedrooms and a clean bathroom\u2014all under one roof. Fast, reliable Wi\u2011Fi makes it ideal for contractors, remote workers or anyone planning a longer stay. At \u00a3122.4 per night, you\u2019re paying 21\u202f% less than the city\u2019s median nightly rate of \u00a3154.60, giving you premium value without compromising on comfort. The home is located in a quiet neighbourhood with easy access to major transport routes, making daily commutes simple. While Jack is new to hosting, his commitment to a spotless, well\u2011maintained space shines through in the high guest satisfaction score. With 73 open nights out of the next 90, there\u2019s plenty of opportunity to book your stay now and enjoy a hassle\u2011free experience. Whether you\u2019re overseeing a renovation project, need a base for an extended work assignment, or simply want a peaceful getaway, this property offers the right mix of space, speed and savings. Book today and experience why guests consistently rate their stay 4.8 out of 5.",
+    "top_amenity_gaps": [
+      "Outdoor space (patio, garden, or balcony)",
+      "Dedicated parking spot",
+      "Entertainment options (TV, streaming services, games)"
+    ],
+    "photo_order_rec": "Use a bright exterior/front\u2011facade shot as the cover photo to immediately convey location and curb appeal; follow with living room, kitchen, bedroom and bathroom images to ensure full room coverage.",
+    "key_diagnosis": [
+      "Despite a 21% lower nightly rate (\u00a3122.4 vs median \u00a3154.60), occupancy is only 18.5% booked versus the market median of 47.8% \u2013 improve visibility and SEO to translate price advantage into bookings.",
+      "No high\u2011value amenities are listed; adding outdoor space, parking, and entertainment could boost appeal for long\u2011stay guests and raise occupancy.",
+      "Photo count is unknown, but listings in this market typically show 8\u201110 images; ensure at least one photo for each major room and a compelling cover to meet guest expectations."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a3122.4, which is 21% below the market median, yet your next\u201190\u2011day occupancy is only 18.5%\u2014there\u2019s huge untapped demand you can capture.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "45912906",
+  "host_name": "Richard",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 312.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 23088.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Garden View Home \u2013 Steps to City Centre",
+      "Modern 4\u2011Guest House with Garden Views",
+      "Cozy City\u2011Close Retreat \u2013 Garden & Modern Style"
+    ],
+    "rewritten_desc": "Welcome to your private modern house with a stunning garden view, just a short walk from the city centre. This entire\u2011home retreat comfortably sleeps up to four guests, making it ideal for couples, small families, or business travelers seeking a blend of comfort and convenience. The stylish interior features an open\u2011plan living area that flows onto a landscaped garden, perfect for morning coffee or evening relaxation under the sky. A fully equipped kitchen provides everything you need to prepare meals, while two well\u2011appointed bedrooms ensure a restful night\u2019s sleep. \n\nRated 4.67 by 189 satisfied guests, the home consistently earns high marks for cleanliness and location. Although the nightly rate is \u00a3312 \u2013 78% above the city\u2019s median of \u00a3175 \u2013 the property\u2019s prime garden setting and modern design offer a premium experience. Currently, only 17.4% of the next 90 nights are booked, leaving 74 open nights that could be filled with the right pricing and amenity tweaks. \n\nLocated minutes from shops, restaurants, and public transport, you\u2019ll enjoy quick access to the city\u2019s attractions while returning to a peaceful garden oasis each evening. Book now to experience modern comfort, a beautiful outdoor space, and a central location that together create a memorable stay.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking space",
+      "Outdoor seating/dining area in the garden",
+      "In\u2011room entertainment \u2013 smart TV or streaming services"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution shot of the garden view from the living area as the cover photo; it instantly showcases the property\u2019s biggest visual asset and sets a relaxing tone.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3312 is 78% higher than the city median (\u00a3175) while occupancy is only 17.4% (74 of the next 90 nights are still open) \u2013 lower the price or add promotions to boost bookings.",
+      "No high\u2011value amenities are listed; adding parking, dedicated outdoor seating, and a streaming TV could attract more guests and justify the premium rate.",
+      "The listing lacks a compelling description and SEO\u2011friendly title; rewriting both with keyword\u2011rich copy and highlighting the garden view will improve search visibility and conversion."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced at \u00a3312 per night\u201478% above the city median\u2014yet it\u2019s only booked 17.4% of the next 90 days, leaving 74 nights open.",
+    "weakest_element": "description"
+  }
+}

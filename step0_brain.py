@@ -37,6 +37,7 @@ OUTCOME_COLS = ["outreach_sent_at", "opened", "replied", "paid", "outcome_notes"
 #   - NEW 2026-07-15: bad photo quality = HIGHER priority (our before/after
 #     delta is the product; ugly originals convert best)
 MIN_SENDS_BEFORE_VERDICT = 10   # don't judge a market on fewer sends
+AUTO_ROTATE_AFTER_SENDS  = 10   # rotate if this many sends with 0 replies in one market
 CANDIDATE_MARKETS = [
     # same profile as Middleton: high listing density, mid-market rates,
     # weak photo culture (suburban UK, non-professional hosts)
@@ -99,8 +100,8 @@ def reason(rows, markets, lessons) -> dict:
     # --- market decision ---
     verdicts = []
     for m, s in markets.items():
-        if s["sent"] >= MIN_SENDS_BEFORE_VERDICT and s["replied"] == 0:
-            verdicts.append((m, "rotate", f"{s['sent']} sends, 0 replies — market not responding"))
+        if s["sent"] >= AUTO_ROTATE_AFTER_SENDS and s["replied"] == 0:
+            verdicts.append((m, "rotate", f"{s['sent']} sends, 0 replies — AUTO-ROTATING to next market"))
         elif s["paid"] > 0:
             verdicts.append((m, "double_down", f"{s['paid']} sale(s) — proven market"))
         else:

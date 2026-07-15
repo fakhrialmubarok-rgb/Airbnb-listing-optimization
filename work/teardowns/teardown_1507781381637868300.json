@@ -1,0 +1,39 @@
+{
+  "listing_id": "1507781381637868300",
+  "host_name": "Samina",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 290.4,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 22070.4
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Leafy Moseley Home Sleeps 10 \u00a3290",
+      "6 Beds Moseley Driveway Big",
+      "Family Sleeps 10 in Moseley"
+    ],
+    "rewritten_desc": "Escape to this stunning 6-bed leafy oasis in Moseley, perfect for larger families or groups. With an expansive driveway, this home sleeps 10 comfortably. Enjoy the perfect blend of peace and amenities in this gorgeous neighborhood. With its spacious layout and huge driveway, this home is ideal for those seeking a tranquil retreat while still being close to local attractions. Samina welcomes you to her beautiful home.",
+    "top_amenity_gaps": [
+      "Outdoor space: missing description of the garden or outdoor area",
+      "Parking and facilities: lack of detail about driveway or parking spaces",
+      "Entertainment: no mention of local attractions or activities"
+    ],
+    "photo_order_rec": "The living room photo should be the cover photo as it showcases the home's spacious layout and welcoming atmosphere.",
+    "key_diagnosis": [
+      "Raise nightly price to cohort median (\u00a3175) to maximize revenue opportunity (\u00a34,325 vs current \u00a33,150 over the next 76 days).",
+      "Occupancy is significantly lower than cohort median (15.2% vs 28.3%), leaving \u00a35,150 in untapped revenue (\u00a3290/night x 18 open nights).",
+      "The listing lacks a clear photo tour (unknown), making it difficult for guests to visualize the home."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your next 76 open nights, you're missing out on \u00a35,150 of potential revenue due to lower-than-average occupancy.",
+    "weakest_element": "photos"
+  }
+}

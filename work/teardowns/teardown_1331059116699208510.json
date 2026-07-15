@@ -1,0 +1,39 @@
+{
+  "listing_id": "1331059116699208510",
+  "host_name": "Samina",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 219.0,
+    "occupancy_pct": 28.3,
+    "open_nights_90d": 65,
+    "revenue_at_stake_gbp": 14235.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 4,
+    "score_amenities": 0,
+    "score_images": 0,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "5-Bed Solihull Home, Nr Edgbaston \u00a3219",
+      "Solihull Gem, 5 Doubles, Parking & Garden",
+      "5 Double Room Home, Solihull, \u00a3219/nt"
+    ],
+    "rewritten_desc": "This 5-bedroom home is located near Edgbaston in Solihull, perfect for families or groups of friends looking for a comfortable place to stay. With 4 guests capacity, it's a great find for those who want to stay in a spacious and peaceful environment. The nightly rate of \u00a3219 is competitive among similar listings in the area (\u00a3175 median). With 75 glowing reviews and a 4.88 rating, you can trust that your stay will be hassle-free and enjoyable.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor space",
+      "Facilities (e.g. kitchen essentials, laundry)"
+    ],
+    "photo_order_rec": "The interior photos should highlight the main living area with its comfortable seating and large windows, followed by the spacious bedrooms showcasing the ample storage and comfortable bedding.",
+    "key_diagnosis": [
+      "Increasing occupancy from 28.3% to median 28.3% would yield 65 more booking nights, an additional \u00a314,155 in revenue (\u00a3219 x 65).",
+      "Offering a high-value amenity like parking would significantly improve competitiveness, as the cohort median is unknown.",
+      "Adding more and better photos would showcase the home's 5 bedrooms, potentially leading to a higher occupancy rate."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By addressing the parking gap and highlighting the home's best features, you can increase occupancy and attract more guests.",
+    "weakest_element": "photos"
+  }
+}

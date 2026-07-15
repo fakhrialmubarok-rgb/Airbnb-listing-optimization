@@ -1,0 +1,39 @@
+{
+  "listing_id": "17923675",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 160.6,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 11884.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Elegant London Home | Book 3/4 Nights Free",
+      "Cozy Retreat in Prime London",
+      "4-Bed London House with Garden"
+    ],
+    "rewritten_desc": "Experience the essence of London in this elegant 4-bedroom home, carefully curated to cater to all your needs. Perfectly located in the heart of the city, this stunning property is within walking distance to some of London's most iconic landmarks. Whether you're seeking adventure or relaxation, this charming home has everything to ensure a memorable stay. With a capacity to accommodate 4 guests, this space is ideal for family gatherings or intimate celebrations. The property features a spacious garden, perfect for al-fresco dining or leisurely strolls. With plenty of natural light and an open-plan layout, the interior of this home exudes warmth and hospitality. Experience London like never before, in this elegant retreat.",
+    "top_amenity_gaps": [
+      "Outdoor space for relaxation and outdoor activities",
+      "Parking options for guests with vehicles",
+      "Entertainment facilities such as a TV or games console"
+    ],
+    "photo_order_rec": "The interior of the ground floor should be the cover photo, showcasing the living area and garden to emphasize the property's bright and airy interior.",
+    "key_diagnosis": [
+      "Their occupancy rate of 17.4% is significantly lower than the cohort median of 28.3%, indicating a clear opportunity to improve revenue through increased bookings.",
+      "The lack of photos limits guest trust and engagement, with none currently being displayed \u2013 a minimum of 5-7 photos are recommended for a comprehensive property showcase.",
+      "The current title does not effectively highlight the property's unique selling points or differentiators, failing to stand out amidst the competition and making it harder to attract bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a mere 17.4% occupancy rate, your Elegant City Retreat is missing out on \u00a32,800 in potential revenue (\u00a3160.60/night x 74 available nights).",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1096420969824183884",
+  "host_name": "Giga Residential",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 1379.0,
+    "occupancy_pct": 14.1,
+    "open_nights_90d": 77,
+    "revenue_at_stake_gbp": 106183.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 4BR, 8 guests",
+      "Giga Residential, Entire Home",
+      "Spacious 4Bed, City Centre"
+    ],
+    "rewritten_desc": "Experience the ultimate in luxury living with our spacious 4-bedroom entire home, perfectly suited for up to 8 guests. With its prime location and impeccable interior, this property is the epitome of comfort and style. Whether you're looking for a relaxing getaway or a hub for your city adventures, our home has everything you need to make your stay unforgettable.",
+    "top_amenity_gaps": [
+      "Outdoor spaces",
+      "Parking facilities",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The cover photo should be a well-lit and beautifully furnished living room, as it is often the first impression guests have of the property and can significantly impact their decision to book.",
+    "key_diagnosis": [
+      "The listing's nightly rate of \u00a31379.0 is 792% higher than the cohort median of \u00a3154.60, indicating a significant pricing gap that may be affecting occupancy.",
+      "The occupancy rate of 14.1% is substantially lower than the cohort median of 47.8%, suggesting a large room for improvement in attracting more guests.",
+      "With only 29 reviews and a rating of 4.59, there is an opportunity to improve the listing's credibility and appeal by encouraging more guests to leave reviews and increasing the overall rating."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With your nightly rate being 792% higher than the cohort median and an occupancy rate of 14.1% compared to the cohort median of 47.8%, there is a significant opportunity to increase bookings and revenue by optimizing your listing.",
+    "weakest_element": "description"
+  }
+}

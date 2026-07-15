@@ -1,0 +1,39 @@
+{
+  "listing_id": "1687106770409654153",
+  "host_name": "Live Comfortably",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 79.18,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 3404.74
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Birmingham Entire Home at \u00a379 - 55% Off Market Rate",
+      "Stylish 1BR Birmingham with 4 Guests Capacity",
+      "\u00a379 Stay in Birmingham - 55% Below Local Average"
+    ],
+    "rewritten_desc": "Experience the best of Birmingham without breaking the bank! This spacious 1-bedroom entire home sleeps 4 guests and offers exceptional value at just \u00a379.18/night \u2014 more than 50% below Birmingham's average rate of \u00a3175. Located in a thriving area with easy access to attractions, this modern property is perfect for both short trips and extended stays. Guests praise the clean, welcoming environment and convenient layout. With 175 reviews and a 4.77 guest rating, this is your opportunity to enjoy a premium home in Birmingham at a remarkable price. Note: The host has no publicly listed amenities, but this home is ideal for guests seeking affordability and convenience in a competitive market.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Free parking",
+      "Entertainment system"
+    ],
+    "photo_order_rec": "Feature the living room in the cover photo to highlight the space's full guest capacity and modern styling. A well-lit room shot often converts best for 1BR listings",
+    "key_diagnosis": [
+      "Nightly rate is -55% vs cohorts, but occupancy remains 43% ahead of market average (52.2% vs 28.3%)",
+      "Description lacks compelling value proposition despite price advantage \u2014 currently scores 2/10 for storytelling",
+      "No visible amenities listed despite high-value categories being top converters in this market"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a379.18 rate is 55% below Birmingham's \u00a3175 median, yet you're booking 52% of nights vs market average 28% \u2014 a sharper title could accelerate those conversions",
+    "weakest_element": "description"
+  }
+}

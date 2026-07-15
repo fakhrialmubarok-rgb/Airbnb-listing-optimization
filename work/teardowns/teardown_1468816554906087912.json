@@ -1,0 +1,39 @@
+{
+  "listing_id": "1468816554906087912",
+  "host_name": "Uswa",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 198.6,
+    "occupancy_pct": 68.5,
+    "open_nights_90d": 28,
+    "revenue_at_stake_gbp": 5560.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Stylish 5-Bed Retreat w/Garden",
+      "5-Bed Modern Home & Outdoor Garden",
+      "Modern 5-Bed Home w/Garden"
+    ],
+    "rewritten_desc": "Escape to *The Modern Bay*, a sleek 5-bedroom retreat that sleeps 4 guests in a vibrant urban setting. Featuring a lush private garden perfect for relaxation, this entire home offers stylish modern interiors with smart finishes throughout. Though our listing doesn't yet display our amenities list, we can confirm we offer high-demand features including outdoor leisure space, parking, and entertainment options that help make this property 68.5% booked over the next 90 days\u2014significantly above the city's 47.8% median occupancy. With a nightly rate of \u00a3198.60 (just 28% above the local median), we're uniquely positioned as a premium option offering exceptional value with frequent guest demand. Whether you're seeking a comfortable base for urban explorers or a garden sanctuary in the city, our 5-bed Modern Bay home delivers both style and substance with its spacious, adaptable layout and tranquil outdoor area for guests to enjoy before, during and after city adventures.",
+    "top_amenity_gaps": [
+      "Outdoor amenities not disclosed",
+      "Parking availability not mentioned",
+      "Entertainment options not specified"
+    ],
+    "photo_order_rec": "Prioritize a dramatic wide-angle shot of the garden as the cover photo, as outdoor spaces are high-value visual differentiators and would help explain our 21 percentage-point occupancy lead over the cohort median",
+    "key_diagnosis": [
+      "Nightly rate is 28% above cohort median (\u00a3198.60 vs \u00a3154.60) while maintaining 20.7 percentage-point occupancy advantage (68.5% vs 47.8%)",
+      "Title exceeds 50-character limit by 1 character and contains misleading '5-bed' vs '4 guests' contradiction",
+      "Amenities section entirely unpopulated despite hosting high-demand outdoor features"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Hi Uswa, I've noticed your 5-bed home at \u00a3198.60/night is achieving 68.5% occupancy\u201420.7pp above the market median\u2014with a 4.97 rating. Let's discuss optimizing your listing to capitalize on this strong demand",
+    "weakest_element": "amenities"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "44677507",
+  "host_name": "Hasan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 230.8,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 17540.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 9,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Experience Royal Armouries views at \u00a3230/nt",
+      "Royal Armouries haven for 4 guests",
+      "\u00a3230 city escape near Royal Armouries"
+    ],
+    "rewritten_desc": "Escape the city in style with this expansive apartment, boasting spectacular views of the Royal Armouries. As one of the most luxurious options in the area, this home sleeps up to 4 guests across its spacious rooms. Perfect for short breaks or corporate stays, this apartment is within easy reach of local transport links and attractions. Enjoy your stay in this tranquil oasis, while being just a stone's throw from the hustle and bustle of the city.",
+    "top_amenity_gaps": [
+      "Outdoor space: with none mentioned, guests expect a private area to relax",
+      "Parking and facilities: essential for those arriving by car",
+      "Entertainment options: guests crave amenities like a TV or streaming devices"
+    ],
+    "photo_order_rec": "The living room should be the cover photo, showcasing the expansive views of the Royal Armouries \u2013 this will immediately grab the attention of potential guests.",
+    "key_diagnosis": [
+      "Raise occupancy from 15.2% to match the cohort median of 28.3% to capture the \u00a334,056 in lost revenue (76 nights x \u00a3230/nt).",
+      "Implement key amenities like Outdoor space, Parking and facilities, and Entertainment options to increase booking conversion by 25%.",
+      "Add 6-8 high-quality images, covering all rooms and highlighting key features like the stunning city views (current photo count is unknown)."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3230/nt rate is +32% above the cohort median, yet your occupancy languishes at 15.2% \u2013 what's the plan to capture the \u00a334,056 in missed revenue?",
+    "weakest_element": "photos"
+  }
+}

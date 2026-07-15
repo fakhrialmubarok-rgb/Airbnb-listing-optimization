@@ -1,0 +1,39 @@
+{
+  "listing_id": "1723916666016731735",
+  "host_name": "Zafreen At The Midlands Host",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 186.0,
+    "occupancy_pct": 22.8,
+    "open_nights_90d": 69,
+    "revenue_at_stake_gbp": 12834.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Freestanding Bath Oasis in Midlands",
+      "Conservatory Haven for 4 Guests",
+      "Garden Retreat with Freestanding Bath"
+    ],
+    "rewritten_desc": "Escape to a tranquil oasis in the heart of the Midlands, perfect for 4 guests. Our entire home features a stunning freestanding bath, a bright and airy conservatory, and beautiful private garden. The property boasts a unique charm and is surrounded by a tranquil atmosphere.\n\nWe've carefully designed the space to provide a relaxing getaway, complete with a freestanding bath, perfect for soaking away the stresses of everyday life. Our conservatory is an ideal spot for enjoying a quiet breakfast or a leisurely cup of coffee, while the private garden provides a peaceful retreat for relaxation.\n\nYou'll find everything you need for a comfortable stay, with this lovely entire home designed with your comfort in mind. Our home is perfect for couples or families looking for a peaceful escape.\n\n**Amenities not included but available in the same area:** local shops, restaurants, and attractions. **Local transportation:** nearby bus stops and regular bus services.\n\nPlease note that we take pride in maintaining a high-standard property, and we'd be delighted to have you stay with us at our Midlands hideaway. Book now for a memorable experience.",
+    "top_amenity_gaps": [
+      "Outdoor parking and secure storage for bikes or other gear",
+      "Facilities such as laundry and ironing stations for guests' convenience",
+      "Entertainment options like a bookable home cinema or games console for an added dimension to the stay"
+    ],
+    "photo_order_rec": "The private garden should be the cover photo as it showcases the tranquil oasis and unique feature of the freestanding bath.",
+    "key_diagnosis": [
+      "Your 22.8% occupancy rate is significantly lower than the median 28.3% for the same-market cohort, leaving \u00a34,116.80 in potential revenue untapped each year (\u00a3186.00 * 22 of your 69 open nights).",
+      "Your nightly rate of \u00a3186.00 is only +6% vs the cohort median, highlighting an opportunity to optimize your pricing strategy.",
+      "With an unknown photo count, potential guests are missing essential visual information, potentially reducing booking conversions"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With 22.8% occupancy and 69 potential booking nights, you're leaving \u00a34,116.80 in revenue untapped each year \u2013 how can we optimize occupancy for you?",
+    "weakest_element": "photos"
+  }
+}

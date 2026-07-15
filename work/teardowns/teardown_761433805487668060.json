@@ -1,0 +1,39 @@
+{
+  "listing_id": "761433805487668060",
+  "host_name": "Akash",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 109.0,
+    "occupancy_pct": 42.4,
+    "open_nights_90d": 52,
+    "revenue_at_stake_gbp": 5668.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 7,
+    "score_images": 8,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Stylish 1BR Apt",
+      "Modern Retreat",
+      "Private Workspace"
+    ],
+    "rewritten_desc": "Escape to this stunning modern apartment, perfectly blending leisure and work. With its own private entrance, this one-bedroom retreat boasts a bright and beautiful living area, complete with a sofa bed that can sleep 2. Upstairs, a private workspace awaits, complete with a desk and table. The apartment is fully equipped with all amenities, including free parking, WiFi, and a dedicated workspace. Whether you're looking to unwind or stay productive, this stylish apartment is the perfect haven. With a double bed and ensuite bathroom, it comfortably hosts 2-3 people, making it an ideal choice for solo travelers, couples, or small groups.",
+    "top_amenity_gaps": [
+      "Exterior security cameras on property",
+      "Air conditioning",
+      "Heating"
+    ],
+    "photo_order_rec": "The lounge area with sofa bed should be the cover photo, as it showcases the apartment's modern style and versatility, and is likely to appeal to potential guests.",
+    "key_diagnosis": [
+      "With 52 open nights in the next 90 days, there's a potential revenue loss of \u00a35,668 (\u00a3109/night x 52 nights) if occupancy isn't improved.",
+      "The listing's nightly rate of \u00a3109 is only +4% higher than the cohort median of \u00a3104.90, indicating a potential opportunity to increase pricing or improve occupancy to match the market.",
+      "The listing has 26 photos, exceeding the median photo count of 23, but the quality and order of photos could be optimized to better showcase the apartment's best features."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With \u00a35,668 in potential revenue at stake from 52 open nights in the next 90 days, it's crucial to optimize your listing to attract more bookings.",
+    "weakest_element": "title"
+  }
+}

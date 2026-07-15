@@ -1,0 +1,39 @@
+{
+  "listing_id": "1504522007248971241",
+  "host_name": "Samina",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 390.6,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 29685.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "7-Bed Home Near Centre (Free Parking & HS2 Access)",
+      "Group Stay: 7-Bed House with Free Parking, \u00a3410/night",
+      "HS2 Proximity! 4-Guest 7-Bed Home with Free Parking"
+    ],
+    "rewritten_desc": "This spacious 7-bedroom home is ideal for larger groups, offering free parking and convenient access to the town center. Located near HS2 transportation, guests enjoy proximity to local attractions despite the outlying location. The property features modern facilities designed for comfort, with four guest capacity and private bathrooms included. While the nightly rate of \u00a3390.60 is significantly higher than the local median of \u00a3175, this fully-entire home ensures a dedicated space for gatherings or family stays. Note there are no listed amenities beyond basic accommodations in the description, but parking is highlighted as a key benefit for travelers with vehicles.",
+    "top_amenity_gaps": [
+      "Outdoor space (terrace/garden)",
+      "Entertainment facilities (TV/games)",
+      "High-speed internet"
+    ],
+    "photo_order_rec": "The exterior shot with visibility of proximity to HS2 rail line should be cover photo to leverage the key differentiator in the title",
+    "key_diagnosis": [
+      "Pricing is 123% above median rate (\u00a3390.60 vs \u00a3175) while occupancy is 42% below median (15.2% vs 28.3%), creating a significant price-occupancy imbalance",
+      "Title exceeds Airbnb's 50-character guideline (55 characters) and contains ambiguous abbreviations (HS2/A45) that reduce discoverability",
+      "Description contains zero text content compared to market cohort descriptions, completely missing opportunity to highlight 7-bedroom capacity and proximity benefits"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your rate is 123% higher than local median yet occupancy trails the market by 42% - this indicates significant upside for calendar fill if price alignment is optimized",
+    "weakest_element": "title"
+  }
+}

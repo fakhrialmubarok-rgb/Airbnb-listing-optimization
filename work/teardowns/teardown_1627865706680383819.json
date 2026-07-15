@@ -1,0 +1,39 @@
+{
+  "listing_id": "1627865706680383819",
+  "host_name": "Retreats Yorkshire",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 659.2,
+    "occupancy_pct": 29.3,
+    "open_nights_90d": 64,
+    "revenue_at_stake_gbp": 42188.8
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Leeds Entire Home - \u00a3659",
+      "Center Leeds Suite for \u00a3659",
+      "Chic Leeds Apartment - \u00a3659"
+    ],
+    "rewritten_desc": "Stay in Leeds' premier luxury home, fully furnished for 4 guests. This spacious property features [insert high-value amenities if available, e.g., 'private garden' or 'onsite parking'\u2014add specific details about unique features like [example architectural detail] or [local landmark proximity]. Just [X minutes] from Leeds' top attractions, this entire home rental delivers exceptional comfort. Recent guests praise [quote positive review element if available]. Ideal for [business travelers/destination weddings/weekend getaways], our property combines modern convenience with [regional\u7279\u8272]. Book direct for [exclusive perk if applicable].",
+    "top_amenity_gaps": [
+      "Outdoor space/BBQ area",
+      "Free parking information",
+      "Entertainment system specifics"
+    ],
+    "photo_order_rec": "Living room photo as cover image to showcase property scale and style",
+    "key_diagnosis": [
+      "Nightly rate is +326% above cohort median while occupancy is 40% below market average (29.3% vs 47.8%)",
+      "Title includes \"Big Ben\" but listing is in Leeds - creates location confusion for searchers",
+      "No amenity categories identified despite market demand for outdoor/parking/entertainment features"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Despite charging 326% above average for Leeds Airbnbs (\u00a3659 vs \u00a3155), your listing is only 29% booked over the next 90 days compared to 48% for similar properties",
+    "weakest_element": "title"
+  }
+}

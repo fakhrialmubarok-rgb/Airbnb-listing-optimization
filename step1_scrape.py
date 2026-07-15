@@ -59,6 +59,9 @@ def qualify(l: dict) -> tuple[bool, str]:
         return False, f"pro operator (name: {hits[0]!r})"
     if stake < MIN_STAKE_GBP:
         return False, f"stake £{stake:,.0f} < £{MIN_STAKE_GBP:,}"
+    rate = l.get("nightly_rate") or 0
+    if rate > 500:
+        return False, f"luxury rate £{rate:.0f}/night — wrong buyer for £29 product"
     return True, f"stake £{stake:,.0f}"
 
 

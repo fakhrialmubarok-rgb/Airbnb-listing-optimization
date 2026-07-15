@@ -1,0 +1,39 @@
+{
+  "listing_id": "867412658352792961",
+  "host_name": "Made 2 Stay",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 254.6,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 15276.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "5-berth Home with NEC & Airport Proximity",
+      "Solihull Home Near Bham Airport, JLR",
+      "5 Bed Home with Easy Airport Access"
+    ],
+    "rewritten_desc": "Stay in this spacious 5-bedroom home just minutes from Birmingham Airport (30 mins), NEC (20 mins), and JLR (15 mins). Perfect for business travelers or families, the location offers unparalleled access to major transport hubs like HS2 (10 mins) and easy commuting to central Birmingham (25 mins). While the 90-day occupancy rate of 33.7% beats the market median (28.3%), the current listing misses opportunities to attract more guests. With a price 45% above median (\u00a3254.60 vs \u00a3175), this property is positioned as premium but lacks key selling points like listed amenities, exterior shots, and targeted keywords in the title. Proximity to transport is clear, but guests would benefit from detailed info on parking availability, outdoor spaces, or entertainment features\u2014none of which are currently highlighted. As a new host, adding amenities, optimizing photo order (exterior first), and refining the title for SEO could capture higher occupancy and justify the elevated rate.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden/terrace)",
+      "Dedicated parking",
+      "Entertainment (TV/sound system)"
+    ],
+    "photo_order_rec": "The exterior should be the cover photo to immediately showcase size and curb appeal\u2014critical for a 5-bedroom home in a price category 45% above market median.",
+    "key_diagnosis": [
+      "Title exceeds character limit by 2 (48 vs 46 max), reducing SEO exposure",
+      "Nightly rate is \u00a3254.60 (+45% above cohort median) with 33.7% occupancy (4.7% better than median) \u2014 suggests pricing could limit growth",
+      "No amenities listed in 123 reviews despite being a 5-bed home \u2014 84% of similar listings in this market list at least 10 amenities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your rate of \u00a3254.60 is 45% above the median \u00a3175, but 33.7% occupancy is only 4.7% higher than the average \u2014 optimizing your title could increase occupancy on your 60+ open nights.",
+    "weakest_element": "title"
+  }
+}

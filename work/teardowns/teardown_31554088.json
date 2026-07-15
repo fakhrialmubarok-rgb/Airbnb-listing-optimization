@@ -1,0 +1,39 @@
+{
+  "listing_id": "31554088",
+  "host_name": "Matthew",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.2,
+    "occupancy_pct": 53.3,
+    "open_nights_90d": 42,
+    "revenue_at_stake_gbp": 5384.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 3,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Cozy Cottage 1 Mile from Drayton Manor",
+      "Charming Home Near Drayton Manor Attraction",
+      "Central Stay: 1 Mile from Drayton Manor"
+    ],
+    "rewritten_desc": "Welcome to this charming family home perfectly located just 1 mile from Drayton Manor Theme Park. This spacious 4-guest property offers all the comforts needed for a memorable stay. Though our description is currently under development (we're finalizing interior photographs), guests consistently praise our location, cleanliness, and value for money in reviews. While we prioritize updating our listing details, you\u2019re welcome to reach out for any specific questions about our property\u2019s features. With our competitive rate of just \u00a3128.20 per night, you\u2019ll enjoy a comfortable base while exploring the Drayton Manor area.",
+    "top_amenity_gaps": [
+      "Outdoor dining space",
+      "On-site parking",
+      "Wi-Fi with guaranteed speed"
+    ],
+    "photo_order_rec": "Prioritize the living room as cover photo to showcase space and ambiance, followed by entryway for perceived accessibility, then bedroom to demonstrate guest capacity",
+    "key_diagnosis": [
+      "No description text provided at all (score 1/10) despite 426 reviews",
+      "Nightly rate is \u00a3128.20 (-\u00a346.80 below \u00a3175 median) but only 53.3% occupancy (28 open nights vs market median 62 open nights)",
+      "Title lacks room type (Entire home) and specific amenities despite preferred title format rules"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3128.20 rate is -27% vs market median but you maintain strong 53% occupancy - could higher pricing increase revenue while maintaining competitive position?",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "32543544",
+  "host_name": "Sara",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 256.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 19200.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 6,
+    "score_images": null,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Cozy 2BR Apt Near City Centre (\u00a3256/night)",
+      "Central Apartment 2 Bedrooms, 2 Bathrooms, \u00a3256/night",
+      "Luxury City Centre Flat, 256GBP/Night, 4 Guests"
+    ],
+    "rewritten_desc": "Welcome to my stylish 2-bedroom, 2-bathroom city centre apartment. Perfectly situated for exploring the best of [City Name], this property boasts a comfortable sleeping capacity for 4 guests. My place is ideal for couples and families alike, offering a peaceful retreat from the hustle and bustle of the city. The apartment is fully equipped with everything you need for a hassle-free stay, including a fully-fitted kitchen and comfortable living area. With its central location, you're just a short walk from some of the city's top attractions, restaurants, and bars. Come and experience the best of [City Name] in style and comfort. Note: Prices may vary depending on season and availability. Please message me for a quote.",
+    "top_amenity_gaps": [
+      "Missing: Parking facilities, essential for guests traveling with cars.",
+      "Under-presented: Entertainment options, such as nearby bars and restaurants.",
+      "Missing: Outdoor spaces, would be a great addition to the listing."
+    ],
+    "photo_order_rec": "Consider making the living area or kitchen the primary cover photo, as these spaces showcase the property's style and functionality. This will help guests quickly understand the living areas available to them.",
+    "key_diagnosis": [
+      "Diagnose: High nightly rate (\u00a3256) despite below-par occupancy (16.3% vs cohort median 28.3%), indicating a strong opportunity to optimize pricing or inventory.",
+      "Fix #1: Reconsider pricing strategy, aiming to align with the market median (\u00a3175/night) to increase occupancies.",
+      "Fix #2: Optimize 75 open nights, prioritizing peak demand periods to boost revenue."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Sara, considering your high nightly rate (\u00a3256) and below-average occupancy (16.3%) compared to the cohort median (28.3%), I think there may be an opportunity to optimize your pricing strategy or inventory management.",
+    "weakest_element": "description"
+  }
+}

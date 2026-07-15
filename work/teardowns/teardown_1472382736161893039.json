@@ -1,0 +1,39 @@
+{
+  "listing_id": "1472382736161893039",
+  "host_name": "Calum",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 181.8,
+    "occupancy_pct": 22.8,
+    "open_nights_90d": 69,
+    "revenue_at_stake_gbp": 12544.2
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "2\u2011min to NEC \u2013 Luxury Overwater Pod + Deck",
+      "Walk to NEC, Private Deck Overwater Suite",
+      "Exclusive Overwater Pod \u2013 Steps from NEC"
+    ],
+    "rewritten_desc": "Experience a truly unique stay in this entire\u2011home overwater pod, just a two\u2011minute walk from the NEC. The luxurious pod comfortably sleeps up to four guests and features a private deck that overlooks the water, perfect for sunrise coffee or evening relaxation. Guests enjoy a modern interior with a fully equipped kitchen, a stylish bathroom, and high\u2011speed Wi\u2011Fi, all at a nightly rate of \u00a3181.80. With a 4.81 rating from 216 reviews, the property has consistently delivered high\u2011quality experiences, even though it is not yet a Superhost listing. While the current 90\u2011day occupancy is only 22.8% (69 open nights), the location and unique overwater setting give you a strong competitive edge. By highlighting the short walk to the NEC and enhancing the deck\u2019s outdoor amenities, you can attract both business travelers attending events and leisure guests looking for a memorable escape. Adjusting the price to align more closely with the market median of \u00a3154.60 will further improve booking rates. Book this exclusive pod for a blend of convenience, luxury, and waterfront charm that you won\u2019t find elsewhere.",
+    "top_amenity_gaps": [
+      "Outdoor deck amenities (e.g., lounge seating, fire pit, BBQ)",
+      "Dedicated parking or valet service",
+      "Entertainment options (e.g., streaming TV, board games, sound system)"
+    ],
+    "photo_order_rec": "Use a high\u2011resolution image of the private deck with water view as the cover photo; it showcases the property\u2019s most unique feature and draws clicks.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3181.8 (18% above the cohort median of \u00a3154.60) to around \u00a3155 to align with market pricing and lift the 22.8% occupancy toward the city median of 47.8%.",
+      "Add and list high\u2011value outdoor amenities on the deck (e.g., comfortable seating, a small BBQ, fire pit) to address the missing Outdoor category and justify a premium price.",
+      "Upload a full set of at least 10 professional photos covering bedroom, bathroom, kitchen, and the deck, then set the deck view as the lead photo to improve visual appeal and click\u2011through rates."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate is \u00a327 higher than the market median while your 90\u2011day occupancy sits at just 22.8% \u2013 a clear opportunity to boost bookings.",
+    "weakest_element": "photos"
+  }
+}

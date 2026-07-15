@@ -1,0 +1,40 @@
+{
+  "listing_id": "1455917653065920218",
+  "host_name": "Nicole",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 265.2,
+    "occupancy_pct": 82.6,
+    "open_nights_90d": 16,
+    "revenue_at_stake_gbp": 4243.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 4,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Birmingham 4-Bed Detached Home | Free Parking | 4.8 \u2605",
+      "Birmingham Premium 4-Bed Home | Booked 83%+ 90 Days",
+      "4-Bed Birmingham Home | High Occupancy | Free Parking"
+    ],
+    "rewritten_desc": "This spacious 4-bed Birmingham home comfortably accommodates 4 guests, with free on-site parking and a prime location for travelers. With 166 reviews and an excellent 4.8 rating, guests praise the property's comfort and convenience. Open 16 evenings in the next 90 days, you'll enjoy privacy as the entire home is at your disposal. Ideal for long stays, this listing maintains a nightly rate \u00a3265.20 \u2014 52% above the city median \u2014 yet remains 82.6% booked for the coming months. The host, Nicole, is dedicated to providing a seamless stay, though no further specific amenities are currently listed. Your security deposit is included at no extra cost.",
+    "top_amenity_gaps": [
+      "Outdoor area for al fresco dining",
+      "Indoor entertainment system (TV/streaming)",
+      "Smart home technology (thermostat/control)"
+    ],
+    "photo_order_rec": "Prioritize a well-illuminated living room shot as the cover photo to immediately showcase space and ambiance, followed by bathroom and kitchen images to highlight functional areas.",
+    "key_diagnosis": [
+      "\u00a3265.20 nightly rate is 52% above median \u00a3175.00, creating price differentiation risk against lower-priced alternatives",
+      "82.6% occupancy exceeds market median 28.3% but doesn't fully leverage 166 reviews for visibility",
+      "Missing explicit amenity listing prevents showcasing outdoor, parking, or entertainment categories",
+      "Unspecified property type (detached/semi-detached) creates ambiguity in listing quality perception"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing maintains 82.6% occupancy while pricing 52% above Birmingham's \u00a3175.00 median \u2014 here's how to maximize your already high-occupancy premium",
+    "weakest_element": "title"
+  }
+}

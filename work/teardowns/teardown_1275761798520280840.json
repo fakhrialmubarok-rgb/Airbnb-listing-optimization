@@ -1,0 +1,39 @@
+{
+  "listing_id": "1275761798520280840",
+  "host_name": "Abudulmalik",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 396.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 30096.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3396 Stay in Prime Birmingham",
+      "Entire Home in City Centre Birmingham",
+      "Spacious 4-Guest Apartment Birmingham"
+    ],
+    "rewritten_desc": "Welcome to this premium entire home in Birmingham, ideal for 4 guests seeking luxury and convenience. Located in a vibrant district, this apartment offers a secure, comfortable stay with modern furnishings and high-quality amenities. Despite its competitive location, it remains underbooked at just 15.2% occupancy over the next 90 days, while the market average is 28.3%. Priced at \u00a3396 per night\u2014which is 126% above the \u00a3175 median local rate due to its exceptional standards and location\u2014the listing is undervalued based on availability patterns. Recent guests (13 reviews) report positive experiences, but the host's lack of visible amenities weakens the current appeal. Ideal for discerning travelers who prioritize location over budget, this property could benefit from highlighting specific value-adds like convenient transport access, secure parking (if available), or nearby amenities. With strategic pricing adjustments and enhanced listing details, this space has untapped potential for higher occupancy and revenue growth in Birmingham's competitive market.",
+    "top_amenity_gaps": [
+      "Parking",
+      "Outdoor space (e.g. garden/balcony)",
+      "Smart home technology"
+    ],
+    "photo_order_rec": "Start with a wide-angle shot of the entire living room space as the cover photo to showcase the property's size and layout immediately, followed by close-ups of key areas like the kitchen and bedroom for clarity.",
+    "key_diagnosis": [
+      "Listed at \u00a3396/night (+126% vs \u00a3175 cohort median) but only 15.2% booked in next 90 days (below median 28.3%)",
+      "Title lacks 50-character optimization and local landmark/district reference",
+      "Zero listed amenities despite operating at double the market rate"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You're charging 126% above average rate but booking only 15% of available nights compared to 28% for similar listings in Birmingham \u2014 let's fix that.",
+    "weakest_element": "title"
+  }
+}

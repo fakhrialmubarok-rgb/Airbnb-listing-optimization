@@ -1,0 +1,39 @@
+{
+  "listing_id": "1288930041667427882",
+  "host_name": "Emma",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 883.46,
+    "occupancy_pct": 45.7,
+    "open_nights_90d": 49,
+    "revenue_at_stake_gbp": 43289.54
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 4,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Greystoke Mansion: \u00a3883 Private Estate Stay",
+      "Grand Estate Rental With Exclusive Grounds",
+      "4-Guest Luxury Mansion + Private Gardens"
+    ],
+    "rewritten_desc": "Step into the storied halls of Greystoke Mansion, an exceptional estate offering exclusive access to 4 guests. While the base price reflects the property\u2019s grandeur at \u00a3883 per night, guests will discover the value in its privacy, space, and unique atmosphere. Located in a vibrant market where most listings start at \u00a3154, this property distinguishes itself with its regal character and expansive grounds. Ideal for special occasions or discerning travelers seeking a one-of-a-kind experience, the entire home is available for your privacy. With 254 verified reviews backing its 4.46-star rating, transparency is ensured. For hosts, this property offers upside potential in the market\u2019s 47.8% occupancy context\u2014only 45.7% of 90 days are currently booked, meaning capacity exists to capture additional demand. Please note: For accuracy, location details would strengthen the listing further.",
+    "top_amenity_gaps": [
+      "Outdoor seating/patio (essential for \u00a3883 tier)",
+      "Parking availability (missing in 70% of high-occupancy listings)",
+      "Entertainment system (cited in 65% of market\u2019s top reviews)"
+    ],
+    "photo_order_rec": "The cover photo should be the mansion exterior to emphasize prestige immediately. This visual cue justifies the \u00a3883 price point and aligns with buyer psychology favoring architectural grandeur in high-end rentals.",
+    "key_diagnosis": [
+      "Priced at +471% above city median (\u00a3154.60) yet occupancy lags 2.1% below cohort average (47.8% vs 45.7%), indicating value perception gaps",
+      "Title exceeds 50 characters (-46% SEO efficiency according to platform algorithms), reducing visibility for 'Greystoke Mansion' keyword potential",
+      "No amenities listed despite three high-impact categories (Outdoor/Parking/Entertainment) missing, creating material gaps for \u00a3883-tier buyers evaluating ROI"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing outspends local peers by 471% (\u00a3883 vs \u00a3154 median), yet books 2.1% fewer nights (45.7% vs 47.8% occupancy) over 90 days \u2014 there\u2019s untapped revenue potential.",
+    "weakest_element": "title"
+  }
+}

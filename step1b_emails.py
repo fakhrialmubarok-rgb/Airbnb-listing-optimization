@@ -27,6 +27,8 @@ BAD_DOMAINS = PERSONAL_MAIL_DOMAINS | {"airbnb.com", "example.com", "sentry.io",
 
 
 def serp_search(query: str) -> list[str]:
+    import time
+    time.sleep(2.5)  # rate-limit guard: SerpAPI free tier = 100 searches/month
     r = requests.get("https://serpapi.com/search", params={
         "q": query, "api_key": os.environ["SERPAPI_KEY"],
         "num": 10, "gl": "uk", "hl": "en"}, timeout=30)
@@ -34,6 +36,33 @@ def serp_search(query: str) -> list[str]:
     d = r.json()
     text = json.dumps(d.get("organic_results", []))
     return EMAIL_RE.findall(text)
+
+
+def _bio_email(bio: str, host: str) -> str:
+    """Extract business email directly from host bio — free, no rate limit."""
+    if not bio:
+        return ""
+    for e in EMAIL_RE.findall(bio):
+        dom = e.rsplit("@", 1)[1].lower()
+        if dom not in BAD_DOMAINS:
+            tokens = [t for t in re.split(r"\W+", host.lower()) if len(t) > 2]
+            if any(t in e.lower() for t in tokens):
+                return e.lower()
+    # Also try extracting personal site URL and scraping it for contact email
+    url_re = re.compile(r"https?://[^\s\)\"']+")
+    for url in url_re.findall(bio):
+        if any(x in url for x in ["airbnb", "facebook", "instagram", "twitter", "linkedin"]):
+            continue
+        try:
+            resp = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            found = EMAIL_RE.findall(resp.text)
+            for e in found:
+                dom = e.rsplit("@", 1)[1].lower()
+                if dom not in BAD_DOMAINS:
+                    return e.lower()
+        except Exception:
+            pass
+    return ""
 
 
 REJECT_DOMAIN_PATTERNS = (".gov.uk", ".nhs.uk", ".ac.uk", ".police.uk", ".org")
@@ -72,8 +101,13 @@ def _plausible(email: str, host: str, city: str) -> bool:
         return False   # can't verify -> don't send
 
 
-def discover(host: str, city: str) -> tuple[str, str]:
+def discover(host: str, city: str, host_bio: str = "") -> tuple[str, str]:
     """Return (email, source) — business domains only."""
+    # Tier 0: host bio — free, instant, most reliable
+    bio_email = _bio_email(host_bio, host)
+    if bio_email:
+        return bio_email, "bio"
+
     queries = [
         f'"{host}" {city} property email contact',
         f'"{host}" airbnb {city} contact',
@@ -168,10 +202,11 @@ def main():
         if found >= limit:
             break
         host, city = r.get("host_name", ""), r.get("city", "")
+        host_bio = r.get("host_bio", "")
         if not host:
             continue
         print(f"[step1b] {host} ({city})...")
-        email, src = discover(host, city)
+        email, src = discover(host, city, host_bio=host_bio)
         if email:
             r["host_email"], r["email_source"] = email, src
             r["contact_channel"] = _contact_channel(email)

@@ -1,0 +1,39 @@
+{
+  "listing_id": "658423046543111581",
+  "host_name": "Will",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 169.8,
+    "occupancy_pct": 79.3,
+    "open_nights_90d": 19,
+    "revenue_at_stake_gbp": 3226.2
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 8,
+    "score_amenities": 7,
+    "score_images": 9,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Wildlife Garden Retreat",
+      "Pool & Sauna Cabin",
+      "Dark Peak Hideaway"
+    ],
+    "rewritten_desc": "Escape to our serene cabin retreat, nestled within a stunning wildlife garden featuring a natural swimming pool and sauna. With walking distance to amenities, pubs, and the train station, you'll have everything you need. Our cabin offers a private garden area with outdoor shower and deck, perfect for soaking up the morning and evening sun. The recent completion of the cabin ensures a comfortable stay, with a bedroom, bathroom, and open-plan living room with kitchen. Enjoy the tranquil surroundings, beautiful walks, and cycles in the area, and unwind in our 4-person sauna. Please note that parking is a short walk away, and unfortunately, there is no wheelchair access.",
+    "top_amenity_gaps": [
+      "TV",
+      "Washing machine",
+      "Exterior security cameras on property"
+    ],
+    "photo_order_rec": "The Natural Swimming Pool photo should be the cover photo as it showcases the unique selling point of the property, and its serene atmosphere will likely capture the attention of potential guests.",
+    "key_diagnosis": [
+      "With a nightly rate of \u00a3169.8, 62% above the cohort median of \u00a3104.90, there is a significant gap to be addressed to improve occupancy, which currently stands at 79.3% for the next 90 days.",
+      "The listing has 24 photos, slightly above the median of 23, but could benefit from showcasing more of the cabin's interior and amenities to potential guests.",
+      "With 0 reviews, the listing is at a disadvantage, and increasing the review count should be a priority, potentially by incentivizing guests to leave reviews or improving the overall guest experience."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3169.8 nightly rate is 62% above the local cohort median, yet your 79.3% occupancy for the next 90 days lags behind the potential, indicating a significant opportunity to optimize your listing and increase bookings.",
+    "weakest_element": "title"
+  }
+}

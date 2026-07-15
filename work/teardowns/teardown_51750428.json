@@ -1,0 +1,39 @@
+{
+  "listing_id": "51750428",
+  "host_name": "Hasan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9728.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Law House City Centre, Free P",
+      "Opulence Home, City Centre P",
+      "City Centre Oasis, Free P"
+    ],
+    "rewritten_desc": "Welcome to The Law House By The Opulence, a spacious entire home nestled in the heart of the city. This property can accommodate up to 4 guests, making it an ideal choice for families, friends, or couples looking for a relaxing getaway. With 71 reviews and a 4.24 rating, The Law House has already garnered a reputation for its comfortable stay. Although the property doesn't come with any specific amenities, its prime location offers easy access to the city centre. Whether you're looking to explore the local nightlife, visit popular landmarks, or simply soak up the atmosphere, this property is perfectly situated for your needs.",
+    "top_amenity_gaps": [
+      "Outdoor spaces or a garden would significantly enhance the property's appeal, considering the nearby city centre location.",
+      "Parking facilities or guidance would be highly beneficial, as parking in the city centre can be challenging.",
+      "Entertainment options like a games console, board games, or a TV with a built-in streaming service would provide added value for guests."
+    ],
+    "photo_order_rec": "Lead with the living room photo, as it sets the tone for the property's layout and ambiance.",
+    "key_diagnosis": [
+      "The property's occupancy rate of 15.2% is significantly lower than the market cohort median of 28.3%, indicating a potential issue with pricing or marketing.",
+      "The property's nightly rate of \u00a3128 is \u00a347 (27%) below the cohort median of \u00a3175, which may be deterring potential guests.",
+      "With only 71 reviews, the property has limited social proof, making it harder to attract guests."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Considering your property's occupancy rate is 12.1 percentage points lower than the market median, it may be beneficial to reassess your pricing strategy or optimize your listing for better visibility.",
+    "weakest_element": "title"
+  }
+}

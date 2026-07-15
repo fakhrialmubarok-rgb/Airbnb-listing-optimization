@@ -1,0 +1,39 @@
+{
+  "listing_id": "1297887608083031973",
+  "host_name": "J",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 130.8,
+    "occupancy_pct": 52.2,
+    "open_nights_90d": 43,
+    "revenue_at_stake_gbp": 5624.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 4,
+    "score_amenities": 5,
+    "score_images": 0,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Newcastle 3 Bed Home, Outdoor Space (\u00a3130.8/nt)",
+      "Cozy 3 Bed near Newcastle City Centre",
+      "\u00a3130.8/nt House in Newcastle, Ideal Location"
+    ],
+    "rewritten_desc": "Escape to this charming 3 bed house in Newcastle, perfect for a family or small group of friends. With its peaceful outdoor space and comfortable living areas, this home is ideal for those looking to unwind in this vibrant city. Located just [insert distance] from Newcastle city centre, you'll be within easy reach of all the local attractions and amenities. This entire home features [insert number] bedrooms and [insert number] bathrooms, plus a fully equipped kitchen and [insert number] TVs. Relax on the sofa and watch your favourite shows, or head out and explore the city. Whether you're here for the nightlife, the culture, or the stunning natural scenery, this house is the perfect base for your stay in Newcastle. With its [insert feature] and [insert feature], this house is sure to exceed your expectations. Book now and start planning your dream trip!",
+    "top_amenity_gaps": [
+      "Parking and facilities",
+      "Outdoor space",
+      "Entertainment options"
+    ],
+    "photo_order_rec": "The exterior photo should be the cover photo to showcase the house's location and outdoor space, while the interior photos should highlight the comfortable living areas and well-equipped kitchen.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3130.8 is -15% below the cohort median of \u00a3154.60, potentially contributing to lower occupancy (52.2% vs 47.8%).",
+      "With a 4.97 rating and 72 reviews, you have a strong reputation, but consider highlighting your hosting credentials to attract more guests.",
+      "The property is missing key amenities such as parking and facilities, outdoor space, and entertainment options."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "I noticed your occupancy rate is lower than the cohort median (52.2% vs 47.8%), and I'd love to discuss how to improve this and increase bookings.",
+    "weakest_element": "photos"
+  }
+}

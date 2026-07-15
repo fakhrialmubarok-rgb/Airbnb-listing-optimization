@@ -23,12 +23,28 @@ N_BODY      = 3
 N_CTA       = 3
 N_GUARANTEE = 3
 
+N_SEND_TIME = 3   # 0=morning 8-9am, 1=lunchtime 12-1pm, 2=evening 5-6pm
+
 AXES = {
     "subject":   N_SUBJECT,
     "body":      N_BODY,
     "cta":       N_CTA,
     "guarantee": N_GUARANTEE,
+    "send_time": N_SEND_TIME,
 }
+
+SEND_TIME_WINDOWS = {
+    0: (8, 9),    # morning
+    1: (12, 13),  # lunchtime
+    2: (17, 18),  # evening
+}
+
+
+def recommended_send_hour() -> int:
+    """Return the hour (local UK time) the ML system wants to send next."""
+    chosen = pick_variants()
+    window = SEND_TIME_WINDOWS.get(chosen.get("send_time", 0), (8, 9))
+    return window[0]
 
 
 def _load() -> dict:

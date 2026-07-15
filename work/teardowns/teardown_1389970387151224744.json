@@ -1,0 +1,39 @@
+{
+  "listing_id": "1389970387151224744",
+  "host_name": "Christian",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 158.0,
+    "occupancy_pct": 44.6,
+    "open_nights_90d": 50,
+    "revenue_at_stake_gbp": 7900.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 7,
+    "score_amenities": 9,
+    "score_images": 0,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "The Cozy Old Kitchens in Summerhill Square",
+      "Summerhill Square's Best Kept Secret",
+      "Stay in the Heart of Summerhill at The Old Kitchens"
+    ],
+    "rewritten_desc": "Experience the charm of Summerhill Square in this stunning old home, carefully restored to maintain its original character. This entire home can accommodate up to 4 guests, perfect for small families or groups of friends. The property is situated in the heart of the Summerhill Square neighborhood, close to local shops, restaurants, and cafes. As a seasoned guest, you'll enjoy the home's unique blend of old and new, with modern amenities carefully woven into its historic fabric. Enjoy a peaceful and relaxing stay in this beautifully decorated home.",
+    "top_amenity_gaps": [
+      "Parking facilities",
+      "Outdoor space",
+      "Home entertainment system"
+    ],
+    "photo_order_rec": "The living room should be the first photo to showcase the home's unique character and cozy atmosphere, encouraging guests to 'step into' the space.",
+    "key_diagnosis": [
+      "The nightly rate is \u00a3158, only +2% above the median rate of \u00a3154.60, suggesting a pricing adjustment may be necessary to stay competitive.",
+      "With 44.6% of nights booked in the next 90 days, there's significant room to improve occupancy from the cohort's median 47.8%.",
+      "<unknown> photos are missing, highlighting a gap in showcasing the home's features to potential guests."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "You're missing out on potential bookings - I recommend adding essential amenities to attract more guests and boost revenue from 50 open nights at \u00a3158/night.",
+    "weakest_element": "title"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "835513231936458375",
+  "host_name": "Mr Ali",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 517.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 39292.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 6,
+    "score_images": 5,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "4-Guest Luxury Villa with Prime Rates",
+      "Chic High-End Home for 4 Guests",
+      "\u00a3517 Nightly Sea View Apartment"
+    ],
+    "rewritten_desc": "Experience unparalleled elegance at this fully-featured 4-guest residence offering modern comforts for discerning travelers. Located in one of the city's most desirable areas, this premium accommodation features [insert specific detail here] to ensure memorable stays. With our attentive service and commitment to quality, guests can expect [insert specific experience here]. Book now to secure your dates at the exclusive rate of \u00a3517 per night. [Add 1-2 more concrete features based on the property's unique characteristics.]",
+    "top_amenity_gaps": [
+      "Free secure parking",
+      "Outdoor patio/terrace",
+      "Complimentary welcome amenities"
+    ],
+    "photo_order_rec": "The primary photo should showcase the most distinctive feature (likely exterior architecture or main living area) to immediately communicate luxury positioning. This visual anchor is critical at this price point.",
+    "key_diagnosis": [
+      "Nightly rate of \u00a3517 is 195% above the cohort median of \u00a3175 while occupancy (15.2%) is 46% below median performance (28.3%)",
+      "Title 'Elysian Residence' exceeds 50 characters and lacks specific value propositions (43/50 characters used)",
+      "Zero host reviews despite 11 guest reviews, suggesting listing presentation inconsistencies"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 195% above the market median yet occupancy remains 46% below cohort benchmarks - this price-performance divergence offers clear ROI potential",
+    "weakest_element": "title"
+  }
+}

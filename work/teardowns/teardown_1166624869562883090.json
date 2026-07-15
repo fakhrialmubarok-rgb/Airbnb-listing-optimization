@@ -1,0 +1,39 @@
+{
+  "listing_id": "1166624869562883090",
+  "host_name": "CasaCity",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 361.2,
+    "occupancy_pct": 35.9,
+    "open_nights_90d": 58,
+    "revenue_at_stake_gbp": 20949.6
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Sleeps4 Luxury Townhouse with Private Rooftop",
+      "Private Roof Terrace + Entire Home Rental",
+      "4-Guest Townhouse | Exclusive Rooftop Access"
+    ],
+    "rewritten_desc": "This exquisite luxury townhouse offers complete privacy with its entire home available for discerning guests. The main highlight is your own private roof terrace - a rare luxury in the area perfect for sunset cocktails or morning coffee with a view. Sleeps 4 comfortably in a fully furnished setup with all necessary amenities included. While the surrounding market averages \u00a3155 per night, this unique property offers an elevated experience at a premium rate. The host maintains a solid 4.65-star rating across 344 reviews, demonstrating consistent guest satisfaction. Located in [City], this property provides an exceptional blend of space and exclusivity that's rarely found at this price tier. With 58 nights open in the next 90 days, there's clear opportunity to optimize this high-value listing further.",
+    "top_amenity_gaps": [
+      "Outdoor seating on terrace",
+      "Entertainment system details",
+      "Parking availability"
+    ],
+    "photo_order_rec": "The private roof terrace should be the cover photo as it's the strongest unique selling point in a market with high average occupancy. Outdoor space is increasingly valued by travelers seeking private areas.",
+    "key_diagnosis": [
+      "Title exceeds ideal length by 30% and uses formatting (\"I\") that looks unpolished, directly affecting visibility in search algorithms (ideal 50 characters)",
+      "No description provided despite 4.65 rating and 344 reviews - a fundamental SEO and conversion optimization opportunity",
+      "Nightly rate (\u00a3361) is 134% above cohort median (\u00a3155) while occupancy (35.9%) is 25% below market average (47.8%), indicating pricing mismatch"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing achieves \u00a3361/night but lags 25% behind the market's 47.8% occupancy despite being 134% above median price",
+    "weakest_element": "description"
+  }
+}

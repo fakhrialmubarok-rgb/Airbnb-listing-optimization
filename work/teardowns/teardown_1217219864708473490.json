@@ -1,0 +1,41 @@
+{
+  "listing_id": "1217219864708473490",
+  "host_name": "Dorcas Olowoyo",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 25 listings scraped in the same market.\nMedian nightly rate: \u00a389.00\nMedian 90-day occupancy: 38.0%\nMedian photo count: 22",
+  "listing_numbers": {
+    "nightly_rate_gbp": 146.07,
+    "occupancy_pct": 58.7,
+    "open_nights_90d": 37,
+    "revenue_at_stake_gbp": 5404.59,
+    "cohort_size": 25,
+    "cohort_median_rate": 89.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 7,
+    "score_images": 6,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Free Parking + Garden, 3\u2011BR Home Near Shops",
+      "Spacious 3\u2011Bedroom Middleton Home, Private Yard",
+      "Quiet Residential Retreat, Steps to Arena & Shops"
+    ],
+    "rewritten_desc": "Welcome to your cosy, spacious home in the heart of Middleton, just minutes from Manchester\u2019s attractions. This entire\u2011home retreat offers three comfortable bedrooms, a sofa bed, and a clean bathroom plus a separate toilet, comfortably sleeping up to six guests. Step outside to a private front\u2011yard garden with free on\u2011street parking right at the door\u2014perfect for families or groups travelling by car. Inside you\u2019ll find a bright living area, a fully\u2011equipped kitchen with gas cooker, microwave, mini\u2011fridge and all essential cookware, and high\u2011speed Wi\u2011Fi for work or streaming. For peace of mind, the property is secured with exterior cameras, a smoke alarm and carbon\u2011monoxide detector. Enjoy quick access to local shops, pubs, Middleton Arena and Shopping Centre, and a short drive to Heaton Park and Manchester Golf Club. Essentials such as fresh linen, towels, hangers, iron and extra pillows are provided. Heating keeps you comfortable year\u2011round. Whether you\u2019re here to explore Manchester or relax in a quiet residential street, this home offers a blend of convenience, safety and comfort for a memorable stay.",
+    "top_amenity_gaps": [
+      "Tumble dryer",
+      "Air conditioning",
+      "Dedicated workspace"
+    ],
+    "photo_order_rec": "Use a front\u2011garden shot that shows the house entrance and the free parking space as the cover photo\u2014outdoor and parking features are high\u2011value differentiators for travelers.",
+    "key_diagnosis": [
+      "Reduce the nightly rate from \u00a3146.07 (64% above the local median of \u00a389) to a more competitive level; a 15\u201120% cut can attract price\u2011sensitive guests and boost occupancy beyond the current 58.7%.",
+      "Replace the current lead image with a professional photo of the front garden and parking area to highlight free parking, a top\u2011value amenity that is currently under\u2011represented.",
+      "Add a tumble dryer (and consider AC) to the amenities list; these missing conveniences are frequently requested in the cohort and can increase perceived value and booking rates."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate is \u00a3146, which is 64% higher than the local median of \u00a389, yet your occupancy is only 58.7%\u2014adjusting price and spotlighting free parking can quickly lift bookings.",
+    "weakest_element": "title"
+  }
+}

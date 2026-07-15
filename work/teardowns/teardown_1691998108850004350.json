@@ -1,0 +1,39 @@
+{
+  "listing_id": "1691998108850004350",
+  "host_name": "Jason",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 199.0,
+    "occupancy_pct": 47.8,
+    "open_nights_90d": 47,
+    "revenue_at_stake_gbp": 9353.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 4,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 1,
+    "title_variants": [
+      "Sleep 7 in Quinton's Spacious 3 Bed House",
+      "Luxury House in Quinton - \u00a3199/night",
+      "Perfect 3 Bed House in Quinton for 7"
+    ],
+    "rewritten_desc": "Welcome to this spacious 3 bed house in Quinton, perfect for families or groups of up to 7 people. With 4 guests, you'll enjoy plenty of space to relax and make memories. As a Superhost-in-training, I've worked hard to ensure this house is immaculately clean and well-maintained. You'll have access to a fully equipped kitchen, a large living room, and 3 bedrooms with comfortable beds. The house is just a short walk from local shops and pubs. You're just a 20-minute drive from Birmingham city centre. Whether you're visiting for business or pleasure, this house is the perfect base for you.",
+    "top_amenity_gaps": [
+      "Outdoor space",
+      "Off-street parking",
+      "TV or entertainment system"
+    ],
+    "photo_order_rec": "First, use a well-lit photo of the living room, showcasing its spaciousness and style. This will immediately give guests a sense of the house's overall feel.",
+    "key_diagnosis": [
+      "This listing could significantly improve its occupancy rate by offering a lower rate (\u00a3175.00 median) to attract more bookings, considering it's already above 90% booked capacity (47 open nights).",
+      "The host should consider adding an outdoor space amenity to attract more guests, given the competitive median (\u00a3175.00) nightly rate and the nearby availability of similar listings.",
+      "The lack of photos is a major issue, with an unknown photo count. Adding at least 5-6 room-type-specific photos is crucial, including a high-quality lead photo of the living room."
+    ],
+    "outreach_angle": "amenity_gap",
+    "outreach_hook": "By adding a small outdoor space, you could attract more guests and fill your 47 open nights \u2013 currently averaging just \u00a3199.00 per night.",
+    "weakest_element": "photos"
+  }
+}

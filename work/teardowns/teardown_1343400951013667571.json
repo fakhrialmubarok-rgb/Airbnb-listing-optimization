@@ -1,0 +1,39 @@
+{
+  "listing_id": "1343400951013667571",
+  "host_name": "Ilana",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 4 listings scraped in the same market.\nMedian nightly rate: \u00a390.20\nMedian 90-day occupancy: 55.4%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 91.4,
+    "occupancy_pct": 55.4,
+    "open_nights_90d": 40,
+    "revenue_at_stake_gbp": 3656.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 4,
+    "score_amenities": 7,
+    "score_images": 8,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Free Parking & Self\u2011Check\u2011In, Whitefield Studio",
+      "King\u2011Bed Studio with 50\" TV & Fast Wi\u2011Fi \u2013 Whitefield",
+      "Walk\u2011to Metrolink, Aldi & Restaurants \u2013 Private Studio"
+    ],
+    "rewritten_desc": "Enjoy a private ground\u2011floor studio in a quiet Whitefield residential street, designed for comfort and convenience. A dedicated entrance and self\u2011check\u2011in let you arrive and leave on your schedule. The space sleeps up to four guests \u2013 a luxurious pocket\u2011sprung king\u2011size bed with a memory\u2011foam topper, a deep memory\u2011foam floor mattress (75\u202f\u00d7\u202f190\u202fcm) for an extra adult or child, and a travel cot for a baby (provided free of charge). \n\nThe fully equipped kitchen boasts a fridge/freezer, oven, hob, microwave, toaster, and a Quooker boiling\u2011water tap, plus all cookware, crockery and a complimentary breakfast hamper with Nespresso pods. Stay connected with 150\u202fMB fibre Wi\u2011Fi, stream on the 50\u2011inch HDTV, or unwind under the ceiling fan and central heating. The modern bathroom supplies shampoo, conditioner, shower gel and fresh towels. \n\nSecure driveway parking with CCTV is included, and an EV charger is available on request. Laundry service can be arranged, and extra amenities such as an iron, safe, wardrobe, and sound system are provided. Walk to Metrolink, local buses, Aldi and a selection of popular restaurants, making business or leisure stays effortless. Book now for a hassle\u2011free Whitefield experience.",
+    "top_amenity_gaps": [
+      "Washing machine",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use the king\u2011bed image with the pocket\u2011sprung mattress as the cover photo \u2013 it showcases the premium sleeping experience and instantly catches the eye.",
+    "key_diagnosis": [
+      "Cover photo is not the king\u2011bed shot; swapping it could boost click\u2011through rates (48 photos currently, but the lead image isn\u2019t the most compelling).",
+      "Missing in\u2011unit washing machine and dryer \u2013 adding them or highlighting the laundry service more prominently could raise appeal, especially for families staying up to 4 guests.",
+      "Title omits high\u2011value perks like free parking and self\u2011check\u2011in; a revised title would better match search queries and could help fill the 40 open nights (\u00a33,656 potential revenue)."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 40 open nights worth about \u00a33,656 in potential earnings \u2013 a stronger cover photo and a title that spotlights free parking could help fill them fast.",
+    "weakest_element": "description"
+  }
+}

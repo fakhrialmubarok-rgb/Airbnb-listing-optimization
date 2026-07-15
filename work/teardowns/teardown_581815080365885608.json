@@ -1,0 +1,39 @@
+{
+  "listing_id": "581815080365885608",
+  "host_name": "Jake",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 117.8,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 8481.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3117.8 in historic building with free parking",
+      "Modern 4-guest flat in rare 1920s building",
+      "Charming flat with 4.81* host reviews"
+    ],
+    "rewritten_desc": "Experience the unique blend of historic charm and modern comfort in this 4-guest property. Located in a 1920s architectural landmark, it's rare to find accommodation this characterful at \u00a3117.8/night. The entire property is yours, featuring minimalist design that complements the building's original details. While we recommend inquiring about the host's ability to provide entertainment options, parking and outdoor access are typically requested by guests. Available for 72 nights in the next 90 days, this is an excellent opportunity to enjoy a distinctive stay at a market-low price point (33% below city average). With 129 guest reviews already attesting to quality, this listing is ideally positioned to increase visibility through strategic optimization.",
+    "top_amenity_gaps": [
+      "Outdoor space accessibility",
+      "Entertainment systems",
+      "Designated parking availability"
+    ],
+    "photo_order_rec": "Lead with the living room to showcase the property's modern-minimalist aesthetic alongside the historic building features in the background. Follow with bathroom and bedroom imagery to demonstrate space quality.",
+    "key_diagnosis": [
+      "\u00a3117.8 rate is 33% below \u00a3175 median but occupancy lags 28.3%\u219219.6%",
+      "No listed amenities despite high-value gaps in entertainment & parking",
+      "Title fails to leverage historic property differentiation explicitly"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing achieves a 4.81 rating but lags 27% behind city average occupancy despite 33% price advantage",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1690011578400125980",
+  "host_name": "Molly",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 133.8,
+    "occupancy_pct": 70.7,
+    "open_nights_90d": 26,
+    "revenue_at_stake_gbp": 3478.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 7,
+    "score_images": 8,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Dog\u2011Friendly Cottage with Valley Views \u2013 \u00a3133/night",
+      "Quirky Split\u2011Level Cottage Near Trails",
+      "Stunning Village Views, Dog\u2011Friendly, Walks Steps Away"
+    ],
+    "rewritten_desc": "Welcome to The Cottage \u2013 a uniquely quirky, dog\u2011friendly retreat in the heart of the Peak District. Perched between Agden Reservoir and Dam Flask, the cottage offers sweeping valley, park and mountain views right from the garden. Ideal for cyclists, walkers, and climbers, you\u2019re minutes from the \u2018Le Tour\u2019 cycling route, Stanage and Bamford crags, and a host of pubs, caf\u00e9s and a bistro on your doorstep. The 3\u2011bedroom home was fully renovated in summer 2026 and features three split\u2011level floors with charming low\u2011ceiling spaces that add character (guests over 5\u202fft should mind the headroom). A cellar provides a washing machine, drying rack and secure bike storage. Enter through a garden path of nine steps; the kitchen lies just three steps down, fully equipped with an integrated dishwasher, electric hob and all essentials for self\u2011catering. A convenient cloakroom/WC sits to the right, perfect for short\u2011term dog care (up to 4\u202fhours). Two modern bathrooms, a cosy living room and three comfortable bedrooms comfortably sleep six guests. Enjoy high\u2011speed TV, board games, a travel cot, high chair and baby safety gates for families. With 55 photos showcasing every room and the spectacular surroundings, The Cottage promises an unforgettable stay in Sheffield\u2019s most scenic village.",
+    "top_amenity_gaps": [
+      "Exterior security cameras",
+      "Tumble dryer",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use a striking exterior shot that captures the valley and garden view as the cover photo \u2013 it instantly highlights the cottage\u2019s biggest visual asset and appeals to outdoor\u2011seeking travelers.",
+    "key_diagnosis": [
+      "Upgrade the title \u2013 the current 27\u2011character title lacks high\u2011value keywords; adding \u2018dog\u2011friendly\u2019 and \u2018valley views\u2019 can boost clicks, especially with a nightly rate of \u00a3133.8 (+28% vs the \u00a3104.90 median).",
+      "Rewrite the description to foreground the cottage\u2019s outdoor amenities and location while moving the low\u2011ceiling warning to house rules; the present 0\u2011review listing\u2019s description scores only 3/10 and may deter potential guests.",
+      "Set the cover photo to the exterior valley view and add a dedicated dog\u2011friendly space image; with 55 photos you have coverage, but the lead image currently isn\u2019t specified, limiting visual impact."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your cottage commands a \u00a3133.8 nightly rate\u201428% above the Sheffield median\u2014yet you\u2019re already achieving a strong 70.7% occupancy; a sharper, keyword\u2011rich title can capture even more of that demand.",
+    "weakest_element": "description"
+  }
+}

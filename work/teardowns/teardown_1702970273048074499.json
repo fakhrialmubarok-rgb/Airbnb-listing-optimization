@@ -1,0 +1,39 @@
+{
+  "listing_id": "1702970273048074499",
+  "host_name": "Josh",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 100.0,
+    "occupancy_pct": 72.8,
+    "open_nights_90d": 24,
+    "revenue_at_stake_gbp": 2400.0
+  },
+  "analysis": {
+    "score_title": 7,
+    "score_desc": 3,
+    "score_amenities": 3,
+    "score_images": 5,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "\u00a3100 Leeds Apartment \u2013 City Center, 2 Beds, 4 Guests",
+      "Center Leeds 2-Bed Flat: 72.8% Booked, Just \u00a3100/Night",
+      "Save 35%: 2-Bed Apartment in Leeds\u2019 Heart (72.8% Booked)"
+    ],
+    "rewritten_desc": "Chic 2-bedroom apartment at a 35% discount to local averages! Located in Leeds city center (verified address: [insert precise neighborhood here]), this 4-guest property mixes modern comforts with unbeatable value. While other listings charge \u00a3154+ for city center access, we offer walkable proximity to [insert specific attractions here] at just \u00a3100/night. The 24 open nights across the next 90 days mean you can secure this highly-rated (4.88) property even with last-minute plans. Fully furnished for travelers, with [insert key detail like 'free downtown parking' or 'sofa bed in living area'] to ensure flexibility. Book now with a 17-review track record for consistent quality.",
+    "top_amenity_gaps": [
+      "Outdoor seating area",
+      "On-site parking facilities",
+      "Smart TV/HD streaming"
+    ],
+    "photo_order_rec": "Place the living room photo first as it shows social space and modern decor \u2013 critical for first impressions in city-center listings",
+    "key_diagnosis": [
+      "Priced at \u00a3100 (35% below cohort median \u00a3154.60) but only shows 72.8% occupancy vs market's 47.8% \u2013 undercharging without premium positioning",
+      "Description lacks specific selling points despite high review score (4.88) and significant booking volume (72.8% booked in 90 days)",
+      "Amenities missing categories strongly prioritized by local renters: no parking info in 72.8% occupied listing vs market's 47.8%"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "We've identified an opportunity to increase revenue while maintaining 72.8% occupancy - by aligning pricing strategy with market benchmarks in Leeds center.",
+    "weakest_element": "description"
+  }
+}

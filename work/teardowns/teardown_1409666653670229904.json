@@ -1,0 +1,39 @@
+{
+  "listing_id": "1409666653670229904",
+  "host_name": "Matt",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 94.4,
+    "occupancy_pct": 48.9,
+    "open_nights_90d": 46,
+    "revenue_at_stake_gbp": 4342.4
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "Butterfly Cottage \u2013 \u00a394/night, 39% Below Avg",
+      "200\u2011Year\u2011Old Georgian Cottage \u2013 Sleeps 4",
+      "Butterfly Cottage \u2013 Quiet Garden Retreat"
+    ],
+    "rewritten_desc": "Welcome to Butterfly Cottage, a beautifully preserved 200\u2011year\u2011old Georgian home that offers a unique blend of historic charm and modern comfort. Nestled in a tranquil neighborhood, this entire\u2011home retreat comfortably sleeps up to four guests, making it perfect for families, couples, or small groups seeking a peaceful getaway. \n\nAt just \u00a394.4 per night, you\u2019re enjoying a rate that is 39\u202f% lower than the city\u2019s median nightly price of \u00a3154.60, while still benefiting from an impressive 4.8 rating based on 246 guest reviews. Although the listing is not yet a Superhost, the consistently high reviews highlight the quality of the stay and the attentive care of host Matt. \n\nInside, you\u2019ll find period features such as original moldings, high ceilings, and classic fireplaces, complemented by contemporary amenities that ensure a comfortable stay. The spacious living area provides a cozy spot to unwind after a day of exploring, and the fully equipped kitchen lets you prepare meals with ease. With two well\u2011appointed bedrooms and a modern bathroom, the cottage balances historic elegance with today\u2019s conveniences. \n\nWhether you\u2019re drawn by the historic architecture, the exceptional value, or the quiet setting, Butterfly Cottage promises an unforgettable stay that feels both timeless and welcoming.",
+    "top_amenity_gaps": [
+      "Outdoor space (garden, patio, or balcony)",
+      "Dedicated parking (free or on\u2011site)",
+      "Entertainment options (TV, streaming, board games)"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior shot of the cottage (showing its Georgian fa\u00e7ade and any garden) as the cover photo to immediately convey historic charm and the property\u2019s unique character.",
+    "key_diagnosis": [
+      "Update the title to highlight the \u00a394.4 rate and its 39\u202f% below\u2011median advantage (e.g., \"Butterfly Cottage \u2013 \u00a394/night, 39% Below Avg\").",
+      "Create a full 200\u2011300\u2011word description that showcases the 200\u2011year history, 4\u2011guest capacity, 4.8 rating from 246 reviews, and the exceptional price point.",
+      "Add the missing high\u2011value amenities (outdoor space, parking, entertainment) to the amenities list to attract guests seeking those features."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate of \u00a394.4 is 39% below the city median yet you\u2019re already achieving a 48.9% occupancy\u2014let's turn that price advantage into even higher bookings.",
+    "weakest_element": "photos"
+  }
+}

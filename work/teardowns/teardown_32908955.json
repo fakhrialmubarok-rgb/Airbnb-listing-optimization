@@ -1,0 +1,39 @@
+{
+  "listing_id": "32908955",
+  "host_name": "Paul",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 194.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 14744.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 1,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a3194 City Centre 1BR + 1BA with Stunning Views",
+      "28.3% Cheaper Nearby, But Our Central Location Wins",
+      "4-Guest Apartment in Heart of City - \u00a3194/night"
+    ],
+    "rewritten_desc": "Step into this beautifully curated 1-bedroom, 1-bathroom city centre apartment, perfectly positioned for explorers who value convenience. Located in the prime urban hub, you'll wake up just moments from major attractions, cafes, and nightlife. Sleeps up to 4 guests with space for luggage, meals, and relaxation. As a recently available property, you'll be among the first to experience its vibrant atmosphere. At \u00a3194 per night, this listing offers premium accommodation at a price that balances comfort with value. With 76 open nights in the next 90 days, now is the ideal time to secure your central stays before demand increases. Note: While our host is just starting with rentals, we maintain high standards of cleanliness and security for all guests.",
+    "top_amenity_gaps": [
+      "Outdoor spaces for guest relaxation",
+      "Complimentary parking for convenience",
+      "On-site entertainment (gaming/console)"
+    ],
+    "photo_order_rec": "Prioritize an exterior cityscape view as the cover photo - it's the strongest visual hook for location-focused travelers",
+    "key_diagnosis": [
+      "Nightly rate is 11% above cohort median (\u00a3175) while occupancy (15.2%) lags median 28.3%",
+      "No amenities specified at all in listing",
+      "Zero professional photos reported, risking 47% lower booking rates per industry benchmarks"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3194 rate is 11% above local averages yet occupancy hovers at 15.2% vs 28.3% nearby - let's fix this gap",
+    "weakest_element": "description"
+  }
+}

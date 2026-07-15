@@ -1,0 +1,39 @@
+{
+  "listing_id": "41816726",
+  "host_name": "Johnson",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 403.4,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 27431.2
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 3,
+    "score_amenities": 10,
+    "score_images": 0,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Luxury Airport Home, \u00a3403.4/nt, 4 Guests",
+      "Airport Haven, Free Parking, Sleeps 4",
+      "Cozy Airport Escape, \u00a3403.4/nt, 5-min Taxi"
+    ],
+    "rewritten_desc": "Escape to this luxurious entire-home retreat, just 5 minutes from London's airport. With a free parking spot, you'll feel like you're in the countryside without sacrificing convenience. This stylish property, perfect for 4 guests, features [insert more details about the property]. Enjoy the peaceful surroundings, and take advantage of nearby London's iconic attractions. With a 15-minute taxi ride to the airport, you'll be flying in and out of the city with ease.",
+    "top_amenity_gaps": [
+      "Missing Outdoor amenity for hosts with a garden or outdoor area, which can increase booking value by 10-20% in some markets",
+      "No facilities (e.g., gym, pool) listed for \u00a3403.4/nt, when cohort has a median rate of \u00a3175.00",
+      "No Entertainment listed, when a nearby park or pub could entice long-stay guests and increase their average nightly rate by \u00a35-10"
+    ],
+    "photo_order_rec": "Make the living room the cover photo, as guests are drawn to the first room they see when browsing listings like this, which has a low occupancy rate.",
+    "key_diagnosis": [
+      "Increase nightly rate to \u00a3600.00 or higher, closing the \u00a3216.60 rate gap with the median \u00a3175.00 cohort, or explore the possibility of a lower rate (\u00a3350.00) and improved occupancy rates",
+      "Address the below-median occupancy of 25.0% booked (68 open nights) in favour of cohort's 28.3% occupancy, by adding more photos and details highlighting the property's unique selling points",
+      "Include at least 4-6 clear exterior and interior photos, to address the currently unknown photo count issue"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Given your \u00a3403.4/nt rate and 25.0% occupancy, could we discuss ways to optimize your listing to appeal to more guests, ensuring you reach your full revenue potential?",
+    "weakest_element": "photos"
+  }
+}

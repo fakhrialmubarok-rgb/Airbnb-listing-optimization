@@ -1,0 +1,39 @@
+{
+  "listing_id": "23143147",
+  "host_name": "James",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 66.2,
+    "occupancy_pct": 39.1,
+    "open_nights_90d": 55,
+    "revenue_at_stake_gbp": 3641.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Countryside Retreat \u2013 62% Below Avg Rate",
+      "Private Garden Patio \u2013 Quiet Rural Escape",
+      "4-Guest Country Home \u2013 Low \u00a366 Nightly"
+    ],
+    "rewritten_desc": "Welcome to your peaceful countryside hideaway, a full\u2011home retreat perfectly suited for up to four guests. Nestled in a quiet rural setting, the property offers a private garden patio where you can unwind under the open sky, enjoy a morning coffee, or fire up a simple BBQ for a relaxed dinner. Inside, the bright living area flows into a fully equipped kitchen, and the comfortable bedrooms provide restful nights after days of exploring the surrounding countryside.\n\nRated 4.84 from 156 delighted guests, this home consistently earns high marks for cleanliness, hospitality, and value. At just \u00a366.20 per night, you\u2019re paying 62% less than the city\u2019s median nightly rate of \u00a3175, making it an unbeatable deal for families, couples, or small groups seeking authentic rural charm without breaking the bank. \n\nYour stay includes all the basics you need for a comfortable visit, and you\u2019ll benefit from a host who\u2019s ready to ensure a smooth experience. With a current 39.1% booking rate for the next 90 days, there are still 55 open nights awaiting guests like you. Book now to secure your slice of countryside tranquility at a price that simply can\u2019t be beat.",
+    "top_amenity_gaps": [
+      "Dedicated off\u2011street parking",
+      "High\u2011speed Wi\u2011Fi throughout the home",
+      "Outdoor entertainment setup (e.g., BBQ grill, patio lighting)"
+    ],
+    "photo_order_rec": "Use a bright, sun\u2011lit shot of the private garden patio as the cover photo\u2014it instantly showcases the property\u2019s unique outdoor space and the price\u2011advantage angle that sets you apart.",
+    "key_diagnosis": [
+      "Add and list high\u2011value amenities (parking, Wi\u2011Fi, outdoor entertainment) \u2013 the listing currently shows no amenities, while the market values these categories.",
+      "Create a compelling 200\u2011300 word description \u2013 the current description is empty, missing an opportunity to highlight the 62% price advantage and 4.84 rating.",
+      "Rewrite the title to include the price advantage and key differentiator \u2013 the existing title is generic and does not leverage the \u00a366.2 rate that is 62% below the \u00a3175 median."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate of \u00a366.2 is 62% below the city\u2019s median of \u00a3175, yet you\u2019re only 39% booked, leaving 55 nights open in the next 90 days.",
+    "weakest_element": "description"
+  }
+}

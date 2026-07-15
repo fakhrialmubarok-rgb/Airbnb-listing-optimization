@@ -1,0 +1,39 @@
+{
+  "listing_id": "28461570",
+  "host_name": "Ben",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 803.0,
+    "occupancy_pct": 16.3,
+    "open_nights_90d": 75,
+    "revenue_at_stake_gbp": 60225.0
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 4\u2011guest apt \u00a3803/night \u2013 huge & modern",
+      "Spacious contemporary flat \u2013 4 guests, \u00a3803/night",
+      "Huge homely apartment \u2013 4 guests, premium stay"
+    ],
+    "rewritten_desc": "Welcome to your modern sanctuary in the heart of the city. This contemporary, homely and huge apartment comfortably sleeps up to four guests, making it perfect for families or small groups seeking space and style. The entire home is yours to enjoy, featuring an open\u2011plan living area flooded with natural light, a fully equipped kitchen, and a stylish bedroom suite with premium bedding. Guests have praised the thoughtful design, reflected in a 4.91 rating from 11 reviews, and the attentive host Ben, a new but dedicated member of the Airbnb community. At \u00a3803 per night, the flat offers a premium experience for travelers who value comfort and location. Over the next 90 days the calendar shows a 16.3% booking rate, leaving plenty of opportunity for future guests to discover this gem. While the listing is not yet part of the Superhost program, the high review score demonstrates strong guest satisfaction. Whether you\u2019re visiting for business or leisure, you\u2019ll appreciate the spacious layout, contemporary d\u00e9cor, and the convenience of having the entire property to yourself. Book now and enjoy a memorable stay in a city\u2011center oasis designed for comfort and style.",
+    "top_amenity_gaps": [
+      "Outdoor space (balcony, garden or terrace)",
+      "Dedicated parking or secure vehicle storage",
+      "Entertainment amenities (TV, streaming, board games)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the main living area as the cover photo\u2014it showcases the apartment\u2019s size and contemporary design, drawing immediate interest.",
+    "key_diagnosis": [
+      "Price mismatch: nightly rate is \u00a3803, which is 419% above the city median of \u00a3154, yet occupancy is only 16.3% (vs 47.8% median) \u2013 lower the price to improve bookings.",
+      "Missing high\u2011value amenities: no outdoor space, parking, or entertainment features listed, which are proven to boost appeal for premium travelers.",
+      "No visible photo inventory: with an unknown photo count, the listing likely lacks professional room\u2011by\u2011room images; add high\u2011quality photos of each space and set the living\u2011room as the lead image."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced \u00a3803/night \u2013 that\u2019s 419% above the city median \u2013 yet it\u2019s only 16.3% booked for the next 90 days.",
+    "weakest_element": "description"
+  }
+}

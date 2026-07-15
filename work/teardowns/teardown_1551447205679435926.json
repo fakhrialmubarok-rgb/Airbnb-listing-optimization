@@ -1,0 +1,39 @@
+{
+  "listing_id": "1551447205679435926",
+  "host_name": "Zoe",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 151.6,
+    "occupancy_pct": 46.7,
+    "open_nights_90d": 48,
+    "revenue_at_stake_gbp": 7276.8
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 8,
+    "score_amenities": 10,
+    "score_images": null,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "Luxury Kelham Island Hideaway",
+      "Sheffield City Centre Apartment",
+      "Kelham Island Getaway for 4"
+    ],
+    "rewritten_desc": "Experience the best of Kelham Island in this luxurious apartment, perfect for a group of 4. Located in the heart of the island, this property offers easy access to the local shops, bars, and restaurants. With its 2 spacious bedrooms, 2 bathrooms, and fully equipped kitchen, this apartment is ideal for anyone looking for a comfortable and convenient place to stay. Enjoy the local atmosphere, explore the nearby attractions, and experience the unique charm of Kelham Island. This property is ideal for couples, friends, and families alike. Book now and make unforgettable memories in Sheffield.",
+    "top_amenity_gaps": [
+      "Outdoor space or garden for guests to relax and enjoy",
+      "Parking facilities to accommodate guests' vehicles",
+      "Entertainment options, such as smart TV or board games"
+    ],
+    "photo_order_rec": "The kitchen and living area should be the cover photo, showcasing the stylish furniture and modern appliances, to immediately grab the attention of potential guests.",
+    "key_diagnosis": [
+      "Their occupancy is 46.7%, which is 0.9% lower than the cohort median of 47.8% (46.7% booked, 18 reviews, 48 open nights).",
+      "Given their \u00a3151.6 nightly rate is only \u00a32.96 less than the cohort median, they are likely pricing competitively, but their occupancy suggests there may be issues with the listing's appeal.",
+      "With 0 reviews within the first year, Zoe's average rating has yet to be determined, making it difficult for guests to trust her quality of service (Host: Zoe, 0 years hosting, None avg rating)."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Given 46.7% occupancy over the next 90 days for \u00a3151.6 with 18 reviews, I'd love to discuss ways to improve visibility and convert more open nights.",
+    "weakest_element": "title"
+  }
+}

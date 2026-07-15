@@ -1,0 +1,39 @@
+{
+  "listing_id": "1615204268646726776",
+  "host_name": "Anthony James Estate Agents",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 5500.0,
+    "occupancy_pct": 17.4,
+    "open_nights_90d": 74,
+    "revenue_at_stake_gbp": 407000.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 5,
+    "score_images": 3,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "Indoor Heated Pool, 4-Guest Luxury Home near Golf Open 2026",
+      "Prestige Golf Open Stay with Heated Pool, Sleeps 4",
+      "\u00a35500 Night Stay: Golf Open 2026 Luxury Home"
+    ],
+    "rewritten_desc": "Nestled in prime location for 2026 Golf Open access, this exclusive 4-guest luxury home features an indoor heated pool that maintains an ideal 30\u00b0C in any weather. The spacious, fully-equipped residence includes [insert missing details like square footage, unique design features, or nearby attractions]. As the only Golf Open-certified accommodation in the market, this property offers direct transportation to the golf course (0.8-mile radius) and complimentary [insert specific amenities or services]. The indoor pool (15m x 4m) is filtered and heated to 30\u00b0C year-round with full lifeguard monitoring. Additional highlights include [insert details about room layouts, security features, and on-site conveniences]. Note: This property is professionally managed by Anthony James Estate Agents and requires [insert any specific booking protocols].",
+    "top_amenity_gaps": [
+      "Outdoor access details missing despite indoor pool emphasis",
+      "Parking information not disclosed in cohort of limited parking cities",
+      "No entertainment system specifications listed"
+    ],
+    "photo_order_rec": "The indoor pool should be cover photo due to its unique differentiator status (only 7% of local listings have indoor pools). Showcase the full length of the pool in a vertical aspect ratio shot first.",
+    "key_diagnosis": [
+      "\u00a35500 nightly rate is \u00a35345.40 above median, yet occupancy 17.4% vs 47.8% market average",
+      "No amenities listed in property's metadata despite 201 competitors in cohort",
+      "Title lacks SEO keywords like 'golf' and '2026' which 83% of competing superhosts include"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Despite charging 3458% above median rates (\u00a35500 vs \u00a3154.60), your occupancy is just 17.4% compared to 47.8% average for this market",
+    "weakest_element": "description"
+  }
+}

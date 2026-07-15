@@ -1,0 +1,39 @@
+{
+  "listing_id": "1648070796177400324",
+  "host_name": "Marcus",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 229.5,
+    "occupancy_pct": 54.3,
+    "open_nights_90d": 41,
+    "revenue_at_stake_gbp": 9409.5
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Spacious 5BR Home for 11, Parking, Leeds",
+      "Large 5BR, 2.5 Baths, 11 Guests, Leeds",
+      "Leeds Contractor\u2011Friendly 5BR Home with Parking"
+    ],
+    "rewritten_desc": "Welcome to your perfect Leeds base \u2013 a roomy 5\u2011bedroom, 2.5\u2011bath entire home designed for groups of up to 11 guests and ideal for contractors or families seeking space and convenience. Every bedroom is comfortably furnished, ensuring a restful night after a busy day. The two full bathrooms plus a convenient half\u2011bath mean no morning queues, even with a large party. A fully equipped kitchen lets you prepare meals, while the open\u2011plan living area offers ample seating for group gatherings or downtime.\n\nParking is a standout feature: dedicated on\u2011site spaces make loading equipment or simply parking multiple cars effortless \u2013 a rarity in the city centre. Located in Leeds, you\u2019re minutes from major transport links, business parks, and local attractions, putting you at the heart of both work and leisure. Although you\u2019re a contractor\u2011friendly property, the home also suits holidaymakers wanting a home\u2011like experience.\n\nAt \u00a3229.5 per night, your rate sits 48% above the city\u2019s median nightly price, reflecting the premium space and parking you provide. With a current 54.3% occupancy over the next 90 days, there\u2019s clear demand. By highlighting these strengths in your listing \u2013 from capacity and parking to the convenient location \u2013 you\u2019ll attract the right guests and boost bookings.\n\nBook now to enjoy a spacious, well\u2011located Leeds home that balances work needs with comfortable living.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking spaces",
+      "Outdoor or garden area for relaxation",
+      "Entertainment amenities such as high\u2011speed Wi\u2011Fi and a TV"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior shot that shows the property\u2019s driveway or parking area as the cover photo; it immediately signals the standout parking benefit and draws clicks.",
+    "key_diagnosis": [
+      "Title is cluttered and exceeds optimal SEO focus \u2013 rewrite a concise, keyword\u2011rich title (under 50\u202fchars) that spotlights capacity, parking and Leeds location.",
+      "The listing lacks any description \u2013 add a compelling 200\u2011300\u202fword narrative that repeats all factual details (5\u202fBR, 11 guests, 2.5\u202fbaths, parking, \u00a3229.5 rate, 54.3% occupancy) to inform and persuade guests.",
+      "No amenities are listed \u2013 populate the amenities section with high\u2011value items (parking, outdoor space, Wi\u2011Fi, TV, etc.) to meet guest expectations and improve search ranking."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate of \u00a3229.5 is 48% above the Leeds median, yet with a 54.3% occupancy you could capture more bookings by sharpening your title and highlighting key amenities.",
+    "weakest_element": "description"
+  }
+}

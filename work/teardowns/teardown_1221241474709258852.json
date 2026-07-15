@@ -1,0 +1,39 @@
+{
+  "listing_id": "1221241474709258852",
+  "host_name": "Desmond",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 323.8,
+    "occupancy_pct": 19.6,
+    "open_nights_90d": 72,
+    "revenue_at_stake_gbp": 23313.6
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 2,
+    "title_variants": [
+      "Birmingham Retreat: Prices from \u00a3323.8/night",
+      "Birmingham House: Book Now, Prices from \u00a3323.8",
+      "Birmingham Getaway: Unique House, Prices from \u00a3323.8"
+    ],
+    "rewritten_desc": "Escape to the Heart of Birmingham! This stunning entire home is perfectly situated for your next getaway. With a capacity to host 4 guests, this property is ideal for friends and family alike. Enjoy the beautiful Birmingham surroundings, explore local attractions, and return to your private haven. This house has been thoughtfully designed to provide a comfortable and relaxing environment for all. With a nightly rate of \u00a3323.8, you'll be treated to a luxurious experience. With 17 reviews and a 4.18 rating, our guests have been thoroughly impressed with our home. Book now and make unforgettable memories in Birmingham!",
+    "top_amenity_gaps": [
+      "Outdoor spaces and seating areas for guests to enjoy",
+      "Parking and parking facilities to ensure guest convenience",
+      "Entertainment options such as TV or games to enhance guest experience"
+    ],
+    "photo_order_rec": "Consider making the first photo a shot of the living room or a cozy seating area to immediately give potential guests an idea of the property's atmosphere and comfort.",
+    "key_diagnosis": [
+      "Your nightly rate of \u00a3323.8 is an astonishing +85% above the cohort median of \u00a3175.00, which may be intimidating guests who are expecting a more affordable stay.",
+      "With an occupancy rate of 19.6% booked in the next 90 days, you're significantly lagging behind the cohort median occupancy of 28.3%, leaving room for improvement by enhancing your listing and guest experience.",
+      "As a host with an average rating of None and zero years of experience, consider actively engaging with your guests to improve your review scores and increase repeat bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With an occupancy rate of just 19.6%, we're missing out on over \u00a34,980 in bookings (\u00a3323.8 x 72 open nights). Let's work together to identify areas for improvement and boost occupancy.",
+    "weakest_element": "description"
+  }
+}

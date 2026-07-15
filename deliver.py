@@ -509,8 +509,19 @@ def send_offer_email(
     body_part.attach(MIMEText(html,  "html"))
     msg.attach(body_part)
 
-    # Outreach PDF — attach if it exists or can be built
+    # Outreach PDF — only attach when photos are genuinely weak (score_images <= 5).
+    # For ok-photo listings, attachment adds spam score with no conversion payoff.
+    attach_pdf = False
     if listing_id:
+        try:
+            td = json.loads((Path(__file__).parent / "work" / "teardowns" /
+                             f"teardown_{listing_id}.json").read_text())
+            si = td.get("analysis", {}).get("score_images") or 0
+            attach_pdf = (si <= 5)
+        except Exception:
+            attach_pdf = True  # default to attach when teardown unavailable
+
+    if listing_id and attach_pdf:
         pdf_path = Path(__file__).parent / "work" / "pdfs" / f"outreach_{listing_id}.pdf"
         if not pdf_path.exists():
             try:
@@ -529,6 +540,8 @@ def send_offer_email(
                            filename="your-listing-teardown-preview.pdf")
             msg.attach(att)
             print(f"  [pdf] Attached {pdf_path.name} ({pdf_path.stat().st_size//1024} KB)")
+    elif listing_id and not attach_pdf:
+        print(f"  [pdf] Skipped attachment (ok-photo listing, score_images > 5)")
 
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
     resp = requests.post(

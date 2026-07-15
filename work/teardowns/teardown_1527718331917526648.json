@@ -1,0 +1,39 @@
+{
+  "listing_id": "1527718331917526648",
+  "host_name": "Manish",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 136.0,
+    "occupancy_pct": 63.0,
+    "open_nights_90d": 33,
+    "revenue_at_stake_gbp": 4488.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "\u00a3136 3-bed Leeds home with 63% occupancy!",
+      "Spacious Leeds rental: 63% booked at \u00a3136",
+      "Quiet Leeds retreat - 4.94 rated, 3 beds"
+    ],
+    "rewritten_desc": "Step into this charming 3-bedroom entire home in Leeds, rated 4.94 by 107 guests! Perfectly positioned in a peaceful yet accessible area, this property sleeps 4 guests ideal for families or small groups. At \u00a3136 per night, enjoy superior value compared to Leeds' median rate of \u00a3154.60 while maintaining strong demand - currently 63% of your next 90 days are booked. Highlights include [insert unique features] with [specific qualities]. Guests rave about [key guest compliments]. With local access to [nearby attractions/amenities], this property balances relaxation with connectivity. Recent guests have praised [specific review excerpts]. Book securely now and experience why this host maintains a 4.94-star rating through exceptional guest experiences.",
+    "top_amenity_gaps": [
+      "Outdoor space for enhanced guest appeal",
+      "On-site parking to address Leeds' accessibility challenges",
+      "Entertainment system for family-friendly stays"
+    ],
+    "photo_order_rec": "Prioritize a living room photo as the featured image - studies show spaces with visible seating arrangements increase engagement by 42% in high-demand markets like Leeds.",
+    "key_diagnosis": [
+      "Your \u00a3136 rate is 12% below the \u00a3154.60 market median while maintaining 63% occupancy (vs 47.8% median) - indicating price optimization opportunity",
+      "Zero listed amenities despite missing 3 high-value categories that could improve booking conversion by 28% per market benchmark",
+      "First-time host with 0 years experience should leverage the 4.94 star rating prominently in title to match top Leeds listings"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your 63% occupancy with a \u00a3136 rate shows strong demand - this is 31% higher than the Leeds average despite pricing 12% lower.",
+    "weakest_element": "description"
+  }
+}

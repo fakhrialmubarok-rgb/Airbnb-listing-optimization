@@ -1,0 +1,202 @@
+[
+  {
+    "n": 1,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-1217219864708473490/original/e82eb81c-bb16-4a95-84fd-8a1683a5beb9.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": true
+  },
+  {
+    "n": 2,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/9b977523-42eb-450a-9261-ad69af558db6.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": true
+  },
+  {
+    "n": 3,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/39bb30f0-aa35-4bf9-afa4-d168c1d55978.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": false
+  },
+  {
+    "n": 4,
+    "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-1217219864708473490/original/bfabf129-64a8-42de-8e04-84b3accde444.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": false
+  },
+  {
+    "n": 5,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/1fb3b043-66e3-4777-8b8f-0a64df8998ae.jpeg",
+    "status": "original_kept",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": false,
+      "lights_on": false,
+      "curtains_open": false,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "dramatically_brighter, lights_on, curtains_open"
+    },
+    "tv": false
+  },
+  {
+    "n": 6,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/0a7f7454-411d-47cb-8cfe-eca555bd509c.jpeg",
+    "status": "original_kept",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": false,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "no_added_objects"
+    },
+    "tv": false
+  },
+  {
+    "n": 7,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/6186fe63-ff9e-4a4e-a653-7eb72a2674c4.jpeg",
+    "status": "original_kept",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": false,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "fail",
+      "reason": "curtains_open"
+    },
+    "tv": false
+  },
+  {
+    "n": 8,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/42622abf-7ff4-42cc-bbe1-4689ab2a0c24.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": false
+  },
+  {
+    "n": 9,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/2f408455-fedc-4d17-8eb9-5e7e5fae11de.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": false
+  },
+  {
+    "n": 10,
+    "url": "https://a0.muscache.com/im/pictures/miso/Hosting-1217219864708473490/original/de74bf4f-a526-4030-acbd-f2a96268ed95.jpeg",
+    "status": "recreated",
+    "backend": "gemini nano-banana (free)",
+    "qc": {
+      "no_added_objects": true,
+      "nothing_removed_or_moved": true,
+      "no_ai_artifacts": true,
+      "straight_verticals": true,
+      "dramatically_brighter": true,
+      "lights_on": true,
+      "curtains_open": true,
+      "no_visible_cables": true,
+      "window_not_blown_out": true,
+      "verdict": "pass",
+      "reason": ""
+    },
+    "tv": false
+  }
+]

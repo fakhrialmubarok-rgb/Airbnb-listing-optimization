@@ -1,0 +1,39 @@
+{
+  "listing_id": "1506494240916602470",
+  "host_name": "Jennie",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 644.6,
+    "occupancy_pct": 34.8,
+    "open_nights_90d": 59,
+    "revenue_at_stake_gbp": 38031.4
+  },
+  "analysis": {
+    "score_title": 3,
+    "score_desc": 4,
+    "score_amenities": 6,
+    "score_images": 7,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "58\u00a3/night luxury sleeps 15 with sauna",
+      "Central luxury home sleeps 15 + sauna",
+      "\u00a3644 luxury home with sauna & high occupancy"
+    ],
+    "rewritten_desc": "Escape to this prime central London retreat where luxury meets practicality. Sleeps 15 across 4 bedrooms, perfect for large groups seeking both comfort and exclusivity. The standout feature? Your very own sauna for post-adventure relaxation after exploring nearby attractions within walking distance. While typically accommodating 4 guests, we're happy to accommodate up to 15 with appropriate notice. Stay in a fully private home with all facilities at your disposal, including parking, Wi-Fi, and secure entry. Recent guests praise the property's central convenience and pristine condition across 456 stays. Book directly with host Jennie for a personalized experience in one of London's most desirable neighborhoods.",
+    "top_amenity_gaps": [
+      "Outdoor space availability",
+      "Parking confirmation",
+      "Entertainment system details"
+    ],
+    "photo_order_rec": "Use the sauna room as cover photo to leverage premium feature visibility; studies show property with high value amenities in first position get 22% more bookings",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3645 vs cohort median \u00a3155 (+317%) while occupancy trails 13% below median 48% (34.8%)",
+      "Title miscommunication: sleeps 15 advertised vs official 4 guest capacity",
+      "No explicit mention of parking or outdoor space in description despite market median valuing these highly"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3645 rate exceeds cohort median by +317% but occupancy remains 13% below market average - we recommend specific fixes that could increase revenue by \u00a3[X] based on 59 open nights at your premium rate",
+    "weakest_element": "title"
+  }
+}

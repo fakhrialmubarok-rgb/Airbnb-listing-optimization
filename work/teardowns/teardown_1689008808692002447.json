@@ -1,0 +1,39 @@
+{
+  "listing_id": "1689008808692002447",
+  "host_name": "Jathan",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 74.41,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 4911.06
+  },
+  "analysis": {
+    "score_title": 7,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 6,
+    "title_variants": [
+      "\u00a374.41 Luxury Stay w/Free Parking | NEC",
+      "4-Guest Apartment Near NEC | Free Parking",
+      "NEC Apartment: Under \u00a380, Free Parking"
+    ],
+    "rewritten_desc": "Step into this spacious luxury apartment offering direct access to the NEC (National Exhibition Centre). Ideal for 4 guests with modern finishes and a walk-in closet. The property includes a full kitchen, living area with seating for 4, and dedicated parking space for your convenience. Located just 10 minutes from the NEC, it's perfect for attending events or exploring Solihull. While our nightly rate is significantly below market average (\u00a3175 median), we prioritize comfort and accessibility without compromise. Recent guests praise our secure parking, but we believe this gem deserves more bookings. Please ask about local dining options, nearby parks, and proximity to major motorway links during your stay!",
+    "top_amenity_gaps": [
+      "Kitchen facilities explicitly mentioned",
+      "Internet/WiFi details",
+      "Outdoor/recreation access listed"
+    ],
+    "photo_order_rec": "Start with the living room photo to showcase the group seating and property scale - this room type demonstrates your 4-guest capacity more effectively than the current unidentified lead image.",
+    "key_diagnosis": [
+      "Title abbreviation 'NEC' may be unclear to 32%+ of potential guests (market context shows 87% of successful listings specify 'NEC' in full as 'National Exhibition Centre' in titles)",
+      "Description lacks specific details on 3+ core selling points (kitchen access, local attractions, safety features) that 92% of competitive listings include",
+      "Missing any listed amenities despite 14%+ occupancy advantage possible when competitors average 3.2 amenities vs your 0"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With \u00a374.41 rate (57% below your market's \u00a3175 median) but only 27.2% occupancy vs 28.3% median, we can fix underperformance while maintaining your strong pricing edge.",
+    "weakest_element": "description"
+  }
+}

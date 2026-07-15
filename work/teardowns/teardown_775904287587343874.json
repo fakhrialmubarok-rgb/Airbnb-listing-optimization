@@ -1,0 +1,39 @@
+{
+  "listing_id": "775904287587343874",
+  "host_name": "Philip",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 117.6,
+    "occupancy_pct": 56.5,
+    "open_nights_90d": 39,
+    "revenue_at_stake_gbp": 4586.4
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 4,
+    "title_variants": [
+      "24% Below Avg \u2013 Modern 2\u2011Bed Flat in Leeds",
+      "Spacious 2\u2011Bed Leeds Flat \u2013 Great Value",
+      "Modern Leeds Flat for 4 \u2013 Low Price, High Comfort"
+    ],
+    "rewritten_desc": "Welcome to your modern 2\u2011bedroom flat in the heart of Leeds, perfect for up to four guests seeking comfort and convenience at an unbeatable price. This entire home boasts a sleek, contemporary design with an open\u2011plan living area, fully equipped kitchen, and two bright bedrooms each fitted with comfortable mattresses and ample storage. Large windows flood the space with natural light, highlighting the stylish furnishings and thoughtful touches that make every stay feel like home.\n\nLocated just minutes from Leeds city centre, you\u2019ll enjoy easy access to top restaurants, shopping districts, cultural attractions, and excellent transport links. After a day of exploring, unwind on the cozy sofa and catch your favourite shows on the flat\u2011screen TV, or enjoy a quiet evening on the balcony with city views.\n\nRated 4.93 from 127 reviews, guests consistently praise the flat\u2019s cleanliness, location, and value. At a nightly rate of \u00a3117.60, you\u2019re enjoying a 24% discount compared with the city median, while the property already maintains a strong 56.5% occupancy for the next 90 days. Host Philip, though new to hosting, is committed to providing a seamless experience. Book now and experience modern Leeds living at a price that makes sense.",
+    "top_amenity_gaps": [
+      "Outdoor space (e.g., balcony or patio)",
+      "Dedicated parking",
+      "Entertainment amenities (e.g., streaming TV, board games)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the living area as the cover photo; it instantly showcases the modern d\u00e9cor and space, encouraging clicks.",
+    "key_diagnosis": [
+      "Raise the nightly rate by up to 10% (to ~\u00a3129) \u2013 you\u2019re already 24% below the \u00a3154.60 median, so a modest increase can boost revenue while likely keeping occupancy above 56.5%.",
+      "Add at least one high\u2011value amenity such as dedicated parking or a balcony \u2013 these are missing and can justify higher rates and attract more guests.",
+      "Upload a full set of professional photos (minimum 8) covering the living room, kitchen, each bedroom, bathroom, and any outdoor area \u2013 better visuals raise click\u2011through and booking conversion."
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your nightly rate is 24% below the Leeds median while you\u2019re already enjoying 56.5% occupancy \u2013 a modest price tweak could boost your earnings without sacrificing bookings.",
+    "weakest_element": "description"
+  }
+}

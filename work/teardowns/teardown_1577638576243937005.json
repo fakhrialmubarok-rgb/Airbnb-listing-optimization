@@ -1,0 +1,39 @@
+{
+  "listing_id": "1577638576243937005",
+  "host_name": "Jodi",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 128.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 9728.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 3,
+    "score_images": 2,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Newcastle 3BR \u2013 \u00a3128/night \u2013 27% Below Avg",
+      "Family\u2011Friendly 3BR with Parking \u2013 Walk to City",
+      "Walker St 3BR \u2013 Sleeps 4, Parking, \u00a3128/night"
+    ],
+    "rewritten_desc": "Welcome to your comfortable Walker street retreat in the heart of Newcastle. This entire home offers three well\u2011appointed bedrooms and can comfortably host up to four guests, making it ideal for families or small groups. Each bedroom features a cozy double bed and ample storage, while the living area provides a welcoming space to unwind after a day of exploring the city. A dedicated parking space right outside the front door ensures hassle\u2011free arrivals, a rare convenience for city centre stays. \n\nThe modern kitchen is fully equipped with essential appliances, allowing you to prepare meals at your leisure. Adjacent to the kitchen, a bright dining nook seats four, perfect for shared meals. The bathroom is clean and functional, stocked with fresh towels and basic toiletries. \n\nLocated on Walker, you are just minutes from Newcastle\u2019s main attractions, public transport links, shops, and restaurants, giving you easy access to everything the city has to offer. With a nightly rate of \u00a3128, your stay is priced 27\u202f% below the city\u2019s median rate of \u00a3175, delivering exceptional value. \n\nGuests have consistently rated the property highly, earning a 4.67 average from 324 reviews. While we are not yet a Superhost, our commitment to a clean, comfortable, and well\u2011located space ensures a memorable stay. Book now to enjoy a peaceful Newcastle experience with the convenience of on\u2011site parking and a price that\u2019s hard to beat.",
+    "top_amenity_gaps": [
+      "Entertainment (TV, Wi\u2011Fi) \u2013 not listed",
+      "Outdoor space (garden or patio) \u2013 missing",
+      "Parking listed as an amenity entry \u2013 not shown"
+    ],
+    "photo_order_rec": "Use a high\u2011quality exterior shot that captures the street fa\u00e7ade and the dedicated parking space as the cover photo; it instantly signals the rare parking convenience and sets the property apart.",
+    "key_diagnosis": [
+      "Add a compelling description of at least 250 words (currently 0) to improve conversion and SEO.",
+      "Upload a full set of photos \u2013 aim for at least 8 images covering living room, each bedroom, kitchen, bathroom, and exterior (photo count unknown, likely below 5).",
+      "Add high\u2011value amenities such as Wi\u2011Fi/TV and an outdoor/parking amenity entry to match market expectations and boost occupancy."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your listing is priced 27% below the Newcastle median at \u00a3128/night but only 15% of the next 90 days are booked, leaving 76 open nights you could fill.",
+    "weakest_element": "description"
+  }
+}

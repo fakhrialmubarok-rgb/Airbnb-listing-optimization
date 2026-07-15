@@ -1,0 +1,39 @@
+{
+  "listing_id": "1665268077728156868",
+  "host_name": "India",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 126.8,
+    "occupancy_pct": 68.5,
+    "open_nights_90d": 28,
+    "revenue_at_stake_gbp": 3550.4
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 5,
+    "score_amenities": 4,
+    "score_images": 3,
+    "score_occupancy_signal": 3,
+    "title_variants": [
+      "Boho Hideaway \u2013 Walk to Shops & Bars",
+      "Pet\u2011Friendly Patio & BBQ in Trendy Sheffield",
+      "3\u2011Guest Boho Retreat Near Ecclesall Rd"
+    ],
+    "rewritten_desc": "Welcome to your boho\u2011inspired sanctuary in the heart of Sheffield\u2019s trendiest neighbourhood. Just a stone\u2019s throw from Ecclesall Road and Hunters Bar, you\u2019ll be steps away from independent boutiques, acclaimed restaurants, lively parks and stylish bars. The entire home comfortably sleeps three guests across two thoughtfully designed bedrooms \u2013 a plush double and a cosy single \u2013 and opens onto a private outdoor patio equipped with a BBQ grill and outdoor dining area, perfect for al fresco meals or unwinding after a day of exploring.\n\nInside, you\u2019ll find everything you need for a seamless stay: fresh bed linen, extra pillows and blankets, a fully equipped kitchen, heating, high\u2011speed Wi\u2011Fi, a flat\u2011screen TV, and self\u2011check\u2011in via a secure key safe. Essential safety features such as smoke and carbon\u2011monoxide alarms, a fire extinguisher and a first\u2011aid kit give you peace of mind. Pets are welcome, and the property includes convenient amenities like hangers, an iron and ample clothes storage.\n\nLocated in Sharrow, this stylish retreat is ideal for couples seeking a romantic getaway, families looking for a fun base, or professionals travelling for work. With 21 high\u2011quality photos showcasing every room, you\u2019ll know exactly what to expect before you arrive. Book now and experience Sheffield\u2019s vibrant culture from a beautifully decorated, well\u2011appointed home.",
+    "top_amenity_gaps": [
+      "Washing machine",
+      "Private entrance",
+      "Air conditioning"
+    ],
+    "photo_order_rec": "Use a bright, inviting shot of the outdoor patio with the BBQ as the cover photo \u2013 it highlights a high\u2011value amenity and differentiates the listing from competitors.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3126.8) is +21% above the market median (\u00a3104.90) while you already enjoy 68.5% occupancy (vs. cohort median 48.9%); a price\u2011optimisation audit could unlock extra revenue.",
+      "Add a washing machine (currently missing) to appeal to families and longer\u2011stay guests, addressing a key amenity gap that competitors in the cohort often provide.",
+      "Reorder photos to lead with the patio/BBQ image and ensure each room (bedrooms, kitchen, living area) is represented; your photo count (21) is below the median (23) and current coverage is unclear."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3126.8 nightly rate is 21% higher than the Sheffield median while you\u2019re already achieving 68.5% occupancy\u2014there\u2019s untapped revenue waiting if we fine\u2011tune your pricing and presentation.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "1328611376843288708",
+  "host_name": "Jennifer - Pocket Paradise",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 497.2,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 36295.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 1,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Penthouse City Centre | Free Parking for 4",
+      "\u00a3497.2 Luxury Penthouse | City View & Free Car Parking",
+      "4-Guest City Penthouse | Ivy Asia & Free Parking"
+    ],
+    "rewritten_desc": "This premium penthouse offers a unique blend of luxury and accessibility in the heart of the city. Perfect for up to 4 guests, it combines urban convenience with a premium price point unmatched in the area. Free on-site parking adds convenience for travelers with vehicles. While its nightly rate of \u00a3497.2 positions it as a high-end destination, its current 18.5% occupancy for the next 90 days suggests untapped potential. With 357 competitors in the city, this listing\u2019s 4.93-star rating demonstrates strong guest satisfaction. Highlights include prime city center access and a spacious indoor layout. To better showcase its value, we recommend adding specific details about its outdoor space, entertainment options, and parking facilities in the amenities section. This property\u2019s elevated pricing compared to local alternatives (+184% above the \u00a3175 median) deserves a compelling narrative\u2014why is this penthouse worth the premium for discerning guests?",
+    "top_amenity_gaps": [
+      "Outdoor space details (e.g., balcony/terrace size)",
+      "Entertainment systems (TV type, streaming access)",
+      "Facilities like smart home features"
+    ],
+    "photo_order_rec": "Lead with a wide-angle photo of the city view from the penthouse. Urban vistas in listings priced this highly often serve as the strongest first impression, creating immediate aspirational appeal.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3322.2 above the \u00a3175 median yet occupancy is 18.5% vs. 28.3% cohort average\u2014the pricing-outreach disconnect creates wasted revenue (\u00a3497.2 x 73 open nights = \u00a336,296 unearned)",
+      "Missing amenities description despite high price\u2014luxury travelers prioritize knowing what premium features are included",
+      "Title fails preferred character limit (54 characters) and lacks SEO-optimized terms like 'luxury' or 'parking' near beginning"
+    ],
+    "outreach_angle": "title_seo",
+    "outreach_hook": "Your \u00a3497.2 nightly rate is +184% above the local median, yet occupancy is only 18.5%\u2014we\u2019ll help optimize your 50-character title to attract buyers willing to pay the premium.",
+    "weakest_element": "title"
+  }
+}

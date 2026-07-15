@@ -1,0 +1,39 @@
+{
+  "listing_id": "1654967498564227916",
+  "host_name": "Marta",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 439.0,
+    "occupancy_pct": 21.7,
+    "open_nights_90d": 70,
+    "revenue_at_stake_gbp": 30730.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 3,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury 2\u2011Bed Apartment + Free Parking",
+      "Spacious 2\u2011Bedroom Home, Van Parking Included",
+      "Modern 2\u2011Apt Suite \u2013 Free Parking, Prime Spot"
+    ],
+    "rewritten_desc": "Welcome to Marta\u2019s beautifully appointed two\u2011apartment home, perfect for up to four guests seeking a premium stay in the heart of the city. Each apartment offers a spacious layout, modern d\u00e9cor, and a fully equipped kitchen, ensuring you have everything you need for a comfortable visit. Guests consistently praise the property, reflected in an outstanding 4.94 rating from 252 reviews. A standout feature is the complimentary van\u2011size parking space right on the premises \u2013 a rare convenience in this market. While the nightly rate stands at \u00a3439, the home delivers a high\u2011end experience that justifies the price. Over the next 90 days, 21.7% of the nights are already booked, leaving 70 open nights ready for new guests. Although Marta is not yet a Superhost, the glowing reviews demonstrate a strong commitment to hospitality. Whether you\u2019re traveling for business or leisure, this entire\u2011home offering blends luxury, convenience, and a prime location, making it an ideal base for exploring the city\u2019s attractions. Book now to enjoy the spacious apartments, free parking, and the peace of mind that comes with a top\u2011rated stay.",
+    "top_amenity_gaps": [
+      "Free high\u2011speed Wi\u2011Fi",
+      "Flat\u2011screen TV or streaming service",
+      "Outdoor patio or garden seating"
+    ],
+    "photo_order_rec": "Use a front\u2011facing exterior shot that clearly shows the free van parking space as the cover photo, because parking is the unique selling point and instantly grabs a traveller\u2019s attention.",
+    "key_diagnosis": [
+      "Your nightly price of \u00a3439 is 151% higher than the city median (\u00a3175) while your 90\u2011day occupancy is only 21.7% (70 open nights), so lowering the rate or adding promotions could capture more bookings.",
+      "The current title 'Two apartments with free van parking' omits high\u2011search keywords and the luxury aspect; replace it with an SEO\u2011rich title under 50 characters to improve click\u2011through rates.",
+      "No amenities are listed despite a 4.94 rating; adding essential amenities like free Wi\u2011Fi, a TV and an outdoor seating area will align with guest expectations and boost desirability."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your nightly rate of \u00a3439 is 151% above the market median, yet only 21.7% of your next 90 days are booked, leaving 70 nights unfilled.",
+    "weakest_element": "description"
+  }
+}

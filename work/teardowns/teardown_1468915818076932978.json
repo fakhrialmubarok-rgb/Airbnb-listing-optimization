@@ -1,0 +1,39 @@
+{
+  "listing_id": "1468915818076932978",
+  "host_name": "Wonderment Adventures",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 552.2,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 41967.2
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 2,
+    "score_amenities": 1,
+    "score_images": 3,
+    "score_occupancy_signal": 10,
+    "title_variants": [
+      "\u00a3552/night Spacious Home with Private Lake & Garden",
+      "4-Guest Home with Lake Access & Garden Nearby",
+      "Luxury Lakefront Home Sleeps 4, \u00a3552"
+    ],
+    "rewritten_desc": "This luxurious 4-guest home delivers exclusive access to a pristine lake and private garden\u2014perfect for nature lovers seeking solitude. Positioned 216% above the local median rate of \u00a3175/night, it currently lags 46% in occupancy compared to the 28.3% average in the market. While the spacious layout and premium amenities promise a premium experience, the listing urgently needs clarity on which high-demand features (like outdoor spaces, parking, or entertainment options) are available. With 76 open nights remaining in the next 90 days, a sharper title, bullet-pointed feature list, and cover photo of the lake view could reposition this home as a top-tier escape for discerning travelers willing to pay a premium.",
+    "top_amenity_gaps": [
+      "Outdoor (e.g. private dock or fire pit features)",
+      "Parking & facilities (e.g. garage or EV charging)",
+      "Entertainment (e.g. smart TV or gaming console)"
+    ],
+    "photo_order_rec": "The cover image should show the property's lake-access view (e.g. window or deck facing water) to capitalize on the listing's strongest differentiator. Visual proof of this premium amenity is critical when targeting high-GBP guests.",
+    "key_diagnosis": [
+      "Your \u00a3552 nightly rate is \u00a3377 above the market median, yet occupancy is 15.2% vs 28.3% \u2014 a 46% shortfall that hurts potential revenue.",
+      "The description field is entirely empty, losing a prime opportunity to highlight unique selling points that justify the premium price.",
+      "No amenities are listed at all, missing 3 key high-value categories (Outdoor, Parking & facilities, Entertainment) that drive bookings in this tier of the market."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3552/night rate is 216% above the local median, but with 15.2% occupancy vs 28.3% industry average \u2014 three fixes could recover \u00a331k+ in potential revenue across 90 nights.",
+    "weakest_element": "amenities"
+  }
+}

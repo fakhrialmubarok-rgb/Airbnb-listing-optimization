@@ -1,0 +1,39 @@
+{
+  "listing_id": "1703168103852999144",
+  "host_name": "Lynsey",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 124.68,
+    "occupancy_pct": 34.8,
+    "open_nights_90d": 59,
+    "revenue_at_stake_gbp": 7356.12
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 5,
+    "score_amenities": 8,
+    "score_images": 0,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Airport House, 10 mins to city centre by train, \u00a3124.68/n",
+      "Stunning house near NEC, airport & city",
+      "Home near airport, NEC & 10mins to city"
+    ],
+    "rewritten_desc": "Escape to this beautiful home, perfectly situated for NEC visitors and those in a hurry to explore Birmingham's city centre. Located just 10 minutes by train, you'll be able to experience all the city has to offer. With its comfortable layout and ample space, this house is perfect for families and groups of friends. Take a break from the hustle and bustle in the lovely garden, while the rest of the family enjoys their downtime. With an average rating of 4.88 from 16 reviews, you can book with confidence. Please note: we are looking to improve the photos and overall guest experience. We would also like to add more amenities for our guests. With so much to offer, this house is an excellent choice for anyone seeking a hassle-free experience.",
+    "top_amenity_gaps": [
+      "Outdoor space: while the garden is lovely, it could be better maintained and provided with more seating areas.",
+      "Parking and facilities: with no parking information listed, guests may be unclear about where to park.",
+      "Entertainment: with no information on entertainment options, guests may not feel fully entertained during their stay."
+    ],
+    "photo_order_rec": "The garden should be the cover photo as it's a unique selling point and will give potential guests an idea of the outdoor space.",
+    "key_diagnosis": [
+      "Fix the rate disparity: \u00a3124.68 is -29% off the cohort median, consider raising the rate to \u00a3175.00 to increase profit margins.",
+      "Target under-booked occupancy: with 34.8% occupancy, you are 12.2 percentage points behind the cohort median (28.3%), consider strategies to increase occupancy.",
+      "Add 9 more photos: with no information on photo count, it's likely that more photos are needed to showcase the property and increase bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "You have 59 open nights, yet your occupancy is only at 34.8% - we'd love to discuss ways to increase bookings.",
+    "weakest_element": "photos"
+  }
+}

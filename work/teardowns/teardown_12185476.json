@@ -1,0 +1,39 @@
+{
+  "listing_id": "12185476",
+  "host_name": "Dean",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 204.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 15504.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "2BR with Free Parking - Prime City Location",
+      "Cozy 2-Bedroom with Open Space",
+      "4-Guest Home with Free Parking & Comfort"
+    ],
+    "rewritten_desc": "A spacious two-bedroom home ideal for four guests, featuring complimentary on-site parking and comfortable living areas. Located in a vibrant neighborhood, this private residence offers easy access to local attractions, shops, and dining options. With a 4.31 rating based on 480 reviews, guests can expect a hassle-free stay in this well-maintained property. The home includes all essential amenities to create a memorable visit, and its central location makes it perfect for both leisure and business travelers. The nightly rate of \u00a3204 includes full use of the property, ensuring privacy and flexibility throughout your stay.",
+    "top_amenity_gaps": [
+      "Outdoor seating area or garden",
+      "Smart TV/entertainment system",
+      "Dedicated workspace"
+    ],
+    "photo_order_rec": "Prioritize an exterior photo of the property as the cover image to showcase street presence and parking visibility. This creates immediate trust by demonstrating accessibility and space.",
+    "key_diagnosis": [
+      "Listings with \u00a3204 rate are +17% above cohort median (which is \u00a3175) while occupancy is -45% below median (15.2% vs 28.3%)",
+      "Host lacks Superhost status and has only 480 cumulative reviews despite 0+ years hosting",
+      "Property type 'Entire home' is strong but title doesn't maximize SEO keywords like 'spacious' or 'fully-equipped'"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3204 rate is 17% above city median but occupancy is 45% lower than average at 15.2% (cohort median 28.3%)",
+    "weakest_element": "title"
+  }
+}

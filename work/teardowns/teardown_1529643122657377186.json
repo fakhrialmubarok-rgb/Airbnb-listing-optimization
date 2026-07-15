@@ -1,0 +1,39 @@
+{
+  "listing_id": "1529643122657377186",
+  "host_name": "Naveed",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 50 listings scraped in the same market.\nMedian nightly rate: \u00a3104.90\nMedian 90-day occupancy: 48.9%\nMedian photo count: 23",
+  "listing_numbers": {
+    "nightly_rate_gbp": 190.4,
+    "occupancy_pct": 34.8,
+    "open_nights_90d": 59,
+    "revenue_at_stake_gbp": 11233.6
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 7,
+    "score_amenities": 8,
+    "score_images": 9,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Hot Tub & Sauna Suite",
+      "Private Spa Getaway",
+      "Luxury Jacuzzi Retreat"
+    ],
+    "rewritten_desc": "Escape to our luxurious private retreat, complete with a double Jacuzzi hot tub and 2-person sauna cabin for the ultimate relaxing spa experience. The bedroom features a double bed, 55-inch smart TV with Netflix, and a cozy fireplace. The kitchen is fully equipped, and the garden seating area is perfect for enjoying the fresh air. With a private entrance and sole use of the apartment, you'll feel right at home. Enjoy the LED lighting, freshener, and Bluetooth connectivity in the sauna cabin, and take advantage of the full fibre internet and garden seating area. Whether you're looking to unwind or celebrate a special occasion, our apartment has everything you need.",
+    "top_amenity_gaps": [
+      "Washing machine",
+      "Air conditioning",
+      "On-site parking"
+    ],
+    "photo_order_rec": "The cover photo should be the Hot Tub or Whirlpool Jacuzzi Hot Tub to showcase the unique selling point of the property, as it's the strongest differentiator and will grab the attention of potential guests.",
+    "key_diagnosis": [
+      "The nightly rate of \u00a3190.4 is 82% higher than the cohort median of \u00a3104.90, which may be contributing to the lower occupancy rate of 34.8% compared to the cohort median of 48.9%",
+      "With 0 reviews, the listing is at a disadvantage, and increasing the review count to at least 5-10 reviews could significantly improve occupancy",
+      "The photo count of 32 is higher than the cohort median of 23, but ensuring that the most appealing photos are showcased first could further enhance the listing's appeal"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With an occupancy rate of 34.8% compared to the cohort median of 48.9%, there is a significant opportunity to increase bookings and revenue, particularly given the unique amenities and high nightly rate of \u00a3190.4",
+    "weakest_element": "title"
+  }
+}

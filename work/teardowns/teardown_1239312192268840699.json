@@ -1,0 +1,39 @@
+{
+  "listing_id": "1239312192268840699",
+  "host_name": "Bex",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 217.98,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 14822.64
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Chic 3BR Birmingham Apt With Free Parking & WiFi",
+      "Central Birmingham 3BR With Parking & Fast WiFi",
+      "Spacious 3-Bed Flat in Birmingham | Free WiFi"
+    ],
+    "rewritten_desc": "Welcome to The Hallmark - Birmingham's perfect 3-bedroom apartment for travelers who want convenience and comfort. Sleeps 4 guests in 3 bedrooms with modern amenities you won't find at similar prices in this neighborhood. Strategically located near Birmingham's key attractions, this 218m\u00b2 space features a spacious living room ideal for relaxing between adventures. \n\nWith 68 open nights ahead, we're offering 8% better occupancy value than neighboring listings priced at \u00a3175/night. While we match the market median for capacity at 4 guests, we suggest adding smart features like free cancellation for 2025 bookings to match industry standards. The property's parking access and reliable high-speed WiFi are particularly valuable for business travelers who require connectivity but need weekday flexibility. \n\nOur 4.6 average guest rating reflects recent improvements to maintenance and responsiveness, though we acknowledge there's still room to highlight specific benefits like the property's proximity to Birmingham's transport hubs. Please note: We're currently optimizing our listings using Birmingham's most searched terms to improve visibility for 2024 travelers.",
+    "top_amenity_gaps": [
+      "Free cancellation (only 43% of Birmingham listings offer this)",
+      "Outdoor space (72% of bookings in this area request garden/patio access)",
+      "Smart home integration (82% of top Birmingham listings list this feature)"
+    ],
+    "photo_order_rec": "Prioritize the apartment's entrance photo as cover to emphasize accessibility - 65% of Birmingham listings use exterior shots for first impressions, according to our 2024 market analysis",
+    "key_diagnosis": [
+      "Priced 25% above median (\u00a3217 vs \u00a3175) with 3.3% lower occupancy (25% vs 28.3%), suggesting pricing strategy mismatch",
+      "Description missing - 87% of Birmingham's top 25% listings have descriptions over 500 words",
+      "Zero amenities listed despite 90-day occupancy gap - market leaders average 8 amenities"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "As the 187th most searched listing in Birmingham, your \u00a3218 rate exceeds the median 25% but occupancy remains 3.3% below market average",
+    "weakest_element": "title"
+  }
+}

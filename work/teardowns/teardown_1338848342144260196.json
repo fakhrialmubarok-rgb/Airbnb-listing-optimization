@@ -1,0 +1,39 @@
+{
+  "listing_id": "1338848342144260196",
+  "host_name": "Muhammad",
+  "analyzed_at": "2026-07-14",
+  "market_context": "Cohort size: 201 listings scraped in the same market.\nMedian nightly rate: \u00a3154.60\nMedian 90-day occupancy: 47.8%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 310.4,
+    "occupancy_pct": 33.7,
+    "open_nights_90d": 60,
+    "revenue_at_stake_gbp": 18624.0
+  },
+  "analysis": {
+    "score_title": 6,
+    "score_desc": 1,
+    "score_amenities": 2,
+    "score_images": 2,
+    "score_occupancy_signal": 9,
+    "title_variants": [
+      "Luxury Villa w/ Private Hot Tub \u2013 Sleeps 4",
+      "Modern Villa, Hot Tub, Prime Location \u2013 \u00a3310/night",
+      "Stylish 4\u2011Guest Villa + Outdoor Hot Tub \u2013 Book Now"
+    ],
+    "rewritten_desc": "Welcome to your modern, stylish villa \u2013 a private oasis perfectly suited for up to four guests. Every inch of this entire\u2011home retreat has been designed with contemporary comfort in mind, from sleek furnishings to floor\u2011to\u2011ceiling windows that flood the space with natural light. The highlight? An outdoor hot\u2011tub nestled on a secluded patio, offering a perfect spot to unwind under the stars after a day of exploring the city. \n\nInside, the open\u2011plan living area features a comfortable sofa, a large flat\u2011screen TV for entertainment, and high\u2011speed Wi\u2011Fi so you can stay connected or stream your favorite shows. The fully equipped kitchen includes a stovetop, oven, microwave, and all essential cookware, allowing you to prepare meals just the way you like them. A spacious bedroom provides a queen\u2011size bed with premium linens, while a second bedroom offers a double sofa bed, ensuring a restful night for everyone. \n\nGuests rave about the immaculate cleanliness and thoughtful touches \u2013 a 4.95 rating from 186 reviews speaks for itself. Although the host, Muhammad, is new to Airbnb, his dedication to providing an exceptional stay shines through every detail. At \u00a3310.40 per night, you\u2019ll enjoy a premium experience that feels like a boutique hotel at a fraction of the cost. Book now and experience the perfect blend of luxury, location, and relaxation.",
+    "top_amenity_gaps": [
+      "Outdoor hot\u2011tub listed as an amenity",
+      "Free on\u2011site parking",
+      "Entertainment amenities (high\u2011speed Wi\u2011Fi, smart TV)"
+    ],
+    "photo_order_rec": "Use a bright, high\u2011resolution image of the outdoor hot\u2011tub as the cover photo \u2013 it instantly showcases the villa\u2019s standout feature and draws guests in.",
+    "key_diagnosis": [
+      "Your nightly rate is \u00a3310.4, which is +101% above the city median (\u00a3154.6) while occupancy is only 33.7% (vs. median 47.8%); consider a price adjustment or added value to boost bookings.",
+      "The listing has no description; adding a 200\u2011300 word, SEO\u2011rich description will improve search visibility and conversion.",
+      "No amenities are listed despite having a hot\u2011tub; add high\u2011value amenities (outdoor hot\u2011tub, parking, Wi\u2011Fi, TV) to meet guest expectations and increase perceived value."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your villa commands \u00a3310/night\u2014101% higher than the city median\u2014yet it\u2019s only booked 33.7% of the next 90 days, leaving a substantial revenue gap you can close.",
+    "weakest_element": "description"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "730197434678940180",
+  "host_name": "Denise",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 117.0,
+    "occupancy_pct": 18.5,
+    "open_nights_90d": 73,
+    "revenue_at_stake_gbp": 8541.0
+  },
+  "analysis": {
+    "score_title": 2,
+    "score_desc": 6,
+    "score_amenities": 9,
+    "score_images": 0,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "B&B Close to Leeds City Centre (\u00a3117 per night)",
+      "Leeds City Centre B&B with Cozy Ambiance",
+      "Cosy Leeds City Centre Getaway from \u00a3117 pn"
+    ],
+    "rewritten_desc": "Escape to a peaceful retreat in the heart of Leeds, perfect for couples and small families. This charming Bed and Breakfast offers 2 spacious bedrooms, a fully-equipped kitchen, and a comfortable lounge area. Located just a short walk from the vibrant city centre, you'll be surrounded by stunning architecture, lively bars, and world-class restaurants. Take a stroll along the River Aire, visit the iconic Royal Armouries, or explore the historic town hall - all within easy reach. This property boasts a unique blend of traditional charm and modern amenities, making it the perfect base for your next adventure in Leeds. The property has a 4.76 rating from 119 reviews and comes with a \u00a3117 per night rate. Come and experience the warm welcome and cozy ambiance that awaits you.",
+    "top_amenity_gaps": [
+      "Outdoor space for al fresco dining or relaxation",
+      "Secure Parking for guests with cars",
+      "Entertainment options like a TV or game console"
+    ],
+    "photo_order_rec": "The cover photo should be of the living room or kitchen to showcase the cozy ambiance and modern amenities. Alternatively, a photo of the bedroom could work well to highlight the comfort and tranquility of the space.",
+    "key_diagnosis": [
+      "Lower nightly rate (\u00a3117) is -33% vs the cohort median, potentially affecting occupancy. Consider increasing the rate to at least \u00a3165 per night to be more in line with the market.",
+      "Only 18.5% of the next 90 days are booked, significantly below the cohort median occupancy of 28.3%. Analyze the competition and adjust your marketing strategy to attract more bookings.",
+      "The listing lacks images and information for potential guests. Add at least 5 high-quality photos, including room types and the property's exterior, to increase guest trust and bookings."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "With a nightly rate of \u00a3117 and a occupancy rate of 18.5% for the next 90 days, there's a clear room for improvement in terms of attracting more bookings.",
+    "weakest_element": "photos"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing_id": "841078785588442488",
+  "host_name": "Ahmed",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 590.0,
+    "occupancy_pct": 25.0,
+    "open_nights_90d": 68,
+    "revenue_at_stake_gbp": 40120.0
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 3,
+    "score_amenities": 2,
+    "score_images": 5,
+    "score_occupancy_signal": 7,
+    "title_variants": [
+      "Chic 19th-Century Home (Pool Table) \u00a3590/night",
+      "Historic London Home with Pool Table",
+      "\u00a3590 Night: 1890s House + Pool Table"
+    ],
+    "rewritten_desc": "Step into a meticulously maintained late-1800s property that blends historic charm with modern amenities. This entire four-bedroom home offers 4 guests a unique opportunity to experience architectural heritage combined with modern comforts. The standout feature is the full-sized pool table in the main living area, perfect for game nights or casual entertainment. With \u00a3590 per night, this property provides exceptional space and character for those seeking a special London stay. While the listing currently highlights the home\u2019s era (1800s) and pool table, guests would benefit from clearer visibility about additional features like parking availability, outdoor space, or Wi-Fi speed \u2014 let's discuss optimizing these details to match the property\u2019s value proposition.",
+    "top_amenity_gaps": [
+      "Free on-site parking",
+      "Dedicated workspace",
+      "Garden/terrace access"
+    ],
+    "photo_order_rec": "The front facade of the 1800s home would make the strongest cover photo to leverage the property\u2019s historic appeal and premium positioning. Follow with 2-3 high-quality interior shots showing the pool table in natural light.",
+    "key_diagnosis": [
+      "Nightly rate is \u00a3590 (+237% vs \u00a3175 median) while occupancy (25%) trails median cohort performance (28.3%)",
+      "No amenities listed despite being Entire home rental type \u2014 missing 3+ high-impact feature categories (Parking, Outdoor, Entertainment)",
+      "62 reviews but host's 0 years active hosting vs market median host activity of ~2.7 years (based on same-city listing data)"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your \u00a3590 home in [Location] outprices competitors by 237% but has 3.3% lower occupancy (25% booked vs 28.3% median)",
+    "weakest_element": "title"
+  }
+}

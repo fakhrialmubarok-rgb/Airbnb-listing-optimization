@@ -1,0 +1,39 @@
+{
+  "listing_id": "16660926",
+  "host_name": "Faz",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 270.0,
+    "occupancy_pct": 15.2,
+    "open_nights_90d": 76,
+    "revenue_at_stake_gbp": 20520.0
+  },
+  "analysis": {
+    "score_title": 4,
+    "score_desc": 6,
+    "score_amenities": 10,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "Modern riverside flat with sea views",
+      "\u00a3270 flats near river with balcony",
+      "Charming riverside home for 4 guests"
+    ],
+    "rewritten_desc": "Experience the tranquility of our modern riverside flat, nestled in a picturesque location with breathtaking views of the river. This entire home is perfect for 4 guests, offering a comfortable and relaxing stay. Fitted with all the essentials for a great vacation, the apartment boasts a well-equipped kitchen, a spacious living area, and a balcony where you can soak up the sun and enjoy the surrounding views. With a rich history and culture surrounding the area, there's always something to explore and discover. Our riverside flat is a hidden gem, waiting to be experienced. Please note that the apartment is not suitable for parties or events. A non-smoking environment is also requested. Check-in is at 4 PM, and check-out is at 10 AM. A deposit will be charged in case of any damages or excessive cleaning required.",
+    "top_amenity_gaps": [
+      "Outdoor spaces (such as a garden or balcony) for guests to relax and enjoy",
+      "Parking facilities for guests with vehicles",
+      "Entertainment options (such as a TV or games)"
+    ],
+    "photo_order_rec": "The cover photo should be the balcony view to showcase the apartment's unique selling point. This will attract guests who are looking for a relaxing stay with a view.",
+    "key_diagnosis": [
+      "Their nightly rate of \u00a3270 is +54% vs the cohort median of \u00a3175, suggesting a pricing strategy that may be too high for the current market (vs median)",
+      "The apartment is underbooked at 15.2% occupancy vs the cohort median of 28.3%, indicating a room for improvement in terms of marketing or competitiveness",
+      "There are no images, which will not build trust or showcase the apartment's unique features, suggesting a high-impact fix to add at least 3-5 photos ASAP"
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "We noticed that your Modern riverside flat with a balcony has a high nightly rate of \u00a3270, but only 15.2% occupancy over the next 90 days - we'd love to discuss how we can help improve your competitiveness and bookings",
+    "weakest_element": "description"
+  }
+}

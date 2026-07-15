@@ -1,0 +1,39 @@
+{
+  "listing_id": "1666069103727752311",
+  "host_name": "Elite Keys",
+  "analyzed_at": "2026-07-15",
+  "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
+  "listing_numbers": {
+    "nightly_rate_gbp": 133.96,
+    "occupancy_pct": 27.2,
+    "open_nights_90d": 66,
+    "revenue_at_stake_gbp": 8841.36
+  },
+  "analysis": {
+    "score_title": 5,
+    "score_desc": 2,
+    "score_amenities": 2,
+    "score_images": 1,
+    "score_occupancy_signal": 8,
+    "title_variants": [
+      "23% Cheaper City\u2011Centre 1BD \u2013 Sleeps 4, Netflix",
+      "City Centre 1BD \u2013 \u00a3134/night, Sleeps 4, Free Wi\u2011Fi",
+      "1BD City Centre Flat \u2013 Netflix, Wi\u2011Fi, Sleeps 4"
+    ],
+    "rewritten_desc": "Welcome to your perfect city\u2011centre retreat \u2013 a stylish, entire\u2011home 1\u2011bedroom flat that comfortably sleeps up to four guests. Located in the heart of the city, you\u2019ll be steps away from top restaurants, shops, and public transport, making it easy to explore everything the area has to offer. Inside, the open\u2011plan living area features a large flat\u2011screen TV pre\u2011loaded with Netflix, so you can unwind with your favourite shows after a day of sightseeing. High\u2011speed Wi\u2011Fi is available throughout the home, ideal for remote work or staying connected with loved ones. The bedroom offers a plush double bed with fresh linens, while the second sleeping arrangement\u2014a sofa bed in the living room\u2014provides additional space for families or groups. A fully equipped kitchen includes a fridge, stovetop, microwave, and all the cookware you\u2019ll need to prepare meals at home. The modern bathroom comes with a walk\u2011in shower and fresh towels. Although the property does not currently list dedicated parking or outdoor space, its central location means you\u2019re close to public parking facilities and vibrant street\u2011level caf\u00e9s. Rated 4.8 stars from 46 glowing reviews, guests consistently praise the cleanliness, quick check\u2011in, and excellent value at \u00a3133.96 per night. Book now to enjoy a cozy, well\u2011connected base for your city adventure.",
+    "top_amenity_gaps": [
+      "Dedicated on\u2011site parking",
+      "Private outdoor seating or terrace",
+      "Additional entertainment options (games console, streaming services beyond Netflix)"
+    ],
+    "photo_order_rec": "Use a bright, wide\u2011angle shot of the living area with the TV and city view as the cover photo \u2013 it instantly showcases the entertainment amenity and central location.",
+    "key_diagnosis": [
+      "Your nightly rate (\u00a3133.96) is 23% below the city median (\u00a3175) yet occupancy is only 27.2% (vs. median 28.3%); raise the price by up to 10% to capture more revenue while staying competitive.",
+      "You list 0 parking spaces; adding a dedicated parking spot (or highlighting nearby paid parking) can attract travelers who prioritize convenience.",
+      "Photo count is unknown but likely low; add at least 5\u20117 high\u2011quality images covering the living room, bedroom, kitchen, bathroom, and building exterior to meet the market standard of 15+ photos."
+    ],
+    "outreach_angle": "occupancy",
+    "outreach_hook": "Your current 27.2% occupancy at a rate of \u00a3133.96/night\u201423% below the city median\u2014means you could boost bookings by simply highlighting the price advantage and adding a few key amenities.",
+    "weakest_element": "photos"
+  }
+}
