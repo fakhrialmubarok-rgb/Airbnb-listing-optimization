@@ -480,13 +480,12 @@ def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
 
 
 def _local_sdxl_img2img(image_bytes: bytes, prompt: str) -> bytes:
-    """Local SDXL img2img via Apple MPS — free, unlimited, ~60s/image on M1.
-    Preserves room structure (denoising=0.60) while improving lighting/staging.
-    Downloads the model once on first call (~6GB), cached in ~/.cache/huggingface/.
-    Falls back to CPU if MPS unavailable."""
+    """Local SDXL-Turbo img2img via Apple MPS — free, unlimited, ~10s/image on M1.
+    Uses stabilityai/sdxl-turbo (fully open, no auth needed, ~7GB download once).
+    Turbo needs only 4 steps and no CFG — fast and structure-preserving at strength=0.65."""
     try:
         import torch
-        from diffusers import StableDiffusionXLImg2ImgPipeline
+        from diffusers import AutoPipelineForImage2Image
         from PIL import Image
         import io as _io
     except ImportError:
@@ -495,32 +494,31 @@ def _local_sdxl_img2img(image_bytes: bytes, prompt: str) -> bytes:
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     dtype = torch.float16 if device == "mps" else torch.float32
 
-    cache_attr = "_sdxl_pipe"
+    cache_attr = "_sdxl_turbo_pipe"
     if not hasattr(_local_sdxl_img2img, cache_attr):
-        print("    [local-sdxl] Loading SDXL Refiner (first run: ~6GB download)…")
-        pipe = StableDiffusionXLImg2ImgPipeline.from_pretrained(
-            "stabilityai/stable-diffusion-xl-refiner-1-0",
+        print("    [local-sdxl-turbo] Loading SDXL-Turbo (first run: ~7GB download)…")
+        pipe = AutoPipelineForImage2Image.from_pretrained(
+            "stabilityai/sdxl-turbo",
             torch_dtype=dtype,
             variant="fp16" if device == "mps" else None,
-            use_safetensors=True,
         ).to(device)
         pipe.set_progress_bar_config(disable=True)
         setattr(_local_sdxl_img2img, cache_attr, pipe)
 
     pipe = getattr(_local_sdxl_img2img, cache_attr)
     img = Image.open(_io.BytesIO(image_bytes)).convert("RGB")
-    # Cap to 1024px on longest side (SDXL native resolution)
+    # SDXL-Turbo native: 512x512; scale to fit within 512
     w, h = img.size
-    if max(w, h) > 1024:
-        scale = 1024 / max(w, h)
-        img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+    scale = min(512 / w, 512 / h)
+    if scale < 1.0:
+        img = img.resize((int(w * scale) // 8 * 8, int(h * scale) // 8 * 8), Image.LANCZOS)
 
     result = pipe(
         prompt=prompt,
         image=img,
-        strength=0.60,        # preserves 40% of original structure
-        guidance_scale=7.5,
-        num_inference_steps=40,
+        num_inference_steps=4,
+        strength=0.65,       # preserves 35% of original structure
+        guidance_scale=0.0,  # turbo is distilled — no CFG
     ).images[0]
 
     buf = _io.BytesIO()
