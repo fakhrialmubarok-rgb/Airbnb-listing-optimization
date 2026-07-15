@@ -479,6 +479,66 @@ def _together_kontext(image_bytes: bytes, prompt: str) -> bytes:
     return _b64.b64decode(img_url)
 
 
+def _deepinfra_kontext(image_bytes: bytes, prompt: str) -> bytes:
+    """DeepInfra FLUX.1-kontext-pro — $0.05/image, $1.8 free on signup, email only."""
+    key = os.environ.get("DEEPINFRA_API_KEY", "")
+    if not key:
+        raise RuntimeError("DEEPINFRA_API_KEY not set")
+    b64 = base64.b64encode(image_bytes).decode()
+    r = requests.post(
+        "https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX.1-kontext-pro",
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={"prompt": prompt, "image": f"data:image/jpeg;base64,{b64}",
+              "num_outputs": 1, "output_format": "jpeg"},
+        timeout=180,
+    )
+    r.raise_for_status()
+    data = r.json()
+    img_url = (data.get("output") or data.get("images") or [None])[0]
+    if not img_url:
+        raise RuntimeError(f"DeepInfra: no output URL in response: {data}")
+    if img_url.startswith("data:"):
+        import base64 as _b64
+        return _b64.b64decode(img_url.split(",", 1)[1])
+    return requests.get(img_url, timeout=60).content
+
+
+def _novita_kontext(image_bytes: bytes, prompt: str) -> bytes:
+    """Novita AI flux-kontext-dev — ~$0.025/image, free credits on signup."""
+    key = os.environ.get("NOVITA_API_KEY", "")
+    if not key:
+        raise RuntimeError("NOVITA_API_KEY not set")
+    b64 = base64.b64encode(image_bytes).decode()
+    r = requests.post(
+        "https://api.novita.ai/v3/async/img2img",
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={
+            "model_name": "black-forest-labs/FLUX.1-Kontext-dev",
+            "prompt": prompt,
+            "image_assets": [{"image": f"data:image/jpeg;base64,{b64}"}],
+            "width": 1024, "height": 1024,
+            "steps": 28, "guidance_scale": 3.5,
+        },
+        timeout=30,
+    )
+    r.raise_for_status()
+    task_id = r.json()["task_id"]
+    for _ in range(60):
+        time.sleep(3)
+        poll = requests.get(
+            f"https://api.novita.ai/v3/async/task-result?task_id={task_id}",
+            headers={"Authorization": f"Bearer {key}"},
+            timeout=30,
+        ).json()
+        status = poll.get("task", {}).get("status")
+        if status == "TASK_STATUS_SUCCEED":
+            img_url = poll["images"][0]["image_url"]
+            return requests.get(img_url, timeout=60).content
+        if status in ("TASK_STATUS_FAILED", "TASK_STATUS_CANCELED"):
+            raise RuntimeError(f"Novita task {status}: {poll}")
+    raise RuntimeError("Novita: timed out waiting for task")
+
+
 def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
     """fal.ai flux-kontext-pro direct API — ~$0.05/image, better quality than Replicate dev.
     Falls back to flux-kontext-dev (~$0.025) if pro quota exceeded.
@@ -583,6 +643,8 @@ IMG_CHAIN = [
     ("gemini 2.5-flash-image",         lambda b, u, p: _gemini_image(b, p)),
     ("gemini 2.0-flash-preview-image", lambda b, u, p: _gemini_image_flash(b, p)),
     ("together FLUX.1-kontext-pro",    lambda b, u, p: _together_kontext(b, p)),
+    ("deepinfra FLUX.1-kontext-pro",   lambda b, u, p: _deepinfra_kontext(b, p)),
+    ("novita flux-kontext-dev",        lambda b, u, p: _novita_kontext(b, p)),
     ("fal.ai kontext-pro ($0.05)",     lambda b, u, p: _fal_kontext(b, p)),
     ("hf kontext (free credits)",      lambda b, u, p: _hf_kontext(u, p)),
     ("local SDXL img2img (free/MPS)",  lambda b, u, p: _local_sdxl_img2img(b, p)),
