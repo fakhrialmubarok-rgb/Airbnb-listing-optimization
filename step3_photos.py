@@ -54,32 +54,62 @@ ROOM_PRIORITY = ("living", "bedroom", "kitchen", "bathroom", "dining", "garden",
 # The "freedom + pinned objects" fusion: magazine relight/staging language with
 # hard object-conservation rules. Input is ALWAYS the OpenCV-straightened image.
 PROMPT_TEMPLATE = (
-    "Transform this into a bright, airy luxury interior-design magazine photograph: "
-    "abundant soft natural daylight, crisp white balance, light and spacious feel, rich "
-    "fresh color grading, deep clean contrast. Professionally presented: cushions plumped, "
-    "fabrics smooth, no cables or clutter anywhere. "
-    "ALL curtains and blinds are fully OPEN and neatly tied back at the window sides, "
-    "letting maximum daylight in — strict requirement for every photo. "
-    "Every lamp and ceiling light in the room is switched ON with a warm welcoming glow. "
-    "Windows correctly exposed, never blown out — and windows stay WINDOWS (never turn a "
-    "window into a door or balcony). "
+    # GOAL: a single image that would win an Architectural Digest interior shoot —
+    # not just 'bright and tidy' but genuinely aspirational. Every element serves
+    # the feeling: warmth, depth, quality, a place you want to be in tonight.
+    "Recreate this room as an award-winning interior design editorial photograph, "
+    "the quality of Architectural Digest, Elle Decor or Wallpaper* — the kind that "
+    "makes you stop scrolling and want to book immediately. "
+
+    # LIGHT — the most important element. Two-temperature layered light:
+    "LIGHTING (non-negotiable): late-afternoon golden hour quality — warm raking "
+    "sunlight streaming through open windows casting long soft shadows across the "
+    "floor and walls, simultaneously every lamp and ceiling light in the room is ON "
+    "with a rich warm amber glow, creating a two-temperature layered light: cool "
+    "bright daylight + warm lamp pools. Deep clean shadows with detail retained, "
+    "luminous highlights that don't blow out — not flat HDR, not clinical white — "
+    "the light feels alive and inviting. Curtains and blinds FULLY open and tied back. "
+    "Windows correctly exposed showing the outside, never blown out to white. "
     "{tv_rule}"
-    "ABSOLUTE RULE — the room contains EXACTLY the objects in the original photo, no more, "
-    "no less: do NOT add any throw, blanket, cushion, plant, tray, vase, book, lamp or "
-    "decor of any kind — NOT EVEN if the room looks bare. Do NOT draw curtains or add "
-    "curtains where none exist. Do NOT add a TV where none exists. "
-    "Do not move, remove, resize or relocate anything. Same furniture, same wall art, same "
-    "positions. Only lighting, curtain OPENING (if curtains already exist), tidiness and "
-    "camera geometry improve. "
-    "Perfectly level camera, dead straight verticals, no tilt. Composition: main "
-    "furniture in the lower two-thirds of frame with breathing room above, camera at "
-    "about 110cm. "
-    "BEDROOM STYLING (only when the photo shows a bed, using ONLY textiles already on "
-    "it): white/cream duvet dominant and smooth, any colored bedspread folded into a "
-    "neat flat runner across the FOOT of the bed with a soft cascade, pillows in "
-    "hierarchy (sleeping pillows behind, accent cushions in front), everything in "
-    "ordered relaxed-luxe drape — no chaotic wrinkles, no stretched-flat plastic look. "
-    "Ultra-photorealistic editorial real-estate photography."
+
+    # COLOR GRADING — rich, warm, editorial:
+    "COLOR: rich warm mid-tones, deep shadows with retained detail, slightly boosted "
+    "saturation in the warmth range (golds, ambers, creams), cool-to-warm gradient "
+    "from window-side to room-center. Wood grain textures vivid and tactile. "
+    "Fabric weave and texture visible — you can almost feel the softness. "
+
+    # COMPOSITION — precise and intentional:
+    "COMPOSITION: wide-angle feel (equivalent 16-20mm, no distortion), camera at "
+    "exactly 110cm height (eye-level when seated), perfectly level — zero tilt, "
+    "zero keystoning, all verticals dead straight. Rule of thirds: main furniture "
+    "occupies the lower two-thirds, breathing space above. A foreground element "
+    "(edge of a sofa, corner of a rug, side of a bed) anchors the near plane "
+    "and gives depth. Leading lines from architecture guide the eye to the "
+    "hero piece of furniture. Generous room — the space feels larger than it is. "
+
+    # OBJECTS — identical to original, nothing added or removed:
+    "ABSOLUTE OBJECT RULE — the room contains EXACTLY the objects in the original "
+    "photo, no more, no less. Do NOT add any throw, blanket, cushion, plant, tray, "
+    "vase, book, lamp, curtain or decor of any kind — NOT EVEN if the room looks "
+    "bare. Do NOT add a TV where none exists. Do not move, remove, resize or "
+    "relocate anything. Same furniture, same wall art, same exact positions. "
+    "Only lighting, curtain OPENING (if curtains exist), tidiness and camera "
+    "geometry are improved. "
+
+    # FINISHING — editorial quality control:
+    "FINISH: pristine — no cables, no clutter, no creased fabrics anywhere. "
+    "Cushions plumped, fabrics smooth and slightly draped. The room has editorial "
+    "stillness: everything placed as if a stylist just finished. "
+
+    "BEDROOM STYLING (only when a bed is visible, using ONLY textiles already on "
+    "it): white/cream duvet dominant and smooth, any colored spread folded into "
+    "a neat runner across the bed foot with a soft cascade, pillows in hierarchy "
+    "(sleeping pillows behind, accent cushions in front), ordered relaxed-luxe "
+    "drape — no chaotic wrinkles, no stretched-flat look. "
+
+    "Ultra-photorealistic. No AI artifacts. No warped geometry. "
+    "The final image feels shot on a medium-format camera by a photographer who "
+    "charges £2,000 a day."
 )
 
 TV_RULE = ("If a television exists in the photo it stays EXACTLY where it is — same wall, "
@@ -90,11 +120,18 @@ TV_RULE = ("If a television exists in the photo it stays EXACTLY where it is —
 # angle as the original (never relocate the camera — relocation experiments
 # produced invented geometry). Layered light per Fakhri's reference standards.
 HERO_SUFFIX = (
-    " HERO TREATMENT for the cover photo: layered two-temperature light — airy bright "
-    "daylight base with warm golden pools from the glowing lamps, gentle depth and falloff, "
-    "luminous but never clinical. Textiles in relaxed luxe drape: smooth ordered folds, "
-    "plumped layers, inviting not stretched. Palette harmonized around the room's own 2-3 "
-    "colors. The single most beautiful, magazine-cover-worthy version of this exact view."
+    " COVER PHOTO HERO TREATMENT: this is the shot that decides whether someone clicks "
+    "through or keeps scrolling — it must be the single most beautiful image the room "
+    "can produce. Intensify everything: the golden-hour light is at its most dramatic, "
+    "warm and raking, casting long precise shadows that give the room cinematic depth. "
+    "Lamp pools are rich amber against the cooler window light — the contrast is the "
+    "story. Foreground anchor is strong: a sofa arm, the corner of a bed, the edge of "
+    "a dining chair — something in the near plane that gives the shot three dimensions. "
+    "Every surface reflects the quality of light: wood glows, fabric drapes, cushions "
+    "are perfectly placed. The palette feels curated — 2-3 colors, harmonized and "
+    "intentional. If you showed this to someone who had never seen the property, they "
+    "would feel they already know what it feels like to be there. Magazine cover quality: "
+    "the kind of image that makes someone stop mid-scroll and say 'I want that.'"
 )
 
 TV_DETECT_PROMPT = ("Is there a television/TV screen clearly visible in this photo? "

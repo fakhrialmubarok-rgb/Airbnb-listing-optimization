@@ -84,17 +84,23 @@ class TeardownResult:
     raw_analysis: dict = field(default_factory=dict)
 
 
-SYSTEM_PROMPT = """You are an elite Airbnb listing optimization expert.
-You analyze listings with surgical precision - finding the 3 specific, concrete
-fixes that will have the biggest impact on bookings.
+SYSTEM_PROMPT = """You are a forensic revenue analyst for short-term rentals.
+You combine the eye of an award-winning listing photographer, the pricing instincts of
+a revenue manager, and the copy instincts of a direct-response copywriter.
+
+Your job is NOT to give generic advice. Your job is to find the INVISIBLE MONEY —
+the specific, quantified revenue a host is losing RIGHT NOW due to fixable mistakes
+they don't know they're making. Every finding must be tied to their actual numbers.
 
 Rules:
-- Every diagnosis must be specific and verifiable from the data provided
-- Never invent stats or claim market benchmarks you don't have
-- Scores are honest: a 4.9-rated Superhost listing might still score 4/10 on title
+- Every diagnosis must name a specific number from the data: rate, nights, occupancy, review count
+- Never invent stats. If you don't have the market benchmark, say "your data suggests" not "market average shows"
+- Scores are brutally honest — a beautiful property with a bad title gets 2/10 on title
 - Title variants must be under 50 characters each
-- Rewritten description must keep all factual information intact
-- Revenue estimates use ONLY the host's own nightly rate x open calendar days"""
+- Rewritten description keeps all facts intact but rewrites for emotional pull + SEO
+- Revenue estimates use ONLY host's own nightly rate × open calendar nights
+- The invisible_leverage field is the ONE insight that will most surprise the host
+- pricing_verdict must give a specific recommendation: raise/hold/reduce and by how much"""
 
 ANALYSIS_PROMPT = """Analyze this Airbnb listing and return a JSON object with exactly this structure.
 
@@ -128,36 +134,43 @@ LEARNED STRATEGY (apply this):
 
 Return ONLY this JSON (no markdown, no explanation):
 {{
-  "score_title": <1-10, be honest>,
+  "score_title": <1-10, be brutally honest>,
   "score_desc": <1-10>,
   "score_amenities": <1-10, based on available vs missing>,
-  "score_images": <1-10, based on room coverage and lead photo>,
-  "score_occupancy_signal": <1-10, where 10 means huge room to improve occupancy>,
+  "score_images": <1-10, based on room coverage and lead photo quality>,
+  "score_occupancy_signal": <1-10, where 10 means massive room to improve>,
   "title_variants": [
-    "<variant 1, under 50 chars, leads with strongest differentiator>",
-    "<variant 2, under 50 chars, different angle>",
-    "<variant 3, under 50 chars, different angle>"
+    "<variant 1, under 50 chars, leads with single strongest differentiator>",
+    "<variant 2, under 50 chars, different angle — location or feeling>",
+    "<variant 3, under 50 chars, different angle — amenity or guest type>"
   ],
-  "rewritten_desc": "<full rewritten description, same facts, much more compelling, 200-300 words>",
+  "rewritten_desc": "<full rewritten description: opens with a sensory hook (what the guest feels the moment they walk in), keeps all facts, adds emotional pull, 200-300 words, ends with a specific reason to book now>",
   "top_amenity_gaps": [
-    "<most impactful missing or under-presented amenity>",
+    "<most impactful missing amenity — name the booking % it typically affects>",
     "<second>",
     "<third>"
   ],
-  "photo_order_rec": "<which room type should be the cover photo and why, 1-2 sentences>",
+  "photo_order_rec": "<specific photo to use as cover and exactly why — name the room, name the quality signal, 1-2 sentences>",
+  "photo_story_arc": "<does the current photo sequence tell a story that converts? What is the right narrative order: arrival → main room → bedroom → kitchen → bathroom → standout detail? What is wrong with the current order?>",
   "key_diagnosis": [
-    "<specific fix #1 - concrete, actionable, tied to this listing's actual data>",
-    "<specific fix #2>",
-    "<specific fix #3>"
+    "<diagnosis #1: name the specific lever, the specific number, and the specific fix — e.g. 'Your rate (£X) is £Y above the city median while your occupancy sits at Z% — you are pricing yourself out of impulse bookings. Reducing by £15/night would likely fill X extra nights per month at near-identical revenue.'>",
+    "<diagnosis #2: same format — specific number, specific consequence, specific fix>",
+    "<diagnosis #3: same format>"
   ],
-  "outreach_angle": "<one of: occupancy | amenity_gap | title_seo | image_order>",
-  "outreach_hook": "<one sentence that leads outreach email - uses their own numbers, no fabricated stats>",
-  "weakest_element": "<one of: title | description | photos | amenities — the single lowest-scoring element, used in outreach copy>"
+  "invisible_leverage": "<the ONE insight this host has almost certainly never considered — the thing that would make them say 'I never thought of that'. Must be specific to their data. Examples: minimum night stays blocking weekend-only demand; a cover photo showing a hallway when they have a beautiful living room; description opening with 'Welcome' instead of a sensory hook; calendar gaps suggesting they are blocking weekends for personal use. Be specific and surprising.>",
+  "pricing_verdict": "<raise | hold | reduce> by <£X> — one sentence explaining why, using their occupancy % and rate vs cohort median. If rate data is unavailable, say so.>",
+  "revenue_diagnosis": "<calculate the specific £ amount this host is losing per month due to their weakest element. Show the maths: X open nights × £Y rate = £Z unrealised revenue. State which fix would most directly recover it.>",
+  "outreach_angle": "<one of: rate_vs_market | occupancy_gap | photo_story | title_seo | invisible_leverage>",
+  "outreach_hook": "<one sentence for the cold email opening — must use ONE specific number from their listing (not a generic claim). Reads like a person who actually looked at their listing, not a template. No 'I noticed' opener. Lead with the finding, not the observation.>",
+  "weakest_element": "<one of: title | description | photos | amenities | pricing — the single element with highest revenue recovery potential>"
 }}
 
-Additional rules for sharpness:
-- Every key_diagnosis item must include a NUMBER from the listing's own data or the market context (their rate vs cohort median, their occupancy vs cohort, photo count, review count).
-- If their nightly rate is above the cohort median while their occupancy is below it, say so explicitly — that is the strongest possible diagnosis.
+Sharpness rules (all mandatory):
+- Every key_diagnosis must contain at least one number from their data.
+- invisible_leverage must be something a host genuinely would not have spotted themselves.
+- pricing_verdict must be a specific recommendation (raise/hold/reduce + £amount), not a hedge.
+- revenue_diagnosis must show actual maths using their own rate and open nights.
+- outreach_hook must be one sentence, no preamble, no 'I', leads with their number or finding.
 - All currency is GBP (£). Never use $."""
 
 

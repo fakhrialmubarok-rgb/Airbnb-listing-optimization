@@ -232,11 +232,16 @@ def _variant(seed: str, n: int) -> int:
 
 
 _SUBJECTS = [
-    lambda first, nights, _title: f"{nights} nights sitting empty — something I found on your listing",
-    lambda first, nights, _title: f"quick thing I noticed about your listing, {first}",
-    lambda first, nights, _title: f"your calendar has {nights} gaps — found something specific",
-    lambda first, nights, _title: f"honest question about your Airbnb bookings, {first}",
-    lambda first, nights, _title: f"{first} — {nights} open nights and a fix I think is worth it",
+    # 0: Lead with the number — no preamble, specific, makes them want to open
+    lambda first, nights, _title: f"{nights} open nights — I found something specific in your listing",
+    # 1: Direct, slightly provocative — the cover photo is the conversion hook
+    lambda first, nights, _title: f"your cover photo is costing you bookings, {first}",
+    # 2: Revenue frame — the number they care about
+    lambda first, nights, _title: f"quick thing: your listing is leaving money on the table",
+    # 3: Curiosity + specificity — implies a real finding, not a template
+    lambda first, nights, _title: f"I went through your listing — one thing stood out",
+    # 4: Direct ROI frame — positions the fix as obvious once seen
+    lambda first, nights, _title: f"{first} — found the thing that's holding your bookings back",
 ]
 
 
@@ -244,66 +249,91 @@ def _offer_plain(variant: int, first: str, outreach_hook: str,
                  open_nights: int, revenue_at_stake: float, checkout_url: str,
                  photo_position_hook: str = "", sends_so_far: int = 0) -> str:
     rev = f"£{revenue_at_stake:,.0f}"
-    # Social proof line — only include when we have real send history
+    photo_line = f"\n\n{photo_position_hook}" if photo_position_hook else ""
     proof = (
-        "I've been doing this across UK Airbnb listings for the past few months — "
-        "the photo order fix alone has been the single biggest lever I've seen.\n\n"
-        if sends_so_far > 0 else ""
+        "A few other UK hosts have done this — the cover photo swap alone moved their "
+        "click-through within the first week.\n\n"
+        if sends_so_far > 10 else ""
     )
-    # Photo-specific hook — one sentence from teardown, appended naturally
-    photo_line = f"\n\n({photo_position_hook})" if photo_position_hook else ""
 
     if variant == 0:
+        # Lead with the finding, not the person. Specific number first.
         return f"""Hi {first},
 
-{outreach_hook}
+{outreach_hook}{photo_line}
 
-I've spent the last few months going through Airbnb listings — it's a bit of an obsession at this point. I keep seeing the same thing: hosts with genuinely good properties sitting on empty nights because the listing isn't showing what the place actually is.
+{open_nights} open nights in the next 90 days is around {rev} at your rate. Those dates don't roll over.
 
-{proof}Yours caught my eye. The photos aren't bad — but the sequencing is off, and I'm fairly sure your cover isn't the one that would get the click.{photo_line}
+For £29: I score every photo, edit and reorder them, pull the strongest one to your cover, write a teardown of what's holding back clicks — and ZIP it to your inbox within 48 hours.
 
-You've got {open_nights} nights open in the next 90 days. At your rate that's around {rev}, and once those dates pass they don't come back.
+{proof}Doesn't move things? Reply and I'll refund it.
 
-For £29 I'll go through your listing properly — score every photo, edit and reorder them, pull the right one to the front — and have everything in your inbox as a ZIP within 48 hours.
-
-If it doesn't move things, just reply and I'll refund it.
-
-  {checkout_url}
+{checkout_url}
 
 AL
 """
 
     if variant == 1:
+        # Cover photo angle — direct, no hedging
         return f"""Hi {first},
 
-{outreach_hook}
+{outreach_hook}{photo_line}
 
-I'll be straight with you — I almost didn't send this. But I went through your listing and a couple of things stood out that felt worth flagging.
+Most guests decide in under three seconds whether to click through or keep scrolling. That decision is almost entirely your cover photo. I looked at yours — it's not your strongest shot.
 
-{proof}Your photos aren't being shown in the order that would actually convert someone who's on the fence. And your cover — the one photo that decides whether someone clicks through or keeps scrolling — I don't think it's your strongest one.{photo_line}
+You've got {open_nights} nights open. That's {rev} sitting there.
 
-You've got {open_nights} nights open in the next 90 days. That's around {rev} at your current rate, and once those dates move past, they're gone.
-
-£29. Full photo scores, everything edited and reordered, cover pulled forward, ZIP in your inbox within 48 hours. If it doesn't help you pick up bookings, reply and I'll send the money back — no back and forth about it.
+£29 gets you: edited photos in the right order, cover pulled forward, full teardown of what's costing you clicks. ZIP in 48 hours. If nothing moves, reply and I'll send the money back.
 
 {checkout_url}
 
 — AL
 """
 
-    return f"""Hi {first},
+    if variant == 2:
+        # Revenue frame — occupancy is the hook
+        return f"""Hi {first},
 
 {outreach_hook}
 
-Real question — when did you last look at your listing the way a guest does? Not as the host who knows the place, but as someone scrolling through 40 options trying to decide which one to click.
+{open_nights} open nights in the next 90 days. At your rate that's {rev} — and the fix is almost always the same thing: the photos aren't showing what the place actually is.{photo_line}
 
-{proof}I went through yours. The photos are decent — better than most, actually. But decent doesn't get the click. The sequencing is off and your cover is probably costing you bookings you don't even know you're losing.{photo_line}
+{proof}For £29 I'll go through your listing properly — photo scores, full reorder, cover pulled to the front, teardown PDF — everything in a ZIP within 48 hours.
 
-You've got {open_nights} empty nights coming up, which is around {rev} at your rate.
+If it doesn't help you pick up bookings, reply and I'll refund it. No forms.
 
-For £29 I'll put together a full teardown of your listing, edit and reorder your photos with the right one up front, and have everything in your inbox as a ZIP within 48 hours.
+{checkout_url}
 
-Doesn't move things? Reply and I'll refund it.
+AL
+"""
+
+    if variant == 3:
+        # Specificity angle — implies real research
+        return f"""Hi {first},
+
+{outreach_hook}{photo_line}
+
+I'll be direct: {open_nights} open nights is more than it should be for a property like yours. The listing is doing most of the work — but one thing is off, and it's fixable in an afternoon.
+
+For £29 I'll send you a full breakdown: every photo scored, edited and reordered with the right cover, plus a written teardown of the specific things costing you clicks. ZIP in your inbox within 48 hours.
+
+{proof}Doesn't change anything? Reply and I'll refund it.
+
+{checkout_url}
+
+AL
+"""
+
+    # variant 4 — pricing/invisible leverage angle
+    return f"""Hi {first},
+
+{outreach_hook}{photo_line}
+
+The thing most hosts don't realise: guests aren't comparing your property to others. They're comparing your photos to others. If your cover doesn't stop the scroll, the price doesn't matter — they never get that far.
+
+You've got {open_nights} nights open — {rev} at your rate.
+
+£29. Scored photos, full reorder, cover pulled forward, teardown in your inbox within 48 hours. If it doesn't move things, just reply and I'll send the money back.
 
 {checkout_url}
 
@@ -344,9 +374,9 @@ _OFFER_CSS = """
 """
 
 _CTA_LABELS = [
-    "Get the package — $29",
-    "Send me the teardown — $29",
-    "Fix my listing — $29",
+    "Get the package — £29",
+    "Send me the teardown — £29",
+    "Fix my listing — £29",
 ]
 
 _GUARANTEE_LINES = [
@@ -383,7 +413,7 @@ is off, and I'm fairly sure your cover isn't the one that would get the click.</
 </div>
 
 <div class="what-you-get">
-  <h3>For $29 I'll go through your listing properly</h3>
+  <h3>For £29 I'll go through your listing properly</h3>
   <div class="item"><div class="item-icon">&#10003;</div>
     <div>Score every photo &mdash; teardown PDF with what's costing you clicks, what to fix first</div>
   </div>
