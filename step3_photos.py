@@ -486,7 +486,7 @@ def _deepinfra_kontext(image_bytes: bytes, prompt: str) -> bytes:
         raise RuntimeError("DEEPINFRA_API_KEY not set")
     b64 = base64.b64encode(image_bytes).decode()
     r = requests.post(
-        "https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX.1-kontext-pro",
+        "https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX.1-Kontext-dev",
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
         json={"prompt": prompt, "image": f"data:image/jpeg;base64,{b64}",
               "num_outputs": 1, "output_format": "jpeg"},
@@ -504,7 +504,8 @@ def _deepinfra_kontext(image_bytes: bytes, prompt: str) -> bytes:
 
 
 def _novita_kontext(image_bytes: bytes, prompt: str) -> bytes:
-    """Novita AI flux-kontext-dev — ~$0.025/image, free credits on signup."""
+    """Novita AI flux-kontext-dev — free trial covers training only, not inference. Skip."""
+    raise RuntimeError("Novita: no inference credits on free tier — top up to enable")
     key = os.environ.get("NOVITA_API_KEY", "")
     if not key:
         raise RuntimeError("NOVITA_API_KEY not set")
