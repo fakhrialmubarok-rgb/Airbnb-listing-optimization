@@ -520,8 +520,12 @@ def main():
         if not (TEARDOWNS / f"teardown_{lid}.json").exists():
             print(f"[step4] {lid}: no teardown, skipped"); continue
         out = build_pdf(lid)
+        size_kb = out.stat().st_size // 1024
+        if size_kb < 50:
+            print(f"[step4] {lid}: WARNING — PDF only {size_kb} KB (likely missing photos). "
+                  f"Re-queue step3 for this listing.")
         row["status"] = "PDF Done"; touched = True
-        print(f"[step4] {lid}: -> {out} ({out.stat().st_size//1024} KB)")
+        print(f"[step4] {lid}: -> {out} ({size_kb} KB)")
     if touched:
         from tracker_io import write_rows
         write_rows(TRACKER_CSV, rows)

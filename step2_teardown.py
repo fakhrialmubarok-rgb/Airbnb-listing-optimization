@@ -121,16 +121,28 @@ def main():
             continue
 
         out = TEARDOWN_DIR / f"teardown_{lid}.json"
+        # City-level median from same-city cohort rows (free, no extra API call)
+        city_key = (l.get("city") or "").strip().lower()
+        city_rates = [
+            float(r.get("nightly_rate_gbp", 0))
+            for r in cohort_rows
+            if (r.get("city") or "").strip().lower() == city_key
+            and r.get("nightly_rate_gbp")
+        ]
+        city_median = round(st.median(city_rates), 2) if len(city_rates) >= 5 else median_rate
+
         out.write_text(json.dumps({
-            "listing_id": lid,
-            "host_name": l.get("host_name"),
-            "analyzed_at": date.today().isoformat(),
+            "listing_id":   lid,
+            "host_name":    l.get("host_name"),
+            "location":     l.get("city") or "",
+            "analyzed_at":  date.today().isoformat(),
             "market_context": market_context,
             "listing_numbers": {
-                "nightly_rate_gbp": l.get("nightly_rate"),
-                "occupancy_pct": l.get("occupancy_pct"),
-                "open_nights_90d": l.get("open_nights_90d"),
-                "revenue_at_stake_gbp": round((l.get("nightly_rate") or 0) * (l.get("open_nights_90d") or 0), 2),
+                "nightly_rate_gbp":       l.get("nightly_rate"),
+                "cohort_median_rate_gbp": city_median,
+                "occupancy_pct":          l.get("occupancy_pct"),
+                "open_nights_90d":        l.get("open_nights_90d"),
+                "revenue_at_stake_gbp":   round((l.get("nightly_rate") or 0) * (l.get("open_nights_90d") or 0), 2),
             },
             "analysis": analysis,
         }, indent=2))
