@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 102.0,
     "occupancy_pct": 19.6,
     "open_nights_90d": 72,
-    "revenue_at_stake_gbp": 7344.0
+    "revenue_at_stake_gbp": 7344.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "The data shows your listing is priced at \u00a3102/night, -42% below the local median (\u00a3175) yet has 19.6% occupancy next 90 days, below 28.3% cohort median.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

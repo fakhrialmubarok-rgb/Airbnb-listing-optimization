@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 115.0,
     "occupancy_pct": 47.8,
     "open_nights_90d": 47,
-    "revenue_at_stake_gbp": 5405.0
+    "revenue_at_stake_gbp": 5405.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your annex is already booked 48\u202f% of the next 90 days at \u00a3115/night \u2013 a 34\u202f% discount to the city average \u2013 you could safely raise the rate and capture up to \u00a32,300 extra in the same period.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Burton Salmon"
 }

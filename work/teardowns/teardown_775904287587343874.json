@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 117.6,
     "occupancy_pct": 56.5,
     "open_nights_90d": 39,
-    "revenue_at_stake_gbp": 4586.4
+    "revenue_at_stake_gbp": 4586.4,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your nightly rate is 24% below the Leeds median while you\u2019re already enjoying 56.5% occupancy \u2013 a modest price tweak could boost your earnings without sacrificing bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Leeds"
 }

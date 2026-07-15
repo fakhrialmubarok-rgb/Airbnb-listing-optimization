@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1421.0,
     "occupancy_pct": 35.9,
     "open_nights_90d": 58,
-    "revenue_at_stake_gbp": 82418.0
+    "revenue_at_stake_gbp": 82418.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a31,421 nightly rate is 1255% above the local median, yet your 90\u2011day occupancy sits at 35.9% versus the market\u2019s 48.9% \u2013 there\u2019s a clear upside.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Peak Forest"
 }

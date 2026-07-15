@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 79.8,
     "occupancy_pct": 32.6,
     "open_nights_90d": 61,
-    "revenue_at_stake_gbp": 4867.8
+    "revenue_at_stake_gbp": 4867.8,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your nightly rate of \u00a379.8 is 54\u202f% lower than the market median of \u00a3175, yet you have 61 open nights in the next 90 days\u2014there\u2019s huge upside by promoting that savings.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Seaton Delaval"
 }

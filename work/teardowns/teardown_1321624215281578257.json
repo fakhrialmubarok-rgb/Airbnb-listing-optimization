@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 144.44,
     "occupancy_pct": 20.7,
     "open_nights_90d": 71,
-    "revenue_at_stake_gbp": 10255.24
+    "revenue_at_stake_gbp": 10255.24,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Anisah, your \u00a3144.44 nightly rate is 17% less than the market median, but occupancy is still lagging 8.7% behind the competition. Let's discuss how to boost bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

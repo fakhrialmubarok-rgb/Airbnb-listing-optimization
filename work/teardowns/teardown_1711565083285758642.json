@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 232.0,
     "occupancy_pct": 80.4,
     "open_nights_90d": 18,
-    "revenue_at_stake_gbp": 4176.0
+    "revenue_at_stake_gbp": 4176.0,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your \u00a3232 rate exceeds Manchester's median by 50% while maintaining 80.4% occupancy, but missing 3 key amenity categories may prevent maximizing this strong performance",
     "weakest_element": "description"
-  }
+  },
+  "location": "Greater Manchester"
 }

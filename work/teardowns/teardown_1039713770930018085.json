@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 113.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 8362.0
+    "revenue_at_stake_gbp": 8362.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your flat is priced 35% below the city median yet only 17% booked \u2013 there\u2019s huge upside.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Tyne and Wear"
 }

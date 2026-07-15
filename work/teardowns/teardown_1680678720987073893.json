@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 490.0,
     "occupancy_pct": 16.3,
     "open_nights_90d": 75,
-    "revenue_at_stake_gbp": 36750.0
+    "revenue_at_stake_gbp": 36750.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing commands \u00a3490/night\u2014180% above the city median\u2014yet only 16% of nights are booked in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Anfield"
 }

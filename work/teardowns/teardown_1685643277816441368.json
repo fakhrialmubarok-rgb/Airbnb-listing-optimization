@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 430.4,
     "occupancy_pct": 75.0,
     "open_nights_90d": 22,
-    "revenue_at_stake_gbp": 9468.8
+    "revenue_at_stake_gbp": 9468.8,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "price_vs_occupancy",
     "outreach_hook": "Your \u00a3430.4 rate exceeds Manchester's median by 178%, yet you're achieving 75% occupancy vs 47.8% market average",
     "weakest_element": "title"
-  }
+  },
+  "location": "Chorlton"
 }

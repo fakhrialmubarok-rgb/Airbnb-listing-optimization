@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 107.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 7918.0
+    "revenue_at_stake_gbp": 7918.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By filling the gaps in our amenities and adjusting our pricing, we can increase our nightly rate to \u00a3145.90 and potentially boost occupancy to 24.5% (midpoint between current and cohort medians)",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

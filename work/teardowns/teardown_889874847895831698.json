@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1058.72,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 80462.72
+    "revenue_at_stake_gbp": 80462.72,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -34,5 +35,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a31058.72 rate is 505% above median while showing 13% lower occupancy (15.2% vs 28.3%) among Liverpool listings",
     "weakest_element": "title"
-  }
+  },
+  "location": "Anfield"
 }

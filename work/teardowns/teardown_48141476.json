@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 197.6,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 15017.6
+    "revenue_at_stake_gbp": 15017.6,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing is priced 13% above the city median while only 15% of nights are booked in the next 90 days\u2014there\u2019s a clear opportunity to boost occupancy.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Leeds"
 }

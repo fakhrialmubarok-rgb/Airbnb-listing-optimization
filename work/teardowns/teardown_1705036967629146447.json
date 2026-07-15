@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 276.8,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 19376.0
+    "revenue_at_stake_gbp": 19376.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your \u00a3276.8 nightly rate is \u00a3101.8 higher than the cohort median, yet your 21.7% occupancy is 6.6pp below the market average. Let's work together to capitalize on your high nightly rate and drive bookings through targeted amenity enhancements.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Roundhay"
 }

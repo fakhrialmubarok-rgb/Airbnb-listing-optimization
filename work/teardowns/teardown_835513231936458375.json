@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 517.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 39292.0
+    "revenue_at_stake_gbp": 39292.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing is priced 195% above the market median yet occupancy remains 46% below cohort benchmarks - this price-performance divergence offers clear ROI potential",
     "weakest_element": "title"
-  }
+  },
+  "location": "Allerton"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 497.2,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 36295.6
+    "revenue_at_stake_gbp": 36295.6,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your \u00a3497.2 nightly rate is +184% above the local median, yet occupancy is only 18.5%\u2014we\u2019ll help optimize your 50-character title to attract buyers willing to pay the premium.",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

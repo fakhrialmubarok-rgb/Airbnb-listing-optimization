@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 151.6,
     "occupancy_pct": 46.7,
     "open_nights_90d": 48,
-    "revenue_at_stake_gbp": 7276.8
+    "revenue_at_stake_gbp": 7276.8,
+    "cohort_median_rate_gbp": 159.8
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Given 46.7% occupancy over the next 90 days for \u00a3151.6 with 18 reviews, I'd love to discuss ways to improve visibility and convert more open nights.",
     "weakest_element": "title"
-  }
+  },
+  "location": "South Yorkshire"
 }

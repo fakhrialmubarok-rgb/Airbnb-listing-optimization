@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 105.4,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 7378.0
+    "revenue_at_stake_gbp": 7378.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With rates 40% below market average (\u00a3105 vs \u00a3175) yet 28.3% occupancy vs your 21.7%, a title/amenity optimization could unlock \u00a37,378 in potential revenue over 70 open nights",
     "weakest_element": "description"
-  }
+  },
+  "location": "Marston Green"
 }

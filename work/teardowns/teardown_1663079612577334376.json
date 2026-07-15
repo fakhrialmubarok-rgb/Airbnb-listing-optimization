@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 174.28,
     "occupancy_pct": 34.8,
     "open_nights_90d": 59,
-    "revenue_at_stake_gbp": 10282.52
+    "revenue_at_stake_gbp": 10282.52,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "description",
     "outreach_hook": "You have 59 open nights in the next 90 days\u2014could a rewritten description boosting key amenities unlock additional \u00a310,283 in revenue?",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

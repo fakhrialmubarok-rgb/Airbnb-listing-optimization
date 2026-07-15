@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 178.0,
     "occupancy_pct": 37.0,
     "open_nights_90d": 57,
-    "revenue_at_stake_gbp": 10146.0
+    "revenue_at_stake_gbp": 10146.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your barn commands a \u00a3178 nightly rate \u2013 70% above the local median \u2013 yet occupancy this quarter is only 37%, leaving roughly 57 nights open that could be booked with a smarter pricing strategy.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Ughill"
 }

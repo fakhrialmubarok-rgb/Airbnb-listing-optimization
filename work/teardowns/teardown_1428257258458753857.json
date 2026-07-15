@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 127.4,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 9682.4
+    "revenue_at_stake_gbp": 9682.4,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -33,5 +34,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Our analysis suggests that adding an outdoor space to your Field View House could attract guests willing to pay \u00a3175 per night, allowing you to fill 50 more nights within the next 90 days.",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

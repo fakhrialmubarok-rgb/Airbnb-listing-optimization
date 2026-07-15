@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 210.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 15960.0
+    "revenue_at_stake_gbp": 15960.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Amaan, I noticed your listing has an opportunity to increase occupancy by 13.1% by matching the cohort average, would you like to discuss potential enhancements?",
     "weakest_element": "title"
-  }
+  },
+  "location": "Horsforth"
 }

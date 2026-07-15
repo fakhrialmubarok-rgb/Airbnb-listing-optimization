@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 78.4,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 4390.4
+    "revenue_at_stake_gbp": 4390.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is \u00a378.40, which is 49% lower than the Birmingham median of \u00a3154.60, yet your 90\u2011day occupancy sits at just 38%\u2014there\u2019s clear upside.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Wythall"
 }

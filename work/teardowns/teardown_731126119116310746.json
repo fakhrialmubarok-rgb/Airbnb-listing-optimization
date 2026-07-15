@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 181.0,
     "occupancy_pct": 67.4,
     "open_nights_90d": 29,
-    "revenue_at_stake_gbp": 5249.0
+    "revenue_at_stake_gbp": 5249.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're capturing 67.4% occupancy at a 17% premium over the London median rate, but 29 open nights still present significant untapped revenue potential",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Tyne and Wear"
 }

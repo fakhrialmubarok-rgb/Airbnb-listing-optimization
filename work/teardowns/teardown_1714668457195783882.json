@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 143.2,
     "occupancy_pct": 73.9,
     "open_nights_90d": 23,
-    "revenue_at_stake_gbp": 3293.6
+    "revenue_at_stake_gbp": 3293.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 7,
@@ -35,5 +36,6 @@
     "outreach_angle": "ammenity_gap",
     "outreach_hook": "With 23 open nights at \u00a3143.20/night, 3 missing high-value amenities are creating lost revenue opportunities for this 4.71-rated listing",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Burley"
 }

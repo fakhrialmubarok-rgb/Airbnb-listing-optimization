@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 169.0,
     "occupancy_pct": 64.1,
     "open_nights_90d": 32,
-    "revenue_at_stake_gbp": 5408.0
+    "revenue_at_stake_gbp": 5408.0,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your cottage is priced at \u00a3169/night \u2013 61% higher than the Sheffield median of \u00a3104, yet its 64% 90\u2011day occupancy suggests a pricing tweak could unlock far more bookings.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Sheffield"
 }

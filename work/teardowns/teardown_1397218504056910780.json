@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 133.2,
     "occupancy_pct": 42.4,
     "open_nights_90d": 52,
-    "revenue_at_stake_gbp": 6926.4
+    "revenue_at_stake_gbp": 6926.4,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 4,
@@ -33,5 +34,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3133/night rate is 14% below the \u00a3154.60 median but you're still missing 28% of bookings vs the 47.8% cohort median.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Tyne and Wear"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 334.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 25384.0
+    "revenue_at_stake_gbp": 25384.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3334 rate is 91% above median, but you're achieving 45% lower occupancy than market average - we can fix this with data-driven optimization",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Beeston"
 }

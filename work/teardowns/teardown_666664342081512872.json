@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 266.6,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 20261.6
+    "revenue_at_stake_gbp": 20261.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With an occupancy rate 12.1% below the area's average, and a significant price gap to the median rate, we believe fine-tuning this penthouse's presentation and amenities can unlock its full booking potential.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Shirley"
 }

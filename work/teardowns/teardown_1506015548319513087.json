@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 277.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 21052.0
+    "revenue_at_stake_gbp": 21052.0,
+    "cohort_median_rate_gbp": 159.8
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With your nightly rate being 58% higher than the cohort median and an occupancy rate of 15.2% versus the cohort's 28.3%, there's a significant opportunity to adjust your strategy and increase bookings.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "South Yorkshire"
 }

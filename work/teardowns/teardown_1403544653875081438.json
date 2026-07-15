@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 130.0,
     "occupancy_pct": 66.3,
     "open_nights_90d": 30,
-    "revenue_at_stake_gbp": 3900.0
+    "revenue_at_stake_gbp": 3900.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "\u00a3130 rate is -16% vs \u00a3154.60 median yet achieves 66.3% occupancy (vs 47.8% cohort average) \u2013 this underpricing suggests massive revenue untapped.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Horsforth"
 }

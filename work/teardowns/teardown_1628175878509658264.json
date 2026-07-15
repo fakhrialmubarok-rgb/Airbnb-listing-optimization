@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 220.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 16720.0
+    "revenue_at_stake_gbp": 16720.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By adding just a few high-value amenities, Hussain could boost occupancy from 15.2% to a more competitive 28.3% and increase revenue on those 76 open nights",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 401.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 30476.0
+    "revenue_at_stake_gbp": 30476.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing maintains a strong 4.91 rating while offering a 4x+ nightly rate above median (\u00a3401 vs \u00a3175), yet only fills 15.2% of its next 90 nights compared to market average 28.3% occupancy",
     "weakest_element": "description"
-  }
+  },
+  "location": "Sparkbrook"
 }

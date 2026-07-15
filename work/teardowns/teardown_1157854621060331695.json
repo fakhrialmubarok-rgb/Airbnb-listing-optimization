@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 90.4,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 6328.0
+    "revenue_at_stake_gbp": 6328.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your current 21.7% occupancy at \u00a390.4/night is 48% below the market rate, leaving significant revenue untapped.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Cross Green"
 }

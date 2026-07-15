@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 659.2,
     "occupancy_pct": 29.3,
     "open_nights_90d": 64,
-    "revenue_at_stake_gbp": 42188.8
+    "revenue_at_stake_gbp": 42188.8,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Despite charging 326% above average for Leeds Airbnbs (\u00a3659 vs \u00a3155), your listing is only 29% booked over the next 90 days compared to 48% for similar properties",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

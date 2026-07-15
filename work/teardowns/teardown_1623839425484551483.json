@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 2200.0,
     "occupancy_pct": 89.1,
     "open_nights_90d": 10,
-    "revenue_at_stake_gbp": 22000.0
+    "revenue_at_stake_gbp": 22000.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a32,200 rate is +1323% vs cohort median, but only 10 open nights remain in next 90 days - what's limiting full capacity?",
     "weakest_element": "title"
-  }
+  },
+  "location": "Merseyside"
 }

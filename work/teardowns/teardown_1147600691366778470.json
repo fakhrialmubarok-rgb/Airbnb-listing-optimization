@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 122.4,
     "occupancy_pct": 37.0,
     "open_nights_90d": 57,
-    "revenue_at_stake_gbp": 6976.8
+    "revenue_at_stake_gbp": 6976.8,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a nightly rate of \u00a3122.4, your listing is \u00a352.60 under the cohort median, yet still offers 57 open nights in the next 90 days \u2013 we have strategies to boost bookings and maximize revenue",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

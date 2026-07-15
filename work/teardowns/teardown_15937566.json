@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1006.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 76456.0
+    "revenue_at_stake_gbp": 76456.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're charging 551% above local median but only 32% occupancy vs market average - optimizing pricing could generate \u00a385k in additional revenue annually",
     "weakest_element": "title"
-  }
+  },
+  "location": "Gateshead"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 2296.0,
     "occupancy_pct": 70.7,
     "open_nights_90d": 26,
-    "revenue_at_stake_gbp": 59696.0
+    "revenue_at_stake_gbp": 59696.0,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're booking 23.9% more nights than the cohort average (70.7% vs 47.8%) but charging 1385% above the median rate - let's unlock higher occupancy by making your spa amenities more visible.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Sheffield"
 }

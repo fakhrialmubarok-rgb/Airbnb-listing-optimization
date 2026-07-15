@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 122.4,
     "occupancy_pct": 73.9,
     "open_nights_90d": 23,
-    "revenue_at_stake_gbp": 2815.2
+    "revenue_at_stake_gbp": 2815.2,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "price_vs_occupancy",
     "outreach_hook": "Your \u00a3122 rate is 21% below the Manchester median, yet you're filling 74% of nights vs the market's 48% average - let's maximize this pricing power while maintaining strong occupancy.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Greater Manchester"
 }

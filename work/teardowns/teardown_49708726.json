@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 213.8,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 14966.0
+    "revenue_at_stake_gbp": 14966.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're charging \u00a348.8 more than the median \u00a3175 rate yet have 70 open nights in the next 90 days - we can fix this price/occupancy imbalance",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Midlands"
 }

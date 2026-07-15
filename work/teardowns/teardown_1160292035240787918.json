@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 510.0,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 23460.0
+    "revenue_at_stake_gbp": 23460.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a \u00a3510 nightly rate that's 191% above the cohort median, there's room to improve occupancy - can we discuss how to make this property more attractive to bookers?",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Hockley"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 400.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 29600.0
+    "revenue_at_stake_gbp": 29600.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3400/night listing is priced 129% above competitors but only 74 nights open in a market where similar 4-guest homes have 28.3% occupancy",
     "weakest_element": "title"
-  }
+  },
+  "location": "Merseyside"
 }

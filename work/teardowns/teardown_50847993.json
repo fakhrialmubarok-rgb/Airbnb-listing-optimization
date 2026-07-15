@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 61.2,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 2815.2
+    "revenue_at_stake_gbp": 2815.2,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your cottage is priced at \u00a361.2 per night \u2013 about 60% less than the city\u2019s median \u00a3154.6, yet you still have 46 open nights in the next 90 days.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

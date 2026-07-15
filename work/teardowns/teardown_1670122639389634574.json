@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1700.0,
     "occupancy_pct": 92.4,
     "open_nights_90d": 7,
-    "revenue_at_stake_gbp": 11900.0
+    "revenue_at_stake_gbp": 11900.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a31700 rate is +1000% vs the local median, but occupancy lags at 92% booked (7 open nights) against the 48% market average",
     "weakest_element": "title"
-  }
+  },
+  "location": "Barton"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 78.4,
     "occupancy_pct": 46.7,
     "open_nights_90d": 48,
-    "revenue_at_stake_gbp": 3763.2
+    "revenue_at_stake_gbp": 3763.2,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your apartment is priced 25% below the city median (\u00a378 vs \u00a3105) yet its 90\u2011day occupancy sits at just 46.7%\u2014there\u2019s clear upside to boost bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Sheffield"
 }

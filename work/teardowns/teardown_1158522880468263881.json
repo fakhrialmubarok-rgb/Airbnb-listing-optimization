@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 85.0,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 4760.0
+    "revenue_at_stake_gbp": 4760.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your home is priced 45% below the city average (\u00a385 vs \u00a3154) yet only 38% booked for the next 90 days \u2013 we can turn that gap into higher occupancy.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

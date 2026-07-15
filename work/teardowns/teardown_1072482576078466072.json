@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 180.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 13680.0
+    "revenue_at_stake_gbp": 13680.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're leaving \u00a313,680 in revenue on the table with 76 open days between now and December in one of Liverpool's most competitive areas.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Old Swan"
 }

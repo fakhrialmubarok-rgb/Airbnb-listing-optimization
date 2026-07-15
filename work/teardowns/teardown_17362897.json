@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 510.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 38760.0
+    "revenue_at_stake_gbp": 38760.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3510 rate is 191% above the Liverpool median while occupancy remains 28% below average - suggesting strong opportunity to increase take-rate",
     "weakest_element": "title"
-  }
+  },
+  "location": "Liverpool"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 129.8,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 8566.8
+    "revenue_at_stake_gbp": 8566.8,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By highlighting and addressing the amenity gaps, such as outdoor space and entertainment options, we believe it's possible to increase occupancy and drive more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

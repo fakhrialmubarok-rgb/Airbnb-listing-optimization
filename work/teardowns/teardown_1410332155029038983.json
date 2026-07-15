@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 266.6,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 20261.6
+    "revenue_at_stake_gbp": 20261.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 7,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "We've identified that your home's nightly rate and occupancy levels are significantly off the cohort median, which could be limiting bookings \u2013 we'd love to discuss how to optimize for maximum revenue.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Liverpool"
 }

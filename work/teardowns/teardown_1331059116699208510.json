@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 219.0,
     "occupancy_pct": 28.3,
     "open_nights_90d": 65,
-    "revenue_at_stake_gbp": 14235.0
+    "revenue_at_stake_gbp": 14235.0,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By addressing the parking gap and highlighting the home's best features, you can increase occupancy and attract more guests.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Birmingham"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 112.4,
     "occupancy_pct": 50.0,
     "open_nights_90d": 45,
-    "revenue_at_stake_gbp": 5058.0
+    "revenue_at_stake_gbp": 5058.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Alan, your Wakefield listing has a 50% occupancy rate over the next 90 days - an incredible opportunity to increase earnings, considering the market median is 28.3% - would you like to discuss potential strategies to boost your occupancy?",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

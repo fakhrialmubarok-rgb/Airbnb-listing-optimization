@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 91.0,
     "occupancy_pct": 43.5,
     "open_nights_90d": 51,
-    "revenue_at_stake_gbp": 4641.0
+    "revenue_at_stake_gbp": 4641.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -36,5 +37,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a391 rate is 41% below the market median yet occupancy is 4.3 percentage points lower than the city average (43.5% vs 47.8%), suggesting a significant opportunity to recapture lost revenue through strategic price differentiation",
     "weakest_element": "title"
-  }
+  },
+  "location": "Golborne"
 }

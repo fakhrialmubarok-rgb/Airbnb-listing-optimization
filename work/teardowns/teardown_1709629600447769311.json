@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 102.96,
     "occupancy_pct": 52.2,
     "open_nights_90d": 43,
-    "revenue_at_stake_gbp": 4427.28
+    "revenue_at_stake_gbp": 4427.28,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your cottage is priced \u00a3102.96 per night \u2013 about 33% less than the market median, yet you\u2019re only at 52.2% occupancy, leaving 43 nights untapped.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Whitacre Heath"
 }

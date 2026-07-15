@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 128.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 9728.0
+    "revenue_at_stake_gbp": 9728.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Considering your property's occupancy rate is 12.1 percentage points lower than the market median, it may be beneficial to reassess your pricing strategy or optimize your listing for better visibility.",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 143.4,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 6596.4
+    "revenue_at_stake_gbp": 6596.4,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your 368 reviews at 4.94 stars could unlock \u00a3532 per night in potential revenue through 46 open nights - 82% of top-tier local listings feature specific outdoor amenities",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Tyne and Wear"
 }

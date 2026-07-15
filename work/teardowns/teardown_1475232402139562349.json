@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 192.4,
     "occupancy_pct": 43.5,
     "open_nights_90d": 51,
-    "revenue_at_stake_gbp": 9812.4
+    "revenue_at_stake_gbp": 9812.4,
+    "cohort_median_rate_gbp": 143.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "I'm writing to help you optimize your listing's occupancy. Your current occupancy rate of 43.5% is 5.7% below the local median, which suggests there's room for improvement.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Newcastle upon Tyne"
 }

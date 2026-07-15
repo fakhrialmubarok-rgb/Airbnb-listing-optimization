@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 130.0,
     "occupancy_pct": 72.8,
     "open_nights_90d": 24,
-    "revenue_at_stake_gbp": 3120.0
+    "revenue_at_stake_gbp": 3120.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your \u00a3130/night rate is 16% below the market median, yet you\u2019re already booking 73% of your calendar in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Coleshill"
 }

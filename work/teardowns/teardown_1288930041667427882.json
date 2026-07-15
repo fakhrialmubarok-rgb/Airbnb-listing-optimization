@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 883.46,
     "occupancy_pct": 45.7,
     "open_nights_90d": 49,
-    "revenue_at_stake_gbp": 43289.54
+    "revenue_at_stake_gbp": 43289.54,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing outspends local peers by 471% (\u00a3883 vs \u00a3154 median), yet books 2.1% fewer nights (45.7% vs 47.8% occupancy) over 90 days \u2014 there\u2019s untapped revenue potential.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Hale Central"
 }

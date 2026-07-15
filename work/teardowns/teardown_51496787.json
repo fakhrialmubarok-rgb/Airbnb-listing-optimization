@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1174.0,
     "occupancy_pct": 40.2,
     "open_nights_90d": 54,
-    "revenue_at_stake_gbp": 63396.0
+    "revenue_at_stake_gbp": 63396.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a31174/night property has 54 open nights at 40% occupancy while the market median is 47.8%",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Halewood"
 }

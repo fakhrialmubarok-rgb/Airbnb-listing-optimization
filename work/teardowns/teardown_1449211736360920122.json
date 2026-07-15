@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 166.0,
     "occupancy_pct": 59.8,
     "open_nights_90d": 36,
-    "revenue_at_stake_gbp": 5976.0
+    "revenue_at_stake_gbp": 5976.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Hi Patrick, we noticed you have 36 open nights, which translates to a potential revenue loss of \u00a36,564. We'd like to help you optimise your listing and increase bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

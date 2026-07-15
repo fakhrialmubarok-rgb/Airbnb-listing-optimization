@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 5005.0,
     "occupancy_pct": 14.1,
     "open_nights_90d": 77,
-    "revenue_at_stake_gbp": 385385.0
+    "revenue_at_stake_gbp": 385385.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a35,005 nightly rate is 3137% above the market median while occupancy remains at just 14% of calendar days (77 open nights) in the next 90 days - a significant opportunity exists to optimize pricing strategy.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Merseyside"
 }

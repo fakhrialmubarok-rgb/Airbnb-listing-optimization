@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 75.0,
     "occupancy_pct": 19.6,
     "open_nights_90d": 72,
-    "revenue_at_stake_gbp": 5400.0
+    "revenue_at_stake_gbp": 5400.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Our analysis suggests that enhancing your luxury studio's amenities could increase occupancy by 8-10 percentage points, securing more bookings and revenue.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

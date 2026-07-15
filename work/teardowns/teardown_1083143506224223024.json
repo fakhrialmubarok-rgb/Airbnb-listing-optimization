@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 79.6,
     "occupancy_pct": 52.2,
     "open_nights_90d": 43,
-    "revenue_at_stake_gbp": 3422.8
+    "revenue_at_stake_gbp": 3422.8,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your \u00a379.6 rate is 49% below the city median but occupancy remains 4.4% above average - optimizing your title with this value proposition could further boost bookings.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Fearnhead"
 }

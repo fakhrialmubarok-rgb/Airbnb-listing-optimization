@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 510.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 38760.0
+    "revenue_at_stake_gbp": 38760.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -36,5 +37,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "This \u00a3510 listing has 40% higher nightlies than market average but only 15.2% occupancy - vs 28.3% median - suggesting strong pricing misalignment",
     "weakest_element": "description"
-  }
+  },
+  "location": "Liverpool"
 }

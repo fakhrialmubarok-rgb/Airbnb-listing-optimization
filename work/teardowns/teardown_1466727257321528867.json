@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 119.7,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 9097.2
+    "revenue_at_stake_gbp": 9097.2,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Julie's flat has a significant gap in bookings (15.2% vs 28.3% median) which may indicate that it's not optimized for search.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

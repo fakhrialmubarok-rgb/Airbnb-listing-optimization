@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 161.0,
     "occupancy_pct": 28.3,
     "open_nights_90d": 65,
-    "revenue_at_stake_gbp": 10465.0
+    "revenue_at_stake_gbp": 10465.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "The current 65-night availability at \u00a3161/night means \u00a310,465 in potential revenue could be booked within 90 days with stronger listing optimization",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

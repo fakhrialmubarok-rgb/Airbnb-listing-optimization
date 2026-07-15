@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 168.0,
     "occupancy_pct": 16.3,
     "open_nights_90d": 75,
-    "revenue_at_stake_gbp": 12600.0
+    "revenue_at_stake_gbp": 12600.0,
+    "cohort_median_rate_gbp": 159.8
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You have 75 open nights over the next 90 days, representing a potential revenue of \u00a312,600 at your current \u00a3168 nightly rate.",
     "weakest_element": "description"
-  }
+  },
+  "location": "South Yorkshire"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 456.95,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 34728.2
+    "revenue_at_stake_gbp": 34728.2,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing has 76 open nights with a high nightly rate of \u00a3456.95 but only a 15.2% occupancy rate - can we discuss strategies to optimize your pricing and fill more dates?",
     "weakest_element": "title"
-  }
+  },
+  "location": "Wednesbury"
 }

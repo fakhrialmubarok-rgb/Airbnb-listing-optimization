@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 491.6,
     "occupancy_pct": 23.9,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 33428.8
+    "revenue_at_stake_gbp": 33428.8,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing charges \u00a3491/night (+181% above market median) but sits at 23.9% occupancy - 4.4% below typical for this market",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

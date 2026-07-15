@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 198.6,
     "occupancy_pct": 68.5,
     "open_nights_90d": 28,
-    "revenue_at_stake_gbp": 5560.8
+    "revenue_at_stake_gbp": 5560.8,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Hi Uswa, I've noticed your 5-bed home at \u00a3198.60/night is achieving 68.5% occupancy\u201420.7pp above the market median\u2014with a 4.97 rating. Let's discuss optimizing your listing to capitalize on this strong demand",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Osmondthorpe"
 }

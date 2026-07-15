@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 71.0,
     "occupancy_pct": 52.2,
     "open_nights_90d": 43,
-    "revenue_at_stake_gbp": 3053.0
+    "revenue_at_stake_gbp": 3053.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your 52.2% 90-day occupancy is impressive, but \u00a371/night represents 54% below the \u00a3154.60 median rate\u2014leaving potential revenue on the table.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Parbold"
 }

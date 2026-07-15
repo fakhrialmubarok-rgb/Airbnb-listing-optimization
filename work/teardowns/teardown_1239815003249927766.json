@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 482.2,
     "occupancy_pct": 78.3,
     "open_nights_90d": 20,
-    "revenue_at_stake_gbp": 9644.0
+    "revenue_at_stake_gbp": 9644.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Given your \u00a3482/night rate is 212% higher than the local cohort median, you may be missing out on bookings due to a perceived value mismatch",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Timperley"
 }

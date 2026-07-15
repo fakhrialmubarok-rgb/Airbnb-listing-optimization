@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 92.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 6992.0
+    "revenue_at_stake_gbp": 6992.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Our data suggests that your occupancy rate of 15.2% over the next 90 days is 13.1 points lower than the median in this market. We'd love to discuss how we can help you optimise your listing for higher occupancy.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 190.6,
     "occupancy_pct": 63.0,
     "open_nights_90d": 33,
-    "revenue_at_stake_gbp": 6289.8
+    "revenue_at_stake_gbp": 6289.8,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "With 33 open nights at \u00a3190.6, this Relocator home could generate \u00a36,319 in pending revenue, but the current title lacks the clarity to attract your target audience.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Birmingham"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 88.74,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 6478.02
+    "revenue_at_stake_gbp": 6478.02,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your studio stays 43% below Manchester\u2019s median rate, yet only achieves 18.5% occupancy against the cohort\u2019s 47.8% \u2014 what\u2019s missing?",
     "weakest_element": "description"
-  }
+  },
+  "location": "Greater Manchester"
 }

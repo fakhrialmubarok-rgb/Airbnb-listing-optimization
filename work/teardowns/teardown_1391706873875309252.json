@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 675.4,
     "occupancy_pct": 23.9,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 45927.2
+    "revenue_at_stake_gbp": 45927.2,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3675.40 rate is +337% vs the Leeds median \u00a3154.60, yet occupancy is just 23.9% vs 47.8% - we can fix this.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

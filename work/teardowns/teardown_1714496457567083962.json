@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 124.0,
     "occupancy_pct": 64.1,
     "open_nights_90d": 32,
-    "revenue_at_stake_gbp": 3968.0
+    "revenue_at_stake_gbp": 3968.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your Birmingham 2\u2011BR flat is priced 20\u202f% below the city median (\u00a3124 vs \u00a3154) and already enjoys 64\u202f% occupancy\u2014let\u2019s amplify that advantage with a sharper title to drive even more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

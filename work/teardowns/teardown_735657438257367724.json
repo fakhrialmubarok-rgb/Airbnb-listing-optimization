@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 524.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 39824.0
+    "revenue_at_stake_gbp": 39824.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3524 rate is 199% above median, yet only 15.2% occupancy suggests a significant price/occupancy imbalance compared to 357 local competitors",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Midlands"
 }

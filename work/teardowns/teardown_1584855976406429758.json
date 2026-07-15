@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 89.0,
     "occupancy_pct": 64.1,
     "open_nights_90d": 32,
-    "revenue_at_stake_gbp": 2848.0
+    "revenue_at_stake_gbp": 2848.0,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your listing already books 64% of nights at \u00a389\u2014let's boost visibility with a keyword\u2011rich title and a cover photo that showcases the private parking to push bookings even higher.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Middleton"
 }

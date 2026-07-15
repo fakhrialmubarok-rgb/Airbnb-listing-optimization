@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 4600.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 340400.0
+    "revenue_at_stake_gbp": 340400.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "While your \u00a34600 nightly rate is 2875% above the local median, your listing shows 17.4% occupancy vs 47.8% in the market \u2014 this price vs occupancy disconnect presents a major revenue growth opportunity.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Formby"
 }

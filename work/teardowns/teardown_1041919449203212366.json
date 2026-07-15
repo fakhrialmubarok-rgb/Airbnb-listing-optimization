@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 175.0,
     "occupancy_pct": 59.8,
     "open_nights_90d": 36,
-    "revenue_at_stake_gbp": 6300.0
+    "revenue_at_stake_gbp": 6300.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3175/night rate is 13% above average while maintaining 59.8% occupancy (vs cohort median 47.8%), but missing key amenities could limit future growth",
     "weakest_element": "description"
-  }
+  },
+  "location": "Rodley"
 }

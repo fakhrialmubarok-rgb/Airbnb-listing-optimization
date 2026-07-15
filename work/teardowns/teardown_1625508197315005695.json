@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 310.4,
     "occupancy_pct": 31.5,
     "open_nights_90d": 62,
-    "revenue_at_stake_gbp": 19244.8
+    "revenue_at_stake_gbp": 19244.8,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing charges \u00a3310 per night\u2014over 100% above the Solihull median\u2014yet is only 31.5% booked for the next 90 days.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "West Midlands"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 2100.0,
     "occupancy_pct": 87.0,
     "open_nights_90d": 12,
-    "revenue_at_stake_gbp": 25200.0
+    "revenue_at_stake_gbp": 25200.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a32100 rate is 1258% higher than local median yet matches 87% occupancy - could strategic repricing maximize revenue?",
     "weakest_element": "title"
-  }
+  },
+  "location": "Merseyside"
 }

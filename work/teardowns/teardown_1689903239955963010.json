@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 126.6,
     "occupancy_pct": 16.3,
     "open_nights_90d": 75,
-    "revenue_at_stake_gbp": 9495.0
+    "revenue_at_stake_gbp": 9495.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your apartment is priced 28% below Newcastle\u2019s average nightly rate yet sees only 16.3% occupancy over the next 90 days \u2013 a clear opportunity to boost bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Tyne and Wear"
 }

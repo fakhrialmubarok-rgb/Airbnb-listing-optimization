@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 151.8,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 11536.8
+    "revenue_at_stake_gbp": 11536.8,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By adding some outdoor spaces, parking and facilities, and entertainment options, you can increase your daily earnings by \u00a324.60 (based on 76 open nights).",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

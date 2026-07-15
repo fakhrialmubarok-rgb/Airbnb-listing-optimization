@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1380.0,
     "occupancy_pct": 41.3,
     "open_nights_90d": 53,
-    "revenue_at_stake_gbp": 73140.0
+    "revenue_at_stake_gbp": 73140.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -36,5 +37,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing commands \u00a31380/night, 800% above typical local prices, yet only achieves 41% occupancy\u20146.5% below the market average",
     "weakest_element": "title"
-  }
+  },
+  "location": "Prestwich"
 }

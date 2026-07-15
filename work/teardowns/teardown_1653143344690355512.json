@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 250.0,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 18250.0
+    "revenue_at_stake_gbp": 18250.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your home is priced 43% above the city median (\u00a3250 vs \u00a3175) yet only 18.5% of nights are booked in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Gateshead"
 }

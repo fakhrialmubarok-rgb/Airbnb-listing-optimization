@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 159.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 12084.0
+    "revenue_at_stake_gbp": 12084.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "With 76 open nights on the calendar, there's a missed opportunity to fill available dates and maximize revenue. A reworked title and photo strategy can help attract more guests.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Kippax"
 }

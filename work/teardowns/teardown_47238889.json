@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 93.4,
     "occupancy_pct": 51.1,
     "open_nights_90d": 44,
-    "revenue_at_stake_gbp": 4109.6
+    "revenue_at_stake_gbp": 4109.6,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Based on your current occupancy rates, there's room to improve by 3.3% above the cohort median - are you ready to explore opportunities to increase bookings?",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Tyne and Wear"
 }

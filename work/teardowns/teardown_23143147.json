@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 66.2,
     "occupancy_pct": 39.1,
     "open_nights_90d": 55,
-    "revenue_at_stake_gbp": 3641.0
+    "revenue_at_stake_gbp": 3641.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your nightly rate of \u00a366.2 is 62% below the city\u2019s median of \u00a3175, yet you\u2019re only 39% booked, leaving 55 nights open in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Altofts"
 }

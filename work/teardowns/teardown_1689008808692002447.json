@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 74.41,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 4911.06
+    "revenue_at_stake_gbp": 4911.06,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 7,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With \u00a374.41 rate (57% below your market's \u00a3175 median) but only 27.2% occupancy vs 28.3% median, we can fix underperformance while maintaining your strong pricing edge.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Fordbridge"
 }

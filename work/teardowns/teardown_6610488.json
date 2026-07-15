@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 125.53,
     "occupancy_pct": 69.6,
     "open_nights_90d": 27,
-    "revenue_at_stake_gbp": 3389.31
+    "revenue_at_stake_gbp": 3389.31,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a nightly rate of \u00a3125.53 and occupancy at 69.6%, there's a clear window for increasing their nightly rate to reach their target occupancy and drive revenue.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Baildon"
 }

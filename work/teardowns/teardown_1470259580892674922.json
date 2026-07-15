@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 185.0,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 12210.0
+    "revenue_at_stake_gbp": 12210.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You have 66 open nights in the next 90 days that could generate up to \u00a312,210 in revenue at your current \u00a3185 rate.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Jesmond"
 }

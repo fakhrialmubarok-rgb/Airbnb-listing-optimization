@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 194.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 14744.0
+    "revenue_at_stake_gbp": 14744.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3194 rate is 11% above local averages yet occupancy hovers at 15.2% vs 28.3% nearby - let's fix this gap",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

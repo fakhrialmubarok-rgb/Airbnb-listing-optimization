@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 105.0,
     "occupancy_pct": 59.8,
     "open_nights_90d": 36,
-    "revenue_at_stake_gbp": 3780.0
+    "revenue_at_stake_gbp": 3780.0,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your cabin is priced at \u00a3105, which is 32% below the city\u2019s median nightly rate of \u00a3154.60, yet you still have 36 open nights in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Birmingham"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1309.8,
     "occupancy_pct": 66.3,
     "open_nights_90d": 30,
-    "revenue_at_stake_gbp": 39294.0
+    "revenue_at_stake_gbp": 39294.0,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your 66.3% occupancy with 30 open nights at \u00a31,309.8/night is impressive - but what if you could increase bookings by better showcasing your 4.93 rating and historic location?",
     "weakest_element": "title"
-  }
+  },
+  "location": "Greater Manchester"
 }

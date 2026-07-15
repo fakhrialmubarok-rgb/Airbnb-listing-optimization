@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 133.8,
     "occupancy_pct": 70.7,
     "open_nights_90d": 26,
-    "revenue_at_stake_gbp": 3478.8
+    "revenue_at_stake_gbp": 3478.8,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your cottage commands a \u00a3133.8 nightly rate\u201428% above the Sheffield median\u2014yet you\u2019re already achieving a strong 70.7% occupancy; a sharper, keyword\u2011rich title can capture even more of that demand.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Sheffield"
 }

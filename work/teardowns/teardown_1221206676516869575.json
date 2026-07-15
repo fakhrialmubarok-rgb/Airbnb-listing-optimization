@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 56.0,
     "occupancy_pct": 30.4,
     "open_nights_90d": 63,
-    "revenue_at_stake_gbp": 3528.0
+    "revenue_at_stake_gbp": 3528.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "By adjusting your pricing strategy to match the local market median, you can unlock a significant 2.1% occupancy increase, translating to more bookings and revenue for your studio.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 222.7,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 10244.2
+    "revenue_at_stake_gbp": 10244.2,
+    "cohort_median_rate_gbp": 159.8
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is \u00a3222.7 \u2013 more than double the city median of \u00a3104.9, yet your 90\u2011day occupancy sits at the same 48.9%, indicating a clear pricing\u2011occupancy gap you can close.",
     "weakest_element": "title"
-  }
+  },
+  "location": "South Yorkshire"
 }

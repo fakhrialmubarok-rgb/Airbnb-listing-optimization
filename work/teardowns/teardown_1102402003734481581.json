@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 770.0,
     "occupancy_pct": 43.5,
     "open_nights_90d": 51,
-    "revenue_at_stake_gbp": 39270.0
+    "revenue_at_stake_gbp": 39270.0,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With \u00a3770 nights costing 400% more than local median but only 44% occupancy (underperforming vs 47.8% market), we can help reposition this luxury asset to fill more nights without discounting.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Greater Manchester"
 }

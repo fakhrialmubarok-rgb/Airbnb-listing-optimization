@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 290.4,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 22070.4
+    "revenue_at_stake_gbp": 22070.4,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With your next 76 open nights, you're missing out on \u00a35,150 of potential revenue due to lower-than-average occupancy.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

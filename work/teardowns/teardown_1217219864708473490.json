@@ -9,7 +9,8 @@
     "open_nights_90d": 37,
     "revenue_at_stake_gbp": 5404.59,
     "cohort_size": 25,
-    "cohort_median_rate": 89.0
+    "cohort_median_rate": 89.0,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 3,
@@ -37,5 +38,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your nightly rate is \u00a3146, which is 64% higher than the local median of \u00a389, yet your occupancy is only 58.7%\u2014adjusting price and spotlighting free parking can quickly lift bookings.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Middleton"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 124.68,
     "occupancy_pct": 34.8,
     "open_nights_90d": 59,
-    "revenue_at_stake_gbp": 7356.12
+    "revenue_at_stake_gbp": 7356.12,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You have 59 open nights, yet your occupancy is only at 34.8% - we'd love to discuss ways to increase bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

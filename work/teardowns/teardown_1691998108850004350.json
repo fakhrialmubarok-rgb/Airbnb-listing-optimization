@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 199.0,
     "occupancy_pct": 47.8,
     "open_nights_90d": 47,
-    "revenue_at_stake_gbp": 9353.0
+    "revenue_at_stake_gbp": 9353.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By adding a small outdoor space, you could attract more guests and fill your 47 open nights \u2013 currently averaging just \u00a3199.00 per night.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Quinton"
 }

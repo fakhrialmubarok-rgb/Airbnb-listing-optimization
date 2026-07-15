@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 168.0,
     "occupancy_pct": 54.3,
     "open_nights_90d": 41,
-    "revenue_at_stake_gbp": 6888.0
+    "revenue_at_stake_gbp": 6888.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your \u00a36,888 revenue opportunity over 41 open nights could be boosted by 2-3x with just three missing amenities guests in St Paul's pay premium for",
     "weakest_element": "description"
-  }
+  },
+  "location": "Coleshill"
 }

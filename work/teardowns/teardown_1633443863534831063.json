@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 103.0,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 5768.0
+    "revenue_at_stake_gbp": 5768.0,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Even though you\u2019re charging \u00a3103/night\u201433\u202f% below Manchester\u2019s median\u2014you\u2019re only at 38\u202f% occupancy over the next 90 days.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Middleton"
 }

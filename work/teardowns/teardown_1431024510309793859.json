@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 79.4,
     "occupancy_pct": 50.0,
     "open_nights_90d": 45,
-    "revenue_at_stake_gbp": 3573.0
+    "revenue_at_stake_gbp": 3573.0,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 45 open nights over the next 90 days, and a rate -24% below the local median, we see an opportunity to optimize your listing and increase bookings at your \u00a379.4 nightly rate",
     "weakest_element": "title"
-  }
+  },
+  "location": "Sheffield"
 }

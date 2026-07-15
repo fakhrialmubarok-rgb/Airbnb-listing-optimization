@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 95.0,
     "occupancy_pct": 60.9,
     "open_nights_90d": 35,
-    "revenue_at_stake_gbp": 3325.0
+    "revenue_at_stake_gbp": 3325.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your \u00a395 rate is 39% below the city average, but with 47.8% occupancy median and 35 open nights, optimizing your title could unlock an extra \u00a3637 in weekly revenue.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Warrington"
 }

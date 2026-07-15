@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 636.6,
     "occupancy_pct": 25.0,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 43288.8
+    "revenue_at_stake_gbp": 43288.8,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -37,5 +38,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3636.60 rate outperforms the market price by 312%, yet your 25% occupancy is only half the 47.8% median of similar properties in the area. Let's address this pricing/occupancy disconnect.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Manchester"
 }

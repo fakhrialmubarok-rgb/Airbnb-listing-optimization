@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 2540.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 193040.0
+    "revenue_at_stake_gbp": 193040.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing charges \u00a32,540/night \u2013 over 1,500% above the city median \u2013 yet only 15% of your nights are booked.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Belbroughton"
 }

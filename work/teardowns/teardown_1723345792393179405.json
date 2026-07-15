@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 64.3,
     "occupancy_pct": 46.7,
     "open_nights_90d": 48,
-    "revenue_at_stake_gbp": 3086.4
+    "revenue_at_stake_gbp": 3086.4,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your 39% lower nightly rate (\u00a364 vs the city median \u00a3105) is only delivering 46.7% occupancy \u2013 there\u2019s a clear opportunity to boost bookings by highlighting this price advantage.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Sheffield"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 209.4,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 15914.4
+    "revenue_at_stake_gbp": 15914.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing is priced \u00a3209/night \u2013 roughly 20% above the market median of \u00a3175 \u2013 yet only 15% of nights are booked in the next 90 days, compared with a 28% median occupancy.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Wombwell"
 }

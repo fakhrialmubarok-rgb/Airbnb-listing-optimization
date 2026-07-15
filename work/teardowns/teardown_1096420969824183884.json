@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1379.0,
     "occupancy_pct": 14.1,
     "open_nights_90d": 77,
-    "revenue_at_stake_gbp": 106183.0
+    "revenue_at_stake_gbp": 106183.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With your nightly rate being 792% higher than the cohort median and an occupancy rate of 14.1% compared to the cohort median of 47.8%, there is a significant opportunity to increase bookings and revenue by optimizing your listing.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Tyne and Wear"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 120.0,
     "occupancy_pct": 33.7,
     "open_nights_90d": 60,
-    "revenue_at_stake_gbp": 7200.0
+    "revenue_at_stake_gbp": 7200.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3120 rate is 22% below the local market median, yet 33.7% occupancy falls 14.1% short of the median 47.8%",
     "weakest_element": "description"
-  }
+  },
+  "location": "Ashton-in-Makerfield"
 }

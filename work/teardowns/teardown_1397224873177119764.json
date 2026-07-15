@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 232.0,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 16936.0
+    "revenue_at_stake_gbp": 16936.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3232 rate is 33% above the market median while 73 of 90 available nights remain unbooked - suggesting a pricing strategy misalignment",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

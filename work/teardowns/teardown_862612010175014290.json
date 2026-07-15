@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 212.8,
     "occupancy_pct": 64.1,
     "open_nights_90d": 32,
-    "revenue_at_stake_gbp": 6809.6
+    "revenue_at_stake_gbp": 6809.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing is priced 38\u202f% above the city median (\u00a3212.8 vs \u00a3154.6) yet you have 32 open nights in the next 90 days \u2013 a clear opportunity to raise occupancy.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Harborne"
 }

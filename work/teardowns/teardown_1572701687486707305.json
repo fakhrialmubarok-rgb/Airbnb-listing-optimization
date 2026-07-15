@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 476.24,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 26669.44
+    "revenue_at_stake_gbp": 26669.44,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing has a nightly rate \u00a3321.64 above the market median yet shows 10 percentage points lower occupancy than average for this property type",
     "weakest_element": "title"
-  }
+  },
+  "location": "Haydock"
 }

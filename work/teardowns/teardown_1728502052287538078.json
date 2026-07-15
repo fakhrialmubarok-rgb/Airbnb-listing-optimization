@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 5236.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 397936.0
+    "revenue_at_stake_gbp": 397936.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "This \u00a35236 property has 76 open nights available, with 15.2% occupancy despite being 2892% above local median pricing \u2014 suggesting major untapped demand.",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

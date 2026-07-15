@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 113.12,
     "occupancy_pct": 25.0,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 7692.16
+    "revenue_at_stake_gbp": 7692.16,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your loft is priced 27% below the market median yet only 25% booked for the next 90 days \u2013 there\u2019s massive upside to fill those 68 open nights.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "West Midlands"
 }

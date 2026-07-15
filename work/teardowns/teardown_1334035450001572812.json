@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 136.0,
     "occupancy_pct": 80.4,
     "open_nights_90d": 18,
-    "revenue_at_stake_gbp": 2448.0
+    "revenue_at_stake_gbp": 2448.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your home is priced \u00a318 (12%) below the city median yet already enjoys 80% occupancy\u2014there\u2019s untapped revenue you could capture with a sharper title and highlighted amenities.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

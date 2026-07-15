@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 146.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 10804.0
+    "revenue_at_stake_gbp": 10804.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "By adjusting your pricing strategy to match the cohort median, you could potentially boost your occupancy rate by almost 10%\u2014an estimated 73 more nights across the next 90 days.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Burley"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 97.4,
     "occupancy_pct": 37.0,
     "open_nights_90d": 57,
-    "revenue_at_stake_gbp": 5551.8
+    "revenue_at_stake_gbp": 5551.8,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Despite charging 37% below Leeds city center median rate, your occupancy is only 37% vs cohort 47.8% - we can fix this.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

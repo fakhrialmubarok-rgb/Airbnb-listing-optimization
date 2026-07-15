@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 122.4,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 8935.2
+    "revenue_at_stake_gbp": 8935.2,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is \u00a3122.4, which is 21% below the market median, yet your next\u201190\u2011day occupancy is only 18.5%\u2014there\u2019s huge untapped demand you can capture.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Middleton"
 }

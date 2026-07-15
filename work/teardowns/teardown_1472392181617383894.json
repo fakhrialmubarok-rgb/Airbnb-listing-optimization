@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 353.6,
     "occupancy_pct": 56.5,
     "open_nights_90d": 39,
-    "revenue_at_stake_gbp": 13790.4
+    "revenue_at_stake_gbp": 13790.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your suite commands \u00a3353/night\u2014\u202f129% above the market median\u2014yet occupancy sits at only 56.5%, leaving clear room to capture more bookings with a price tweak.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Marston Green"
 }

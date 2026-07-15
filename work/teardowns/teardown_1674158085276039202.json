@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 131.8,
     "occupancy_pct": 59.8,
     "open_nights_90d": 36,
-    "revenue_at_stake_gbp": 4744.8
+    "revenue_at_stake_gbp": 4744.8,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your home is already priced 15% below the city median (\u00a3131.8 vs \u00a3154.6) yet you still have 36 open nights in the next 90 days\u2014adding a few key amenities could fill them.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "West Midlands"
 }

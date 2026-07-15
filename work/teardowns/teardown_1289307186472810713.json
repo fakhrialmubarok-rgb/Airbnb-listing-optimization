@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 151.9,
     "occupancy_pct": 50.0,
     "open_nights_90d": 45,
-    "revenue_at_stake_gbp": 6835.5
+    "revenue_at_stake_gbp": 6835.5,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 7,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "You have 45 open nights this quarter, representing roughly \u00a36,835 of untapped revenue at your current nightly rate.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Middleton"
 }

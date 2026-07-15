@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 144.2,
     "occupancy_pct": 37.0,
     "open_nights_90d": 57,
-    "revenue_at_stake_gbp": 8219.4
+    "revenue_at_stake_gbp": 8219.4,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "This listing has 57% availability for the next 90 days while missing key amenity disclosures that could improve performance.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Greater Manchester"
 }

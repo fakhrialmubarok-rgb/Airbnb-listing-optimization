@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 179.8,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 13664.8
+    "revenue_at_stake_gbp": 13664.8,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "With 76 open nights in the next 90 days, we believe we can increase your occupancy rate by providing targeted recommendations for improving your listing.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

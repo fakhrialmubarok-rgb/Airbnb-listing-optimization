@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 184.8,
     "occupancy_pct": 42.4,
     "open_nights_90d": 52,
-    "revenue_at_stake_gbp": 9609.6
+    "revenue_at_stake_gbp": 9609.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Great 5.0 rating but your \u00a3184.8 rate is outperforming your 42.4% occupancy (47.8% is average in this market).",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Roundhay"
 }

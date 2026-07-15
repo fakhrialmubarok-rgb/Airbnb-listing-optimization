@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 157.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 11932.0
+    "revenue_at_stake_gbp": 11932.0,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Although priced \u00a318 below city median at \u00a3157, your 15.2% occupancy trails market's 28.3% average - where should you focus improvements?",
     "weakest_element": "description"
-  }
+  },
+  "location": "Birmingham"
 }

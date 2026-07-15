@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 232.2,
     "occupancy_pct": 65.2,
     "open_nights_90d": 31,
-    "revenue_at_stake_gbp": 7198.2
+    "revenue_at_stake_gbp": 7198.2,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're charging 50% above market median yet showing 36% higher occupancy than average - but still leaving \u00a3232 x 31=\u00a37,198 in potential nightly revenue untapped",
     "weakest_element": "description"
-  }
+  },
+  "location": "Tyne and Wear"
 }

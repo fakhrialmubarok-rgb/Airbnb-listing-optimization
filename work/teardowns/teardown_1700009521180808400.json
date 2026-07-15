@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 168.57,
     "occupancy_pct": 25.0,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 11462.76
+    "revenue_at_stake_gbp": 11462.76,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 68 open nights remaining at \u00a3168.57/night, improving occupancy from 25% to the Warrington average 48% would generate an additional \u00a36,070 in potential revenue this season",
     "weakest_element": "description"
-  }
+  },
+  "location": "Croft"
 }

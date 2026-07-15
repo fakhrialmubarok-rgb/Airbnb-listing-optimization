@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 137.6,
     "occupancy_pct": 44.6,
     "open_nights_90d": 50,
-    "revenue_at_stake_gbp": 6880.0
+    "revenue_at_stake_gbp": 6880.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is 11\u202f% below the city median, yet your 90\u2011day occupancy sits at 44.6\u202f%\u2014there\u2019s clear upside.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Earlswood"
 }

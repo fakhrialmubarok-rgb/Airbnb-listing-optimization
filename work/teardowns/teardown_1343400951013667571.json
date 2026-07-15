@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 91.4,
     "occupancy_pct": 55.4,
     "open_nights_90d": 40,
-    "revenue_at_stake_gbp": 3656.0
+    "revenue_at_stake_gbp": 3656.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You have 40 open nights worth about \u00a33,656 in potential earnings \u2013 a stronger cover photo and a title that spotlights free parking could help fill them fast.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Whitefield"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 228.0,
     "occupancy_pct": 28.3,
     "open_nights_90d": 65,
-    "revenue_at_stake_gbp": 14820.0
+    "revenue_at_stake_gbp": 14820.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your current 28.3% occupancy at a \u00a3228 nightly rate is 30% above the market median, suggesting pricing is the primary barrier to more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Gateshead"
 }

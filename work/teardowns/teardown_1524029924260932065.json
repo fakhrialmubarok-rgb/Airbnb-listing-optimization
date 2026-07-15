@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 206.25,
     "occupancy_pct": 77.2,
     "open_nights_90d": 21,
-    "revenue_at_stake_gbp": 4331.25
+    "revenue_at_stake_gbp": 4331.25,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your premium \u00a3206.25 rate is +33% above local median, but 97 reviews alone may not justify that value without explicit amenity details",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

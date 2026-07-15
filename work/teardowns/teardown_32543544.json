@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 256.0,
     "occupancy_pct": 16.3,
     "open_nights_90d": 75,
-    "revenue_at_stake_gbp": 19200.0
+    "revenue_at_stake_gbp": 19200.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Sara, considering your high nightly rate (\u00a3256) and below-average occupancy (16.3%) compared to the cohort median (28.3%), I think there may be an opportunity to optimize your pricing strategy or inventory management.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Yorkshire"
 }

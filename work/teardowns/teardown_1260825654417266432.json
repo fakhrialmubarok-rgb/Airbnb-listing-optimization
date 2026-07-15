@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 155.0,
     "occupancy_pct": 65.2,
     "open_nights_90d": 31,
-    "revenue_at_stake_gbp": 4805.0
+    "revenue_at_stake_gbp": 4805.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 4,
@@ -33,5 +34,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Our current occupancy of 65.2% could mean up to \u00a3311.7 less in annual revenue, which we're confident we can improve together",
     "weakest_element": "title"
-  }
+  },
+  "location": "Tyne and Wear"
 }

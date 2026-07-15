@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 956.8,
     "occupancy_pct": 14.1,
     "open_nights_90d": 77,
-    "revenue_at_stake_gbp": 73673.6
+    "revenue_at_stake_gbp": 73673.6,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your current occupancy is just 14% despite a nightly rate that's 519% above the market median, indicating a massive pricing gap.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

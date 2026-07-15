@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 137.0,
     "occupancy_pct": 73.9,
     "open_nights_90d": 23,
-    "revenue_at_stake_gbp": 3151.0
+    "revenue_at_stake_gbp": 3151.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your cottage is priced \u00a3137/night \u2013 that's 11% below the city\u2019s median rate of \u00a3154, yet you\u2019re already filling 74% of the next 90 days.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Mile Oak"
 }

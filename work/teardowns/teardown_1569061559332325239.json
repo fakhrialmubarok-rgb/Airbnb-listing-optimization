@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 791.4,
     "occupancy_pct": 31.5,
     "open_nights_90d": 62,
-    "revenue_at_stake_gbp": 49066.8
+    "revenue_at_stake_gbp": 49066.8,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate of \u00a3791.4 is 412% above the Birmingham median, yet your 90\u2011day occupancy sits at just 31.5% \u2013 there\u2019s a clear upside.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Birmingham"
 }

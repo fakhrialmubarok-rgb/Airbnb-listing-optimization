@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 87.6,
     "occupancy_pct": 39.1,
     "open_nights_90d": 55,
-    "revenue_at_stake_gbp": 4818.0
+    "revenue_at_stake_gbp": 4818.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Despite charging \u00a387.6 (43% below market rate), you're only booking 39.1% of days vs 47.8% in your area",
     "weakest_element": "description"
-  }
+  },
+  "location": "Golborne"
 }

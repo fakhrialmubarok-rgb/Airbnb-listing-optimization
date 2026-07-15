@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 102.4,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 4710.4
+    "revenue_at_stake_gbp": 4710.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "image_order",
     "outreach_hook": "You have 46 open nights this quarter, representing about \u00a34,700 in potential earnings you could capture with stronger, more compelling photos.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Broomhall"
 }

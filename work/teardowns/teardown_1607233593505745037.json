@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 122.0,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 8540.0
+    "revenue_at_stake_gbp": 8540.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your home's occupancy rate is lagging behind the market median, which could be costing you \u00a31,330 (70 open nights x \u00a319.00 discount vs cohort median) in potential bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Perry Bar"
 }

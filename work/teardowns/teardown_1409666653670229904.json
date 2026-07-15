@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 94.4,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 4342.4
+    "revenue_at_stake_gbp": 4342.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your nightly rate of \u00a394.4 is 39% below the city median yet you\u2019re already achieving a 48.9% occupancy\u2014let's turn that price advantage into even higher bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Knowle"
 }

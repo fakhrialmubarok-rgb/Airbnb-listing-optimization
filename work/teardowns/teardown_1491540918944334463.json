@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 146.0,
     "occupancy_pct": 20.7,
     "open_nights_90d": 71,
-    "revenue_at_stake_gbp": 10366.0
+    "revenue_at_stake_gbp": 10366.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "With 71 open nights over the next 90 days and an occupancy rate of 20.7%, there's a significant gap between your demand and bookings - let's discuss how to enhance the offering to attract more guests.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Burley"
 }

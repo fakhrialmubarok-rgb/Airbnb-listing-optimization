@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 2803.0,
     "occupancy_pct": 22.8,
     "open_nights_90d": 69,
-    "revenue_at_stake_gbp": 193407.0
+    "revenue_at_stake_gbp": 193407.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With your nightly rate being 2572% higher than the cohort median and your occupancy rate 26.1% lower, we believe there is a significant opportunity to optimize your pricing strategy and increase revenue by up to \u00a3193,947 in the next 90 days.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Derbyshire"
 }

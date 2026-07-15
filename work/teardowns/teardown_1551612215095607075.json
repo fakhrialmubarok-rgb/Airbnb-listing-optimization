@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 136.26,
     "occupancy_pct": 29.3,
     "open_nights_90d": 64,
-    "revenue_at_stake_gbp": 8720.64
+    "revenue_at_stake_gbp": 8720.64,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Despite a 12% lower nightly rate than the market median (\u00a3136 vs \u00a3155), your 90-day occupancy is significantly below average at 29% booked (64 open nights when cohorts average 47.8% occupancy)",
     "weakest_element": "description"
-  }
+  },
+  "location": "Manchester"
 }

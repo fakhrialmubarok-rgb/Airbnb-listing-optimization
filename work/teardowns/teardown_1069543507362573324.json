@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 166.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 12616.0
+    "revenue_at_stake_gbp": 12616.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 76 open nights remaining at your current rate and occupancy 25% below Birkenhead market average, there's \u00a312,656 in untapped revenue potential to unlock this season.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Merseyside"
 }

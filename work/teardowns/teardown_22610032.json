@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 833.86,
     "occupancy_pct": 60.9,
     "open_nights_90d": 35,
-    "revenue_at_stake_gbp": 29185.1
+    "revenue_at_stake_gbp": 29185.1,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate of \u00a3833.86 is 439% above the local median, yet your occupancy is only 60.9%\u2014adjusting price could unlock dozens of extra bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

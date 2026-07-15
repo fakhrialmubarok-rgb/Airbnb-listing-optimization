@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 65.2,
     "occupancy_pct": 26.1,
     "open_nights_90d": 67,
-    "revenue_at_stake_gbp": 4368.4
+    "revenue_at_stake_gbp": 4368.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a365 rate is 63% below local median, yet occupancy lags 2% behind the market at 26.1% booked for next 90 days.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Darlaston South"
 }

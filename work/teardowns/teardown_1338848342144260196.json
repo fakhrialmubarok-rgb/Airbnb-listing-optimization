@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 310.4,
     "occupancy_pct": 33.7,
     "open_nights_90d": 60,
-    "revenue_at_stake_gbp": 18624.0
+    "revenue_at_stake_gbp": 18624.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your villa commands \u00a3310/night\u2014101% higher than the city median\u2014yet it\u2019s only booked 33.7% of the next 90 days, leaving a substantial revenue gap you can close.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

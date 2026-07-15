@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 100.0,
     "occupancy_pct": 72.8,
     "open_nights_90d": 24,
-    "revenue_at_stake_gbp": 2400.0
+    "revenue_at_stake_gbp": 2400.0,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 7,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "We've identified an opportunity to increase revenue while maintaining 72.8% occupancy - by aligning pricing strategy with market benchmarks in Leeds center.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Leeds"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 227.6,
     "occupancy_pct": 16.3,
     "open_nights_90d": 75,
-    "revenue_at_stake_gbp": 17070.0
+    "revenue_at_stake_gbp": 17070.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a nightly rate 30% above the local median and occupancy 12% below the median, there's a significant opportunity to increase bookings and revenue",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Broomhall"
 }

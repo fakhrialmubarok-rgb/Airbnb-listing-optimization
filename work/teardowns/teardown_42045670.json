@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 192.2,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 14607.2
+    "revenue_at_stake_gbp": 14607.2,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "We've identified a significant occupancy gap in your listings, \u00a32888.16 in lost revenue over 76 open nights, which we think can be addressed with some targeted adjustments",
     "weakest_element": "title"
-  }
+  },
+  "location": "Shirley"
 }

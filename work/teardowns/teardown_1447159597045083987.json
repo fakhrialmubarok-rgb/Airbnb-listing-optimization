@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 126.54,
     "occupancy_pct": 63.0,
     "open_nights_90d": 33,
-    "revenue_at_stake_gbp": 4175.82
+    "revenue_at_stake_gbp": 4175.82,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "Your stylish 3\u2011BR home is already priced 18% below the city median (\u00a3126/night vs \u00a3154) and has a 4.87 rating from 52 guests \u2013 a stronger title can turn that value into even more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

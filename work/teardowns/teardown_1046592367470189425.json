@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 95.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 7220.0
+    "revenue_at_stake_gbp": 7220.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 76 open nights and a booking rate of only 15.2%, you have a huge room for improvement in occupancy with a median of 28.3% across comparable listings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

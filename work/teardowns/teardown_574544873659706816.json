@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 201.0,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 14874.0
+    "revenue_at_stake_gbp": 14874.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Considering your listing's \u00a3201 nightly rate is 15% above the cohort median, but only 17.4% of the next 90 days are booked, we believe re-examining your pricing strategy could be beneficial for increasing occupancy.",
     "weakest_element": "title"
-  }
+  },
+  "location": "West Yorkshire"
 }

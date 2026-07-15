@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 129.0,
     "occupancy_pct": 35.9,
     "open_nights_90d": 58,
-    "revenue_at_stake_gbp": 7482.0
+    "revenue_at_stake_gbp": 7482.0,
+    "cohort_median_rate_gbp": 159.8
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your suite commands \u00a3129/night \u2013 23% above the local median \u2013 yet it\u2019s only 35.9% booked, 13 points below the market average, a clear chance to boost revenue.",
     "weakest_element": "description"
-  }
+  },
+  "location": "South Yorkshire"
 }

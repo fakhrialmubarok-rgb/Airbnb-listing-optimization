@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 3006.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 228456.0
+    "revenue_at_stake_gbp": 228456.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a33006/night rate is 1618% above market average while you're only at 15.2% occupancy vs 28.3% for similar listings",
     "weakest_element": "description"
-  }
+  },
+  "location": "Merseyside"
 }

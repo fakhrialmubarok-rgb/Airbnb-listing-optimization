@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 89.6,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 4121.6
+    "revenue_at_stake_gbp": 4121.6,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your apartment is priced at \u00a389.6/night \u2013 42% below the city median \u2013 yet you\u2019re only at 48.9% occupancy, leaving huge upside for more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

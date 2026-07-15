@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 174.0,
     "occupancy_pct": 33.7,
     "open_nights_90d": 60,
-    "revenue_at_stake_gbp": 10440.0
+    "revenue_at_stake_gbp": 10440.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "description",
     "outreach_hook": "Despite a strong 4.75 rating and 60 open nights at \u00a3174/night, this listing has zero description content which could be hindering its visibility to potential guests.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

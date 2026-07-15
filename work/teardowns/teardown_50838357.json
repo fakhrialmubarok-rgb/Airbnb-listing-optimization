@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 829.0,
     "occupancy_pct": 76.1,
     "open_nights_90d": 22,
-    "revenue_at_stake_gbp": 18238.0
+    "revenue_at_stake_gbp": 18238.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your occupancy rate of 76.1% pales against the cohort average of 28.3%, leaving \u00a32,144 (829 x 22 nights) on the table this season.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Aintree"
 }

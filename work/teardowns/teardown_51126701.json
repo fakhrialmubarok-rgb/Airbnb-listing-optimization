@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 661.0,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 37016.0
+    "revenue_at_stake_gbp": 37016.0,
+    "cohort_median_rate_gbp": 156.5
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3661 rate is 328% above local average while occupancy is 13% below market median - let's close the efficiency gap",
     "weakest_element": "description"
-  }
+  },
+  "location": "Tyne and Wear"
 }

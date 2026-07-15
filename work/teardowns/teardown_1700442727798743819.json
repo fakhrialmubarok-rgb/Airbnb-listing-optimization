@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 191.4,
     "occupancy_pct": 38.0,
     "open_nights_90d": 56,
-    "revenue_at_stake_gbp": 10718.4
+    "revenue_at_stake_gbp": 10718.4,
+    "cohort_median_rate_gbp": 151.4
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is 82% higher than the city median, yet your 90\u2011day occupancy sits at just 38% versus a 48.9% market average.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Sheffield"
 }

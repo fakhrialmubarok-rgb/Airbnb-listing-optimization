@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 150.0,
     "occupancy_pct": 71.7,
     "open_nights_90d": 25,
-    "revenue_at_stake_gbp": 3750.0
+    "revenue_at_stake_gbp": 3750.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Your listing has 25 open nights at \u00a3150/night in the next 90 days, but currently lists no amenities\u2014adding 2-3 high-value items like parking or outdoor space could make these dates bookable faster.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Pool in Wharfedale"
 }

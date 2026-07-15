@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 411.0,
     "occupancy_pct": 76.1,
     "open_nights_90d": 22,
-    "revenue_at_stake_gbp": 9042.0
+    "revenue_at_stake_gbp": 9042.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 5,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your home is booked 76% of the next 90 days at a \u00a3411 nightly rate\u2014 that's 166% above the city median, yet 22 nights sit empty; a modest price tweak could fill them.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Hampton in Arden"
 }

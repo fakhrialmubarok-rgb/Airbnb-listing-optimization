@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 653.2,
     "occupancy_pct": 29.3,
     "open_nights_90d": 64,
-    "revenue_at_stake_gbp": 41804.8
+    "revenue_at_stake_gbp": 41804.8,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing commands \u00a3653/night\u2014over 300% above the city median\u2014yet it\u2019s only 29% booked in the next 90 days.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Birmingham"
 }

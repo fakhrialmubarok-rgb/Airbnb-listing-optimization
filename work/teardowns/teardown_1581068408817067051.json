@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 177.7,
     "occupancy_pct": 25.0,
     "open_nights_90d": 68,
-    "revenue_at_stake_gbp": 12083.6
+    "revenue_at_stake_gbp": 12083.6,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 68 open nights at \u00a3177.7/night, this listing could generate \u00a312,083 in revenue if you capture even 10% more of the 28.3% cohort occupancy benchmark.",
     "weakest_element": "description"
-  }
+  },
+  "location": "West Midlands"
 }

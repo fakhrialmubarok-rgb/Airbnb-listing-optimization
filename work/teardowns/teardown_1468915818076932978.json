@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 552.2,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 41967.2
+    "revenue_at_stake_gbp": 41967.2,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3552/night rate is 216% above the local median, but with 15.2% occupancy vs 28.3% industry average \u2014 three fixes could recover \u00a331k+ in potential revenue across 90 nights.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "West Midlands"
 }

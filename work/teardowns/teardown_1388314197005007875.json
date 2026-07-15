@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 189.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 14364.0
+    "revenue_at_stake_gbp": 14364.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Our analysis reveals a significant opportunity to improve occupancy and drive more bookings, and we'd love to assist with optimising your listing to achieve this goal.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Beeston"
 }

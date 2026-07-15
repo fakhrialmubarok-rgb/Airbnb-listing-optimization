@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 74.4,
     "occupancy_pct": 21.7,
     "open_nights_90d": 70,
-    "revenue_at_stake_gbp": 5208.0
+    "revenue_at_stake_gbp": 5208.0,
+    "cohort_median_rate_gbp": 208.7
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "Given your occupancy is only 21.7% booked, with a significant pricing gap, there's a clear opportunity to boost income and fill dates more consistently.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Birmingham"
 }

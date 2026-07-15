@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 88.92,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 4090.32
+    "revenue_at_stake_gbp": 4090.32,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "price_vs_occupancy",
     "outreach_hook": "Your listing is priced at \u00a388.92/night (42% below the cohort median of \u00a3154.60), yet occupancy remains 1.1% above the market median at 48.9% booked. Let's optimize this significant price-value opportunity.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Holbeck"
 }

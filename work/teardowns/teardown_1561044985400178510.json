@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1394.0,
     "occupancy_pct": 29.3,
     "open_nights_90d": 64,
-    "revenue_at_stake_gbp": 89216.0
+    "revenue_at_stake_gbp": 89216.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "price_vs_occupancy_gap",
     "outreach_hook": "Your \u00a31,394 rate is 802% above market average yet occupancy lags at 29% vs 47.8% cohort median, suggesting room for strategic price optimization",
     "weakest_element": "description"
-  }
+  },
+  "location": "Merseyside"
 }

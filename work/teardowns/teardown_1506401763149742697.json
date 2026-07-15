@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 151.4,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 9992.4
+    "revenue_at_stake_gbp": 9992.4,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "amenity_gap",
     "outreach_hook": "By adding outdoor amenities and increasing your nightly rate to \u00a3175.00, you could increase occupancy by 10-15% and fill 20-30 open nights over the next 3 months.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Merseyside"
 }

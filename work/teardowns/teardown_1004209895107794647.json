@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 156.48,
     "occupancy_pct": 29.3,
     "open_nights_90d": 64,
-    "revenue_at_stake_gbp": 10014.72
+    "revenue_at_stake_gbp": 10014.72,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is 49% above the local median (\u00a3104.90) while your 90\u2011day occupancy is only 29.3% (vs a 48.9% market median) \u2013 a clear opportunity to boost bookings.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Ecclesfield"
 }

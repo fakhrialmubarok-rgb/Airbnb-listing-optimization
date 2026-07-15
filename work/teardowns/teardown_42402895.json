@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 135.0,
     "occupancy_pct": 28.3,
     "open_nights_90d": 65,
-    "revenue_at_stake_gbp": 8775.0
+    "revenue_at_stake_gbp": 8775.0,
+    "cohort_median_rate_gbp": 143.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your nightly rate is \u00a3135, which is 23% lower than the city\u2019s median of \u00a3175 yet your 90\u2011day occupancy sits at just 28.3% \u2013 there\u2019s clear upside to capture more bookings.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Newcastle upon Tyne"
 }

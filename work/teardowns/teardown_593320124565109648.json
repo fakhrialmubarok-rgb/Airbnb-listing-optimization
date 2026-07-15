@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 235.2,
     "occupancy_pct": 68.5,
     "open_nights_90d": 28,
-    "revenue_at_stake_gbp": 6585.6
+    "revenue_at_stake_gbp": 6585.6,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your listing is priced \u00a379.2 above the local market average yet has 20.7% higher occupancy than the 47.8% median. Strategic pricing adjustments could increase revenue by \u00a33,055 over 90 days.",
     "weakest_element": "title"
-  }
+  },
+  "location": "Castley"
 }

@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 1500.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 114000.0
+    "revenue_at_stake_gbp": 114000.0,
+    "cohort_median_rate_gbp": 1155.0
   },
   "analysis": {
     "score_title": 8,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You're charging 757% above market rate while booking just 15% of available nights vs 28% cohort average",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "Merseyside"
 }

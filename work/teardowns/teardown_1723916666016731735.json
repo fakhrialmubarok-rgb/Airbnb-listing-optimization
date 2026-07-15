@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 186.0,
     "occupancy_pct": 22.8,
     "open_nights_90d": 69,
-    "revenue_at_stake_gbp": 12834.0
+    "revenue_at_stake_gbp": 12834.0,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With 22.8% occupancy and 69 potential booking nights, you're leaving \u00a34,116.80 in revenue untapped each year \u2013 how can we optimize occupancy for you?",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Midlands"
 }

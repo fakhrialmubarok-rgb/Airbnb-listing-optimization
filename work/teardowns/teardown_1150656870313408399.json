@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 180.0,
     "occupancy_pct": 26.1,
     "open_nights_90d": 67,
-    "revenue_at_stake_gbp": 12060.0
+    "revenue_at_stake_gbp": 12060.0,
+    "cohort_median_rate_gbp": 206.0
   },
   "analysis": {
     "score_title": 4,
@@ -36,5 +37,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3180 rate is 16% above the market median yet only 26% booked in the next 90 days vs 48% market average - we have specific fixes to close that gap",
     "weakest_element": "description"
-  }
+  },
+  "location": "Greater Manchester"
 }

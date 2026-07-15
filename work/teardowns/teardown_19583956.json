@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 97.6,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 6441.6
+    "revenue_at_stake_gbp": 6441.6,
+    "cohort_median_rate_gbp": 175.17
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Our data suggests that there's significant room for improvement in occupancy rates, with a potential to increase bookings by leveraging your flat's competitive price point.",
     "weakest_element": "amenities"
-  }
+  },
+  "location": "West Midlands"
 }

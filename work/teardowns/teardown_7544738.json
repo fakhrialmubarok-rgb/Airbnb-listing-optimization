@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 85.6,
     "occupancy_pct": 65.2,
     "open_nights_90d": 31,
-    "revenue_at_stake_gbp": 2653.6
+    "revenue_at_stake_gbp": 2653.6,
+    "cohort_median_rate_gbp": 112.2
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "At \u00a385.6 per night you\u2019re charging 45% less than the city median while already enjoying a 65.2% booking rate \u2013 a simple rate tweak could unlock significant extra revenue.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Middleton"
 }

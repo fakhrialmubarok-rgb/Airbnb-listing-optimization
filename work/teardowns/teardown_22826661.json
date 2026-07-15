@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 77.0,
     "occupancy_pct": 27.2,
     "open_nights_90d": 66,
-    "revenue_at_stake_gbp": 5082.0
+    "revenue_at_stake_gbp": 5082.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your flat is priced at \u00a377/night\u2014about 50% below the Leeds\u2011Bradford market median of \u00a3154.60\u2014yet it\u2019s only booked 27.2% of the time, leaving plenty of upside.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

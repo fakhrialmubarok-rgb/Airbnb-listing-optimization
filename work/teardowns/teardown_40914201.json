@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 124.0,
     "occupancy_pct": 63.0,
     "open_nights_90d": 33,
-    "revenue_at_stake_gbp": 4092.0
+    "revenue_at_stake_gbp": 4092.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a3124/night rate is 29% below the local median, yet occupancy trails the cohort (63% booked vs 71% market average)",
     "weakest_element": "description"
-  }
+  },
+  "location": "Knowle"
 }

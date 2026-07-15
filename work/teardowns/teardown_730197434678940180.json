@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 117.0,
     "occupancy_pct": 18.5,
     "open_nights_90d": 73,
-    "revenue_at_stake_gbp": 8541.0
+    "revenue_at_stake_gbp": 8541.0,
+    "cohort_median_rate_gbp": 149.5
   },
   "analysis": {
     "score_title": 2,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a nightly rate of \u00a3117 and a occupancy rate of 18.5% for the next 90 days, there's a clear room for improvement in terms of attracting more bookings.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "West Yorkshire"
 }

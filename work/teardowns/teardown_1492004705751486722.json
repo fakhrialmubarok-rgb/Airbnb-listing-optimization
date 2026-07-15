@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 94.2,
     "occupancy_pct": 26.1,
     "open_nights_90d": 67,
-    "revenue_at_stake_gbp": 6311.4
+    "revenue_at_stake_gbp": 6311.4,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "Your \u00a394.20 rate is 39% below the city median but occupancy is still 52% below market average - there's significant underperformance compared to similar properties",
     "weakest_element": "title"
-  }
+  },
+  "location": "Westbrook"
 }

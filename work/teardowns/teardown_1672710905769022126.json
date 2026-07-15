@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 162.0,
     "occupancy_pct": 47.8,
     "open_nights_90d": 47,
-    "revenue_at_stake_gbp": 7614.0
+    "revenue_at_stake_gbp": 7614.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "You have 47 open nights that could generate \u00a37,614 at your current nightly rate.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Chadderton"
 }

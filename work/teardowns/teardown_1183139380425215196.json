@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 104.0,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
-    "revenue_at_stake_gbp": 4784.0
+    "revenue_at_stake_gbp": 4784.0,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 3,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "We noticed your Leeds aparthotel listing has an impressive 4.7-star rating, but its \u00a3104 nightly rate is -41% below the local cohort median. Our listing optimization services aim to boost occupancy and grow revenue without affecting your excellent rating.",
     "weakest_element": "photos"
-  }
+  },
+  "location": "Leeds"
 }

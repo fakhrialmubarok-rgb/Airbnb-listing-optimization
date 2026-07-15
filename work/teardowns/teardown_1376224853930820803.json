@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 630.0,
     "occupancy_pct": 15.2,
     "open_nights_90d": 76,
-    "revenue_at_stake_gbp": 47880.0
+    "revenue_at_stake_gbp": 47880.0,
+    "cohort_median_rate_gbp": 175.0
   },
   "analysis": {
     "score_title": 4,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "This Birmingham listing charges \u00a3630/night (260% above the median) but only has 15.2% occupancy vs the cohort's 28.3% - a significant opportunity to leverage its unique assets.",
     "weakest_element": "description"
-  }
+  },
+  "location": "Acocks Green"
 }

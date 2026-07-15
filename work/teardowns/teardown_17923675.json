@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 160.6,
     "occupancy_pct": 17.4,
     "open_nights_90d": 74,
-    "revenue_at_stake_gbp": 11884.4
+    "revenue_at_stake_gbp": 11884.4,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 6,
@@ -35,5 +36,6 @@
     "outreach_angle": "occupancy",
     "outreach_hook": "With a mere 17.4% occupancy rate, your Elegant City Retreat is missing out on \u00a32,800 in potential revenue (\u00a3160.60/night x 74 available nights).",
     "weakest_element": "title"
-  }
+  },
+  "location": "Leeds"
 }

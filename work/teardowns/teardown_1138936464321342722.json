@@ -7,7 +7,8 @@
     "nightly_rate_gbp": 170.0,
     "occupancy_pct": 70.7,
     "open_nights_90d": 26,
-    "revenue_at_stake_gbp": 4420.0
+    "revenue_at_stake_gbp": 4420.0,
+    "cohort_median_rate_gbp": 188.0
   },
   "analysis": {
     "score_title": 3,
@@ -37,5 +38,6 @@
     "outreach_angle": "title_seo",
     "outreach_hook": "With 26 nights available at \u00a3170/night, a stronger title could unlock \u00a34,420 in potential revenue while matching demand patterns",
     "weakest_element": "title"
-  }
+  },
+  "location": "Leeds"
 }

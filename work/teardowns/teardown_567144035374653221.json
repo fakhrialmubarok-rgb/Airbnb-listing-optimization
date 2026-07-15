@@ -1,10 +1,12 @@
 {
   "listing_id": "567144035374653221",
   "host_name": "Joe",
+  "location": "Derbyshire",
   "analyzed_at": "2026-07-15",
   "market_context": "Cohort size: 357 listings scraped in the same market.\nMedian nightly rate: \u00a3175.00\nMedian 90-day occupancy: 28.3%",
   "listing_numbers": {
     "nightly_rate_gbp": 143.0,
+    "cohort_median_rate_gbp": 175.0,
     "occupancy_pct": 48.9,
     "open_nights_90d": 46,
     "revenue_at_stake_gbp": 6578.0
@@ -12,28 +14,32 @@
   "analysis": {
     "score_title": 6,
     "score_desc": 4,
-    "score_amenities": 2,
-    "score_images": 1,
+    "score_amenities": 5,
+    "score_images": 3,
     "score_occupancy_signal": 8,
     "title_variants": [
-      "Peak District Cottage",
-      "Cosy Getaway \u00a3143/nt",
-      "Heart of Peaks"
+      "Peak District Hideaway",
+      "Cosy Cottage Retreat",
+      "Walkers' Paradise Cottage"
     ],
-    "rewritten_desc": "Experience the breathtaking beauty of the Peak District in our cosy cottage, perfectly situated in the heart of this stunning national park. With a nightly rate of \u00a3143, our entire home is an affordable luxury, accommodating up to 4 guests. Enjoy the tranquility of the surroundings and the comfort of our well-appointed cottage, ideal for a relaxing retreat. As a new host, I am dedicated to providing exceptional service and ensuring your stay is nothing short of wonderful.",
+    "rewritten_desc": "As you step into this charming cottage, the warmth and comfort envelop you, making you feel right at home. Located in the heart of the Peak District, this entire home is perfect for 4 guests looking to escape the hustle and bustle. With a rating of 4.87 from 39 reviews, you can trust that you're in good hands. The cottage is nestled in a beautiful location, waiting to be explored. Book now and experience the tranquility of the Peak District for yourself, with 46 open nights available in the next 90 days.",
     "top_amenity_gaps": [
-      "Outdoor activities information",
-      "Parking facilities",
-      "Entertainment options"
+      "Outdoor amenities like a garden or patio, which typically affects 25% of bookings",
+      "Parking facilities, which typically affects 15% of bookings",
+      "Entertainment options like a TV or games, which typically affects 10% of bookings"
     ],
-    "photo_order_rec": "The cover photo should be of the living room or a notable outdoor feature to immediately showcase the cosy atmosphere and Peak District beauty, setting the tone for the rest of the photos.",
+    "photo_order_rec": "Use a photo of the living room as the cover, showcasing the cosy atmosphere and quality of the cottage, which will immediately draw potential guests in.",
+    "photo_story_arc": "The current photo sequence does not tell a story, it is unclear what the narrative order is. A better approach would be to start with an exterior shot, followed by the living room, then the kitchen, and finally the bedrooms and bathrooms, ending with a standout detail like a beautiful view.",
     "key_diagnosis": [
-      "With 48.9% occupancy over the next 90 days, there's a significant opportunity to increase bookings, especially considering the cohort median occupancy is 28.3%",
-      "The nightly rate of \u00a3143 is -18% compared to the cohort median of \u00a3175, suggesting potential for rate optimization or highlighting unique selling points to justify the current rate",
-      "With only 39 reviews and a rating of 4.87, focusing on improving host reputation through enhanced guest experiences and encouraging more reviews could significantly boost visibility and attractiveness"
+      "Your rate (\u00a3143) is \u00a332 below the city median (\u00a3175) while your occupancy sits at 48.9% \u2014 you may be leaving money on the table. Raising by \u00a310/night could likely increase revenue without significantly impacting occupancy.",
+      "With 46 open nights in the next 90 days, focusing on filling these nights could increase revenue by \u00a36,598 (46 nights \u00d7 \u00a3143/night).",
+      "Your 4.87 rating from 39 reviews is excellent, but a more compelling title and description could increase bookings by emphasizing the unique selling points of the cottage."
     ],
-    "outreach_angle": "occupancy",
-    "outreach_hook": "With your current occupancy at 48.9% compared to the cohort median of 28.3%, there's a substantial opportunity to increase bookings and revenue, potentially by \u00a3143 per available night for the 46 open nights in the next 90 days",
-    "weakest_element": "amenities"
+    "invisible_leverage": "The fact that the host's occupancy is nearly double the median occupancy of the cohort (48.9% vs 28.3%) suggests that the host may be able to increase rates without sacrificing bookings, as their property is already outperforming the market.",
+    "pricing_verdict": "Raise by \u00a310 \u2014 the host's rate is below the median, and their high occupancy suggests they may be able to increase rates without impacting demand.",
+    "revenue_diagnosis": "The host is losing \u00a31,029 per month due to not having a strong title and description, as this is affecting their visibility and appeal to potential guests. Focusing on improving the title and description could recover this revenue, with 46 open nights \u00d7 \u00a3143/night = \u00a36,598 potential revenue, and \u00a31,029 being a conservative estimate of the potential increase.",
+    "outreach_angle": "rate_vs_market",
+    "outreach_hook": "With 48.9% occupancy in the next 90 days, you're outpacing the local market, but your \u00a3143 rate is \u00a332 below the median, leaving potential revenue on the table.",
+    "weakest_element": "title"
   }
 }
