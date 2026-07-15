@@ -479,6 +479,88 @@ def _together_kontext(image_bytes: bytes, prompt: str) -> bytes:
     return _b64.b64decode(img_url)
 
 
+def _chatday_img2img(image_bytes: bytes, prompt: str) -> bytes:
+    """chatday.ai — upload original + guided prompt → Grok Imagine Image recreation.
+    Auth: session cookie (HTTP-only). Extract from DevTools → Application → Cookies
+    → __Secure-better-auth.session_token and set CHATDAY_SESSION_COOKIE in .env."""
+    cookie = os.environ.get("CHATDAY_SESSION_COOKIE", "")
+    if not cookie:
+        raise RuntimeError("CHATDAY_SESSION_COOKIE not set")
+
+    base = "https://www.chatday.ai"
+    headers = {
+        "Cookie": f"__Secure-better-auth.session_token={cookie}",
+        "Origin": base,
+        "Referer": f"{base}/image",
+        "User-Agent": "Mozilla/5.0",
+    }
+
+    # 1. Upload original image
+    upload = requests.post(
+        f"{base}/api/v1/files/upload",
+        headers=headers,
+        files={"files": ("room.jpg", image_bytes, "image/jpeg")},
+        timeout=60,
+    )
+    upload.raise_for_status()
+    file_id = upload.json()["files"][0]["fileId"]
+
+    # 2. Generate with image reference
+    import uuid as _uuid
+    chat_id = _uuid.uuid4().hex[:16]
+    msg_id  = _uuid.uuid4().hex[:16]
+    gen = requests.post(
+        f"{base}/api/v2/chat",
+        headers={**headers, "Content-Type": "application/json", "Accept": "text/event-stream"},
+        json={
+            "id": chat_id,
+            "type": "image",
+            "messages": [{
+                "role": "user",
+                "parts": [
+                    {"type": "text", "text": prompt},
+                    {"type": "data-attachment", "data": {
+                        "fileId": file_id, "fileName": "room.jpg", "mediaType": "image/jpeg"
+                    }},
+                ],
+                "metadata": {"model": "xai/grok-imagine-image", "generationCount": 1},
+                "id": msg_id,
+            }],
+            "metadata": {"source": "image"},
+        },
+        stream=True,
+        timeout=180,
+    )
+    gen.raise_for_status()
+
+    # 3. Parse SSE stream to get result fileId
+    result_fid = None
+    for line in gen.iter_lines():
+        if not line:
+            continue
+        if isinstance(line, bytes):
+            line = line.decode()
+        if line.startswith("data: "):
+            chunk = line[6:]
+            if chunk == "[DONE]":
+                break
+            try:
+                ev = json.loads(chunk)
+                if ev.get("type") == "data-attachment" and ev.get("data", {}).get("mediaType", "").startswith("image"):
+                    result_fid = ev["data"]["fileId"]
+            except Exception:
+                pass
+
+    if not result_fid:
+        raise RuntimeError("chatday: no result image in SSE stream")
+
+    # 4. Get CDN URL and download
+    pv = requests.get(f"{base}/api/v1/files/preview-url/{result_fid}", headers=headers, timeout=30)
+    pv.raise_for_status()
+    img_url = pv.json()["url"]
+    return requests.get(img_url, timeout=60).content
+
+
 def _deepinfra_kontext(image_bytes: bytes, prompt: str) -> bytes:
     """DeepInfra FLUX.1-kontext-pro — $0.05/image, $1.8 free on signup, email only."""
     key = os.environ.get("DEEPINFRA_API_KEY", "")
@@ -643,6 +725,7 @@ def _replicate_kontext(image_url: str, prompt: str) -> bytes:
 IMG_CHAIN = [
     ("gemini 2.5-flash-image",         lambda b, u, p: _gemini_image(b, p)),
     ("gemini 2.0-flash-preview-image", lambda b, u, p: _gemini_image_flash(b, p)),
+    ("chatday grok-imagine (premium)", lambda b, u, p: _chatday_img2img(b, p)),
     ("together FLUX.1-kontext-pro",    lambda b, u, p: _together_kontext(b, p)),
     ("deepinfra FLUX.1-kontext-pro",   lambda b, u, p: _deepinfra_kontext(b, p)),
     ("novita flux-kontext-dev",        lambda b, u, p: _novita_kontext(b, p)),
