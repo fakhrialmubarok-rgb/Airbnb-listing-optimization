@@ -479,6 +479,55 @@ def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
     raise RuntimeError("fal.ai quota exceeded on both pro and dev tiers")
 
 
+def _local_sdxl_img2img(image_bytes: bytes, prompt: str) -> bytes:
+    """Local SDXL img2img via Apple MPS — free, unlimited, ~60s/image on M1.
+    Preserves room structure (denoising=0.60) while improving lighting/staging.
+    Downloads the model once on first call (~6GB), cached in ~/.cache/huggingface/.
+    Falls back to CPU if MPS unavailable."""
+    try:
+        import torch
+        from diffusers import StableDiffusionXLImg2ImgPipeline
+        from PIL import Image
+        import io as _io
+    except ImportError:
+        raise RuntimeError("diffusers/torch not installed — run: pip install torch diffusers transformers accelerate")
+
+    device = "mps" if torch.backends.mps.is_available() else "cpu"
+    dtype = torch.float16 if device == "mps" else torch.float32
+
+    cache_attr = "_sdxl_pipe"
+    if not hasattr(_local_sdxl_img2img, cache_attr):
+        print("    [local-sdxl] Loading SDXL Refiner (first run: ~6GB download)…")
+        pipe = StableDiffusionXLImg2ImgPipeline.from_pretrained(
+            "stabilityai/stable-diffusion-xl-refiner-1-0",
+            torch_dtype=dtype,
+            variant="fp16" if device == "mps" else None,
+            use_safetensors=True,
+        ).to(device)
+        pipe.set_progress_bar_config(disable=True)
+        setattr(_local_sdxl_img2img, cache_attr, pipe)
+
+    pipe = getattr(_local_sdxl_img2img, cache_attr)
+    img = Image.open(_io.BytesIO(image_bytes)).convert("RGB")
+    # Cap to 1024px on longest side (SDXL native resolution)
+    w, h = img.size
+    if max(w, h) > 1024:
+        scale = 1024 / max(w, h)
+        img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+
+    result = pipe(
+        prompt=prompt,
+        image=img,
+        strength=0.60,        # preserves 40% of original structure
+        guidance_scale=7.5,
+        num_inference_steps=40,
+    ).images[0]
+
+    buf = _io.BytesIO()
+    result.save(buf, format="JPEG", quality=92)
+    return buf.getvalue()
+
+
 def _replicate_kontext(image_url: str, prompt: str) -> bytes:
     if os.getenv("ALLOW_PAID_IMAGES") != "1":
         raise RuntimeError("paid Replicate rung blocked — set ALLOW_PAID_IMAGES=1 to allow spend")
@@ -507,6 +556,7 @@ IMG_CHAIN = [
     ("gemini 2.0-flash-preview-image", lambda b, u, p: _gemini_image_flash(b, p)),
     ("fal.ai kontext-pro ($0.05)",     lambda b, u, p: _fal_kontext(b, p)),
     ("hf kontext (free credits)",      lambda b, u, p: _hf_kontext(u, p)),
+    ("local SDXL img2img (free/MPS)",  lambda b, u, p: _local_sdxl_img2img(b, p)),
     ("replicate kontext (paid)",       lambda b, u, p: _replicate_kontext(u, p)),
 ]
 _CHAIN_START = 0
