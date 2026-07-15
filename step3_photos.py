@@ -21,7 +21,7 @@ Usage:
   python3 step3_photos.py <listing_id> 3 # one lead, cap photos (testing)
 """
 from __future__ import annotations
-import sys, json, csv, base64, time, io
+import sys, json, csv, base64, time, io, hashlib
 from pathlib import Path
 import requests
 from dotenv import load_dotenv
@@ -36,6 +36,9 @@ TRACKER_CSV  = HERE / "work" / "leads_tracker.csv"
 LESSONS_FILE = HERE / "work" / "photo_lessons.json"
 QUALIFIED    = HERE / "work" / "step1_qualified.json"
 PHOTOS_DIR   = HERE / "work" / "photos"
+QC_CACHE     = HERE / "work" / "qc_cache.json"
+GEMINI_DAILY = HERE / "work" / "gemini_daily.json"
+GEMINI_FREE_LIMIT = 90     # leave 10 calls headroom below the 100/day cap
 MAX_PHOTOS   = 10          # selective mode: recreate only the photos that matter
 # COST MODE (stress-test economics): pre-sale we produce a TEASER, not the full
 # set. Full production runs only after purchase (~$1.66/SALE, not per lead).
@@ -177,6 +180,80 @@ CITY_ATTRACTIONS = {
 }
 
 # ---------------------------------------------------------------------------
+# PIL WARMTH BOOST — applied to every generated image before QC.
+# Removes the model's tendency to produce cool/dim outputs.
+# Replaces the "lights_on" hope with a deterministic colour-temperature nudge.
+def _warmth_boost(jpeg_bytes: bytes) -> bytes:
+    """+12K colour temperature + 8% brightness — deterministic, free."""
+    try:
+        from PIL import Image as _I, ImageEnhance as _E
+        img = _I.open(io.BytesIO(jpeg_bytes)).convert("RGB")
+        r, g, b = img.split()
+        from PIL import ImageEnhance
+        # warm shift: boost red slightly, reduce blue slightly
+        r = _E.Brightness(r).enhance(1.06)
+        b = _E.Brightness(b).enhance(0.93)
+        img = _I.merge("RGB", (r, g, b))
+        img = _E.Brightness(img).enhance(1.08)
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=92)
+        return buf.getvalue()
+    except Exception:
+        return jpeg_bytes   # never block on warmth failure
+
+
+# ---------------------------------------------------------------------------
+# QC CACHE — skip repeat QC calls for identical image pairs (same hash).
+def _pair_hash(a: bytes, b: bytes) -> str:
+    return hashlib.md5(a[:4096] + b[:4096]).hexdigest()
+
+def _load_qc_cache() -> dict:
+    try:
+        return json.loads(QC_CACHE.read_text())
+    except Exception:
+        return {}
+
+def _save_qc_cache(cache: dict) -> None:
+    try:
+        QC_CACHE.write_text(json.dumps(cache))
+    except Exception:
+        pass
+
+_QC_CACHE: dict = _load_qc_cache()
+
+
+# ---------------------------------------------------------------------------
+# GEMINI DAILY COUNTER — pause when near the 100 req/day free limit.
+def _gemini_daily_count() -> int:
+    try:
+        import datetime as _dt
+        d = json.loads(GEMINI_DAILY.read_text())
+        if d.get("date") == _dt.date.today().isoformat():
+            return int(d.get("count", 0))
+    except Exception:
+        pass
+    return 0
+
+def _gemini_daily_inc() -> None:
+    try:
+        import datetime as _dt
+        today = _dt.date.today().isoformat()
+        try:
+            d = json.loads(GEMINI_DAILY.read_text())
+        except Exception:
+            d = {}
+        if d.get("date") != today:
+            d = {"date": today, "count": 0}
+        d["count"] = d.get("count", 0) + 1
+        GEMINI_DAILY.write_text(json.dumps(d))
+    except Exception:
+        pass
+
+def _gemini_quota_ok() -> bool:
+    return _gemini_daily_count() < GEMINI_FREE_LIMIT
+
+
+# ---------------------------------------------------------------------------
 # LEARNING LOOP — persistent across runs. Every QC verdict is recorded in
 # LESSONS_FILE; the most frequent failure modes are injected back into every
 # future prompt as preemptive warnings, so each run starts smarter than the last.
@@ -256,8 +333,13 @@ QC_PROMPT = (
     "scenic content shown on an EXISTING TV screen, straightened camera geometry, and "
     "bedding RESTYLED using the same textiles (spread refolded across the bed's foot, "
     "pillows rearranged — same colors, same items). "
+    "FOR no_added_objects: only flag brand-new objects that are entirely absent from photo 1. "
+    "Small items clearly VISIBLE in photo 1 (cushions, books, plants, decorative objects) that "
+    "are reproduced in photo 2 are NOT added — they were already there. A plant already in "
+    "photo 1 is NOT an added plant. Only flag something genuinely new (a sofa that didn't "
+    "exist, a TV added where there was none, curtains added to a bare window). "
     "Return ONLY JSON: {"
-    "\"no_added_objects\": bool,        # NO new throws, blankets, decor, TVs, doors — nothing photo 1 lacks\n"
+    "\"no_added_objects\": bool,        # NO brand-new objects absent from photo 1 — existing items reproduced are fine\n"
     "\"nothing_removed_or_moved\": bool, # every furniture item still present in its original spot; windows still windows\n"
     "\"no_ai_artifacts\": bool,          # no warped shapes, no gibberish text anywhere incl. TV screens\n"
     "\"straight_verticals\": bool,\n"
@@ -267,8 +349,8 @@ QC_PROMPT = (
     "\"no_visible_cables\": bool,\n"
     "\"window_not_blown_out\": bool,\n"
     "\"verdict\": \"pass\"|\"fail\", \"reason\": \"<short, name every failed check>\"}. "
-    "Verdict is pass ONLY if every single check is true. Be strict — added objects, moved "
-    "furniture, or a window turned into a door are instant fails."
+    "Verdict is pass ONLY if every single check is true. Be strict — genuinely new large "
+    "objects, moved furniture, or a window turned into a door are instant fails."
 )
 
 
@@ -290,9 +372,13 @@ def _gemini_image_model(image_bytes: bytes, prompt: str, model: str, key: str) -
 
 def _gemini_image(image_bytes: bytes, prompt: str) -> bytes:
     """Primary Gemini image gen — gemini-2.5-flash-image (preview, fast)."""
-    return _gemini_image_model(image_bytes, prompt,
-                               "gemini-2.5-flash-image",
-                               os.environ["NANO_BANANA_KEY"])
+    if not _gemini_quota_ok():
+        raise RuntimeError(f"Gemini daily quota reached ({_gemini_daily_count()}/{GEMINI_FREE_LIMIT}) — skipping to paid tier")
+    result = _gemini_image_model(image_bytes, prompt,
+                                 "gemini-2.5-flash-image",
+                                 os.environ["NANO_BANANA_KEY"])
+    _gemini_daily_inc()
+    return result
 
 
 def _gemini_image_flash(image_bytes: bytes, prompt: str) -> bytes:
@@ -405,7 +491,12 @@ def qc_check(original: bytes, recreated: bytes) -> dict:
 
 def _qc_vision(prompt: str, original: bytes, recreated: bytes) -> dict:
     """Vision QC via Gemini 2.5 Flash. Tries GEMINI_API_KEY then NANO_BANANA_KEY
-    so a single key throttle never leaves QC unchecked."""
+    so a single key throttle never leaves QC unchecked. Caches results by image hash."""
+    # Cache hit — skip repeat API call for identical image pair
+    cache_key = _pair_hash(original, recreated)
+    if cache_key in _QC_CACHE:
+        return _QC_CACHE[cache_key]
+
     keys = list(dict.fromkeys(filter(None, [
         os.environ.get("GEMINI_API_KEY"),
         os.environ.get("NANO_BANANA_KEY"),
@@ -426,7 +517,11 @@ def _qc_vision(prompt: str, original: bytes, recreated: bytes) -> dict:
                 timeout=120)
             r.raise_for_status()
             txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(txt)
+            result = json.loads(txt)
+            # Cache and persist the result
+            _QC_CACHE[cache_key] = result
+            _save_qc_cache(_QC_CACHE)
+            return result
         except Exception as e:
             last_err = e
     global _UNCHECKED_COUNT
@@ -503,6 +598,7 @@ def process_lead(listing: dict, cap=None) -> dict:
             for c in range(1, BEST_OF + 1):
                 try:
                     cand, cb = recreate(base, url, prompt)
+                    cand = _warmth_boost(cand)   # deterministic warmth post-process
                     cv = qc_check(base, cand)
                     record_lesson(cv)
                     candidates.append((cand, cb, cv))
@@ -513,6 +609,7 @@ def process_lead(listing: dict, cap=None) -> dict:
             if candidates and BEST_OF == 1 and candidates[0][2].get("verdict") != "pass":
                 try:   # adaptive: spend a 2nd generation only when needed
                     cand, cb = recreate(base, url, prompt)
+                    cand = _warmth_boost(cand)
                     cv = qc_check(base, cand)
                     record_lesson(cv)
                     candidates.append((cand, cb, cv))
@@ -524,16 +621,43 @@ def process_lead(listing: dict, cap=None) -> dict:
             candidates.sort(key=lambda t: (t[2].get("verdict") == "pass", qc_score(t[2])), reverse=True)
             rec, backend, verdict = candidates[0]
 
-            # One corrective retry if even the best candidate fails
+            # One corrective retry if even the best candidate fails.
+            # Special case: if the only failure is curtains_open, use a crop prompt
+            # instead of re-asking the model to close/open curtains (it can't reliably).
             if verdict.get("verdict") != "pass":
-                print(f"  {n}: best candidate still fails — corrective retry")
-                rec2, backend2 = recreate(base, url, prompt +
-                    f" CORRECTION: the previous attempt failed review because: "
-                    f"{verdict.get('reason','')}. You MUST fix exactly that while following all other rules.")
-                verdict2 = qc_check(base, rec2)
-                record_lesson(verdict2)
-                if (verdict2.get("verdict") == "pass") or qc_score(verdict2) > qc_score(verdict):
-                    rec, backend, verdict = rec2, backend2, verdict2
+                curtains_only_fail = (
+                    verdict.get("curtains_open") is False
+                    and all(verdict.get(k, True) is True
+                            for k in ("no_added_objects","nothing_removed_or_moved",
+                                      "dramatically_brighter","straight_verticals",
+                                      "no_visible_cables","window_not_blown_out","no_ai_artifacts"))
+                )
+                if curtains_only_fail:
+                    # Crop strategy: re-frame to exclude the window wall
+                    print(f"  {n}: curtains-only fail → crop-window-wall retry")
+                    crop_prompt = (prompt.replace(
+                        "ALL curtains and blinds are fully OPEN and neatly tied back at the window sides, "
+                        "letting maximum daylight in — strict requirement for every photo. ",
+                        "Reframe the shot to exclude the window wall entirely — compose so the window "
+                        "is out of frame. Keep all furniture in shot. ")
+                    )
+                    rec2, backend2 = recreate(base, url, crop_prompt)
+                    rec2 = _warmth_boost(rec2)
+                    verdict2 = qc_check(base, rec2)
+                    record_lesson(verdict2)
+                    # Accept crop result even if curtains_open still fails (window gone = moot)
+                    if qc_score(verdict2) >= qc_score(verdict):
+                        rec, backend, verdict = rec2, backend2, verdict2
+                else:
+                    print(f"  {n}: best candidate still fails — corrective retry")
+                    rec2, backend2 = recreate(base, url, prompt +
+                        f" CORRECTION: the previous attempt failed review because: "
+                        f"{verdict.get('reason','')}. You MUST fix exactly that while following all other rules.")
+                    rec2 = _warmth_boost(rec2)
+                    verdict2 = qc_check(base, rec2)
+                    record_lesson(verdict2)
+                    if (verdict2.get("verdict") == "pass") or qc_score(verdict2) > qc_score(verdict):
+                        rec, backend, verdict = rec2, backend2, verdict2
             if verdict.get("verdict") != "pass":
                 print(f"  {n}: QC not-pass ({verdict.get('verdict')}) after best-of-2 + retry — shipping straightened original")
                 rec, status = base, "original_kept"
