@@ -419,18 +419,23 @@ def _gemini_image(image_bytes: bytes, prompt: str) -> bytes:
 
 
 def _gemini_image_flash(image_bytes: bytes, prompt: str) -> bytes:
-    """Fallback Gemini image gen — tries renamed model then deprecated name.
-    Separate quota pool from 2.5-flash-image, so 500s on one rarely hit both."""
+    """Fallback Gemini image gen — gemini-3.1-flash-image (current) with
+    lite and older names as safety nets. Separate quota pool from 2.5-flash-image."""
     key = os.environ.get("GEMINI_API_KEY") or os.environ["NANO_BANANA_KEY"]
-    for model in ("gemini-2.0-flash-exp-image-generation",
-                  "gemini-2.0-flash-preview-image-generation"):
+    for model in (
+        "gemini-3.1-flash-image",           # current best
+        "gemini-3.1-flash-lite-image",      # lighter, faster
+        "gemini-3.1-flash-image-preview",   # preview alias
+        "gemini-2.0-flash-exp-image-generation",    # legacy fallback
+        "gemini-2.0-flash-preview-image-generation",
+    ):
         try:
             return _gemini_image_model(image_bytes, prompt, model, key)
         except requests.HTTPError as e:
-            if e.response is not None and e.response.status_code == 404:
+            if e.response is not None and e.response.status_code in (404, 400):
                 continue
             raise
-    raise RuntimeError("gemini 2.0 flash image: no working model name found")
+    raise RuntimeError("gemini flash image: no working model name found")
 
 
 def _hf_kontext(image_url: str, prompt: str) -> bytes:
@@ -454,7 +459,8 @@ def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
     # fal.ai accepts base64 data URIs directly — no pre-upload needed
     b64 = base64.b64encode(image_bytes).decode()
     data_uri = f"data:image/jpeg;base64,{b64}"
-    for model in ("fal-ai/flux-kontext-pro", "fal-ai/flux-kontext-dev"):
+    for model in ("fal-ai/flux/kontext/pro", "fal-ai/flux/kontext/dev",
+                   "fal-ai/flux-kontext-pro", "fal-ai/flux-kontext-dev"):
         r = requests.post(
             f"https://fal.run/{model}",
             headers={"Authorization": f"Key {key}",
