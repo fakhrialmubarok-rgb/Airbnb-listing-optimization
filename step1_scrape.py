@@ -182,8 +182,19 @@ def main():
     TRACKER_CSV.parent.mkdir(exist_ok=True)
     write_header = not TRACKER_CSV.exists()
     if rows:
+        # Use EXISTING header order when appending to avoid column-shift bugs
+        if not write_header:
+            with open(TRACKER_CSV, newline="") as rf:
+                existing_fields = next(csv.reader(rf))
+            # Add any new fields from new rows that aren't in the old header
+            for k in rows[0].keys():
+                if k not in existing_fields:
+                    existing_fields.append(k)
+            fieldnames = existing_fields
+        else:
+            fieldnames = list(rows[0].keys())
         with open(TRACKER_CSV, "a", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            w = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
             if write_header:
                 w.writeheader()
             w.writerows(rows)
