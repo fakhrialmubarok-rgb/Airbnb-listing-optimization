@@ -449,6 +449,36 @@ def _hf_kontext(image_url: str, prompt: str) -> bytes:
     return requests.get(out_url, timeout=60).content
 
 
+def _together_kontext(image_bytes: bytes, prompt: str) -> bytes:
+    """Together AI FLUX.1-kontext-pro — same model as fal.ai, ~$0.05/image.
+    Email-only signup at api.together.ai, $1 free credit, no OTP needed.
+    Requires TOGETHER_API_KEY in .env."""
+    key = os.environ.get("TOGETHER_API_KEY", "")
+    if not key:
+        raise RuntimeError("TOGETHER_API_KEY not set")
+    b64 = base64.b64encode(image_bytes).decode()
+    r = requests.post(
+        "https://api.together.xyz/v1/images/generations",
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={
+            "model": "black-forest-labs/FLUX.1-kontext-pro",
+            "prompt": prompt,
+            "image": f"data:image/jpeg;base64,{b64}",
+            "n": 1,
+            "width": 1024,
+            "height": 1024,
+        },
+        timeout=180,
+    )
+    r.raise_for_status()
+    data = r.json()
+    img_url = data["data"][0].get("url") or data["data"][0].get("b64_json")
+    if img_url and img_url.startswith("http"):
+        return requests.get(img_url, timeout=60).content
+    import base64 as _b64
+    return _b64.b64decode(img_url)
+
+
 def _fal_kontext(image_bytes: bytes, prompt: str) -> bytes:
     """fal.ai flux-kontext-pro direct API — ~$0.05/image, better quality than Replicate dev.
     Falls back to flux-kontext-dev (~$0.025) if pro quota exceeded.
@@ -552,6 +582,7 @@ def _replicate_kontext(image_url: str, prompt: str) -> bytes:
 IMG_CHAIN = [
     ("gemini 2.5-flash-image",         lambda b, u, p: _gemini_image(b, p)),
     ("gemini 2.0-flash-preview-image", lambda b, u, p: _gemini_image_flash(b, p)),
+    ("together FLUX.1-kontext-pro",    lambda b, u, p: _together_kontext(b, p)),
     ("fal.ai kontext-pro ($0.05)",     lambda b, u, p: _fal_kontext(b, p)),
     ("hf kontext (free credits)",      lambda b, u, p: _hf_kontext(u, p)),
     ("local SDXL img2img (free/MPS)",  lambda b, u, p: _local_sdxl_img2img(b, p)),
